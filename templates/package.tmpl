@@ -1,6 +1,12 @@
 {{ $reponame := .RepositoryName }}
 {{ $config := .Config }}
-
+{{ $imageTag := (list .Package.Name .Package.Category .Package.Version | join "-" | replace "+" "-") }}
+{{ $imageRepo := "" }}
+{{- range $r := .Config.repositories }}
+{{ if eq $r.name $reponame}}
+{{ $imageRepo = $r.url }}
+{{ end }}
+{{- end }}
 <html>
 <head>
 
@@ -78,15 +84,18 @@ body {
 
 <div class="p-3 m-3 container">
 
-
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://{{$imageRepo}}:{{$imageTag}}" target="_blank"> {{$imageRepo}}:{{$imageTag}} </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/{{$imageRepo}}:{{$imageTag}}/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
 
 <span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> {{.Package.Version}}  </strong> <br>
-
 <span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> {{.Package.License}} </strong> <br>
 <span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong> {{.Package.BuildTimestamp}} </strong> <br>
-
-
-
 
 {{ if ne (len .Package.PackageRequires) 0 }}
 <h1> Requires </h1>
