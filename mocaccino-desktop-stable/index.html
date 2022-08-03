@@ -1,0 +1,636 @@
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/prism.min.js" integrity="sha512-9+422Bs3A87UkWfp+qV80Nfv9arhbCXKY1rxrF2seorI36mIIstMiuBfyKLF1yH1nnzQkEWq2xrzT4XU3Z+vrA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-Q3qGP1uJL/B0sEmu57PKXjCirgPKMbg73OLRbTJ6lfHCVU5zkHqmcTI5EV2fSoPV1MHdKsCBE7m/aS6q0pPjRQ==" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/themes/prism-solarizedlight.min.css" integrity="sha512-fibfhB71IpdEKqLKXP/96WuX1cTMmvZioYp7T6I+lTbvJrrjEGeyYdAf09GHpFptF8toQ32woGZ8bw9+HjZc0A==" crossorigin="anonymous" />
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>mocaccino-desktop-stable Packages</title>
+</head>
+
+
+<body>
+<section class="hero is-mobile">
+  <div class="hero-body">
+    <div class="container ">
+      <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+            <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> mocaccino-desktop-stable
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+
+              <h2 class="subtitle">
+
+        List packages and versions available in "mocaccino-desktop-stable" repository
+             </h2>
+        </div>
+        <div class="column is-half">
+                      <a href="https://github.com/mocaccinoOS/desktop"><span class="icon has-text-dark 	"> <i class="fas fa-code-branch"></i></span> </a>
+        </div>
+     </div>
+    </div>
+  </div>
+</section>
+
+<div class="container is-mobile">
+  <div class="notification is-info">
+    To enable mocaccino-desktop-stable add in /etc/luet/luet.yaml the following:
+    <pre><code class="language-yaml">repositories:
+  - name: "mocaccino-desktop-stable"
+    type: "docker"
+    enable: true
+    urls:
+    - "quay.io/mocaccino/desktop-stable"</code></pre>
+  </div>
+
+  <table  data-toggle="table"
+    data-search="true"
+    data-show-columns="true"
+    id="table"  >
+    <thead>
+  
+    <tr>
+        <th data-field="name" ><abbr title="Name">Name</abbr></th>
+        <th data-field="category" >Category</th>
+        <th data-field="version"><abbr title="Version">Version</abbr></th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th><abbr title="Name">Name</abbr></th>
+        <th>Category</th>
+        <th><abbr title="Version">Version</abbr></th>
+      </tr>
+    </tfoot>
+
+    <tbody>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/X"> X</a></td>
+          <td class="category">layers</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/X/0.9&#43;37">0.9&#43;37</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/buildbase/X"> X</a></td>
+          <td class="category">buildbase</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/buildbase/X/0&#43;16">0&#43;16</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/bashtop"> bashtop</a></td>
+          <td class="category">apps</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/bashtop/0.9.25&#43;12">0.9.25&#43;12</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/calamares"> calamares</a></td>
+          <td class="category">apps</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/calamares/3.2.32&#43;111">3.2.32&#43;111</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/cinnamon"> cinnamon</a></td>
+          <td class="category">layers</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/cinnamon/4.8.6&#43;55">4.8.6&#43;55</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/codecs"> codecs</a></td>
+          <td class="category">layers</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/codecs/4&#43;34">4&#43;34</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/discover"> discover</a></td>
+          <td class="category">apps</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/discover/5.22.5&#43;45">5.22.5&#43;45</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/utils/e2fsprogs"> e2fsprogs</a></td>
+          <td class="category">utils</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/utils/e2fsprogs/1">1</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/edgevpn-gui"> edgevpn-gui</a></td>
+          <td class="category">apps</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/edgevpn-gui/0.1.1&#43;5">0.1.1&#43;5</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/enlightenment"> enlightenment</a></td>
+          <td class="category">layers</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/enlightenment/0.24.2&#43;92">0.24.2&#43;92</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/firefox"> firefox</a></td>
+          <td class="category">apps</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/firefox/95.0.1&#43;3">95.0.1&#43;3</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/firmware"> firmware</a></td>
+          <td class="category">layers</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/firmware/1&#43;96">1&#43;96</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/flatpak"> flatpak</a></td>
+          <td class="category">apps</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/flatpak/1.10.2&#43;76">1.10.2&#43;76</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/buildbase/flatpak"> flatpak</a></td>
+          <td class="category">buildbase</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/buildbase/flatpak/0&#43;17">0&#43;17</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/fynedesk"> fynedesk</a></td>
+          <td class="category">layers</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/fynedesk/0.3.0&#43;8">0.3.0&#43;8</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/fyneterm"> fyneterm</a></td>
+          <td class="category">apps</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/fyneterm/0.99999&#43;5">0.99999&#43;5</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/development/gcc"> gcc</a></td>
+          <td class="category">development</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/development/gcc/11.2.0&#43;33">11.2.0&#43;33</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/system/gcc-base"> gcc-base</a></td>
+          <td class="category">system</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/system/gcc-base/11.2.0&#43;33">11.2.0&#43;33</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/gentoo-portage"> gentoo-portage</a></td>
+          <td class="category">layers</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/gentoo-portage/0.20220105">0.20220105</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/meta/gnome"> gnome</a></td>
+          <td class="category">meta</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/meta/gnome/0.20211116">0.20211116</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/gnome"> gnome</a></td>
+          <td class="category">layers</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/gnome/40.5&#43;6">40.5&#43;6</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/gnome-common"> gnome-common</a></td>
+          <td class="category">layers</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/gnome-common/0.9&#43;42">0.9&#43;42</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/buildbase/gnome-common"> gnome-common</a></td>
+          <td class="category">buildbase</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/buildbase/gnome-common/0&#43;16">0&#43;16</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/mocaccino/gnome-skel"> gnome-skel</a></td>
+          <td class="category">mocaccino</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/mocaccino/gnome-skel/0.7">0.7</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/gnome-software"> gnome-software</a></td>
+          <td class="category">apps</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/gnome-software/40.4&#43;6">40.4&#43;6</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/golauncher"> golauncher</a></td>
+          <td class="category">apps</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/golauncher/0.2.1&#43;1">0.2.1&#43;1</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/google-chrome"> google-chrome</a></td>
+          <td class="category">apps</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/google-chrome/97.0.4692.71&#43;3">97.0.4692.71&#43;3</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/gparted"> gparted</a></td>
+          <td class="category">apps</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/gparted/1.3.1&#43;5">1.3.1&#43;5</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/utils/gptfdisk"> gptfdisk</a></td>
+          <td class="category">utils</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/utils/gptfdisk/1">1</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/grub"> grub</a></td>
+          <td class="category">apps</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/grub/2.04&#43;103">2.04&#43;103</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/buildbase/grub"> grub</a></td>
+          <td class="category">buildbase</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/buildbase/grub/0&#43;17">0&#43;17</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/utils/grub2"> grub2</a></td>
+          <td class="category">utils</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/utils/grub2/1">1</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/guake"> guake</a></td>
+          <td class="category">apps</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/guake/3.8.0&#43;3">3.8.0&#43;3</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/htop"> htop</a></td>
+          <td class="category">apps</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/htop/3.0.5&#43;74">3.0.5&#43;74</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/i3"> i3</a></td>
+          <td class="category">apps</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/i3/4.20.1&#43;3">4.20.1&#43;3</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/networking/iptables"> iptables</a></td>
+          <td class="category">networking</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/networking/iptables/1">1</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/java"> java</a></td>
+          <td class="category">layers</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/java/8.302_p08&#43;35">8.302_p08&#43;35</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/kde-apps-minimal"> kde-apps-minimal</a></td>
+          <td class="category">layers</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/kde-apps-minimal/20.12.3&#43;76">20.12.3&#43;76</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/kde-common"> kde-common</a></td>
+          <td class="category">layers</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/kde-common/4&#43;35">4&#43;35</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/buildbase/kde-common"> kde-common</a></td>
+          <td class="category">buildbase</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/buildbase/kde-common/0&#43;18">0&#43;18</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/kde-pim"> kde-pim</a></td>
+          <td class="category">layers</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/kde-pim/21.04.3&#43;65">21.04.3&#43;65</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/system/kmod"> kmod</a></td>
+          <td class="category">system</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/system/kmod/1">1</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/lightdm"> lightdm</a></td>
+          <td class="category">apps</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/lightdm/1.30.0&#43;94">1.30.0&#43;94</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/mocaccino/live-setup"> live-setup</a></td>
+          <td class="category">mocaccino</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/mocaccino/live-setup/1.0">1.0</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/lxqt"> lxqt</a></td>
+          <td class="category">layers</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/lxqt/0.17.0&#43;15">0.17.0&#43;15</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/mate"> mate</a></td>
+          <td class="category">layers</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/mate/1.24&#43;110">1.24&#43;110</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/themes/mate"> mate</a></td>
+          <td class="category">themes</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/themes/mate/1&#43;68">1&#43;68</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/maui-shell"> maui-shell</a></td>
+          <td class="category">layers</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/maui-shell/0.9999&#43;7">0.9999&#43;7</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/buildbase/mocaccino-lts-sources"> mocaccino-lts-sources</a></td>
+          <td class="category">buildbase</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/buildbase/mocaccino-lts-sources/0&#43;17">0&#43;17</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/kernel-sources/mocaccino-lts-sources"> mocaccino-lts-sources</a></td>
+          <td class="category">kernel-sources</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/kernel-sources/mocaccino-lts-sources/5.10.82&#43;17">5.10.82&#43;17</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/distro/mocaccino-micro"> mocaccino-micro</a></td>
+          <td class="category">distro</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/distro/mocaccino-micro/0.2">0.2</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/buildbase/mocaccino-sources"> mocaccino-sources</a></td>
+          <td class="category">buildbase</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/buildbase/mocaccino-sources/0&#43;17">0&#43;17</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/kernel-sources/mocaccino-sources"> mocaccino-sources</a></td>
+          <td class="category">kernel-sources</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/kernel-sources/mocaccino-sources/5.14.15&#43;27">5.14.15&#43;27</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/mocaccino-statusbar"> mocaccino-statusbar</a></td>
+          <td class="category">apps</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/mocaccino-statusbar/0.4.4&#43;44">0.4.4&#43;44</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/mos-updater"> mos-updater</a></td>
+          <td class="category">apps</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/mos-updater/0.1&#43;7">0.1&#43;7</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/mpv"> mpv</a></td>
+          <td class="category">apps</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/mpv/0.33.1&#43;87">0.33.1&#43;87</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/net-tools"> net-tools</a></td>
+          <td class="category">layers</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/net-tools/0.3&#43;47">0.3&#43;47</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/kernel-modules/nvidia-drivers-lts"> nvidia-drivers-lts</a></td>
+          <td class="category">kernel-modules</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/kernel-modules/nvidia-drivers-lts/0.993&#43;69">0.993&#43;69</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/gnome-icons/paper"> paper</a></td>
+          <td class="category">gnome-icons</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/gnome-icons/paper/0.20210418&#43;1">0.20210418&#43;1</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/buildbase/pavucontrol-qt"> pavucontrol-qt</a></td>
+          <td class="category">buildbase</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/buildbase/pavucontrol-qt/0&#43;10">0&#43;10</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/pavucontrol-qt"> pavucontrol-qt</a></td>
+          <td class="category">apps</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/pavucontrol-qt/0.17.0&#43;43">0.17.0&#43;43</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/gnome-themes/plano"> plano</a></td>
+          <td class="category">gnome-themes</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/gnome-themes/plano/0.20210525&#43;1">0.20210525&#43;1</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/plasma"> plasma</a></td>
+          <td class="category">layers</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/plasma/5.23.4&#43;12">5.23.4&#43;12</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/gnome-themes/qogir"> qogir</a></td>
+          <td class="category">gnome-themes</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/gnome-themes/qogir/0.20211231&#43;1">0.20211231&#43;1</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/qt"> qt</a></td>
+          <td class="category">layers</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/qt/5.15.2&#43;111">5.15.2&#43;111</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/buildbase/qt"> qt</a></td>
+          <td class="category">buildbase</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/buildbase/qt/0&#43;17">0&#43;17</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/utils/rsync"> rsync</a></td>
+          <td class="category">utils</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/utils/rsync/1">1</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/slim"> slim</a></td>
+          <td class="category">apps</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/slim/1.3.6&#43;95">1.3.6&#43;95</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/gentoo/stage3"> stage3</a></td>
+          <td class="category">gentoo</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/gentoo/stage3/0.20211219">0.20211219</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/steam"> steam</a></td>
+          <td class="category">apps</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/steam/20210323&#43;88">20210323&#43;88</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/sys-fs"> sys-fs</a></td>
+          <td class="category">layers</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/sys-fs/0.6&#43;35">0.6&#43;35</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/system-x"> system-x</a></td>
+          <td class="category">layers</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/system-x/0.20220113">0.20220113</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/system-x-devel"> system-x-devel</a></td>
+          <td class="category">layers</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/system-x-devel/0.20220102&#43;5">0.20220102&#43;5</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/meta/systemd-groups"> systemd-groups</a></td>
+          <td class="category">meta</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/meta/systemd-groups/0.20210103&#43;1">0.20210103&#43;1</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/gnome-icons/tela"> tela</a></td>
+          <td class="category">gnome-icons</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/gnome-icons/tela/0.20210418&#43;1">0.20210418&#43;1</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/thunderbird"> thunderbird</a></td>
+          <td class="category">apps</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/thunderbird/91.4.1&#43;3">91.4.1&#43;3</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/trinity"> trinity</a></td>
+          <td class="category">layers</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/trinity/9999&#43;23">9999&#43;23</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/vim"> vim</a></td>
+          <td class="category">apps</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/vim/8.2.3741&#43;3">8.2.3741&#43;3</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/virtualbox"> virtualbox</a></td>
+          <td class="category">apps</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/virtualbox/6.1.24&#43;45">6.1.24&#43;45</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/kernel-modules/virtualbox-guest-additions-lts"> virtualbox-guest-additions-lts</a></td>
+          <td class="category">kernel-modules</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/kernel-modules/virtualbox-guest-additions-lts/6.1.24&#43;44">6.1.24&#43;44</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/kernel-modules/virtualbox-modules-lts"> virtualbox-modules-lts</a></td>
+          <td class="category">kernel-modules</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/kernel-modules/virtualbox-modules-lts/4&#43;28">4&#43;28</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/buildbase/virtualbox-modules-lts"> virtualbox-modules-lts</a></td>
+          <td class="category">buildbase</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/buildbase/virtualbox-modules-lts/0&#43;17">0&#43;17</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/vlc"> vlc</a></td>
+          <td class="category">apps</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/apps/vlc/3.0.16&#43;45">3.0.16&#43;45</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/wayfire"> wayfire</a></td>
+          <td class="category">layers</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/wayfire/0.7.2&#43;28">0.7.2&#43;28</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/networking/wireguard-tools"> wireguard-tools</a></td>
+          <td class="category">networking</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/networking/wireguard-tools/1">1</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/xfce"> xfce</a></td>
+          <td class="category">layers</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/layers/xfce/4.16&#43;48">4.16&#43;48</a></td>
+          </tr>
+      
+        <tr>
+          <td class="name"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/utils/xz"> xz</a></td>
+          <td class="category">utils</td>
+          <td class="version"><a href="https://packages.mocaccino.org/mocaccino-desktop-stable/utils/xz/1">1</a></td>
+          </tr>
+      
+    </tbody>
+  </table>
+
+
+</div>
+
+<script type="text/javascript">
+    $("#table").DataTable();
+</script>
+
+</body>
+
+</html>
