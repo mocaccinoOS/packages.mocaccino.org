@@ -1,0 +1,615 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing apps/slick-greeter-2.0.2&#43;35 in mocaccino-desktop-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> apps/slick-greeter-2.0.2&#43;35
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                A slick-looking LightDM greeter
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-desktop-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-desktop-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of apps/slick-greeter
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/desktop:slick-greeter-apps-2.0.2-35" target="_blank"> quay.io/mocaccino/desktop:slick-greeter-apps-2.0.2-35 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/desktop:slick-greeter-apps-2.0.2-35/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 2.0.2&#43;35  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> GPL-3 </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/apps/lightdm">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  lightdm &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/system/mocaccino-wallpaper">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  mocaccino-wallpaper &gt;=0 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 3
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: x11-misc/slick-greeter
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://github.com/linuxmint/slick-greeter" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://github.com/linuxmint/slick-greeter </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/x11-misc/slick-greeter">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  slick-greeter &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "etc\/lightdm\/slick-greeter.conf" ],
+            
+              [  "usr\/bin\/slick-greeter" ],
+            
+              [  "usr\/bin\/slick-greeter-check-hidpi" ],
+            
+              [  "usr\/bin\/slick-greeter-enable-tap-to-click" ],
+            
+              [  "usr\/bin\/slick-greeter-set-keyboard-layout" ],
+            
+              [  "usr\/share\/glib-2.0\/schemas\/x.dm.slick-greeter.gschema.xml" ],
+            
+              [  "usr\/share\/locale\/af\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/ar\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/az\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/bg\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/bn\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/br\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/bs\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/cy\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/da\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/en_GB\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/eo\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/et\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/eu\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/fa\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/fi\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/fy\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/ga\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/gl\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/gu\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/hi\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/hr\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/hu\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/is\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/kk\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/km\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/lt\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/lv\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/ms\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/nb\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/nl\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/nn\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/pa\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/pt\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/ro\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/se\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/sk\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/sl\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/sr\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/ta\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/tg\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/uz\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/slick-greeter.mo" ],
+            
+              [  "usr\/share\/man\/man1\/slick-greeter-check-hidpi.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/slick-greeter-enable-tap-to-click.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/slick-greeter-set-keyboard-layout.1.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/slick-greeter.8.bz2" ],
+            
+              [  "usr\/share\/slick-greeter\/a11y.svg" ],
+            
+              [  "usr\/share\/slick-greeter\/active.png" ],
+            
+              [  "usr\/share\/slick-greeter\/arrow_left.png" ],
+            
+              [  "usr\/share\/slick-greeter\/arrow_right.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/IceWM-Experimental.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/IceWM-Lite.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/IceWM.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/LXDE.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/Lubuntu-Netbook.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/Lubuntu.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/QLubuntu.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/XBMC.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/aewm\u002b\u002b.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/afterstep.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/amiwm.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/awesome.svg" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/blackbox.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/budgie-desktop.svg" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/cairo-dock-fallback.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/cairo-dock-unity.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/cairo-dock.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/cde.svg" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/chromium.svg" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/cinnamon-wayland.svg" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/cinnamon.svg" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/cinnamon2d.svg" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/deepin.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/dwm.svg" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/ede.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/enlightenment.svg" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/etoile.svg" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/evilwm.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/fluxbox.svg" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/fvwm-crystal.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/fvwm.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/fvwm1.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/fynedesk.svg" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/gnome-bluetile.svg" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/gnome-classic.svg" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/gnome-flashback-compiz.svg" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/gnome-flashback-metacity.svg" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/gnome-shell.svg" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/gnome-wayland.svg" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/gnome-xmonad.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/gnome-xorg.svg" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/gnome.svg" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/gnustep.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/herbstluftwm.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/i3-with-shmlog.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/i3.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/icewm-session.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/kde-plasma.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/kde.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/larswm.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/lubuntu-nexus7.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/lxgames.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/lxqt.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/matchbox.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/mate-old.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/mate.svg" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/mythbuntu.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/openbox-gnome.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/openbox-kde.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/openbox.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/openbsd-cwm.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/pademelon.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/pantheon.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/pekwm.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/plasma.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/ratpoison.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/razor.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/recovery_console.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/sawfish.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/steamos.svg" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/stumpwm.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/subtle.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/sugar-session-0.84.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/sugar-session-0.86.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/sugar-session-0.88.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/sugar-session-0.90.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/sugar-session-0.96.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/sugar-session-0.98.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/sway.svg" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/trinity.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/twm.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/ubuntu-xorg.svg" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/ubuntu.svg" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/ubuntustudio.svg" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/unknown.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/usr.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/wmaker-common.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/wmii.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/xfce.svg" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/xmonad.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/xterm.png" ],
+            
+              [  "usr\/share\/slick-greeter\/badges\/xubuntu.svg" ],
+            
+              [  "usr\/share\/slick-greeter\/battery.svg" ],
+            
+              [  "usr\/share\/slick-greeter\/battery_10.svg" ],
+            
+              [  "usr\/share\/slick-greeter\/battery_25.svg" ],
+            
+              [  "usr\/share\/slick-greeter\/battery_50.svg" ],
+            
+              [  "usr\/share\/slick-greeter\/dialog_close.png" ],
+            
+              [  "usr\/share\/slick-greeter\/dialog_close_highlight.png" ],
+            
+              [  "usr\/share\/slick-greeter\/dialog_close_press.png" ],
+            
+              [  "usr\/share\/slick-greeter\/hibernate.png" ],
+            
+              [  "usr\/share\/slick-greeter\/hibernate_highlight.png" ],
+            
+              [  "usr\/share\/slick-greeter\/keyboard.svg" ],
+            
+              [  "usr\/share\/slick-greeter\/message.png" ],
+            
+              [  "usr\/share\/slick-greeter\/remote_login_help.png" ],
+            
+              [  "usr\/share\/slick-greeter\/restart.png" ],
+            
+              [  "usr\/share\/slick-greeter\/restart_highlight.png" ],
+            
+              [  "usr\/share\/slick-greeter\/shadow.png" ],
+            
+              [  "usr\/share\/slick-greeter\/shutdown.png" ],
+            
+              [  "usr\/share\/slick-greeter\/shutdown.svg" ],
+            
+              [  "usr\/share\/slick-greeter\/shutdown_highlight.png" ],
+            
+              [  "usr\/share\/slick-greeter\/suspend.png" ],
+            
+              [  "usr\/share\/slick-greeter\/suspend_highlight.png" ],
+            
+              [  "usr\/share\/slick-greeter\/switcher_corner.png" ],
+            
+              [  "usr\/share\/slick-greeter\/switcher_left.png" ],
+            
+              [  "usr\/share\/slick-greeter\/switcher_top.png" ],
+            
+              [  "usr\/share\/xgreeters\/slick-greeter.desktop" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>
