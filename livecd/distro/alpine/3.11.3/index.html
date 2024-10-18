@@ -1,0 +1,989 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing distro/alpine-3.11.3 in livecd </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> distro/alpine-3.11.3
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/livecd">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     livecd
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of distro/alpine
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://https://raw.githubusercontent.com/Luet-lab/livecd-specs/gh-pages:alpine-distro-3.11.3" target="_blank"> https://raw.githubusercontent.com/Luet-lab/livecd-specs/gh-pages:alpine-distro-3.11.3 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/https://raw.githubusercontent.com/Luet-lab/livecd-specs/gh-pages:alpine-distro-3.11.3/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 3.11.3  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong>  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "bin\/arch" ],
+            
+              [  "bin\/ash" ],
+            
+              [  "bin\/base64" ],
+            
+              [  "bin\/bbconfig" ],
+            
+              [  "bin\/busybox" ],
+            
+              [  "bin\/cat" ],
+            
+              [  "bin\/chgrp" ],
+            
+              [  "bin\/chmod" ],
+            
+              [  "bin\/chown" ],
+            
+              [  "bin\/conspy" ],
+            
+              [  "bin\/cp" ],
+            
+              [  "bin\/date" ],
+            
+              [  "bin\/dd" ],
+            
+              [  "bin\/df" ],
+            
+              [  "bin\/dmesg" ],
+            
+              [  "bin\/dnsdomainname" ],
+            
+              [  "bin\/dumpkmap" ],
+            
+              [  "bin\/echo" ],
+            
+              [  "bin\/ed" ],
+            
+              [  "bin\/egrep" ],
+            
+              [  "bin\/false" ],
+            
+              [  "bin\/fatattr" ],
+            
+              [  "bin\/fdflush" ],
+            
+              [  "bin\/fgrep" ],
+            
+              [  "bin\/fsync" ],
+            
+              [  "bin\/getopt" ],
+            
+              [  "bin\/grep" ],
+            
+              [  "bin\/gunzip" ],
+            
+              [  "bin\/gzip" ],
+            
+              [  "bin\/hostname" ],
+            
+              [  "bin\/ionice" ],
+            
+              [  "bin\/iostat" ],
+            
+              [  "bin\/ipcalc" ],
+            
+              [  "bin\/kbd_mode" ],
+            
+              [  "bin\/kill" ],
+            
+              [  "bin\/link" ],
+            
+              [  "bin\/linux32" ],
+            
+              [  "bin\/linux64" ],
+            
+              [  "bin\/ln" ],
+            
+              [  "bin\/login" ],
+            
+              [  "bin\/ls" ],
+            
+              [  "bin\/lzop" ],
+            
+              [  "bin\/makemime" ],
+            
+              [  "bin\/mkdir" ],
+            
+              [  "bin\/mknod" ],
+            
+              [  "bin\/mktemp" ],
+            
+              [  "bin\/more" ],
+            
+              [  "bin\/mount" ],
+            
+              [  "bin\/mountpoint" ],
+            
+              [  "bin\/mpstat" ],
+            
+              [  "bin\/mv" ],
+            
+              [  "bin\/netstat" ],
+            
+              [  "bin\/nice" ],
+            
+              [  "bin\/pidof" ],
+            
+              [  "bin\/ping" ],
+            
+              [  "bin\/ping6" ],
+            
+              [  "bin\/pipe_progress" ],
+            
+              [  "bin\/printenv" ],
+            
+              [  "bin\/ps" ],
+            
+              [  "bin\/pwd" ],
+            
+              [  "bin\/reformime" ],
+            
+              [  "bin\/rev" ],
+            
+              [  "bin\/rm" ],
+            
+              [  "bin\/rmdir" ],
+            
+              [  "bin\/run-parts" ],
+            
+              [  "bin\/sed" ],
+            
+              [  "bin\/setpriv" ],
+            
+              [  "bin\/setserial" ],
+            
+              [  "bin\/sh" ],
+            
+              [  "bin\/sleep" ],
+            
+              [  "bin\/stat" ],
+            
+              [  "bin\/stty" ],
+            
+              [  "bin\/su" ],
+            
+              [  "bin\/sync" ],
+            
+              [  "bin\/tar" ],
+            
+              [  "bin\/touch" ],
+            
+              [  "bin\/true" ],
+            
+              [  "bin\/umount" ],
+            
+              [  "bin\/uname" ],
+            
+              [  "bin\/usleep" ],
+            
+              [  "bin\/watch" ],
+            
+              [  "bin\/zcat" ],
+            
+              [  "etc\/alpine-release" ],
+            
+              [  "etc\/apk\/arch" ],
+            
+              [  "etc\/apk\/keys\/alpine-devel@lists.alpinelinux.org-4a6a0840.rsa.pub" ],
+            
+              [  "etc\/apk\/keys\/alpine-devel@lists.alpinelinux.org-5243ef4b.rsa.pub" ],
+            
+              [  "etc\/apk\/keys\/alpine-devel@lists.alpinelinux.org-5261cecb.rsa.pub" ],
+            
+              [  "etc\/apk\/repositories" ],
+            
+              [  "etc\/apk\/world" ],
+            
+              [  "etc\/crontabs\/root" ],
+            
+              [  "etc\/fstab" ],
+            
+              [  "etc\/group" ],
+            
+              [  "etc\/hostname" ],
+            
+              [  "etc\/hosts" ],
+            
+              [  "etc\/inittab" ],
+            
+              [  "etc\/issue" ],
+            
+              [  "etc\/logrotate.d\/acpid" ],
+            
+              [  "etc\/modprobe.d\/aliases.conf" ],
+            
+              [  "etc\/modprobe.d\/blacklist.conf" ],
+            
+              [  "etc\/modprobe.d\/i386.conf" ],
+            
+              [  "etc\/modprobe.d\/kms.conf" ],
+            
+              [  "etc\/modules" ],
+            
+              [  "etc\/motd" ],
+            
+              [  "etc\/mtab" ],
+            
+              [  "etc\/network\/if-up.d\/dad" ],
+            
+              [  "etc\/os-release" ],
+            
+              [  "etc\/passwd" ],
+            
+              [  "etc\/profile" ],
+            
+              [  "etc\/profile.d\/color_prompt" ],
+            
+              [  "etc\/profile.d\/locale" ],
+            
+              [  "etc\/protocols" ],
+            
+              [  "etc\/securetty" ],
+            
+              [  "etc\/services" ],
+            
+              [  "etc\/shadow" ],
+            
+              [  "etc\/shells" ],
+            
+              [  "etc\/ssl\/cert.pem" ],
+            
+              [  "etc\/ssl\/ct_log_list.cnf" ],
+            
+              [  "etc\/ssl\/ct_log_list.cnf.dist" ],
+            
+              [  "etc\/ssl\/misc\/CA.pl" ],
+            
+              [  "etc\/ssl\/misc\/tsget" ],
+            
+              [  "etc\/ssl\/misc\/tsget.pl" ],
+            
+              [  "etc\/ssl\/openssl.cnf" ],
+            
+              [  "etc\/ssl\/openssl.cnf.dist" ],
+            
+              [  "etc\/sysctl.conf" ],
+            
+              [  "etc\/sysctl.d\/00-alpine.conf" ],
+            
+              [  "etc\/udhcpd.conf" ],
+            
+              [  "lib\/apk\/db\/installed" ],
+            
+              [  "lib\/apk\/db\/lock" ],
+            
+              [  "lib\/apk\/db\/scripts.tar" ],
+            
+              [  "lib\/apk\/db\/triggers" ],
+            
+              [  "lib\/ld-musl-x86_64.so.1" ],
+            
+              [  "lib\/libc.musl-x86_64.so.1" ],
+            
+              [  "lib\/libcrypto.so.1.1" ],
+            
+              [  "lib\/libssl.so.1.1" ],
+            
+              [  "lib\/libz.so.1" ],
+            
+              [  "lib\/libz.so.1.2.11" ],
+            
+              [  "luetbuild\/alpine-distro-3.11.3-builder.dockerfile" ],
+            
+              [  "luetbuild\/build.yaml" ],
+            
+              [  "luetbuild\/definition.yaml" ],
+            
+              [  "sbin\/acpid" ],
+            
+              [  "sbin\/adjtimex" ],
+            
+              [  "sbin\/apk" ],
+            
+              [  "sbin\/arp" ],
+            
+              [  "sbin\/blkid" ],
+            
+              [  "sbin\/blockdev" ],
+            
+              [  "sbin\/depmod" ],
+            
+              [  "sbin\/fbsplash" ],
+            
+              [  "sbin\/fdisk" ],
+            
+              [  "sbin\/findfs" ],
+            
+              [  "sbin\/fsck" ],
+            
+              [  "sbin\/fstrim" ],
+            
+              [  "sbin\/getty" ],
+            
+              [  "sbin\/halt" ],
+            
+              [  "sbin\/hdparm" ],
+            
+              [  "sbin\/hwclock" ],
+            
+              [  "sbin\/ifconfig" ],
+            
+              [  "sbin\/ifdown" ],
+            
+              [  "sbin\/ifenslave" ],
+            
+              [  "sbin\/ifup" ],
+            
+              [  "sbin\/init" ],
+            
+              [  "sbin\/inotifyd" ],
+            
+              [  "sbin\/insmod" ],
+            
+              [  "sbin\/ip" ],
+            
+              [  "sbin\/ipaddr" ],
+            
+              [  "sbin\/iplink" ],
+            
+              [  "sbin\/ipneigh" ],
+            
+              [  "sbin\/iproute" ],
+            
+              [  "sbin\/iprule" ],
+            
+              [  "sbin\/iptunnel" ],
+            
+              [  "sbin\/klogd" ],
+            
+              [  "sbin\/ldconfig" ],
+            
+              [  "sbin\/loadkmap" ],
+            
+              [  "sbin\/logread" ],
+            
+              [  "sbin\/losetup" ],
+            
+              [  "sbin\/lsmod" ],
+            
+              [  "sbin\/mdev" ],
+            
+              [  "sbin\/mkdosfs" ],
+            
+              [  "sbin\/mkfs.vfat" ],
+            
+              [  "sbin\/mkmntdirs" ],
+            
+              [  "sbin\/mkswap" ],
+            
+              [  "sbin\/modinfo" ],
+            
+              [  "sbin\/modprobe" ],
+            
+              [  "sbin\/nameif" ],
+            
+              [  "sbin\/nologin" ],
+            
+              [  "sbin\/poweroff" ],
+            
+              [  "sbin\/raidautorun" ],
+            
+              [  "sbin\/reboot" ],
+            
+              [  "sbin\/rmmod" ],
+            
+              [  "sbin\/route" ],
+            
+              [  "sbin\/setconsole" ],
+            
+              [  "sbin\/slattach" ],
+            
+              [  "sbin\/swapoff" ],
+            
+              [  "sbin\/swapon" ],
+            
+              [  "sbin\/switch_root" ],
+            
+              [  "sbin\/sysctl" ],
+            
+              [  "sbin\/syslogd" ],
+            
+              [  "sbin\/tunctl" ],
+            
+              [  "sbin\/udhcpc" ],
+            
+              [  "sbin\/vconfig" ],
+            
+              [  "sbin\/watchdog" ],
+            
+              [  "usr\/bin\/[" ],
+            
+              [  "usr\/bin\/[[" ],
+            
+              [  "usr\/bin\/awk" ],
+            
+              [  "usr\/bin\/basename" ],
+            
+              [  "usr\/bin\/bc" ],
+            
+              [  "usr\/bin\/beep" ],
+            
+              [  "usr\/bin\/blkdiscard" ],
+            
+              [  "usr\/bin\/bunzip2" ],
+            
+              [  "usr\/bin\/bzcat" ],
+            
+              [  "usr\/bin\/bzip2" ],
+            
+              [  "usr\/bin\/cal" ],
+            
+              [  "usr\/bin\/chvt" ],
+            
+              [  "usr\/bin\/cksum" ],
+            
+              [  "usr\/bin\/clear" ],
+            
+              [  "usr\/bin\/cmp" ],
+            
+              [  "usr\/bin\/comm" ],
+            
+              [  "usr\/bin\/cpio" ],
+            
+              [  "usr\/bin\/crontab" ],
+            
+              [  "usr\/bin\/cryptpw" ],
+            
+              [  "usr\/bin\/cut" ],
+            
+              [  "usr\/bin\/dc" ],
+            
+              [  "usr\/bin\/deallocvt" ],
+            
+              [  "usr\/bin\/diff" ],
+            
+              [  "usr\/bin\/dirname" ],
+            
+              [  "usr\/bin\/dos2unix" ],
+            
+              [  "usr\/bin\/du" ],
+            
+              [  "usr\/bin\/dumpleases" ],
+            
+              [  "usr\/bin\/eject" ],
+            
+              [  "usr\/bin\/env" ],
+            
+              [  "usr\/bin\/expand" ],
+            
+              [  "usr\/bin\/expr" ],
+            
+              [  "usr\/bin\/factor" ],
+            
+              [  "usr\/bin\/fallocate" ],
+            
+              [  "usr\/bin\/find" ],
+            
+              [  "usr\/bin\/flock" ],
+            
+              [  "usr\/bin\/fold" ],
+            
+              [  "usr\/bin\/free" ],
+            
+              [  "usr\/bin\/fuser" ],
+            
+              [  "usr\/bin\/getconf" ],
+            
+              [  "usr\/bin\/getent" ],
+            
+              [  "usr\/bin\/groups" ],
+            
+              [  "usr\/bin\/hd" ],
+            
+              [  "usr\/bin\/head" ],
+            
+              [  "usr\/bin\/hexdump" ],
+            
+              [  "usr\/bin\/hostid" ],
+            
+              [  "usr\/bin\/iconv" ],
+            
+              [  "usr\/bin\/id" ],
+            
+              [  "usr\/bin\/install" ],
+            
+              [  "usr\/bin\/ipcrm" ],
+            
+              [  "usr\/bin\/ipcs" ],
+            
+              [  "usr\/bin\/killall" ],
+            
+              [  "usr\/bin\/ldd" ],
+            
+              [  "usr\/bin\/less" ],
+            
+              [  "usr\/bin\/logger" ],
+            
+              [  "usr\/bin\/lsof" ],
+            
+              [  "usr\/bin\/lsusb" ],
+            
+              [  "usr\/bin\/lzcat" ],
+            
+              [  "usr\/bin\/lzma" ],
+            
+              [  "usr\/bin\/lzopcat" ],
+            
+              [  "usr\/bin\/md5sum" ],
+            
+              [  "usr\/bin\/mesg" ],
+            
+              [  "usr\/bin\/microcom" ],
+            
+              [  "usr\/bin\/mkfifo" ],
+            
+              [  "usr\/bin\/mkpasswd" ],
+            
+              [  "usr\/bin\/nc" ],
+            
+              [  "usr\/bin\/nl" ],
+            
+              [  "usr\/bin\/nmeter" ],
+            
+              [  "usr\/bin\/nohup" ],
+            
+              [  "usr\/bin\/nproc" ],
+            
+              [  "usr\/bin\/nsenter" ],
+            
+              [  "usr\/bin\/nslookup" ],
+            
+              [  "usr\/bin\/od" ],
+            
+              [  "usr\/bin\/openvt" ],
+            
+              [  "usr\/bin\/passwd" ],
+            
+              [  "usr\/bin\/paste" ],
+            
+              [  "usr\/bin\/patch" ],
+            
+              [  "usr\/bin\/pgrep" ],
+            
+              [  "usr\/bin\/pkill" ],
+            
+              [  "usr\/bin\/pmap" ],
+            
+              [  "usr\/bin\/printf" ],
+            
+              [  "usr\/bin\/pscan" ],
+            
+              [  "usr\/bin\/pstree" ],
+            
+              [  "usr\/bin\/pwdx" ],
+            
+              [  "usr\/bin\/readlink" ],
+            
+              [  "usr\/bin\/realpath" ],
+            
+              [  "usr\/bin\/renice" ],
+            
+              [  "usr\/bin\/reset" ],
+            
+              [  "usr\/bin\/resize" ],
+            
+              [  "usr\/bin\/scanelf" ],
+            
+              [  "usr\/bin\/seq" ],
+            
+              [  "usr\/bin\/setkeycodes" ],
+            
+              [  "usr\/bin\/setsid" ],
+            
+              [  "usr\/bin\/sha1sum" ],
+            
+              [  "usr\/bin\/sha256sum" ],
+            
+              [  "usr\/bin\/sha3sum" ],
+            
+              [  "usr\/bin\/sha512sum" ],
+            
+              [  "usr\/bin\/showkey" ],
+            
+              [  "usr\/bin\/shred" ],
+            
+              [  "usr\/bin\/shuf" ],
+            
+              [  "usr\/bin\/smemcap" ],
+            
+              [  "usr\/bin\/sort" ],
+            
+              [  "usr\/bin\/split" ],
+            
+              [  "usr\/bin\/ssl_client" ],
+            
+              [  "usr\/bin\/strings" ],
+            
+              [  "usr\/bin\/sum" ],
+            
+              [  "usr\/bin\/tac" ],
+            
+              [  "usr\/bin\/tail" ],
+            
+              [  "usr\/bin\/tee" ],
+            
+              [  "usr\/bin\/test" ],
+            
+              [  "usr\/bin\/time" ],
+            
+              [  "usr\/bin\/timeout" ],
+            
+              [  "usr\/bin\/top" ],
+            
+              [  "usr\/bin\/tr" ],
+            
+              [  "usr\/bin\/traceroute" ],
+            
+              [  "usr\/bin\/traceroute6" ],
+            
+              [  "usr\/bin\/truncate" ],
+            
+              [  "usr\/bin\/tty" ],
+            
+              [  "usr\/bin\/ttysize" ],
+            
+              [  "usr\/bin\/udhcpc6" ],
+            
+              [  "usr\/bin\/unexpand" ],
+            
+              [  "usr\/bin\/uniq" ],
+            
+              [  "usr\/bin\/unix2dos" ],
+            
+              [  "usr\/bin\/unlink" ],
+            
+              [  "usr\/bin\/unlzma" ],
+            
+              [  "usr\/bin\/unlzop" ],
+            
+              [  "usr\/bin\/unshare" ],
+            
+              [  "usr\/bin\/unxz" ],
+            
+              [  "usr\/bin\/unzip" ],
+            
+              [  "usr\/bin\/uptime" ],
+            
+              [  "usr\/bin\/uudecode" ],
+            
+              [  "usr\/bin\/uuencode" ],
+            
+              [  "usr\/bin\/vi" ],
+            
+              [  "usr\/bin\/vlock" ],
+            
+              [  "usr\/bin\/volname" ],
+            
+              [  "usr\/bin\/wc" ],
+            
+              [  "usr\/bin\/wget" ],
+            
+              [  "usr\/bin\/which" ],
+            
+              [  "usr\/bin\/whoami" ],
+            
+              [  "usr\/bin\/whois" ],
+            
+              [  "usr\/bin\/xargs" ],
+            
+              [  "usr\/bin\/xxd" ],
+            
+              [  "usr\/bin\/xz" ],
+            
+              [  "usr\/bin\/xzcat" ],
+            
+              [  "usr\/bin\/yes" ],
+            
+              [  "usr\/lib\/engines-1.1\/afalg.so" ],
+            
+              [  "usr\/lib\/engines-1.1\/capi.so" ],
+            
+              [  "usr\/lib\/engines-1.1\/padlock.so" ],
+            
+              [  "usr\/lib\/libcrypto.so.1.1" ],
+            
+              [  "usr\/lib\/libssl.so.1.1" ],
+            
+              [  "usr\/lib\/libtls-standalone.so.1" ],
+            
+              [  "usr\/lib\/libtls-standalone.so.1.0.0" ],
+            
+              [  "usr\/sbin\/add-shell" ],
+            
+              [  "usr\/sbin\/addgroup" ],
+            
+              [  "usr\/sbin\/adduser" ],
+            
+              [  "usr\/sbin\/arping" ],
+            
+              [  "usr\/sbin\/brctl" ],
+            
+              [  "usr\/sbin\/chpasswd" ],
+            
+              [  "usr\/sbin\/chroot" ],
+            
+              [  "usr\/sbin\/crond" ],
+            
+              [  "usr\/sbin\/delgroup" ],
+            
+              [  "usr\/sbin\/deluser" ],
+            
+              [  "usr\/sbin\/ether-wake" ],
+            
+              [  "usr\/sbin\/fbset" ],
+            
+              [  "usr\/sbin\/fdformat" ],
+            
+              [  "usr\/sbin\/killall5" ],
+            
+              [  "usr\/sbin\/loadfont" ],
+            
+              [  "usr\/sbin\/lspci" ],
+            
+              [  "usr\/sbin\/nanddump" ],
+            
+              [  "usr\/sbin\/nandwrite" ],
+            
+              [  "usr\/sbin\/nbd-client" ],
+            
+              [  "usr\/sbin\/ntpd" ],
+            
+              [  "usr\/sbin\/partprobe" ],
+            
+              [  "usr\/sbin\/powertop" ],
+            
+              [  "usr\/sbin\/rdate" ],
+            
+              [  "usr\/sbin\/rdev" ],
+            
+              [  "usr\/sbin\/readahead" ],
+            
+              [  "usr\/sbin\/readprofile" ],
+            
+              [  "usr\/sbin\/remove-shell" ],
+            
+              [  "usr\/sbin\/rfkill" ],
+            
+              [  "usr\/sbin\/sendmail" ],
+            
+              [  "usr\/sbin\/setfont" ],
+            
+              [  "usr\/sbin\/setlogcons" ],
+            
+              [  "usr\/share\/apk\/keys\/aarch64\/alpine-devel@lists.alpinelinux.org-58199dcc.rsa.pub" ],
+            
+              [  "usr\/share\/apk\/keys\/alpine-devel@lists.alpinelinux.org-4a6a0840.rsa.pub" ],
+            
+              [  "usr\/share\/apk\/keys\/alpine-devel@lists.alpinelinux.org-5243ef4b.rsa.pub" ],
+            
+              [  "usr\/share\/apk\/keys\/alpine-devel@lists.alpinelinux.org-524d27bb.rsa.pub" ],
+            
+              [  "usr\/share\/apk\/keys\/alpine-devel@lists.alpinelinux.org-5261cecb.rsa.pub" ],
+            
+              [  "usr\/share\/apk\/keys\/alpine-devel@lists.alpinelinux.org-58199dcc.rsa.pub" ],
+            
+              [  "usr\/share\/apk\/keys\/alpine-devel@lists.alpinelinux.org-58cbb476.rsa.pub" ],
+            
+              [  "usr\/share\/apk\/keys\/alpine-devel@lists.alpinelinux.org-58e4f17d.rsa.pub" ],
+            
+              [  "usr\/share\/apk\/keys\/armhf\/alpine-devel@lists.alpinelinux.org-524d27bb.rsa.pub" ],
+            
+              [  "usr\/share\/apk\/keys\/ppc64le\/alpine-devel@lists.alpinelinux.org-58cbb476.rsa.pub" ],
+            
+              [  "usr\/share\/apk\/keys\/s390x\/alpine-devel@lists.alpinelinux.org-58e4f17d.rsa.pub" ],
+            
+              [  "usr\/share\/apk\/keys\/x86\/alpine-devel@lists.alpinelinux.org-4a6a0840.rsa.pub" ],
+            
+              [  "usr\/share\/apk\/keys\/x86\/alpine-devel@lists.alpinelinux.org-5243ef4b.rsa.pub" ],
+            
+              [  "usr\/share\/apk\/keys\/x86_64\/alpine-devel@lists.alpinelinux.org-4a6a0840.rsa.pub" ],
+            
+              [  "usr\/share\/apk\/keys\/x86_64\/alpine-devel@lists.alpinelinux.org-5261cecb.rsa.pub" ],
+            
+              [  "usr\/share\/udhcpc\/default.script" ],
+            
+              [  "var\/run" ],
+            
+              [  "var\/spool\/cron\/crontabs" ],
+            
+              [  "var\/spool\/mail" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>
