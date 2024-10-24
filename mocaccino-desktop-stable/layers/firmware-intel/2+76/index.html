@@ -1,0 +1,1379 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing layers/firmware-intel-2&#43;76 in mocaccino-desktop-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> layers/firmware-intel-2&#43;76
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-desktop-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-desktop-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of layers/firmware-intel
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/desktop:firmware-intel-layers-2-76" target="_blank"> quay.io/mocaccino/desktop:firmware-intel-layers-2-76 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/desktop:firmware-intel-layers-2-76/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 2&#43;76  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong>  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "usr\/lib\/firmware\/intel\/IntcSST2.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/avs\/apl\/dsp_basefw.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/avs\/cnl\/dsp_basefw.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/avs\/da7219-tplg.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/avs\/dmic-tplg.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/avs\/hda-8086-generic-tplg.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/avs\/hda-808628xx-3ep-tplg.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/avs\/hda-generic-1ep-tplg.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/avs\/hda-generic-tplg.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/avs\/max98357a-tplg.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/avs\/max98373-tplg.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/avs\/max98927-tplg.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/avs\/nau8825-tplg.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/avs\/rt274-tplg.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/avs\/rt286-tplg.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/avs\/rt298-tplg.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/avs\/rt5514-tplg.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/avs\/rt5640-tplg.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/avs\/rt5663-tplg.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/avs\/skl\/dsp_basefw.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/avs\/skl\/dsp_mod_7CAD0808-AB10-CD23-EF45-12AB34CD56EF.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/avs\/ssm4567-tplg.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/catpt\/bdw\/dsp_basefw.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/dsp_fw_bxtn.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/dsp_fw_bxtn_v2219.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/dsp_fw_bxtn_v3366.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/dsp_fw_cnl.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/dsp_fw_cnl_v1191.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/dsp_fw_cnl_v1858.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/dsp_fw_glk.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/dsp_fw_glk_v1814.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/dsp_fw_glk_v2768.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/dsp_fw_glk_v2880.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/dsp_fw_glk_v3366.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/dsp_fw_kbl.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/dsp_fw_kbl_v1037.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/dsp_fw_kbl_v2042.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/dsp_fw_kbl_v2630.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/dsp_fw_kbl_v3266.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/dsp_fw_kbl_v3402.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/dsp_fw_kbl_v3420.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/dsp_fw_kbl_v701.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/dsp_fw_release.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/dsp_fw_release_v3402.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/dsp_fw_release_v969.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/fw_sst_0f28.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/fw_sst_0f28.bin-48kHz_i2s_master" ],
+            
+              [  "usr\/lib\/firmware\/intel\/fw_sst_0f28_ssp0.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/fw_sst_22a8.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0040-0041.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0040-0041.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0040-1020.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0040-1020.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0040-1050.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0040-1050.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0040-2120.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0040-2120.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0040-4150.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0040-4150.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0041-0041.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0041-0041.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0180-0041.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0180-0041.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0180-1050.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0180-1050.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0180-4150.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0180-4150.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0291-0291.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0291-0291.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-1040-0041.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-1040-0041.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-1040-1020.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-1040-1020.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-1040-1050.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-1040-1050.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-1040-2120.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-1040-2120.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-1040-4150.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-1040-4150.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-11-5.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-11-5.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-12-16.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-12-16.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-17-0-1.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-17-0-1.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-17-1.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-17-1.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-17-16-1.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-17-16-1.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-17-2.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-17-2.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-18-0-1.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-18-0-1.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-18-1.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-18-1.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-18-16-1.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-18-16-1.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-18-2.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-18-2.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-19-0-0.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-19-0-0.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-19-0-1.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-19-0-1.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-19-0-3.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-19-0-3.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-19-0-4.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-19-0-4.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-19-16-4.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-19-16-4.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-19-240-1.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-19-240-1.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-19-240-4.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-19-240-4.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-19-32-0.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-19-32-0.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-19-32-1.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-19-32-1.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-19-32-4.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-19-32-4.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-20-0-3.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-20-0-3.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-20-1-3.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-20-1-3.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-20-1-4.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-20-1-4.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-hw-37.7.10-fw-1.0.1.2d.d.bseq" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-hw-37.7.10-fw-1.0.2.3.d.bseq" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-hw-37.7.10-fw-1.80.1.2d.d.bseq" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-hw-37.7.10-fw-1.80.2.3.d.bseq" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-hw-37.7.bseq" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-hw-37.8.10-fw-1.10.2.27.d.bseq" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-hw-37.8.10-fw-1.10.3.11.e.bseq" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-hw-37.8.10-fw-22.50.19.14.f.bseq" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-hw-37.8.bseq" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ice\/ddp\/ice-1.3.36.0.pkg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ice\/ddp\/ice.pkg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ice\/ddp-comms\/ice_comms-1.3.45.0.pkg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ice\/ddp-lag\/ice_lag-1.3.1.0.pkg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ice\/ddp-wireless_edge\/ice_wireless_edge-1.3.13.0.pkg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ipu\/ipu6_fw.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ipu\/ipu6ep_fw.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ipu\/ipu6epadln_fw.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ipu\/ipu6epmtl_fw.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ipu\/ipu6se_fw.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ipu\/irci_irci_ecr-master_20161208_0213_20170112_1500.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ipu\/shisp_2400b0_v21.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ipu\/shisp_2401a0_v21.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ipu3-fw.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/irci_irci_ecr-master_20161208_0213_20170112_1500.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ish\/ish_lnlm.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/community\/sof-adl-n.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/community\/sof-adl-s.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/community\/sof-adl.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/community\/sof-apl.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/community\/sof-cfl.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/community\/sof-cml.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/community\/sof-cnl.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/community\/sof-ehl.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/community\/sof-glk.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/community\/sof-icl.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/community\/sof-jsl.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/community\/sof-rpl-s.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/community\/sof-rpl.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/community\/sof-tgl-h.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/community\/sof-tgl.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/intel-signed\/sof-adl-n.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/intel-signed\/sof-adl-s.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/intel-signed\/sof-adl.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/intel-signed\/sof-apl.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/intel-signed\/sof-cfl.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/intel-signed\/sof-cml.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/intel-signed\/sof-cnl.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/intel-signed\/sof-ehl.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/intel-signed\/sof-glk.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/intel-signed\/sof-icl.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/intel-signed\/sof-jsl.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/intel-signed\/sof-rpl-s.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/intel-signed\/sof-rpl.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/intel-signed\/sof-tgl-h.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/intel-signed\/sof-tgl.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/sof-adl-n.ldc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/sof-adl-n.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/sof-adl-s.ldc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/sof-adl-s.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/sof-adl.ldc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/sof-adl.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/sof-apl.ldc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/sof-apl.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/sof-bdw.ldc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/sof-bdw.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/sof-byt.ldc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/sof-byt.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/sof-cfl.ldc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/sof-cfl.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/sof-cht.ldc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/sof-cht.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/sof-cml.ldc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/sof-cml.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/sof-cnl.ldc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/sof-cnl.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/sof-ehl.ldc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/sof-ehl.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/sof-glk.ldc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/sof-glk.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/sof-icl.ldc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/sof-icl.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/sof-jsl.ldc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/sof-jsl.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/sof-rpl-s.ldc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/sof-rpl-s.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/sof-rpl.ldc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/sof-rpl.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/sof-tgl-h.ldc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/sof-tgl-h.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/sof-tgl.ldc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof\/sof-tgl.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ace-tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4\/adl\/community\/sof-adl.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4\/adl\/intel-signed\/sof-adl.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4\/adl\/sof-adl.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4\/adl-n\/community\/sof-adl-n.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4\/adl-n\/intel-signed\/sof-adl-n.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4\/adl-n\/sof-adl-n.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4\/adl-s\/community\/sof-adl-s.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4\/adl-s\/intel-signed\/sof-adl-s.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4\/adl-s\/sof-adl-s.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4\/mtl\/community\/sof-mtl.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4\/mtl\/intel-signed\/sof-mtl.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4\/mtl\/sof-mtl.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4\/rpl\/community\/sof-rpl.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4\/rpl\/intel-signed\/sof-rpl.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4\/rpl\/sof-rpl.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4\/rpl-s\/community\/sof-rpl-s.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4\/rpl-s\/intel-signed\/sof-rpl-s.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4\/rpl-s\/sof-rpl-s.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4\/tgl\/community\/sof-tgl.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4\/tgl\/intel-signed\/sof-tgl.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4\/tgl\/sof-tgl.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4\/tgl-h\/community\/sof-tgl-h.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4\/tgl-h\/intel-signed\/sof-tgl-h.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4\/tgl-h\/sof-tgl-h.ri" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4-tplg\/sof-adl-rt711-4ch.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4-tplg\/sof-adl-rt711-l0-rt1308-l12-rt715-l3.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4-tplg\/sof-adl-rt711-l0-rt1316-l12-rt714-l3.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4-tplg\/sof-adl-rt711-l0-rt1316-l13-rt714-l2.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4-tplg\/sof-hda-generic-2ch.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4-tplg\/sof-hda-generic-4ch.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4-tplg\/sof-hda-generic-ace1-2ch.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4-tplg\/sof-hda-generic-ace1-4ch.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4-tplg\/sof-hda-generic-cavs25-2ch.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4-tplg\/sof-hda-generic-cavs25-4ch.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4-tplg\/sof-hda-generic-idisp.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4-tplg\/sof-hda-generic.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4-tplg\/sof-imx8mp-wm8960.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4-tplg\/sof-mtl-cs42l43-l0-cs35l56-l12.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4-tplg\/sof-mtl-cs42l43-l0-cs35l56-l23.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4-tplg\/sof-mtl-es83x6-ssp1-hdmi-ssp02.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4-tplg\/sof-mtl-hdmi-ssp02.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4-tplg\/sof-mtl-max98357a-rt5682-ssp2-ssp0-2ch-pdm1.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4-tplg\/sof-mtl-max98357a-rt5682-ssp2-ssp0.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4-tplg\/sof-mtl-max98357a-rt5682.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4-tplg\/sof-mtl-rt1019-rt5682.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4-tplg\/sof-mtl-rt1318-l12-rt714-l0.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4-tplg\/sof-mtl-rt5650-dts.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4-tplg\/sof-mtl-rt711-4ch.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4-tplg\/sof-mtl-rt711-l0-rt1316-l23-rt714-l1.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4-tplg\/sof-mtl-rt712-l0-rt1712-l3.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4-tplg\/sof-mtl-rt713-l0-rt1316-l12-rt1713-l3.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4-tplg\/sof-mtl-rt713-l0-rt1316-l12.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4-tplg\/sof-mtl-rt722-l0.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4-tplg\/sof-mtl-sdw-cs42l42-l0-max98363-l2.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4-tplg\/sof-tgl-cs42l43-l3-cs35l56-l01.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4-tplg\/sof-tgl-rt711-rt1308-4ch.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4-tplg\/sof-tgl-rt711-rt1308-rt715.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4-tplg\/sof-tgl-rt711-rt1316-rt714.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4-tplg\/sof-tgl-rt712.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-ipc4-tplg\/sof-tgl-rt715-rt711-rt1308-mono.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-acp.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-cs35l41.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-es8336-dmic2ch-ssp0.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-es8336-dmic2ch-ssp1.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-es8336-dmic2ch-ssp2.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-es8336-dmic4ch-ssp0.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-es8336-dmic4ch-ssp1.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-es8336-dmic4ch-ssp2.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-es8336-ssp0.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-es8336-ssp1-hdmi-ssp02-4ch.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-es8336-ssp1-hdmi-ssp02.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-es8336-ssp1.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-es8336-ssp2.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-es8336.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-max98357a-rt5682-2way.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-max98357a-rt5682-4ch.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-max98357a-rt5682-rtnr.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-max98357a-rt5682-waves-2way.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-max98357a-rt5682-waves.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-max98357a-rt5682.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-max98360a-da7219.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-max98360a-nau8825.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-max98360a-rt5682-2way.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-max98360a-rt5682-4ch.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-max98360a-rt5682-rtnr.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-max98360a-rt5682-waves.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-max98360a-rt5682.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-max98373-nau8825-dts.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-max98373-nau8825.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-max98390-rt5682-google-aec.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-max98390-rt5682-rtnr.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-max98390-rt5682.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-max98390-ssp2-rt5682-ssp0.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-nau8318-nau8825.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-nau8825.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-nocodec-ci.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-nocodec-hdmi-ssp02.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-nocodec.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-rt1015-nau8825.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-rt1019-nau8825.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-rt1019-rt5682.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-rt1316-l1-mono-rt714-l0.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-rt1316-l12-rt714-l0.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-rt1316-l2-mono-rt714-l0.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-rt1316-l2-mono-rt714-l3.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-rt5650.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-rt5682.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-rt711-4ch.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-rt711-l0-rt1308-l12-rt715-l3.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-rt711-l0-rt1316-l12-rt714-l3.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-rt711-l0-rt1316-l13-rt714-l2.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-rt711-l0-rt1316-l2-2ch.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-rt711-l0-rt1316-l2-4ch.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-rt711-l0-rt1316-l3-2ch.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-rt711-l2-rt1316-l01-rt714-l3.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-rt711-l2-rt1316-l01.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-rt711.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-sdw-cs42l42-4ch.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-adl-sdw-max98373-rt5682.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-apl-da7219.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-apl-demux-pcm512x.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-apl-es8336-dmic2ch-ssp0.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-apl-es8336-dmic2ch-ssp1.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-apl-es8336-dmic2ch-ssp2.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-apl-es8336-dmic2ch-ssp5.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-apl-es8336-dmic4ch-ssp0.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-apl-es8336-dmic4ch-ssp1.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-apl-es8336-dmic4ch-ssp2.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-apl-es8336-dmic4ch-ssp5.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-apl-es8336-ssp0.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-apl-es8336-ssp1.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-apl-es8336-ssp2.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-apl-es8336-ssp5.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-apl-es8336.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-apl-keyword-detect.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-apl-nocodec-ci.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-apl-nocodec.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-apl-pcm512x-master-44100.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-apl-pcm512x-master.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-apl-pcm512x.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-apl-rt298.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-apl-tdf8532.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-apl-wm8804.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-bdw-nocodec.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-bdw-rt286.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-bdw-rt5640.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-bdw-rt5677.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-byt-cx2072x-ssp0.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-byt-cx2072x.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-byt-da7213-ssp0.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-byt-da7213.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-byt-es8316-ssp0.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-byt-es8316.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-byt-max98090.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-byt-nocodec.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-byt-rt5640-ssp0.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-byt-rt5640.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-byt-rt5645-ssp0.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-byt-rt5645.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-byt-rt5651-ssp0.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-byt-rt5651.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-byt-rt5670-ssp0.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-byt-rt5670.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-byt-rt5682-ssp0.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-byt-rt5682.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-byt-wm5102-ssp0.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-cht-cx2072x.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-cht-da7213.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-cht-es8316.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-cht-max98090.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-cht-nau8824.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-cht-nocodec.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-cht-rt5640.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-cht-rt5645.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-cht-rt5651.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-cht-rt5670.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-cht-rt5682.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-cml-da7219-max98357a.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-cml-da7219-max98390.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-cml-demux-rt5682-max98357a.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-cml-demux-rt5682.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-cml-es8336-dmic2ch-ssp0.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-cml-es8336-dmic2ch-ssp1.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-cml-es8336-dmic2ch-ssp2.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-cml-es8336-dmic4ch-ssp0.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-cml-es8336-dmic4ch-ssp1.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-cml-es8336-dmic4ch-ssp2.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-cml-es8336-ssp0.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-cml-es8336-ssp1.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-cml-es8336-ssp2.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-cml-nocodec.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-cml-rt1011-rt5682.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-cml-rt5682-kwd.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-cml-rt5682-max98357a.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-cml-rt5682.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-cml-rt700-2ch.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-cml-rt700-4ch.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-cml-rt700.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-cml-rt711-rt1308-mono-rt715.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-cml-rt711-rt1308-rt715.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-cnl-nocodec.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-cnl-rt274.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-ehl-nocodec.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-ehl-rt5660-nohdmi.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-ehl-rt5660.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-glk-cs42l42.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-glk-da7219-kwd.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-glk-da7219.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-glk-es8336-dmic2ch-ssp0.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-glk-es8336-dmic2ch-ssp1.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-glk-es8336-dmic2ch-ssp2.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-glk-es8336-dmic2ch-ssp5.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-glk-es8336-dmic4ch-ssp0.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-glk-es8336-dmic4ch-ssp1.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-glk-es8336-dmic4ch-ssp2.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-glk-es8336-dmic4ch-ssp5.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-glk-es8336-ssp0.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-glk-es8336-ssp1.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-glk-es8336-ssp2.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-glk-es8336-ssp5.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-glk-es8336.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-glk-nocodec.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-glk-rt5682.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-hda-generic-1ch-pdm1.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-hda-generic-1ch.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-hda-generic-2ch-kwd.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-hda-generic-2ch-pdm1.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-hda-generic-2ch.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-hda-generic-3ch.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-hda-generic-4ch-kwd.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-hda-generic-4ch.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-hda-generic-idisp-2ch.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-hda-generic-idisp-4ch.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-hda-generic-idisp.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-hda-generic.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-icl-dmic-4ch.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-icl-es8336-dmic2ch-ssp0.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-icl-es8336-dmic2ch-ssp1.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-icl-es8336-dmic2ch-ssp2.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-icl-es8336-dmic4ch-ssp0.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-icl-es8336-dmic4ch-ssp1.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-icl-es8336-dmic4ch-ssp2.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-icl-es8336-ssp0.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-icl-es8336-ssp1.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-icl-es8336-ssp2.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-icl-nocodec.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-icl-rt5682-kwd.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-icl-rt5682.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-icl-rt700-2ch.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-icl-rt700-4ch.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-icl-rt700.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-icl-rt711-rt1308-rt715.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-imx8-compr-wm8960-mixer.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-imx8-cs42888-mixer.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-imx8-cs42888.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-imx8-drc-wm8960.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-imx8-eq-fir-wm8960.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-imx8-eq-iir-wm8960.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-imx8-nocodec-sai.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-imx8-nocodec.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-imx8-wm8960-kwd.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-imx8-wm8960-mixer.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-imx8-wm8960.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-imx8mp-compr-wm8960-mixer.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-imx8mp-drc-wm8960.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-imx8mp-eq-fir-wm8960.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-imx8mp-eq-iir-wm8960.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-imx8mp-wm8904.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-imx8mp-wm8960-kwd.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-imx8mp-wm8960-mixer.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-imx8mp-wm8960.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-imx8ulp-9x9-btsco.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-imx8ulp-btsco.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-jsl-cs42l42-mx98360a.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-jsl-da7219-mx98360a.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-jsl-da7219.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-jsl-es8336-dmic2ch-ssp0.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-jsl-es8336-dmic2ch-ssp1.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-jsl-es8336-dmic2ch-ssp2.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-jsl-es8336-dmic4ch-ssp0.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-jsl-es8336-dmic4ch-ssp1.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-jsl-es8336-dmic4ch-ssp2.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-jsl-es8336-ssp0.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-jsl-es8336-ssp1.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-jsl-es8336-ssp2.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-jsl-nocodec.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-jsl-rt5682-mx98360a.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-jsl-rt5682-rt1015-xperi.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-jsl-rt5682-rt1015.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-jsl-rt5682.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-mt8186-mt6366-da7219-max98357.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-mt8186-mt6366-rt1019-rt5682s.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-mt8195-mt6359-max98390-rt5682-google-aec-rtnr.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-mt8195-mt6359-max98390-rt5682-rtnr.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-mt8195-mt6359-max98390-rt5682.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-mt8195-mt6359-rt1019-rt5682-dts.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-mt8195-mt6359-rt1019-rt5682.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-rn-rt5682-max98360.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-rn-rt5682-rt1019.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-rpl-nocodec.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-rpl-rt1316-l12-rt714-l0.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-rpl-rt711-4ch.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-rpl-rt711-l0-rt1316-l12-rt714-l3.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-rpl-rt711-l0-rt1316-l12.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-rpl-rt711-l0-rt1318-l12-rt714-l3.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-rpl-rt711-l0-rt1318-l12.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-rpl-rt711-l0.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-rpl-rt711-l2-rt1316-l01-rt714-l3.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-rpl-rt711-l2-rt1316-l01.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-rpl-rt711-l2.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-rpl-rt711.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-smart-amplifier-nocodec.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-tgl-es8336-dmic2ch-ssp0.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-tgl-es8336-dmic2ch-ssp1.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-tgl-es8336-dmic2ch-ssp2.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-tgl-es8336-dmic4ch-ssp0.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-tgl-es8336-dmic4ch-ssp1.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-tgl-es8336-dmic4ch-ssp2.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-tgl-es8336-ssp0.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-tgl-es8336-ssp1.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-tgl-es8336-ssp2.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-tgl-es8336.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-tgl-h-nocodec.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-tgl-max98357a-rt5682-pdm1-drceq.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-tgl-max98357a-rt5682-pdm1-google-aec.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-tgl-max98357a-rt5682-pdm1.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-tgl-max98357a-rt5682-rtnr.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-tgl-max98357a-rt5682.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-tgl-max98373-rt5682-igonr.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-tgl-max98373-rt5682-xperi.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-tgl-max98373-rt5682.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-tgl-nocodec-ci.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-tgl-nocodec-hdmi-ssp15.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-tgl-nocodec.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-tgl-rt1011-rt5682.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-tgl-rt1308-ssp2-hdmi-ssp15.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-tgl-rt5682-ssp0-max98373-ssp2-xperi.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-tgl-rt5682-ssp0-max98373-ssp2.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-tgl-rt711-4ch.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-tgl-rt711-l0-rt1316-l1-mono-rt714-l3.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-tgl-rt711-rt1308-2ch.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-tgl-rt711-rt1308-4ch.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-tgl-rt711-rt1308-mono-rt715.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-tgl-rt711-rt1308-rt715.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-tgl-rt711-rt1316-rt714.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-tgl-rt715-rt711-rt1308-mono.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-tgl-sdw-max98373-rt5682.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-whl-demux-rt5682.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-whl-rt5682-kwd.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/sof-tplg\/sof-whl-rt5682.tplg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_fw.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_pkg_hi556_0.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_pkg_himx11b1_0.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_pkg_himx2170_0.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_pkg_himx2172_0.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_pkg_int3537_0.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_pkg_ovti01a0_0.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_pkg_ovti01af_0.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_pkg_ovti01as_0.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_pkg_ovti02c1_0.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_pkg_ovti02e1_0.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_pkg_ovti2740_0.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_pkg_ovti5678_0.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_pkg_ovti9734_0.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_pkg_ovti9738_0.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_skucfg_hi556_0_1.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_skucfg_himx11b1_0_1.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_skucfg_himx2170_0_1.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_skucfg_himx2172_0_1.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_skucfg_int3537_0_1.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_skucfg_ovti01a0_0_1.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_skucfg_ovti01af_0_1.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_skucfg_ovti01as_0_1.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_skucfg_ovti02c1_0_1.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_skucfg_ovti02e1_0_1.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_skucfg_ovti2740_0_1.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_skucfg_ovti5678_0_1.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_skucfg_ovti9734_0_1.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_skucfg_ovti9738_0_1.bin" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>
