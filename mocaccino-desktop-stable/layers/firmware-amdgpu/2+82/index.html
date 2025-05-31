@@ -1,0 +1,1463 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing layers/firmware-amdgpu-2&#43;82 in mocaccino-desktop-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> layers/firmware-amdgpu-2&#43;82
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-desktop-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-desktop-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of layers/firmware-amdgpu
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/desktop:firmware-amdgpu-layers-2-82" target="_blank"> quay.io/mocaccino/desktop:firmware-amdgpu-layers-2-82 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/desktop:firmware-amdgpu-layers-2-82/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 2&#43;82  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong>  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "usr\/lib\/firmware\/amdgpu\/aldebaran_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/aldebaran_mec2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/aldebaran_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/aldebaran_sdma.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/aldebaran_sjt_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/aldebaran_sjt_mec2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/aldebaran_smc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/aldebaran_sos.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/aldebaran_ta.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/aldebaran_vcn.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/arcturus_asd.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/arcturus_gpu_info.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/arcturus_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/arcturus_mec2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/arcturus_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/arcturus_sdma.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/arcturus_smc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/arcturus_sos.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/arcturus_ta.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/arcturus_vcn.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/banks_k_2_smc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/beige_goby_ce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/beige_goby_dmcub.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/beige_goby_me.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/beige_goby_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/beige_goby_mec2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/beige_goby_pfp.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/beige_goby_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/beige_goby_sdma.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/beige_goby_smc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/beige_goby_sos.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/beige_goby_ta.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/beige_goby_vcn.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/bonaire_ce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/bonaire_k_smc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/bonaire_mc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/bonaire_me.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/bonaire_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/bonaire_pfp.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/bonaire_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/bonaire_sdma.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/bonaire_sdma1.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/bonaire_smc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/bonaire_uvd.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/bonaire_vce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/carrizo_ce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/carrizo_me.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/carrizo_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/carrizo_mec2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/carrizo_pfp.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/carrizo_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/carrizo_sdma.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/carrizo_sdma1.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/carrizo_uvd.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/carrizo_vce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/cyan_skillfish2_ce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/cyan_skillfish2_me.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/cyan_skillfish2_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/cyan_skillfish2_mec2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/cyan_skillfish2_pfp.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/cyan_skillfish2_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/cyan_skillfish2_sdma.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/cyan_skillfish2_sdma1.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/dcn_3_1_4_dmcub.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/dcn_3_1_5_dmcub.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/dcn_3_1_6_dmcub.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/dcn_3_2_0_dmcub.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/dcn_3_2_1_dmcub.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/dcn_3_5_1_dmcub.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/dcn_3_5_dmcub.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/dcn_4_0_1_dmcub.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/dimgrey_cavefish_ce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/dimgrey_cavefish_dmcub.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/dimgrey_cavefish_me.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/dimgrey_cavefish_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/dimgrey_cavefish_mec2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/dimgrey_cavefish_pfp.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/dimgrey_cavefish_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/dimgrey_cavefish_sdma.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/dimgrey_cavefish_smc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/dimgrey_cavefish_sos.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/dimgrey_cavefish_ta.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/dimgrey_cavefish_vcn.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/fiji_ce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/fiji_mc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/fiji_me.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/fiji_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/fiji_mec2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/fiji_pfp.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/fiji_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/fiji_sdma.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/fiji_sdma1.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/fiji_smc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/fiji_uvd.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/fiji_vce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_10_3_6_ce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_10_3_6_me.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_10_3_6_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_10_3_6_mec2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_10_3_6_pfp.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_10_3_6_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_10_3_7_ce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_10_3_7_me.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_10_3_7_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_10_3_7_mec2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_10_3_7_pfp.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_10_3_7_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_0_0_imu.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_0_0_me.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_0_0_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_0_0_mes.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_0_0_mes1.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_0_0_mes_2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_0_0_pfp.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_0_0_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_0_0_rlc_1.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_0_1_imu.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_0_1_me.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_0_1_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_0_1_mes.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_0_1_mes1.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_0_1_mes_2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_0_1_pfp.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_0_1_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_0_2_imu.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_0_2_me.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_0_2_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_0_2_mes.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_0_2_mes1.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_0_2_mes_2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_0_2_pfp.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_0_2_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_0_3_imu.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_0_3_me.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_0_3_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_0_3_mes1.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_0_3_mes_2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_0_3_pfp.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_0_3_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_0_4_imu.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_0_4_me.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_0_4_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_0_4_mes.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_0_4_mes1.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_0_4_mes_2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_0_4_pfp.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_0_4_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_5_0_imu.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_5_0_me.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_5_0_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_5_0_mes1.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_5_0_mes_2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_5_0_pfp.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_5_0_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_5_1_imu.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_5_1_me.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_5_1_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_5_1_mes1.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_5_1_mes_2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_5_1_pfp.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_5_1_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_5_2_imu.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_5_2_me.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_5_2_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_5_2_mes1.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_5_2_mes_2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_5_2_pfp.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_11_5_2_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_12_0_0_imu.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_12_0_0_me.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_12_0_0_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_12_0_0_mes.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_12_0_0_mes1.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_12_0_0_pfp.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_12_0_0_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_12_0_0_toc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_12_0_0_uni_mes.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_12_0_1_imu.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_12_0_1_me.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_12_0_1_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_12_0_1_mes.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_12_0_1_mes1.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_12_0_1_pfp.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_12_0_1_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_12_0_1_toc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_12_0_1_uni_mes.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_9_4_3_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_9_4_3_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_9_4_3_sjt_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_9_4_4_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_9_4_4_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/gc_9_4_4_sjt_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/green_sardine_asd.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/green_sardine_ce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/green_sardine_dmcub.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/green_sardine_me.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/green_sardine_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/green_sardine_mec2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/green_sardine_pfp.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/green_sardine_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/green_sardine_sdma.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/green_sardine_ta.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/green_sardine_vcn.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/hainan_ce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/hainan_k_smc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/hainan_mc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/hainan_me.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/hainan_pfp.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/hainan_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/hainan_smc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/hawaii_ce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/hawaii_k_smc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/hawaii_mc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/hawaii_me.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/hawaii_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/hawaii_pfp.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/hawaii_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/hawaii_sdma.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/hawaii_sdma1.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/hawaii_smc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/hawaii_uvd.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/hawaii_vce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/isp_4_1_1.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/kabini_ce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/kabini_me.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/kabini_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/kabini_pfp.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/kabini_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/kabini_sdma.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/kabini_sdma1.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/kabini_uvd.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/kabini_vce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/kaveri_ce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/kaveri_me.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/kaveri_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/kaveri_mec2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/kaveri_pfp.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/kaveri_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/kaveri_sdma.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/kaveri_sdma1.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/kaveri_uvd.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/kaveri_vce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/mullins_ce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/mullins_me.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/mullins_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/mullins_pfp.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/mullins_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/mullins_sdma.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/mullins_sdma1.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/mullins_uvd.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/mullins_vce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navi10_asd.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navi10_ce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navi10_gpu_info.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navi10_me.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navi10_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navi10_mec2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navi10_pfp.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navi10_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navi10_sdma.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navi10_sdma1.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navi10_smc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navi10_sos.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navi10_ta.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navi10_vcn.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navi12_asd.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navi12_ce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navi12_dmcu.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navi12_gpu_info.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navi12_me.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navi12_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navi12_mec2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navi12_pfp.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navi12_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navi12_sdma.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navi12_sdma1.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navi12_smc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navi12_sos.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navi12_ta.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navi12_vcn.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navi14_asd.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navi14_ce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navi14_ce_wks.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navi14_gpu_info.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navi14_me.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navi14_me_wks.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navi14_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navi14_mec2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navi14_mec2_wks.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navi14_mec_wks.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navi14_pfp.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navi14_pfp_wks.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navi14_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navi14_sdma.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navi14_sdma1.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navi14_smc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navi14_sos.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navi14_ta.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navi14_vcn.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navy_flounder_ce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navy_flounder_dmcub.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navy_flounder_me.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navy_flounder_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navy_flounder_mec2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navy_flounder_pfp.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navy_flounder_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navy_flounder_sdma.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navy_flounder_smc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navy_flounder_sos.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navy_flounder_ta.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/navy_flounder_vcn.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/oland_ce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/oland_k_smc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/oland_mc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/oland_me.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/oland_pfp.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/oland_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/oland_smc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/oland_uvd.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/picasso_asd.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/picasso_ce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/picasso_gpu_info.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/picasso_me.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/picasso_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/picasso_mec2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/picasso_pfp.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/picasso_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/picasso_rlc_am4.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/picasso_sdma.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/picasso_ta.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/picasso_vcn.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/pitcairn_ce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/pitcairn_k_smc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/pitcairn_mc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/pitcairn_me.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/pitcairn_pfp.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/pitcairn_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/pitcairn_smc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/pitcairn_uvd.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris10_ce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris10_ce_2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris10_k2_smc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris10_k_mc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris10_k_smc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris10_mc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris10_me.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris10_me_2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris10_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris10_mec2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris10_mec2_2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris10_mec_2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris10_pfp.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris10_pfp_2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris10_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris10_sdma.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris10_sdma1.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris10_smc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris10_smc_sk.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris10_uvd.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris10_vce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris11_ce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris11_ce_2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris11_k2_smc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris11_k_mc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris11_k_smc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris11_mc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris11_me.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris11_me_2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris11_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris11_mec2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris11_mec2_2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris11_mec_2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris11_pfp.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris11_pfp_2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris11_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris11_sdma.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris11_sdma1.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris11_smc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris11_smc_sk.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris11_uvd.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris11_vce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris12_32_mc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris12_ce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris12_ce_2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris12_k_mc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris12_k_smc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris12_mc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris12_me.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris12_me_2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris12_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris12_mec2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris12_mec2_2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris12_mec_2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris12_pfp.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris12_pfp_2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris12_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris12_sdma.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris12_sdma1.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris12_smc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris12_uvd.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/polaris12_vce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/psp_13_0_0_sos.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/psp_13_0_0_ta.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/psp_13_0_10_sos.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/psp_13_0_10_ta.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/psp_13_0_11_ta.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/psp_13_0_11_toc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/psp_13_0_14_sos.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/psp_13_0_14_ta.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/psp_13_0_4_ta.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/psp_13_0_4_toc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/psp_13_0_5_asd.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/psp_13_0_5_ta.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/psp_13_0_5_toc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/psp_13_0_6_sos.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/psp_13_0_6_ta.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/psp_13_0_7_sos.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/psp_13_0_7_ta.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/psp_13_0_8_asd.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/psp_13_0_8_ta.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/psp_13_0_8_toc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/psp_14_0_0_ta.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/psp_14_0_0_toc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/psp_14_0_1_ta.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/psp_14_0_1_toc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/psp_14_0_2_sos.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/psp_14_0_2_ta.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/psp_14_0_3_sos.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/psp_14_0_3_ta.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/psp_14_0_4_ta.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/psp_14_0_4_toc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/raven2_asd.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/raven2_ce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/raven2_gpu_info.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/raven2_me.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/raven2_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/raven2_mec2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/raven2_pfp.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/raven2_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/raven2_sdma.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/raven2_ta.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/raven2_vcn.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/raven_asd.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/raven_ce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/raven_dmcu.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/raven_gpu_info.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/raven_kicker_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/raven_me.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/raven_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/raven_mec2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/raven_pfp.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/raven_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/raven_sdma.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/raven_ta.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/raven_vcn.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/renoir_asd.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/renoir_ce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/renoir_dmcub.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/renoir_gpu_info.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/renoir_me.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/renoir_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/renoir_mec2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/renoir_pfp.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/renoir_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/renoir_sdma.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/renoir_ta.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/renoir_vcn.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/sdma_4_4_2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/sdma_4_4_5.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/sdma_5_2_6.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/sdma_5_2_7.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/sdma_6_0_0.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/sdma_6_0_1.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/sdma_6_0_2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/sdma_6_0_3.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/sdma_6_1_0.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/sdma_6_1_1.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/sdma_6_1_2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/sdma_7_0_0.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/sdma_7_0_1.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/si58_mc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/sienna_cichlid_ce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/sienna_cichlid_dmcub.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/sienna_cichlid_me.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/sienna_cichlid_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/sienna_cichlid_mec2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/sienna_cichlid_pfp.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/sienna_cichlid_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/sienna_cichlid_sdma.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/sienna_cichlid_smc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/sienna_cichlid_sos.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/sienna_cichlid_ta.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/sienna_cichlid_vcn.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/smu_13_0_0.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/smu_13_0_10.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/smu_13_0_14.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/smu_13_0_6.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/smu_13_0_7.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/smu_14_0_2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/smu_14_0_3.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/stoney_ce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/stoney_me.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/stoney_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/stoney_pfp.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/stoney_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/stoney_sdma.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/stoney_uvd.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/stoney_vce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/tahiti_ce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/tahiti_k_smc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/tahiti_mc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/tahiti_me.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/tahiti_pfp.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/tahiti_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/tahiti_smc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/tahiti_uvd.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/tonga_ce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/tonga_k_smc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/tonga_mc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/tonga_me.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/tonga_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/tonga_mec2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/tonga_pfp.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/tonga_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/tonga_sdma.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/tonga_sdma1.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/tonga_smc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/tonga_uvd.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/tonga_vce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/topaz_ce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/topaz_k_smc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/topaz_mc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/topaz_me.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/topaz_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/topaz_mec2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/topaz_pfp.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/topaz_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/topaz_sdma.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/topaz_sdma1.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/topaz_smc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/umsch_mm_4_0_0.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vangogh_asd.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vangogh_ce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vangogh_dmcub.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vangogh_me.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vangogh_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vangogh_mec2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vangogh_pfp.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vangogh_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vangogh_sdma.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vangogh_toc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vangogh_vcn.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vcn_3_1_2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vcn_4_0_0.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vcn_4_0_2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vcn_4_0_3.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vcn_4_0_4.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vcn_4_0_5.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vcn_4_0_6.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vcn_4_0_6_1.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vcn_5_0_0.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vega10_acg_smc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vega10_asd.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vega10_ce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vega10_gpu_info.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vega10_me.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vega10_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vega10_mec2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vega10_pfp.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vega10_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vega10_sdma.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vega10_sdma1.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vega10_smc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vega10_sos.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vega10_uvd.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vega10_vce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vega12_asd.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vega12_ce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vega12_gpu_info.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vega12_me.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vega12_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vega12_mec2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vega12_pfp.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vega12_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vega12_sdma.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vega12_sdma1.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vega12_smc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vega12_sos.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vega12_uvd.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vega12_vce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vega20_asd.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vega20_ce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vega20_me.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vega20_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vega20_mec2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vega20_pfp.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vega20_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vega20_sdma.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vega20_sdma1.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vega20_smc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vega20_sos.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vega20_ta.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vega20_uvd.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vega20_vce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vegam_ce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vegam_me.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vegam_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vegam_mec2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vegam_pfp.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vegam_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vegam_sdma.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vegam_sdma1.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vegam_smc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vegam_uvd.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vegam_vce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/verde_ce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/verde_k_smc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/verde_mc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/verde_me.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/verde_pfp.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/verde_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/verde_smc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/verde_uvd.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vpe_6_1_0.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vpe_6_1_1.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/vpe_6_1_3.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/yellow_carp_asd.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/yellow_carp_ce.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/yellow_carp_dmcub.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/yellow_carp_me.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/yellow_carp_mec.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/yellow_carp_mec2.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/yellow_carp_pfp.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/yellow_carp_rlc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/yellow_carp_sdma.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/yellow_carp_ta.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/yellow_carp_toc.bin" ],
+            
+              [  "usr\/lib\/firmware\/amdgpu\/yellow_carp_vcn.bin" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>
