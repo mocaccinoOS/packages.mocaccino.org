@@ -1,0 +1,686 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing layers/fluxbox-1.3.7-r5&#43;65 in mocaccino-desktop-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> layers/fluxbox-1.3.7-r5&#43;65
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                X11 window manager featuring tabs and an iconbar
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-desktop-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-desktop-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of layers/fluxbox
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/desktop:fluxbox-layers-1.3.7-r5-65" target="_blank"> quay.io/mocaccino/desktop:fluxbox-layers-1.3.7-r5-65 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/desktop:fluxbox-layers-1.3.7-r5-65/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 1.3.7-r5&#43;65  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> MIT </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/X">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  X &gt;=0 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 3
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: x11-wm/fluxbox
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="http://www.fluxbox.org" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> http://www.fluxbox.org </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/x11-wm/fluxbox">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  fluxbox &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "etc\/X11\/Sessions\/fluxbox" ],
+            
+              [  "usr\/bin\/fbrun" ],
+            
+              [  "usr\/bin\/fbsetbg" ],
+            
+              [  "usr\/bin\/fbsetroot" ],
+            
+              [  "usr\/bin\/fluxbox" ],
+            
+              [  "usr\/bin\/fluxbox-generate_menu" ],
+            
+              [  "usr\/bin\/fluxbox-remote" ],
+            
+              [  "usr\/bin\/fluxbox-update_configs" ],
+            
+              [  "usr\/bin\/startfluxbox" ],
+            
+              [  "usr\/share\/fluxbox\/apps" ],
+            
+              [  "usr\/share\/fluxbox\/init" ],
+            
+              [  "usr\/share\/fluxbox\/keys" ],
+            
+              [  "usr\/share\/fluxbox\/menu" ],
+            
+              [  "usr\/share\/fluxbox\/menu.d\/styles\/styles-menu-commonbox" ],
+            
+              [  "usr\/share\/fluxbox\/menu.d\/styles\/styles-menu-fluxbox" ],
+            
+              [  "usr\/share\/fluxbox\/menu.d\/styles\/styles-menu-user" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/C\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/be_BY.CP1251\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/be_BY.UTF-8\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/bg_BG.CP1251\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/bg_BG.UTF-8\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/cs_CZ.ISO-8859-2\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/cs_CZ.UTF-8\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/da_DK.ISO-8859-1\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/da_DK.UTF-8\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/de_AT.ISO-8859-15\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/de_AT.UTF-8\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/de_CH.ISO-8859-15\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/de_CH.UTF-8\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/de_DE.ISO-8859-15\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/de_DE.UTF-8\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/el_GR.UTF-8\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/en_GB.ISO-8859-1\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/en_GB.UTF-8\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/en_US.ISO-8859-1\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/en_US.UTF-8\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/es_AR.ISO-8859-15\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/es_AR.UTF-8\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/es_ES.ISO-8859-15\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/es_ES.UTF-8\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/et_EE.ISO-8859-15\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/et_EE.UTF-8\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/fi_FI.ISO-8859-1\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/fi_FI.UTF-8\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/fr_CH.ISO-8859-15\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/fr_CH.UTF-8\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/fr_FR.ISO-8859-15\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/fr_FR.UTF-8\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/he_IL.UTF-8\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/it_IT.ISO-8859-1\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/it_IT.UTF-8\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/ja_JP.UTF-8\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/ja_JP.eucJP\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/ko_KR.EUC-KR\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/ko_KR.UTF-8\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/lv_LV.ISO-8859-13\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/lv_LV.UTF-8\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/mk_MK.UTF-8\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/nb_NO.UTF-8\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/nl_NL.ISO-8859-15\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/nl_NL.UTF-8\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/no_NO.ISO-8859-1\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/no_NO.UTF-8\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/pl_PL.ISO-8859-2\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/pl_PL.UTF-8\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/pt_BR.ISO-8859-1\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/pt_BR.UTF-8\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/pt_PT.ISO-8859-1\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/pt_PT.UTF-8\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/ru_RU.KOI8-R\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/ru_RU.UTF-8\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/sk_SK.ISO-8859-2\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/sk_SK.UTF-8\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/sl_SI.ISO-8859-2\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/sl_SI.UTF-8\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/sv_SE.ISO-8859-1\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/sv_SE.UTF-8\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/tr_TR.ISO-8859-9\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/tr_TR.UTF-8\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/uk_UA.KOI8-U\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/uk_UA.UTF-8\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/vi_VN.UTF-8\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/zh_CN.BIG5\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/zh_CN.GB18030\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/zh_CN.GB2312\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/zh_CN.GBK\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/zh_CN.UTF-8\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/nls\/zh_TW.UTF-8\/fluxbox.cat" ],
+            
+              [  "usr\/share\/fluxbox\/overlay" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/Artwiz" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/BlueFlux\/pixmaps\/button_close_active.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/BlueFlux\/pixmaps\/button_close_pressed.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/BlueFlux\/pixmaps\/button_close_unfocus.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/BlueFlux\/pixmaps\/button_max_active.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/BlueFlux\/pixmaps\/button_max_pressed.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/BlueFlux\/pixmaps\/button_max_unfocus.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/BlueFlux\/pixmaps\/button_min_active.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/BlueFlux\/pixmaps\/button_min_pressed.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/BlueFlux\/pixmaps\/button_min_unfocus.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/BlueFlux\/pixmaps\/button_stick_active.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/BlueFlux\/pixmaps\/button_stick_pressed.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/BlueFlux\/pixmaps\/button_stick_unfocus.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/BlueFlux\/pixmaps\/button_stuck.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/BlueFlux\/pixmaps\/button_stuck_unfocus.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/BlueFlux\/pixmaps\/button_toolbar.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/BlueFlux\/pixmaps\/button_toolbar_pressed.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/BlueFlux\/pixmaps\/menu_frame.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/BlueFlux\/pixmaps\/title_bar.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/BlueFlux\/pixmaps\/title_bar_unfocus.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/BlueFlux\/pixmaps\/toolbar.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/BlueFlux\/pixmaps\/toolbar_label.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/BlueFlux\/theme.cfg" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/BlueNight" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/Emerge\/pixmaps\/bullet.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/Emerge\/pixmaps\/close-pressed.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/Emerge\/pixmaps\/close-unfocus.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/Emerge\/pixmaps\/close.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/Emerge\/pixmaps\/icon-pressed.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/Emerge\/pixmaps\/icon-unfocus.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/Emerge\/pixmaps\/icon.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/Emerge\/pixmaps\/max-pressed.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/Emerge\/pixmaps\/max-unfocus.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/Emerge\/pixmaps\/max.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/Emerge\/pixmaps\/selected.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/Emerge\/pixmaps\/stick-pressed.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/Emerge\/pixmaps\/stick-unfocus.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/Emerge\/pixmaps\/stick.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/Emerge\/pixmaps\/stuck-pressed.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/Emerge\/pixmaps\/stuck-unfocus.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/Emerge\/pixmaps\/stuck.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/Emerge\/pixmaps\/unselected.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/Emerge\/theme.cfg" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/Flux" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/LemonSpace" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/Makro" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/MerleyKay" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/Meta" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/Nyz" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/Operation" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/Outcomes" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/Results" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/Shade" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/Twice" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/arch\/pixmaps\/bullet.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/arch\/pixmaps\/closefcs.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/arch\/pixmaps\/closepr.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/arch\/pixmaps\/closeufcs.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/arch\/pixmaps\/frame.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/arch\/pixmaps\/gripfcs.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/arch\/pixmaps\/maxfcs.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/arch\/pixmaps\/maxpr.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/arch\/pixmaps\/maxufcs.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/arch\/pixmaps\/menuiconfcs.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/arch\/pixmaps\/menuiconpr.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/arch\/pixmaps\/menuiconufcs.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/arch\/pixmaps\/minfcs.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/arch\/pixmaps\/minpr.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/arch\/pixmaps\/minufcs.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/arch\/pixmaps\/selected.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/arch\/pixmaps\/shadefcs.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/arch\/pixmaps\/shadepr.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/arch\/pixmaps\/shadeufcs.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/arch\/pixmaps\/stickfcs.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/arch\/pixmaps\/stickpr.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/arch\/pixmaps\/stickufcs.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/arch\/pixmaps\/stuckfcs.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/arch\/pixmaps\/stuckufcs.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/arch\/pixmaps\/tbarfcs.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/arch\/pixmaps\/tbarufcs.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/arch\/pixmaps\/unselected.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/arch\/pixmaps\/unshadefcs.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/arch\/pixmaps\/unshadepr.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/arch\/pixmaps\/unshadeufcs.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/arch\/theme.cfg" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/bloe\/pixmaps\/bullet.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/bloe\/pixmaps\/closefcs.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/bloe\/pixmaps\/closepr.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/bloe\/pixmaps\/closeufcs.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/bloe\/pixmaps\/frame.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/bloe\/pixmaps\/maxfcs.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/bloe\/pixmaps\/maxpr.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/bloe\/pixmaps\/maxufcs.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/bloe\/pixmaps\/menuiconfcs.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/bloe\/pixmaps\/menuiconpr.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/bloe\/pixmaps\/menuiconufcs.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/bloe\/pixmaps\/minfcs.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/bloe\/pixmaps\/minpr.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/bloe\/pixmaps\/minufcs.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/bloe\/pixmaps\/selected.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/bloe\/pixmaps\/shadefcs.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/bloe\/pixmaps\/shadepr.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/bloe\/pixmaps\/shadeufcs.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/bloe\/pixmaps\/stickfcs.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/bloe\/pixmaps\/stickpr.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/bloe\/pixmaps\/stickufcs.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/bloe\/pixmaps\/stuckfcs.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/bloe\/pixmaps\/stuckufcs.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/bloe\/pixmaps\/tbarfcs.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/bloe\/pixmaps\/tbarufcs.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/bloe\/pixmaps\/unselected.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/bloe\/pixmaps\/unshadefcs.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/bloe\/pixmaps\/unshadepr.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/bloe\/pixmaps\/unshadeufcs.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/bloe\/pixmaps\/windowlabelfcs.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/bloe\/pixmaps\/windowlabelufcs.xpm" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/bloe\/theme.cfg" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/bora_black\/theme.cfg" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/bora_blue\/theme.cfg" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/bora_green\/theme.cfg" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/carp\/theme.cfg" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/green_tea\/theme.cfg" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/ostrich\/theme.cfg" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/qnx-photon" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/zimek_bisque\/theme.cfg" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/zimek_darkblue\/theme.cfg" ],
+            
+              [  "usr\/share\/fluxbox\/styles\/zimek_green\/theme.cfg" ],
+            
+              [  "usr\/share\/fluxbox\/windowmenu" ],
+            
+              [  "usr\/share\/man\/man1\/fbrun.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/fbsetbg.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/fbsetroot.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/fluxbox-remote.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/fluxbox.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/startfluxbox.1.bz2" ],
+            
+              [  "usr\/share\/man\/man5\/fluxbox-apps.5.bz2" ],
+            
+              [  "usr\/share\/man\/man5\/fluxbox-keys.5.bz2" ],
+            
+              [  "usr\/share\/man\/man5\/fluxbox-menu.5.bz2" ],
+            
+              [  "usr\/share\/man\/man5\/fluxbox-style.5.bz2" ],
+            
+              [  "usr\/share\/xsessions\/fluxbox.desktop" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,1042 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing layers/firmware-20250311 in mocaccino-desktop-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> layers/firmware-20250311
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-desktop-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-desktop-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of layers/firmware
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/desktop:firmware-layers-20250311" target="_blank"> quay.io/mocaccino/desktop:firmware-layers-20250311 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/desktop:firmware-layers-20250311/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 20250311  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong>  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/firmware-amd">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  firmware-amd &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/firmware-amdgpu">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  firmware-amdgpu &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/firmware-amd-ucode">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  firmware-amd-ucode &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/firmware-ar3k">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  firmware-ar3k &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/firmware-ath10k">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  firmware-ath10k &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/firmware-b43">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  firmware-b43 &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/firmware-brcm">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  firmware-brcm &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/firmware-i915">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  firmware-i915 &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/firmware-intel">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  firmware-intel &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/firmware-mediatek">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  firmware-mediatek &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/firmware-nvidia">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  firmware-nvidia &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/firmware-radeon">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  firmware-radeon &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/firmware-rtl_bt">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  firmware-rtl_bt &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/firmware-rtl_nic">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  firmware-rtl_nic &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/firmware-rtlwifi">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  firmware-rtlwifi &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/firmware-xe">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  firmware-xe &gt;=0 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: sys-firmware/b43-firmware sys-kernel/linux-firmware
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/sys-firmware/b43-firmware">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  b43-firmware &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/sys-kernel/linux-firmware">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  linux-firmware &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "usr\/lib\/firmware\/INT8866RCA2.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX0C94.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX0C95.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX0C96.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX0C97.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX103C8DE8-0.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX103C8DE8-1.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX103C8DE80.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX103C8DE81.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX103C8DE9-0.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX103C8DE9-1.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX103C8DE90.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX103C8DE91.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX10A40.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX10A41.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX11540.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX11541.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX12040.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX12041.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX12140.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX12141.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX1EB3.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX1EB30.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX1EB31.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX2234.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX2326.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX3870.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX387D.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX387E.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX387F.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX3880.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX3881.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX3882.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX3884.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX3886.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX38A5.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX38A7.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX38A8.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX38B8.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX38B9.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX38BA.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX38BB.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX38BE.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX38BF.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX38C3.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX38CB.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX38CD.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX38D3.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX38D4.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX38D5.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX38D6.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX38DF.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX38E0.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX38FD.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX391F.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX3920.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX3E300.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX3E301.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX3EE00.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX3EE01.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX3EF00.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX3EF01.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX3F000.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX3F001.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX3F100.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX3F101.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX3F200.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX3F201.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX3F300.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX3F301.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX8DE8.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX8DE80.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX8DE81.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX8DE9.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX8DE90.bin" ],
+            
+              [  "usr\/lib\/firmware\/TAS2XXX8DE91.bin" ],
+            
+              [  "usr\/lib\/firmware\/TIAS2781RCA2.bin" ],
+            
+              [  "usr\/lib\/firmware\/TIAS2781RCA4.bin" ],
+            
+              [  "usr\/lib\/firmware\/TXNW2781RCA0.bin" ],
+            
+              [  "usr\/lib\/firmware\/TXNW2781RCA1.bin" ],
+            
+              [  "usr\/lib\/firmware\/TXNW2781RCA2.bin" ],
+            
+              [  "usr\/lib\/firmware\/TXNW2781RCA4.bin" ],
+            
+              [  "usr\/lib\/firmware\/a300_pfp.fw" ],
+            
+              [  "usr\/lib\/firmware\/a300_pm4.fw" ],
+            
+              [  "usr\/lib\/firmware\/agere_ap_fw.bin" ],
+            
+              [  "usr\/lib\/firmware\/agere_sta_fw.bin" ],
+            
+              [  "usr\/lib\/firmware\/ar5523.bin" ],
+            
+              [  "usr\/lib\/firmware\/ar7010.fw" ],
+            
+              [  "usr\/lib\/firmware\/ar7010_1_1.fw" ],
+            
+              [  "usr\/lib\/firmware\/ar9170-1.fw" ],
+            
+              [  "usr\/lib\/firmware\/ar9170-2.fw" ],
+            
+              [  "usr\/lib\/firmware\/ar9271.fw" ],
+            
+              [  "usr\/lib\/firmware\/as102_data1_st.hex" ],
+            
+              [  "usr\/lib\/firmware\/as102_data2_st.hex" ],
+            
+              [  "usr\/lib\/firmware\/ath3k-1.fw" ],
+            
+              [  "usr\/lib\/firmware\/carl9170-1.fw" ],
+            
+              [  "usr\/lib\/firmware\/cbfw-3.2.5.1.bin" ],
+            
+              [  "usr\/lib\/firmware\/cmmb_vega_12mhz.inp" ],
+            
+              [  "usr\/lib\/firmware\/cmmb_venice_12mhz.inp" ],
+            
+              [  "usr\/lib\/firmware\/cs42l43.bin" ],
+            
+              [  "usr\/lib\/firmware\/ct2fw-3.2.5.1.bin" ],
+            
+              [  "usr\/lib\/firmware\/ctefx.bin" ],
+            
+              [  "usr\/lib\/firmware\/ctfw-3.2.5.1.bin" ],
+            
+              [  "usr\/lib\/firmware\/ctspeq.bin" ],
+            
+              [  "usr\/lib\/firmware\/dvb-fe-xc4000-1.4.1.fw" ],
+            
+              [  "usr\/lib\/firmware\/dvb-fe-xc5000-1.6.114.fw" ],
+            
+              [  "usr\/lib\/firmware\/dvb-fe-xc5000c-4.1.30.7.fw" ],
+            
+              [  "usr\/lib\/firmware\/dvb-usb-dib0700-1.20.fw" ],
+            
+              [  "usr\/lib\/firmware\/dvb-usb-it9135-01.fw" ],
+            
+              [  "usr\/lib\/firmware\/dvb-usb-it9135-02.fw" ],
+            
+              [  "usr\/lib\/firmware\/dvb-usb-terratec-h5-drxk.fw" ],
+            
+              [  "usr\/lib\/firmware\/dvb_nova_12mhz.inp" ],
+            
+              [  "usr\/lib\/firmware\/dvb_nova_12mhz_b0.inp" ],
+            
+              [  "usr\/lib\/firmware\/f2255usb.bin" ],
+            
+              [  "usr\/lib\/firmware\/hfi1_dc8051.fw" ],
+            
+              [  "usr\/lib\/firmware\/hfi1_fabric.fw" ],
+            
+              [  "usr\/lib\/firmware\/hfi1_pcie.fw" ],
+            
+              [  "usr\/lib\/firmware\/hfi1_sbus.fw" ],
+            
+              [  "usr\/lib\/firmware\/htc_7010.fw" ],
+            
+              [  "usr\/lib\/firmware\/htc_9271.fw" ],
+            
+              [  "usr\/lib\/firmware\/isdbt_nova_12mhz.inp" ],
+            
+              [  "usr\/lib\/firmware\/isdbt_nova_12mhz_b0.inp" ],
+            
+              [  "usr\/lib\/firmware\/isdbt_rio.inp" ],
+            
+              [  "usr\/lib\/firmware\/isight.fw" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-100-5.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-1000-5.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-105-6.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-135-6.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-2000-6.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-2030-6.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-3160-17.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-3168-29.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-3945-2.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-4965-2.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-5000-5.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-5150-2.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-6000-4.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-6000g2a-6.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-6000g2b-6.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-6050-5.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-7260-17.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-7265-17.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-7265D-29.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-8000C-34.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-8000C-36.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-8265-34.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-8265-36.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-9000-pu-b0-jf-b0-34.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-9000-pu-b0-jf-b0-38.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-9000-pu-b0-jf-b0-46.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-9260-th-b0-jf-b0-34.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-9260-th-b0-jf-b0-38.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-9260-th-b0-jf-b0-46.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-Qu-b0-hr-b0-50.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-Qu-b0-hr-b0-59.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-Qu-b0-hr-b0-66.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-Qu-b0-hr-b0-72.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-Qu-b0-hr-b0-73.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-Qu-b0-hr-b0-74.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-Qu-b0-hr-b0-77.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-Qu-b0-jf-b0-50.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-Qu-b0-jf-b0-59.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-Qu-b0-jf-b0-66.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-Qu-b0-jf-b0-72.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-Qu-b0-jf-b0-73.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-Qu-b0-jf-b0-74.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-Qu-b0-jf-b0-77.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-Qu-c0-hr-b0-50.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-Qu-c0-hr-b0-59.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-Qu-c0-hr-b0-66.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-Qu-c0-hr-b0-72.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-Qu-c0-hr-b0-73.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-Qu-c0-hr-b0-74.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-Qu-c0-hr-b0-77.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-Qu-c0-jf-b0-50.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-Qu-c0-jf-b0-59.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-Qu-c0-jf-b0-66.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-Qu-c0-jf-b0-72.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-Qu-c0-jf-b0-73.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-Qu-c0-jf-b0-74.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-Qu-c0-jf-b0-77.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-QuZ-a0-hr-b0-50.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-QuZ-a0-hr-b0-59.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-QuZ-a0-hr-b0-66.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-QuZ-a0-hr-b0-72.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-QuZ-a0-hr-b0-73.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-QuZ-a0-hr-b0-74.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-QuZ-a0-hr-b0-77.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-QuZ-a0-jf-b0-50.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-QuZ-a0-jf-b0-59.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-QuZ-a0-jf-b0-66.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-QuZ-a0-jf-b0-72.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-QuZ-a0-jf-b0-73.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-QuZ-a0-jf-b0-74.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-QuZ-a0-jf-b0-77.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-bz-b0-fm-c0-92.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-bz-b0-fm-c0-93.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-bz-b0-fm-c0-94.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-bz-b0-fm-c0-96.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-bz-b0-fm-c0.pnvm" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-bz-b0-gf-a0-92.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-bz-b0-gf-a0-94.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-bz-b0-gf-a0-96.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-bz-b0-gf-a0.pnvm" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-cc-a0-50.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-cc-a0-59.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-cc-a0-66.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-cc-a0-72.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-cc-a0-73.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-cc-a0-74.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-cc-a0-77.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-gl-c0-fm-c0-83.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-gl-c0-fm-c0-86.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-gl-c0-fm-c0-90.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-gl-c0-fm-c0-92.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-gl-c0-fm-c0-94.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-gl-c0-fm-c0-96.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-gl-c0-fm-c0.pnvm" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-ma-b0-gf-a0-83.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-ma-b0-gf-a0-86.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-ma-b0-gf-a0-89.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-ma-b0-gf-a0.pnvm" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-ma-b0-gf4-a0-83.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-ma-b0-gf4-a0-86.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-ma-b0-gf4-a0-89.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-ma-b0-gf4-a0.pnvm" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-ma-b0-hr-b0-83.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-ma-b0-hr-b0-86.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-ma-b0-hr-b0-89.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-so-a0-gf-a0-72.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-so-a0-gf-a0-73.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-so-a0-gf-a0-74.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-so-a0-gf-a0-77.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-so-a0-gf-a0-78.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-so-a0-gf-a0-79.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-so-a0-gf-a0-81.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-so-a0-gf-a0-83.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-so-a0-gf-a0-84.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-so-a0-gf-a0-86.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-so-a0-gf-a0-89.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-so-a0-gf-a0.pnvm" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-so-a0-gf4-a0-72.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-so-a0-gf4-a0-73.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-so-a0-gf4-a0-74.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-so-a0-gf4-a0-77.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-so-a0-gf4-a0-78.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-so-a0-gf4-a0-79.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-so-a0-gf4-a0-81.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-so-a0-gf4-a0-83.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-so-a0-gf4-a0-84.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-so-a0-gf4-a0-86.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-so-a0-gf4-a0-89.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-so-a0-gf4-a0.pnvm" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-so-a0-hr-b0-72.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-so-a0-hr-b0-73.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-so-a0-hr-b0-74.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-so-a0-hr-b0-77.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-so-a0-hr-b0-79.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-so-a0-hr-b0-81.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-so-a0-hr-b0-83.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-so-a0-hr-b0-84.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-so-a0-hr-b0-86.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-so-a0-hr-b0-89.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-so-a0-jf-b0-72.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-so-a0-jf-b0-73.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-so-a0-jf-b0-74.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-so-a0-jf-b0-77.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-ty-a0-gf-a0-59.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-ty-a0-gf-a0-66.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-ty-a0-gf-a0-72.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-ty-a0-gf-a0-73.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-ty-a0-gf-a0-74.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-ty-a0-gf-a0-77.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-ty-a0-gf-a0-78.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-ty-a0-gf-a0-79.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-ty-a0-gf-a0-81.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-ty-a0-gf-a0-83.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-ty-a0-gf-a0-84.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-ty-a0-gf-a0-86.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-ty-a0-gf-a0-89.ucode" ],
+            
+              [  "usr\/lib\/firmware\/iwlwifi-ty-a0-gf-a0.pnvm" ],
+            
+              [  "usr\/lib\/firmware\/lbtf_usb.bin" ],
+            
+              [  "usr\/lib\/firmware\/lgs8g75.fw" ],
+            
+              [  "usr\/lib\/firmware\/lt9611uxc_fw.bin" ],
+            
+              [  "usr\/lib\/firmware\/mt7601u.bin" ],
+            
+              [  "usr\/lib\/firmware\/mt7650.bin" ],
+            
+              [  "usr\/lib\/firmware\/mt7662.bin" ],
+            
+              [  "usr\/lib\/firmware\/mt7662_rom_patch.bin" ],
+            
+              [  "usr\/lib\/firmware\/mts_cdma.fw" ],
+            
+              [  "usr\/lib\/firmware\/mts_edge.fw" ],
+            
+              [  "usr\/lib\/firmware\/mts_gsm.fw" ],
+            
+              [  "usr\/lib\/firmware\/mts_mt9234mu.fw" ],
+            
+              [  "usr\/lib\/firmware\/mts_mt9234zba.fw" ],
+            
+              [  "usr\/lib\/firmware\/myri10ge_eth_big_z8e.dat" ],
+            
+              [  "usr\/lib\/firmware\/myri10ge_eth_z8e.dat" ],
+            
+              [  "usr\/lib\/firmware\/myri10ge_ethp_big_z8e.dat" ],
+            
+              [  "usr\/lib\/firmware\/myri10ge_ethp_z8e.dat" ],
+            
+              [  "usr\/lib\/firmware\/myri10ge_rss_eth_big_z8e.dat" ],
+            
+              [  "usr\/lib\/firmware\/myri10ge_rss_eth_z8e.dat" ],
+            
+              [  "usr\/lib\/firmware\/myri10ge_rss_ethp_big_z8e.dat" ],
+            
+              [  "usr\/lib\/firmware\/myri10ge_rss_ethp_z8e.dat" ],
+            
+              [  "usr\/lib\/firmware\/phanfw.bin" ],
+            
+              [  "usr\/lib\/firmware\/qat_402xx.bin" ],
+            
+              [  "usr\/lib\/firmware\/qat_402xx_mmp.bin" ],
+            
+              [  "usr\/lib\/firmware\/qat_420xx.bin" ],
+            
+              [  "usr\/lib\/firmware\/qat_420xx_mmp.bin" ],
+            
+              [  "usr\/lib\/firmware\/qat_4xxx.bin" ],
+            
+              [  "usr\/lib\/firmware\/qat_4xxx_mmp.bin" ],
+            
+              [  "usr\/lib\/firmware\/qat_895xcc.bin" ],
+            
+              [  "usr\/lib\/firmware\/qat_895xcc_mmp.bin" ],
+            
+              [  "usr\/lib\/firmware\/qat_c3xxx.bin" ],
+            
+              [  "usr\/lib\/firmware\/qat_c3xxx_mmp.bin" ],
+            
+              [  "usr\/lib\/firmware\/qat_c62x.bin" ],
+            
+              [  "usr\/lib\/firmware\/qat_c62x_mmp.bin" ],
+            
+              [  "usr\/lib\/firmware\/qat_mmp.bin" ],
+            
+              [  "usr\/lib\/firmware\/ql2100_fw.bin" ],
+            
+              [  "usr\/lib\/firmware\/ql2200_fw.bin" ],
+            
+              [  "usr\/lib\/firmware\/ql2300_fw.bin" ],
+            
+              [  "usr\/lib\/firmware\/ql2322_fw.bin" ],
+            
+              [  "usr\/lib\/firmware\/ql2400_fw.bin" ],
+            
+              [  "usr\/lib\/firmware\/ql2500_fw.bin" ],
+            
+              [  "usr\/lib\/firmware\/r8a779x_usb3_v1.dlmem" ],
+            
+              [  "usr\/lib\/firmware\/r8a779x_usb3_v2.dlmem" ],
+            
+              [  "usr\/lib\/firmware\/r8a779x_usb3_v3.dlmem" ],
+            
+              [  "usr\/lib\/firmware\/rp2.fw" ],
+            
+              [  "usr\/lib\/firmware\/rsi_91x.fw" ],
+            
+              [  "usr\/lib\/firmware\/rt2561.bin" ],
+            
+              [  "usr\/lib\/firmware\/rt2561s.bin" ],
+            
+              [  "usr\/lib\/firmware\/rt2661.bin" ],
+            
+              [  "usr\/lib\/firmware\/rt2860.bin" ],
+            
+              [  "usr\/lib\/firmware\/rt2870.bin" ],
+            
+              [  "usr\/lib\/firmware\/rt3070.bin" ],
+            
+              [  "usr\/lib\/firmware\/rt3071.bin" ],
+            
+              [  "usr\/lib\/firmware\/rt3090.bin" ],
+            
+              [  "usr\/lib\/firmware\/rt3290.bin" ],
+            
+              [  "usr\/lib\/firmware\/rt73.bin" ],
+            
+              [  "usr\/lib\/firmware\/s2250.fw" ],
+            
+              [  "usr\/lib\/firmware\/s2250_loader.fw" ],
+            
+              [  "usr\/lib\/firmware\/s5p-mfc-v12.fw" ],
+            
+              [  "usr\/lib\/firmware\/s5p-mfc-v6-v2.fw" ],
+            
+              [  "usr\/lib\/firmware\/s5p-mfc-v6.fw" ],
+            
+              [  "usr\/lib\/firmware\/s5p-mfc-v7.fw" ],
+            
+              [  "usr\/lib\/firmware\/s5p-mfc-v8.fw" ],
+            
+              [  "usr\/lib\/firmware\/s5p-mfc.fw" ],
+            
+              [  "usr\/lib\/firmware\/sdd_sagrad_1091_1098.bin" ],
+            
+              [  "usr\/lib\/firmware\/sms1xxx-hcw-55xxx-dvbt-02.fw" ],
+            
+              [  "usr\/lib\/firmware\/sms1xxx-hcw-55xxx-isdbt-02.fw" ],
+            
+              [  "usr\/lib\/firmware\/sms1xxx-nova-a-dvbt-01.fw" ],
+            
+              [  "usr\/lib\/firmware\/sms1xxx-nova-b-dvbt-01.fw" ],
+            
+              [  "usr\/lib\/firmware\/sms1xxx-stellar-dvbt-01.fw" ],
+            
+              [  "usr\/lib\/firmware\/tdmb_nova_12mhz.inp" ],
+            
+              [  "usr\/lib\/firmware\/ti_3410.fw" ],
+            
+              [  "usr\/lib\/firmware\/ti_5052.fw" ],
+            
+              [  "usr\/lib\/firmware\/tlg2300_firmware.bin" ],
+            
+              [  "usr\/lib\/firmware\/tsse_firmware.bin" ],
+            
+              [  "usr\/lib\/firmware\/usbdux_firmware.bin" ],
+            
+              [  "usr\/lib\/firmware\/usbduxfast_firmware.bin" ],
+            
+              [  "usr\/lib\/firmware\/usbduxsigma_firmware.bin" ],
+            
+              [  "usr\/lib\/firmware\/v4l-cx231xx-avcore-01.fw" ],
+            
+              [  "usr\/lib\/firmware\/v4l-cx23418-apu.fw" ],
+            
+              [  "usr\/lib\/firmware\/v4l-cx23418-cpu.fw" ],
+            
+              [  "usr\/lib\/firmware\/v4l-cx23418-dig.fw" ],
+            
+              [  "usr\/lib\/firmware\/v4l-cx23885-avcore-01.fw" ],
+            
+              [  "usr\/lib\/firmware\/v4l-cx25840.fw" ],
+            
+              [  "usr\/lib\/firmware\/vntwusb.fw" ],
+            
+              [  "usr\/lib\/firmware\/vpu_d.bin" ],
+            
+              [  "usr\/lib\/firmware\/vpu_p.bin" ],
+            
+              [  "usr\/lib\/firmware\/whiteheat.fw" ],
+            
+              [  "usr\/lib\/firmware\/whiteheat_loader.fw" ],
+            
+              [  "usr\/lib\/firmware\/wil6210.brd" ],
+            
+              [  "usr\/lib\/firmware\/wil6210.fw" ],
+            
+              [  "usr\/lib\/firmware\/wsm_22.bin" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

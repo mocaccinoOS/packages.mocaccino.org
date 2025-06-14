@@ -1,0 +1,1446 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing apps/vlc-4_pre20250607 in mocaccino-desktop-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> apps/vlc-4_pre20250607
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                Media player and framework with support for most multimedia files and streaming
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-desktop-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-desktop-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of apps/vlc
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/desktop:vlc-apps-4_pre20250607" target="_blank"> quay.io/mocaccino/desktop:vlc-apps-4_pre20250607 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/desktop:vlc-apps-4_pre20250607/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 4_pre20250607  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> LGPL-2.1 GPL-2 </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/kde-common">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  kde-common &gt;=0 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: =media-video/vlc-9999
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://www.videolan.org/vlc" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://www.videolan.org/vlc </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/media-video/vlc">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  vlc &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/net-libs/libmicrodns">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  libmicrodns &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "usr\/bin\/cvlc" ],
+            
+              [  "usr\/bin\/nvlc" ],
+            
+              [  "usr\/bin\/qvlc" ],
+            
+              [  "usr\/bin\/rvlc" ],
+            
+              [  "usr\/bin\/svlc" ],
+            
+              [  "usr\/bin\/vlc" ],
+            
+              [  "usr\/bin\/vlc-wrapper" ],
+            
+              [  "usr\/lib64\/libliveMedia.so.115" ],
+            
+              [  "usr\/lib64\/libliveMedia.so.115.0.7" ],
+            
+              [  "usr\/lib64\/libmicrodns.so" ],
+            
+              [  "usr\/lib64\/libmicrodns.so.1" ],
+            
+              [  "usr\/lib64\/libmicrodns.so.1.0.0" ],
+            
+              [  "usr\/lib64\/libvlc.so" ],
+            
+              [  "usr\/lib64\/libvlc.so.12" ],
+            
+              [  "usr\/lib64\/libvlc.so.12.0.0" ],
+            
+              [  "usr\/lib64\/libvlccore.so" ],
+            
+              [  "usr\/lib64\/libvlccore.so.9" ],
+            
+              [  "usr\/lib64\/libvlccore.so.9.0.0" ],
+            
+              [  "usr\/lib64\/pkgconfig\/libvlc.pc" ],
+            
+              [  "usr\/lib64\/pkgconfig\/microdns.pc" ],
+            
+              [  "usr\/lib64\/pkgconfig\/vlc-plugin.pc" ],
+            
+              [  "usr\/lib64\/vlc\/libcompat.a" ],
+            
+              [  "usr\/lib64\/vlc\/libvlc_pipewire.so" ],
+            
+              [  "usr\/lib64\/vlc\/libvlc_pipewire.so.0" ],
+            
+              [  "usr\/lib64\/vlc\/libvlc_pipewire.so.0.0.0" ],
+            
+              [  "usr\/lib64\/vlc\/libvlc_pulse.so" ],
+            
+              [  "usr\/lib64\/vlc\/libvlc_pulse.so.0" ],
+            
+              [  "usr\/lib64\/vlc\/libvlc_pulse.so.0.0.0" ],
+            
+              [  "usr\/lib64\/vlc\/libvlc_vdpau.so" ],
+            
+              [  "usr\/lib64\/vlc\/libvlc_vdpau.so.0" ],
+            
+              [  "usr\/lib64\/vlc\/libvlc_vdpau.so.0.0.0" ],
+            
+              [  "usr\/lib64\/vlc\/libvlc_xcb_events.so" ],
+            
+              [  "usr\/lib64\/vlc\/libvlc_xcb_events.so.0" ],
+            
+              [  "usr\/lib64\/vlc\/libvlc_xcb_events.so.0.0.0" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/access\/libaccess_alsa_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/access\/libaccess_concat_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/access\/libaccess_imem_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/access\/libaccess_mms_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/access\/libamt_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/access\/libavio_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/access\/libcdda_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/access\/libdata_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/access\/libdtv_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/access\/libdvb_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/access\/libfilesystem_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/access\/libftp_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/access\/libgopher_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/access\/libhttp_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/access\/libhttps_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/access\/libidummy_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/access\/libimem_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/access\/liblive555_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/access\/libpipewiresrc_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/access\/libpulsesrc_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/access\/librtp_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/access\/libsatip_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/access\/libsdp_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/access\/libshm_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/access\/libsmbc_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/access\/libtcp_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/access\/libtimecode_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/access\/libudp_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/access\/libvcd_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/access\/libvdr_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/access\/libwl_screenshooter_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/access\/libxcb_screen_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/access\/rtp\/librtp_ac3_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/access\/rtp\/librtp_h264_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/access\/rtp\/librtp_h265_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/access\/rtp\/librtp_mpeg12_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/access\/rtp\/librtp_mpeg4_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/access\/rtp\/librtp_opus_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/access\/rtp\/librtp_pcm_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/access\/rtp\/librtp_raw_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/access\/rtp\/librtp_xiph_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/access_output\/libaccess_http_put_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/access_output\/libaccess_output_dummy_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/access_output\/libaccess_output_file_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/access_output\/libaccess_output_http_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/access_output\/libaccess_output_livehttp_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/audio_filter\/libaudio_format_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/audio_filter\/libaudiobargraph_a_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/audio_filter\/libcenter_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/audio_filter\/libchorus_flanger_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/audio_filter\/libcompressor_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/audio_filter\/libdolby_surround_decoder_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/audio_filter\/libequalizer_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/audio_filter\/libgain_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/audio_filter\/libheadphone_channel_mixer_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/audio_filter\/libkaraoke_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/audio_filter\/libmono_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/audio_filter\/libnormvol_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/audio_filter\/libparam_eq_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/audio_filter\/libremap_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/audio_filter\/libsamplerate_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/audio_filter\/libscaletempo_pitch_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/audio_filter\/libscaletempo_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/audio_filter\/libsimple_channel_mixer_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/audio_filter\/libsoxr_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/audio_filter\/libspatializer_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/audio_filter\/libstereo_widen_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/audio_filter\/libstereopan_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/audio_filter\/libtospdif_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/audio_filter\/libtrivial_channel_mixer_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/audio_filter\/libugly_resampler_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/audio_mixer\/libfloat_mixer_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/audio_mixer\/libinteger_mixer_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/audio_output\/libadummy_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/audio_output\/libafile_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/audio_output\/libalsa_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/audio_output\/libamem_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/audio_output\/libaout_pipewire_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/audio_output\/libpulse_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/codec\/libadpcm_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/codec\/libaes3_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/codec\/libaom_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/codec\/libaraw_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/codec\/libavcodec_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/codec\/libcc_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/codec\/libcdg_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/codec\/libcvdsub_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/codec\/libdav1d_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/codec\/libddummy_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/codec\/libdvbsub_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/codec\/libedummy_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/codec\/libg711_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/codec\/liblibass_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/codec\/liblpcm_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/codec\/liboggspots_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/codec\/libopus_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/codec\/libpng_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/codec\/librav1e_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/codec\/librawvideo_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/codec\/librtp_rawvid_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/codec\/librtpvideo_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/codec\/libscte18_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/codec\/libscte27_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/codec\/libspdif_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/codec\/libspudec_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/codec\/libstl_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/codec\/libsubsdec_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/codec\/libsubstx3g_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/codec\/libsubsusf_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/codec\/libsvcdsub_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/codec\/libt140_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/codec\/libtelx_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/codec\/libtextst_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/codec\/libttml_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/codec\/libuleaddvaudio_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/codec\/libvorbis_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/codec\/libvpx_alpha_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/codec\/libwebvtt_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/codec\/libx265_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/codec\/libxwd_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/control\/libdbus_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/control\/libdummy_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/control\/libgestures_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/control\/libhotkeys_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/control\/librc_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/control\/libxcb_hotkeys_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/demux\/libadaptive_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/demux\/libaiff_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/demux\/libasf_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/demux\/libau_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/demux\/libavformat_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/demux\/libavi_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/demux\/libcaf_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/demux\/libdemux_cdg_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/demux\/libdemux_chromecast_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/demux\/libdemux_stl_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/demux\/libdemuxdump_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/demux\/libdirectory_demux_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/demux\/libdmxmus_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/demux\/libes_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/demux\/libflacsys_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/demux\/libg64rtp_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/demux\/libh26x_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/demux\/libhx_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/demux\/libimage_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/demux\/libmjpeg_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/demux\/libmkv_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/demux\/libmp4_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/demux\/libmpc_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/demux\/libmpgv_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/demux\/libnoseek_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/demux\/libnsv_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/demux\/libnuv_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/demux\/libogg_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/demux\/libplaylist_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/demux\/libps_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/demux\/libpva_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/demux\/librawaud_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/demux\/librawdv_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/demux\/librawvid_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/demux\/libsmf_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/demux\/libsubtitle_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/demux\/libts_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/demux\/libtta_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/demux\/libty_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/demux\/libvc1_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/demux\/libvobsub_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/demux\/libvoc_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/demux\/libwav_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/demux\/libxa_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/demux\/libytdl_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/gui\/libncurses_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/gui\/libqt_gtktheme_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/gui\/libqt_kwindowsystem_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/gui\/libqt_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/gui\/libqt_wayland_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/gui\/libqt_x11_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/gui\/libskins2_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/keystore\/libfile_keystore_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/keystore\/libkwallet_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/keystore\/libmemory_keystore_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/logger\/libconsole_logger_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/logger\/libfile_logger_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/logger\/libjson_tracer_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/logger\/libsd_journal_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/logger\/libsyslog_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/lua\/liblua_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/meta_engine\/libfolder_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/meta_engine\/libtaglib_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/misc\/libaddonsfsstorage_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/misc\/libaddonsvorepository_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/misc\/libaudioscrobbler_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/misc\/libdbus_screensaver_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/misc\/libexport_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/misc\/libfingerprinter_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/misc\/libgnutls_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/misc\/libstats_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/misc\/libwl_idle_inhibit_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/misc\/libxdg_screensaver_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/misc\/libxml_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/mux\/libmux_asf_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/mux\/libmux_avi_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/mux\/libmux_dummy_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/mux\/libmux_mp4_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/mux\/libmux_mpjpeg_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/mux\/libmux_ogg_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/mux\/libmux_ps_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/mux\/libmux_ts_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/mux\/libmux_wav_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/packetizer\/libpacketizer_a52_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/packetizer\/libpacketizer_av1_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/packetizer\/libpacketizer_avparser_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/packetizer\/libpacketizer_copy_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/packetizer\/libpacketizer_dts_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/packetizer\/libpacketizer_flac_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/packetizer\/libpacketizer_h264_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/packetizer\/libpacketizer_hevc_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/packetizer\/libpacketizer_mjpeg_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/packetizer\/libpacketizer_mlp_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/packetizer\/libpacketizer_mpeg4audio_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/packetizer\/libpacketizer_mpeg4video_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/packetizer\/libpacketizer_mpegaudio_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/packetizer\/libpacketizer_mpegvideo_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/packetizer\/libpacketizer_vc1_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/plugins.dat" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/services_discovery\/libmicrodns_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/services_discovery\/libpipewirelist_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/services_discovery\/libpodcast_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/services_discovery\/libpulselist_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/services_discovery\/libsap_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/services_discovery\/libudev_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/services_discovery\/libudisks_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/services_discovery\/libupnp_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/services_discovery\/libxcb_apps_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/spu\/libaudiobargraph_v_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/spu\/libdynamicoverlay_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/spu\/liblogo_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/spu\/libmarq_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/spu\/libmosaic_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/spu\/librss_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/spu\/libsubsdelay_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/stream_extractor\/libarchive_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/stream_filter\/libadf_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/stream_filter\/libcache_read_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/stream_filter\/libdecomp_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/stream_filter\/libhds_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/stream_filter\/libinflate_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/stream_filter\/libprefetch_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/stream_filter\/librecord_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/stream_filter\/libskiptags_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/stream_out\/libstream_out_autodel_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/stream_out\/libstream_out_bridge_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/stream_out\/libstream_out_chromecast_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/stream_out\/libstream_out_cycle_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/stream_out\/libstream_out_delay_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/stream_out\/libstream_out_display_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/stream_out\/libstream_out_dummy_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/stream_out\/libstream_out_duplicate_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/stream_out\/libstream_out_es_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/stream_out\/libstream_out_gather_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/stream_out\/libstream_out_hls_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/stream_out\/libstream_out_mosaic_bridge_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/stream_out\/libstream_out_record_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/stream_out\/libstream_out_rtp_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/stream_out\/libstream_out_setid_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/stream_out\/libstream_out_smem_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/stream_out\/libstream_out_standard_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/stream_out\/libstream_out_stats_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/stream_out\/libstream_out_trace_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/stream_out\/libstream_out_transcode_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/stream_out\/libstream_out_udp_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/text_renderer\/libfreetype_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/text_renderer\/libtdummy_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/vdpau\/libvdpau_adjust_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/vdpau\/libvdpau_avcodec_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/vdpau\/libvdpau_chroma_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/vdpau\/libvdpau_deinterlace_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/vdpau\/libvdpau_instance_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/vdpau\/libvdpau_sharpen_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_chroma\/libchain_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_chroma\/libgrey_yuv_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_chroma\/libi420_nv12_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_chroma\/libi420_rgb_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_chroma\/libi420_rgb_sse2_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_chroma\/libi420_yuy2_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_chroma\/libi420_yuy2_sse2_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_chroma\/libi422_i420_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_chroma\/libi422_yuy2_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_chroma\/libi422_yuy2_sse2_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_chroma\/liborient_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_chroma\/librv32_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_chroma\/libswscale_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_chroma\/libyuvp_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_chroma\/libyuy2_i420_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_chroma\/libyuy2_i422_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_filter\/libadjust_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_filter\/libalphamask_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_filter\/libanaglyph_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_filter\/libantiflicker_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_filter\/libball_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_filter\/libblend_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_filter\/libblendbench_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_filter\/libbluescreen_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_filter\/libcanvas_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_filter\/libcolorthres_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_filter\/libcroppadd_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_filter\/libdeinterlace_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_filter\/libedgedetection_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_filter\/liberase_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_filter\/libextract_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_filter\/libformatcrop_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_filter\/libfps_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_filter\/libfreeze_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_filter\/libgaussianblur_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_filter\/libglblend_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_filter\/libgradfun_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_filter\/libgradient_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_filter\/libgrain_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_filter\/libhqdn3d_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_filter\/libinvert_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_filter\/libmagnify_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_filter\/libmirror_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_filter\/libmotionblur_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_filter\/libmotiondetect_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_filter\/liboldmovie_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_filter\/libopengl_filter_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_filter\/libposterize_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_filter\/libpostproc_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_filter\/libpsychedelic_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_filter\/libpuzzle_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_filter\/libripple_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_filter\/librotate_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_filter\/libscale_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_filter\/libscene_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_filter\/libsepia_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_filter\/libsharpen_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_filter\/libtransform_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_filter\/libvhs_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_filter\/libwave_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_output\/libdrm_display_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_output\/libegl_display_gbm_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_output\/libegl_display_generic_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_output\/libegl_gbm_wl_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_output\/libegl_pbuffer_filter_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_output\/libegl_wl_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_output\/libegl_x11_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_output\/libflaschen_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_output\/libgl_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_output\/libglfilter_draw_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_output\/libglinterop_sw_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_output\/libglinterop_vdpau_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_output\/libglx_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_output\/libkms_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_output\/libvdummy_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_output\/libvgl_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_output\/libvideo_splitter_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_output\/libvk_wl_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_output\/libvk_x11_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_output\/libvmem_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_output\/libwdummy_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_output\/libwextern_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_output\/libwl_shell_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_output\/libwl_shm_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_output\/libxcb_egl_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_output\/libxcb_render_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_output\/libxcb_window_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_output\/libxcb_x11_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_output\/libxdg_shell_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_output\/libyuv_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_splitter\/libclone_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_splitter\/libpanoramix_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/video_splitter\/libwall_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/visualization\/libglspectrum_plugin.so" ],
+            
+              [  "usr\/lib64\/vlc\/plugins\/visualization\/libvisual_plugin.so" ],
+            
+              [  "usr\/libexec\/vlc\/lua\/extensions\/VLSub.luac" ],
+            
+              [  "usr\/libexec\/vlc\/lua\/intf\/cli.luac" ],
+            
+              [  "usr\/libexec\/vlc\/lua\/intf\/dummy.luac" ],
+            
+              [  "usr\/libexec\/vlc\/lua\/intf\/dumpmeta.luac" ],
+            
+              [  "usr\/libexec\/vlc\/lua\/intf\/http.luac" ],
+            
+              [  "usr\/libexec\/vlc\/lua\/intf\/luac.luac" ],
+            
+              [  "usr\/libexec\/vlc\/lua\/intf\/modules\/host.luac" ],
+            
+              [  "usr\/libexec\/vlc\/lua\/intf\/modules\/httprequests.luac" ],
+            
+              [  "usr\/libexec\/vlc\/lua\/intf\/telnet.luac" ],
+            
+              [  "usr\/libexec\/vlc\/lua\/meta\/art\/00_musicbrainz.luac" ],
+            
+              [  "usr\/libexec\/vlc\/lua\/meta\/art\/01_googleimage.luac" ],
+            
+              [  "usr\/libexec\/vlc\/lua\/meta\/art\/02_frenchtv.luac" ],
+            
+              [  "usr\/libexec\/vlc\/lua\/meta\/art\/03_lastfm.luac" ],
+            
+              [  "usr\/libexec\/vlc\/lua\/meta\/reader\/filename.luac" ],
+            
+              [  "usr\/libexec\/vlc\/lua\/modules\/common.luac" ],
+            
+              [  "usr\/libexec\/vlc\/lua\/modules\/dkjson.luac" ],
+            
+              [  "usr\/libexec\/vlc\/lua\/modules\/sandbox.luac" ],
+            
+              [  "usr\/libexec\/vlc\/lua\/modules\/simplexml.luac" ],
+            
+              [  "usr\/libexec\/vlc\/lua\/playlist\/anevia_streams.luac" ],
+            
+              [  "usr\/libexec\/vlc\/lua\/playlist\/anevia_xml.luac" ],
+            
+              [  "usr\/libexec\/vlc\/lua\/playlist\/appletrailers.luac" ],
+            
+              [  "usr\/libexec\/vlc\/lua\/playlist\/bbc_co_uk.luac" ],
+            
+              [  "usr\/libexec\/vlc\/lua\/playlist\/break.luac" ],
+            
+              [  "usr\/libexec\/vlc\/lua\/playlist\/cue.luac" ],
+            
+              [  "usr\/libexec\/vlc\/lua\/playlist\/dailymotion.luac" ],
+            
+              [  "usr\/libexec\/vlc\/lua\/playlist\/extreme.luac" ],
+            
+              [  "usr\/libexec\/vlc\/lua\/playlist\/france2.luac" ],
+            
+              [  "usr\/libexec\/vlc\/lua\/playlist\/jamendo.luac" ],
+            
+              [  "usr\/libexec\/vlc\/lua\/playlist\/katsomo.luac" ],
+            
+              [  "usr\/libexec\/vlc\/lua\/playlist\/koreus.luac" ],
+            
+              [  "usr\/libexec\/vlc\/lua\/playlist\/lelombrik.luac" ],
+            
+              [  "usr\/libexec\/vlc\/lua\/playlist\/mpora.luac" ],
+            
+              [  "usr\/libexec\/vlc\/lua\/playlist\/newgrounds.luac" ],
+            
+              [  "usr\/libexec\/vlc\/lua\/playlist\/pinkbike.luac" ],
+            
+              [  "usr\/libexec\/vlc\/lua\/playlist\/rockbox_fm_presets.luac" ],
+            
+              [  "usr\/libexec\/vlc\/lua\/playlist\/soundcloud.luac" ],
+            
+              [  "usr\/libexec\/vlc\/lua\/playlist\/twitch.luac" ],
+            
+              [  "usr\/libexec\/vlc\/lua\/playlist\/vimeo.luac" ],
+            
+              [  "usr\/libexec\/vlc\/lua\/playlist\/vocaroo.luac" ],
+            
+              [  "usr\/libexec\/vlc\/lua\/playlist\/youtube.luac" ],
+            
+              [  "usr\/libexec\/vlc\/lua\/playlist\/zapiks.luac" ],
+            
+              [  "usr\/libexec\/vlc\/lua\/sd\/fmc.luac" ],
+            
+              [  "usr\/libexec\/vlc\/lua\/sd\/jamendo.luac" ],
+            
+              [  "usr\/libexec\/vlc\/vlc-cache-gen" ],
+            
+              [  "usr\/libexec\/vlc\/vlc-qt-check" ],
+            
+              [  "usr\/share\/applications\/vlc-openbd.desktop" ],
+            
+              [  "usr\/share\/applications\/vlc-opencda.desktop" ],
+            
+              [  "usr\/share\/applications\/vlc-opendvd.desktop" ],
+            
+              [  "usr\/share\/applications\/vlc-openvcd.desktop" ],
+            
+              [  "usr\/share\/applications\/vlc.desktop" ],
+            
+              [  "usr\/share\/icons\/hicolor\/128x128\/apps\/vlc-kb.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/128x128\/apps\/vlc-xmas.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/128x128\/apps\/vlc.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/vlc.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/vlc.xpm" ],
+            
+              [  "usr\/share\/icons\/hicolor\/256x256\/apps\/vlc.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/32x32\/apps\/vlc-xmas.xpm" ],
+            
+              [  "usr\/share\/icons\/hicolor\/32x32\/apps\/vlc.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/32x32\/apps\/vlc.xpm" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/vlc-xmas.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/vlc.png" ],
+            
+              [  "usr\/share\/locale\/af\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/ar\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/az\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/bg\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/bn\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/br\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/bs\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/cy\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/da\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/en_GB\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/et\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/eu\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/fa\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/fi\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/fy\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/ga\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/gl\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/gu\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/hi\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/hr\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/hu\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/is\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/kk\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/km\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/lt\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/lv\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/mk\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/mn\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/ms\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/nb\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/nl\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/nn\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/pa\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/pt_PT\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/ro\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/sk\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/sl\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/sr\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/ta\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/uz\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/vlc.mo" ],
+            
+              [  "usr\/share\/man\/man1\/vlc-wrapper.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/vlc.1.bz2" ],
+            
+              [  "usr\/share\/metainfo\/org.videolan.vlc.appdata.xml" ],
+            
+              [  "usr\/share\/solid\/actions\/vlc-openbd.desktop" ],
+            
+              [  "usr\/share\/solid\/actions\/vlc-opencda.desktop" ],
+            
+              [  "usr\/share\/solid\/actions\/vlc-opendvd.desktop" ],
+            
+              [  "usr\/share\/solid\/actions\/vlc-openvcd.desktop" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/css\/main.css" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/css\/mobile.css" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/css\/ui-lightness\/images\/ui-bg_diagonals-thick_18_b81900_40x40.png" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/css\/ui-lightness\/images\/ui-bg_diagonals-thick_20_666666_40x40.png" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/css\/ui-lightness\/images\/ui-bg_flat_10_000000_40x100.png" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/css\/ui-lightness\/images\/ui-bg_glass_100_f6f6f6_1x400.png" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/css\/ui-lightness\/images\/ui-bg_glass_100_fdf5ce_1x400.png" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/css\/ui-lightness\/images\/ui-bg_glass_65_ffffff_1x400.png" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/css\/ui-lightness\/images\/ui-bg_gloss-wave_35_f6a828_500x100.png" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/css\/ui-lightness\/images\/ui-bg_highlight-soft_100_eeeeee_1x100.png" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/css\/ui-lightness\/images\/ui-bg_highlight-soft_75_ffe45c_1x100.png" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/css\/ui-lightness\/images\/ui-icons_222222_256x240.png" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/css\/ui-lightness\/images\/ui-icons_228ef1_256x240.png" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/css\/ui-lightness\/images\/ui-icons_ef8c08_256x240.png" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/css\/ui-lightness\/images\/ui-icons_ffd27a_256x240.png" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/css\/ui-lightness\/images\/ui-icons_ffffff_256x240.png" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/css\/ui-lightness\/jquery-ui-1.8.13.custom.css" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/custom.lua" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/dialogs\/batch_window.html" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/dialogs\/browse_window.html" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/dialogs\/create_stream.html" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/dialogs\/equalizer_window.html" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/dialogs\/error_window.html" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/dialogs\/mosaic_window.html" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/dialogs\/offset_window.html" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/dialogs\/stream_config_window.html" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/dialogs\/stream_window.html" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/favicon.ico" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/images\/Audio-48.png" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/images\/Back-48.png" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/images\/Folder-48.png" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/images\/Other-48.png" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/images\/Video-48.png" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/images\/buttons.png" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/images\/speaker-32.png" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/images\/vlc-48.png" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/images\/vlc16x16.png" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/index.html" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/js\/common.js" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/js\/controllers.js" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/js\/jquery.jstree.js" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/js\/ui.js" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/mobile.html" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/mobile_browse.html" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/mobile_equalizer.html" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/mobile_view.html" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/requests\/README.txt" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/requests\/browse.json" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/requests\/browse.xml" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/requests\/playlist.json" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/requests\/playlist.xml" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/requests\/playlist_jstree.xml" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/requests\/rd.json" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/requests\/rd.xml" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/requests\/status.json" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/requests\/status.xml" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/requests\/vlm.xml" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/requests\/vlm_cmd.xml" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/view.html" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/vlm.html" ],
+            
+              [  "usr\/share\/vlc\/lua\/http\/vlm_export.html" ],
+            
+              [  "usr\/share\/vlc\/skins2\/default.vlt" ],
+            
+              [  "usr\/share\/vlc\/skins2\/fonts\/FreeSans.ttf" ],
+            
+              [  "usr\/share\/vlc\/skins2\/fonts\/FreeSansBold.ttf" ],
+            
+              [  "usr\/share\/vlc\/skins2\/skin.catalog" ],
+            
+              [  "usr\/share\/vlc\/skins2\/skin.dtd" ],
+            
+              [  "usr\/share\/vlc\/skins2\/winamp2.xml" ],
+            
+              [  "usr\/share\/vlc\/utils\/audio-vlc-default.sh" ],
+            
+              [  "usr\/share\/vlc\/utils\/video-vlc-default.sh" ],
+            
+              [  "usr\/share\/vlc\/vlc.ico" ],
+            
+              [  "usr\/share\/vlc\/ytdl-extract.py" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

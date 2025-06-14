@@ -1,0 +1,2305 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing layers/qemu-9.1.2&#43;15 in mocaccino-desktop-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> layers/qemu-9.1.2&#43;15
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                QEMU &#43; Kernel-based Virtual Machine userland tools
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-desktop-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-desktop-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of layers/qemu
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/desktop:qemu-layers-9.1.2-15" target="_blank"> quay.io/mocaccino/desktop:qemu-layers-9.1.2-15 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/desktop:qemu-layers-9.1.2-15/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 9.1.2&#43;15  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> GPL-2 LGPL-2 BSD-2 </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/entity/libvirt">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  libvirt &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/entity/qemu">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  qemu &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/entity/radvd">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  radvd &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/X">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  X &gt;=0 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: app-crypt/swtpm app-emulation/libcacard app-emulation/libvirt app-emulation/libvirt-glib app-emulation/looking-glass::nest app-emulation/qemu app-emulation/spice app-misc/scrub dev-python/libvirt-python media-libs/virglrenderer net-analyzer/openbsd-netcat net-firewall/ebtables net-libs/libslirp net-misc/ethertypes net-misc/radvd net-misc/spice-gtk sys-apps/dtc sys-apps/usbredir sys-firmware/edk2-bin sys-firmware/ipxe sys-firmware/seabios-bin sys-firmware/sgabios
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://www.qemu.org" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://www.qemu.org </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/app-crypt/swtpm">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  swtpm &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/app-emulation/libcacard">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  libcacard &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/app-emulation/libvirt">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  libvirt &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/app-emulation/libvirt-glib">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  libvirt-glib &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/app-emulation/looking-glass">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  looking-glass &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/app-emulation/qemu">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  qemu &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/app-emulation/spice">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  spice &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/app-emulation/spice-protocol">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  spice-protocol &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/app-misc/scrub">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  scrub &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/dev-python/libvirt-python">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  libvirt-python &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/media-libs/virglrenderer">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  virglrenderer &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/net-analyzer/openbsd-netcat">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  openbsd-netcat &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/net-firewall/ebtables">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  ebtables &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/net-libs/libslirp">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  libslirp &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/net-misc/ethertypes">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  ethertypes &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/net-misc/radvd">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  radvd &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/net-misc/spice-gtk">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  spice-gtk &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/sys-apps/dtc">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  dtc &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/sys-apps/usbredir">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  usbredir &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/sys-firmware/edk2-bin">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  edk2-bin &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/sys-firmware/ipxe">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  ipxe &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/sys-firmware/seabios-bin">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  seabios-bin &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/sys-firmware/sys-firmware/sgabios">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  sys-firmware/sgabios &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "etc\/conf.d\/ebtables" ],
+            
+              [  "etc\/conf.d\/libvirt-guests" ],
+            
+              [  "etc\/conf.d\/libvirtd" ],
+            
+              [  "etc\/conf.d\/radvd" ],
+            
+              [  "etc\/ethertypes" ],
+            
+              [  "etc\/init.d\/ebtables" ],
+            
+              [  "etc\/init.d\/libvirt-guests" ],
+            
+              [  "etc\/init.d\/libvirtd" ],
+            
+              [  "etc\/init.d\/qemu-binfmt" ],
+            
+              [  "etc\/init.d\/radvd" ],
+            
+              [  "etc\/init.d\/virtlockd" ],
+            
+              [  "etc\/init.d\/virtlogd" ],
+            
+              [  "etc\/libvirt\/libvirt-admin.conf" ],
+            
+              [  "etc\/libvirt\/libvirt.conf" ],
+            
+              [  "etc\/libvirt\/libvirtd.conf" ],
+            
+              [  "etc\/libvirt\/network.conf" ],
+            
+              [  "etc\/libvirt\/nwfilter\/allow-arp.xml" ],
+            
+              [  "etc\/libvirt\/nwfilter\/allow-dhcp-server.xml" ],
+            
+              [  "etc\/libvirt\/nwfilter\/allow-dhcp.xml" ],
+            
+              [  "etc\/libvirt\/nwfilter\/allow-dhcpv6-server.xml" ],
+            
+              [  "etc\/libvirt\/nwfilter\/allow-dhcpv6.xml" ],
+            
+              [  "etc\/libvirt\/nwfilter\/allow-incoming-ipv4.xml" ],
+            
+              [  "etc\/libvirt\/nwfilter\/allow-incoming-ipv6.xml" ],
+            
+              [  "etc\/libvirt\/nwfilter\/allow-ipv4.xml" ],
+            
+              [  "etc\/libvirt\/nwfilter\/allow-ipv6.xml" ],
+            
+              [  "etc\/libvirt\/nwfilter\/clean-traffic-gateway.xml" ],
+            
+              [  "etc\/libvirt\/nwfilter\/clean-traffic.xml" ],
+            
+              [  "etc\/libvirt\/nwfilter\/no-arp-ip-spoofing.xml" ],
+            
+              [  "etc\/libvirt\/nwfilter\/no-arp-mac-spoofing.xml" ],
+            
+              [  "etc\/libvirt\/nwfilter\/no-arp-spoofing.xml" ],
+            
+              [  "etc\/libvirt\/nwfilter\/no-ip-multicast.xml" ],
+            
+              [  "etc\/libvirt\/nwfilter\/no-ip-spoofing.xml" ],
+            
+              [  "etc\/libvirt\/nwfilter\/no-ipv6-multicast.xml" ],
+            
+              [  "etc\/libvirt\/nwfilter\/no-ipv6-spoofing.xml" ],
+            
+              [  "etc\/libvirt\/nwfilter\/no-mac-broadcast.xml" ],
+            
+              [  "etc\/libvirt\/nwfilter\/no-mac-spoofing.xml" ],
+            
+              [  "etc\/libvirt\/nwfilter\/no-other-l2-traffic.xml" ],
+            
+              [  "etc\/libvirt\/nwfilter\/no-other-rarp-traffic.xml" ],
+            
+              [  "etc\/libvirt\/nwfilter\/qemu-announce-self-rarp.xml" ],
+            
+              [  "etc\/libvirt\/nwfilter\/qemu-announce-self.xml" ],
+            
+              [  "etc\/libvirt\/qemu\/networks\/autostart\/default.xml" ],
+            
+              [  "etc\/libvirt\/qemu-lockd.conf" ],
+            
+              [  "etc\/libvirt\/qemu.conf" ],
+            
+              [  "etc\/libvirt\/virt-login-shell.conf" ],
+            
+              [  "etc\/libvirt\/virtchd.conf" ],
+            
+              [  "etc\/libvirt\/virtinterfaced.conf" ],
+            
+              [  "etc\/libvirt\/virtlockd.conf" ],
+            
+              [  "etc\/libvirt\/virtlogd.conf" ],
+            
+              [  "etc\/libvirt\/virtnetworkd.conf" ],
+            
+              [  "etc\/libvirt\/virtnodedevd.conf" ],
+            
+              [  "etc\/libvirt\/virtnwfilterd.conf" ],
+            
+              [  "etc\/libvirt\/virtproxyd.conf" ],
+            
+              [  "etc\/libvirt\/virtqemud.conf" ],
+            
+              [  "etc\/libvirt\/virtsecretd.conf" ],
+            
+              [  "etc\/libvirt\/virtstoraged.conf" ],
+            
+              [  "etc\/logrotate.d\/libvirtd" ],
+            
+              [  "etc\/logrotate.d\/libvirtd.libxl" ],
+            
+              [  "etc\/logrotate.d\/libvirtd.lxc" ],
+            
+              [  "etc\/logrotate.d\/libvirtd.qemu" ],
+            
+              [  "etc\/portage\/repos.conf\/eselect-repo.conf~" ],
+            
+              [  "etc\/qemu\/bridge.conf" ],
+            
+              [  "etc\/ssh\/ssh_config.d\/30-libvirt-ssh-proxy.conf" ],
+            
+              [  "etc\/swtpm-localca.conf" ],
+            
+              [  "etc\/swtpm-localca.options" ],
+            
+              [  "etc\/swtpm_setup.conf" ],
+            
+              [  "usr\/bin\/convert-dtsv0" ],
+            
+              [  "usr\/bin\/dtc" ],
+            
+              [  "usr\/bin\/dtdiff" ],
+            
+              [  "usr\/bin\/ebtables" ],
+            
+              [  "usr\/bin\/ebtables-legacy" ],
+            
+              [  "usr\/bin\/ebtables-legacy-restore" ],
+            
+              [  "usr\/bin\/ebtables-legacy-save" ],
+            
+              [  "usr\/bin\/ebtables-restore" ],
+            
+              [  "usr\/bin\/ebtables-save" ],
+            
+              [  "usr\/bin\/ebtablesd" ],
+            
+              [  "usr\/bin\/ebtablesu" ],
+            
+              [  "usr\/bin\/elf2dmp" ],
+            
+              [  "usr\/bin\/fdtdump" ],
+            
+              [  "usr\/bin\/fdtget" ],
+            
+              [  "usr\/bin\/fdtoverlay" ],
+            
+              [  "usr\/bin\/fdtput" ],
+            
+              [  "usr\/bin\/libvirtd" ],
+            
+              [  "usr\/bin\/looking-glass-client" ],
+            
+              [  "usr\/bin\/nc" ],
+            
+              [  "usr\/bin\/qemu-arm" ],
+            
+              [  "usr\/bin\/qemu-edid" ],
+            
+              [  "usr\/bin\/qemu-ga-client" ],
+            
+              [  "usr\/bin\/qemu-img" ],
+            
+              [  "usr\/bin\/qemu-io" ],
+            
+              [  "usr\/bin\/qemu-nbd" ],
+            
+              [  "usr\/bin\/qemu-pr-helper" ],
+            
+              [  "usr\/bin\/qemu-storage-daemon" ],
+            
+              [  "usr\/bin\/qemu-system-arm" ],
+            
+              [  "usr\/bin\/qemu-system-x86_64" ],
+            
+              [  "usr\/bin\/qemu-vmsr-helper" ],
+            
+              [  "usr\/bin\/qmp-shell" ],
+            
+              [  "usr\/bin\/radvd" ],
+            
+              [  "usr\/bin\/radvdump" ],
+            
+              [  "usr\/bin\/scrub" ],
+            
+              [  "usr\/bin\/spicy" ],
+            
+              [  "usr\/bin\/spicy-screenshot" ],
+            
+              [  "usr\/bin\/spicy-stats" ],
+            
+              [  "usr\/bin\/swtpm" ],
+            
+              [  "usr\/bin\/swtpm_bios" ],
+            
+              [  "usr\/bin\/swtpm_cert" ],
+            
+              [  "usr\/bin\/swtpm_cuse" ],
+            
+              [  "usr\/bin\/swtpm_ioctl" ],
+            
+              [  "usr\/bin\/swtpm_localca" ],
+            
+              [  "usr\/bin\/swtpm_setup" ],
+            
+              [  "usr\/bin\/usbredirect" ],
+            
+              [  "usr\/bin\/virgl_test_server" ],
+            
+              [  "usr\/bin\/virsh" ],
+            
+              [  "usr\/bin\/virt-admin" ],
+            
+              [  "usr\/bin\/virt-host-validate" ],
+            
+              [  "usr\/bin\/virt-login-shell" ],
+            
+              [  "usr\/bin\/virt-pki-query-dn" ],
+            
+              [  "usr\/bin\/virt-pki-validate" ],
+            
+              [  "usr\/bin\/virt-qemu-qmp-proxy" ],
+            
+              [  "usr\/bin\/virt-qemu-run" ],
+            
+              [  "usr\/bin\/virt-qemu-sev-validate" ],
+            
+              [  "usr\/bin\/virt-ssh-helper" ],
+            
+              [  "usr\/bin\/virt-xml-validate" ],
+            
+              [  "usr\/bin\/virtchd" ],
+            
+              [  "usr\/bin\/virtinterfaced" ],
+            
+              [  "usr\/bin\/virtlockd" ],
+            
+              [  "usr\/bin\/virtlogd" ],
+            
+              [  "usr\/bin\/virtnetworkd" ],
+            
+              [  "usr\/bin\/virtnodedevd" ],
+            
+              [  "usr\/bin\/virtnwfilterd" ],
+            
+              [  "usr\/bin\/virtproxyd" ],
+            
+              [  "usr\/bin\/virtqemud" ],
+            
+              [  "usr\/bin\/virtsecretd" ],
+            
+              [  "usr\/bin\/virtstoraged" ],
+            
+              [  "usr\/bin\/vmxcap" ],
+            
+              [  "usr\/lib\/python-exec\/python3.13\/qemu-ga-client" ],
+            
+              [  "usr\/lib\/python-exec\/python3.13\/qmp-shell" ],
+            
+              [  "usr\/lib\/python-exec\/python3.13\/vmxcap" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/__pycache__\/libvirt.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/__pycache__\/libvirt.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/__pycache__\/libvirt.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/__pycache__\/libvirt_lxc.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/__pycache__\/libvirt_lxc.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/__pycache__\/libvirt_lxc.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/__pycache__\/libvirt_qemu.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/__pycache__\/libvirt_qemu.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/__pycache__\/libvirt_qemu.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/__pycache__\/libvirtaio.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/__pycache__\/libvirtaio.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/__pycache__\/libvirtaio.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/_libfdt.cpython-313-x86_64-linux-gnu.so" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/libfdt-1.7.2-py3.13.egg-info\/PKG-INFO" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/libfdt-1.7.2-py3.13.egg-info\/SOURCES.txt" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/libfdt-1.7.2-py3.13.egg-info\/dependency_links.txt" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/libfdt-1.7.2-py3.13.egg-info\/top_level.txt" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/libfdt.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/libvirt.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/libvirt_lxc.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/libvirt_python-11.1.0.dist-info\/METADATA" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/libvirt_python-11.1.0.dist-info\/WHEEL" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/libvirt_python-11.1.0.dist-info\/top_level.txt" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/libvirt_qemu.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/libvirtaio.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/libvirtmod.cpython-313-x86_64-linux-gnu.so" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/libvirtmod_lxc.cpython-313-x86_64-linux-gnu.so" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/libvirtmod_qemu.cpython-313-x86_64-linux-gnu.so" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/README.rst" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/machine\/README.rst" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/machine\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/machine\/__pycache__\/__init__.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/machine\/__pycache__\/__init__.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/machine\/__pycache__\/__init__.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/machine\/__pycache__\/console_socket.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/machine\/__pycache__\/console_socket.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/machine\/__pycache__\/console_socket.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/machine\/__pycache__\/machine.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/machine\/__pycache__\/machine.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/machine\/__pycache__\/machine.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/machine\/__pycache__\/qtest.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/machine\/__pycache__\/qtest.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/machine\/__pycache__\/qtest.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/machine\/console_socket.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/machine\/machine.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/machine\/py.typed" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/machine\/qtest.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/qmp\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/qmp\/__pycache__\/__init__.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/qmp\/__pycache__\/__init__.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/qmp\/__pycache__\/__init__.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/qmp\/__pycache__\/error.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/qmp\/__pycache__\/error.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/qmp\/__pycache__\/error.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/qmp\/__pycache__\/events.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/qmp\/__pycache__\/events.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/qmp\/__pycache__\/events.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/qmp\/__pycache__\/legacy.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/qmp\/__pycache__\/legacy.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/qmp\/__pycache__\/legacy.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/qmp\/__pycache__\/message.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/qmp\/__pycache__\/message.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/qmp\/__pycache__\/message.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/qmp\/__pycache__\/models.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/qmp\/__pycache__\/models.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/qmp\/__pycache__\/models.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/qmp\/__pycache__\/protocol.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/qmp\/__pycache__\/protocol.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/qmp\/__pycache__\/protocol.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/qmp\/__pycache__\/qmp_client.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/qmp\/__pycache__\/qmp_client.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/qmp\/__pycache__\/qmp_client.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/qmp\/__pycache__\/qmp_shell.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/qmp\/__pycache__\/qmp_shell.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/qmp\/__pycache__\/qmp_shell.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/qmp\/__pycache__\/qmp_tui.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/qmp\/__pycache__\/qmp_tui.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/qmp\/__pycache__\/qmp_tui.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/qmp\/__pycache__\/util.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/qmp\/__pycache__\/util.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/qmp\/__pycache__\/util.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/qmp\/error.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/qmp\/events.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/qmp\/legacy.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/qmp\/message.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/qmp\/models.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/qmp\/protocol.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/qmp\/py.typed" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/qmp\/qmp_client.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/qmp\/qmp_shell.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/qmp\/qmp_tui.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/qmp\/util.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/utils\/README.rst" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/utils\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/utils\/__pycache__\/__init__.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/utils\/__pycache__\/__init__.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/utils\/__pycache__\/__init__.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/utils\/__pycache__\/accel.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/utils\/__pycache__\/accel.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/utils\/__pycache__\/accel.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/utils\/__pycache__\/qemu_ga_client.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/utils\/__pycache__\/qemu_ga_client.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/utils\/__pycache__\/qemu_ga_client.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/utils\/__pycache__\/qom.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/utils\/__pycache__\/qom.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/utils\/__pycache__\/qom.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/utils\/__pycache__\/qom_common.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/utils\/__pycache__\/qom_common.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/utils\/__pycache__\/qom_common.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/utils\/__pycache__\/qom_fuse.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/utils\/__pycache__\/qom_fuse.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/utils\/__pycache__\/qom_fuse.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/utils\/accel.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/utils\/py.typed" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/utils\/qemu_ga_client.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/utils\/qom.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/utils\/qom_common.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/qemu\/utils\/qom_fuse.py" ],
+            
+              [  "usr\/lib\/sysctl.d\/60-libvirtd.conf" ],
+            
+              [  "usr\/lib\/sysctl.d\/60-qemu-postcopy-migration.conf" ],
+            
+              [  "usr\/lib\/systemd\/system\/libvirt-guests.service" ],
+            
+              [  "usr\/lib\/systemd\/system\/libvirtd-admin.socket" ],
+            
+              [  "usr\/lib\/systemd\/system\/libvirtd-ro.socket" ],
+            
+              [  "usr\/lib\/systemd\/system\/libvirtd-tcp.socket" ],
+            
+              [  "usr\/lib\/systemd\/system\/libvirtd-tls.socket" ],
+            
+              [  "usr\/lib\/systemd\/system\/libvirtd.service" ],
+            
+              [  "usr\/lib\/systemd\/system\/libvirtd.socket" ],
+            
+              [  "usr\/lib\/systemd\/system\/radvd.service" ],
+            
+              [  "usr\/lib\/systemd\/system\/virt-guest-shutdown.target" ],
+            
+              [  "usr\/lib\/systemd\/system\/virtchd-admin.socket" ],
+            
+              [  "usr\/lib\/systemd\/system\/virtchd-ro.socket" ],
+            
+              [  "usr\/lib\/systemd\/system\/virtchd.service" ],
+            
+              [  "usr\/lib\/systemd\/system\/virtchd.socket" ],
+            
+              [  "usr\/lib\/systemd\/system\/virtinterfaced-admin.socket" ],
+            
+              [  "usr\/lib\/systemd\/system\/virtinterfaced-ro.socket" ],
+            
+              [  "usr\/lib\/systemd\/system\/virtinterfaced.service" ],
+            
+              [  "usr\/lib\/systemd\/system\/virtinterfaced.socket" ],
+            
+              [  "usr\/lib\/systemd\/system\/virtlockd-admin.socket" ],
+            
+              [  "usr\/lib\/systemd\/system\/virtlockd.service" ],
+            
+              [  "usr\/lib\/systemd\/system\/virtlockd.socket" ],
+            
+              [  "usr\/lib\/systemd\/system\/virtlogd-admin.socket" ],
+            
+              [  "usr\/lib\/systemd\/system\/virtlogd.service" ],
+            
+              [  "usr\/lib\/systemd\/system\/virtlogd.socket" ],
+            
+              [  "usr\/lib\/systemd\/system\/virtnetworkd-admin.socket" ],
+            
+              [  "usr\/lib\/systemd\/system\/virtnetworkd-ro.socket" ],
+            
+              [  "usr\/lib\/systemd\/system\/virtnetworkd.service" ],
+            
+              [  "usr\/lib\/systemd\/system\/virtnetworkd.socket" ],
+            
+              [  "usr\/lib\/systemd\/system\/virtnodedevd-admin.socket" ],
+            
+              [  "usr\/lib\/systemd\/system\/virtnodedevd-ro.socket" ],
+            
+              [  "usr\/lib\/systemd\/system\/virtnodedevd.service" ],
+            
+              [  "usr\/lib\/systemd\/system\/virtnodedevd.socket" ],
+            
+              [  "usr\/lib\/systemd\/system\/virtnwfilterd-admin.socket" ],
+            
+              [  "usr\/lib\/systemd\/system\/virtnwfilterd-ro.socket" ],
+            
+              [  "usr\/lib\/systemd\/system\/virtnwfilterd.service" ],
+            
+              [  "usr\/lib\/systemd\/system\/virtnwfilterd.socket" ],
+            
+              [  "usr\/lib\/systemd\/system\/virtproxyd-admin.socket" ],
+            
+              [  "usr\/lib\/systemd\/system\/virtproxyd-ro.socket" ],
+            
+              [  "usr\/lib\/systemd\/system\/virtproxyd-tcp.socket" ],
+            
+              [  "usr\/lib\/systemd\/system\/virtproxyd-tls.socket" ],
+            
+              [  "usr\/lib\/systemd\/system\/virtproxyd.service" ],
+            
+              [  "usr\/lib\/systemd\/system\/virtproxyd.socket" ],
+            
+              [  "usr\/lib\/systemd\/system\/virtqemud-admin.socket" ],
+            
+              [  "usr\/lib\/systemd\/system\/virtqemud-ro.socket" ],
+            
+              [  "usr\/lib\/systemd\/system\/virtqemud.service" ],
+            
+              [  "usr\/lib\/systemd\/system\/virtqemud.socket" ],
+            
+              [  "usr\/lib\/systemd\/system\/virtsecretd-admin.socket" ],
+            
+              [  "usr\/lib\/systemd\/system\/virtsecretd-ro.socket" ],
+            
+              [  "usr\/lib\/systemd\/system\/virtsecretd.service" ],
+            
+              [  "usr\/lib\/systemd\/system\/virtsecretd.socket" ],
+            
+              [  "usr\/lib\/systemd\/system\/virtstoraged-admin.socket" ],
+            
+              [  "usr\/lib\/systemd\/system\/virtstoraged-ro.socket" ],
+            
+              [  "usr\/lib\/systemd\/system\/virtstoraged.service" ],
+            
+              [  "usr\/lib\/systemd\/system\/virtstoraged.socket" ],
+            
+              [  "usr\/lib\/sysusers.d\/libvirt-login-shell.conf" ],
+            
+              [  "usr\/lib\/sysusers.d\/libvirt-qemu.conf" ],
+            
+              [  "usr\/lib\/sysusers.d\/libvirt.conf" ],
+            
+              [  "usr\/lib\/tmpfiles.d\/libvirtd.conf" ],
+            
+              [  "usr\/lib\/tmpfiles.d\/looking-glass.conf" ],
+            
+              [  "usr\/lib\/udev\/rules.d\/65-kvm.rules" ],
+            
+              [  "usr\/lib64\/ebtables\/libebtc.so" ],
+            
+              [  "usr\/lib64\/ebtables\/libebtc.so.0" ],
+            
+              [  "usr\/lib64\/ebtables\/libebtc.so.0.0.0" ],
+            
+              [  "usr\/lib64\/girepository-1.0\/LibvirtGConfig-1.0.typelib" ],
+            
+              [  "usr\/lib64\/girepository-1.0\/LibvirtGLib-1.0.typelib" ],
+            
+              [  "usr\/lib64\/girepository-1.0\/LibvirtGObject-1.0.typelib" ],
+            
+              [  "usr\/lib64\/girepository-1.0\/SpiceClientGLib-2.0.typelib" ],
+            
+              [  "usr\/lib64\/girepository-1.0\/SpiceClientGtk-3.0.typelib" ],
+            
+              [  "usr\/lib64\/libcacard.so" ],
+            
+              [  "usr\/lib64\/libcacard.so.0" ],
+            
+              [  "usr\/lib64\/libcacard.so.0.0.0" ],
+            
+              [  "usr\/lib64\/libfdt.a" ],
+            
+              [  "usr\/lib64\/libfdt.so" ],
+            
+              [  "usr\/lib64\/libfdt.so.1" ],
+            
+              [  "usr\/lib64\/libfdt.so.1.7.2" ],
+            
+              [  "usr\/lib64\/libnss_libvirt.so.2" ],
+            
+              [  "usr\/lib64\/libnss_libvirt_guest.so.2" ],
+            
+              [  "usr\/lib64\/libslirp.so" ],
+            
+              [  "usr\/lib64\/libslirp.so.0" ],
+            
+              [  "usr\/lib64\/libslirp.so.0.4.0" ],
+            
+              [  "usr\/lib64\/libspice-client-glib-2.0.so" ],
+            
+              [  "usr\/lib64\/libspice-client-glib-2.0.so.8" ],
+            
+              [  "usr\/lib64\/libspice-client-glib-2.0.so.8.8.2" ],
+            
+              [  "usr\/lib64\/libspice-client-gtk-3.0.so" ],
+            
+              [  "usr\/lib64\/libspice-client-gtk-3.0.so.5" ],
+            
+              [  "usr\/lib64\/libspice-client-gtk-3.0.so.5.1.1" ],
+            
+              [  "usr\/lib64\/libspice-server.so" ],
+            
+              [  "usr\/lib64\/libspice-server.so.1" ],
+            
+              [  "usr\/lib64\/libspice-server.so.1.14.3" ],
+            
+              [  "usr\/lib64\/libusbredirhost.so" ],
+            
+              [  "usr\/lib64\/libusbredirhost.so.1" ],
+            
+              [  "usr\/lib64\/libusbredirhost.so.1.0.3" ],
+            
+              [  "usr\/lib64\/libusbredirparser.so" ],
+            
+              [  "usr\/lib64\/libusbredirparser.so.1" ],
+            
+              [  "usr\/lib64\/libusbredirparser.so.1.2.1" ],
+            
+              [  "usr\/lib64\/libvirglrenderer.so" ],
+            
+              [  "usr\/lib64\/libvirglrenderer.so.1" ],
+            
+              [  "usr\/lib64\/libvirglrenderer.so.1.8.9" ],
+            
+              [  "usr\/lib64\/libvirt\/connection-driver\/libvirt_driver_ch.so" ],
+            
+              [  "usr\/lib64\/libvirt\/connection-driver\/libvirt_driver_interface.so" ],
+            
+              [  "usr\/lib64\/libvirt\/connection-driver\/libvirt_driver_network.so" ],
+            
+              [  "usr\/lib64\/libvirt\/connection-driver\/libvirt_driver_nodedev.so" ],
+            
+              [  "usr\/lib64\/libvirt\/connection-driver\/libvirt_driver_nwfilter.so" ],
+            
+              [  "usr\/lib64\/libvirt\/connection-driver\/libvirt_driver_qemu.so" ],
+            
+              [  "usr\/lib64\/libvirt\/connection-driver\/libvirt_driver_secret.so" ],
+            
+              [  "usr\/lib64\/libvirt\/connection-driver\/libvirt_driver_storage.so" ],
+            
+              [  "usr\/lib64\/libvirt\/lock-driver\/lockd.so" ],
+            
+              [  "usr\/lib64\/libvirt\/storage-backend\/libvirt_storage_backend_fs.so" ],
+            
+              [  "usr\/lib64\/libvirt\/storage-backend\/libvirt_storage_backend_logical.so" ],
+            
+              [  "usr\/lib64\/libvirt\/storage-backend\/libvirt_storage_backend_mpath.so" ],
+            
+              [  "usr\/lib64\/libvirt\/storage-backend\/libvirt_storage_backend_scsi.so" ],
+            
+              [  "usr\/lib64\/libvirt\/storage-backend\/libvirt_storage_backend_vstorage.so" ],
+            
+              [  "usr\/lib64\/libvirt-admin.so" ],
+            
+              [  "usr\/lib64\/libvirt-admin.so.0" ],
+            
+              [  "usr\/lib64\/libvirt-admin.so.0.11001.0" ],
+            
+              [  "usr\/lib64\/libvirt-gconfig-1.0.so" ],
+            
+              [  "usr\/lib64\/libvirt-gconfig-1.0.so.0" ],
+            
+              [  "usr\/lib64\/libvirt-gconfig-1.0.so.0.5000.0" ],
+            
+              [  "usr\/lib64\/libvirt-glib-1.0.so" ],
+            
+              [  "usr\/lib64\/libvirt-glib-1.0.so.0" ],
+            
+              [  "usr\/lib64\/libvirt-glib-1.0.so.0.5000.0" ],
+            
+              [  "usr\/lib64\/libvirt-gobject-1.0.so" ],
+            
+              [  "usr\/lib64\/libvirt-gobject-1.0.so.0" ],
+            
+              [  "usr\/lib64\/libvirt-gobject-1.0.so.0.5000.0" ],
+            
+              [  "usr\/lib64\/libvirt-lxc.so" ],
+            
+              [  "usr\/lib64\/libvirt-lxc.so.0" ],
+            
+              [  "usr\/lib64\/libvirt-lxc.so.0.11001.0" ],
+            
+              [  "usr\/lib64\/libvirt-qemu.so" ],
+            
+              [  "usr\/lib64\/libvirt-qemu.so.0" ],
+            
+              [  "usr\/lib64\/libvirt-qemu.so.0.11001.0" ],
+            
+              [  "usr\/lib64\/libvirt.so" ],
+            
+              [  "usr\/lib64\/libvirt.so.0" ],
+            
+              [  "usr\/lib64\/libvirt.so.0.11001.0" ],
+            
+              [  "usr\/lib64\/pkgconfig\/libcacard.pc" ],
+            
+              [  "usr\/lib64\/pkgconfig\/libfdt.pc" ],
+            
+              [  "usr\/lib64\/pkgconfig\/libusbredirhost.pc" ],
+            
+              [  "usr\/lib64\/pkgconfig\/libusbredirparser-0.5.pc" ],
+            
+              [  "usr\/lib64\/pkgconfig\/libvirt-admin.pc" ],
+            
+              [  "usr\/lib64\/pkgconfig\/libvirt-gconfig-1.0.pc" ],
+            
+              [  "usr\/lib64\/pkgconfig\/libvirt-glib-1.0.pc" ],
+            
+              [  "usr\/lib64\/pkgconfig\/libvirt-gobject-1.0.pc" ],
+            
+              [  "usr\/lib64\/pkgconfig\/libvirt-lxc.pc" ],
+            
+              [  "usr\/lib64\/pkgconfig\/libvirt-qemu.pc" ],
+            
+              [  "usr\/lib64\/pkgconfig\/libvirt.pc" ],
+            
+              [  "usr\/lib64\/pkgconfig\/slirp.pc" ],
+            
+              [  "usr\/lib64\/pkgconfig\/spice-client-glib-2.0.pc" ],
+            
+              [  "usr\/lib64\/pkgconfig\/spice-client-gtk-3.0.pc" ],
+            
+              [  "usr\/lib64\/pkgconfig\/spice-server.pc" ],
+            
+              [  "usr\/lib64\/pkgconfig\/virglrenderer.pc" ],
+            
+              [  "usr\/lib64\/swtpm\/libswtpm_libtpms.so" ],
+            
+              [  "usr\/lib64\/swtpm\/libswtpm_libtpms.so.0" ],
+            
+              [  "usr\/lib64\/swtpm\/libswtpm_libtpms.so.0.0.0" ],
+            
+              [  "usr\/libexec\/libvirt-guests.sh" ],
+            
+              [  "usr\/libexec\/libvirt-ssh-proxy" ],
+            
+              [  "usr\/libexec\/libvirt_iohelper" ],
+            
+              [  "usr\/libexec\/libvirt_leaseshelper" ],
+            
+              [  "usr\/libexec\/qemu-bridge-helper" ],
+            
+              [  "usr\/libexec\/spice-client-glib-usb-acl-helper" ],
+            
+              [  "usr\/libexec\/vhost-user-gpu" ],
+            
+              [  "usr\/libexec\/virt-login-shell-helper" ],
+            
+              [  "usr\/share\/applications\/looking-glass-wayland.desktop" ],
+            
+              [  "usr\/share\/applications\/looking-glass-x.desktop" ],
+            
+              [  "usr\/share\/applications\/qemu.desktop" ],
+            
+              [  "usr\/share\/applications\/spicy-spice-gtk.desktop" ],
+            
+              [  "usr\/share\/augeas\/lenses\/libvirt_lockd.aug" ],
+            
+              [  "usr\/share\/augeas\/lenses\/libvirtd.aug" ],
+            
+              [  "usr\/share\/augeas\/lenses\/libvirtd_network.aug" ],
+            
+              [  "usr\/share\/augeas\/lenses\/libvirtd_qemu.aug" ],
+            
+              [  "usr\/share\/augeas\/lenses\/tests\/test_libvirt_lockd.aug" ],
+            
+              [  "usr\/share\/augeas\/lenses\/tests\/test_libvirtd.aug" ],
+            
+              [  "usr\/share\/augeas\/lenses\/tests\/test_libvirtd_network.aug" ],
+            
+              [  "usr\/share\/augeas\/lenses\/tests\/test_libvirtd_qemu.aug" ],
+            
+              [  "usr\/share\/augeas\/lenses\/tests\/test_virtchd.aug" ],
+            
+              [  "usr\/share\/augeas\/lenses\/tests\/test_virtinterfaced.aug" ],
+            
+              [  "usr\/share\/augeas\/lenses\/tests\/test_virtlockd.aug" ],
+            
+              [  "usr\/share\/augeas\/lenses\/tests\/test_virtlogd.aug" ],
+            
+              [  "usr\/share\/augeas\/lenses\/tests\/test_virtnetworkd.aug" ],
+            
+              [  "usr\/share\/augeas\/lenses\/tests\/test_virtnodedevd.aug" ],
+            
+              [  "usr\/share\/augeas\/lenses\/tests\/test_virtnwfilterd.aug" ],
+            
+              [  "usr\/share\/augeas\/lenses\/tests\/test_virtproxyd.aug" ],
+            
+              [  "usr\/share\/augeas\/lenses\/tests\/test_virtqemud.aug" ],
+            
+              [  "usr\/share\/augeas\/lenses\/tests\/test_virtsecretd.aug" ],
+            
+              [  "usr\/share\/augeas\/lenses\/tests\/test_virtstoraged.aug" ],
+            
+              [  "usr\/share\/augeas\/lenses\/virtchd.aug" ],
+            
+              [  "usr\/share\/augeas\/lenses\/virtinterfaced.aug" ],
+            
+              [  "usr\/share\/augeas\/lenses\/virtlockd.aug" ],
+            
+              [  "usr\/share\/augeas\/lenses\/virtlogd.aug" ],
+            
+              [  "usr\/share\/augeas\/lenses\/virtnetworkd.aug" ],
+            
+              [  "usr\/share\/augeas\/lenses\/virtnodedevd.aug" ],
+            
+              [  "usr\/share\/augeas\/lenses\/virtnwfilterd.aug" ],
+            
+              [  "usr\/share\/augeas\/lenses\/virtproxyd.aug" ],
+            
+              [  "usr\/share\/augeas\/lenses\/virtqemud.aug" ],
+            
+              [  "usr\/share\/augeas\/lenses\/virtsecretd.aug" ],
+            
+              [  "usr\/share\/augeas\/lenses\/virtstoraged.aug" ],
+            
+              [  "usr\/share\/bash-completion\/completions\/virsh" ],
+            
+              [  "usr\/share\/bash-completion\/completions\/virt-admin" ],
+            
+              [  "usr\/share\/edk2-ovmf\/EnrollDefaultKeys.efi" ],
+            
+              [  "usr\/share\/edk2-ovmf\/OVMF_CODE.fd" ],
+            
+              [  "usr\/share\/edk2-ovmf\/OVMF_CODE.secboot.fd" ],
+            
+              [  "usr\/share\/edk2-ovmf\/OVMF_VARS.fd" ],
+            
+              [  "usr\/share\/edk2-ovmf\/Shell.efi" ],
+            
+              [  "usr\/share\/edk2-ovmf\/UefiShell.img" ],
+            
+              [  "usr\/share\/gir-1.0\/LibvirtGConfig-1.0.gir" ],
+            
+              [  "usr\/share\/gir-1.0\/LibvirtGLib-1.0.gir" ],
+            
+              [  "usr\/share\/gir-1.0\/LibvirtGObject-1.0.gir" ],
+            
+              [  "usr\/share\/gir-1.0\/SpiceClientGLib-2.0.gir" ],
+            
+              [  "usr\/share\/gir-1.0\/SpiceClientGtk-3.0.gir" ],
+            
+              [  "usr\/share\/icons\/hicolor\/128x128\/apps\/looking-glass-client.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/128x128\/apps\/qemu.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/qemu.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/qemu.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/256x256\/apps\/qemu.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/32x32\/apps\/qemu.bmp" ],
+            
+              [  "usr\/share\/icons\/hicolor\/32x32\/apps\/qemu.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/qemu.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/512x512\/apps\/qemu.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/64x64\/apps\/qemu.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/apps\/qemu.svg" ],
+            
+              [  "usr\/share\/ipxe\/10222000.rom" ],
+            
+              [  "usr\/share\/ipxe\/10500940.rom" ],
+            
+              [  "usr\/share\/ipxe\/10ec8139.rom" ],
+            
+              [  "usr\/share\/ipxe\/15ad07b0.rom" ],
+            
+              [  "usr\/share\/ipxe\/1af41000.rom" ],
+            
+              [  "usr\/share\/ipxe\/8086100e.rom" ],
+            
+              [  "usr\/share\/ipxe\/808610de.rom" ],
+            
+              [  "usr\/share\/ipxe\/80861209.rom" ],
+            
+              [  "usr\/share\/ipxe\/ipxe.usb" ],
+            
+              [  "usr\/share\/libvirt\/api\/libvirt-admin-api.xml" ],
+            
+              [  "usr\/share\/libvirt\/api\/libvirt-api.xml" ],
+            
+              [  "usr\/share\/libvirt\/api\/libvirt-lxc-api.xml" ],
+            
+              [  "usr\/share\/libvirt\/api\/libvirt-qemu-api.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/arm_FT-2000plus.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/arm_Falkor.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/arm_Kunpeng-920.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/arm_Neoverse-N1.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/arm_Neoverse-N2.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/arm_Neoverse-V1.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/arm_Tengyun-S2500.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/arm_ThunderX299xx.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/arm_a64fx.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/arm_cortex-a53.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/arm_cortex-a57.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/arm_cortex-a72.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/arm_features.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/arm_vendors.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/index.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/ppc64_POWER10.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/ppc64_POWER6.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/ppc64_POWER7.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/ppc64_POWER8.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/ppc64_POWER9.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/ppc64_POWERPC_e5500.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/ppc64_POWERPC_e6500.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/ppc64_vendors.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_486-v1.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_486.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Broadwell-IBRS.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Broadwell-noTSX-IBRS.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Broadwell-noTSX.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Broadwell-v1.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Broadwell-v2.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Broadwell-v3.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Broadwell-v4.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Broadwell.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Cascadelake-Server-noTSX.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Cascadelake-Server-v1.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Cascadelake-Server-v2.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Cascadelake-Server-v3.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Cascadelake-Server-v4.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Cascadelake-Server-v5.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Cascadelake-Server.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Conroe-v1.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Conroe.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Cooperlake-v1.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Cooperlake-v2.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Cooperlake.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Denverton-v1.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Denverton-v2.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Denverton-v3.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Denverton.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Dhyana-v1.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Dhyana-v2.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Dhyana.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_EPYC-Genoa-v1.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_EPYC-Genoa.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_EPYC-IBPB.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_EPYC-Milan-v1.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_EPYC-Milan-v2.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_EPYC-Milan.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_EPYC-Rome-v1.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_EPYC-Rome-v2.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_EPYC-Rome-v3.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_EPYC-Rome-v4.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_EPYC-Rome.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_EPYC-v1.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_EPYC-v2.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_EPYC-v3.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_EPYC-v4.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_EPYC.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_GraniteRapids-v1.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_GraniteRapids-v2.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_GraniteRapids.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Haswell-IBRS.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Haswell-noTSX-IBRS.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Haswell-noTSX.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Haswell-v1.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Haswell-v2.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Haswell-v3.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Haswell-v4.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Haswell.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Icelake-Client-noTSX.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Icelake-Client.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Icelake-Server-noTSX.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Icelake-Server-v1.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Icelake-Server-v2.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Icelake-Server-v3.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Icelake-Server-v4.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Icelake-Server-v5.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Icelake-Server-v6.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Icelake-Server-v7.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Icelake-Server.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_IvyBridge-IBRS.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_IvyBridge-v1.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_IvyBridge-v2.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_IvyBridge.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_KnightsMill-v1.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_KnightsMill.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Nehalem-IBRS.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Nehalem-v1.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Nehalem-v2.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Nehalem.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Opteron_G1-v1.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Opteron_G1.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Opteron_G2-v1.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Opteron_G2.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Opteron_G3-v1.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Opteron_G3.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Opteron_G4-v1.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Opteron_G4.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Opteron_G5-v1.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Opteron_G5.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Penryn-v1.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Penryn.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_SandyBridge-IBRS.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_SandyBridge-v1.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_SandyBridge-v2.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_SandyBridge.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_SapphireRapids-v1.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_SapphireRapids-v2.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_SapphireRapids-v3.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_SapphireRapids.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_SierraForest-v1.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_SierraForest.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Skylake-Client-IBRS.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Skylake-Client-noTSX-IBRS.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Skylake-Client-v1.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Skylake-Client-v2.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Skylake-Client-v3.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Skylake-Client-v4.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Skylake-Client.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Skylake-Server-IBRS.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Skylake-Server-noTSX-IBRS.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Skylake-Server-v1.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Skylake-Server-v2.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Skylake-Server-v3.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Skylake-Server-v4.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Skylake-Server-v5.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Skylake-Server.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Snowridge-v1.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Snowridge-v2.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Snowridge-v3.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Snowridge-v4.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Snowridge.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Westmere-IBRS.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Westmere-v1.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Westmere-v2.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_Westmere.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_athlon-v1.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_athlon.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_core2duo-v1.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_core2duo.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_coreduo-v1.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_coreduo.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_cpu64-rhel5.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_cpu64-rhel6.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_features.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_kvm32-v1.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_kvm32.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_kvm64-v1.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_kvm64.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_n270-v1.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_n270.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_pentium-v1.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_pentium.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_pentium2-v1.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_pentium2.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_pentium3-v1.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_pentium3.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_pentiumpro.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_phenom-v1.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_phenom.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_qemu32-v1.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_qemu32.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_qemu64-v1.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_qemu64.xml" ],
+            
+              [  "usr\/share\/libvirt\/cpu_map\/x86_vendors.xml" ],
+            
+              [  "usr\/share\/libvirt\/schemas\/basictypes.rng" ],
+            
+              [  "usr\/share\/libvirt\/schemas\/capability.rng" ],
+            
+              [  "usr\/share\/libvirt\/schemas\/cpu.rng" ],
+            
+              [  "usr\/share\/libvirt\/schemas\/cputypes.rng" ],
+            
+              [  "usr\/share\/libvirt\/schemas\/domain.rng" ],
+            
+              [  "usr\/share\/libvirt\/schemas\/domainbackup.rng" ],
+            
+              [  "usr\/share\/libvirt\/schemas\/domaincaps.rng" ],
+            
+              [  "usr\/share\/libvirt\/schemas\/domaincheckpoint.rng" ],
+            
+              [  "usr\/share\/libvirt\/schemas\/domaincommon.rng" ],
+            
+              [  "usr\/share\/libvirt\/schemas\/domainoverrides.rng" ],
+            
+              [  "usr\/share\/libvirt\/schemas\/domainsnapshot.rng" ],
+            
+              [  "usr\/share\/libvirt\/schemas\/inactiveDomain.rng" ],
+            
+              [  "usr\/share\/libvirt\/schemas\/interface.rng" ],
+            
+              [  "usr\/share\/libvirt\/schemas\/network.rng" ],
+            
+              [  "usr\/share\/libvirt\/schemas\/networkcommon.rng" ],
+            
+              [  "usr\/share\/libvirt\/schemas\/networkport.rng" ],
+            
+              [  "usr\/share\/libvirt\/schemas\/nodedev.rng" ],
+            
+              [  "usr\/share\/libvirt\/schemas\/nwfilter.rng" ],
+            
+              [  "usr\/share\/libvirt\/schemas\/nwfilter_params.rng" ],
+            
+              [  "usr\/share\/libvirt\/schemas\/nwfilterbinding.rng" ],
+            
+              [  "usr\/share\/libvirt\/schemas\/privatedata.rng" ],
+            
+              [  "usr\/share\/libvirt\/schemas\/secret.rng" ],
+            
+              [  "usr\/share\/libvirt\/schemas\/storagecommon.rng" ],
+            
+              [  "usr\/share\/libvirt\/schemas\/storagepool.rng" ],
+            
+              [  "usr\/share\/libvirt\/schemas\/storagepoolcaps.rng" ],
+            
+              [  "usr\/share\/libvirt\/schemas\/storagevol.rng" ],
+            
+              [  "usr\/share\/libvirt\/test-screenshot.png" ],
+            
+              [  "usr\/share\/locale\/as\/LC_MESSAGES\/libvirt.mo" ],
+            
+              [  "usr\/share\/locale\/bg\/LC_MESSAGES\/libvirt.mo" ],
+            
+              [  "usr\/share\/locale\/bg\/LC_MESSAGES\/qemu.mo" ],
+            
+              [  "usr\/share\/locale\/bn_IN\/LC_MESSAGES\/libvirt.mo" ],
+            
+              [  "usr\/share\/locale\/bs\/LC_MESSAGES\/libvirt.mo" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/libvirt-glib.mo" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/libvirt.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/libvirt-glib.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/libvirt.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/spice-gtk.mo" ],
+            
+              [  "usr\/share\/locale\/da\/LC_MESSAGES\/libvirt.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/libvirt-glib.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/libvirt.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/spice-gtk.mo" ],
+            
+              [  "usr\/share\/locale\/de_DE\/LC_MESSAGES\/qemu.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/libvirt.mo" ],
+            
+              [  "usr\/share\/locale\/en_GB\/LC_MESSAGES\/libvirt-glib.mo" ],
+            
+              [  "usr\/share\/locale\/en_GB\/LC_MESSAGES\/libvirt.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/libvirt-glib.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/libvirt.mo" ],
+            
+              [  "usr\/share\/locale\/fi\/LC_MESSAGES\/libvirt-glib.mo" ],
+            
+              [  "usr\/share\/locale\/fi\/LC_MESSAGES\/libvirt.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/libvirt-glib.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/libvirt.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/spice-gtk.mo" ],
+            
+              [  "usr\/share\/locale\/fr_FR\/LC_MESSAGES\/qemu.mo" ],
+            
+              [  "usr\/share\/locale\/gu\/LC_MESSAGES\/libvirt.mo" ],
+            
+              [  "usr\/share\/locale\/hi\/LC_MESSAGES\/libvirt-glib.mo" ],
+            
+              [  "usr\/share\/locale\/hi\/LC_MESSAGES\/libvirt.mo" ],
+            
+              [  "usr\/share\/locale\/hr\/LC_MESSAGES\/libvirt.mo" ],
+            
+              [  "usr\/share\/locale\/hu\/LC_MESSAGES\/libvirt.mo" ],
+            
+              [  "usr\/share\/locale\/hu\/LC_MESSAGES\/qemu.mo" ],
+            
+              [  "usr\/share\/locale\/id\/LC_MESSAGES\/libvirt-glib.mo" ],
+            
+              [  "usr\/share\/locale\/id\/LC_MESSAGES\/libvirt.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/libvirt-glib.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/libvirt.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/qemu.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/spice-gtk.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/libvirt-glib.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/libvirt.mo" ],
+            
+              [  "usr\/share\/locale\/ka\/LC_MESSAGES\/libvirt-glib.mo" ],
+            
+              [  "usr\/share\/locale\/ka\/LC_MESSAGES\/libvirt.mo" ],
+            
+              [  "usr\/share\/locale\/ka\/LC_MESSAGES\/spice-gtk.mo" ],
+            
+              [  "usr\/share\/locale\/kn\/LC_MESSAGES\/libvirt.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/libvirt-glib.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/libvirt.mo" ],
+            
+              [  "usr\/share\/locale\/mk\/LC_MESSAGES\/libvirt.mo" ],
+            
+              [  "usr\/share\/locale\/ml\/LC_MESSAGES\/libvirt.mo" ],
+            
+              [  "usr\/share\/locale\/mr\/LC_MESSAGES\/libvirt.mo" ],
+            
+              [  "usr\/share\/locale\/ms\/LC_MESSAGES\/libvirt.mo" ],
+            
+              [  "usr\/share\/locale\/nb\/LC_MESSAGES\/libvirt.mo" ],
+            
+              [  "usr\/share\/locale\/nl\/LC_MESSAGES\/libvirt-glib.mo" ],
+            
+              [  "usr\/share\/locale\/nl\/LC_MESSAGES\/libvirt.mo" ],
+            
+              [  "usr\/share\/locale\/or\/LC_MESSAGES\/libvirt.mo" ],
+            
+              [  "usr\/share\/locale\/pa\/LC_MESSAGES\/libvirt.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/libvirt-glib.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/libvirt.mo" ],
+            
+              [  "usr\/share\/locale\/pt\/LC_MESSAGES\/libvirt.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/libvirt-glib.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/libvirt.mo" ],
+            
+              [  "usr\/share\/locale\/ro\/LC_MESSAGES\/libvirt-glib.mo" ],
+            
+              [  "usr\/share\/locale\/ro\/LC_MESSAGES\/libvirt.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/libvirt-glib.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/libvirt.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/spice-gtk.mo" ],
+            
+              [  "usr\/share\/locale\/si\/LC_MESSAGES\/libvirt-glib.mo" ],
+            
+              [  "usr\/share\/locale\/si\/LC_MESSAGES\/libvirt.mo" ],
+            
+              [  "usr\/share\/locale\/sr\/LC_MESSAGES\/libvirt.mo" ],
+            
+              [  "usr\/share\/locale\/sr@latin\/LC_MESSAGES\/libvirt.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/libvirt-glib.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/libvirt.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/qemu.mo" ],
+            
+              [  "usr\/share\/locale\/ta\/LC_MESSAGES\/libvirt.mo" ],
+            
+              [  "usr\/share\/locale\/te\/LC_MESSAGES\/libvirt.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/libvirt-glib.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/libvirt.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/qemu.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/libvirt-glib.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/libvirt.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/qemu.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/libvirt.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/libvirt.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/qemu.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/libvirt.mo" ],
+            
+              [  "usr\/share\/man\/man1\/nc.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/qemu-img.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/qemu-storage-daemon.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/qemu-trace-stap.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/qemu.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/scrub.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/spice-client.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/usbredirect.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/virsh.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/virt-admin.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/virt-host-validate.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/virt-login-shell.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/virt-pki-query-dn.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/virt-pki-validate.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/virt-qemu-qmp-proxy.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/virt-qemu-run.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/virt-qemu-sev-validate.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/virt-xml-validate.1.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/swtpm_ioctls.3.bz2" ],
+            
+              [  "usr\/share\/man\/man5\/radvd.conf.5.bz2" ],
+            
+              [  "usr\/share\/man\/man5\/swtpm-localca.conf.5.bz2" ],
+            
+              [  "usr\/share\/man\/man5\/swtpm-localca.options.5.bz2" ],
+            
+              [  "usr\/share\/man\/man5\/swtpm_setup.conf.5.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/qemu-block-drivers.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/qemu-cpu-models.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/qemu-ga-ref.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/qemu-qmp-ref.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/qemu-storage-daemon-qmp-ref.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/virkeycode-atset1.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/virkeycode-atset2.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/virkeycode-atset3.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/virkeycode-linux.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/virkeycode-osx.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/virkeycode-qnum.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/virkeycode-usb.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/virkeycode-win32.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/virkeycode-xtkbd.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/virkeyname-linux.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/virkeyname-osx.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/virkeyname-win32.7.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/ebtables-legacy.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/ebtables.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/libvirt-guests.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/libvirtd.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/qemu-ga.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/qemu-nbd.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/qemu-pr-helper.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/radvd.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/radvdump.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/swtpm-create-tpmca.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/swtpm-localca.8" ],
+            
+              [  "usr\/share\/man\/man8\/swtpm.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/swtpm_bios.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/swtpm_cert.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/swtpm_cuse.8" ],
+            
+              [  "usr\/share\/man\/man8\/swtpm_ioctl.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/swtpm_localca.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/swtpm_setup.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/virt-ssh-helper.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/virtinterfaced.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/virtlockd.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/virtlogd.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/virtnetworkd.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/virtnodedevd.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/virtnwfilterd.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/virtproxyd.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/virtqemud.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/virtsecretd.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/virtstoraged.8.bz2" ],
+            
+              [  "usr\/share\/polkit-1\/actions\/org.libvirt.api.policy" ],
+            
+              [  "usr\/share\/polkit-1\/actions\/org.libvirt.unix.policy" ],
+            
+              [  "usr\/share\/polkit-1\/actions\/org.spice-space.lowlevelusbaccess.policy" ],
+            
+              [  "usr\/share\/polkit-1\/rules.d\/50-libvirt.rules" ],
+            
+              [  "usr\/share\/qemu\/QEMU,cgthree.bin" ],
+            
+              [  "usr\/share\/qemu\/QEMU,tcx.bin" ],
+            
+              [  "usr\/share\/qemu\/bamboo.dtb" ],
+            
+              [  "usr\/share\/qemu\/binfmt.d\/qemu.conf" ],
+            
+              [  "usr\/share\/qemu\/bios-256k.bin" ],
+            
+              [  "usr\/share\/qemu\/bios-microvm.bin" ],
+            
+              [  "usr\/share\/qemu\/bios.bin" ],
+            
+              [  "usr\/share\/qemu\/canyonlands.dtb" ],
+            
+              [  "usr\/share\/qemu\/edk2-aarch64-code.fd" ],
+            
+              [  "usr\/share\/qemu\/edk2-arm-code.fd" ],
+            
+              [  "usr\/share\/qemu\/edk2-arm-vars.fd" ],
+            
+              [  "usr\/share\/qemu\/edk2-i386-code.fd" ],
+            
+              [  "usr\/share\/qemu\/edk2-i386-secure-code.fd" ],
+            
+              [  "usr\/share\/qemu\/edk2-i386-vars.fd" ],
+            
+              [  "usr\/share\/qemu\/edk2-licenses.txt" ],
+            
+              [  "usr\/share\/qemu\/edk2-loongarch64-code.fd" ],
+            
+              [  "usr\/share\/qemu\/edk2-loongarch64-vars.fd" ],
+            
+              [  "usr\/share\/qemu\/edk2-riscv-code.fd" ],
+            
+              [  "usr\/share\/qemu\/edk2-riscv-vars.fd" ],
+            
+              [  "usr\/share\/qemu\/edk2-x86_64-code.fd" ],
+            
+              [  "usr\/share\/qemu\/edk2-x86_64-secure-code.fd" ],
+            
+              [  "usr\/share\/qemu\/efi-e1000.rom" ],
+            
+              [  "usr\/share\/qemu\/efi-e1000e.rom" ],
+            
+              [  "usr\/share\/qemu\/efi-eepro100.rom" ],
+            
+              [  "usr\/share\/qemu\/efi-ne2k_pci.rom" ],
+            
+              [  "usr\/share\/qemu\/efi-pcnet.rom" ],
+            
+              [  "usr\/share\/qemu\/efi-rtl8139.rom" ],
+            
+              [  "usr\/share\/qemu\/efi-virtio.rom" ],
+            
+              [  "usr\/share\/qemu\/efi-vmxnet3.rom" ],
+            
+              [  "usr\/share\/qemu\/firmware\/50-edk2-i386-secure.json" ],
+            
+              [  "usr\/share\/qemu\/firmware\/50-edk2-ovmf-x64-sb.json" ],
+            
+              [  "usr\/share\/qemu\/firmware\/50-edk2-x86_64-secure.json" ],
+            
+              [  "usr\/share\/qemu\/firmware\/60-edk2-aarch64.json" ],
+            
+              [  "usr\/share\/qemu\/firmware\/60-edk2-arm.json" ],
+            
+              [  "usr\/share\/qemu\/firmware\/60-edk2-i386.json" ],
+            
+              [  "usr\/share\/qemu\/firmware\/60-edk2-loongarch64.json" ],
+            
+              [  "usr\/share\/qemu\/firmware\/60-edk2-ovmf-x64.json" ],
+            
+              [  "usr\/share\/qemu\/firmware\/60-edk2-riscv64.json" ],
+            
+              [  "usr\/share\/qemu\/firmware\/60-edk2-x86_64.json" ],
+            
+              [  "usr\/share\/qemu\/hppa-firmware.img" ],
+            
+              [  "usr\/share\/qemu\/hppa-firmware64.img" ],
+            
+              [  "usr\/share\/qemu\/keymaps\/ar" ],
+            
+              [  "usr\/share\/qemu\/keymaps\/bepo" ],
+            
+              [  "usr\/share\/qemu\/keymaps\/cz" ],
+            
+              [  "usr\/share\/qemu\/keymaps\/da" ],
+            
+              [  "usr\/share\/qemu\/keymaps\/de" ],
+            
+              [  "usr\/share\/qemu\/keymaps\/de-ch" ],
+            
+              [  "usr\/share\/qemu\/keymaps\/en-gb" ],
+            
+              [  "usr\/share\/qemu\/keymaps\/en-us" ],
+            
+              [  "usr\/share\/qemu\/keymaps\/es" ],
+            
+              [  "usr\/share\/qemu\/keymaps\/et" ],
+            
+              [  "usr\/share\/qemu\/keymaps\/fi" ],
+            
+              [  "usr\/share\/qemu\/keymaps\/fo" ],
+            
+              [  "usr\/share\/qemu\/keymaps\/fr" ],
+            
+              [  "usr\/share\/qemu\/keymaps\/fr-be" ],
+            
+              [  "usr\/share\/qemu\/keymaps\/fr-ca" ],
+            
+              [  "usr\/share\/qemu\/keymaps\/fr-ch" ],
+            
+              [  "usr\/share\/qemu\/keymaps\/hr" ],
+            
+              [  "usr\/share\/qemu\/keymaps\/hu" ],
+            
+              [  "usr\/share\/qemu\/keymaps\/is" ],
+            
+              [  "usr\/share\/qemu\/keymaps\/it" ],
+            
+              [  "usr\/share\/qemu\/keymaps\/ja" ],
+            
+              [  "usr\/share\/qemu\/keymaps\/lt" ],
+            
+              [  "usr\/share\/qemu\/keymaps\/lv" ],
+            
+              [  "usr\/share\/qemu\/keymaps\/mk" ],
+            
+              [  "usr\/share\/qemu\/keymaps\/nl" ],
+            
+              [  "usr\/share\/qemu\/keymaps\/no" ],
+            
+              [  "usr\/share\/qemu\/keymaps\/pl" ],
+            
+              [  "usr\/share\/qemu\/keymaps\/pt" ],
+            
+              [  "usr\/share\/qemu\/keymaps\/pt-br" ],
+            
+              [  "usr\/share\/qemu\/keymaps\/ru" ],
+            
+              [  "usr\/share\/qemu\/keymaps\/sl" ],
+            
+              [  "usr\/share\/qemu\/keymaps\/sv" ],
+            
+              [  "usr\/share\/qemu\/keymaps\/th" ],
+            
+              [  "usr\/share\/qemu\/keymaps\/tr" ],
+            
+              [  "usr\/share\/qemu\/kvmvapic.bin" ],
+            
+              [  "usr\/share\/qemu\/linuxboot.bin" ],
+            
+              [  "usr\/share\/qemu\/linuxboot_dma.bin" ],
+            
+              [  "usr\/share\/qemu\/multiboot.bin" ],
+            
+              [  "usr\/share\/qemu\/multiboot_dma.bin" ],
+            
+              [  "usr\/share\/qemu\/npcm7xx_bootrom.bin" ],
+            
+              [  "usr\/share\/qemu\/openbios-ppc" ],
+            
+              [  "usr\/share\/qemu\/openbios-sparc32" ],
+            
+              [  "usr\/share\/qemu\/openbios-sparc64" ],
+            
+              [  "usr\/share\/qemu\/opensbi-riscv32-generic-fw_dynamic.bin" ],
+            
+              [  "usr\/share\/qemu\/opensbi-riscv64-generic-fw_dynamic.bin" ],
+            
+              [  "usr\/share\/qemu\/palcode-clipper" ],
+            
+              [  "usr\/share\/qemu\/petalogix-ml605.dtb" ],
+            
+              [  "usr\/share\/qemu\/petalogix-s3adsp1800.dtb" ],
+            
+              [  "usr\/share\/qemu\/pvh.bin" ],
+            
+              [  "usr\/share\/qemu\/pxe-e1000.rom" ],
+            
+              [  "usr\/share\/qemu\/pxe-eepro100.rom" ],
+            
+              [  "usr\/share\/qemu\/pxe-ne2k_pci.rom" ],
+            
+              [  "usr\/share\/qemu\/pxe-pcnet.rom" ],
+            
+              [  "usr\/share\/qemu\/pxe-rtl8139.rom" ],
+            
+              [  "usr\/share\/qemu\/pxe-virtio.rom" ],
+            
+              [  "usr\/share\/qemu\/qboot.rom" ],
+            
+              [  "usr\/share\/qemu\/qemu-nsis.bmp" ],
+            
+              [  "usr\/share\/qemu\/qemu_vga.ndrv" ],
+            
+              [  "usr\/share\/qemu\/s390-ccw.img" ],
+            
+              [  "usr\/share\/qemu\/sgabios.bin" ],
+            
+              [  "usr\/share\/qemu\/skiboot.lid" ],
+            
+              [  "usr\/share\/qemu\/slof.bin" ],
+            
+              [  "usr\/share\/qemu\/trace-events-all" ],
+            
+              [  "usr\/share\/qemu\/u-boot-sam460-20100605.bin" ],
+            
+              [  "usr\/share\/qemu\/u-boot.e500" ],
+            
+              [  "usr\/share\/qemu\/vgabios-ati.bin" ],
+            
+              [  "usr\/share\/qemu\/vgabios-bochs-display.bin" ],
+            
+              [  "usr\/share\/qemu\/vgabios-cirrus.bin" ],
+            
+              [  "usr\/share\/qemu\/vgabios-qxl.bin" ],
+            
+              [  "usr\/share\/qemu\/vgabios-ramfb.bin" ],
+            
+              [  "usr\/share\/qemu\/vgabios-stdvga.bin" ],
+            
+              [  "usr\/share\/qemu\/vgabios-virtio.bin" ],
+            
+              [  "usr\/share\/qemu\/vgabios-vmware.bin" ],
+            
+              [  "usr\/share\/qemu\/vgabios.bin" ],
+            
+              [  "usr\/share\/qemu\/vhost-user\/50-qemu-gpu.json" ],
+            
+              [  "usr\/share\/qemu\/vof-nvram.bin" ],
+            
+              [  "usr\/share\/qemu\/vof.bin" ],
+            
+              [  "usr\/share\/seabios\/bios-256k.bin" ],
+            
+              [  "usr\/share\/seavgabios\/vgabios-cirrus.bin" ],
+            
+              [  "usr\/share\/seavgabios\/vgabios-isavga.bin" ],
+            
+              [  "usr\/share\/seavgabios\/vgabios-qxl.bin" ],
+            
+              [  "usr\/share\/seavgabios\/vgabios-stdvga.bin" ],
+            
+              [  "usr\/share\/seavgabios\/vgabios-virtio.bin" ],
+            
+              [  "usr\/share\/seavgabios\/vgabios-vmware.bin" ],
+            
+              [  "usr\/share\/sgabios\/sgabios.bin" ],
+            
+              [  "usr\/share\/swtpm\/swtpm-create-tpmca" ],
+            
+              [  "usr\/share\/swtpm\/swtpm-create-user-config-files" ],
+            
+              [  "usr\/share\/swtpm\/swtpm-localca" ],
+            
+              [  "usr\/share\/vala\/vapi\/libvirt-gconfig-1.0.deps" ],
+            
+              [  "usr\/share\/vala\/vapi\/libvirt-gconfig-1.0.vapi" ],
+            
+              [  "usr\/share\/vala\/vapi\/libvirt-glib-1.0.deps" ],
+            
+              [  "usr\/share\/vala\/vapi\/libvirt-glib-1.0.vapi" ],
+            
+              [  "usr\/share\/vala\/vapi\/libvirt-gobject-1.0.deps" ],
+            
+              [  "usr\/share\/vala\/vapi\/libvirt-gobject-1.0.vapi" ],
+            
+              [  "usr\/share\/vala\/vapi\/spice-client-glib-2.0.deps" ],
+            
+              [  "usr\/share\/vala\/vapi\/spice-client-glib-2.0.vapi" ],
+            
+              [  "usr\/share\/vala\/vapi\/spice-client-gtk-3.0.deps" ],
+            
+              [  "usr\/share\/vala\/vapi\/spice-client-gtk-3.0.vapi" ],
+            
+              [  "var\/lib\/swtpm-localca\/.keep_app-crypt_swtpm-0" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>
