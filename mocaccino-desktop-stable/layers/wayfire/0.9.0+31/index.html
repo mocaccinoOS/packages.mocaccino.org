@@ -1,0 +1,678 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing layers/wayfire-0.9.0&#43;31 in mocaccino-desktop-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> layers/wayfire-0.9.0&#43;31
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                Compiz like 3D wayland compositor
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-desktop-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-desktop-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of layers/wayfire
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/desktop:wayfire-layers-0.9.0-31" target="_blank"> quay.io/mocaccino/desktop:wayfire-layers-0.9.0-31 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/desktop:wayfire-layers-0.9.0-31/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 0.9.0&#43;31  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> MIT </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/wlroots">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  wlroots &gt;=0 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 3
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: gui-apps/grim gui-apps/gtkgreet gui-apps/wayland-logout gui-apps/wcm gui-apps/wf-shell gui-libs/wf-config gui-libs/wlroots:0/17 gui-wm/wayfire
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://github.com/WayfireWM/wayfire" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://github.com/WayfireWM/wayfire </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/gui-apps/grim">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  grim &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/gui-apps/gtkgreet">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  gtkgreet &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/gui-apps/wayland-logout">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  wayland-logout &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/gui-apps/wcm">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  wcm &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/gui-apps/wf-shell">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  wf-shell &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/gui-libs/wf-config">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  wf-config &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/gui-libs/wlroots">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  wlroots &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/gui-wm/wayfire">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  wayfire &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "etc\/wayfire.env" ],
+            
+              [  "usr\/bin\/grim" ],
+            
+              [  "usr\/bin\/gtkgreet" ],
+            
+              [  "usr\/bin\/wayfire" ],
+            
+              [  "usr\/bin\/wayfire-session" ],
+            
+              [  "usr\/bin\/wayland-logout" ],
+            
+              [  "usr\/bin\/wcm" ],
+            
+              [  "usr\/bin\/wdisplays" ],
+            
+              [  "usr\/bin\/wf-background" ],
+            
+              [  "usr\/bin\/wf-dock" ],
+            
+              [  "usr\/bin\/wf-panel" ],
+            
+              [  "usr\/lib64\/libwayfire-blur-base.so" ],
+            
+              [  "usr\/lib64\/libwf-config.so" ],
+            
+              [  "usr\/lib64\/libwf-config.so.0.9.0" ],
+            
+              [  "usr\/lib64\/libwf-config.so.1" ],
+            
+              [  "usr\/lib64\/libwf-utils.so" ],
+            
+              [  "usr\/lib64\/libwf-utils.so.0" ],
+            
+              [  "usr\/lib64\/libwf-utils.so.0.4.0" ],
+            
+              [  "usr\/lib64\/libwftouch.a" ],
+            
+              [  "usr\/lib64\/libwlroots.so" ],
+            
+              [  "usr\/lib64\/libwlroots.so.12" ],
+            
+              [  "usr\/lib64\/pkgconfig\/wayfire.pc" ],
+            
+              [  "usr\/lib64\/pkgconfig\/wf-config.pc" ],
+            
+              [  "usr\/lib64\/pkgconfig\/wf-shell.pc" ],
+            
+              [  "usr\/lib64\/pkgconfig\/wf-utils.pc" ],
+            
+              [  "usr\/lib64\/pkgconfig\/wlroots.pc" ],
+            
+              [  "usr\/lib64\/wayfire\/libalpha.so" ],
+            
+              [  "usr\/lib64\/wayfire\/libanimate.so" ],
+            
+              [  "usr\/lib64\/wayfire\/libautostart.so" ],
+            
+              [  "usr\/lib64\/wayfire\/libblur.so" ],
+            
+              [  "usr\/lib64\/wayfire\/libcommand.so" ],
+            
+              [  "usr\/lib64\/wayfire\/libcube.so" ],
+            
+              [  "usr\/lib64\/wayfire\/libdecoration.so" ],
+            
+              [  "usr\/lib64\/wayfire\/libdefault-config-backend.so" ],
+            
+              [  "usr\/lib64\/wayfire\/libdemo-ipc.so" ],
+            
+              [  "usr\/lib64\/wayfire\/libexpo.so" ],
+            
+              [  "usr\/lib64\/wayfire\/libextra-gestures.so" ],
+            
+              [  "usr\/lib64\/wayfire\/libfast-switcher.so" ],
+            
+              [  "usr\/lib64\/wayfire\/libfisheye.so" ],
+            
+              [  "usr\/lib64\/wayfire\/libforeign-toplevel.so" ],
+            
+              [  "usr\/lib64\/wayfire\/libgrid.so" ],
+            
+              [  "usr\/lib64\/wayfire\/libgtk-shell.so" ],
+            
+              [  "usr\/lib64\/wayfire\/libidle.so" ],
+            
+              [  "usr\/lib64\/wayfire\/libinput-method-v1.so" ],
+            
+              [  "usr\/lib64\/wayfire\/libinvert.so" ],
+            
+              [  "usr\/lib64\/wayfire\/libipc-rules.so" ],
+            
+              [  "usr\/lib64\/wayfire\/libipc.so" ],
+            
+              [  "usr\/lib64\/wayfire\/libmove.so" ],
+            
+              [  "usr\/lib64\/wayfire\/liboswitch.so" ],
+            
+              [  "usr\/lib64\/wayfire\/libplace.so" ],
+            
+              [  "usr\/lib64\/wayfire\/libpreserve-output.so" ],
+            
+              [  "usr\/lib64\/wayfire\/libresize.so" ],
+            
+              [  "usr\/lib64\/wayfire\/libscale-title-filter.so" ],
+            
+              [  "usr\/lib64\/wayfire\/libscale.so" ],
+            
+              [  "usr\/lib64\/wayfire\/libsession-lock.so" ],
+            
+              [  "usr\/lib64\/wayfire\/libshortcuts-inhibit.so" ],
+            
+              [  "usr\/lib64\/wayfire\/libsimple-tile.so" ],
+            
+              [  "usr\/lib64\/wayfire\/libstipc.so" ],
+            
+              [  "usr\/lib64\/wayfire\/libswitcher.so" ],
+            
+              [  "usr\/lib64\/wayfire\/libvswipe.so" ],
+            
+              [  "usr\/lib64\/wayfire\/libvswitch.so" ],
+            
+              [  "usr\/lib64\/wayfire\/libwayfire-shell.so" ],
+            
+              [  "usr\/lib64\/wayfire\/libwindow-rules.so" ],
+            
+              [  "usr\/lib64\/wayfire\/libwm-actions.so" ],
+            
+              [  "usr\/lib64\/wayfire\/libwobbly.so" ],
+            
+              [  "usr\/lib64\/wayfire\/libwrot.so" ],
+            
+              [  "usr\/lib64\/wayfire\/libwsets.so" ],
+            
+              [  "usr\/lib64\/wayfire\/libxdg-activation.so" ],
+            
+              [  "usr\/lib64\/wayfire\/libxkb-bindings.so" ],
+            
+              [  "usr\/lib64\/wayfire\/libzoom.so" ],
+            
+              [  "usr\/share\/applications\/network.cycles.wdisplays.desktop" ],
+            
+              [  "usr\/share\/applications\/wayfire-config-manager.desktop" ],
+            
+              [  "usr\/share\/bash-completion\/completions\/grim" ],
+            
+              [  "usr\/share\/fish\/vendor_completions.d\/grim.fish" ],
+            
+              [  "usr\/share\/icons\/hicolor\/128x128\/apps\/wayfire.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/128x128\/apps\/wcm.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/160x160\/apps\/wayfire.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/160x160\/apps\/wcm.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/192x192\/apps\/wayfire.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/192x192\/apps\/wcm.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/256x256\/apps\/wayfire.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/wayfire.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/wcm.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/512x512\/apps\/wayfire.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/64x64\/apps\/wayfire.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/64x64\/apps\/wcm.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/72x72\/apps\/wayfire.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/72x72\/apps\/wcm.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/96x96\/apps\/wayfire.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/96x96\/apps\/wcm.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/apps\/network.cycles.wdisplays.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/apps\/wayfire.svg" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/gtkgreet.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/gtkgreet.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/gtkgreet.mo" ],
+            
+              [  "usr\/share\/man\/man1\/grim.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/wayfire.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/wayland-logout.1.bz2" ],
+            
+              [  "usr\/share\/wayfire\/css\/default.css" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-alpha.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-animate.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-annotate.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-autorotate-iio.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-autostart.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-background-view.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-background.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-bench.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-blur.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-command.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-core.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-crosshair.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-cube.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-dbus_interface.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-decoration.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-dock.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-expo.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-extra-gestures.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-extra-protos.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-fast-switcher.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-fisheye.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-follow-focus.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-force-fullscreen.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-grid.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-hinge.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-idle.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-input.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-invert.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-join-views.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-keycolor.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-lxqt-shell.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-mag.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-move.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-obs.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-oswitch.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-panel.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-place.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-preserve-output.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-resize.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-scale-title-filter.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-scale.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-showrepaint.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-simple-tile.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-switcher.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-view-shot.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-vswipe.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-vswitch.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-water.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-window-rules.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-winzoom.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-wm-actions.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-wobbly.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-workarounds.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-workspace-names.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-wrot.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/plugin-zoom.svg" ],
+            
+              [  "usr\/share\/wayfire\/icons\/wayfire.png" ],
+            
+              [  "usr\/share\/wayfire\/icons\/wcm.png" ],
+            
+              [  "usr\/share\/wayfire\/metadata\/alpha.xml" ],
+            
+              [  "usr\/share\/wayfire\/metadata\/animate.xml" ],
+            
+              [  "usr\/share\/wayfire\/metadata\/autostart.xml" ],
+            
+              [  "usr\/share\/wayfire\/metadata\/blur.xml" ],
+            
+              [  "usr\/share\/wayfire\/metadata\/command.xml" ],
+            
+              [  "usr\/share\/wayfire\/metadata\/core.xml" ],
+            
+              [  "usr\/share\/wayfire\/metadata\/cube.xml" ],
+            
+              [  "usr\/share\/wayfire\/metadata\/decoration.xml" ],
+            
+              [  "usr\/share\/wayfire\/metadata\/expo.xml" ],
+            
+              [  "usr\/share\/wayfire\/metadata\/extra-gestures.xml" ],
+            
+              [  "usr\/share\/wayfire\/metadata\/fast-switcher.xml" ],
+            
+              [  "usr\/share\/wayfire\/metadata\/fisheye.xml" ],
+            
+              [  "usr\/share\/wayfire\/metadata\/foreign-toplevel.xml" ],
+            
+              [  "usr\/share\/wayfire\/metadata\/grid.xml" ],
+            
+              [  "usr\/share\/wayfire\/metadata\/gtk-shell.xml" ],
+            
+              [  "usr\/share\/wayfire\/metadata\/idle.xml" ],
+            
+              [  "usr\/share\/wayfire\/metadata\/input-device.xml" ],
+            
+              [  "usr\/share\/wayfire\/metadata\/input-method-v1.xml" ],
+            
+              [  "usr\/share\/wayfire\/metadata\/input.xml" ],
+            
+              [  "usr\/share\/wayfire\/metadata\/invert.xml" ],
+            
+              [  "usr\/share\/wayfire\/metadata\/ipc-rules.xml" ],
+            
+              [  "usr\/share\/wayfire\/metadata\/ipc.xml" ],
+            
+              [  "usr\/share\/wayfire\/metadata\/move.xml" ],
+            
+              [  "usr\/share\/wayfire\/metadata\/oswitch.xml" ],
+            
+              [  "usr\/share\/wayfire\/metadata\/output.xml" ],
+            
+              [  "usr\/share\/wayfire\/metadata\/place.xml" ],
+            
+              [  "usr\/share\/wayfire\/metadata\/preserve-output.xml" ],
+            
+              [  "usr\/share\/wayfire\/metadata\/resize.xml" ],
+            
+              [  "usr\/share\/wayfire\/metadata\/scale-title-filter.xml" ],
+            
+              [  "usr\/share\/wayfire\/metadata\/scale.xml" ],
+            
+              [  "usr\/share\/wayfire\/metadata\/session-lock.xml" ],
+            
+              [  "usr\/share\/wayfire\/metadata\/shortcuts-inhibit.xml" ],
+            
+              [  "usr\/share\/wayfire\/metadata\/simple-tile.xml" ],
+            
+              [  "usr\/share\/wayfire\/metadata\/switcher.xml" ],
+            
+              [  "usr\/share\/wayfire\/metadata\/vswipe.xml" ],
+            
+              [  "usr\/share\/wayfire\/metadata\/vswitch.xml" ],
+            
+              [  "usr\/share\/wayfire\/metadata\/wayfire-shell.xml" ],
+            
+              [  "usr\/share\/wayfire\/metadata\/wf-shell\/background.xml" ],
+            
+              [  "usr\/share\/wayfire\/metadata\/wf-shell\/dock.xml" ],
+            
+              [  "usr\/share\/wayfire\/metadata\/wf-shell\/panel.xml" ],
+            
+              [  "usr\/share\/wayfire\/metadata\/window-rules.xml" ],
+            
+              [  "usr\/share\/wayfire\/metadata\/wm-actions.xml" ],
+            
+              [  "usr\/share\/wayfire\/metadata\/wobbly.xml" ],
+            
+              [  "usr\/share\/wayfire\/metadata\/workarounds.xml" ],
+            
+              [  "usr\/share\/wayfire\/metadata\/wrot.xml" ],
+            
+              [  "usr\/share\/wayfire\/metadata\/wsets.xml" ],
+            
+              [  "usr\/share\/wayfire\/metadata\/xdg-activation.xml" ],
+            
+              [  "usr\/share\/wayfire\/metadata\/zoom.xml" ],
+            
+              [  "usr\/share\/wayfire\/protocols\/unstable\/wayfire-shell-unstable-v2.xml" ],
+            
+              [  "usr\/share\/wayfire\/wallpaper.jpg" ],
+            
+              [  "usr\/share\/wayfire\/wayfire.ini" ],
+            
+              [  "usr\/share\/wayland-sessions\/wayfire-session.desktop" ],
+            
+              [  "usr\/share\/wayland-sessions\/wayfire.desktop" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

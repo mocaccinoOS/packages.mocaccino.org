@@ -1,0 +1,581 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing layers/firmware-intel-2&#43;82 in mocaccino-desktop-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> layers/firmware-intel-2&#43;82
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-desktop-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-desktop-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of layers/firmware-intel
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/desktop:firmware-intel-layers-2-82" target="_blank"> quay.io/mocaccino/desktop:firmware-intel-layers-2-82 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/desktop:firmware-intel-layers-2-82/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 2&#43;82  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong>  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "usr\/lib\/firmware\/intel\/IntcSST2.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/avs\/apl\/dsp_basefw.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/avs\/cnl\/dsp_basefw.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/avs\/da7219-tplg.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/avs\/dmic-tplg.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/avs\/hda-8086-generic-tplg.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/avs\/hda-808628xx-3ep-tplg.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/avs\/hda-generic-1ep-tplg.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/avs\/hda-generic-tplg.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/avs\/max98357a-tplg.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/avs\/max98373-tplg.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/avs\/max98927-tplg.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/avs\/nau8825-tplg.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/avs\/rt274-tplg.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/avs\/rt286-tplg.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/avs\/rt298-tplg.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/avs\/rt5514-tplg.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/avs\/rt5640-tplg.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/avs\/rt5663-tplg.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/avs\/skl\/dsp_basefw.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/avs\/skl\/dsp_mod_7CAD0808-AB10-CD23-EF45-12AB34CD56EF.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/avs\/ssm4567-tplg.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/catpt\/bdw\/dsp_basefw.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/dsp_fw_bxtn.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/dsp_fw_bxtn_v2219.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/dsp_fw_bxtn_v3366.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/dsp_fw_cnl.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/dsp_fw_cnl_v1191.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/dsp_fw_cnl_v1858.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/dsp_fw_glk.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/dsp_fw_glk_v1814.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/dsp_fw_glk_v2768.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/dsp_fw_glk_v2880.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/dsp_fw_glk_v3366.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/dsp_fw_kbl.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/dsp_fw_kbl_v1037.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/dsp_fw_kbl_v2042.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/dsp_fw_kbl_v2630.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/dsp_fw_kbl_v3266.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/dsp_fw_kbl_v3402.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/dsp_fw_kbl_v3420.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/dsp_fw_kbl_v701.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/dsp_fw_release.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/dsp_fw_release_v3402.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/dsp_fw_release_v969.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/fw_sst_0f28.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/fw_sst_0f28.bin-48kHz_i2s_master" ],
+            
+              [  "usr\/lib\/firmware\/intel\/fw_sst_0f28_ssp0.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/fw_sst_22a8.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0040-0041.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0040-0041.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0040-1020.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0040-1020.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0040-1050.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0040-1050.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0040-2120.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0040-2120.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0040-4150.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0040-4150.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0041-0041.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0041-0041.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0093-0041.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0093-0041.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0093-0291.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0093-0291.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0093-1050.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0093-1050.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0093-4150.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0093-4150.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0180-0041.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0180-0041.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0180-1050.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0180-1050.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0180-4150.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0180-4150.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0190-0041-iml.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0190-0041.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0190-0041.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0190-0291-iml.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0190-0291.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0190-0291.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0291-0291.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-0291-0291.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-1040-0041.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-1040-0041.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-1040-1020.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-1040-1020.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-1040-1050.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-1040-1050.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-1040-2120.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-1040-2120.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-1040-4150.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-1040-4150.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-11-5.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-11-5.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-12-16.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-12-16.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-17-0-1.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-17-0-1.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-17-1.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-17-1.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-17-16-1.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-17-16-1.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-17-2.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-17-2.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-18-0-1.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-18-0-1.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-18-1.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-18-1.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-18-16-1.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-18-16-1.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-18-2.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-18-2.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-19-0-0.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-19-0-0.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-19-0-1.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-19-0-1.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-19-0-3.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-19-0-3.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-19-0-4.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-19-0-4.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-19-16-4.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-19-16-4.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-19-240-1.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-19-240-1.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-19-240-4.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-19-240-4.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-19-32-0.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-19-32-0.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-19-32-1.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-19-32-1.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-19-32-4.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-19-32-4.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-20-0-3.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-20-0-3.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-20-1-3.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-20-1-3.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-20-1-4.ddc" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-20-1-4.sfi" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-hw-37.7.10-fw-1.0.1.2d.d.bseq" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-hw-37.7.10-fw-1.0.2.3.d.bseq" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-hw-37.7.10-fw-1.80.1.2d.d.bseq" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-hw-37.7.10-fw-1.80.2.3.d.bseq" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-hw-37.7.bseq" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-hw-37.8.10-fw-1.10.2.27.d.bseq" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-hw-37.8.10-fw-1.10.3.11.e.bseq" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-hw-37.8.10-fw-22.50.19.14.f.bseq" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ibt-hw-37.8.bseq" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ice\/ddp\/ice-1.3.41.0.pkg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ice\/ddp\/ice.pkg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ice\/ddp-comms\/ice_comms-1.3.52.0.pkg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ice\/ddp-lag\/ice_lag-1.3.1.0.pkg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ice\/ddp-wireless_edge\/ice_wireless_edge-1.3.20.0.pkg" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ipu\/ipu6_fw.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ipu\/ipu6ep_fw.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ipu\/ipu6epadln_fw.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ipu\/ipu6epmtl_fw.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ipu\/ipu6se_fw.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ipu\/irci_irci_ecr-master_20161208_0213_20170112_1500.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ipu\/shisp_2400b0_v21.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ipu\/shisp_2401a0_v21.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ipu3-fw.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/irci_irci_ecr-master_20161208_0213_20170112_1500.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/ish\/ish_lnlm.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vpu\/vpu_37xx_v0.0.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vpu\/vpu_37xx_v1.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vpu\/vpu_40xx_v0.0.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vpu\/vpu_40xx_v1.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_fw.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_pkg_hi556_0.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_pkg_himx11b1_0.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_pkg_himx2170_0.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_pkg_himx2172_0.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_pkg_int3537_0.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_pkg_ovti01a0_0.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_pkg_ovti01af_0.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_pkg_ovti01as_0.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_pkg_ovti02c1_0.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_pkg_ovti02e1_0.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_pkg_ovti2740_0.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_pkg_ovti5678_0.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_pkg_ovti9734_0.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_pkg_ovti9738_0.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_skucfg_hi556_0_1.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_skucfg_himx11b1_0_1.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_skucfg_himx2170_0_1.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_skucfg_himx2172_0_1.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_skucfg_int3537_0_1.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_skucfg_ovti01a0_0_1.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_skucfg_ovti01af_0_1.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_skucfg_ovti01as_0_1.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_skucfg_ovti02c1_0_1.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_skucfg_ovti02e1_0_1.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_skucfg_ovti2740_0_1.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_skucfg_ovti5678_0_1.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_skucfg_ovti9734_0_1.bin" ],
+            
+              [  "usr\/lib\/firmware\/intel\/vsc\/ivsc_skucfg_ovti9738_0_1.bin" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

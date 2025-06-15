@@ -1,0 +1,1408 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing kernel/mocaccino-minimal-6.15.1 in mocaccino-desktop-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> kernel/mocaccino-minimal-6.15.1
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-desktop-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-desktop-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of kernel/mocaccino-minimal
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/desktop:mocaccino-minimal-kernel-6.15.1" target="_blank"> quay.io/mocaccino/desktop:mocaccino-minimal-kernel-6.15.1 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/desktop:mocaccino-minimal-kernel-6.15.1/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 6.15.1  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong>  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/mocaccino/cli">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  cli &gt;=0 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> autobump.hook: curl -Ls https://kernel.org/releases.json | jq -cr &#39;[ .releases[] | select(.moniker == &#34;stable&#34;) ][0].version&#39;
+
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> autobump.prefix: prefix
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> autobump.revdeps: false
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> autobump.strategy: custom
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> autobump.string_replace: { &#34;prefix&#34;: &#34;&#34; }
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> autobump.version_hook: curl -Ls https://kernel.org/releases.json | jq -cr &#39;[ .releases[] | select(.moniker == &#34;stable&#34;) ][0].version&#39;
+
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> package.version: 6.15.1
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "boot\/System.map-vanilla-x86_64-6.15.1-mocaccino" ],
+            
+              [  "boot\/kernel-vanilla-x86_64-6.15.1-mocaccino" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/842.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/aes_ti.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/af_alg.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/algif_aead.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/algif_hash.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/algif_rng.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/algif_skcipher.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/ansi_cprng.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/anubis.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/async_tx\/raid6test.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/blowfish_common.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/blowfish_generic.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/camellia_generic.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/cast5_generic.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/cast6_generic.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/cast_common.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/ccm.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/chacha20poly1305.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/cmac.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/crc32_generic.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/cryptd.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/crypto_engine.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/crypto_simd.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/crypto_user.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/ctr.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/cts.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/drbg.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/ecc.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/ecdh_generic.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/echainiv.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/fcrypt.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/gcm.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/geniv.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/ghash-generic.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/jitterentropy_rng.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/khazad.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/lrw.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/lz4.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/lz4hc.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/michael_mic.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/pcbc.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/pcrypt.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/rmd160.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/seed.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/seqiv.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/serpent_generic.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/sha3_generic.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/sha512_generic.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/tcrypt.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/tea.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/twofish_common.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/twofish_generic.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/wp512.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/xcbc.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/xts.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/crypto\/zstd.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/ata\/acard-ahci.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/ata\/ahci_platform.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/ata\/libahci_platform.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/ata\/pata_legacy.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/ata\/pata_pcmcia.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/ata\/sata_dwc_460ex.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/block\/aoe\/aoe.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/block\/drbd\/drbd.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/block\/floppy.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/block\/mtip32xx\/mtip32xx.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/block\/nbd.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/block\/null_blk\/null_blk.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/block\/rbd.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/block\/virtio_blk.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/block\/zram\/zram.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/firewire\/firewire-core.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/firewire\/firewire-ohci.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/firewire\/firewire-sbp2.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/firewire\/nosy.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-alps.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-appleir.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-asus.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-aureal.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-axff.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-betopff.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-cmedia.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-corsair-void.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-corsair.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-cp2112.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-elan.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-elecom.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-elo.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-emsff.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-gembird.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-generic.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-gfrm.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-gt683r.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-holtek-kbd.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-holtek-mouse.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-holtekff.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-hyperv.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-icade.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-jabra.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-keytouch.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-lcpower.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-led.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-lenovo.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-magicmouse.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-mf.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-multitouch.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-penmount.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-picolcd.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-plantronics.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-primax.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-prodikeys.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-razer.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-rmi.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-roccat-arvo.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-roccat-common.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-roccat-isku.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-roccat-kone.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-roccat-koneplus.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-roccat-konepure.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-roccat-kovaplus.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-roccat-lua.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-roccat-pyra.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-roccat-ryos.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-roccat-savu.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-roccat.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-saitek.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-sensor-custom.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-sensor-hub.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-speedlink.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-steelseries.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-tivo.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-uclogic.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-udraw-ps3.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-waltop.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-wiimote.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-xinmo.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/hid-zydacron.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/i2c-hid\/i2c-hid-acpi.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/i2c-hid\/i2c-hid.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/intel-ish-hid\/intel-ish-ipc.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/intel-ish-hid\/intel-ishtp-hid.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/intel-ish-hid\/intel-ishtp.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/uhid.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/hid\/wacom.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/gameport\/emu10k1-gp.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/gameport\/fm801-gp.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/gameport\/gameport.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/input-leds.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/joydev.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/joystick\/a3d.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/joystick\/adi.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/joystick\/analog.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/joystick\/as5011.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/joystick\/cobra.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/joystick\/db9.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/joystick\/gamecon.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/joystick\/gf2k.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/joystick\/grip.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/joystick\/grip_mp.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/joystick\/guillemot.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/joystick\/iforce\/iforce-serio.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/joystick\/iforce\/iforce-usb.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/joystick\/iforce\/iforce.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/joystick\/interact.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/joystick\/joydump.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/joystick\/magellan.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/joystick\/psxpad-spi.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/joystick\/pxrc.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/joystick\/sidewinder.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/joystick\/spaceball.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/joystick\/spaceorb.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/joystick\/stinger.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/joystick\/tmdc.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/joystick\/turbografx.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/joystick\/twidjoy.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/joystick\/walkera0701.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/joystick\/warrior.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/joystick\/xpad.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/joystick\/zhenhua.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/keyboard\/adc-keys.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/keyboard\/adp5588-keys.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/keyboard\/adp5589-keys.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/keyboard\/cros_ec_keyb.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/keyboard\/gpio_keys_polled.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/keyboard\/lm8323.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/keyboard\/lm8333.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/keyboard\/matrix_keypad.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/keyboard\/max7359_keypad.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/keyboard\/mpr121_touchkey.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/keyboard\/opencores-kbd.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/keyboard\/qt1070.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/keyboard\/qt2160.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/keyboard\/samsung-keypad.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/keyboard\/tca6416-keypad.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/keyboard\/tca8418_keypad.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/keyboard\/tm2-touchkey.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/matrix-keymap.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/misc\/88pm80x_onkey.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/misc\/ad714x-i2c.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/misc\/ad714x-spi.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/misc\/ad714x.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/misc\/adxl34x-i2c.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/misc\/adxl34x-spi.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/misc\/adxl34x.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/misc\/apanel.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/misc\/arizona-haptics.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/misc\/ati_remote2.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/misc\/atlas_btns.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/misc\/axp20x-pek.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/misc\/bma150.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/misc\/cm109.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/misc\/cma3000_d0x.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/misc\/cma3000_d0x_i2c.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/misc\/da9052_onkey.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/misc\/da9055_onkey.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/misc\/da9063_onkey.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/misc\/drv260x.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/misc\/drv2665.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/misc\/drv2667.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/misc\/e3x0-button.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/misc\/gpio-beeper.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/misc\/gpio_decoder.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/misc\/ideapad_slidebar.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/misc\/ims-pcu.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/misc\/keyspan_remote.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/misc\/kxtj9.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/misc\/max77693-haptic.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/misc\/mc13783-pwrbutton.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/misc\/mma8450.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/misc\/pcap_keys.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/misc\/pcf8574_keypad.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/misc\/pcspkr.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/misc\/powermate.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/misc\/pwm-beeper.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/misc\/pwm-vibra.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/misc\/regulator-haptic.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/misc\/retu-pwrbutton.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/misc\/rotary_encoder.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/misc\/soc_button_array.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/misc\/uinput.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/misc\/yealink.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/mouse\/appletouch.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/mouse\/bcm5974.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/mouse\/cyapatp.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/mouse\/elan_i2c.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/mouse\/gpio_mouse.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/mouse\/psmouse.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/mouse\/sermouse.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/mouse\/synaptics_i2c.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/mouse\/synaptics_usb.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/mouse\/vsxxxaa.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/rmi4\/rmi_core.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/rmi4\/rmi_i2c.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/rmi4\/rmi_smbus.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/rmi4\/rmi_spi.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/serio\/altera_ps2.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/serio\/arc_ps2.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/serio\/hyperv-keyboard.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/serio\/parkbd.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/serio\/ps2-gpio.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/serio\/ps2mult.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/serio\/serio_raw.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/serio\/userio.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/sparse-keymap.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/tablet\/acecad.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/tablet\/aiptek.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/tablet\/hanwang.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/tablet\/kbtab.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/tablet\/pegasus_notetaker.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/tablet\/wacom_serial4.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/ad7877.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/ad7879-i2c.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/ad7879-spi.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/ad7879.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/ads7846.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/atmel_mxt_ts.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/auo-pixcir-ts.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/bu21013_ts.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/cy8ctmg110_ts.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/cyttsp_core.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/cyttsp_i2c.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/cyttsp_spi.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/da9052_tsi.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/dynapro.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/edt-ft5x06.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/eeti_ts.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/egalax_ts_serial.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/ektf2127.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/elants_i2c.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/elo.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/exc3000.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/fujitsu_ts.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/goodix_ts.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/gunze.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/hampshire.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/hideep.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/ili210x.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/inexio.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/max11801_ts.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/mc13783_ts.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/melfas_mip4.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/mms114.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/mtouch.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/pcap_ts.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/penmount.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/pixcir_i2c_ts.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/raydium_i2c_ts.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/rohm_bu21023.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/s6sy761.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/silead.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/sis_i2c.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/st1232.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/stmfts.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/sur40.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/surface3_spi.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/sx8654.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/touchit213.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/touchright.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/touchwin.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/tps6507x-ts.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/tsc2004.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/tsc2005.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/tsc2007.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/tsc200x-core.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/tsc40.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/usbtouchscreen.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/wacom_i2c.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/wacom_w8001.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/wdt87xx_i2c.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/wm97xx-ts.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/zet6223.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/input\/touchscreen\/zforce_ts.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/md\/bcache\/bcache.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/md\/dm-bio-prison.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/md\/dm-cache-smq.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/md\/dm-cache.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/md\/dm-crypt.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/md\/dm-delay.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/md\/dm-era.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/md\/dm-flakey.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/md\/dm-integrity.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/md\/dm-log-userspace.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/md\/dm-log-writes.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/md\/dm-multipath.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/md\/dm-queue-length.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/md\/dm-round-robin.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/md\/dm-service-time.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/md\/dm-switch.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/md\/dm-thin-pool.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/md\/dm-verity.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/md\/dm-zoned.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/md\/md-cluster.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/md\/persistent-data\/dm-persistent-data.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/atm\/cxacru.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/atm\/speedtch.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/atm\/ueagle-atm.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/atm\/usbatm.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/atm\/xusbatm.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/c67x00\/c67x00.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/chipidea\/ci_hdrc.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/chipidea\/ci_hdrc_msm.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/chipidea\/ci_hdrc_npcm.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/chipidea\/ci_hdrc_pci.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/chipidea\/ci_hdrc_usb2.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/class\/cdc-acm.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/class\/cdc-wdm.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/class\/usblp.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/class\/usbtmc.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/common\/ulpi.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/common\/usb-otg-fsm.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/core\/ledtrig-usbport.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/dwc2\/dwc2_pci.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/dwc3\/dwc3-haps.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/dwc3\/dwc3-pci.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/dwc3\/dwc3.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/function\/u_audio.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/function\/u_ether.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/function\/u_serial.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/function\/usb_f_acm.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/function\/usb_f_ecm.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/function\/usb_f_ecm_subset.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/function\/usb_f_fs.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/function\/usb_f_hid.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/function\/usb_f_mass_storage.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/function\/usb_f_midi.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/function\/usb_f_ncm.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/function\/usb_f_obex.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/function\/usb_f_phonet.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/function\/usb_f_printer.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/function\/usb_f_rndis.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/function\/usb_f_serial.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/function\/usb_f_tcm.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/function\/usb_f_uac1.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/function\/usb_f_uac2.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/function\/usb_f_uvc.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/legacy\/g_acm_ms.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/legacy\/g_cdc.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/legacy\/g_dbgp.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/legacy\/g_ether.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/legacy\/g_ffs.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/legacy\/g_hid.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/legacy\/g_mass_storage.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/legacy\/g_midi.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/legacy\/g_multi.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/legacy\/g_ncm.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/legacy\/g_nokia.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/legacy\/g_printer.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/legacy\/g_serial.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/legacy\/g_webcam.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/legacy\/gadgetfs.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/legacy\/tcm_usb_gadget.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/libcomposite.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/udc\/amd5536udc_pci.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/udc\/bdc\/bdc.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/udc\/dummy_hcd.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/udc\/goku_udc.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/udc\/gr_udc.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/udc\/m66592-udc.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/udc\/mv_u3d_core.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/udc\/mv_udc.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/udc\/net2272.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/udc\/net2280.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/udc\/pch_udc.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/udc\/pxa27x_udc.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/udc\/r8a66597-udc.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/udc\/snps_udc_core.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/gadget\/udc\/udc-core.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/host\/bcma-hcd.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/host\/ehci-hcd.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/host\/ehci-pci.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/host\/ehci-platform.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/host\/isp116x-hcd.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/host\/max3421-hcd.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/host\/ohci-hcd.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/host\/ohci-pci.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/host\/ohci-platform.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/host\/oxu210hp-hcd.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/host\/r8a66597-hcd.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/host\/sl811-hcd.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/host\/sl811_cs.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/host\/ssb-hcd.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/host\/uhci-hcd.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/host\/xhci-hcd.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/host\/xhci-pci.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/host\/xhci-plat-hcd.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/image\/mdc800.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/image\/microtek.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/isp1760\/isp1760.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/misc\/adutux.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/misc\/appledisplay.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/misc\/chaoskey.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/misc\/cypress_cy7c63.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/misc\/cytherm.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/misc\/ehset.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/misc\/emi26.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/misc\/emi62.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/misc\/ezusb.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/misc\/idmouse.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/misc\/iowarrior.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/misc\/isight_firmware.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/misc\/ldusb.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/misc\/legousbtower.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/misc\/lvstest.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/misc\/sisusbvga\/sisusbvga.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/misc\/trancevibrator.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/misc\/usb251xb.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/misc\/usb3503.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/misc\/usb4604.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/misc\/usblcd.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/misc\/usbsevseg.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/misc\/usbtest.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/misc\/uss720.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/misc\/yurex.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/musb\/musb_hdrc.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/phy\/phy-generic.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/phy\/phy-gpio-vbus-usb.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/phy\/phy-isp1301.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/phy\/phy-tahvo.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/aircable.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/ark3116.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/belkin_sa.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/ch341.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/cp210x.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/cyberjack.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/cypress_m8.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/digi_acceleport.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/empeg.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/f81232.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/f81534.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/ftdi_sio.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/garmin_gps.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/io_edgeport.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/io_ti.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/ipaq.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/ipw.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/ir-usb.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/iuu_phoenix.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/keyspan.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/keyspan_pda.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/kl5kusb105.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/kobil_sct.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/mct_u232.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/metro-usb.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/mos7720.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/mos7840.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/mxuport.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/navman.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/omninet.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/opticon.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/option.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/oti6858.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/pl2303.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/qcaux.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/qcserial.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/quatech2.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/safe_serial.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/sierra.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/spcp8x5.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/ssu100.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/symbolserial.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/ti_usb_3410_5052.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/upd78f0730.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/usb-serial-simple.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/usb_wwan.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/usbserial.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/visor.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/whiteheat.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/wishbone-serial.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/serial\/xsens_mt.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/storage\/uas.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/storage\/ums-eneub6250.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/storage\/ums-realtek.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/typec\/typec.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/typec\/ucsi\/cros_ec_ucsi.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/typec\/ucsi\/typec_ucsi.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/typec\/ucsi\/ucsi_acpi.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/usbip\/usbip-core.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/usbip\/usbip-host.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/usbip\/usbip-vudc.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/usb\/usbip\/vhci-hcd.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/virtio\/virtio.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/virtio\/virtio_balloon.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/virtio\/virtio_dma_buf.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/virtio\/virtio_input.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/virtio\/virtio_mem.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/virtio\/virtio_mmio.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/virtio\/virtio_pci.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/virtio\/virtio_pci_legacy_dev.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/virtio\/virtio_pci_modern_dev.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/drivers\/virtio\/virtio_ring.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/fs\/ext2\/ext2.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/fs\/ext4\/ext4.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/fs\/jbd2\/jbd2.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/fs\/mbcache.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/fs\/overlayfs\/overlay.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/lib\/842\/842_compress.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/lib\/842\/842_decompress.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/lib\/asn1_encoder.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/lib\/bch.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/lib\/crc-ccitt.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/lib\/crc16.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/lib\/crc7.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/lib\/crc8.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/lib\/crypto\/gf128mul.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/lib\/crypto\/libaescfb.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/lib\/crypto\/libchacha20poly1305.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/lib\/crypto\/libcurve25519-generic.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/lib\/crypto\/libcurve25519.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/lib\/lru_cache.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/lib\/math\/cordic.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/lib\/objagg.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/lib\/parman.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/lib\/percpu_test.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/lib\/reed_solomon\/reed_solomon.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/lib\/test_bitmap.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/lib\/test_bpf.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/lib\/test_hexdump.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/lib\/test_parman.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/lib\/test_uuid.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/lib\/ts_bm.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/lib\/ts_fsm.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/lib\/ts_kmp.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/kernel\/lib\/xz\/xz_dec_test.ko" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/modules.builtin" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/modules.builtin.modinfo" ],
+            
+              [  "usr\/lib\/modules\/6.15.1-mocaccino\/modules.order" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

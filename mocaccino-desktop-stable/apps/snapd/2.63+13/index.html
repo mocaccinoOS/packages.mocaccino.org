@@ -1,0 +1,1916 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing apps/snapd-2.63&#43;13 in mocaccino-desktop-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> apps/snapd-2.63&#43;13
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                Service and tools for management of snap packages
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-desktop-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-desktop-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of apps/snapd
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/desktop:snapd-apps-2.63-13" target="_blank"> quay.io/mocaccino/desktop:snapd-apps-2.63-13 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/desktop:snapd-apps-2.63-13/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 2.63&#43;13  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> GPL-3 Apache-2.0 BSD BSD-2 LGPL-3-with-linking-exception MIT </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/X">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  X &gt;=0 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 3
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: app-containers/snapd dev-util/xdelta:3 sec-policy/apparmor-profiles sys-apps/apparmor sys-apps/apparmor-utils sys-libs/libapparmor
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="http://snapcraft.io" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> http://snapcraft.io </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/app-containers/snapd">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  snapd &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/dev-util/xdelta">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  xdelta &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/sec-policy/apparmor-profiles">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  apparmor-profiles &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/sys-apps/apparmor">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  apparmor &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/sys-apps/apparmor-utils">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  apparmor-utils &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/sys-libs/libapparmor">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  libapparmor &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "etc\/apparmor\/easyprof.conf" ],
+            
+              [  "etc\/apparmor\/logprof.conf" ],
+            
+              [  "etc\/apparmor\/notify.conf" ],
+            
+              [  "etc\/apparmor\/parser.conf" ],
+            
+              [  "etc\/apparmor\/severity.db" ],
+            
+              [  "etc\/apparmor.d\/abi\/3.0" ],
+            
+              [  "etc\/apparmor.d\/abi\/kernel-5.4-outoftree-network" ],
+            
+              [  "etc\/apparmor.d\/abi\/kernel-5.4-vanilla" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/X" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/apache2-common" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/apparmor_api\/change_profile" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/apparmor_api\/examine" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/apparmor_api\/find_mountpoint" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/apparmor_api\/introspect" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/apparmor_api\/is_enabled" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/aspell" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/audio" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/authentication" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/base" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/bash" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/consoles" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/crypto" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/cups-client" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/dbus" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/dbus-accessibility" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/dbus-accessibility-strict" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/dbus-network-manager-strict" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/dbus-session" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/dbus-session-strict" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/dbus-strict" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/dconf" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/dovecot-common" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/dri-common" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/dri-enumerate" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/enchant" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/exo-open" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/fcitx" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/fcitx-strict" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/fonts" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/freedesktop.org" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/gio-open" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/gnome" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/gnupg" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/groff" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/gtk" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/gvfs-open" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/hosts_access" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/ibus" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/kde" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/kde-globals-write" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/kde-icon-cache-write" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/kde-language-write" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/kde-open5" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/kerberosclient" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/ldapclient" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/libpam-systemd" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/likewise" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/mdns" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/mesa" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/mir" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/mozc" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/mysql" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/nameservice" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/nis" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/nss-systemd" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/nvidia" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/opencl" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/opencl-common" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/opencl-intel" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/opencl-mesa" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/opencl-nvidia" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/opencl-pocl" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/openssl" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/orbit2" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/p11-kit" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/perl" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/php" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/php-worker" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/php5" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/postfix-common" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/private-files" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/private-files-strict" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/python" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/qt5" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/qt5-compose-cache-write" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/qt5-settings-write" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/recent-documents-write" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/ruby" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/samba" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/samba-rpcd" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/smbpass" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/snap_browsers" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/ssl_certs" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/ssl_keys" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/svn-repositories" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/trash" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/ubuntu-bittorrent-clients" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/ubuntu-browsers" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/ubuntu-browsers.d\/chromium-browser" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/ubuntu-browsers.d\/java" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/ubuntu-browsers.d\/kde" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/ubuntu-browsers.d\/mailto" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/ubuntu-browsers.d\/multimedia" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/ubuntu-browsers.d\/plugins-common" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/ubuntu-browsers.d\/productivity" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/ubuntu-browsers.d\/text-editors" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/ubuntu-browsers.d\/ubuntu-integration" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/ubuntu-browsers.d\/ubuntu-integration-xul" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/ubuntu-browsers.d\/user-files" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/ubuntu-console-browsers" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/ubuntu-console-email" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/ubuntu-email" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/ubuntu-feed-readers" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/ubuntu-gnome-terminal" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/ubuntu-helpers" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/ubuntu-konsole" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/ubuntu-media-players" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/ubuntu-unity7-base" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/ubuntu-unity7-launcher" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/ubuntu-unity7-messaging" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/ubuntu-xterm" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/user-download" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/user-mail" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/user-manpages" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/user-tmp" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/user-write" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/video" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/vulkan" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/wayland" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/web-data" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/winbind" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/wutmp" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/xad" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/xdg-desktop" ],
+            
+              [  "etc\/apparmor.d\/abstractions\/xdg-open" ],
+            
+              [  "etc\/apparmor.d\/apache2.d\/phpsysinfo" ],
+            
+              [  "etc\/apparmor.d\/bin.ping" ],
+            
+              [  "etc\/apparmor.d\/local\/README" ],
+            
+              [  "etc\/apparmor.d\/local\/bin.ping" ],
+            
+              [  "etc\/apparmor.d\/local\/lsb_release" ],
+            
+              [  "etc\/apparmor.d\/local\/nvidia_modprobe" ],
+            
+              [  "etc\/apparmor.d\/local\/php-fpm" ],
+            
+              [  "etc\/apparmor.d\/local\/samba-bgqd" ],
+            
+              [  "etc\/apparmor.d\/local\/samba-dcerpcd" ],
+            
+              [  "etc\/apparmor.d\/local\/samba-rpcd" ],
+            
+              [  "etc\/apparmor.d\/local\/samba-rpcd-classic" ],
+            
+              [  "etc\/apparmor.d\/local\/samba-rpcd-spoolss" ],
+            
+              [  "etc\/apparmor.d\/local\/sbin.klogd" ],
+            
+              [  "etc\/apparmor.d\/local\/sbin.syslog-ng" ],
+            
+              [  "etc\/apparmor.d\/local\/sbin.syslogd" ],
+            
+              [  "etc\/apparmor.d\/local\/usr.lib.apache2.mpm-prefork.apache2" ],
+            
+              [  "etc\/apparmor.d\/local\/usr.lib.dovecot.anvil" ],
+            
+              [  "etc\/apparmor.d\/local\/usr.lib.dovecot.auth" ],
+            
+              [  "etc\/apparmor.d\/local\/usr.lib.dovecot.config" ],
+            
+              [  "etc\/apparmor.d\/local\/usr.lib.dovecot.deliver" ],
+            
+              [  "etc\/apparmor.d\/local\/usr.lib.dovecot.dict" ],
+            
+              [  "etc\/apparmor.d\/local\/usr.lib.dovecot.director" ],
+            
+              [  "etc\/apparmor.d\/local\/usr.lib.dovecot.doveadm-server" ],
+            
+              [  "etc\/apparmor.d\/local\/usr.lib.dovecot.dovecot-auth" ],
+            
+              [  "etc\/apparmor.d\/local\/usr.lib.dovecot.dovecot-lda" ],
+            
+              [  "etc\/apparmor.d\/local\/usr.lib.dovecot.imap" ],
+            
+              [  "etc\/apparmor.d\/local\/usr.lib.dovecot.imap-login" ],
+            
+              [  "etc\/apparmor.d\/local\/usr.lib.dovecot.lmtp" ],
+            
+              [  "etc\/apparmor.d\/local\/usr.lib.dovecot.log" ],
+            
+              [  "etc\/apparmor.d\/local\/usr.lib.dovecot.managesieve" ],
+            
+              [  "etc\/apparmor.d\/local\/usr.lib.dovecot.managesieve-login" ],
+            
+              [  "etc\/apparmor.d\/local\/usr.lib.dovecot.pop3" ],
+            
+              [  "etc\/apparmor.d\/local\/usr.lib.dovecot.pop3-login" ],
+            
+              [  "etc\/apparmor.d\/local\/usr.lib.dovecot.replicator" ],
+            
+              [  "etc\/apparmor.d\/local\/usr.lib.dovecot.script-login" ],
+            
+              [  "etc\/apparmor.d\/local\/usr.lib.dovecot.ssl-params" ],
+            
+              [  "etc\/apparmor.d\/local\/usr.lib.dovecot.stats" ],
+            
+              [  "etc\/apparmor.d\/local\/usr.sbin.apache2" ],
+            
+              [  "etc\/apparmor.d\/local\/usr.sbin.avahi-daemon" ],
+            
+              [  "etc\/apparmor.d\/local\/usr.sbin.dnsmasq" ],
+            
+              [  "etc\/apparmor.d\/local\/usr.sbin.dovecot" ],
+            
+              [  "etc\/apparmor.d\/local\/usr.sbin.identd" ],
+            
+              [  "etc\/apparmor.d\/local\/usr.sbin.mdnsd" ],
+            
+              [  "etc\/apparmor.d\/local\/usr.sbin.nmbd" ],
+            
+              [  "etc\/apparmor.d\/local\/usr.sbin.nscd" ],
+            
+              [  "etc\/apparmor.d\/local\/usr.sbin.ntpd" ],
+            
+              [  "etc\/apparmor.d\/local\/usr.sbin.smbd" ],
+            
+              [  "etc\/apparmor.d\/local\/usr.sbin.smbldap-useradd" ],
+            
+              [  "etc\/apparmor.d\/local\/usr.sbin.traceroute" ],
+            
+              [  "etc\/apparmor.d\/local\/usr.sbin.winbindd" ],
+            
+              [  "etc\/apparmor.d\/local\/zgrep" ],
+            
+              [  "etc\/apparmor.d\/lsb_release" ],
+            
+              [  "etc\/apparmor.d\/nvidia_modprobe" ],
+            
+              [  "etc\/apparmor.d\/php-fpm" ],
+            
+              [  "etc\/apparmor.d\/samba-bgqd" ],
+            
+              [  "etc\/apparmor.d\/samba-dcerpcd" ],
+            
+              [  "etc\/apparmor.d\/samba-rpcd" ],
+            
+              [  "etc\/apparmor.d\/samba-rpcd-classic" ],
+            
+              [  "etc\/apparmor.d\/samba-rpcd-spoolss" ],
+            
+              [  "etc\/apparmor.d\/sbin.klogd" ],
+            
+              [  "etc\/apparmor.d\/sbin.syslog-ng" ],
+            
+              [  "etc\/apparmor.d\/sbin.syslogd" ],
+            
+              [  "etc\/apparmor.d\/tunables\/alias" ],
+            
+              [  "etc\/apparmor.d\/tunables\/apparmorfs" ],
+            
+              [  "etc\/apparmor.d\/tunables\/dovecot" ],
+            
+              [  "etc\/apparmor.d\/tunables\/etc" ],
+            
+              [  "etc\/apparmor.d\/tunables\/global" ],
+            
+              [  "etc\/apparmor.d\/tunables\/home" ],
+            
+              [  "etc\/apparmor.d\/tunables\/home.d\/site.local" ],
+            
+              [  "etc\/apparmor.d\/tunables\/kernelvars" ],
+            
+              [  "etc\/apparmor.d\/tunables\/multiarch" ],
+            
+              [  "etc\/apparmor.d\/tunables\/multiarch.d\/site.local" ],
+            
+              [  "etc\/apparmor.d\/tunables\/ntpd" ],
+            
+              [  "etc\/apparmor.d\/tunables\/proc" ],
+            
+              [  "etc\/apparmor.d\/tunables\/run" ],
+            
+              [  "etc\/apparmor.d\/tunables\/securityfs" ],
+            
+              [  "etc\/apparmor.d\/tunables\/share" ],
+            
+              [  "etc\/apparmor.d\/tunables\/sys" ],
+            
+              [  "etc\/apparmor.d\/tunables\/xdg-user-dirs" ],
+            
+              [  "etc\/apparmor.d\/tunables\/xdg-user-dirs.d\/site.local" ],
+            
+              [  "etc\/apparmor.d\/usr.lib.apache2.mpm-prefork.apache2" ],
+            
+              [  "etc\/apparmor.d\/usr.lib.dovecot.anvil" ],
+            
+              [  "etc\/apparmor.d\/usr.lib.dovecot.auth" ],
+            
+              [  "etc\/apparmor.d\/usr.lib.dovecot.config" ],
+            
+              [  "etc\/apparmor.d\/usr.lib.dovecot.deliver" ],
+            
+              [  "etc\/apparmor.d\/usr.lib.dovecot.dict" ],
+            
+              [  "etc\/apparmor.d\/usr.lib.dovecot.director" ],
+            
+              [  "etc\/apparmor.d\/usr.lib.dovecot.doveadm-server" ],
+            
+              [  "etc\/apparmor.d\/usr.lib.dovecot.dovecot-auth" ],
+            
+              [  "etc\/apparmor.d\/usr.lib.dovecot.dovecot-lda" ],
+            
+              [  "etc\/apparmor.d\/usr.lib.dovecot.imap" ],
+            
+              [  "etc\/apparmor.d\/usr.lib.dovecot.imap-login" ],
+            
+              [  "etc\/apparmor.d\/usr.lib.dovecot.lmtp" ],
+            
+              [  "etc\/apparmor.d\/usr.lib.dovecot.log" ],
+            
+              [  "etc\/apparmor.d\/usr.lib.dovecot.managesieve" ],
+            
+              [  "etc\/apparmor.d\/usr.lib.dovecot.managesieve-login" ],
+            
+              [  "etc\/apparmor.d\/usr.lib.dovecot.pop3" ],
+            
+              [  "etc\/apparmor.d\/usr.lib.dovecot.pop3-login" ],
+            
+              [  "etc\/apparmor.d\/usr.lib.dovecot.replicator" ],
+            
+              [  "etc\/apparmor.d\/usr.lib.dovecot.script-login" ],
+            
+              [  "etc\/apparmor.d\/usr.lib.dovecot.ssl-params" ],
+            
+              [  "etc\/apparmor.d\/usr.lib.dovecot.stats" ],
+            
+              [  "etc\/apparmor.d\/usr.lib.snapd.snap-confine.real" ],
+            
+              [  "etc\/apparmor.d\/usr.sbin.apache2" ],
+            
+              [  "etc\/apparmor.d\/usr.sbin.avahi-daemon" ],
+            
+              [  "etc\/apparmor.d\/usr.sbin.dnsmasq" ],
+            
+              [  "etc\/apparmor.d\/usr.sbin.dovecot" ],
+            
+              [  "etc\/apparmor.d\/usr.sbin.identd" ],
+            
+              [  "etc\/apparmor.d\/usr.sbin.mdnsd" ],
+            
+              [  "etc\/apparmor.d\/usr.sbin.nmbd" ],
+            
+              [  "etc\/apparmor.d\/usr.sbin.nscd" ],
+            
+              [  "etc\/apparmor.d\/usr.sbin.ntpd" ],
+            
+              [  "etc\/apparmor.d\/usr.sbin.smbd" ],
+            
+              [  "etc\/apparmor.d\/usr.sbin.smbldap-useradd" ],
+            
+              [  "etc\/apparmor.d\/usr.sbin.traceroute" ],
+            
+              [  "etc\/apparmor.d\/usr.sbin.winbindd" ],
+            
+              [  "etc\/apparmor.d\/zgrep" ],
+            
+              [  "etc\/init.d\/apparmor" ],
+            
+              [  "etc\/profile.d\/snapd.sh" ],
+            
+              [  "etc\/xdg\/autostart\/snap-userd-autostart.desktop" ],
+            
+              [  "usr\/bin\/aa-audit" ],
+            
+              [  "usr\/bin\/aa-autodep" ],
+            
+              [  "usr\/bin\/aa-cleanprof" ],
+            
+              [  "usr\/bin\/aa-complain" ],
+            
+              [  "usr\/bin\/aa-decode" ],
+            
+              [  "usr\/bin\/aa-disable" ],
+            
+              [  "usr\/bin\/aa-easyprof" ],
+            
+              [  "usr\/bin\/aa-enabled" ],
+            
+              [  "usr\/bin\/aa-enforce" ],
+            
+              [  "usr\/bin\/aa-exec" ],
+            
+              [  "usr\/bin\/aa-features-abi" ],
+            
+              [  "usr\/bin\/aa-genprof" ],
+            
+              [  "usr\/bin\/aa-load" ],
+            
+              [  "usr\/bin\/aa-logprof" ],
+            
+              [  "usr\/bin\/aa-mergeprof" ],
+            
+              [  "usr\/bin\/aa-notify" ],
+            
+              [  "usr\/bin\/aa-remove-unknown" ],
+            
+              [  "usr\/bin\/aa-status" ],
+            
+              [  "usr\/bin\/aa-unconfined" ],
+            
+              [  "usr\/bin\/apparmor_parser" ],
+            
+              [  "usr\/bin\/apparmor_status" ],
+            
+              [  "usr\/bin\/snap" ],
+            
+              [  "usr\/bin\/snapctl" ],
+            
+              [  "usr\/bin\/ubuntu-core-launcher" ],
+            
+              [  "usr\/bin\/xdelta3" ],
+            
+              [  "usr\/lib\/apparmor\/profile-load" ],
+            
+              [  "usr\/lib\/environment.d\/990-snapd.conf" ],
+            
+              [  "usr\/lib\/python-exec\/python3.13\/aa-audit" ],
+            
+              [  "usr\/lib\/python-exec\/python3.13\/aa-autodep" ],
+            
+              [  "usr\/lib\/python-exec\/python3.13\/aa-cleanprof" ],
+            
+              [  "usr\/lib\/python-exec\/python3.13\/aa-complain" ],
+            
+              [  "usr\/lib\/python-exec\/python3.13\/aa-disable" ],
+            
+              [  "usr\/lib\/python-exec\/python3.13\/aa-easyprof" ],
+            
+              [  "usr\/lib\/python-exec\/python3.13\/aa-enforce" ],
+            
+              [  "usr\/lib\/python-exec\/python3.13\/aa-genprof" ],
+            
+              [  "usr\/lib\/python-exec\/python3.13\/aa-logprof" ],
+            
+              [  "usr\/lib\/python-exec\/python3.13\/aa-mergeprof" ],
+            
+              [  "usr\/lib\/python-exec\/python3.13\/aa-notify" ],
+            
+              [  "usr\/lib\/python-exec\/python3.13\/aa-unconfined" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/LibAppArmor\/LibAppArmor.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/LibAppArmor\/_LibAppArmor.cpython-313-x86_64-linux-gnu.so" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/LibAppArmor\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/LibAppArmor\/__pycache__\/LibAppArmor.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/LibAppArmor\/__pycache__\/LibAppArmor.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/LibAppArmor\/__pycache__\/LibAppArmor.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/LibAppArmor\/__pycache__\/__init__.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/LibAppArmor\/__pycache__\/__init__.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/LibAppArmor\/__pycache__\/__init__.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/__pycache__\/notify2.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/__pycache__\/notify2.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/__pycache__\/notify2.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/__init__.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/__init__.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/__init__.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/aa.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/aa.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/aa.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/aare.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/aare.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/aare.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/cleanprofile.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/cleanprofile.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/cleanprofile.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/common.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/common.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/common.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/config.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/config.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/config.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/easyprof.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/easyprof.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/easyprof.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/fail.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/fail.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/fail.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/logparser.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/logparser.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/logparser.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/notify.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/notify.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/notify.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/profile_list.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/profile_list.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/profile_list.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/profile_storage.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/profile_storage.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/profile_storage.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/regex.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/regex.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/regex.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/rules.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/rules.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/rules.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/sandbox.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/sandbox.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/sandbox.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/severity.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/severity.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/severity.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/tools.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/tools.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/tools.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/translations.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/translations.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/translations.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/ui.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/ui.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/__pycache__\/ui.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/aa.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/aare.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/cleanprofile.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/common.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/config.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/easyprof.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/fail.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/logparser.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/notify.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/profile_list.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/profile_storage.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/regex.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/__init__.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/__init__.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/__init__.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/abi.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/abi.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/abi.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/alias.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/alias.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/alias.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/all.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/all.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/all.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/boolean.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/boolean.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/boolean.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/capability.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/capability.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/capability.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/change_profile.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/change_profile.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/change_profile.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/dbus.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/dbus.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/dbus.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/file.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/file.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/file.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/include.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/include.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/include.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/io_uring.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/io_uring.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/io_uring.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/mount.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/mount.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/mount.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/mqueue.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/mqueue.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/mqueue.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/network.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/network.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/network.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/ptrace.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/ptrace.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/ptrace.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/rlimit.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/rlimit.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/rlimit.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/signal.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/signal.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/signal.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/userns.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/userns.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/userns.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/variable.cpython-313.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/variable.cpython-313.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/__pycache__\/variable.cpython-313.pyc" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/abi.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/alias.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/all.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/boolean.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/capability.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/change_profile.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/dbus.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/file.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/include.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/io_uring.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/mount.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/mqueue.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/network.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/ptrace.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/rlimit.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/signal.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/userns.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rule\/variable.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/rules.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/sandbox.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/severity.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/tools.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/translations.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor\/ui.py" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor-4.0.3-py3.13.egg-info\/PKG-INFO" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor-4.0.3-py3.13.egg-info\/SOURCES.txt" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor-4.0.3-py3.13.egg-info\/dependency_links.txt" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/apparmor-4.0.3-py3.13.egg-info\/top_level.txt" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/libapparmor-4.0.3.dist-info\/METADATA" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/libapparmor-4.0.3.dist-info\/WHEEL" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/libapparmor-4.0.3.dist-info\/top_level.txt" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/notify2-0.3.1.dist-info\/METADATA" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/notify2-0.3.1.dist-info\/WHEEL" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/notify2-0.3.1.dist-info\/top_level.txt" ],
+            
+              [  "usr\/lib\/python3.13\/site-packages\/notify2.py" ],
+            
+              [  "usr\/lib\/snapd\/complete.sh" ],
+            
+              [  "usr\/lib\/snapd\/etelpmoc.sh" ],
+            
+              [  "usr\/lib\/snapd\/snap-bootstrap" ],
+            
+              [  "usr\/lib\/snapd\/snap-confine" ],
+            
+              [  "usr\/lib\/snapd\/snap-device-helper" ],
+            
+              [  "usr\/lib\/snapd\/snap-discard-ns" ],
+            
+              [  "usr\/lib\/snapd\/snap-exec" ],
+            
+              [  "usr\/lib\/snapd\/snap-failure" ],
+            
+              [  "usr\/lib\/snapd\/snap-gdb-shim" ],
+            
+              [  "usr\/lib\/snapd\/snap-gdbserver-shim" ],
+            
+              [  "usr\/lib\/snapd\/snap-mgmt" ],
+            
+              [  "usr\/lib\/snapd\/snap-preseed" ],
+            
+              [  "usr\/lib\/snapd\/snap-recovery-chooser" ],
+            
+              [  "usr\/lib\/snapd\/snap-repair" ],
+            
+              [  "usr\/lib\/snapd\/snap-seccomp" ],
+            
+              [  "usr\/lib\/snapd\/snap-update-ns" ],
+            
+              [  "usr\/lib\/snapd\/snapctl" ],
+            
+              [  "usr\/lib\/snapd\/snapd" ],
+            
+              [  "usr\/lib\/snapd\/snapd-apparmor" ],
+            
+              [  "usr\/lib\/snapd\/snapd.core-fixup.sh" ],
+            
+              [  "usr\/lib\/snapd\/snapd.run-from-snap" ],
+            
+              [  "usr\/lib\/snapd\/system-shutdown" ],
+            
+              [  "usr\/lib\/systemd\/system\/apparmor.service" ],
+            
+              [  "usr\/lib\/systemd\/system\/snapd.apparmor.service" ],
+            
+              [  "usr\/lib\/systemd\/system\/snapd.autoimport.service" ],
+            
+              [  "usr\/lib\/systemd\/system\/snapd.core-fixup.service" ],
+            
+              [  "usr\/lib\/systemd\/system\/snapd.failure.service" ],
+            
+              [  "usr\/lib\/systemd\/system\/snapd.mounts-pre.target" ],
+            
+              [  "usr\/lib\/systemd\/system\/snapd.mounts.target" ],
+            
+              [  "usr\/lib\/systemd\/system\/snapd.recovery-chooser-trigger.service" ],
+            
+              [  "usr\/lib\/systemd\/system\/snapd.seeded.service" ],
+            
+              [  "usr\/lib\/systemd\/system\/snapd.service" ],
+            
+              [  "usr\/lib\/systemd\/system\/snapd.snap-repair.service" ],
+            
+              [  "usr\/lib\/systemd\/system\/snapd.snap-repair.timer" ],
+            
+              [  "usr\/lib\/systemd\/system\/snapd.socket" ],
+            
+              [  "usr\/lib\/systemd\/system\/snapd.system-shutdown.service" ],
+            
+              [  "usr\/lib\/systemd\/system-environment-generators\/snapd-env-generator" ],
+            
+              [  "usr\/lib\/systemd\/system-generators\/snapd-generator" ],
+            
+              [  "usr\/lib\/systemd\/user\/snapd.session-agent.service" ],
+            
+              [  "usr\/lib\/systemd\/user\/snapd.session-agent.socket" ],
+            
+              [  "usr\/lib\/tmpfiles.d\/snapd.conf" ],
+            
+              [  "usr\/lib64\/libapparmor.so" ],
+            
+              [  "usr\/lib64\/libapparmor.so.1" ],
+            
+              [  "usr\/lib64\/libapparmor.so.1.19.0" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.40\/x86_64-linux\/LibAppArmor.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.40\/x86_64-linux\/auto\/LibAppArmor\/.packlist" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.40\/x86_64-linux\/auto\/LibAppArmor\/LibAppArmor.so" ],
+            
+              [  "usr\/lib64\/pkgconfig\/libapparmor.pc" ],
+            
+              [  "usr\/libexec\/rc.apparmor.functions" ],
+            
+              [  "usr\/share\/apparmor\/apparmor_load.sh" ],
+            
+              [  "usr\/share\/apparmor\/apparmor_unload.sh" ],
+            
+              [  "usr\/share\/apparmor\/easyprof\/policygroups\/opt-application" ],
+            
+              [  "usr\/share\/apparmor\/easyprof\/policygroups\/user-application" ],
+            
+              [  "usr\/share\/apparmor\/easyprof\/templates\/default" ],
+            
+              [  "usr\/share\/apparmor\/easyprof\/templates\/sandbox" ],
+            
+              [  "usr\/share\/apparmor\/easyprof\/templates\/sandbox-x" ],
+            
+              [  "usr\/share\/apparmor\/easyprof\/templates\/user-application" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/README" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/bin.netstat" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/chromium_browser" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/etc.cron.daily.logrotate" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/etc.cron.daily.slocate.cron" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/etc.cron.daily.tmpwatch" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/firefox" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/firefox.sh" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/postfix-anvil" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/postfix-bounce" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/postfix-cleanup" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/postfix-discard" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/postfix-dnsblog" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/postfix-error" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/postfix-flush" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/postfix-lmtp" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/postfix-local" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/postfix-master" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/postfix-nqmgr" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/postfix-oqmgr" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/postfix-pickup" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/postfix-pipe" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/postfix-postscreen" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/postfix-proxymap" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/postfix-qmgr" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/postfix-qmqpd" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/postfix-scache" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/postfix-showq" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/postfix-smtp" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/postfix-smtpd" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/postfix-spawn" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/postfix-tlsmgr" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/postfix-trivial-rewrite" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/postfix-verify" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/postfix-virtual" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/sbin.dhclient" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/sbin.dhclient-script" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/sbin.dhcpcd" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/sbin.portmap" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/sbin.resmgrd" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/sbin.rpc.lockd" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/sbin.rpc.statd" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.NX.bin.nxclient" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.bin.acroread" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.bin.apropos" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.bin.dumpcap" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.bin.evolution-2.10" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.bin.fam" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.bin.freshclam" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.bin.gaim" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.bin.man" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.bin.mlmmj-bounce" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.bin.mlmmj-maintd" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.bin.mlmmj-make-ml.sh" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.bin.mlmmj-process" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.bin.mlmmj-receive" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.bin.mlmmj-recieve" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.bin.mlmmj-send" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.bin.mlmmj-sub" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.bin.mlmmj-unsub" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.bin.opera" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.bin.passwd" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.bin.procmail" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.bin.pyzorsocket" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.bin.razorsocket" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.bin.skype" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.bin.spamc" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.bin.svnserve" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.bin.wireshark" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.bin.xfs" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.lib.GConf.2.gconfd-2" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.lib.RealPlayer10.realplay" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.lib.bonobo.bonobo-activation-server" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.lib.evolution-data-server.evolution-data-server-1.10" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.lib.firefox.mozilla-xremote-client" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.lib.man-db.man" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.lib64.GConf.2.gconfd-2" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.sbin.clamd" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.sbin.cupsd" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.sbin.dhcpd" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.sbin.haproxy" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.sbin.httpd2-prefork" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.sbin.imapd" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.sbin.in.fingerd" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.sbin.in.ftpd" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.sbin.in.ntalkd" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.sbin.ipop2d" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.sbin.ipop3d" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.sbin.lighttpd" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.sbin.mysqld" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.sbin.oidentd" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.sbin.popper" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.sbin.postalias" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.sbin.postdrop" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.sbin.postmap" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.sbin.postqueue" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.sbin.sendmail" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.sbin.sendmail.postfix" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.sbin.sendmail.sendmail" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.sbin.spamd" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.sbin.squid" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.sbin.sshd" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.sbin.useradd" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.sbin.userdel" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.sbin.vsftpd" ],
+            
+              [  "usr\/share\/apparmor\/extra-profiles\/usr.sbin.xinetd" ],
+            
+              [  "usr\/share\/applications\/aa-notify.desktop" ],
+            
+              [  "usr\/share\/applications\/io.snapcraft.SessionAgent.desktop" ],
+            
+              [  "usr\/share\/applications\/snap-handle-link.desktop" ],
+            
+              [  "usr\/share\/bash-completion\/completions\/snap" ],
+            
+              [  "usr\/share\/dbus-1\/services\/io.snapcraft.Launcher.service" ],
+            
+              [  "usr\/share\/dbus-1\/services\/io.snapcraft.SessionAgent.service" ],
+            
+              [  "usr\/share\/dbus-1\/services\/io.snapcraft.Settings.service" ],
+            
+              [  "usr\/share\/dbus-1\/session.d\/snapd.session-services.conf" ],
+            
+              [  "usr\/share\/dbus-1\/system.d\/snapd.system-services.conf" ],
+            
+              [  "usr\/share\/fish\/vendor_conf.d\/snapd.fish" ],
+            
+              [  "usr\/share\/locale\/af\/LC_MESSAGES\/aa-binutils.mo" ],
+            
+              [  "usr\/share\/locale\/af\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/af\/LC_MESSAGES\/apparmor-utils.mo" ],
+            
+              [  "usr\/share\/locale\/af\/LC_MESSAGES\/snapd.mo" ],
+            
+              [  "usr\/share\/locale\/am\/LC_MESSAGES\/snapd.mo" ],
+            
+              [  "usr\/share\/locale\/ar\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/ar\/LC_MESSAGES\/snapd.mo" ],
+            
+              [  "usr\/share\/locale\/be\/LC_MESSAGES\/apparmor-utils.mo" ],
+            
+              [  "usr\/share\/locale\/bg\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/bn\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/bn\/LC_MESSAGES\/snapd.mo" ],
+            
+              [  "usr\/share\/locale\/bo\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/bo\/LC_MESSAGES\/apparmor-utils.mo" ],
+            
+              [  "usr\/share\/locale\/bs\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/bs\/LC_MESSAGES\/apparmor-utils.mo" ],
+            
+              [  "usr\/share\/locale\/bs\/LC_MESSAGES\/snapd.mo" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/snapd.mo" ],
+            
+              [  "usr\/share\/locale\/ce\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/apparmor-utils.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/snapd.mo" ],
+            
+              [  "usr\/share\/locale\/cy\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/cy\/LC_MESSAGES\/snapd.mo" ],
+            
+              [  "usr\/share\/locale\/da\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/da\/LC_MESSAGES\/snapd.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/aa-binutils.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/apparmor-utils.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/snapd.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/snapd.mo" ],
+            
+              [  "usr\/share\/locale\/en_AU\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/en_CA\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/en_GB\/LC_MESSAGES\/aa-binutils.mo" ],
+            
+              [  "usr\/share\/locale\/en_GB\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/en_GB\/LC_MESSAGES\/apparmor-utils.mo" ],
+            
+              [  "usr\/share\/locale\/en_GB\/LC_MESSAGES\/snapd.mo" ],
+            
+              [  "usr\/share\/locale\/eo\/LC_MESSAGES\/snapd.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/aa-binutils.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/apparmor-utils.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/snapd.mo" ],
+            
+              [  "usr\/share\/locale\/et\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/fa\/LC_MESSAGES\/aa-binutils.mo" ],
+            
+              [  "usr\/share\/locale\/fa\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/fa\/LC_MESSAGES\/apparmor-utils.mo" ],
+            
+              [  "usr\/share\/locale\/fa\/LC_MESSAGES\/snapd.mo" ],
+            
+              [  "usr\/share\/locale\/fi\/LC_MESSAGES\/aa-binutils.mo" ],
+            
+              [  "usr\/share\/locale\/fi\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/fi\/LC_MESSAGES\/snapd.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/apparmor-utils.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/snapd.mo" ],
+            
+              [  "usr\/share\/locale\/gl\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/gl\/LC_MESSAGES\/apparmor-utils.mo" ],
+            
+              [  "usr\/share\/locale\/gl\/LC_MESSAGES\/snapd.mo" ],
+            
+              [  "usr\/share\/locale\/gu\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/hi\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/hi\/LC_MESSAGES\/apparmor-utils.mo" ],
+            
+              [  "usr\/share\/locale\/hr\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/hr\/LC_MESSAGES\/snapd.mo" ],
+            
+              [  "usr\/share\/locale\/hu\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/hu\/LC_MESSAGES\/snapd.mo" ],
+            
+              [  "usr\/share\/locale\/ia\/LC_MESSAGES\/snapd.mo" ],
+            
+              [  "usr\/share\/locale\/id\/LC_MESSAGES\/aa-binutils.mo" ],
+            
+              [  "usr\/share\/locale\/id\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/id\/LC_MESSAGES\/apparmor-utils.mo" ],
+            
+              [  "usr\/share\/locale\/id\/LC_MESSAGES\/snapd.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/apparmor-utils.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/snapd.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/snapd.mo" ],
+            
+              [  "usr\/share\/locale\/ka\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/km\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/km\/LC_MESSAGES\/snapd.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/apparmor-utils.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/snapd.mo" ],
+            
+              [  "usr\/share\/locale\/lo\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/lt\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/lt\/LC_MESSAGES\/snapd.mo" ],
+            
+              [  "usr\/share\/locale\/lv\/LC_MESSAGES\/snapd.mo" ],
+            
+              [  "usr\/share\/locale\/mk\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/mnw\/LC_MESSAGES\/snapd.mo" ],
+            
+              [  "usr\/share\/locale\/mr\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/ms\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/ms\/LC_MESSAGES\/snapd.mo" ],
+            
+              [  "usr\/share\/locale\/nb\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/nb\/LC_MESSAGES\/snapd.mo" ],
+            
+              [  "usr\/share\/locale\/nl\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/nl\/LC_MESSAGES\/snapd.mo" ],
+            
+              [  "usr\/share\/locale\/oc\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/oc\/LC_MESSAGES\/apparmor-utils.mo" ],
+            
+              [  "usr\/share\/locale\/oc\/LC_MESSAGES\/snapd.mo" ],
+            
+              [  "usr\/share\/locale\/pa\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/apparmor-utils.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/snapd.mo" ],
+            
+              [  "usr\/share\/locale\/pt\/LC_MESSAGES\/aa-binutils.mo" ],
+            
+              [  "usr\/share\/locale\/pt\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/pt\/LC_MESSAGES\/apparmor-utils.mo" ],
+            
+              [  "usr\/share\/locale\/pt\/LC_MESSAGES\/snapd.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/apparmor-utils.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/snapd.mo" ],
+            
+              [  "usr\/share\/locale\/ro\/LC_MESSAGES\/aa-binutils.mo" ],
+            
+              [  "usr\/share\/locale\/ro\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/ro\/LC_MESSAGES\/apparmor-utils.mo" ],
+            
+              [  "usr\/share\/locale\/ro\/LC_MESSAGES\/snapd.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/aa-binutils.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/apparmor-utils.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/snapd.mo" ],
+            
+              [  "usr\/share\/locale\/sd\/LC_MESSAGES\/snapd.mo" ],
+            
+              [  "usr\/share\/locale\/si\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/sk\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/sl\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/sq\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/sq\/LC_MESSAGES\/snapd.mo" ],
+            
+              [  "usr\/share\/locale\/sr\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/aa-binutils.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/apparmor-utils.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/snapd.mo" ],
+            
+              [  "usr\/share\/locale\/sw\/LC_MESSAGES\/aa-binutils.mo" ],
+            
+              [  "usr\/share\/locale\/ta\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/tg\/LC_MESSAGES\/snapd.mo" ],
+            
+              [  "usr\/share\/locale\/th\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/th\/LC_MESSAGES\/snapd.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/aa-binutils.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/apparmor-utils.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/snapd.mo" ],
+            
+              [  "usr\/share\/locale\/ug\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/ug\/LC_MESSAGES\/apparmor-utils.mo" ],
+            
+              [  "usr\/share\/locale\/ug\/LC_MESSAGES\/snapd.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/apparmor-utils.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/snapd.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/wa\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/xh\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/apparmor-utils.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/snapd.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/snapd.mo" ],
+            
+              [  "usr\/share\/locale\/zu\/LC_MESSAGES\/apparmor-parser.mo" ],
+            
+              [  "usr\/share\/man\/man1\/aa-enabled.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/aa-exec.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/aa-features-abi.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/xdelta3.1.bz2" ],
+            
+              [  "usr\/share\/man\/man5\/apparmor.d.5.bz2" ],
+            
+              [  "usr\/share\/man\/man5\/apparmor.vim.5.bz2" ],
+            
+              [  "usr\/share\/man\/man5\/logprof.conf.5.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/apparmor.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/apparmor_xattrs.7.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/aa-audit.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/aa-autodep.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/aa-cleanprof.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/aa-complain.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/aa-decode.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/aa-disable.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/aa-easyprof.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/aa-enforce.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/aa-genprof.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/aa-logprof.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/aa-mergeprof.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/aa-notify.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/aa-remove-unknown.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/aa-status.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/aa-teardown.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/aa-unconfined.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/apparmor_parser.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/apparmor_status.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/snap-confine.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/snap-discard-ns.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/snapd-env-generator.8.bz2" ],
+            
+              [  "usr\/share\/polkit-1\/actions\/io.snapcraft.snapd.policy" ],
+            
+              [  "usr\/share\/snapd\/snapcraft-logo-bird.svg" ],
+            
+              [  "usr\/share\/vim\/vimfiles\/syntax\/apparmor.vim" ],
+            
+              [  "usr\/share\/zsh\/site-functions\/_snap" ],
+            
+              [  "var\/lib\/snapd\/apparmor\/profiles\/.keep_app-containers_snapd-0" ],
+            
+              [  "var\/lib\/snapd\/apparmor\/snap-confine\/.keep_app-containers_snapd-0" ],
+            
+              [  "var\/lib\/snapd\/cache\/.keep_app-containers_snapd-0" ],
+            
+              [  "var\/lib\/snapd\/cookie\/.keep_app-containers_snapd-0" ],
+            
+              [  "var\/lib\/snapd\/snap\/.keep_app-containers_snapd-0" ],
+            
+              [  "var\/lib\/snapd\/void\/.keep_app-containers_snapd-0" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

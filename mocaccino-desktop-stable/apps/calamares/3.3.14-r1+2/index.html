@@ -1,0 +1,820 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing apps/calamares-3.3.14-r1&#43;2 in mocaccino-desktop-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> apps/calamares-3.3.14-r1&#43;2
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                Distribution-independent installer framework
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-desktop-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-desktop-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of apps/calamares
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/desktop:calamares-apps-3.3.14-r1-2" target="_blank"> quay.io/mocaccino/desktop:calamares-apps-3.3.14-r1-2 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/desktop:calamares-apps-3.3.14-r1-2/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 3.3.14-r1&#43;2  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> GPL-3 </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/entity/vboxusers">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  vboxusers &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/entity/vboxsf">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  vboxsf &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/entity/vboxguest">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  vboxguest &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/kde-common">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  kde-common &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/apps/grub">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  grub &gt;=0 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: app-admin/calamares
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://calamares.io" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://calamares.io </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/app-admin/calamares">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  calamares &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "usr\/bin\/calamares" ],
+            
+              [  "usr\/lib64\/calamares\/libcalamares.so" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/bootloader\/bootloader.schema.yaml" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/bootloader\/main.py" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/bootloader\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/bootloader\/test.yaml" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/contextualprocess\/libcalamares_job_contextualprocess.so" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/contextualprocess\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/displaymanager\/displaymanager.schema.yaml" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/displaymanager\/main.py" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/displaymanager\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/dracut\/dracut.schema.yaml" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/dracut\/main.py" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/dracut\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/dracutlukscfg\/libcalamares_job_dracutlukscfg.so" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/dracutlukscfg\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/dummycpp\/libcalamares_job_dummycpp.so" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/dummycpp\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/dummyprocess\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/dummypython\/main.py" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/dummypython\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/finished\/libcalamares_viewmodule_finished.so" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/finished\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/finishedq\/libcalamares_viewmodule_finishedq.so" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/finishedq\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/fsresizer\/libcalamares_job_fsresizer.so" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/fsresizer\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/fstab\/fstab.schema.yaml" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/fstab\/main.py" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/fstab\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/fstab\/test.yaml" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/fstab\/test2.yaml" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/grubcfg\/grubcfg.schema.yaml" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/grubcfg\/main.py" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/grubcfg\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/hostinfo\/libcalamares_job_hostinfo.so" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/hostinfo\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/hwclock\/main.py" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/hwclock\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/initcpio\/libcalamares_job_initcpio.so" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/initcpio\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/initcpiocfg\/initcpiocfg.schema.yaml" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/initcpiocfg\/main.py" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/initcpiocfg\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/initcpiocfg\/test.yaml" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/initramfs\/libcalamares_job_initramfs.so" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/initramfs\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/initramfscfg\/encrypt_hook" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/initramfscfg\/encrypt_hook_nokey" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/initramfscfg\/main.py" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/initramfscfg\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/interactiveterminal\/libcalamares_viewmodule_interactiveterminal.so" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/interactiveterminal\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/keyboard\/libcalamares_viewmodule_keyboard.so" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/keyboard\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/keyboardq\/libcalamares_viewmodule_keyboardq.so" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/keyboardq\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/license\/libcalamares_viewmodule_license.so" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/license\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/locale\/libcalamares_viewmodule_locale.so" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/locale\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/localecfg\/main.py" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/localecfg\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/localeq\/libcalamares_viewmodule_localeq.so" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/localeq\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/luksbootkeyfile\/libcalamares_job_luksbootkeyfile.so" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/luksbootkeyfile\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/luksopenswaphookcfg\/libcalamares_job_luksopenswaphookcfg.so" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/luksopenswaphookcfg\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/machineid\/libcalamares_job_machineid.so" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/machineid\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/mkinitfs\/main.py" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/mkinitfs\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/mount\/main.py" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/mount\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/mount\/mount.schema.yaml" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/netinstall\/libcalamares_viewmodule_netinstall.so" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/netinstall\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/networkcfg\/main.py" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/networkcfg\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/notesqml\/libcalamares_viewmodule_notesqml.so" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/notesqml\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/oemid\/libcalamares_viewmodule_oemid.so" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/oemid\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/openrcdmcryptcfg\/main.py" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/openrcdmcryptcfg\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/packagechooser\/libcalamares_viewmodule_packagechooser.so" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/packagechooser\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/packagechooserq\/libcalamares_viewmodule_packagechooserq.so" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/packagechooserq\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/packages\/main.py" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/packages\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/packages\/packages.schema.yaml" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/partition\/libcalamares_viewmodule_partition.so" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/partition\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/plasmalnf\/libcalamares_viewmodule_plasmalnf.so" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/plasmalnf\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/plymouthcfg\/main.py" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/plymouthcfg\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/plymouthcfg\/plymouthcfg.schema.yaml" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/preservefiles\/libcalamares_job_preservefiles.so" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/preservefiles\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/rawfs\/main.py" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/rawfs\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/removeuser\/libcalamares_job_removeuser.so" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/removeuser\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/services-openrc\/main.py" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/services-openrc\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/services-systemd\/main.py" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/services-systemd\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/services-systemd\/services-systemd.schema.yaml" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/shellprocess\/libcalamares_job_shellprocess.so" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/shellprocess\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/summary\/libcalamares_viewmodule_summary.so" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/summary\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/summaryq\/libcalamares_viewmodule_summaryq.so" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/summaryq\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/tracking\/libcalamares_viewmodule_tracking.so" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/tracking\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/umount\/libcalamares_job_umount.so" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/umount\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/unpackfs\/main.py" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/unpackfs\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/unpackfs\/runtests.sh" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/unpackfs\/unpackfs.schema.yaml" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/unpackfsc\/libcalamares_job_unpackfsc.so" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/unpackfsc\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/users\/libcalamares_viewmodule_users.so" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/users\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/usersq\/libcalamares_viewmodule_usersq.so" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/usersq\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/welcome\/libcalamares_viewmodule_welcome.so" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/welcome\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/welcomeq\/libcalamares_viewmodule_welcomeq.so" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/welcomeq\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/zfs\/libcalamares_job_zfs.so" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/zfs\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/zfshostid\/main.py" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/zfshostid\/module.desc" ],
+            
+              [  "usr\/lib64\/calamares\/modules\/zfshostid\/zfshostid.schema.yaml" ],
+            
+              [  "usr\/lib64\/libcalamares.so" ],
+            
+              [  "usr\/lib64\/libcalamares.so.3.3" ],
+            
+              [  "usr\/lib64\/libcalamares.so.3.3.14" ],
+            
+              [  "usr\/lib64\/libcalamaresui.so" ],
+            
+              [  "usr\/lib64\/libcalamaresui.so.3.3" ],
+            
+              [  "usr\/lib64\/libcalamaresui.so.3.3.14" ],
+            
+              [  "usr\/share\/applications\/calamares.desktop" ],
+            
+              [  "usr\/share\/bash-completion\/completions\/calamares" ],
+            
+              [  "usr\/share\/calamares\/branding\/default\/banner.png" ],
+            
+              [  "usr\/share\/calamares\/branding\/default\/banner.png.license" ],
+            
+              [  "usr\/share\/calamares\/branding\/default\/branding.desc" ],
+            
+              [  "usr\/share\/calamares\/branding\/default\/lang\/calamares-default_ar.qm" ],
+            
+              [  "usr\/share\/calamares\/branding\/default\/lang\/calamares-default_en.qm" ],
+            
+              [  "usr\/share\/calamares\/branding\/default\/lang\/calamares-default_eo.qm" ],
+            
+              [  "usr\/share\/calamares\/branding\/default\/lang\/calamares-default_fr.qm" ],
+            
+              [  "usr\/share\/calamares\/branding\/default\/lang\/calamares-default_nl.qm" ],
+            
+              [  "usr\/share\/calamares\/branding\/default\/languages.png" ],
+            
+              [  "usr\/share\/calamares\/branding\/default\/languages.png.license" ],
+            
+              [  "usr\/share\/calamares\/branding\/default\/show.qml" ],
+            
+              [  "usr\/share\/calamares\/branding\/default\/squid.png" ],
+            
+              [  "usr\/share\/calamares\/branding\/default\/squid.png.license" ],
+            
+              [  "usr\/share\/calamares\/branding\/default\/stylesheet.qss" ],
+            
+              [  "usr\/share\/calamares\/modules\/bootloader.conf" ],
+            
+              [  "usr\/share\/calamares\/modules\/contextualprocess.conf" ],
+            
+              [  "usr\/share\/calamares\/modules\/displaymanager.conf" ],
+            
+              [  "usr\/share\/calamares\/modules\/dracut.conf" ],
+            
+              [  "usr\/share\/calamares\/modules\/dummycpp.conf" ],
+            
+              [  "usr\/share\/calamares\/modules\/dummypython.conf" ],
+            
+              [  "usr\/share\/calamares\/modules\/finished.conf" ],
+            
+              [  "usr\/share\/calamares\/modules\/finishedq.conf" ],
+            
+              [  "usr\/share\/calamares\/modules\/fsresizer.conf" ],
+            
+              [  "usr\/share\/calamares\/modules\/fstab.conf" ],
+            
+              [  "usr\/share\/calamares\/modules\/grubcfg.conf" ],
+            
+              [  "usr\/share\/calamares\/modules\/initcpio.conf" ],
+            
+              [  "usr\/share\/calamares\/modules\/initcpiocfg.conf" ],
+            
+              [  "usr\/share\/calamares\/modules\/initramfs.conf" ],
+            
+              [  "usr\/share\/calamares\/modules\/interactiveterminal.conf" ],
+            
+              [  "usr\/share\/calamares\/modules\/keyboard.conf" ],
+            
+              [  "usr\/share\/calamares\/modules\/keyboardq.conf" ],
+            
+              [  "usr\/share\/calamares\/modules\/license.conf" ],
+            
+              [  "usr\/share\/calamares\/modules\/locale.conf" ],
+            
+              [  "usr\/share\/calamares\/modules\/localeq.conf" ],
+            
+              [  "usr\/share\/calamares\/modules\/luksbootkeyfile.conf" ],
+            
+              [  "usr\/share\/calamares\/modules\/luksopenswaphookcfg.conf" ],
+            
+              [  "usr\/share\/calamares\/modules\/machineid.conf" ],
+            
+              [  "usr\/share\/calamares\/modules\/mount.conf" ],
+            
+              [  "usr\/share\/calamares\/modules\/netinstall.conf" ],
+            
+              [  "usr\/share\/calamares\/modules\/notesqml.conf" ],
+            
+              [  "usr\/share\/calamares\/modules\/oemid.conf" ],
+            
+              [  "usr\/share\/calamares\/modules\/openrcdmcryptcfg.conf" ],
+            
+              [  "usr\/share\/calamares\/modules\/packagechooser.conf" ],
+            
+              [  "usr\/share\/calamares\/modules\/packagechooserq.conf" ],
+            
+              [  "usr\/share\/calamares\/modules\/packages.conf" ],
+            
+              [  "usr\/share\/calamares\/modules\/partition.conf" ],
+            
+              [  "usr\/share\/calamares\/modules\/plasmalnf.conf" ],
+            
+              [  "usr\/share\/calamares\/modules\/plymouthcfg.conf" ],
+            
+              [  "usr\/share\/calamares\/modules\/preservefiles.conf" ],
+            
+              [  "usr\/share\/calamares\/modules\/rawfs.conf" ],
+            
+              [  "usr\/share\/calamares\/modules\/removeuser.conf" ],
+            
+              [  "usr\/share\/calamares\/modules\/services-openrc.conf" ],
+            
+              [  "usr\/share\/calamares\/modules\/services-systemd.conf" ],
+            
+              [  "usr\/share\/calamares\/modules\/shellprocess.conf" ],
+            
+              [  "usr\/share\/calamares\/modules\/tracking.conf" ],
+            
+              [  "usr\/share\/calamares\/modules\/umount.conf" ],
+            
+              [  "usr\/share\/calamares\/modules\/unpackfs.conf" ],
+            
+              [  "usr\/share\/calamares\/modules\/unpackfsc.conf" ],
+            
+              [  "usr\/share\/calamares\/modules\/users.conf" ],
+            
+              [  "usr\/share\/calamares\/modules\/usersq.conf" ],
+            
+              [  "usr\/share\/calamares\/modules\/welcome.conf" ],
+            
+              [  "usr\/share\/calamares\/modules\/welcomeq.conf" ],
+            
+              [  "usr\/share\/calamares\/modules\/zfs.conf" ],
+            
+              [  "usr\/share\/calamares\/qml\/calamares\/slideshow\/BackButton.qml" ],
+            
+              [  "usr\/share\/calamares\/qml\/calamares\/slideshow\/ForwardButton.qml" ],
+            
+              [  "usr\/share\/calamares\/qml\/calamares\/slideshow\/NavButton.qml" ],
+            
+              [  "usr\/share\/calamares\/qml\/calamares\/slideshow\/Presentation.qml" ],
+            
+              [  "usr\/share\/calamares\/qml\/calamares\/slideshow\/Slide.qml" ],
+            
+              [  "usr\/share\/calamares\/qml\/calamares\/slideshow\/SlideCounter.qml" ],
+            
+              [  "usr\/share\/calamares\/qml\/calamares\/slideshow\/qmldir" ],
+            
+              [  "usr\/share\/calamares\/qml\/calamares\/slideshow\/qmldir.license" ],
+            
+              [  "usr\/share\/calamares\/settings.conf" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/apps\/calamares.svg" ],
+            
+              [  "usr\/share\/locale\/ar\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/as\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/ast\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/az\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/az_AZ\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/be\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/bg\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/bn\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/ca@valencia\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/cs_CZ\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/da\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/en_GB\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/eo\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/es_AR\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/es_MX\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/et\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/eu\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/fa\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/fi_FI\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/fur\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/gl\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/hi\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/hr\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/hu\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/id\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/is\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/it_IT\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/ka\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/lt\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/ml\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/mr\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/nb\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/nl\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/oc\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/pt_PT\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/ro\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/si\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/sk\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/sl\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/sq\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/sr\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/sr@latin\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/tg\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/th\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/tr_TR\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/calamares-python.mo" ],
+            
+              [  "usr\/share\/man\/man8\/calamares.8.bz2" ],
+            
+              [  "usr\/share\/polkit-1\/actions\/com.github.calamares.calamares.policy" ],
+            
+              [  "usr\/share\/polkit-1\/rules.d\/49-calamares.rules" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

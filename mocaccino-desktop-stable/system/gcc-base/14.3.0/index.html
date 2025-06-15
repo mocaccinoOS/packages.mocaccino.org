@@ -1,0 +1,424 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing system/gcc-base-14.3.0 in mocaccino-desktop-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> system/gcc-base-14.3.0
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-desktop-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-desktop-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of system/gcc-base
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/desktop:gcc-base-system-14.3.0" target="_blank"> quay.io/mocaccino/desktop:gcc-base-system-14.3.0 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/desktop:gcc-base-system-14.3.0/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 14.3.0  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong>  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/mocaccino/cli">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  cli &gt;=0 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> llvm_slot: 19
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "etc\/env.d\/04gcc-x86_64-pc-linux-gnu" ],
+            
+              [  "etc\/env.d\/gcc\/config-x86_64-pc-linux-gnu" ],
+            
+              [  "etc\/env.d\/gcc\/x86_64-pc-linux-gnu-14" ],
+            
+              [  "etc\/ld.so.conf.d\/05gcc-x86_64-pc-linux-gnu.conf" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/32\/crtbegin.o" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/32\/crtbeginS.o" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/32\/crtbeginT.o" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/32\/crtend.o" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/32\/crtendS.o" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/32\/crtfastmath.o" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/32\/crtprec32.o" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/32\/crtprec64.o" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/32\/crtprec80.o" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/32\/finclude\/ieee_arithmetic.mod" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/32\/finclude\/ieee_exceptions.mod" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/32\/finclude\/ieee_features.mod" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/32\/libatomic.a" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/32\/libatomic.la" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/32\/libatomic.so" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/32\/libatomic.so.1" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/32\/libatomic.so.1.2.0" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/32\/libgcc_s.so" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/32\/libgcc_s.so.1" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/32\/libgfortran.a" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/32\/libgfortran.so" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/32\/libgfortran.so.5" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/32\/libgfortran.so.5.0.0" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/32\/libgfortran.spec" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/32\/libgomp.a" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/32\/libgomp.so" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/32\/libgomp.so.1" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/32\/libgomp.so.1.0.0" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/32\/libgomp.spec" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/32\/libquadmath.a" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/32\/libquadmath.la" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/32\/libquadmath.so" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/32\/libquadmath.so.0" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/32\/libquadmath.so.0.0.0" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/32\/libstdc\u002b\u002b.a" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/32\/libstdc\u002b\u002b.so" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/32\/libstdc\u002b\u002b.so.6" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/32\/libstdc\u002b\u002b.so.6.0.33" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/32\/libstdc\u002b\u002bexp.a" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/32\/libstdc\u002b\u002bfs.a" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/crtbegin.o" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/crtbeginS.o" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/crtbeginT.o" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/crtend.o" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/crtendS.o" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/crtfastmath.o" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/crtoffloadbegin.o" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/crtoffloadend.o" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/crtoffloadtable.o" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/crtoffloadtableS.o" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/crtprec32.o" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/crtprec64.o" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/crtprec80.o" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/finclude\/ieee_arithmetic.mod" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/finclude\/ieee_exceptions.mod" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/finclude\/ieee_features.mod" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/libatomic.a" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/libatomic.la" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/libatomic.so" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/libatomic.so.1" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/libatomic.so.1.2.0" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/libgcc_s.so" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/libgcc_s.so.1" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/libgfortran.a" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/libgfortran.so" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/libgfortran.so.5" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/libgfortran.so.5.0.0" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/libgfortran.spec" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/libgomp-plugin-nvptx.so" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/libgomp-plugin-nvptx.so.1" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/libgomp-plugin-nvptx.so.1.0.0" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/libgomp.a" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/libgomp.so" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/libgomp.so.1" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/libgomp.so.1.0.0" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/libgomp.spec" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/libquadmath.a" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/libquadmath.la" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/libquadmath.so" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/libquadmath.so.0" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/libquadmath.so.0.0.0" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/libstdc\u002b\u002b.a" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/libstdc\u002b\u002b.so" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/libstdc\u002b\u002b.so.6" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/libstdc\u002b\u002b.so.6.0.33" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/libstdc\u002b\u002bexp.a" ],
+            
+              [  "usr\/lib\/gcc\/x86_64-pc-linux-gnu\/14\/libstdc\u002b\u002bfs.a" ],
+            
+              [  "usr\/lib\/llvm\/19\/lib\/libLLVM-19.so" ],
+            
+              [  "usr\/lib\/llvm\/19\/lib\/libLLVM.so" ],
+            
+              [  "usr\/lib\/llvm\/19\/lib\/libLLVM.so.19.1" ],
+            
+              [  "usr\/lib\/llvm\/19\/lib\/libclang-cpp.so" ],
+            
+              [  "usr\/lib\/llvm\/19\/lib\/libclang-cpp.so.19.1" ],
+            
+              [  "usr\/lib\/llvm\/19\/lib64\/libLLVM-19.so" ],
+            
+              [  "usr\/lib\/llvm\/19\/lib64\/libLLVM.so" ],
+            
+              [  "usr\/lib\/llvm\/19\/lib64\/libLLVM.so.19.1" ],
+            
+              [  "usr\/lib\/llvm\/19\/lib64\/libclang-cpp.so" ],
+            
+              [  "usr\/lib\/llvm\/19\/lib64\/libclang-cpp.so.19.1" ],
+            
+              [  "usr\/share\/gcc-data\/x86_64-pc-linux-gnu\/14\/info\/libgomp.info.bz2" ],
+            
+              [  "usr\/share\/gcc-data\/x86_64-pc-linux-gnu\/14\/info\/libquadmath.info.bz2" ],
+            
+              [  "usr\/share\/gcc-data\/x86_64-pc-linux-gnu\/14\/locale\/de\/LC_MESSAGES\/cpplib.mo" ],
+            
+              [  "usr\/share\/gcc-data\/x86_64-pc-linux-gnu\/14\/locale\/de\/LC_MESSAGES\/gcc.mo" ],
+            
+              [  "usr\/share\/gcc-data\/x86_64-pc-linux-gnu\/14\/locale\/de\/LC_MESSAGES\/libstdc\u002b\u002b.mo" ],
+            
+              [  "usr\/share\/gcc-data\/x86_64-pc-linux-gnu\/14\/locale\/fr\/LC_MESSAGES\/cpplib.mo" ],
+            
+              [  "usr\/share\/gcc-data\/x86_64-pc-linux-gnu\/14\/locale\/fr\/LC_MESSAGES\/gcc.mo" ],
+            
+              [  "usr\/share\/gcc-data\/x86_64-pc-linux-gnu\/14\/locale\/fr\/LC_MESSAGES\/libstdc\u002b\u002b.mo" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

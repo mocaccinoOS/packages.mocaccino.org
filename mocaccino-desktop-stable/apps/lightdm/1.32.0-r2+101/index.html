@@ -1,0 +1,635 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing apps/lightdm-1.32.0-r2&#43;101 in mocaccino-desktop-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> apps/lightdm-1.32.0-r2&#43;101
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                A lightweight display manager
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-desktop-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-desktop-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of apps/lightdm
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/desktop:lightdm-apps-1.32.0-r2-101" target="_blank"> quay.io/mocaccino/desktop:lightdm-apps-1.32.0-r2-101 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/desktop:lightdm-apps-1.32.0-r2-101/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 1.32.0-r2&#43;101  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> GPL-3 LGPL-3 </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/gnome-common">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  gnome-common &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/entity/lightdm">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  lightdm &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/system/mocaccino-wallpaper">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  mocaccino-wallpaper &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/themes/qogir-themes">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  qogir-themes &gt;=0 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 3
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: x11-misc/lightdm x11-misc/lightdm-gtk-greeter
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://launchpad.net/lightdm" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://launchpad.net/lightdm </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/acct-group/lightdm">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  lightdm &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/acct-user/lightdm">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  lightdm &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/dev-build/xfce4-dev-tools">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  xfce4-dev-tools &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/x11-misc/lightdm">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  lightdm &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/x11-misc/lightdm-gtk-greeter">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  lightdm-gtk-greeter &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/x11-themes/gnome-themes-standard">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  gnome-themes-standard &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "etc\/lightdm\/Xsession" ],
+            
+              [  "etc\/lightdm\/keys.conf" ],
+            
+              [  "etc\/lightdm\/lightdm-gtk-greeter.conf" ],
+            
+              [  "etc\/lightdm\/lightdm.conf" ],
+            
+              [  "etc\/lightdm\/users.conf" ],
+            
+              [  "etc\/pam.d\/lightdm" ],
+            
+              [  "etc\/pam.d\/lightdm-autologin" ],
+            
+              [  "etc\/pam.d\/lightdm-greeter" ],
+            
+              [  "usr\/bin\/dm-tool" ],
+            
+              [  "usr\/bin\/lightdm" ],
+            
+              [  "usr\/bin\/lightdm-gtk-greeter" ],
+            
+              [  "usr\/lib\/systemd\/system\/lightdm.service" ],
+            
+              [  "usr\/lib64\/girepository-1.0\/LightDM-1.typelib" ],
+            
+              [  "usr\/lib64\/liblightdm-gobject-1.so" ],
+            
+              [  "usr\/lib64\/liblightdm-gobject-1.so.0" ],
+            
+              [  "usr\/lib64\/liblightdm-gobject-1.so.0.0.0" ],
+            
+              [  "usr\/lib64\/pkgconfig\/liblightdm-gobject-1.pc" ],
+            
+              [  "usr\/libexec\/lightdm-guest-session" ],
+            
+              [  "usr\/share\/accountsservice\/interfaces\/org.freedesktop.DisplayManager.AccountsService.xml" ],
+            
+              [  "usr\/share\/bash-completion\/completions\/dm-tool" ],
+            
+              [  "usr\/share\/bash-completion\/completions\/lightdm" ],
+            
+              [  "usr\/share\/dbus-1\/interfaces\/org.freedesktop.DisplayManager.AccountsService.xml" ],
+            
+              [  "usr\/share\/dbus-1\/system.d\/org.freedesktop.DisplayManager.conf" ],
+            
+              [  "usr\/share\/gir-1.0\/LightDM-1.gir" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/lightdm-gobject-1\/LightDMGreeter.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/lightdm-gobject-1\/LightDMLanguage.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/lightdm-gobject-1\/LightDMLayout.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/lightdm-gobject-1\/LightDMSession.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/lightdm-gobject-1\/LightDMUser.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/lightdm-gobject-1\/LightDMUserList.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/lightdm-gobject-1\/annotation-glossary.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/lightdm-gobject-1\/api-index-full.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/lightdm-gobject-1\/ch01.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/lightdm-gobject-1\/home.png" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/lightdm-gobject-1\/index.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/lightdm-gobject-1\/left-insensitive.png" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/lightdm-gobject-1\/left.png" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/lightdm-gobject-1\/lightdm-gobject-1-Power-Management.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/lightdm-gobject-1\/lightdm-gobject-1-System-Information.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/lightdm-gobject-1\/lightdm-gobject-1.devhelp2" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/lightdm-gobject-1\/object-tree.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/lightdm-gobject-1\/right-insensitive.png" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/lightdm-gobject-1\/right.png" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/lightdm-gobject-1\/style.css" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/lightdm-gobject-1\/up-insensitive.png" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/lightdm-gobject-1\/up.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/places\/budgie-desktop_badge-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/places\/cinnamon2d_badge-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/places\/cinnamon_badge-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/places\/gnome-classic_badge-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/places\/gnome-fallback-compiz_badge-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/places\/gnome-fallback_badge-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/places\/gnome-flashback-compiz_badge-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/places\/gnome-flashback_badge-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/places\/gnome-shell_badge-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/places\/gnome_badge-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/places\/kde-plasma_badge-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/places\/kde_badge-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/places\/lubuntu_badge-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/places\/lxde_badge-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/places\/lxqt_badge-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/places\/mate_badge-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/places\/pantheon_badge-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/places\/ubuntu-2d_badge-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/places\/ubuntu_badge-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/places\/ubuntustudio_badge-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/places\/wmaker-common_badge-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/places\/xfce_badge-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/places\/xterm_badge-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/places\/xubuntu_badge-symbolic.svg" ],
+            
+              [  "usr\/share\/locale\/af\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/ar\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/ar\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/az\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/bg\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/bg\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/bn\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/bn\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/br\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/br\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/bs\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/bs\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/da\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/da\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/en_GB\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/en_GB\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/eo\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/eo\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/et\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/et\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/eu\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/eu\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/fa\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/fi\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/fi\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/fy\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/fy\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/gl\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/gl\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/gu\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/hi\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/hi\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/hr\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/hr\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/hu\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/hu\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/is\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/is\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/kk\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/kk\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/km\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/km\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/lt\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/lt\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/lv\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/lv\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/ms\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/ms\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/nb\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/nb\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/nl\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/nl\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/nn\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/nn\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/pa\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/pt\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/pt\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/ro\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/ro\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/sk\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/sk\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/sl\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/sl\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/sr\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/sr\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/ta\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/ta\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/tg\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/uz\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/uz\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/lightdm-gtk-greeter.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/lightdm.mo" ],
+            
+              [  "usr\/share\/man\/man1\/dm-tool.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/lightdm.1.bz2" ],
+            
+              [  "usr\/share\/polkit-1\/actions\/org.freedesktop.DisplayManager.AccountsService.policy" ],
+            
+              [  "usr\/share\/vala\/vapi\/liblightdm-gobject-1.deps" ],
+            
+              [  "usr\/share\/vala\/vapi\/liblightdm-gobject-1.vapi" ],
+            
+              [  "usr\/share\/xgreeters\/lightdm-gtk-greeter.desktop" ],
+            
+              [  "var\/lib\/lightdm-data\/.keep_x11-misc_lightdm-0" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

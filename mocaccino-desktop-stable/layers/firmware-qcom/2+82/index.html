@@ -1,0 +1,521 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing layers/firmware-qcom-2&#43;82 in mocaccino-desktop-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> layers/firmware-qcom-2&#43;82
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-desktop-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-desktop-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of layers/firmware-qcom
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/desktop:firmware-qcom-layers-2-82" target="_blank"> quay.io/mocaccino/desktop:firmware-qcom-layers-2-82 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/desktop:firmware-qcom-layers-2-82/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 2&#43;82  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong>  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "usr\/lib\/firmware\/qcom\/a225_pfp.fw" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/a225_pm4.fw" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/a300_pfp.fw" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/a300_pm4.fw" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/a330_pfp.fw" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/a330_pm4.fw" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/a420_pfp.fw" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/a420_pm4.fw" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/a530_pfp.fw" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/a530_pm4.fw" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/a530_zap.mdt" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/a530v3_gpmu.fw2" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/a623_gmu.bin" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/a630_gmu.bin" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/a630_sqe.fw" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/a650_gmu.bin" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/a650_sqe.fw" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/a660_gmu.bin" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/a660_sqe.fw" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/a663_gmu.bin" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/a702_sqe.fw" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/aic100\/fw1.bin" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/aic100\/fw10.bin" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/aic100\/fw2.bin" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/aic100\/fw5.bin" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/aic100\/fw9.bin" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/aic100\/sbl.bin" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/apq8016\/WCNSS_qcom_wlan_nv_sbc.bin" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/apq8016\/mba.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/apq8016\/modem.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/apq8016\/wcnss.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/apq8096\/a530_zap.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/apq8096\/adsp.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/apq8096\/adspr.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/apq8096\/adspua.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/apq8096\/mba.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/apq8096\/modem.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/apq8096\/modemr.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/gen70500_gmu.bin" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/gen70500_sqe.fw" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/leia_pfp_470.fw" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/leia_pm4_470.fw" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/qcm2290\/a702_zap.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/qcm2290\/adsp.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/qcm2290\/adspr.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/qcm2290\/adsps.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/qcm2290\/adspua.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/qcm2290\/modem.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/qcm2290\/modemr.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/qcm2290\/modemuw.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/qcm2290\/wlanmdsp.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/qcm6490\/a660_zap.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/qcm6490\/adsp.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/qcm6490\/adspr.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/qcm6490\/adsps.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/qcm6490\/adspua.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/qcm6490\/battmgr.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/qcm6490\/cdsp.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/qcm6490\/cdspr.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/qcm6490\/ipa_fws.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/qcm6490\/wpss.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/qcs615\/a612_zap.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/qcs6490\/a660_zap.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/qcs6490\/adsp.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/qcs6490\/adspr.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/qcs6490\/adsps.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/qcs6490\/adspua.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/qcs6490\/battmgr.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/qcs6490\/cdsp.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/qcs6490\/cdspr.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/qcs6490\/wpss.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/qcs8300\/a623_zap.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/qdu100\/xbl_s.melf" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/qrb4210\/a610_zap.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/qrb4210\/adsp.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/qrb4210\/adspr.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/qrb4210\/adsps.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/qrb4210\/adspua.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/qrb4210\/cdsp.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/qrb4210\/cdspr.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/qrb4210\/modem.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/qrb4210\/modemr.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/qrb4210\/modemuw.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/qrb4210\/wlanmdsp.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/sa8775p\/a663_zap.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/sa8775p\/adsp.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/sa8775p\/adspr.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/sa8775p\/adspua.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/sa8775p\/cdsp0.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/sa8775p\/cdsp1.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/sa8775p\/cdspr.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/sa8775p\/gpdsp0.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/sa8775p\/gpdsp1.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/sa8775p\/gpdsp1r.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/sa8775p\/gpdspr.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/sc8280xp\/LENOVO\/21BX\/adspr.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/sc8280xp\/LENOVO\/21BX\/adspua.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/sc8280xp\/LENOVO\/21BX\/audioreach-tplg.bin" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/sc8280xp\/LENOVO\/21BX\/battmgr.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/sc8280xp\/LENOVO\/21BX\/cdspr.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/sc8280xp\/LENOVO\/21BX\/qcadsp8280.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/sc8280xp\/LENOVO\/21BX\/qccdsp8280.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/sc8280xp\/LENOVO\/21BX\/qcdxkmsuc8280.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/sc8280xp\/LENOVO\/21BX\/qcslpi8280.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/sc8280xp\/SC8280XP-LENOVO-X13S-tplg.bin" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/sdm845\/Thundercomm\/db845c\/slpi.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/sdm845\/Thundercomm\/db845c\/slpir.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/sdm845\/Thundercomm\/db845c\/slpius.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/sdm845\/a630_zap.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/sdm845\/adsp.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/sdm845\/adspr.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/sdm845\/adspua.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/sdm845\/cdsp.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/sdm845\/cdspr.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/sdm845\/mba.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/sdm845\/modem.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/sdm845\/modem_nm.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/sdm845\/modemuw.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/sdm845\/wlanmdsp.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/sm8250\/Thundercomm\/RB5\/slpi.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/sm8250\/Thundercomm\/RB5\/slpir.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/sm8250\/Thundercomm\/RB5\/slpius.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/sm8250\/a650_zap.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/sm8250\/adsp.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/sm8250\/adspr.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/sm8250\/adspua.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/sm8250\/cdsp.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/sm8250\/cdspr.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/sm8550\/SM8550-HDK-tplg.bin" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/sm8550\/SM8550-QRD-tplg.bin" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/sm8650\/SM8650-MTP-tplg.bin" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/sm8650\/SM8650-QRD-tplg.bin" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/venus-1.8\/venus.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/venus-1.8\/venus.mdt" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/venus-4.2\/venus.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/venus-4.2\/venus.mdt" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/venus-5.2\/venus.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/venus-5.2\/venus.mdt" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/venus-5.4\/venus.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/venus-5.4\/venus.mdt" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/venus-6.0\/venus.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/vpu\/vpu20_p1.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/vpu\/vpu20_p4.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/vpu\/vpu30_p4.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/vpu\/vpu30_p4_s6.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/vpu-1.0\/venus.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/vpu-1.0\/venus.mdt" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/vpu-2.0\/venus.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/x1e80100\/LENOVO\/21N1\/adsp_dtbs.elf" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/x1e80100\/LENOVO\/21N1\/adspr.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/x1e80100\/LENOVO\/21N1\/adsps.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/x1e80100\/LENOVO\/21N1\/adspua.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/x1e80100\/LENOVO\/21N1\/battmgr.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/x1e80100\/LENOVO\/21N1\/cdsp_dtbs.elf" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/x1e80100\/LENOVO\/21N1\/cdspr.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/x1e80100\/LENOVO\/21N1\/qcadsp8380.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/x1e80100\/LENOVO\/21N1\/qccdsp8380.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/x1e80100\/LENOVO\/21N1\/qcdxkmsuc8380.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/x1e80100\/adsp.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/x1e80100\/adsp_dtb.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/x1e80100\/adspr.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/x1e80100\/adsps.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/x1e80100\/adspua.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/x1e80100\/battmgr.jsn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/x1e80100\/gen70500_zap.mbn" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/yamato_pfp.fw" ],
+            
+              [  "usr\/lib\/firmware\/qcom\/yamato_pm4.fw" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>
