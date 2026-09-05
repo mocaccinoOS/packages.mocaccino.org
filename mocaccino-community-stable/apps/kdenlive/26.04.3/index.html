@@ -1,0 +1,2128 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing apps/kdenlive-26.04.3 in mocaccino-community-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> apps/kdenlive-26.04.3
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                Non-linear video editing suite by KDE
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-community-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-community-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of apps/kdenlive
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/mocaccino-community:kdenlive-apps-26.04.3" target="_blank"> quay.io/mocaccino/mocaccino-community:kdenlive-apps-26.04.3 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/mocaccino-community:kdenlive-apps-26.04.3/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 26.04.3  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> GPL-3 </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/kde-common">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  kde-common &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/mlt">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  mlt 7.38.0&#43;1 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/nlohmann_json">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  nlohmann_json &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/apps/mediainfo">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  mediainfo 24.11-r1&#43;2 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> appstream.id: org.kde.kdenlive.desktop
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: kde-apps/kdenlive
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://kdenlive.org/en/" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://kdenlive.org/en/ </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/kde-apps/kdenlive">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  kdenlive &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/gui-libs/kddockwidgets">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  kddockwidgets &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/media-libs/opentimelineio">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  opentimelineio &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "usr\/bin\/kdenlive" ],
+            
+              [  "usr\/bin\/kdenlive_render" ],
+            
+              [  "usr\/lib64\/libkddockwidgets-qt6.so" ],
+            
+              [  "usr\/lib64\/libkddockwidgets-qt6.so.2.4.0" ],
+            
+              [  "usr\/lib64\/libkddockwidgets-qt6.so.3" ],
+            
+              [  "usr\/lib64\/libkdenliveLibplugin.a" ],
+            
+              [  "usr\/lib64\/libopentime.so" ],
+            
+              [  "usr\/lib64\/libopentime.so.0.18.1" ],
+            
+              [  "usr\/lib64\/libopentime.so.18" ],
+            
+              [  "usr\/lib64\/libopentimelineio.so" ],
+            
+              [  "usr\/lib64\/libopentimelineio.so.0.18.1" ],
+            
+              [  "usr\/lib64\/libopentimelineio.so.18" ],
+            
+              [  "usr\/lib64\/qt6\/mkspecs\/modules\/qt_KDDockWidgets.pri" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/kf6\/thumbcreator\/mltpreview.so" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/AssetMenu.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/AssetView.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/AudioLevels.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/AudioRecordButton.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/AudioRecordingControls.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/AudioView.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/AudioZoomBar.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/Clip.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/ClipAudioThumbs.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/ClipMonitor.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/ClipThumbs.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/Composition.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/CornerSelectionShadow.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/Countdown.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/EffectToolBar.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/GuidesMenu.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/KeyframeView.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/MaskToolBar.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/MixShape.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/MonitorAutomask.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/MonitorCornerScene.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/MonitorGeometryScene.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/MonitorOverlay.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/MonitorRotoScene.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/MonitorRuler.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/MonitorSafeZone.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/MonitorSplit.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/MonitorSplitTracks.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/MonitorToolButton.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/MonitorTrimming.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/MonitorZoomButton.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/MultiScreenToolBar.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/OverlayCenter.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/OverlayCenterDiagonal.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/OverlayLabel.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/OverlayMinimal.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/OverlayStandard.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/OverlayThirds.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/ProjectMonitor.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/PulsingAnimation.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/ResizeHandle.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/ResizeLogic.js" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/RotationHandle.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/Ruler.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/RulerZone.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/Safe169.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/Safe916.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/SceneToolBar.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/Simplesplash.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/SnappingLogic.js" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/Splash.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/SubTitle.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/SubtitleTrackHead.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/Timeline.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/TimelineLogic.js" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/Track.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/TrackHead.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/Utils.js" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/ZoomBar.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/kde-qmlmodule.version" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/kdenliveLib.qmltypes" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/kdenlive\/qmldir" ],
+            
+              [  "usr\/share\/applications\/org.kde.kdenlive.desktop" ],
+            
+              [  "usr\/share\/config.kcfg\/kdenlivesettings.kcfg" ],
+            
+              [  "usr\/share\/doc\/kddockwidgets-2.4.0\/README-QtQuick.md.bz2" ],
+            
+              [  "usr\/share\/doc\/kddockwidgets-2.4.0\/README-porting.md.bz2" ],
+            
+              [  "usr\/share\/doc\/kddockwidgets-2.4.0\/README-troubleshooting.bz2" ],
+            
+              [  "usr\/share\/doc\/kddockwidgets-2.4.0\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/kdenlive-26.04.3\/AUTHORS.bz2" ],
+            
+              [  "usr\/share\/doc\/kdenlive-26.04.3\/LICENSES\/Apache-2.0.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/kdenlive-26.04.3\/LICENSES\/BSD-2-Clause.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/kdenlive-26.04.3\/LICENSES\/BSD-3-Clause.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/kdenlive-26.04.3\/LICENSES\/BSL-1.0.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/kdenlive-26.04.3\/LICENSES\/CC-BY-SA-4.0.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/kdenlive-26.04.3\/LICENSES\/CC0-1.0.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/kdenlive-26.04.3\/LICENSES\/GPL-2.0-only.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/kdenlive-26.04.3\/LICENSES\/GPL-3.0-only.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/kdenlive-26.04.3\/LICENSES\/GPL-3.0-or-later.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/kdenlive-26.04.3\/LICENSES\/LGPL-3.0-only.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/kdenlive-26.04.3\/LICENSES\/LGPL-3.0-or-later.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/kdenlive-26.04.3\/LICENSES\/LicenseRef-KDE-Accepted-GPL.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/kdenlive-26.04.3\/LICENSES\/LicenseRef-KDE-Accepted-LGPL.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/kdenlive-26.04.3\/LICENSES\/MIT.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/kdenlive-26.04.3\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/kdenlive-26.04.3\/README.md.license" ],
+            
+              [  "usr\/share\/doc\/opentimelineio-0.18.1\/README.md.bz2" ],
+            
+              [  "usr\/share\/help\/ca\/kdenlive\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/ca\/kdenlive\/index.docbook" ],
+            
+              [  "usr\/share\/help\/ca\/kdenlive\/kdenlive_quickstart-renderer.png" ],
+            
+              [  "usr\/share\/help\/ca\/kdenlive\/kdenlive_quickstart-save-project.png" ],
+            
+              [  "usr\/share\/help\/ca\/kdenlive\/kdenlive_quickstart-timeline-clips.png" ],
+            
+              [  "usr\/share\/help\/de\/kdenlive\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/de\/kdenlive\/index.docbook" ],
+            
+              [  "usr\/share\/help\/de\/kdenlive\/kdenlive_quickstart-add-clips.png" ],
+            
+              [  "usr\/share\/help\/de\/kdenlive\/kdenlive_quickstart-new-project.png" ],
+            
+              [  "usr\/share\/help\/de\/kdenlive\/kdenlive_quickstart-save-project.png" ],
+            
+              [  "usr\/share\/help\/en\/kdenlive\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/en\/kdenlive\/index.docbook" ],
+            
+              [  "usr\/share\/help\/en\/kdenlive\/kdenlive-quickstart-add-last-clip.png" ],
+            
+              [  "usr\/share\/help\/en\/kdenlive\/kdenlive-quickstart-add-transition.png" ],
+            
+              [  "usr\/share\/help\/en\/kdenlive\/kdenlive-quickstart-effectstack.png" ],
+            
+              [  "usr\/share\/help\/en\/kdenlive\/kdenlive_quickstart-add-clips.png" ],
+            
+              [  "usr\/share\/help\/en\/kdenlive\/kdenlive_quickstart-add-effect.png" ],
+            
+              [  "usr\/share\/help\/en\/kdenlive\/kdenlive_quickstart-effect-flag.png" ],
+            
+              [  "usr\/share\/help\/en\/kdenlive\/kdenlive_quickstart-fadeout.png" ],
+            
+              [  "usr\/share\/help\/en\/kdenlive\/kdenlive_quickstart-folder-structure.png" ],
+            
+              [  "usr\/share\/help\/en\/kdenlive\/kdenlive_quickstart-keyframes.png" ],
+            
+              [  "usr\/share\/help\/en\/kdenlive\/kdenlive_quickstart-mainwindow.png" ],
+            
+              [  "usr\/share\/help\/en\/kdenlive\/kdenlive_quickstart-new-project.png" ],
+            
+              [  "usr\/share\/help\/en\/kdenlive\/kdenlive_quickstart-overlap-clips.png" ],
+            
+              [  "usr\/share\/help\/en\/kdenlive\/kdenlive_quickstart-renderer.png" ],
+            
+              [  "usr\/share\/help\/en\/kdenlive\/kdenlive_quickstart-rendering.png" ],
+            
+              [  "usr\/share\/help\/en\/kdenlive\/kdenlive_quickstart-resize-marker.png" ],
+            
+              [  "usr\/share\/help\/en\/kdenlive\/kdenlive_quickstart-save-project.png" ],
+            
+              [  "usr\/share\/help\/en\/kdenlive\/kdenlive_quickstart-timeline-clips.png" ],
+            
+              [  "usr\/share\/help\/en\/kdenlive\/kdenlive_quickstart-timelinecursor.png" ],
+            
+              [  "usr\/share\/help\/es\/kdenlive\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/es\/kdenlive\/index.docbook" ],
+            
+              [  "usr\/share\/help\/fr\/kdenlive\/Kdenlive-Quickstart-Add-Last-Clip.png" ],
+            
+              [  "usr\/share\/help\/fr\/kdenlive\/Kdenlive-Quickstart-Add-Transition.png" ],
+            
+              [  "usr\/share\/help\/fr\/kdenlive\/Kdenlive_Quickstart-Add-Clips.png" ],
+            
+              [  "usr\/share\/help\/fr\/kdenlive\/Kdenlive_Quickstart-Fadeout.png" ],
+            
+              [  "usr\/share\/help\/fr\/kdenlive\/Kdenlive_Quickstart-Folder-Structure.png" ],
+            
+              [  "usr\/share\/help\/fr\/kdenlive\/Kdenlive_Quickstart-Mainwindow.png" ],
+            
+              [  "usr\/share\/help\/fr\/kdenlive\/Kdenlive_Quickstart-Renderer.png" ],
+            
+              [  "usr\/share\/help\/fr\/kdenlive\/Kdenlive_Quickstart-Rendering.png" ],
+            
+              [  "usr\/share\/help\/fr\/kdenlive\/Kdenlive_Quickstart-Save-Project.png" ],
+            
+              [  "usr\/share\/help\/fr\/kdenlive\/Kdenlive_Quickstart-Timeline-Clips.png" ],
+            
+              [  "usr\/share\/help\/fr\/kdenlive\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/fr\/kdenlive\/index.docbook" ],
+            
+              [  "usr\/share\/help\/fr\/kdenlive\/section 1 - screen 2.png" ],
+            
+              [  "usr\/share\/help\/id\/kdenlive\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/id\/kdenlive\/index.docbook" ],
+            
+              [  "usr\/share\/help\/it\/kdenlive\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/it\/kdenlive\/index.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/kdenlive\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/nl\/kdenlive\/index.docbook" ],
+            
+              [  "usr\/share\/help\/pt\/kdenlive\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/pt\/kdenlive\/index.docbook" ],
+            
+              [  "usr\/share\/help\/pt_BR\/kdenlive\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/pt_BR\/kdenlive\/index.docbook" ],
+            
+              [  "usr\/share\/help\/ru\/kdenlive\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/ru\/kdenlive\/index.docbook" ],
+            
+              [  "usr\/share\/help\/ru\/kdenlive\/kdenlive-quickstart-add-last-clip.png" ],
+            
+              [  "usr\/share\/help\/ru\/kdenlive\/kdenlive-quickstart-add-transition.png" ],
+            
+              [  "usr\/share\/help\/ru\/kdenlive\/kdenlive-quickstart-effectstack.png" ],
+            
+              [  "usr\/share\/help\/ru\/kdenlive\/kdenlive_quickstart-add-clips.png" ],
+            
+              [  "usr\/share\/help\/ru\/kdenlive\/kdenlive_quickstart-add-effect.png" ],
+            
+              [  "usr\/share\/help\/ru\/kdenlive\/kdenlive_quickstart-effect-flag.png" ],
+            
+              [  "usr\/share\/help\/ru\/kdenlive\/kdenlive_quickstart-fadeout.png" ],
+            
+              [  "usr\/share\/help\/ru\/kdenlive\/kdenlive_quickstart-folder-structure.png" ],
+            
+              [  "usr\/share\/help\/ru\/kdenlive\/kdenlive_quickstart-keyframes.png" ],
+            
+              [  "usr\/share\/help\/ru\/kdenlive\/kdenlive_quickstart-mainwindow.png" ],
+            
+              [  "usr\/share\/help\/ru\/kdenlive\/kdenlive_quickstart-new-project.png" ],
+            
+              [  "usr\/share\/help\/ru\/kdenlive\/kdenlive_quickstart-overlap-clips.png" ],
+            
+              [  "usr\/share\/help\/ru\/kdenlive\/kdenlive_quickstart-renderer.png" ],
+            
+              [  "usr\/share\/help\/ru\/kdenlive\/kdenlive_quickstart-rendering.png" ],
+            
+              [  "usr\/share\/help\/ru\/kdenlive\/kdenlive_quickstart-resize-marker.png" ],
+            
+              [  "usr\/share\/help\/ru\/kdenlive\/kdenlive_quickstart-save-project.png" ],
+            
+              [  "usr\/share\/help\/ru\/kdenlive\/kdenlive_quickstart-timeline-clips.png" ],
+            
+              [  "usr\/share\/help\/ru\/kdenlive\/kdenlive_quickstart-timelinecursor.png" ],
+            
+              [  "usr\/share\/help\/sv\/kdenlive\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/sv\/kdenlive\/index.docbook" ],
+            
+              [  "usr\/share\/help\/tr\/kdenlive\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/tr\/kdenlive\/index.docbook" ],
+            
+              [  "usr\/share\/help\/uk\/kdenlive\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/uk\/kdenlive\/index.docbook" ],
+            
+              [  "usr\/share\/help\/uk\/kdenlive\/kdenlive-quickstart-add-last-clip.png" ],
+            
+              [  "usr\/share\/help\/uk\/kdenlive\/kdenlive-quickstart-add-transition.png" ],
+            
+              [  "usr\/share\/help\/uk\/kdenlive\/kdenlive_quickstart-add-clips.png" ],
+            
+              [  "usr\/share\/help\/uk\/kdenlive\/kdenlive_quickstart-add-effect.png" ],
+            
+              [  "usr\/share\/help\/uk\/kdenlive\/kdenlive_quickstart-effect-flag.png" ],
+            
+              [  "usr\/share\/help\/uk\/kdenlive\/kdenlive_quickstart-fadeout.png" ],
+            
+              [  "usr\/share\/help\/uk\/kdenlive\/kdenlive_quickstart-folder-structure.png" ],
+            
+              [  "usr\/share\/help\/uk\/kdenlive\/kdenlive_quickstart-mainwindow.png" ],
+            
+              [  "usr\/share\/help\/uk\/kdenlive\/kdenlive_quickstart-new-project.png" ],
+            
+              [  "usr\/share\/help\/uk\/kdenlive\/kdenlive_quickstart-overlap-clips.png" ],
+            
+              [  "usr\/share\/help\/uk\/kdenlive\/kdenlive_quickstart-renderer.png" ],
+            
+              [  "usr\/share\/help\/uk\/kdenlive\/kdenlive_quickstart-rendering.png" ],
+            
+              [  "usr\/share\/help\/uk\/kdenlive\/kdenlive_quickstart-resize-marker.png" ],
+            
+              [  "usr\/share\/help\/uk\/kdenlive\/kdenlive_quickstart-save-project.png" ],
+            
+              [  "usr\/share\/help\/uk\/kdenlive\/kdenlive_quickstart-timeline-clips.png" ],
+            
+              [  "usr\/share\/help\/uk\/kdenlive\/kdenlive_quickstart-timelinecursor.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/128x128\/apps\/kdenlive.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/128x128\/mimetypes\/application-x-kdenlivetitle.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/kdenlive.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/kdenlive.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/256x256\/apps\/kdenlive.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/32x32\/apps\/kdenlive.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/32x32\/mimetypes\/application-x-kdenlivetitle.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/kdenlive.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/512x512\/apps\/kdenlive.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/64x64\/apps\/kdenlive.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/64x64\/mimetypes\/application-x-kdenlivetitle.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/apps\/kdenlive.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/mimetypes\/application-x-kdenlive.svgz" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/mimetypes\/application-x-kdenlivetitle.svgz" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/mimetypes\/video-mlt-playlist.svgz" ],
+            
+              [  "usr\/share\/kdenlive\/clipjobsettings.rc" ],
+            
+              [  "usr\/share\/kdenlive\/effect-templates\/secondary_color_correction.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effect-templates\/secondary_color_correction_v2.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effect-templates\/shut_off.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/acompressor.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/aecho.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/agate.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/audiobalance.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/audiolevelgraph.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/audiomap.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/audiopan.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/audiospectrum.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/audiowave.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/audiowaveform.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_acontrast.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_acrusher.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_alimiter.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_allpass.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_aphaser.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_apulsator.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_atadenoise.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_avgblur.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_backgroundkey.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_bandpass.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_bandreject.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_bass.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_bilateral.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_boxblur.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_bs2b.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_bwdif.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_cas.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_chromahold.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_chromanr.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_chromashift.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_ciescope.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_colorbalance.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_colorchannelmixer.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_colorcontrast.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_colorcorrect.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_colorhold.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_colorize.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_colorlevels.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_colormatrix.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_colorspace.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_colortemperature.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_compand.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_compensationdelay.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_crossfeed.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_crystalizer.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_datascope.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_dblur.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_dcshift.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_dctdnoiz.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_deband.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_deblock.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_dedot.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_deesser.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_deflate.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_delogo.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_derain.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_despill.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_dilation.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_doubleweave.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_drawbox.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_drawgrid.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_edgedetect.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_elbg.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_epx.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_eq.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_equalizer.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_erosion.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_exposure.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_extrastereo.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_fftdnoiz.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_fftfilt.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_field.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_fieldorder.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_fillborders.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_flanger.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_framestep.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_fspp.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_gblur.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_gradfun.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_graphmonitor.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_grayworld.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_haas.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_hflip.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_highpass.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_highshelf.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_histeq.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_histogram.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_hqdn3d.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_hqx.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_hsvhold.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_hsvkey.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_huesaturation.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_il.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_inflate.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_kerneldeint.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_kirsch.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_lagfun.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_lenscorrection.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_limiter.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_loudnorm.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_lowpass.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_lowshelf.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_lut3d.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_mcdeint.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_median.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_monochrome.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_negate.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_noise.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_normalize.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_oscilloscope.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_phase.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_photosensitivity.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_pixelize.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_prewitt.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_random.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_removegrain.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_rgbashift.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_roberts.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_sab.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_scharr.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_scroll.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_selectivecolor.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_separatefields.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_setrange.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_shear.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_shuffleplanes.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_smartblur.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_sobel.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_sofalizer.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_sr.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_stereo3D.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_stereotools.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_stereowiden.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_swapuv.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_tmix.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_transpose.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_unsharp.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_vaguedenoiser.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_vectorscope.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_vflip.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_vibrance.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_vibrato.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_w3fdif.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_waveform.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_weave.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_xbr.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_yadif.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/avfilter_zoompan.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/box_blur.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/boxblur.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/brightness.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/burningtv.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/channelcopy.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/charcoal.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/chroma.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/chroma_hold.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/copychannelstostereo.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/crop.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/dance.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/dropshadow.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/dust.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/dynamic_loudness.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/dynamictext.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/fade_from_black.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/fade_to_black.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/fadein.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/fadeout.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/freeze.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_B.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_G.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_R.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_aech0r.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_alpha0ps.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_alpha0ps_alpha0ps.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_alpha0ps_alphagrad.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_alpha0ps_alphaspot.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_alphagrad.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_alphaspot.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_balanc0r.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_baltan.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_bezier_curves.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_bgsubtract0r.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_bigsh0t_eq_cap.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_bigsh0t_eq_mask.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_bigsh0t_eq_to_rect.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_bigsh0t_eq_to_stereo.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_bigsh0t_eq_wrap.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_bigsh0t_hemi_to_eq.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_bigsh0t_rect_to_eq.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_bigsh0t_stabilize_360.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_bigsh0t_transform_360.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_bluescreen0r.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_brightness.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_bw0r.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_c0rners.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_cairogradient.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_cairoimagegrid.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_cartoon.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_cluster.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_colgate.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_coloradj_rgb.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_colordistance.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_colorize.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_colortap.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_contrast0r.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_curves.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_d90stairsteppingfix.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_defish0r.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_delay0r.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_delaygrab.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_denoise_hqdn3d.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_distort0r.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_dither.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_edgeglow.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_elastic_scale.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_emboss.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_equaliz0r.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_facebl0r.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_facedetect.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_filmgrain.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_flippo.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_glitch0r.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_glow.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_heatmap0r.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_hqdn3d.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_hueshift0r.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_iirblur.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_invert0r.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_kaleid0sc0pe.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_keyspillm0pup.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_lenscorrection.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_letterb0xed.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_levels.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_lightgraffiti.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_luminance.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_mask0mate.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_measure_pr0be.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_measure_pr0file.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_medians.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_mirr0r.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_ndvi.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_nervous.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_normaliz0r.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_nosync0r.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_ntsc.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_pixeliz0r.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_pixs0r.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_posterize.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_pr0be.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_pr0file.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_premultiply.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_primaries.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_rgbnoise.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_rgbparade.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_rgbsplit0r.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_saturat0r.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_scale0tilt.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_scanline0r.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_select0r.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_sharpness.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_sigmoidaltransfer.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_sobel.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_softglow.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_sopsat.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_spillsupress.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_squareblur.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_tehroxx0r.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_three_point_balance.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_threelay0r.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_threshold0r.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_timeout.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_tint0r.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_transparency.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_twolay0r.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_vectorscope.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_vertigo.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/frei0r_vignette.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/gain.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/gamma.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/gpsgraphic.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/gpstext.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/gradientmap.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/grain.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/greyedge.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/greyscale.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/hsl_primaries.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/hsl_range.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/invert.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/ladspa_2141.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/ladspa_2142.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/ladspa_2143.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/ladspa_2144.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/ladspa_2145.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/ladspa_2146.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/ladspa_2147.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/ladspa_2148.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/ladspa_2149.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/ladspa_2150.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/ladspa_2151.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/ladspa_2152.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/ladspa_2153.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/ladspa_2154.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/ladspa_2155.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/ladspa_2156.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/ladspa_2157.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/ladspa_2158.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/ladspa_2159.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/ladspa_declipper.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/ladspa_equalizer.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/ladspa_equalizer_15.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/ladspa_librnnoise.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/ladspa_limiter.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/ladspa_phaser.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/ladspa_pitch.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/ladspa_pitch_scale.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/ladspa_rate_scale.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/ladspa_reverb.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/ladspa_room_reverb.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/ladspa_vinyl.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/lift_gamma_gain.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/lightshow.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/loudness.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/luma.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/lumakey.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/lumaliftgaingamma.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/mask_apply.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/mask_start.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/mask_start_frei0r_alphaspot.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/mask_start_frei0r_select0r.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/mask_start_rotoscoping.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/mask_start_shape.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/mirror.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/mono.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/movit_blur.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/movit_deconvolution_sharpen.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/movit_diffusion.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/movit_flip.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/movit_glow.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/movit_lift_gamma_gain.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/movit_mirror.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/movit_opacity.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/movit_rect.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/movit_saturation.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/movit_unsharp_mask.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/movit_vignette.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/movit_white_balance.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/mute.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/normalise.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/obscure.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/oldfilm.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/pan_zoom.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/pillar_echo.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/qtblend.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/qtcrop.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/rboctaveshift.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/rbpitchscale.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/rotate-3-way.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/rotation.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/rotation_keyframable.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/rotoscoping.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/scratchlines.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/sepia.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/shape.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/shear.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/sox_band.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/sox_bass.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/sox_echo.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/sox_flanger.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/sox_gain.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/sox_phaser.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/sox_stretch.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/speed.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/spot_remover.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/strobe.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/subtitles.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/swapchannels.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/tcolor.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/threshold.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/timer.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/tracker.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/typewriter.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/update\/frei0r.balanc0r.js" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/update\/frei0r.cartoon.js" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/update\/frei0r.curves.js" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/update\/frei0r.levels.js" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/update\/frei0r.lightgraffiti.js" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/update\/frei0r.select0r.js" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/update\/frei0r.sopsat.js" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/update\/frei0r.vertigo.js" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/vidstab.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/vignette.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/volume.xml" ],
+            
+              [  "usr\/share\/kdenlive\/effects\/wave.xml" ],
+            
+              [  "usr\/share\/kdenlive\/encodingprofiles.rc" ],
+            
+              [  "usr\/share\/kdenlive\/export\/profiles.xml" ],
+            
+              [  "usr\/share\/kdenlive\/externalproxies.rc" ],
+            
+              [  "usr\/share\/kdenlive\/generators\/count.xml" ],
+            
+              [  "usr\/share\/kdenlive\/generators\/frei0r_test_pat_b.xml" ],
+            
+              [  "usr\/share\/kdenlive\/generators\/noise.xml" ],
+            
+              [  "usr\/share\/kdenlive\/kdenliveeffectscategory.rc" ],
+            
+              [  "usr\/share\/kdenlive\/kdenlivetranscodingrc" ],
+            
+              [  "usr\/share\/kdenlive\/layouts\/audio.json" ],
+            
+              [  "usr\/share\/kdenlive\/layouts\/color.json" ],
+            
+              [  "usr\/share\/kdenlive\/layouts\/editing.json" ],
+            
+              [  "usr\/share\/kdenlive\/layouts\/editing_vertical.json" ],
+            
+              [  "usr\/share\/kdenlive\/layouts\/effects.json" ],
+            
+              [  "usr\/share\/kdenlive\/layouts\/logging.json" ],
+            
+              [  "usr\/share\/kdenlive\/lumas\/HD\/bi-linear_x.pgm" ],
+            
+              [  "usr\/share\/kdenlive\/lumas\/HD\/bi-linear_y.pgm" ],
+            
+              [  "usr\/share\/kdenlive\/lumas\/HD\/burst.pgm" ],
+            
+              [  "usr\/share\/kdenlive\/lumas\/HD\/checkerboard_small.pgm" ],
+            
+              [  "usr\/share\/kdenlive\/lumas\/HD\/clock.pgm" ],
+            
+              [  "usr\/share\/kdenlive\/lumas\/HD\/cloud.pgm" ],
+            
+              [  "usr\/share\/kdenlive\/lumas\/HD\/curtain.pgm" ],
+            
+              [  "usr\/share\/kdenlive\/lumas\/HD\/horizontal_blinds.pgm" ],
+            
+              [  "usr\/share\/kdenlive\/lumas\/HD\/linear_x.pgm" ],
+            
+              [  "usr\/share\/kdenlive\/lumas\/HD\/linear_y.pgm" ],
+            
+              [  "usr\/share\/kdenlive\/lumas\/HD\/radial-bars.pgm" ],
+            
+              [  "usr\/share\/kdenlive\/lumas\/HD\/radial.pgm" ],
+            
+              [  "usr\/share\/kdenlive\/lumas\/HD\/spiral.pgm" ],
+            
+              [  "usr\/share\/kdenlive\/lumas\/HD\/spiral2.pgm" ],
+            
+              [  "usr\/share\/kdenlive\/lumas\/HD\/square.pgm" ],
+            
+              [  "usr\/share\/kdenlive\/lumas\/HD\/square2-bars.pgm" ],
+            
+              [  "usr\/share\/kdenlive\/lumas\/HD\/square2.pgm" ],
+            
+              [  "usr\/share\/kdenlive\/lumas\/HD\/symmetric_clock.pgm" ],
+            
+              [  "usr\/share\/kdenlive\/lumas\/PAL\/bi-linear_x.pgm" ],
+            
+              [  "usr\/share\/kdenlive\/lumas\/PAL\/bi-linear_y.pgm" ],
+            
+              [  "usr\/share\/kdenlive\/lumas\/PAL\/burst.pgm" ],
+            
+              [  "usr\/share\/kdenlive\/lumas\/PAL\/checkerboard_small.pgm" ],
+            
+              [  "usr\/share\/kdenlive\/lumas\/PAL\/clock.pgm" ],
+            
+              [  "usr\/share\/kdenlive\/lumas\/PAL\/cloud.pgm" ],
+            
+              [  "usr\/share\/kdenlive\/lumas\/PAL\/curtain.pgm" ],
+            
+              [  "usr\/share\/kdenlive\/lumas\/PAL\/horizontal_blinds.pgm" ],
+            
+              [  "usr\/share\/kdenlive\/lumas\/PAL\/linear_x.pgm" ],
+            
+              [  "usr\/share\/kdenlive\/lumas\/PAL\/linear_y.pgm" ],
+            
+              [  "usr\/share\/kdenlive\/lumas\/PAL\/radial-bars.pgm" ],
+            
+              [  "usr\/share\/kdenlive\/lumas\/PAL\/radial.pgm" ],
+            
+              [  "usr\/share\/kdenlive\/lumas\/PAL\/spiral.pgm" ],
+            
+              [  "usr\/share\/kdenlive\/lumas\/PAL\/spiral2.pgm" ],
+            
+              [  "usr\/share\/kdenlive\/lumas\/PAL\/square.pgm" ],
+            
+              [  "usr\/share\/kdenlive\/lumas\/PAL\/square2-bars.pgm" ],
+            
+              [  "usr\/share\/kdenlive\/lumas\/PAL\/square2.pgm" ],
+            
+              [  "usr\/share\/kdenlive\/lumas\/PAL\/symmetric_clock.pgm" ],
+            
+              [  "usr\/share\/kdenlive\/luts\/BLUE_TINT.cube" ],
+            
+              [  "usr\/share\/kdenlive\/luts\/CINEMATIC.cube" ],
+            
+              [  "usr\/share\/kdenlive\/luts\/GREEN_TINT.cube" ],
+            
+              [  "usr\/share\/kdenlive\/luts\/TEAL_ORANGE.cube" ],
+            
+              [  "usr\/share\/kdenlive\/meta_magiclantern.png" ],
+            
+              [  "usr\/share\/kdenlive\/profiles\/dci_2160p_2398" ],
+            
+              [  "usr\/share\/kdenlive\/profiles\/dci_2160p_24" ],
+            
+              [  "usr\/share\/kdenlive\/profiles\/dci_2160p_25" ],
+            
+              [  "usr\/share\/kdenlive\/profiles\/dci_2160p_2997" ],
+            
+              [  "usr\/share\/kdenlive\/profiles\/dci_2160p_30" ],
+            
+              [  "usr\/share\/kdenlive\/profiles\/dci_2160p_50" ],
+            
+              [  "usr\/share\/kdenlive\/profiles\/dci_2160p_5994" ],
+            
+              [  "usr\/share\/kdenlive\/profiles\/dci_2160p_60" ],
+            
+              [  "usr\/share\/kdenlive\/profiles\/hd_ready_768p_25" ],
+            
+              [  "usr\/share\/kdenlive\/profiles\/hd_ready_768p_2997" ],
+            
+              [  "usr\/share\/kdenlive\/profiles\/hd_ready_768p_30" ],
+            
+              [  "usr\/share\/kdenlive\/profiles\/hd_ready_768p_50" ],
+            
+              [  "usr\/share\/kdenlive\/profiles\/hd_ready_768p_5994" ],
+            
+              [  "usr\/share\/kdenlive\/profiles\/hd_ready_768p_60" ],
+            
+              [  "usr\/share\/kdenlive\/profiles\/vertical_1080p_25" ],
+            
+              [  "usr\/share\/kdenlive\/resourceproviders\/archiveorg.json" ],
+            
+              [  "usr\/share\/kdenlive\/resourceproviders\/freesound.json" ],
+            
+              [  "usr\/share\/kdenlive\/resourceproviders\/pexels_photo.json" ],
+            
+              [  "usr\/share\/kdenlive\/resourceproviders\/pexels_video.json" ],
+            
+              [  "usr\/share\/kdenlive\/resourceproviders\/pixabay_photo.json" ],
+            
+              [  "usr\/share\/kdenlive\/resourceproviders\/pixabay_videos.json" ],
+            
+              [  "usr\/share\/kdenlive\/sammodelsinfo.rc" ],
+            
+              [  "usr\/share\/kdenlive\/scripts\/automask\/kdenlive_build_sam.py" ],
+            
+              [  "usr\/share\/kdenlive\/scripts\/automask\/kdenlive_sam2_video_predictor.py" ],
+            
+              [  "usr\/share\/kdenlive\/scripts\/automask\/requirements-cuda118.txt" ],
+            
+              [  "usr\/share\/kdenlive\/scripts\/automask\/requirements-cuda124.txt" ],
+            
+              [  "usr\/share\/kdenlive\/scripts\/automask\/requirements-cuda126.txt" ],
+            
+              [  "usr\/share\/kdenlive\/scripts\/automask\/requirements-cuda128.txt" ],
+            
+              [  "usr\/share\/kdenlive\/scripts\/automask\/requirements-sam.txt" ],
+            
+              [  "usr\/share\/kdenlive\/scripts\/automask\/sam-objectmask.py" ],
+            
+              [  "usr\/share\/kdenlive\/scripts\/checkgpu.py" ],
+            
+              [  "usr\/share\/kdenlive\/scripts\/checkpackages.py" ],
+            
+              [  "usr\/share\/kdenlive\/scripts\/generate_transition_previews.py" ],
+            
+              [  "usr\/share\/kdenlive\/scripts\/otiointerface.py" ],
+            
+              [  "usr\/share\/kdenlive\/scripts\/vosk\/speech.py" ],
+            
+              [  "usr\/share\/kdenlive\/scripts\/vosk\/speechtotext.py" ],
+            
+              [  "usr\/share\/kdenlive\/scripts\/whisper\/requirements-cuda118.txt" ],
+            
+              [  "usr\/share\/kdenlive\/scripts\/whisper\/requirements-cuda124.txt" ],
+            
+              [  "usr\/share\/kdenlive\/scripts\/whisper\/requirements-cuda126.txt" ],
+            
+              [  "usr\/share\/kdenlive\/scripts\/whisper\/requirements-cuda128.txt" ],
+            
+              [  "usr\/share\/kdenlive\/scripts\/whisper\/requirements-seamless.txt" ],
+            
+              [  "usr\/share\/kdenlive\/scripts\/whisper\/requirements-whisper.txt" ],
+            
+              [  "usr\/share\/kdenlive\/scripts\/whisper\/seamlessquery.py" ],
+            
+              [  "usr\/share\/kdenlive\/scripts\/whisper\/whisperquery.py" ],
+            
+              [  "usr\/share\/kdenlive\/scripts\/whisper\/whispertosrt.py" ],
+            
+              [  "usr\/share\/kdenlive\/scripts\/whisper\/whispertotext.py" ],
+            
+              [  "usr\/share\/kdenlive\/shortcuts\/Premiere" ],
+            
+              [  "usr\/share\/kdenlive\/slideanimations.rc" ],
+            
+              [  "usr\/share\/kdenlive\/titles\/simple-scroll.kdenlivetitle" ],
+            
+              [  "usr\/share\/kdenlive\/titles\/simple-with-date.kdenlivetitle" ],
+            
+              [  "usr\/share\/kdenlive\/titles\/simple.kdenlivetitle" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/affine.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/composite.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/dissolve.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/frei0r_addition.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/frei0r_addition_alpha.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/frei0r_alphaatop.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/frei0r_alphain.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/frei0r_alphaout.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/frei0r_alphaover.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/frei0r_alphaxor.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/frei0r_burn.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/frei0r_cairoaffineblend.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/frei0r_cairoblend.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/frei0r_color_only.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/frei0r_darken.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/frei0r_difference.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/frei0r_divide.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/frei0r_dodge.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/frei0r_euclid_eraser.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/frei0r_grain_extract.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/frei0r_grain_merge.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/frei0r_hardlight.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/frei0r_hue.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/frei0r_lighten.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/frei0r_multiply.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/frei0r_overlay.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/frei0r_push-down.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/frei0r_push-left.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/frei0r_push-right.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/frei0r_push-up.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/frei0r_saturation.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/frei0r_screen.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/frei0r_slide-down.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/frei0r_slide-left.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/frei0r_slide-right.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/frei0r_slide-up.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/frei0r_softlight.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/frei0r_subtract.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/frei0r_uvmap.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/frei0r_value.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/frei0r_wipe-barn-door-h.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/frei0r_wipe-barn-door-v.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/frei0r_wipe-circle.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/frei0r_wipe-down.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/frei0r_wipe-left.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/frei0r_wipe-rect.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/frei0r_wipe-right.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/frei0r_wipe-up.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/luma.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/matte.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/mix.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/parameters.txt" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/affine.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/bi-linear_x.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/bi-linear_y.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/burst.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/checkerboard_small.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/clock.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/cloud.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/composite.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/curtain.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/dissolve.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/frei0r.addition.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/frei0r.addition_alpha.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/frei0r.alphaatop.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/frei0r.alphain.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/frei0r.alphaout.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/frei0r.alphaover.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/frei0r.alphaxor.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/frei0r.burn.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/frei0r.cairoaffineblend.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/frei0r.cairoblend.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/frei0r.color_only.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/frei0r.darken.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/frei0r.difference.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/frei0r.divide.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/frei0r.dodge.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/frei0r.euclid_eraser.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/frei0r.grain_extract.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/frei0r.grain_merge.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/frei0r.hardlight.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/frei0r.hue.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/frei0r.lighten.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/frei0r.multiply.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/frei0r.overlay.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/frei0r.saturation.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/frei0r.screen.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/frei0r.sleid0r_push-down.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/frei0r.sleid0r_push-left.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/frei0r.sleid0r_push-right.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/frei0r.sleid0r_push-up.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/frei0r.sleid0r_slide-down.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/frei0r.sleid0r_slide-left.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/frei0r.sleid0r_slide-right.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/frei0r.sleid0r_slide-up.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/frei0r.sleid0r_wipe-barn-door-h.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/frei0r.sleid0r_wipe-barn-door-v.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/frei0r.sleid0r_wipe-circle.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/frei0r.sleid0r_wipe-down.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/frei0r.sleid0r_wipe-left.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/frei0r.sleid0r_wipe-rect.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/frei0r.sleid0r_wipe-right.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/frei0r.sleid0r_wipe-up.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/frei0r.softlight.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/frei0r.subtract.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/frei0r.uvmap.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/frei0r.value.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/horizontal_blinds.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/linear_x.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/linear_y.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/luma.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/luma01.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/luma02.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/luma03.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/luma04.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/luma05.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/luma06.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/luma07.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/luma08.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/luma09.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/luma10.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/luma11.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/luma12.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/luma13.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/luma14.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/luma15.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/luma16.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/luma17.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/luma18.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/luma19.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/luma20.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/luma21.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/luma22.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/matte.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/mix.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/qtblend.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/radial-bars.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/radial.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/region.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/slide.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/spiral.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/spiral2.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/square.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/square2-bars.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/square2.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/symmetric_clock.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/vqm.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/previews\/wipe.webp" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/qtblend.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/region.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/slide.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/vqm.xml" ],
+            
+              [  "usr\/share\/kdenlive\/transitions\/wipe.xml" ],
+            
+              [  "usr\/share\/knotifications6\/kdenlive.notifyrc" ],
+            
+              [  "usr\/share\/knsrcfiles\/kdenlive_effects.knsrc" ],
+            
+              [  "usr\/share\/knsrcfiles\/kdenlive_keyboardschemes.knsrc" ],
+            
+              [  "usr\/share\/knsrcfiles\/kdenlive_luts.knsrc" ],
+            
+              [  "usr\/share\/knsrcfiles\/kdenlive_renderprofiles.knsrc" ],
+            
+              [  "usr\/share\/knsrcfiles\/kdenlive_titles.knsrc" ],
+            
+              [  "usr\/share\/knsrcfiles\/kdenlive_wipes.knsrc" ],
+            
+              [  "usr\/share\/locale\/ar\/LC_MESSAGES\/kdenlive.mo" ],
+            
+              [  "usr\/share\/locale\/ast\/LC_MESSAGES\/kdenlive.mo" ],
+            
+              [  "usr\/share\/locale\/az\/LC_MESSAGES\/kdenlive.mo" ],
+            
+              [  "usr\/share\/locale\/bs\/LC_MESSAGES\/kdenlive.mo" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/kdenlive.mo" ],
+            
+              [  "usr\/share\/locale\/ca@valencia\/LC_MESSAGES\/kdenlive.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/kdenlive.mo" ],
+            
+              [  "usr\/share\/locale\/da\/LC_MESSAGES\/kdenlive.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/kdenlive.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/kdenlive.mo" ],
+            
+              [  "usr\/share\/locale\/en_GB\/LC_MESSAGES\/kdenlive.mo" ],
+            
+              [  "usr\/share\/locale\/eo\/LC_MESSAGES\/kdenlive.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/kdenlive.mo" ],
+            
+              [  "usr\/share\/locale\/et\/LC_MESSAGES\/kdenlive.mo" ],
+            
+              [  "usr\/share\/locale\/eu\/LC_MESSAGES\/kdenlive.mo" ],
+            
+              [  "usr\/share\/locale\/fi\/LC_MESSAGES\/kdenlive.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/kdenlive.mo" ],
+            
+              [  "usr\/share\/locale\/ga\/LC_MESSAGES\/kdenlive.mo" ],
+            
+              [  "usr\/share\/locale\/gl\/LC_MESSAGES\/kdenlive.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/kdenlive.mo" ],
+            
+              [  "usr\/share\/locale\/hi\/LC_MESSAGES\/kdenlive.mo" ],
+            
+              [  "usr\/share\/locale\/hr\/LC_MESSAGES\/kdenlive.mo" ],
+            
+              [  "usr\/share\/locale\/hu\/LC_MESSAGES\/kdenlive.mo" ],
+            
+              [  "usr\/share\/locale\/id\/LC_MESSAGES\/kdenlive.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/kdenlive.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/kdenlive.mo" ],
+            
+              [  "usr\/share\/locale\/ka\/LC_MESSAGES\/kdenlive.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/kdenlive.mo" ],
+            
+              [  "usr\/share\/locale\/lt\/LC_MESSAGES\/kdenlive.mo" ],
+            
+              [  "usr\/share\/locale\/lv\/LC_MESSAGES\/kdenlive.mo" ],
+            
+              [  "usr\/share\/locale\/mr\/LC_MESSAGES\/kdenlive.mo" ],
+            
+              [  "usr\/share\/locale\/nb\/LC_MESSAGES\/kdenlive.mo" ],
+            
+              [  "usr\/share\/locale\/nds\/LC_MESSAGES\/kdenlive.mo" ],
+            
+              [  "usr\/share\/locale\/nl\/LC_MESSAGES\/kdenlive.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/kdenlive.mo" ],
+            
+              [  "usr\/share\/locale\/pt\/LC_MESSAGES\/kdenlive.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/kdenlive.mo" ],
+            
+              [  "usr\/share\/locale\/ro\/LC_MESSAGES\/kdenlive.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/kdenlive.mo" ],
+            
+              [  "usr\/share\/locale\/sa\/LC_MESSAGES\/kdenlive.mo" ],
+            
+              [  "usr\/share\/locale\/sk\/LC_MESSAGES\/kdenlive.mo" ],
+            
+              [  "usr\/share\/locale\/sl\/LC_MESSAGES\/kdenlive.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/kdenlive.mo" ],
+            
+              [  "usr\/share\/locale\/tok\/LC_MESSAGES\/kdenlive.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/kdenlive.mo" ],
+            
+              [  "usr\/share\/locale\/ug\/LC_MESSAGES\/kdenlive.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/kdenlive.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/kdenlive.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/kdenlive.mo" ],
+            
+              [  "usr\/share\/man\/man1\/kdenlive.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/kdenlive_render.1.bz2" ],
+            
+              [  "usr\/share\/metainfo\/org.kde.kdenlive.appdata.xml" ],
+            
+              [  "usr\/share\/mime\/application\/kdenlivelayout.xml" ],
+            
+              [  "usr\/share\/mime\/application\/x-kdenlive.xml" ],
+            
+              [  "usr\/share\/mime\/application\/x-kdenlivetitle.xml" ],
+            
+              [  "usr\/share\/mime\/packages\/org.kde.kdenlive.xml" ],
+            
+              [  "usr\/share\/mime\/packages\/westley.xml" ],
+            
+              [  "usr\/share\/mime\/video\/mlt-playlist.xml" ],
+            
+              [  "usr\/share\/qlogging-categories6\/kdenlive.categories" ],
+            
+              [  "usr\/share\/qlogging-categories6\/kdenlive.renamecategories" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

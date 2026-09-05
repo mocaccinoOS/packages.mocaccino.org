@@ -1,0 +1,3007 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing apps/sigil-2.8.0 in mocaccino-community-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> apps/sigil-2.8.0
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                Multi-platform WYSIWYG ebook editor for ePub format
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-community-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-community-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of apps/sigil
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/mocaccino-community:sigil-apps-2.8.0" target="_blank"> quay.io/mocaccino/mocaccino-community:sigil-apps-2.8.0 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/mocaccino-community:sigil-apps-2.8.0/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 2.8.0  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> GPL-3&#43; Apache-2.0 </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/qt">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  qt &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/css-parser">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  css-parser 1.1.1 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/cssselect">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  cssselect 1.4.0&#43;1 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/mathjax">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  mathjax 3.2.2-r2&#43;1 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/regex">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  regex 2026.7.10 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> appstream.id: com.sigil-ebook.Sigil
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: app-text/sigil
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://sigil-ebook.com/" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://sigil-ebook.com/ </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/app-text/sigil">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  sigil &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-libs/dulwich">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  dulwich &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "usr\/bin\/dul-receive-pack" ],
+            
+              [  "usr\/bin\/dul-upload-pack" ],
+            
+              [  "usr\/bin\/dulwich" ],
+            
+              [  "usr\/bin\/sigil" ],
+            
+              [  "usr\/lib\/python-exec\/python3.14\/dul-receive-pack" ],
+            
+              [  "usr\/lib\/python-exec\/python3.14\/dul-upload-pack" ],
+            
+              [  "usr\/lib\/python-exec\/python3.14\/dulwich" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__main__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/__main__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/__main__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/__main__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/_typing.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/_typing.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/_typing.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/am.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/am.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/am.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/annotate.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/annotate.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/annotate.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/approxidate.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/approxidate.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/approxidate.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/archive.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/archive.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/archive.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/attrs.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/attrs.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/attrs.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/bisect.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/bisect.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/bisect.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/bitmap.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/bitmap.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/bitmap.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/bundle.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/bundle.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/bundle.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/bundle_uri.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/bundle_uri.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/bundle_uri.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/cli.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/cli.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/cli.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/client.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/client.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/client.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/commit_graph.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/commit_graph.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/commit_graph.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/config.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/config.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/config.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/credentials.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/credentials.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/credentials.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/diff.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/diff.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/diff.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/diff_tree.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/diff_tree.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/diff_tree.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/diffstat.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/diffstat.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/diffstat.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/dumb.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/dumb.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/dumb.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/errors.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/errors.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/errors.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/fastexport.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/fastexport.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/fastexport.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/file.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/file.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/file.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/filter_branch.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/filter_branch.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/filter_branch.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/filters.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/filters.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/filters.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/gc.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/gc.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/gc.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/graph.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/graph.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/graph.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/hooks.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/hooks.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/hooks.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/ignore.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/ignore.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/ignore.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/index.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/index.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/index.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/lfs.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/lfs.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/lfs.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/lfs_server.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/lfs_server.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/lfs_server.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/line_ending.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/line_ending.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/line_ending.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/log_utils.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/log_utils.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/log_utils.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/lru_cache.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/lru_cache.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/lru_cache.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/mailmap.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/mailmap.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/mailmap.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/maintenance.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/maintenance.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/maintenance.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/mbox.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/mbox.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/mbox.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/merge.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/merge.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/merge.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/merge_drivers.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/merge_drivers.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/merge_drivers.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/midx.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/midx.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/midx.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/notes.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/notes.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/notes.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/object_filters.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/object_filters.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/object_filters.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/object_format.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/object_format.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/object_format.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/object_store.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/object_store.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/object_store.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/objects.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/objects.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/objects.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/objectspec.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/objectspec.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/objectspec.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/pack.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/pack.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/pack.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/patch.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/patch.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/patch.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/protocol.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/protocol.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/protocol.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/range_diff.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/range_diff.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/range_diff.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/rebase.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/rebase.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/rebase.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/reflog.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/reflog.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/reflog.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/refs.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/refs.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/refs.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/reftable.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/reftable.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/reftable.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/repo.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/repo.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/repo.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/rerere.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/rerere.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/rerere.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/server.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/server.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/server.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/signature.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/signature.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/signature.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/sparse_patterns.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/sparse_patterns.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/sparse_patterns.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/stash.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/stash.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/stash.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/stripspace.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/stripspace.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/stripspace.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/submodule.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/submodule.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/submodule.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/subtree.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/subtree.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/subtree.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/trailers.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/trailers.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/trailers.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/walk.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/walk.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/walk.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/web.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/web.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/web.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/whitespace.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/whitespace.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/whitespace.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/worktree.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/worktree.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/__pycache__\/worktree.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/_diff_tree.cpython-314-x86_64-linux-gnu.so" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/_objects.cpython-314-x86_64-linux-gnu.so" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/_pack.cpython-314-x86_64-linux-gnu.so" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/_typing.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/aiohttp\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/aiohttp\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/aiohttp\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/aiohttp\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/aiohttp\/__pycache__\/server.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/aiohttp\/__pycache__\/server.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/aiohttp\/__pycache__\/server.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/aiohttp\/server.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/am.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/annotate.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/approxidate.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/archive.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/attrs.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/bisect.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/bitmap.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/bundle.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/bundle_uri.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/cli.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/client.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/cloud\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/cloud\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/cloud\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/cloud\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/cloud\/__pycache__\/gcs.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/cloud\/__pycache__\/gcs.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/cloud\/__pycache__\/gcs.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/cloud\/gcs.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/commit_graph.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/config.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/credentials.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/diff.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/diff_tree.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/diffstat.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/dumb.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/errors.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/fastexport.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/file.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/filter_branch.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/filters.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/gc.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/graph.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/hooks.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/ignore.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/index.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/lfs.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/lfs_server.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/line_ending.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/log_utils.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/lru_cache.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/mailmap.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/maintenance.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/mbox.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/merge.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/merge_drivers.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/midx.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/notes.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/object_filters.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/object_format.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/object_store.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/objects.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/objectspec.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/pack.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/patch.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/porcelain\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/porcelain\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/porcelain\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/porcelain\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/porcelain\/__pycache__\/lfs.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/porcelain\/__pycache__\/lfs.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/porcelain\/__pycache__\/lfs.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/porcelain\/__pycache__\/notes.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/porcelain\/__pycache__\/notes.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/porcelain\/__pycache__\/notes.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/porcelain\/__pycache__\/submodule.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/porcelain\/__pycache__\/submodule.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/porcelain\/__pycache__\/submodule.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/porcelain\/__pycache__\/subtree.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/porcelain\/__pycache__\/subtree.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/porcelain\/__pycache__\/subtree.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/porcelain\/__pycache__\/tag.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/porcelain\/__pycache__\/tag.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/porcelain\/__pycache__\/tag.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/porcelain\/__pycache__\/worktree.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/porcelain\/__pycache__\/worktree.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/porcelain\/__pycache__\/worktree.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/porcelain\/lfs.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/porcelain\/notes.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/porcelain\/submodule.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/porcelain\/subtree.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/porcelain\/tag.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/porcelain\/worktree.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/protocol.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/py.typed" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/range_diff.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/rebase.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/reflog.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/refs.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/reftable.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/repo.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/rerere.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/server.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/signature.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/sparse_patterns.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/stash.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/stripspace.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/submodule.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/subtree.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/tests\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/tests\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/tests\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/tests\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/tests\/__pycache__\/test_object_store.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/tests\/__pycache__\/test_object_store.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/tests\/__pycache__\/test_object_store.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/tests\/__pycache__\/utils.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/tests\/__pycache__\/utils.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/tests\/__pycache__\/utils.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/tests\/test_object_store.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/tests\/utils.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/trailers.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/walk.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/web.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/whitespace.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich\/worktree.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich-1.2.7.dist-info\/METADATA" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich-1.2.7.dist-info\/WHEEL" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich-1.2.7.dist-info\/entry_points.txt" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dulwich-1.2.7.dist-info\/top_level.txt" ],
+            
+              [  "usr\/lib64\/sigil\/libsigilgumbo.so" ],
+            
+              [  "usr\/lib64\/sigil\/sigil" ],
+            
+              [  "usr\/share\/applications\/sigil.desktop" ],
+            
+              [  "usr\/share\/doc\/dulwich-1.2.7\/NEWS.bz2" ],
+            
+              [  "usr\/share\/doc\/dulwich-1.2.7\/README.rst.bz2" ],
+            
+              [  "usr\/share\/doc\/dulwich-1.2.7\/TODO" ],
+            
+              [  "usr\/share\/doc\/sigil-2.8.0\/ChangeLog.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/sigil-2.8.0\/README.md.bz2" ],
+            
+              [  "usr\/share\/pixmaps\/sigil.png" ],
+            
+              [  "usr\/share\/sigil\/examples\/clip_entries.ini" ],
+            
+              [  "usr\/share\/sigil\/examples\/search_entries.ini" ],
+            
+              [  "usr\/share\/sigil\/iconthemes\/fluent.rcc" ],
+            
+              [  "usr\/share\/sigil\/iconthemes\/main.rcc" ],
+            
+              [  "usr\/share\/sigil\/iconthemes\/material.rcc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/bookcontainer.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/bookcontainer.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/bookcontainer.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/compatibility_utils.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/compatibility_utils.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/compatibility_utils.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/epub_utils.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/epub_utils.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/epub_utils.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/hrefutils.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/hrefutils.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/hrefutils.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/imghdr.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/imghdr.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/imghdr.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/inputcontainer.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/inputcontainer.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/inputcontainer.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/launcher.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/launcher.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/launcher.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/navprocessor.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/navprocessor.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/navprocessor.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/opf_parser.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/opf_parser.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/opf_parser.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/outputcontainer.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/outputcontainer.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/outputcontainer.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/pluginhunspell.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/pluginhunspell.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/pluginhunspell.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/pluginhunspellml.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/pluginhunspellml.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/pluginhunspellml.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/preferences.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/preferences.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/preferences.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/quickparser.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/quickparser.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/quickparser.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/sigil_gumbo_bs4_adapter.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/sigil_gumbo_bs4_adapter.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/sigil_gumbo_bs4_adapter.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/sigil_gumboc.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/sigil_gumboc.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/sigil_gumboc.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/sigil_gumboc_tags.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/sigil_gumboc_tags.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/sigil_gumboc_tags.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/unipath.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/unipath.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/unipath.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/validationcontainer.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/validationcontainer.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/validationcontainer.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/validationresult.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/validationresult.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/validationresult.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/wrapper.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/wrapper.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/__pycache__\/wrapper.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/bookcontainer.py" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/compatibility_utils.py" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/epub_utils.py" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/hrefutils.py" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/imghdr.py" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/inputcontainer.py" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/launcher.py" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/navprocessor.py" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/opf_parser.py" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/outputcontainer.py" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/pluginhunspell.py" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/pluginhunspellml.py" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/preferences.py" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/quickparser.py" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/sigil_bs4\/AUTHORS.txt" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/sigil_bs4\/COPYING.txt" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/sigil_bs4\/__init__.py" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/sigil_bs4\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/sigil_bs4\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/sigil_bs4\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/sigil_bs4\/__pycache__\/dammit.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/sigil_bs4\/__pycache__\/dammit.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/sigil_bs4\/__pycache__\/dammit.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/sigil_bs4\/__pycache__\/diagnose.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/sigil_bs4\/__pycache__\/diagnose.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/sigil_bs4\/__pycache__\/diagnose.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/sigil_bs4\/__pycache__\/element.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/sigil_bs4\/__pycache__\/element.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/sigil_bs4\/__pycache__\/element.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/sigil_bs4\/builder\/__init__.py" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/sigil_bs4\/builder\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/sigil_bs4\/builder\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/sigil_bs4\/builder\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/sigil_bs4\/builder\/__pycache__\/_html5lib.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/sigil_bs4\/builder\/__pycache__\/_html5lib.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/sigil_bs4\/builder\/__pycache__\/_html5lib.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/sigil_bs4\/builder\/__pycache__\/_htmlparser.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/sigil_bs4\/builder\/__pycache__\/_htmlparser.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/sigil_bs4\/builder\/__pycache__\/_htmlparser.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/sigil_bs4\/builder\/__pycache__\/_lxml.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/sigil_bs4\/builder\/__pycache__\/_lxml.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/sigil_bs4\/builder\/__pycache__\/_lxml.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/sigil_bs4\/builder\/_html5lib.py" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/sigil_bs4\/builder\/_htmlparser.py" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/sigil_bs4\/builder\/_lxml.py" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/sigil_bs4\/dammit.py" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/sigil_bs4\/diagnose.py" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/sigil_bs4\/element.py" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/sigil_bs4\/sigil_custom_changes_to_bs4-4.4.0.patch.txt" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/sigil_gumbo_bs4_adapter.py" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/sigil_gumboc.py" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/sigil_gumboc_tags.py" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/unipath.py" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/validationcontainer.py" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/validationresult.py" ],
+            
+              [  "usr\/share\/sigil\/plugin_launchers\/python\/wrapper.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/cssreformatter.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/cssreformatter.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/cssreformatter.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/diffstat.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/diffstat.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/diffstat.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/fix_opf_ids.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/fix_opf_ids.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/fix_opf_ids.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/fr_utils.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/fr_utils.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/fr_utils.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/functionrep.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/functionrep.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/functionrep.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/functionsearch.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/functionsearch.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/functionsearch.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/gencheck.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/gencheck.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/gencheck.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/getcodepointname.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/getcodepointname.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/getcodepointname.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/metadata_utils.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/metadata_utils.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/metadata_utils.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/metaproc2.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/metaproc2.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/metaproc2.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/metaproc3.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/metaproc3.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/metaproc3.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/ncxdata.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/ncxdata.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/ncxdata.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/ncxgenerator.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/ncxgenerator.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/ncxgenerator.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/opf2data.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/opf2data.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/opf2data.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/opf3data.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/opf3data.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/opf3data.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/opf_id_parser.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/opf_id_parser.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/opf_id_parser.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/opf_newparser.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/opf_newparser.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/opf_newparser.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/repomanager.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/repomanager.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/repomanager.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/sanitycheck.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/sanitycheck.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/sanitycheck.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/sdifflibparser.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/sdifflibparser.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/sdifflibparser.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/titlecase.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/titlecase.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/titlecase.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/updatechecker.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/updatechecker.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/updatechecker.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/xmlprocessor.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/xmlprocessor.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/xmlprocessor.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/xmlsanitycheck.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/xmlsanitycheck.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/__pycache__\/xmlsanitycheck.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/cssreformatter.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/diffstat.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/fix_opf_ids.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/fr_utils.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/functionrep.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/functionsearch.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/gencheck.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/getcodepointname.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/metadata_utils.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/metaproc2.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/metaproc3.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/ncxdata.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/ncxgenerator.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/opf2data.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/opf3data.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/opf_id_parser.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/opf_newparser.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/repomanager.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/sanitycheck.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/sdifflibparser.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/titlecase.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/LICENSE" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/README.rst" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__init__.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__main__.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/__main__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/__main__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/__main__.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/util.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/util.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/util.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x000.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x000.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x000.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x001.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x001.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x001.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x002.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x002.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x002.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x003.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x003.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x003.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x004.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x004.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x004.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x005.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x005.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x005.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x006.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x006.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x006.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x007.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x007.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x007.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x009.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x009.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x009.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x00a.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x00a.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x00a.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x00b.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x00b.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x00b.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x00c.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x00c.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x00c.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x00d.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x00d.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x00d.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x00e.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x00e.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x00e.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x00f.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x00f.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x00f.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x010.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x010.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x010.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x011.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x011.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x011.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x012.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x012.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x012.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x013.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x013.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x013.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x014.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x014.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x014.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x015.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x015.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x015.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x016.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x016.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x016.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x017.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x017.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x017.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x018.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x018.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x018.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x01d.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x01d.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x01d.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x01e.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x01e.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x01e.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x01f.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x01f.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x01f.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x020.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x020.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x020.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x021.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x021.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x021.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x022.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x022.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x022.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x023.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x023.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x023.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x024.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x024.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x024.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x025.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x025.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x025.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x026.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x026.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x026.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x027.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x027.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x027.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x028.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x028.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x028.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x029.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x029.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x029.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x02a.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x02a.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x02a.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x02c.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x02c.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x02c.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x02e.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x02e.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x02e.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x02f.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x02f.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x02f.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x030.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x030.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x030.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x031.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x031.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x031.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x032.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x032.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x032.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x033.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x033.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x033.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x04d.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x04d.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x04d.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x04e.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x04e.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x04e.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x04f.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x04f.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x04f.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x050.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x050.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x050.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x051.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x051.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x051.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x052.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x052.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x052.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x053.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x053.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x053.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x054.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x054.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x054.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x055.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x055.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x055.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x056.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x056.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x056.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x057.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x057.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x057.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x058.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x058.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x058.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x059.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x059.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x059.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x05a.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x05a.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x05a.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x05b.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x05b.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x05b.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x05c.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x05c.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x05c.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x05d.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x05d.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x05d.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x05e.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x05e.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x05e.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x05f.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x05f.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x05f.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x060.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x060.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x060.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x061.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x061.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x061.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x062.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x062.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x062.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x063.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x063.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x063.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x064.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x064.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x064.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x065.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x065.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x065.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x066.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x066.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x066.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x067.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x067.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x067.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x068.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x068.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x068.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x069.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x069.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x069.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x06a.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x06a.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x06a.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x06b.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x06b.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x06b.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x06c.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x06c.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x06c.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x06d.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x06d.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x06d.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x06e.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x06e.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x06e.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x06f.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x06f.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x06f.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x070.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x070.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x070.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x071.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x071.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x071.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x072.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x072.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x072.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x073.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x073.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x073.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x074.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x074.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x074.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x075.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x075.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x075.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x076.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x076.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x076.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x077.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x077.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x077.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x078.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x078.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x078.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x079.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x079.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x079.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x07a.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x07a.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x07a.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x07b.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x07b.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x07b.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x07c.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x07c.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x07c.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x07d.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x07d.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x07d.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x07e.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x07e.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x07e.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x07f.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x07f.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x07f.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x080.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x080.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x080.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x081.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x081.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x081.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x082.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x082.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x082.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x083.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x083.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x083.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x084.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x084.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x084.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x085.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x085.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x085.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x086.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x086.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x086.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x087.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x087.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x087.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x088.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x088.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x088.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x089.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x089.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x089.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x08a.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x08a.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x08a.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x08b.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x08b.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x08b.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x08c.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x08c.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x08c.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x08d.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x08d.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x08d.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x08e.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x08e.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x08e.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x08f.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x08f.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x08f.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x090.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x090.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x090.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x091.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x091.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x091.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x092.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x092.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x092.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x093.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x093.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x093.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x094.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x094.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x094.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x095.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x095.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x095.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x096.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x096.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x096.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x097.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x097.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x097.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x098.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x098.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x098.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x099.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x099.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x099.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x09a.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x09a.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x09a.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x09b.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x09b.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x09b.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x09c.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x09c.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x09c.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x09d.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x09d.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x09d.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x09e.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x09e.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x09e.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x09f.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x09f.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x09f.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0a0.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0a0.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0a0.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0a1.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0a1.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0a1.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0a2.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0a2.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0a2.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0a3.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0a3.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0a3.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0a4.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0a4.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0a4.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0ac.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0ac.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0ac.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0ad.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0ad.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0ad.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0ae.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0ae.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0ae.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0af.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0af.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0af.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0b0.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0b0.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0b0.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0b1.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0b1.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0b1.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0b2.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0b2.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0b2.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0b3.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0b3.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0b3.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0b4.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0b4.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0b4.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0b5.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0b5.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0b5.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0b6.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0b6.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0b6.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0b7.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0b7.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0b7.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0b8.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0b8.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0b8.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0b9.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0b9.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0b9.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0ba.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0ba.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0ba.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0bb.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0bb.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0bb.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0bc.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0bc.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0bc.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0bd.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0bd.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0bd.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0be.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0be.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0be.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0bf.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0bf.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0bf.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0c0.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0c0.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0c0.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0c1.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0c1.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0c1.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0c2.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0c2.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0c2.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0c3.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0c3.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0c3.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0c4.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0c4.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0c4.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0c5.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0c5.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0c5.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0c6.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0c6.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0c6.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0c7.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0c7.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0c7.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0c8.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0c8.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0c8.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0c9.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0c9.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0c9.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0ca.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0ca.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0ca.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0cb.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0cb.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0cb.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0cc.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0cc.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0cc.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0cd.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0cd.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0cd.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0ce.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0ce.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0ce.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0cf.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0cf.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0cf.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0d0.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0d0.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0d0.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0d1.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0d1.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0d1.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0d2.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0d2.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0d2.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0d3.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0d3.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0d3.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0d4.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0d4.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0d4.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0d5.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0d5.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0d5.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0d6.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0d6.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0d6.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0d7.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0d7.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0d7.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0f9.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0f9.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0f9.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0fa.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0fa.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0fa.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0fb.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0fb.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0fb.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0fc.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0fc.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0fc.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0fd.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0fd.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0fd.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0fe.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0fe.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0fe.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0ff.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0ff.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x0ff.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x1d4.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x1d4.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x1d4.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x1d5.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x1d5.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x1d5.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x1d6.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x1d6.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x1d6.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x1d7.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x1d7.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x1d7.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x1f1.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x1f1.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x1f1.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x1f6.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x1f6.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/__pycache__\/x1f6.cpython-314.pyc" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/py.typed" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/util.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x000.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x001.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x002.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x003.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x004.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x005.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x006.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x007.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x009.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x00a.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x00b.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x00c.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x00d.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x00e.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x00f.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x010.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x011.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x012.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x013.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x014.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x015.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x016.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x017.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x018.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x01d.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x01e.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x01f.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x020.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x021.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x022.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x023.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x024.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x025.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x026.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x027.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x028.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x029.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x02a.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x02c.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x02e.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x02f.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x030.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x031.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x032.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x033.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x04d.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x04e.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x04f.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x050.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x051.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x052.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x053.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x054.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x055.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x056.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x057.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x058.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x059.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x05a.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x05b.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x05c.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x05d.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x05e.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x05f.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x060.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x061.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x062.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x063.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x064.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x065.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x066.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x067.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x068.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x069.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x06a.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x06b.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x06c.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x06d.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x06e.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x06f.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x070.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x071.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x072.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x073.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x074.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x075.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x076.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x077.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x078.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x079.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x07a.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x07b.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x07c.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x07d.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x07e.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x07f.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x080.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x081.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x082.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x083.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x084.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x085.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x086.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x087.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x088.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x089.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x08a.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x08b.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x08c.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x08d.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x08e.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x08f.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x090.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x091.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x092.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x093.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x094.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x095.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x096.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x097.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x098.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x099.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x09a.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x09b.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x09c.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x09d.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x09e.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x09f.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0a0.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0a1.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0a2.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0a3.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0a4.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0ac.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0ad.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0ae.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0af.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0b0.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0b1.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0b2.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0b3.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0b4.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0b5.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0b6.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0b7.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0b8.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0b9.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0ba.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0bb.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0bc.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0bd.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0be.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0bf.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0c0.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0c1.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0c2.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0c3.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0c4.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0c5.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0c6.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0c7.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0c8.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0c9.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0ca.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0cb.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0cc.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0cd.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0ce.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0cf.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0d0.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0d1.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0d2.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0d3.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0d4.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0d5.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0d6.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0d7.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0f9.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0fa.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0fb.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0fc.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0fd.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0fe.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x0ff.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x1d4.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x1d5.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x1d6.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x1d7.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x1f1.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/unidecode\/x1f6.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/updatechecker.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/xmlprocessor.py" ],
+            
+              [  "usr\/share\/sigil\/python3lib\/xmlsanitycheck.py" ],
+            
+              [  "usr\/share\/sigil\/translations\/sigil_ar.qm" ],
+            
+              [  "usr\/share\/sigil\/translations\/sigil_ca.qm" ],
+            
+              [  "usr\/share\/sigil\/translations\/sigil_de.qm" ],
+            
+              [  "usr\/share\/sigil\/translations\/sigil_en.qm" ],
+            
+              [  "usr\/share\/sigil\/translations\/sigil_es.qm" ],
+            
+              [  "usr\/share\/sigil\/translations\/sigil_fi.qm" ],
+            
+              [  "usr\/share\/sigil\/translations\/sigil_fr.qm" ],
+            
+              [  "usr\/share\/sigil\/translations\/sigil_it.qm" ],
+            
+              [  "usr\/share\/sigil\/translations\/sigil_ja.qm" ],
+            
+              [  "usr\/share\/sigil\/translations\/sigil_ko.qm" ],
+            
+              [  "usr\/share\/sigil\/translations\/sigil_nl.qm" ],
+            
+              [  "usr\/share\/sigil\/translations\/sigil_pl.qm" ],
+            
+              [  "usr\/share\/sigil\/translations\/sigil_pt_BR.qm" ],
+            
+              [  "usr\/share\/sigil\/translations\/sigil_ru.qm" ],
+            
+              [  "usr\/share\/sigil\/translations\/sigil_sr.qm" ],
+            
+              [  "usr\/share\/sigil\/translations\/sigil_tr.qm" ],
+            
+              [  "usr\/share\/sigil\/translations\/sigil_uk.qm" ],
+            
+              [  "usr\/share\/sigil\/translations\/sigil_zh_CN.qm" ],
+            
+              [  "usr\/share\/sigil\/translations\/sigil_zh_TW.qm" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

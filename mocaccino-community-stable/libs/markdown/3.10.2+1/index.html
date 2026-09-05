@@ -1,0 +1,509 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing libs/markdown-3.10.2&#43;1 in mocaccino-community-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> libs/markdown-3.10.2&#43;1
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                Python implementation of the markdown markup language
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-community-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-community-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of libs/markdown
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/mocaccino-community:markdown-libs-3.10.2-1" target="_blank"> quay.io/mocaccino/mocaccino-community:markdown-libs-3.10.2-1 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/mocaccino-community:markdown-libs-3.10.2-1/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 3.10.2&#43;1  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> BSD </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/sys-fs">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  sys-fs &gt;=0 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: dev-python/markdown
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://python-markdown.github.io/" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://python-markdown.github.io/ </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-python/markdown">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  markdown &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "usr\/bin\/markdown_py" ],
+            
+              [  "usr\/lib\/python-exec\/python3.14\/markdown_py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/__main__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/__meta__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/__pycache__\/__main__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/__pycache__\/__main__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/__pycache__\/__main__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/__pycache__\/__meta__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/__pycache__\/__meta__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/__pycache__\/__meta__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/__pycache__\/blockparser.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/__pycache__\/blockparser.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/__pycache__\/blockparser.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/__pycache__\/blockprocessors.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/__pycache__\/blockprocessors.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/__pycache__\/blockprocessors.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/__pycache__\/core.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/__pycache__\/core.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/__pycache__\/core.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/__pycache__\/htmlparser.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/__pycache__\/htmlparser.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/__pycache__\/htmlparser.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/__pycache__\/inlinepatterns.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/__pycache__\/inlinepatterns.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/__pycache__\/inlinepatterns.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/__pycache__\/postprocessors.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/__pycache__\/postprocessors.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/__pycache__\/postprocessors.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/__pycache__\/preprocessors.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/__pycache__\/preprocessors.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/__pycache__\/preprocessors.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/__pycache__\/serializers.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/__pycache__\/serializers.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/__pycache__\/serializers.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/__pycache__\/test_tools.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/__pycache__\/test_tools.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/__pycache__\/test_tools.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/__pycache__\/treeprocessors.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/__pycache__\/treeprocessors.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/__pycache__\/treeprocessors.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/__pycache__\/util.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/__pycache__\/util.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/__pycache__\/util.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/blockparser.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/blockprocessors.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/core.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/abbr.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/abbr.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/abbr.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/admonition.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/admonition.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/admonition.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/attr_list.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/attr_list.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/attr_list.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/codehilite.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/codehilite.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/codehilite.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/def_list.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/def_list.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/def_list.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/extra.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/extra.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/extra.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/fenced_code.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/fenced_code.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/fenced_code.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/footnotes.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/footnotes.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/footnotes.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/legacy_attrs.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/legacy_attrs.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/legacy_attrs.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/legacy_em.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/legacy_em.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/legacy_em.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/md_in_html.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/md_in_html.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/md_in_html.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/meta.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/meta.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/meta.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/nl2br.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/nl2br.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/nl2br.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/sane_lists.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/sane_lists.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/sane_lists.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/smarty.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/smarty.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/smarty.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/tables.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/tables.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/tables.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/toc.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/toc.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/toc.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/wikilinks.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/wikilinks.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/__pycache__\/wikilinks.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/abbr.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/admonition.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/attr_list.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/codehilite.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/def_list.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/extra.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/fenced_code.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/footnotes.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/legacy_attrs.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/legacy_em.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/md_in_html.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/meta.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/nl2br.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/sane_lists.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/smarty.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/tables.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/toc.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/extensions\/wikilinks.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/htmlparser.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/inlinepatterns.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/postprocessors.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/preprocessors.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/serializers.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/test_tools.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/treeprocessors.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown\/util.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown-3.10.2.dist-info\/METADATA" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown-3.10.2.dist-info\/WHEEL" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown-3.10.2.dist-info\/entry_points.txt" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/markdown-3.10.2.dist-info\/top_level.txt" ],
+            
+              [  "usr\/share\/doc\/markdown-3.10.2\/README.md.bz2" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,2466 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing apps/gradience-0.4.1&#43;5 in mocaccino-community-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> apps/gradience-0.4.1&#43;5
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                KGNOME&#39;s main interface to configure various aspects of the desktop
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-community-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-community-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of apps/gradience
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/mocaccino-community:gradience-apps-0.4.1-5" target="_blank"> quay.io/mocaccino/mocaccino-community:gradience-apps-0.4.1-5 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/mocaccino-community:gradience-apps-0.4.1-5/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 0.4.1&#43;5  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> GPL-2&#43; </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/gnome-common">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  gnome-common &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/build">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  build 1.5.1 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/reportlab">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  reportlab 4.5.1&#43;1 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/regex">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  regex 2026.7.10 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> appstream.id: com.github.GradienceTeam.Gradience
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: gui-apps/gradience
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://github.com/GradienceTeam/Gradience" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://github.com/GradienceTeam/Gradience </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/gui-apps/gradience">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  gradience &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-python/anyascii">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  anyascii &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-python/cssselect2">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  cssselect2 &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-python/material-color-utilities">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  material-color-utilities &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-python/svglib">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  svglib &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-python/yapsy">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  yapsy &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "usr\/bin\/gradience" ],
+            
+              [  "usr\/bin\/gradience-cli" ],
+            
+              [  "usr\/bin\/svg2pdf" ],
+            
+              [  "usr\/lib\/python-exec\/python3.14\/svg2pdf" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/000" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/001" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/002" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/003" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/004" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/005" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/006" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/007" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/008" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/009" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/00a" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/00b" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/00c" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/00d" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/00e" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/00f" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/010" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/011" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/012" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/013" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/014" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/015" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/016" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/017" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/018" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/019" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/01a" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/01b" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/01c" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/01d" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/01e" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/01f" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/020" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/021" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/022" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/023" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/024" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/025" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/026" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/027" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/028" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/029" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/02a" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/02b" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/02c" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/02d" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/02e" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/02f" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/030" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/031" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/032" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/033" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/034" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/035" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/036" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/037" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/038" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/039" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/03a" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/03b" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/03c" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/03d" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/03e" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/03f" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/040" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/041" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/042" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/043" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/044" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/045" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/046" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/047" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/048" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/049" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/04a" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/04b" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/04c" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/04d" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/04e" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/04f" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/050" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/051" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/052" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/053" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/054" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/055" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/056" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/057" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/058" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/059" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/05a" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/05b" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/05c" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/05d" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/05e" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/05f" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/060" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/061" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/062" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/063" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/064" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/065" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/066" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/067" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/068" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/069" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/06a" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/06b" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/06c" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/06d" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/06e" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/06f" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/070" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/071" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/072" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/073" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/074" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/075" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/076" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/077" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/078" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/079" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/07a" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/07b" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/07c" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/07d" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/07e" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/07f" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/080" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/081" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/082" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/083" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/084" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/085" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/086" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/087" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/088" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/089" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/08a" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/08b" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/08c" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/08d" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/08e" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/08f" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/090" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/091" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/092" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/093" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/094" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/095" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/096" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/097" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/098" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/099" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/09a" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/09b" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/09c" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/09d" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/09e" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/09f" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0a0" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0a1" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0a2" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0a3" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0a4" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0a5" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0a6" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0a7" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0a8" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0a9" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0aa" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0ab" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0ac" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0ad" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0ae" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0af" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0b0" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0b1" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0b2" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0b3" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0b4" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0b5" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0b6" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0b7" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0b8" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0b9" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0ba" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0bb" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0bc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0bd" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0be" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0bf" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0c0" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0c1" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0c2" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0c3" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0c4" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0c5" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0c6" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0c7" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0c8" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0c9" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0ca" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0cb" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0cc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0cd" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0ce" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0cf" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0d0" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0d1" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0d2" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0d3" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0d4" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0d5" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0d6" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0d7" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0f9" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0fa" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0fb" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0fc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0fd" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0fe" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/0ff" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/100" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/101" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/102" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/103" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/104" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/105" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/106" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/107" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/108" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/109" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/10a" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/10b" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/10c" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/10d" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/10e" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/10f" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/110" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/111" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/112" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/113" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/114" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/115" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/116" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/117" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/118" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/119" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/11a" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/11b" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/11c" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/11d" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/11e" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/11f" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/124" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/12f" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/130" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/131" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/132" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/133" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/134" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/135" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/136" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/137" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/138" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/139" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/13a" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/13b" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/13c" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/13d" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/13e" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/13f" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/140" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/141" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/142" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/143" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/144" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/145" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/146" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/161" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/168" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/169" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/16a" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/16b" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/16d" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/16e" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/16f" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/170" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/171" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/172" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/173" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/174" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/175" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/176" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/177" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/178" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/179" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/17a" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/17b" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/17c" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/17d" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/17e" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/17f" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/180" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/181" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/182" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/183" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/184" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/185" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/186" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/187" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/188" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/189" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/18a" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/18b" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/18c" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/18d" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/1b0" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/1b1" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/1b2" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/1bc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/1cc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/1cd" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/1ce" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/1cf" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/1d0" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/1d1" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/1d2" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/1d3" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/1d4" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/1d5" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/1d6" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/1d7" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/1d8" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/1d9" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/1da" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/1df" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/1e0" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/1e1" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/1e2" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/1e4" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/1e5" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/1e7" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/1e8" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/1e9" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/1ec" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/1ed" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/1ee" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/1f0" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/1f1" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/1f2" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/1f3" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/1f4" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/1f5" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/1f6" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/1f7" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/1f8" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/1f9" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/1fa" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/1fb" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/200" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/201" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/202" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/203" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/204" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/205" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/206" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/207" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/208" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/209" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/20a" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/20b" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/20c" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/20d" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/20e" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/20f" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/210" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/211" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/212" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/213" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/214" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/215" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/216" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/217" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/218" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/219" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/21a" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/21b" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/21c" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/21d" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/21e" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/21f" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/220" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/221" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/222" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/223" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/224" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/225" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/226" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/227" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/228" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/229" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/22a" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/22b" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/22c" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/22d" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/22e" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/22f" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/230" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/231" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/232" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/233" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/234" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/235" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/236" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/237" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/238" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/239" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/23a" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/23b" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/23c" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/23d" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/23e" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/23f" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/240" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/241" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/242" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/243" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/244" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/245" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/246" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/247" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/248" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/249" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/24a" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/24b" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/24c" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/24d" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/24e" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/24f" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/250" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/251" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/252" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/253" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/254" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/255" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/256" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/257" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/258" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/259" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/25a" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/25b" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/25c" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/25d" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/25e" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/25f" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/260" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/261" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/262" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/263" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/264" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/265" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/266" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/267" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/268" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/269" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/26a" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/26b" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/26c" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/26d" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/26e" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/26f" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/270" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/271" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/272" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/273" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/274" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/275" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/276" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/277" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/278" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/279" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/27a" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/27b" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/27c" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/27d" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/27e" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/27f" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/280" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/281" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/282" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/283" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/284" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/285" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/286" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/287" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/288" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/289" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/28a" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/28b" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/28c" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/28d" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/28e" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/28f" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/290" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/291" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/292" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/293" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/294" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/295" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/296" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/297" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/298" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/299" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/29a" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/29b" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/29c" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/29d" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/29e" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/29f" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2a0" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2a1" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2a2" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2a3" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2a4" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2a5" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2a6" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2a7" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2a8" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2a9" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2aa" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2ab" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2ac" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2ad" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2ae" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2af" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2b0" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2b1" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2b2" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2b3" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2b4" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2b5" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2b6" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2b7" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2b8" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2b9" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2ba" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2bb" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2bc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2bd" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2be" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2bf" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2c0" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2c1" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2c2" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2c3" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2c4" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2c5" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2c6" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2c7" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2c8" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2c9" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2ca" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2cb" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2cc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2cd" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2ce" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2cf" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2d0" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2d1" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2d2" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2d3" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2d4" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2d5" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2d6" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2d7" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2d8" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2d9" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2da" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2db" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2dc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2dd" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2de" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2df" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2e0" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2e1" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2e2" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2e3" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2e4" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2e5" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2e6" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2e7" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2e8" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2e9" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2ea" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2eb" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2ec" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2ed" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2ee" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2f8" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2f9" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/2fa" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/300" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/301" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/302" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/303" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/304" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/305" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/306" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/307" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/308" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/309" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/30a" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/30b" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/30c" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/30d" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/30e" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/30f" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/310" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/311" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/312" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/313" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/314" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/315" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/316" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/317" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/318" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/319" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/31a" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/31b" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/31c" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/31d" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/31e" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/31f" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/320" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/321" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/322" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/323" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/_data\/e00" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii\/py.typed" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii-0.3.3.dist-info\/METADATA" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/anyascii-0.3.3.dist-info\/WHEEL" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/cssselect2\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/cssselect2\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/cssselect2\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/cssselect2\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/cssselect2\/__pycache__\/compiler.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/cssselect2\/__pycache__\/compiler.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/cssselect2\/__pycache__\/compiler.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/cssselect2\/__pycache__\/parser.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/cssselect2\/__pycache__\/parser.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/cssselect2\/__pycache__\/parser.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/cssselect2\/__pycache__\/tree.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/cssselect2\/__pycache__\/tree.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/cssselect2\/__pycache__\/tree.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/cssselect2\/compiler.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/cssselect2\/parser.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/cssselect2\/tree.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/cssselect2-0.9.0.dist-info\/METADATA" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/cssselect2-0.9.0.dist-info\/WHEEL" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/__pycache__\/constants.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/__pycache__\/constants.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/__pycache__\/constants.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/__pycache__\/css_parser.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/__pycache__\/css_parser.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/__pycache__\/css_parser.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/__pycache__\/flatpak_overrides.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/__pycache__\/flatpak_overrides.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/__pycache__\/flatpak_overrides.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/__pycache__\/globals.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/__pycache__\/globals.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/__pycache__\/globals.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/__pycache__\/logger.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/__pycache__\/logger.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/__pycache__\/logger.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/__pycache__\/preset_downloader.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/__pycache__\/preset_downloader.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/__pycache__\/preset_downloader.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/constants.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/css_parser.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/flatpak_overrides.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/globals.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/logger.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/models\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/models\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/models\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/models\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/models\/__pycache__\/preset.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/models\/__pycache__\/preset.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/models\/__pycache__\/preset.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/models\/__pycache__\/repo.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/models\/__pycache__\/repo.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/models\/__pycache__\/repo.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/models\/preset.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/models\/repo.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/preset_downloader.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/theming\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/theming\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/theming\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/theming\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/theming\/__pycache__\/monet.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/theming\/__pycache__\/monet.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/theming\/__pycache__\/monet.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/theming\/__pycache__\/preset_utils.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/theming\/__pycache__\/preset_utils.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/theming\/__pycache__\/preset_utils.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/theming\/monet.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/theming\/preset_utils.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/utils\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/utils\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/utils\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/utils\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/utils\/__pycache__\/colors.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/utils\/__pycache__\/colors.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/utils\/__pycache__\/colors.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/utils\/__pycache__\/common.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/utils\/__pycache__\/common.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/utils\/__pycache__\/common.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/utils\/colors.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/backend\/utils\/common.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/__pycache__\/main.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/__pycache__\/main.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/__pycache__\/main.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/__pycache__\/settings_schema.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/__pycache__\/settings_schema.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/__pycache__\/settings_schema.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/cli\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/cli\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/cli\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/cli\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/dialogs\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/dialogs\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/dialogs\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/dialogs\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/dialogs\/__pycache__\/app_type_dialog.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/dialogs\/__pycache__\/app_type_dialog.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/dialogs\/__pycache__\/app_type_dialog.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/dialogs\/__pycache__\/log_out_dialog.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/dialogs\/__pycache__\/log_out_dialog.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/dialogs\/__pycache__\/log_out_dialog.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/dialogs\/__pycache__\/save_dialog.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/dialogs\/__pycache__\/save_dialog.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/dialogs\/__pycache__\/save_dialog.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/dialogs\/app_type_dialog.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/dialogs\/log_out_dialog.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/dialogs\/save_dialog.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/main.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/settings_schema.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/utils\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/utils\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/utils\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/utils\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/utils\/__pycache__\/actions.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/utils\/__pycache__\/actions.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/utils\/__pycache__\/actions.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/utils\/__pycache__\/run_async.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/utils\/__pycache__\/run_async.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/utils\/__pycache__\/run_async.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/utils\/actions.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/utils\/run_async.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/views\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/views\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/views\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/views\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/views\/__pycache__\/about_window.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/views\/__pycache__\/about_window.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/views\/__pycache__\/about_window.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/views\/__pycache__\/main_window.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/views\/__pycache__\/main_window.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/views\/__pycache__\/main_window.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/views\/__pycache__\/no_plugin_window.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/views\/__pycache__\/no_plugin_window.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/views\/__pycache__\/no_plugin_window.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/views\/__pycache__\/plugins_list.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/views\/__pycache__\/plugins_list.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/views\/__pycache__\/plugins_list.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/views\/__pycache__\/preferences_window.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/views\/__pycache__\/preferences_window.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/views\/__pycache__\/preferences_window.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/views\/__pycache__\/presets_manager_window.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/views\/__pycache__\/presets_manager_window.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/views\/__pycache__\/presets_manager_window.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/views\/__pycache__\/share_window.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/views\/__pycache__\/share_window.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/views\/__pycache__\/share_window.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/views\/__pycache__\/welcome_window.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/views\/__pycache__\/welcome_window.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/views\/__pycache__\/welcome_window.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/views\/about_window.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/views\/main_window.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/views\/no_plugin_window.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/views\/plugins_list.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/views\/preferences_window.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/views\/presets_manager_window.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/views\/share_window.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/views\/welcome_window.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/widgets\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/widgets\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/widgets\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/widgets\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/widgets\/__pycache__\/builtin_preset_row.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/widgets\/__pycache__\/builtin_preset_row.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/widgets\/__pycache__\/builtin_preset_row.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/widgets\/__pycache__\/custom_css_group.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/widgets\/__pycache__\/custom_css_group.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/widgets\/__pycache__\/custom_css_group.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/widgets\/__pycache__\/error_list_row.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/widgets\/__pycache__\/error_list_row.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/widgets\/__pycache__\/error_list_row.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/widgets\/__pycache__\/explore_preset_row.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/widgets\/__pycache__\/explore_preset_row.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/widgets\/__pycache__\/explore_preset_row.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/widgets\/__pycache__\/option_row.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/widgets\/__pycache__\/option_row.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/widgets\/__pycache__\/option_row.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/widgets\/__pycache__\/palette_shades.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/widgets\/__pycache__\/palette_shades.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/widgets\/__pycache__\/palette_shades.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/widgets\/__pycache__\/plugin_row.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/widgets\/__pycache__\/plugin_row.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/widgets\/__pycache__\/plugin_row.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/widgets\/__pycache__\/preset_row.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/widgets\/__pycache__\/preset_row.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/widgets\/__pycache__\/preset_row.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/widgets\/__pycache__\/repo_row.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/widgets\/__pycache__\/repo_row.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/widgets\/__pycache__\/repo_row.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/widgets\/builtin_preset_row.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/widgets\/custom_css_group.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/widgets\/error_list_row.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/widgets\/explore_preset_row.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/widgets\/option_row.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/widgets\/palette_shades.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/widgets\/plugin_row.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/widgets\/preset_row.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gradience\/frontend\/widgets\/repo_row.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/blend\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/blend\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/blend\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/blend\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/blend\/__pycache__\/blend.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/blend\/__pycache__\/blend.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/blend\/__pycache__\/blend.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/blend\/blend.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/hct\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/hct\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/hct\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/hct\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/hct\/__pycache__\/cam16.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/hct\/__pycache__\/cam16.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/hct\/__pycache__\/cam16.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/hct\/__pycache__\/hct.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/hct\/__pycache__\/hct.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/hct\/__pycache__\/hct.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/hct\/__pycache__\/viewing_conditions.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/hct\/__pycache__\/viewing_conditions.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/hct\/__pycache__\/viewing_conditions.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/hct\/cam16.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/hct\/hct.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/hct\/viewing_conditions.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/palettes\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/palettes\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/palettes\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/palettes\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/palettes\/__pycache__\/core_palette.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/palettes\/__pycache__\/core_palette.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/palettes\/__pycache__\/core_palette.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/palettes\/__pycache__\/tonal_palette.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/palettes\/__pycache__\/tonal_palette.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/palettes\/__pycache__\/tonal_palette.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/palettes\/core_palette.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/palettes\/tonal_palette.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/quantize\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/quantize\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/quantize\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/quantize\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/quantize\/__pycache__\/lab_point_provider.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/quantize\/__pycache__\/lab_point_provider.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/quantize\/__pycache__\/lab_point_provider.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/quantize\/__pycache__\/quantizer_celebi.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/quantize\/__pycache__\/quantizer_celebi.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/quantize\/__pycache__\/quantizer_celebi.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/quantize\/__pycache__\/quantizer_map.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/quantize\/__pycache__\/quantizer_map.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/quantize\/__pycache__\/quantizer_map.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/quantize\/__pycache__\/quantizer_wsmeans.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/quantize\/__pycache__\/quantizer_wsmeans.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/quantize\/__pycache__\/quantizer_wsmeans.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/quantize\/__pycache__\/quantizer_wu.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/quantize\/__pycache__\/quantizer_wu.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/quantize\/__pycache__\/quantizer_wu.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/quantize\/lab_point_provider.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/quantize\/quantizer_celebi.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/quantize\/quantizer_map.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/quantize\/quantizer_wsmeans.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/quantize\/quantizer_wu.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/scheme\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/scheme\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/scheme\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/scheme\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/scheme\/__pycache__\/scheme.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/scheme\/__pycache__\/scheme.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/scheme\/__pycache__\/scheme.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/scheme\/scheme.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/score\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/score\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/score\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/score\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/score\/__pycache__\/score.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/score\/__pycache__\/score.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/score\/__pycache__\/score.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/score\/score.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/utils\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/utils\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/utils\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/utils\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/utils\/__pycache__\/color_utils.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/utils\/__pycache__\/color_utils.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/utils\/__pycache__\/color_utils.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/utils\/__pycache__\/image_utils.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/utils\/__pycache__\/image_utils.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/utils\/__pycache__\/image_utils.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/utils\/__pycache__\/math_utils.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/utils\/__pycache__\/math_utils.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/utils\/__pycache__\/math_utils.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/utils\/__pycache__\/string_utils.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/utils\/__pycache__\/string_utils.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/utils\/__pycache__\/string_utils.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/utils\/__pycache__\/theme_utils.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/utils\/__pycache__\/theme_utils.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/utils\/__pycache__\/theme_utils.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/utils\/color_utils.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/utils\/image_utils.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/utils\/math_utils.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/utils\/string_utils.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python\/utils\/theme_utils.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python-0.1.5.dist-info\/METADATA" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/material_color_utilities_python-0.1.5.dist-info\/WHEEL" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/svglib\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/svglib\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/svglib\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/svglib\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/svglib\/__pycache__\/fonts.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/svglib\/__pycache__\/fonts.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/svglib\/__pycache__\/fonts.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/svglib\/__pycache__\/svglib.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/svglib\/__pycache__\/svglib.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/svglib\/__pycache__\/svglib.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/svglib\/__pycache__\/utils.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/svglib\/__pycache__\/utils.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/svglib\/__pycache__\/utils.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/svglib\/fonts.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/svglib\/py.typed" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/svglib\/svglib.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/svglib\/utils.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/svglib-2.0.2.dist-info\/METADATA" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/svglib-2.0.2.dist-info\/WHEEL" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/svglib-2.0.2.dist-info\/entry_points.txt" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/AutoInstallPluginManager.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/ConfigurablePluginManager.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/FilteredPluginManager.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/IMultiprocessChildPlugin.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/IMultiprocessPlugin.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/IPlugin.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/IPluginLocator.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/MultiprocessPluginManager.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/MultiprocessPluginProxy.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/PluginFileLocator.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/PluginInfo.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/PluginManager.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/PluginManagerDecorator.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/VersionedPluginManager.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__init___flymake.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/AutoInstallPluginManager.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/AutoInstallPluginManager.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/AutoInstallPluginManager.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/ConfigurablePluginManager.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/ConfigurablePluginManager.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/ConfigurablePluginManager.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/FilteredPluginManager.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/FilteredPluginManager.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/FilteredPluginManager.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/IMultiprocessChildPlugin.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/IMultiprocessChildPlugin.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/IMultiprocessChildPlugin.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/IMultiprocessPlugin.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/IMultiprocessPlugin.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/IMultiprocessPlugin.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/IPlugin.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/IPlugin.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/IPlugin.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/IPluginLocator.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/IPluginLocator.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/IPluginLocator.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/MultiprocessPluginManager.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/MultiprocessPluginManager.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/MultiprocessPluginManager.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/MultiprocessPluginProxy.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/MultiprocessPluginProxy.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/MultiprocessPluginProxy.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/PluginFileLocator.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/PluginFileLocator.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/PluginFileLocator.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/PluginInfo.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/PluginInfo.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/PluginInfo.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/PluginManager.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/PluginManager.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/PluginManager.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/PluginManagerDecorator.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/PluginManagerDecorator.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/PluginManagerDecorator.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/VersionedPluginManager.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/VersionedPluginManager.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/VersionedPluginManager.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/__init___flymake.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/__init___flymake.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/__init___flymake.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/compat.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/compat.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/__pycache__\/compat.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy\/compat.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy-1.12.2.dist-info\/METADATA" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy-1.12.2.dist-info\/WHEEL" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/yapsy-1.12.2.dist-info\/top_level.txt" ],
+            
+              [  "usr\/share\/applications\/com.github.GradienceTeam.Gradience.desktop" ],
+            
+              [  "usr\/share\/doc\/anyascii-0.3.3\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/cssselect2-0.9.0\/README.rst.bz2" ],
+            
+              [  "usr\/share\/doc\/gradience-0.4.1\/CODE_OF_CONDUCT.md.bz2" ],
+            
+              [  "usr\/share\/doc\/gradience-0.4.1\/HACKING.md.bz2" ],
+            
+              [  "usr\/share\/doc\/gradience-0.4.1\/MAINTAINERS.md.bz2" ],
+            
+              [  "usr\/share\/doc\/gradience-0.4.1\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/gradience-0.4.1\/ROADMAP.md.bz2" ],
+            
+              [  "usr\/share\/doc\/gradience-0.4.1\/SECURITY.md.bz2" ],
+            
+              [  "usr\/share\/doc\/svglib-2.0.2\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/yapsy-1.12.2-r2\/README.txt.bz2" ],
+            
+              [  "usr\/share\/glib-2.0\/schemas\/com.github.GradienceTeam.Gradience.gschema.xml" ],
+            
+              [  "usr\/share\/gradience\/gradience.gresource" ],
+            
+              [  "usr\/share\/gradience\/plugins\/firefox_gnome_theme.py" ],
+            
+              [  "usr\/share\/gradience\/plugins\/firefox_gnome_theme.yapsy-plugin" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/apps\/com.github.GradienceTeam.Gradience.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/symbolic\/apps\/com.github.GradienceTeam.Gradience-symbolic.svg" ],
+            
+              [  "usr\/share\/locale\/ar\/LC_MESSAGES\/gradience.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/gradience.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/gradience.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/gradience.mo" ],
+            
+              [  "usr\/share\/locale\/eu\/LC_MESSAGES\/gradience.mo" ],
+            
+              [  "usr\/share\/locale\/fi\/LC_MESSAGES\/gradience.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/gradience.mo" ],
+            
+              [  "usr\/share\/locale\/hr\/LC_MESSAGES\/gradience.mo" ],
+            
+              [  "usr\/share\/locale\/id\/LC_MESSAGES\/gradience.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/gradience.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/gradience.mo" ],
+            
+              [  "usr\/share\/locale\/nl\/LC_MESSAGES\/gradience.mo" ],
+            
+              [  "usr\/share\/locale\/oc\/LC_MESSAGES\/gradience.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/gradience.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/gradience.mo" ],
+            
+              [  "usr\/share\/locale\/ro\/LC_MESSAGES\/gradience.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/gradience.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/gradience.mo" ],
+            
+              [  "usr\/share\/locale\/ta\/LC_MESSAGES\/gradience.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/gradience.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/gradience.mo" ],
+            
+              [  "usr\/share\/locale\/zh_Hans\/LC_MESSAGES\/gradience.mo" ],
+            
+              [  "usr\/share\/metainfo\/com.github.GradienceTeam.Gradience.metainfo.xml" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

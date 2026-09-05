@@ -1,0 +1,980 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing apps/nwjs-0.114.0-r1&#43;1 in mocaccino-community-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> apps/nwjs-0.114.0-r1&#43;1
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                Framework that lets you call all Node.js modules directly from the DOM
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-community-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-community-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of apps/nwjs
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/mocaccino-community:nwjs-apps-0.114.0-r1-1" target="_blank"> quay.io/mocaccino/mocaccino-community:nwjs-apps-0.114.0-r1-1 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/mocaccino-community:nwjs-apps-0.114.0-r1-1/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 0.114.0-r1&#43;1  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> MIT </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/X">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  X &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/ffmpeg-chromium">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  ffmpeg-chromium 150-152 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: dev-libs/nwjs
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://nwjs.io" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://nwjs.io </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-libs/nwjs">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  nwjs &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "opt\/nwjs\/chrome_crashpad_handler" ],
+            
+              [  "opt\/nwjs\/chromedriver" ],
+            
+              [  "opt\/nwjs\/credits.html" ],
+            
+              [  "opt\/nwjs\/icudtl.dat" ],
+            
+              [  "opt\/nwjs\/lib\/libEGL.so" ],
+            
+              [  "opt\/nwjs\/lib\/libGLESv2.so" ],
+            
+              [  "opt\/nwjs\/lib\/libffmpeg.so" ],
+            
+              [  "opt\/nwjs\/lib\/libnode.so" ],
+            
+              [  "opt\/nwjs\/lib\/libnw.so" ],
+            
+              [  "opt\/nwjs\/lib\/libvk_swiftshader.so" ],
+            
+              [  "opt\/nwjs\/lib\/libvulkan.so.1" ],
+            
+              [  "opt\/nwjs\/lib\/vk_swiftshader_icd.json" ],
+            
+              [  "opt\/nwjs\/locales\/af.pak" ],
+            
+              [  "opt\/nwjs\/locales\/af.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/af_FEMININE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/af_FEMININE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/af_MASCULINE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/af_MASCULINE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/af_NEUTER.pak" ],
+            
+              [  "opt\/nwjs\/locales\/af_NEUTER.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/ar.pak" ],
+            
+              [  "opt\/nwjs\/locales\/ar.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/ar_FEMININE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/ar_FEMININE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/ar_MASCULINE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/ar_MASCULINE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/ar_NEUTER.pak" ],
+            
+              [  "opt\/nwjs\/locales\/ar_NEUTER.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/bg.pak" ],
+            
+              [  "opt\/nwjs\/locales\/bg.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/bg_FEMININE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/bg_FEMININE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/bg_MASCULINE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/bg_MASCULINE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/bg_NEUTER.pak" ],
+            
+              [  "opt\/nwjs\/locales\/bg_NEUTER.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/bn.pak" ],
+            
+              [  "opt\/nwjs\/locales\/bn.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/bn_FEMININE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/bn_FEMININE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/bn_MASCULINE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/bn_MASCULINE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/bn_NEUTER.pak" ],
+            
+              [  "opt\/nwjs\/locales\/bn_NEUTER.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/ca.pak" ],
+            
+              [  "opt\/nwjs\/locales\/ca.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/ca_FEMININE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/ca_FEMININE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/ca_MASCULINE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/ca_MASCULINE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/ca_NEUTER.pak" ],
+            
+              [  "opt\/nwjs\/locales\/ca_NEUTER.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/cs.pak" ],
+            
+              [  "opt\/nwjs\/locales\/cs.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/cs_FEMININE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/cs_FEMININE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/cs_MASCULINE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/cs_MASCULINE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/cs_NEUTER.pak" ],
+            
+              [  "opt\/nwjs\/locales\/cs_NEUTER.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/da.pak" ],
+            
+              [  "opt\/nwjs\/locales\/da.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/da_FEMININE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/da_FEMININE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/da_MASCULINE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/da_MASCULINE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/da_NEUTER.pak" ],
+            
+              [  "opt\/nwjs\/locales\/da_NEUTER.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/de.pak" ],
+            
+              [  "opt\/nwjs\/locales\/de.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/de_FEMININE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/de_FEMININE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/de_MASCULINE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/de_MASCULINE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/de_NEUTER.pak" ],
+            
+              [  "opt\/nwjs\/locales\/de_NEUTER.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/el.pak" ],
+            
+              [  "opt\/nwjs\/locales\/el.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/el_FEMININE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/el_FEMININE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/el_MASCULINE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/el_MASCULINE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/el_NEUTER.pak" ],
+            
+              [  "opt\/nwjs\/locales\/el_NEUTER.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/en-GB.pak" ],
+            
+              [  "opt\/nwjs\/locales\/en-GB.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/en-GB_FEMININE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/en-GB_FEMININE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/en-GB_MASCULINE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/en-GB_MASCULINE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/en-GB_NEUTER.pak" ],
+            
+              [  "opt\/nwjs\/locales\/en-GB_NEUTER.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/en-US.pak" ],
+            
+              [  "opt\/nwjs\/locales\/en-US.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/en-US_FEMININE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/en-US_FEMININE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/en-US_MASCULINE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/en-US_MASCULINE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/en-US_NEUTER.pak" ],
+            
+              [  "opt\/nwjs\/locales\/en-US_NEUTER.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/es.pak" ],
+            
+              [  "opt\/nwjs\/locales\/es.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/es_FEMININE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/es_FEMININE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/es_MASCULINE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/es_MASCULINE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/es_NEUTER.pak" ],
+            
+              [  "opt\/nwjs\/locales\/es_NEUTER.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/et.pak" ],
+            
+              [  "opt\/nwjs\/locales\/et.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/et_FEMININE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/et_FEMININE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/et_MASCULINE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/et_MASCULINE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/et_NEUTER.pak" ],
+            
+              [  "opt\/nwjs\/locales\/et_NEUTER.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/fa.pak" ],
+            
+              [  "opt\/nwjs\/locales\/fa.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/fa_FEMININE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/fa_FEMININE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/fa_MASCULINE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/fa_MASCULINE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/fa_NEUTER.pak" ],
+            
+              [  "opt\/nwjs\/locales\/fa_NEUTER.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/fi.pak" ],
+            
+              [  "opt\/nwjs\/locales\/fi.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/fi_FEMININE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/fi_FEMININE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/fi_MASCULINE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/fi_MASCULINE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/fi_NEUTER.pak" ],
+            
+              [  "opt\/nwjs\/locales\/fi_NEUTER.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/fr.pak" ],
+            
+              [  "opt\/nwjs\/locales\/fr.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/fr_FEMININE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/fr_FEMININE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/fr_MASCULINE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/fr_MASCULINE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/fr_NEUTER.pak" ],
+            
+              [  "opt\/nwjs\/locales\/fr_NEUTER.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/gu.pak" ],
+            
+              [  "opt\/nwjs\/locales\/gu.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/gu_FEMININE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/gu_FEMININE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/gu_MASCULINE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/gu_MASCULINE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/gu_NEUTER.pak" ],
+            
+              [  "opt\/nwjs\/locales\/gu_NEUTER.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/he.pak" ],
+            
+              [  "opt\/nwjs\/locales\/he.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/he_FEMININE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/he_FEMININE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/he_MASCULINE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/he_MASCULINE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/he_NEUTER.pak" ],
+            
+              [  "opt\/nwjs\/locales\/he_NEUTER.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/hi.pak" ],
+            
+              [  "opt\/nwjs\/locales\/hi.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/hi_FEMININE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/hi_FEMININE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/hi_MASCULINE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/hi_MASCULINE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/hi_NEUTER.pak" ],
+            
+              [  "opt\/nwjs\/locales\/hi_NEUTER.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/hr.pak" ],
+            
+              [  "opt\/nwjs\/locales\/hr.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/hr_FEMININE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/hr_FEMININE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/hr_MASCULINE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/hr_MASCULINE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/hr_NEUTER.pak" ],
+            
+              [  "opt\/nwjs\/locales\/hr_NEUTER.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/hu.pak" ],
+            
+              [  "opt\/nwjs\/locales\/hu.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/hu_FEMININE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/hu_FEMININE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/hu_MASCULINE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/hu_MASCULINE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/hu_NEUTER.pak" ],
+            
+              [  "opt\/nwjs\/locales\/hu_NEUTER.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/it.pak" ],
+            
+              [  "opt\/nwjs\/locales\/it.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/it_FEMININE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/it_FEMININE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/it_MASCULINE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/it_MASCULINE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/it_NEUTER.pak" ],
+            
+              [  "opt\/nwjs\/locales\/it_NEUTER.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/ja.pak" ],
+            
+              [  "opt\/nwjs\/locales\/ja.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/ja_FEMININE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/ja_FEMININE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/ja_MASCULINE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/ja_MASCULINE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/ja_NEUTER.pak" ],
+            
+              [  "opt\/nwjs\/locales\/ja_NEUTER.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/ko.pak" ],
+            
+              [  "opt\/nwjs\/locales\/ko.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/ko_FEMININE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/ko_FEMININE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/ko_MASCULINE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/ko_MASCULINE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/ko_NEUTER.pak" ],
+            
+              [  "opt\/nwjs\/locales\/ko_NEUTER.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/lt.pak" ],
+            
+              [  "opt\/nwjs\/locales\/lt.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/lt_FEMININE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/lt_FEMININE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/lt_MASCULINE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/lt_MASCULINE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/lt_NEUTER.pak" ],
+            
+              [  "opt\/nwjs\/locales\/lt_NEUTER.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/lv.pak" ],
+            
+              [  "opt\/nwjs\/locales\/lv.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/lv_FEMININE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/lv_FEMININE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/lv_MASCULINE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/lv_MASCULINE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/lv_NEUTER.pak" ],
+            
+              [  "opt\/nwjs\/locales\/lv_NEUTER.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/ms.pak" ],
+            
+              [  "opt\/nwjs\/locales\/ms.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/ms_FEMININE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/ms_FEMININE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/ms_MASCULINE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/ms_MASCULINE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/ms_NEUTER.pak" ],
+            
+              [  "opt\/nwjs\/locales\/ms_NEUTER.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/nb.pak" ],
+            
+              [  "opt\/nwjs\/locales\/nb.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/nb_FEMININE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/nb_FEMININE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/nb_MASCULINE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/nb_MASCULINE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/nb_NEUTER.pak" ],
+            
+              [  "opt\/nwjs\/locales\/nb_NEUTER.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/nl.pak" ],
+            
+              [  "opt\/nwjs\/locales\/nl.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/nl_FEMININE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/nl_FEMININE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/nl_MASCULINE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/nl_MASCULINE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/nl_NEUTER.pak" ],
+            
+              [  "opt\/nwjs\/locales\/nl_NEUTER.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/pl.pak" ],
+            
+              [  "opt\/nwjs\/locales\/pl.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/pl_FEMININE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/pl_FEMININE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/pl_MASCULINE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/pl_MASCULINE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/pl_NEUTER.pak" ],
+            
+              [  "opt\/nwjs\/locales\/pl_NEUTER.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/pt-BR.pak" ],
+            
+              [  "opt\/nwjs\/locales\/pt-BR.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/pt-BR_FEMININE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/pt-BR_FEMININE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/pt-BR_MASCULINE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/pt-BR_MASCULINE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/pt-BR_NEUTER.pak" ],
+            
+              [  "opt\/nwjs\/locales\/pt-BR_NEUTER.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/pt-PT.pak" ],
+            
+              [  "opt\/nwjs\/locales\/pt-PT.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/pt-PT_FEMININE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/pt-PT_FEMININE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/pt-PT_MASCULINE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/pt-PT_MASCULINE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/pt-PT_NEUTER.pak" ],
+            
+              [  "opt\/nwjs\/locales\/pt-PT_NEUTER.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/ro.pak" ],
+            
+              [  "opt\/nwjs\/locales\/ro.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/ro_FEMININE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/ro_FEMININE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/ro_MASCULINE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/ro_MASCULINE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/ro_NEUTER.pak" ],
+            
+              [  "opt\/nwjs\/locales\/ro_NEUTER.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/ru.pak" ],
+            
+              [  "opt\/nwjs\/locales\/ru.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/ru_FEMININE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/ru_FEMININE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/ru_MASCULINE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/ru_MASCULINE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/ru_NEUTER.pak" ],
+            
+              [  "opt\/nwjs\/locales\/ru_NEUTER.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/sk.pak" ],
+            
+              [  "opt\/nwjs\/locales\/sk.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/sk_FEMININE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/sk_FEMININE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/sk_MASCULINE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/sk_MASCULINE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/sk_NEUTER.pak" ],
+            
+              [  "opt\/nwjs\/locales\/sk_NEUTER.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/sl.pak" ],
+            
+              [  "opt\/nwjs\/locales\/sl.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/sl_FEMININE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/sl_FEMININE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/sl_MASCULINE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/sl_MASCULINE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/sl_NEUTER.pak" ],
+            
+              [  "opt\/nwjs\/locales\/sl_NEUTER.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/sr.pak" ],
+            
+              [  "opt\/nwjs\/locales\/sr.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/sr_FEMININE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/sr_FEMININE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/sr_MASCULINE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/sr_MASCULINE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/sr_NEUTER.pak" ],
+            
+              [  "opt\/nwjs\/locales\/sr_NEUTER.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/sv.pak" ],
+            
+              [  "opt\/nwjs\/locales\/sv.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/sv_FEMININE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/sv_FEMININE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/sv_MASCULINE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/sv_MASCULINE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/sv_NEUTER.pak" ],
+            
+              [  "opt\/nwjs\/locales\/sv_NEUTER.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/ta.pak" ],
+            
+              [  "opt\/nwjs\/locales\/ta.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/ta_FEMININE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/ta_FEMININE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/ta_MASCULINE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/ta_MASCULINE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/ta_NEUTER.pak" ],
+            
+              [  "opt\/nwjs\/locales\/ta_NEUTER.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/tr.pak" ],
+            
+              [  "opt\/nwjs\/locales\/tr.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/tr_FEMININE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/tr_FEMININE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/tr_MASCULINE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/tr_MASCULINE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/tr_NEUTER.pak" ],
+            
+              [  "opt\/nwjs\/locales\/tr_NEUTER.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/uk.pak" ],
+            
+              [  "opt\/nwjs\/locales\/uk.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/uk_FEMININE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/uk_FEMININE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/uk_MASCULINE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/uk_MASCULINE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/uk_NEUTER.pak" ],
+            
+              [  "opt\/nwjs\/locales\/uk_NEUTER.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/vi.pak" ],
+            
+              [  "opt\/nwjs\/locales\/vi.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/vi_FEMININE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/vi_FEMININE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/vi_MASCULINE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/vi_MASCULINE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/vi_NEUTER.pak" ],
+            
+              [  "opt\/nwjs\/locales\/vi_NEUTER.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/zh-CN.pak" ],
+            
+              [  "opt\/nwjs\/locales\/zh-CN.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/zh-CN_FEMININE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/zh-CN_FEMININE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/zh-CN_MASCULINE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/zh-CN_MASCULINE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/zh-CN_NEUTER.pak" ],
+            
+              [  "opt\/nwjs\/locales\/zh-CN_NEUTER.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/zh-TW.pak" ],
+            
+              [  "opt\/nwjs\/locales\/zh-TW.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/zh-TW_FEMININE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/zh-TW_FEMININE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/zh-TW_MASCULINE.pak" ],
+            
+              [  "opt\/nwjs\/locales\/zh-TW_MASCULINE.pak.info" ],
+            
+              [  "opt\/nwjs\/locales\/zh-TW_NEUTER.pak" ],
+            
+              [  "opt\/nwjs\/locales\/zh-TW_NEUTER.pak.info" ],
+            
+              [  "opt\/nwjs\/minidump_stackwalk" ],
+            
+              [  "opt\/nwjs\/nw" ],
+            
+              [  "opt\/nwjs\/nw_100_percent.pak" ],
+            
+              [  "opt\/nwjs\/nw_200_percent.pak" ],
+            
+              [  "opt\/nwjs\/nwjc" ],
+            
+              [  "opt\/nwjs\/resources.pak" ],
+            
+              [  "opt\/nwjs\/v8_context_snapshot.bin" ],
+            
+              [  "usr\/bin\/nwjs" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

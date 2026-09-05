@@ -1,0 +1,1004 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing apps/museseq-4.2.1&#43;11 in mocaccino-community-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> apps/museseq-4.2.1&#43;11
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                The Linux (midi) MUSic Editor (a sequencer)
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-community-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-community-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of apps/museseq
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/mocaccino-community:museseq-apps-4.2.1-11" target="_blank"> quay.io/mocaccino/mocaccino-community:museseq-apps-4.2.1-11 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/mocaccino-community:museseq-apps-4.2.1-11/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 4.2.1&#43;11  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> GPL-2 </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/qt5">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  qt5 &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/apps/fluidsynth">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  fluidsynth 2.5.2-r1 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/apps/lash">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  lash 0.5.4-r8&#43;2 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/dssi">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  dssi 1.1.1-r2&#43;1 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/ladspa-sdk">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  ladspa-sdk 1.17-r2&#43;1 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/liblo">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  liblo 0.32 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/liblrdf">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  liblrdf 0.6.1-r1&#43;7 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/lilv">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  lilv 0.24.26-r1&#43;1 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/rtaudio">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  rtaudio 6.0.1 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/rubberband">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  rubberband 4.0.0-r1 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: =media-sound/museseq-4.2.1
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://github.com/muse-sequencer/muse" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://github.com/muse-sequencer/muse </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/media-sound/museseq">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  museseq &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "usr\/bin\/grepmidi" ],
+            
+              [  "usr\/bin\/muse4" ],
+            
+              [  "usr\/bin\/muse_plugin_scan" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/converters\/rubberband_converter.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/converters\/src_converter.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/converters\/zita_resampler_converter.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/modules\/libaudio_converter_plugin.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/modules\/libmuse_al.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/modules\/libmuse_arranger.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/modules\/libmuse_audio_convert.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/modules\/libmuse_awl.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/modules\/libmuse_cliplist.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/modules\/libmuse_components.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/modules\/libmuse_core.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/modules\/libmuse_ctrl.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/modules\/libmuse_driver.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/modules\/libmuse_evdata_module.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/modules\/libmuse_icons.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/modules\/libmuse_instruments.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/modules\/libmuse_latency_compensator_module.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/modules\/libmuse_liste.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/modules\/libmuse_lv2host_module.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/modules\/libmuse_marker.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/modules\/libmuse_master.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/modules\/libmuse_memory_module.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/modules\/libmuse_midi_controller_module.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/modules\/libmuse_midiedit.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/modules\/libmuse_midnam_module.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/modules\/libmuse_mixer.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/modules\/libmuse_mpevent_module.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/modules\/libmuse_mplugins.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/modules\/libmuse_plugin_cache_reader_module.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/modules\/libmuse_plugin_cache_writer_module.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/modules\/libmuse_plugin_list_module.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/modules\/libmuse_plugin_rdf_module.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/modules\/libmuse_plugin_scan_module.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/modules\/libmuse_simpler_plugin.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/modules\/libmuse_simpler_plugingui.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/modules\/libmuse_string.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/modules\/libmuse_synti.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/modules\/libmuse_sysex_helper_module.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/modules\/libmuse_time_stretch_module.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/modules\/libmuse_wave_module.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/modules\/libmuse_waveedit.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/modules\/libmuse_wavepreview_module.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/modules\/libmuse_widgets.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/modules\/libmuse_widgets_functiondialogs.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/modules\/libmuse_xml_module.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/plugins\/doublechorus.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/plugins\/freeverb.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/plugins\/pandelay.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/synthi\/deicsonze.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/synthi\/fluid_synth.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/synthi\/organ.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/synthi\/simpledrums.so" ],
+            
+              [  "usr\/lib64\/museseq-4.2.1\/synthi\/vam.so" ],
+            
+              [  "usr\/share\/applications\/io.github.muse_sequencer.Muse.desktop" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/AUTHORS.bz2" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/COPYING.bz2" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/ChangeLog.bz2" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/README.developer.bz2" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/README.developer.undo_system.bz2" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/README.ladspaguis.bz2" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/README.softsynth.bz2" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/README.vstsdk.bz2" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/README.win32.bz2" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/SECURITY.bz2" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/deicsonze\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/deicsonze\/TODO.bz2" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/fluidsynth\/README.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/fluidsynth\/TODO.bz2" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/freeverb\/readme.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/libdivide_LICENSE.bz2" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/single\/developer_docs\/developer_docs.css" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/single\/developer_docs\/developer_docs.html" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/single\/developer_docs\/img1.png" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/single\/developer_docs\/img2.png" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/single\/developer_docs\/img3.png" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/single\/developer_docs\/index.html" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/single\/documentation\/arrow_tool.png" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/single\/documentation\/documentation.css" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/single\/documentation\/documentation.html" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/single\/documentation\/img1.png" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/single\/documentation\/index.html" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/single\/documentation\/main_window_add_track.png" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/single\/documentation\/main_window_annotated.png" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/single\/documentation\/main_window_with_arrangement.png" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/single\/documentation\/main_window_with_automation.png" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/single\/documentation\/main_window_with_midi_automation.png" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/single\/documentation\/main_window_with_midi_editor_vam.png" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/single\/documentation\/midi_config_window.png" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/single\/documentation\/midi_routing_matrix.png" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/single\/documentation\/mixer.png" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/single\/documentation\/mixer_with_one_input.png" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/single\/documentation\/mixer_with_one_input_buttons.png" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/single\/documentation\/muse2.png" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/single\/documentation\/no_audio.png" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/single\/documentation\/output_routing.png" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/single\/documentation\/project_my_first_song.png" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/single\/documentation\/soloing_window.png" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/single\/documentation\/vam_synth.png" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/developer_docs\/developer_docs.css" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/developer_docs\/developer_docs.html" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/developer_docs\/img1.png" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/developer_docs\/img2.png" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/developer_docs\/img3.png" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/developer_docs\/index.html" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/developer_docs\/node1.html" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/developer_docs\/node10.html" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/developer_docs\/node11.html" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/developer_docs\/node12.html" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/developer_docs\/node13.html" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/developer_docs\/node14.html" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/developer_docs\/node15.html" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/developer_docs\/node2.html" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/developer_docs\/node3.html" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/developer_docs\/node4.html" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/developer_docs\/node5.html" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/developer_docs\/node6.html" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/developer_docs\/node7.html" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/developer_docs\/node8.html" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/developer_docs\/node9.html" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/documentation\/arrow_tool.png" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/documentation\/documentation.css" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/documentation\/documentation.html" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/documentation\/img1.png" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/documentation\/index.html" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/documentation\/main_window_add_track.png" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/documentation\/main_window_annotated.png" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/documentation\/main_window_with_arrangement.png" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/documentation\/main_window_with_automation.png" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/documentation\/main_window_with_midi_automation.png" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/documentation\/main_window_with_midi_editor_vam.png" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/documentation\/midi_config_window.png" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/documentation\/midi_routing_matrix.png" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/documentation\/mixer.png" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/documentation\/mixer_with_one_input.png" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/documentation\/mixer_with_one_input_buttons.png" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/documentation\/muse2.png" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/documentation\/no_audio.png" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/documentation\/node1.html" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/documentation\/node10.html" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/documentation\/node11.html" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/documentation\/node12.html" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/documentation\/node13.html" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/documentation\/node2.html" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/documentation\/node3.html" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/documentation\/node4.html" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/documentation\/node5.html" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/documentation\/node6.html" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/documentation\/node7.html" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/documentation\/node8.html" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/documentation\/node9.html" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/documentation\/output_routing.png" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/documentation\/project_my_first_song.png" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/documentation\/soloing_window.png" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_html\/split\/documentation\/vam_synth.png" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_pdf\/developer_docs.pdf" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/muse_pdf\/documentation.pdf" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/simpledrums\/COPYING" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/simpledrums\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/simpledrums\/ReleaseNotes.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/vam\/COPYING.bz2" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/vam\/ChangeLog.bz2" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/vam\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/museseq-4.2.1\/vam\/TODO" ],
+            
+              [  "usr\/share\/icons\/hicolor\/128x128\/apps\/muse.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/64x64\/apps\/muse.png" ],
+            
+              [  "usr\/share\/man\/man1\/grepmidi.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/muse4.1.bz2" ],
+            
+              [  "usr\/share\/metainfo\/io.github.muse_sequencer.Muse.appdata.xml" ],
+            
+              [  "usr\/share\/mime\/application\/x-muse.xml" ],
+            
+              [  "usr\/share\/mime\/packages\/muse.xml" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/demos\/rasen.med" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/didyouknow.txt" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/drummaps\/AKAI_SG01v_Bank_dr1.map" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/drummaps\/AKAI_SG01v_Bank_dr2.map" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/drummaps\/Drumgizmo_CrocellKit.map" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/drummaps\/KURZWEIL_SP2X_Drum_Map_GM_ReMap.map" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/drummaps\/KURZWEIL_SP2X_Drum_Map_Normal.map" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/drummaps\/NoteNumbers.map" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/drummaps\/addictive_drums.map" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/drummaps\/dx200_drum.map" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/drummaps\/sc88-pc1.map" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/Access_Virus.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/Akai-SG01v.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/Alesis-QS-78R.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/AlesisQS6.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/Classic_cantabile_sp-250.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/Drumgizmo - CrocellKit.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/Edirol-SD90.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/Emu-4mbgsgmmt-sf.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/Hammond_XB-1.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/KORG microSTATION combinations.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/KORG microSTATION.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/Korg Krome (Bank Map GM2).idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/Korg Krome (Bank Map KORG).idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/Korg Wavestation EX.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/Korg-MS2000R.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/Korg-X50.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/Korg-X5DR-PresetA.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/Korg-X5DR-PresetB.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/Kurzweil-SP2X.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/Lexicon-MX200.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/MC303.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/MC505.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/Roland SD-50.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/Roland-E28.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/Roland-JV90.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/Roland-MT32.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/Roland-SC55mkII.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/Roland-SC88.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/Roland-SCD70.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/Roland-XP30.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/Roland_FantomXR.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/Roland_SC-88Pro.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/Roland_SRX-02.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/Roland_SRX-09.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/Waldorf-Q.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/Waldorf-microQ-Factory2000.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/Waldorf-microQ-Factory2001.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/Waldorf-microQ-Phoenix.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/Waldorf-microQ.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/Waldorf_Microwave-I.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/Yamaha-01v.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/Yamaha-9000pro.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/Yamaha-CS1x.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/Yamaha-MX49_MX61.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/Yamaha-Motif XS.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/Yamaha-Motif-Rack.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/Yamaha-Motif.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/Yamaha-P100.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/Yamaha-P50m.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/Yamaha-PSR275.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/Yamaha-PSR530.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/Yamaha-Rex50.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/Yamaha-S30_S80.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/Yamaha-S90.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/ZynAdd-1_4.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/emuproteus2000.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/gm.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/gm2.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/gs.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/ns5r.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/xg.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/instruments\/yam_mo6_v4.idf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/locale\/muse_cs.qm" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/locale\/muse_de.qm" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/locale\/muse_en.qm" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/locale\/muse_es.qm" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/locale\/muse_fr.qm" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/locale\/muse_it.qm" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/locale\/muse_pl.qm" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/locale\/muse_ru.qm" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/metronome\/factory_presets.mdf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/metronome\/klick1.wav" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/metronome\/klick2.wav" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/metronome\/klick3.wav" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/metronome\/klick4.wav" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/metronome\/klick5.wav" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/metronome\/klick6.wav" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/plugins\/2142.ui" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/presets\/deicsonze\/SutulaBank.dei" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/pybridge\/musepclient.py" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/pybridge\/museplauncher.py" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/pybridge\/musepstopserver.py" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/pybridge\/robert.py" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/rdf\/README" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/rdf\/blop.rdf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/rdf\/swh-plugins.rdf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/rdf\/swh-scales.rdf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/scoreglyphs\/0.png" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/scoreglyphs\/1.png" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/scoreglyphs\/2.png" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/scoreglyphs\/3.png" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/scoreglyphs\/4.png" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/scoreglyphs\/5.png" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/scoreglyphs\/6.png" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/scoreglyphs\/7.png" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/scoreglyphs\/8.png" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/scoreglyphs\/9.png" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/scoreglyphs\/acc_b.png" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/scoreglyphs\/acc_none.png" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/scoreglyphs\/acc_sharp.png" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/scoreglyphs\/clef_bass_big.png" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/scoreglyphs\/clef_violin_big.png" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/scoreglyphs\/dot.png" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/scoreglyphs\/flags16d.png" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/scoreglyphs\/flags16u.png" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/scoreglyphs\/flags32d.png" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/scoreglyphs\/flags32u.png" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/scoreglyphs\/flags64d.png" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/scoreglyphs\/flags64u.png" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/scoreglyphs\/flags8d.png" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/scoreglyphs\/flags8u.png" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/scoreglyphs\/half.png" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/scoreglyphs\/quarter.png" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/scoreglyphs\/rest1.png" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/scoreglyphs\/rest16.png" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/scoreglyphs\/rest2.png" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/scoreglyphs\/rest32.png" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/scoreglyphs\/rest4.png" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/scoreglyphs\/rest8.png" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/scoreglyphs\/whole.png" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/scripts\/ConstantLength" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/scripts\/ConstantVelocityForNote" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/scripts\/CreateBassline" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/scripts\/DoNothing" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/scripts\/Humanize" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/scripts\/RandomPosition1" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/scripts\/RandomizeVelocityRelative" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/scripts\/RemoveAftertouch" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/scripts\/RemoveShortEvents" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/scripts\/Reverse" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/scripts\/Rhythm1" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/scripts\/SpeedChange" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/scripts\/SpeedDouble" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/scripts\/SpeedHalf" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/scripts\/SwingQuantize1" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/scripts\/TempoDelay" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/splash.jpg" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/templates\/audio.med" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/templates\/default.med" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/templates\/midiGM.med" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/templates\/monorecord.med" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/templates\/synti.med" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/themes\/Ardour.cfc" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/themes\/Ardour.qss" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/themes\/Dark Flat.cfc" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/themes\/Dark Flat.qss" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/themes\/Dark Theme.cfc" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/themes\/Dark Theme.qss" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/themes\/Deep Ocean\/fileopen.svg" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/themes\/Deep Ocean\/monitor_off_default_col.svg" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/themes\/Deep Ocean\/monitor_on.svg" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/themes\/Deep Ocean\/mute_and_proxy_on.svg" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/themes\/Deep Ocean\/mute_off.svg" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/themes\/Deep Ocean\/mute_on.svg" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/themes\/Deep Ocean\/mute_proxy_on.svg" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/themes\/Deep Ocean\/pre_fader_on.svg" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/themes\/Deep Ocean\/rec_arm_off_default_col.svg" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/themes\/Deep Ocean\/rec_arm_on.svg" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/themes\/Deep Ocean\/routing_input.svg" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/themes\/Deep Ocean\/routing_output.svg" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/themes\/Deep Ocean\/solo_and_proxy_spotlight_on.svg" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/themes\/Deep Ocean\/solo_proxy_spotlight_on_alone.svg" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/themes\/Deep Ocean\/solo_spotlight_off.svg" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/themes\/Deep Ocean\/solo_spotlight_on_alone.svg" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/themes\/Deep Ocean\/stereo_on.svg" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/themes\/Deep Ocean.cfc" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/themes\/Deep Ocean.qss" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/themes\/Light Theme.cfc" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/themes\/Light Theme.qss" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/utils\/muse-find-unused-wavs" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/utils\/muse-song-convert.py" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/wallpapers\/Muse2_Wallpaper_1.png" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/wallpapers\/Muse2_Wallpaper_5.png" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/wallpapers\/gray.gif" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/wallpapers\/gray_rock.gif" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/wallpapers\/gray_stucco.gif" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/wallpapers\/paper1.jpg" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/wallpapers\/paper2.jpg" ],
+            
+              [  "usr\/share\/museseq-4.2.1\/wallpapers\/stone1.gif" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

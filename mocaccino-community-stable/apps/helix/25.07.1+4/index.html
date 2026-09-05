@@ -1,0 +1,2798 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing apps/helix-25.07.1&#43;4 in mocaccino-community-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> apps/helix-25.07.1&#43;4
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                A post-modern text editor
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-community-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-community-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of apps/helix
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/mocaccino-community:helix-apps-25.07.1-4" target="_blank"> quay.io/mocaccino/mocaccino-community:helix-apps-25.07.1-4 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/mocaccino-community:helix-apps-25.07.1-4/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 25.07.1&#43;4  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> MPL-2.0 Apache-2.0 BSD Boost-1.0 ISC MIT MPL-2.0 MPL-2.0 Unicode-DFS-2016 ZLIB </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/apps/luajit">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  luajit 2.1.1780076327 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/libutf8proc">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  libutf8proc 2.11.3 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> appstream.id: com.helix_editor.Helix
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 3
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: app-editors/helix
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://helix-editor.com/" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://helix-editor.com/ </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/app-editors/helix">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  helix &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "usr\/bin\/hx" ],
+            
+              [  "usr\/lib64\/helix\/ada.so" ],
+            
+              [  "usr\/lib64\/helix\/adl.so" ],
+            
+              [  "usr\/lib64\/helix\/agda.so" ],
+            
+              [  "usr\/lib64\/helix\/alloy.so" ],
+            
+              [  "usr\/lib64\/helix\/amber.so" ],
+            
+              [  "usr\/lib64\/helix\/astro.so" ],
+            
+              [  "usr\/lib64\/helix\/awk.so" ],
+            
+              [  "usr\/lib64\/helix\/bash.so" ],
+            
+              [  "usr\/lib64\/helix\/bass.so" ],
+            
+              [  "usr\/lib64\/helix\/beancount.so" ],
+            
+              [  "usr\/lib64\/helix\/bibtex.so" ],
+            
+              [  "usr\/lib64\/helix\/bicep.so" ],
+            
+              [  "usr\/lib64\/helix\/bitbake.so" ],
+            
+              [  "usr\/lib64\/helix\/blade.so" ],
+            
+              [  "usr\/lib64\/helix\/blueprint.so" ],
+            
+              [  "usr\/lib64\/helix\/c-sharp.so" ],
+            
+              [  "usr\/lib64\/helix\/c.so" ],
+            
+              [  "usr\/lib64\/helix\/caddyfile.so" ],
+            
+              [  "usr\/lib64\/helix\/cairo.so" ],
+            
+              [  "usr\/lib64\/helix\/capnp.so" ],
+            
+              [  "usr\/lib64\/helix\/cel.so" ],
+            
+              [  "usr\/lib64\/helix\/circom.so" ],
+            
+              [  "usr\/lib64\/helix\/clarity.so" ],
+            
+              [  "usr\/lib64\/helix\/clojure.so" ],
+            
+              [  "usr\/lib64\/helix\/cmake.so" ],
+            
+              [  "usr\/lib64\/helix\/comment.so" ],
+            
+              [  "usr\/lib64\/helix\/cpon.so" ],
+            
+              [  "usr\/lib64\/helix\/cpp.so" ],
+            
+              [  "usr\/lib64\/helix\/crystal.so" ],
+            
+              [  "usr\/lib64\/helix\/css.so" ],
+            
+              [  "usr\/lib64\/helix\/csv.so" ],
+            
+              [  "usr\/lib64\/helix\/cue.so" ],
+            
+              [  "usr\/lib64\/helix\/cylc.so" ],
+            
+              [  "usr\/lib64\/helix\/d.so" ],
+            
+              [  "usr\/lib64\/helix\/dart.so" ],
+            
+              [  "usr\/lib64\/helix\/dbml.so" ],
+            
+              [  "usr\/lib64\/helix\/debian.so" ],
+            
+              [  "usr\/lib64\/helix\/devicetree.so" ],
+            
+              [  "usr\/lib64\/helix\/dhall.so" ],
+            
+              [  "usr\/lib64\/helix\/diff.so" ],
+            
+              [  "usr\/lib64\/helix\/djot.so" ],
+            
+              [  "usr\/lib64\/helix\/dockerfile.so" ],
+            
+              [  "usr\/lib64\/helix\/dot.so" ],
+            
+              [  "usr\/lib64\/helix\/dtd.so" ],
+            
+              [  "usr\/lib64\/helix\/dunstrc.so" ],
+            
+              [  "usr\/lib64\/helix\/earthfile.so" ],
+            
+              [  "usr\/lib64\/helix\/edoc.so" ],
+            
+              [  "usr\/lib64\/helix\/eex.so" ],
+            
+              [  "usr\/lib64\/helix\/elisp.so" ],
+            
+              [  "usr\/lib64\/helix\/elixir.so" ],
+            
+              [  "usr\/lib64\/helix\/elm.so" ],
+            
+              [  "usr\/lib64\/helix\/elvish.so" ],
+            
+              [  "usr\/lib64\/helix\/embedded-template.so" ],
+            
+              [  "usr\/lib64\/helix\/erlang.so" ],
+            
+              [  "usr\/lib64\/helix\/esdl.so" ],
+            
+              [  "usr\/lib64\/helix\/fennel.so" ],
+            
+              [  "usr\/lib64\/helix\/fga.so" ],
+            
+              [  "usr\/lib64\/helix\/fidl.so" ],
+            
+              [  "usr\/lib64\/helix\/fish.so" ],
+            
+              [  "usr\/lib64\/helix\/forth.so" ],
+            
+              [  "usr\/lib64\/helix\/fortran.so" ],
+            
+              [  "usr\/lib64\/helix\/fsharp.so" ],
+            
+              [  "usr\/lib64\/helix\/gas.so" ],
+            
+              [  "usr\/lib64\/helix\/gdscript.so" ],
+            
+              [  "usr\/lib64\/helix\/gherkin.so" ],
+            
+              [  "usr\/lib64\/helix\/ghostty.so" ],
+            
+              [  "usr\/lib64\/helix\/git-config.so" ],
+            
+              [  "usr\/lib64\/helix\/git-rebase.so" ],
+            
+              [  "usr\/lib64\/helix\/gitattributes.so" ],
+            
+              [  "usr\/lib64\/helix\/gitcommit.so" ],
+            
+              [  "usr\/lib64\/helix\/gitignore.so" ],
+            
+              [  "usr\/lib64\/helix\/gleam.so" ],
+            
+              [  "usr\/lib64\/helix\/glimmer.so" ],
+            
+              [  "usr\/lib64\/helix\/glsl.so" ],
+            
+              [  "usr\/lib64\/helix\/gn.so" ],
+            
+              [  "usr\/lib64\/helix\/go.so" ],
+            
+              [  "usr\/lib64\/helix\/godot-resource.so" ],
+            
+              [  "usr\/lib64\/helix\/gomod.so" ],
+            
+              [  "usr\/lib64\/helix\/gotmpl.so" ],
+            
+              [  "usr\/lib64\/helix\/gowork.so" ],
+            
+              [  "usr\/lib64\/helix\/gpr.so" ],
+            
+              [  "usr\/lib64\/helix\/graphql.so" ],
+            
+              [  "usr\/lib64\/helix\/gren.so" ],
+            
+              [  "usr\/lib64\/helix\/groovy.so" ],
+            
+              [  "usr\/lib64\/helix\/hare.so" ],
+            
+              [  "usr\/lib64\/helix\/haskell-persistent.so" ],
+            
+              [  "usr\/lib64\/helix\/haskell.so" ],
+            
+              [  "usr\/lib64\/helix\/hcl.so" ],
+            
+              [  "usr\/lib64\/helix\/heex.so" ],
+            
+              [  "usr\/lib64\/helix\/hocon.so" ],
+            
+              [  "usr\/lib64\/helix\/hoon.so" ],
+            
+              [  "usr\/lib64\/helix\/hosts.so" ],
+            
+              [  "usr\/lib64\/helix\/html.so" ],
+            
+              [  "usr\/lib64\/helix\/htmldjango.so" ],
+            
+              [  "usr\/lib64\/helix\/hurl.so" ],
+            
+              [  "usr\/lib64\/helix\/hyprlang.so" ],
+            
+              [  "usr\/lib64\/helix\/iex.so" ],
+            
+              [  "usr\/lib64\/helix\/ini.so" ],
+            
+              [  "usr\/lib64\/helix\/ink.so" ],
+            
+              [  "usr\/lib64\/helix\/inko.so" ],
+            
+              [  "usr\/lib64\/helix\/janet-simple.so" ],
+            
+              [  "usr\/lib64\/helix\/java.so" ],
+            
+              [  "usr\/lib64\/helix\/javascript.so" ],
+            
+              [  "usr\/lib64\/helix\/jinja2.so" ],
+            
+              [  "usr\/lib64\/helix\/jjdescription.so" ],
+            
+              [  "usr\/lib64\/helix\/jq.so" ],
+            
+              [  "usr\/lib64\/helix\/jsdoc.so" ],
+            
+              [  "usr\/lib64\/helix\/json.so" ],
+            
+              [  "usr\/lib64\/helix\/json5.so" ],
+            
+              [  "usr\/lib64\/helix\/jsonnet.so" ],
+            
+              [  "usr\/lib64\/helix\/julia.so" ],
+            
+              [  "usr\/lib64\/helix\/just.so" ],
+            
+              [  "usr\/lib64\/helix\/kdl.so" ],
+            
+              [  "usr\/lib64\/helix\/koka.so" ],
+            
+              [  "usr\/lib64\/helix\/kotlin.so" ],
+            
+              [  "usr\/lib64\/helix\/koto.so" ],
+            
+              [  "usr\/lib64\/helix\/latex.so" ],
+            
+              [  "usr\/lib64\/helix\/ld.so" ],
+            
+              [  "usr\/lib64\/helix\/ldif.so" ],
+            
+              [  "usr\/lib64\/helix\/lean.so" ],
+            
+              [  "usr\/lib64\/helix\/ledger.so" ],
+            
+              [  "usr\/lib64\/helix\/llvm-mir.so" ],
+            
+              [  "usr\/lib64\/helix\/llvm.so" ],
+            
+              [  "usr\/lib64\/helix\/log.so" ],
+            
+              [  "usr\/lib64\/helix\/lpf.so" ],
+            
+              [  "usr\/lib64\/helix\/lua.so" ],
+            
+              [  "usr\/lib64\/helix\/luau.so" ],
+            
+              [  "usr\/lib64\/helix\/mail.so" ],
+            
+              [  "usr\/lib64\/helix\/make.so" ],
+            
+              [  "usr\/lib64\/helix\/markdoc.so" ],
+            
+              [  "usr\/lib64\/helix\/markdown.so" ],
+            
+              [  "usr\/lib64\/helix\/markdown_inline.so" ],
+            
+              [  "usr\/lib64\/helix\/matlab.so" ],
+            
+              [  "usr\/lib64\/helix\/mermaid.so" ],
+            
+              [  "usr\/lib64\/helix\/meson.so" ],
+            
+              [  "usr\/lib64\/helix\/mojo.so" ],
+            
+              [  "usr\/lib64\/helix\/move.so" ],
+            
+              [  "usr\/lib64\/helix\/nasm.so" ],
+            
+              [  "usr\/lib64\/helix\/nginx.so" ],
+            
+              [  "usr\/lib64\/helix\/nickel.so" ],
+            
+              [  "usr\/lib64\/helix\/nim.so" ],
+            
+              [  "usr\/lib64\/helix\/nix.so" ],
+            
+              [  "usr\/lib64\/helix\/nu.so" ],
+            
+              [  "usr\/lib64\/helix\/ocaml-interface.so" ],
+            
+              [  "usr\/lib64\/helix\/ocaml.so" ],
+            
+              [  "usr\/lib64\/helix\/odin.so" ],
+            
+              [  "usr\/lib64\/helix\/ohm.so" ],
+            
+              [  "usr\/lib64\/helix\/opencl.so" ],
+            
+              [  "usr\/lib64\/helix\/openscad.so" ],
+            
+              [  "usr\/lib64\/helix\/org.so" ],
+            
+              [  "usr\/lib64\/helix\/pascal.so" ],
+            
+              [  "usr\/lib64\/helix\/passwd.so" ],
+            
+              [  "usr\/lib64\/helix\/pem.so" ],
+            
+              [  "usr\/lib64\/helix\/perl.so" ],
+            
+              [  "usr\/lib64\/helix\/pest.so" ],
+            
+              [  "usr\/lib64\/helix\/php-only.so" ],
+            
+              [  "usr\/lib64\/helix\/php.so" ],
+            
+              [  "usr\/lib64\/helix\/pkl.so" ],
+            
+              [  "usr\/lib64\/helix\/po.so" ],
+            
+              [  "usr\/lib64\/helix\/pod.so" ],
+            
+              [  "usr\/lib64\/helix\/ponylang.so" ],
+            
+              [  "usr\/lib64\/helix\/powershell.so" ],
+            
+              [  "usr\/lib64\/helix\/prisma.so" ],
+            
+              [  "usr\/lib64\/helix\/prolog.so" ],
+            
+              [  "usr\/lib64\/helix\/properties.so" ],
+            
+              [  "usr\/lib64\/helix\/proto.so" ],
+            
+              [  "usr\/lib64\/helix\/prql.so" ],
+            
+              [  "usr\/lib64\/helix\/pug.so" ],
+            
+              [  "usr\/lib64\/helix\/purescript.so" ],
+            
+              [  "usr\/lib64\/helix\/python.so" ],
+            
+              [  "usr\/lib64\/helix\/ql.so" ],
+            
+              [  "usr\/lib64\/helix\/qmljs.so" ],
+            
+              [  "usr\/lib64\/helix\/query.so" ],
+            
+              [  "usr\/lib64\/helix\/quint.so" ],
+            
+              [  "usr\/lib64\/helix\/r.so" ],
+            
+              [  "usr\/lib64\/helix\/regex.so" ],
+            
+              [  "usr\/lib64\/helix\/rego.so" ],
+            
+              [  "usr\/lib64\/helix\/rescript.so" ],
+            
+              [  "usr\/lib64\/helix\/robot.so" ],
+            
+              [  "usr\/lib64\/helix\/ron.so" ],
+            
+              [  "usr\/lib64\/helix\/rst.so" ],
+            
+              [  "usr\/lib64\/helix\/ruby.so" ],
+            
+              [  "usr\/lib64\/helix\/rust-format-args.so" ],
+            
+              [  "usr\/lib64\/helix\/rust.so" ],
+            
+              [  "usr\/lib64\/helix\/scala.so" ],
+            
+              [  "usr\/lib64\/helix\/scheme.so" ],
+            
+              [  "usr\/lib64\/helix\/scss.so" ],
+            
+              [  "usr\/lib64\/helix\/slang.so" ],
+            
+              [  "usr\/lib64\/helix\/slint.so" ],
+            
+              [  "usr\/lib64\/helix\/smali.so" ],
+            
+              [  "usr\/lib64\/helix\/smithy.so" ],
+            
+              [  "usr\/lib64\/helix\/sml.so" ],
+            
+              [  "usr\/lib64\/helix\/snakemake.so" ],
+            
+              [  "usr\/lib64\/helix\/solidity.so" ],
+            
+              [  "usr\/lib64\/helix\/sourcepawn.so" ],
+            
+              [  "usr\/lib64\/helix\/spade.so" ],
+            
+              [  "usr\/lib64\/helix\/spicedb.so" ],
+            
+              [  "usr\/lib64\/helix\/sql.so" ],
+            
+              [  "usr\/lib64\/helix\/sshclientconfig.so" ],
+            
+              [  "usr\/lib64\/helix\/strace.so" ],
+            
+              [  "usr\/lib64\/helix\/supercollider.so" ],
+            
+              [  "usr\/lib64\/helix\/svelte.so" ],
+            
+              [  "usr\/lib64\/helix\/sway.so" ],
+            
+              [  "usr\/lib64\/helix\/swift.so" ],
+            
+              [  "usr\/lib64\/helix\/t32.so" ],
+            
+              [  "usr\/lib64\/helix\/tablegen.so" ],
+            
+              [  "usr\/lib64\/helix\/tact.so" ],
+            
+              [  "usr\/lib64\/helix\/task.so" ],
+            
+              [  "usr\/lib64\/helix\/tcl.so" ],
+            
+              [  "usr\/lib64\/helix\/teal.so" ],
+            
+              [  "usr\/lib64\/helix\/templ.so" ],
+            
+              [  "usr\/lib64\/helix\/tera.so" ],
+            
+              [  "usr\/lib64\/helix\/textproto.so" ],
+            
+              [  "usr\/lib64\/helix\/thrift.so" ],
+            
+              [  "usr\/lib64\/helix\/tlaplus.so" ],
+            
+              [  "usr\/lib64\/helix\/todotxt.so" ],
+            
+              [  "usr\/lib64\/helix\/toml.so" ],
+            
+              [  "usr\/lib64\/helix\/tsx.so" ],
+            
+              [  "usr\/lib64\/helix\/twig.so" ],
+            
+              [  "usr\/lib64\/helix\/typescript.so" ],
+            
+              [  "usr\/lib64\/helix\/typespec.so" ],
+            
+              [  "usr\/lib64\/helix\/typst.so" ],
+            
+              [  "usr\/lib64\/helix\/ungrammar.so" ],
+            
+              [  "usr\/lib64\/helix\/unison.so" ],
+            
+              [  "usr\/lib64\/helix\/uxntal.so" ],
+            
+              [  "usr\/lib64\/helix\/v.so" ],
+            
+              [  "usr\/lib64\/helix\/vala.so" ],
+            
+              [  "usr\/lib64\/helix\/vento.so" ],
+            
+              [  "usr\/lib64\/helix\/verilog.so" ],
+            
+              [  "usr\/lib64\/helix\/vhdl.so" ],
+            
+              [  "usr\/lib64\/helix\/vhs.so" ],
+            
+              [  "usr\/lib64\/helix\/vue.so" ],
+            
+              [  "usr\/lib64\/helix\/wast.so" ],
+            
+              [  "usr\/lib64\/helix\/wat.so" ],
+            
+              [  "usr\/lib64\/helix\/werk.so" ],
+            
+              [  "usr\/lib64\/helix\/wesl.so" ],
+            
+              [  "usr\/lib64\/helix\/wgsl.so" ],
+            
+              [  "usr\/lib64\/helix\/wit.so" ],
+            
+              [  "usr\/lib64\/helix\/xit.so" ],
+            
+              [  "usr\/lib64\/helix\/xml.so" ],
+            
+              [  "usr\/lib64\/helix\/xtc.so" ],
+            
+              [  "usr\/lib64\/helix\/yaml.so" ],
+            
+              [  "usr\/lib64\/helix\/yara.so" ],
+            
+              [  "usr\/lib64\/helix\/yuck.so" ],
+            
+              [  "usr\/lib64\/helix\/zig.so" ],
+            
+              [  "usr\/share\/applications\/Helix.desktop" ],
+            
+              [  "usr\/share\/bash-completion\/completions\/hx" ],
+            
+              [  "usr\/share\/doc\/helix-25.07.1\/CHANGELOG.md.bz2" ],
+            
+              [  "usr\/share\/doc\/helix-25.07.1\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/helix-25.07.1\/docs\/CONTRIBUTING.md.bz2" ],
+            
+              [  "usr\/share\/doc\/helix-25.07.1\/docs\/architecture.md.bz2" ],
+            
+              [  "usr\/share\/doc\/helix-25.07.1\/docs\/releases.md.bz2" ],
+            
+              [  "usr\/share\/doc\/helix-25.07.1\/docs\/vision.md.bz2" ],
+            
+              [  "usr\/share\/doc\/helix-25.07.1\/html\/book\/.gitignore" ],
+            
+              [  "usr\/share\/doc\/helix-25.07.1\/html\/book\/book.toml" ],
+            
+              [  "usr\/share\/doc\/helix-25.07.1\/html\/book\/custom.css" ],
+            
+              [  "usr\/share\/doc\/helix-25.07.1\/html\/book\/src\/SUMMARY.md" ],
+            
+              [  "usr\/share\/doc\/helix-25.07.1\/html\/book\/src\/building-from-source.md" ],
+            
+              [  "usr\/share\/doc\/helix-25.07.1\/html\/book\/src\/command-line.md" ],
+            
+              [  "usr\/share\/doc\/helix-25.07.1\/html\/book\/src\/commands.md" ],
+            
+              [  "usr\/share\/doc\/helix-25.07.1\/html\/book\/src\/configuration.md" ],
+            
+              [  "usr\/share\/doc\/helix-25.07.1\/html\/book\/src\/ecosystem.md" ],
+            
+              [  "usr\/share\/doc\/helix-25.07.1\/html\/book\/src\/editor.md" ],
+            
+              [  "usr\/share\/doc\/helix-25.07.1\/html\/book\/src\/from-vim.md" ],
+            
+              [  "usr\/share\/doc\/helix-25.07.1\/html\/book\/src\/generated\/lang-support.md" ],
+            
+              [  "usr\/share\/doc\/helix-25.07.1\/html\/book\/src\/generated\/static-cmd.md" ],
+            
+              [  "usr\/share\/doc\/helix-25.07.1\/html\/book\/src\/generated\/typable-cmd.md" ],
+            
+              [  "usr\/share\/doc\/helix-25.07.1\/html\/book\/src\/guides\/README.md" ],
+            
+              [  "usr\/share\/doc\/helix-25.07.1\/html\/book\/src\/guides\/adding_languages.md" ],
+            
+              [  "usr\/share\/doc\/helix-25.07.1\/html\/book\/src\/guides\/indent.md" ],
+            
+              [  "usr\/share\/doc\/helix-25.07.1\/html\/book\/src\/guides\/injection.md" ],
+            
+              [  "usr\/share\/doc\/helix-25.07.1\/html\/book\/src\/guides\/textobject.md" ],
+            
+              [  "usr\/share\/doc\/helix-25.07.1\/html\/book\/src\/install.md" ],
+            
+              [  "usr\/share\/doc\/helix-25.07.1\/html\/book\/src\/keymap.md" ],
+            
+              [  "usr\/share\/doc\/helix-25.07.1\/html\/book\/src\/lang-support.md" ],
+            
+              [  "usr\/share\/doc\/helix-25.07.1\/html\/book\/src\/languages.md" ],
+            
+              [  "usr\/share\/doc\/helix-25.07.1\/html\/book\/src\/other-software.md" ],
+            
+              [  "usr\/share\/doc\/helix-25.07.1\/html\/book\/src\/package-managers.md" ],
+            
+              [  "usr\/share\/doc\/helix-25.07.1\/html\/book\/src\/pickers.md" ],
+            
+              [  "usr\/share\/doc\/helix-25.07.1\/html\/book\/src\/registers.md" ],
+            
+              [  "usr\/share\/doc\/helix-25.07.1\/html\/book\/src\/remapping.md" ],
+            
+              [  "usr\/share\/doc\/helix-25.07.1\/html\/book\/src\/surround.md" ],
+            
+              [  "usr\/share\/doc\/helix-25.07.1\/html\/book\/src\/syntax-aware-motions.md" ],
+            
+              [  "usr\/share\/doc\/helix-25.07.1\/html\/book\/src\/textobjects.md" ],
+            
+              [  "usr\/share\/doc\/helix-25.07.1\/html\/book\/src\/themes.md" ],
+            
+              [  "usr\/share\/doc\/helix-25.07.1\/html\/book\/src\/title-page.md" ],
+            
+              [  "usr\/share\/doc\/helix-25.07.1\/html\/book\/src\/usage.md" ],
+            
+              [  "usr\/share\/doc\/helix-25.07.1\/html\/book\/theme\/favicon.png" ],
+            
+              [  "usr\/share\/doc\/helix-25.07.1\/html\/book\/theme\/favicon.svg" ],
+            
+              [  "usr\/share\/doc\/helix-25.07.1\/html\/book\/theme\/index.hbs" ],
+            
+              [  "usr\/share\/fish\/vendor_completions.d\/hx.fish" ],
+            
+              [  "usr\/share\/helix\/runtime\/grammars" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/_gjs\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/_gjs\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/_javascript\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/_javascript\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/_javascript\/tags.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/_jsx\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/_jsx\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/_typescript\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/_typescript\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/_typescript\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/_typescript\/tags.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/_typescript\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/ada\/folds.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/ada\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/ada\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/ada\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/adl\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/adl\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/adl\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/agda\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/alloy\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/amber\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/astro\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/astro\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/awk\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/awk\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/awk\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/bash\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/bash\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/bash\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/bash\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/bass\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/beancount\/folds.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/beancount\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/bibtex\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/bibtex\/tags.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/bicep\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/bitbake\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/bitbake\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/blade\/folds.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/blade\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/blade\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/blueprint\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/c\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/c\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/c\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/c\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/c\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/c-sharp\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/c-sharp\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/c-sharp\/tags.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/c-sharp\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/caddyfile\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/caddyfile\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/caddyfile\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/caddyfile\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/caddyfile\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/cairo\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/cairo\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/cairo\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/cairo\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/cairo\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/capnp\/folds.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/capnp\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/capnp\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/capnp\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/capnp\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/cel\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/circom\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/circom\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/clarity\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/clojure\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/clojure\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/cmake\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/cmake\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/cmake\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/cmake\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/codeql\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/codeql\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/comment\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/common-lisp\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/common-lisp\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/common-lisp\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/cpon\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/cpon\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/cpp\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/cpp\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/cpp\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/cpp\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/crystal\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/crystal\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/crystal\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/crystal\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/crystal\/tags.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/crystal\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/css\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/css\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/css\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/csv\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/cue\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/cylc\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/cylc\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/cylc\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/cylc\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/d\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/d\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/d\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/d\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/dart\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/dart\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/dart\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/dart\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/dart\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/dbml\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/debian\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/devicetree\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/dhall\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/dhall\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/dhall\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/diff\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/djot\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/djot\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/docker-compose\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/docker-compose\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/docker-compose\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/docker-compose\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/dockerfile\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/dockerfile\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/dockerfile\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/dot\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/dot\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/dtd\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/dtd\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/dune\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/dunstrc\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/earthfile\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/earthfile\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/earthfile\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/earthfile\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/ecma\/README.md" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/ecma\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/ecma\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/ecma\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/ecma\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/ecma\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/edoc\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/edoc\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/eex\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/eex\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/ejs\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/ejs\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/elisp\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/elisp\/tags.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/elixir\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/elixir\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/elixir\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/elixir\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/elm\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/elm\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/elm\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/elm\/tags.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/elm\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/elvish\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/elvish\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/env\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/env\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/erb\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/erb\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/erlang\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/erlang\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/erlang\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/erlang\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/esdl\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/fennel\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/fga\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/fga\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/fga\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/fidl\/folds.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/fidl\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/fidl\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/fish\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/fish\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/fish\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/fish\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/forth\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/fortran\/folds.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/fortran\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/fortran\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/fortran\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/fsharp\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/fsharp\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/fsharp\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/gas\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/gas\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/gas\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/gdscript\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/gdscript\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/gdscript\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/gdscript\/tags.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/gdscript\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/gemini\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/gherkin\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/ghostty\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/git-attributes\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/git-commit\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/git-commit\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/git-commit\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/git-config\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/git-config\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/git-ignore\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/git-notes\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/git-rebase\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/git-rebase\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/gjs\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/gjs\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/gjs\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/gjs\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/gjs\/tags.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/gjs\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/gleam\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/gleam\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/gleam\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/gleam\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/glimmer\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/glsl\/folds.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/glsl\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/glsl\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/glsl\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/glsl\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/glsl\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/gn\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/gn\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/go\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/go\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/go\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/go\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/go\/tags.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/go\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/godot-resource\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/godot-resource\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/godot-resource\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/gomod\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/gomod\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/gotmpl\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/gotmpl\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/gowork\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/gowork\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/gpr\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/graphql\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/graphql\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/gren\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/gren\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/gren\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/groovy\/folds.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/groovy\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/groovy\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/groovy\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/gts\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/gts\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/gts\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/gts\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/gts\/tags.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/gts\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/hare\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/hare\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/hare\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/haskell\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/haskell\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/haskell\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/haskell\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/haskell-persistent\/folds.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/haskell-persistent\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/hcl\/folds.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/hcl\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/hcl\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/hcl\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/hcl\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/heex\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/heex\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/heex\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/helm\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/helm\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/hocon\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/hocon\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/hocon\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/hoon\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/hosts\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/html\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/html\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/htmldjango\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/htmldjango\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/hurl\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/hurl\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/hurl\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/hurl\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/hyprlang\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/hyprlang\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/hyprlang\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/iex\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/iex\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/ini\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/ink\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/inko\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/inko\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/inko\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/inko\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/inko\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/janet\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/java\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/java\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/java\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/java\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/javascript\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/javascript\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/javascript\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/javascript\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/javascript\/tags.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/javascript\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/jinja\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/jinja\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/jjdescription\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/jjdescription\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/jq\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/jq\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/jq\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/jq\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/jsdoc\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/jsdoc\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/json\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/json\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/json\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/json-ld\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/json-ld\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/json-ld\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/json5\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/jsonc\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/jsonc\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/jsonnet\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/jsx\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/jsx\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/jsx\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/jsx\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/jsx\/tags.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/jsx\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/julia\/folds.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/julia\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/julia\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/julia\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/julia\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/julia\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/just\/folds.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/just\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/just\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/just\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/just\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/just\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/kdl\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/kdl\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/kdl\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/koka\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/koka\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/koka\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/koka\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/kotlin\/folds.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/kotlin\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/kotlin\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/kotlin\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/kotlin\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/kotlin\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/koto\/folds.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/koto\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/koto\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/koto\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/koto\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/koto\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/latex\/folds.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/latex\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/latex\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/latex\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/ld\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/ld\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/ld\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/ldif\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/lean\/folds.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/lean\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/lean\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/lean\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/ledger\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/ledger\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/llvm\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/llvm\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/llvm\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/llvm\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/llvm\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/llvm-mir\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/llvm-mir\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/llvm-mir\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/llvm-mir\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/llvm-mir-yaml\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/llvm-mir-yaml\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/llvm-mir-yaml\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/log\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/lpf\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/lua\/folds.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/lua\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/lua\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/lua\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/lua\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/luau\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/luau\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/luau\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/luau\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/luau\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/mail\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/mail\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/make\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/make\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/make\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/markdoc\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/markdoc\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/markdown\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/markdown\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/markdown-rustdoc\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/markdown-rustdoc\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/markdown.inline\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/markdown.inline\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/matlab\/context.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/matlab\/folds.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/matlab\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/matlab\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/matlab\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/matlab\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/matlab\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/mermaid\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/meson\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/meson\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/mojo\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/mojo\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/mojo\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/mojo\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/mojo\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/move\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/msbuild\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/msbuild\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/msbuild\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/nasm\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/nasm\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/nasm\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/nestedtext\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/nestedtext\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/nestedtext\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/nestedtext\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/nginx\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/nginx\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/nickel\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/nickel\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/nickel\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/nim\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/nim\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/nim\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/nix\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/nix\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/nix\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/nix\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/nu\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/nu\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/nunjucks\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/nunjucks\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/ocaml\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/ocaml\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/ocaml\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/ocaml\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/ocaml-interface\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/ocaml-interface\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/odin\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/odin\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/odin\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/odin\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/ohm\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/ohm\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/ohm\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/ohm\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/opencl\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/opencl\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/opencl\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/opencl\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/openscad\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/org\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/org\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/pascal\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/pascal\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/pascal\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/passwd\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/pem\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/perl\/fold.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/perl\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/perl\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/perl\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/perl\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/pest\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/pest\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/pest\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/pest\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/php\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/php\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/php\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/php\/tags.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/php\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/php-only\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/php-only\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/php-only\/tags.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/pkgbuild\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/pkgbuild\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/pkgbuild\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/pkgbuild\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/pkl\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/pkl\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/pkl\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/po\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/po\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/pod\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/ponylang\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/ponylang\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/ponylang\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/ponylang\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/powershell\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/powershell\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/prisma\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/prisma\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/prolog\/folds.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/prolog\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/prolog\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/prolog\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/properties\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/properties\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/properties\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/properties\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/protobuf\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/protobuf\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/protobuf\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/protobuf\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/prql\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/prql\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/pug\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/pug\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/purescript\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/purescript\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/purescript\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/purescript\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/python\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/python\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/python\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/python\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/python\/tags.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/python\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/qml\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/qml\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/qml\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/qml\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/quarto\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/quarto\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/quarto\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/quint\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/quint\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/r\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/r\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/r\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/racket\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/racket\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/racket\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/regex\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/rego\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/rego\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/rescript\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/rescript\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/rescript\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/rmarkdown\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/rmarkdown\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/rmarkdown\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/robot\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/ron\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/ron\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/ron\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/rst\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/ruby\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/ruby\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/ruby\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/ruby\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/ruby\/tags.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/ruby\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/rust\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/rust\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/rust\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/rust\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/rust\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/rust-format-args\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/rust-format-args-macro\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/rust-format-args-macro\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/rust-format-args-macro\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/rust-format-args-macro\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/rust-format-args-macro\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/sage\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/sage\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/sage\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/scala\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/scala\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/scala\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/scala\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/scala\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/scheme\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/scheme\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/scheme\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/scss\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/scss\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/slang\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/slang\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/slang\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/slang\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/slint\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/slint\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/slint\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/slint\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/slint\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/smali\/folds.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/smali\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/smali\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/smali\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/smali\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/smithy\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/sml\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/snakemake\/LICENSE" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/snakemake\/folds.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/snakemake\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/snakemake\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/snakemake\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/snakemake\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/solidity\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/solidity\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/solidity\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/sourcepawn\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/sourcepawn\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/sourcepawn\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/spade\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/spade\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/spicedb\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/spicedb\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/spicedb\/tags.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/sql\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/sql\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/sshclientconfig\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/starlark\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/starlark\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/starlark\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/starlark\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/strace\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/supercollider\/folds.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/supercollider\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/svelte\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/svelte\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/svelte\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/sway\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/sway\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/sway\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/sway\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/sway\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/swift\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/swift\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/swift\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/swift\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/systemd\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/t32\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/t32\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/tablegen\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/tablegen\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/tablegen\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/tablegen\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/tact\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/tact\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/tact\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/tact\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/tact\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/task\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/task\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/tcl\/folds.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/tcl\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/tcl\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/teal\/folds.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/teal\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/teal\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/templ\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/templ\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/tera\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/tera\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/tera\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/textproto\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/textproto\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/textproto\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/tfvars\/folds.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/tfvars\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/tfvars\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/tfvars\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/thrift\/folds.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/thrift\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/thrift\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/thrift\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/tlaplus\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/tlaplus\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/todotxt\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/toml\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/toml\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/toml\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/tsq\/folds.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/tsq\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/tsq\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/tsx\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/tsx\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/tsx\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/tsx\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/tsx\/tags.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/tsx\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/twig\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/twig\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/typescript\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/typescript\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/typescript\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/typescript\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/typescript\/tags.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/typescript\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/typespec\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/typespec\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/typespec\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/typespec\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/typst\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/typst\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/ungrammar\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/unison\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/unison\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/unison\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/unison\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/uxntal\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/v\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/v\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/v\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/v\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/vala\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/vala\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/vento\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/vento\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/verilog\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/verilog\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/verilog\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/verilog\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/vhdl\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/vhs\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/vue\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/vue\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/wast\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/wat\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/webc\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/webc\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/werk\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/wesl\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/wesl\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/wesl\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/wesl\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/wgsl\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/wgsl\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/wit\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/wit\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/wren\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/wren\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/wren\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/wren\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/wren\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/xit\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/xml\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/xml\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/xml\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/xtc\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/yaml\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/yaml\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/yaml\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/yaml\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/yara\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/yara\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/yara\/locals.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/yuck\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/yuck\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/zig\/highlights.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/zig\/indents.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/zig\/injections.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/queries\/zig\/textobjects.scm" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/README.md" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/acme.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/adwaita-dark.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/adwaita-light.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/amberwood.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/ao.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/ashen.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/ataraxia.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/autumn.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/autumn_night.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/ayu_dark.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/ayu_evolve.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/ayu_light.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/ayu_mirage.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/base16_default_dark.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/base16_default_light.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/base16_terminal.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/base16_transparent.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/beans.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/bogster.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/bogster_light.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/boo_berry.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/carbon.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/carbonfox.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/catppuccin_frappe.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/catppuccin_latte.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/catppuccin_macchiato.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/catppuccin_mocha.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/curzon.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/cyan_light.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/darcula-solid.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/darcula.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/dark-synthwave.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/dark_high_contrast.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/dark_plus.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/doom-one.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/doom_acario_dark.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/dracula.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/dracula_at_night.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/earl_grey.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/eiffel.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/emacs.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/everblush.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/everforest_dark.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/everforest_light.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/ferra.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/flatwhite.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/fleet_dark.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/flexoki_dark.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/flexoki_light.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/focus_nova.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/github_dark.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/github_dark_colorblind.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/github_dark_dimmed.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/github_dark_high_contrast.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/github_dark_tritanopia.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/github_light.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/github_light_colorblind.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/github_light_high_contrast.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/github_light_tritanopia.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/gruber-darker.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/gruvbox-material.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/gruvbox.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/gruvbox_dark_hard.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/gruvbox_dark_soft.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/gruvbox_light.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/gruvbox_light_hard.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/gruvbox_light_soft.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/heisenberg.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/hex_lavender.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/hex_poison.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/hex_steel.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/hex_toxic.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/horizon-dark.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/iceberg-dark.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/iceberg-light.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/ingrid.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/iroaseta.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/jellybeans.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/jetbrains_dark.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/kanagawa-dragon.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/kanagawa.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/kaolin-dark.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/kaolin-light.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/kaolin-valley-dark.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/kinda_nvim.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/kinda_nvim_light.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/lapis_aquamarine.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/licenses\/ashen.license" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/licenses\/carbonfox.license" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/licenses\/cyan_light.LICENSE" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/licenses\/dark-synthwave.license" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/licenses\/doom-one.LICENSE" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/licenses\/everforest.LICENSE" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/licenses\/kinda_nvim.LICENSE" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/licenses\/lapis_aquamarine.LICENSE" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/licenses\/modus_vivendi.LICENSE" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/licenses\/modus_vivendi_deuteranopia.LICENSE" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/licenses\/modus_vivendi_tinted.LICENSE" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/licenses\/modus_vivendi_tritanopia.LICENSE" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/licenses\/poimandres.LICENSE" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/licenses\/serika-syntax.LICENSE" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/licenses\/sonokai.LICENSE" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/licenses\/starlight.LICENSE" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/licenses\/vesper.LICENSE" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/material_darker.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/material_deep_ocean.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/material_oceanic.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/material_palenight.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/meliora.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/mellow.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/merionette.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/modus_operandi.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/modus_operandi_deuteranopia.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/modus_operandi_tinted.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/modus_operandi_tritanopia.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/modus_vivendi.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/modus_vivendi_deuteranopia.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/modus_vivendi_tinted.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/modus_vivendi_tritanopia.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/molokai.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/monokai.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/monokai_aqua.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/monokai_pro.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/monokai_pro_machine.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/monokai_pro_octagon.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/monokai_pro_ristretto.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/monokai_pro_spectrum.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/monokai_soda.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/naysayer.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/new_moon.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/night_owl.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/nightfox.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/noctis.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/noctis_bordo.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/nord-night.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/nord.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/nord_light.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/nyxvamp-obsidian.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/nyxvamp-radiance.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/nyxvamp-veil.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/onedark.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/onedarker.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/onelight.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/papercolor-dark.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/papercolor-light.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/peachpuff.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/penumbra\u002b.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/poimandres.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/poimandres_storm.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/pop-dark.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/rasmus.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/rose_pine.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/rose_pine_dawn.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/rose_pine_moon.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/seoul256-dark-hard.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/seoul256-dark-soft.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/seoul256-dark.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/seoul256-light-hard.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/seoul256-light-soft.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/seoul256-light.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/serika-dark.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/serika-light.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/sidra.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/snazzy.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/solarized_dark.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/solarized_light.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/sonokai.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/spacebones_light.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/starlight.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/sunset.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/term16_dark.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/term16_light.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/tokyonight.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/tokyonight_day.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/tokyonight_moon.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/tokyonight_storm.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/ttox.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/varua.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/vesper.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/vim_dark_high_contrast.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/vintage.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/voxed.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/yellowed.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/yo.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/yo_berry.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/yo_light.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/zed_onedark.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/zed_onelight.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/themes\/zenburn.toml" ],
+            
+              [  "usr\/share\/helix\/runtime\/tutor" ],
+            
+              [  "usr\/share\/icons\/hicolor\/256x256\/apps\/helix.png" ],
+            
+              [  "usr\/share\/metainfo\/Helix.appdata.xml" ],
+            
+              [  "usr\/share\/zsh\/site-functions\/_hx" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

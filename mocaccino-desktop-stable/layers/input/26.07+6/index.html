@@ -1,0 +1,3064 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing layers/input-26.07&#43;6 in mocaccino-desktop-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> layers/input-26.07&#43;6
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                Input method frameworks and engines (Fcitx5, IBus) providing multilingual text input support, including Chinese, Korean, and other languages.
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-desktop-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-desktop-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of layers/input
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/desktop:input-layers-26.07-6" target="_blank"> quay.io/mocaccino/desktop:input-layers-26.07-6 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/desktop:input-layers-26.07-6/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 26.07&#43;6  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> LGPL-2&#43; Unicode-DFS-2016 </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/kde-common">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  kde-common &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/fonts/noto-cjk">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  noto-cjk &gt;=0 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 2
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: app-i18n/anthy app-i18n/fcitx app-i18n/fcitx-anthy app-i18n/fcitx-configtool app-i18n/fcitx-chinese-addons app-i18n/fcitx-gtk app-i18n/fcitx-hangul app-i18n/fcitx-qt app-i18n/fcitx-table-extra app-i18n/ibus-anthy app-i18n/ibus-hangul app-i18n/ibus-pinyin app-i18n/ibus-table app-i18n/ibus-table-chinese app-i18n/ibus-table-others app-i18n/libhangul app-i18n/libime app-i18n/opencc dev-libs/marisa x11-libs/xcb-imdkit
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://fcitx-im.org" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://fcitx-im.org </a>
+    </span>
+  
+    <span class="tag">
+    <a href="https://github.com/ibus" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://github.com/ibus </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/app-admin/chrpath">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  chrpath &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/app-i18n/anthy">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  anthy &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/app-i18n/fcitx">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  fcitx &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/app-i18n/fcitx-anthy">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  fcitx-anthy &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/app-i18n/fcitx-chinese-addons">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  fcitx-chinese-addons &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/app-i18n/fcitx-gtk">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  fcitx-gtk &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/app-i18n/fcitx-hangul">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  fcitx-hangul &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/app-i18n/fcitx-qt">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  fcitx-qt &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/app-i18n/fcitx-table-extra">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  fcitx-table-extra &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/app-i18n/ibus-anthy">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  ibus-anthy &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/app-i18n/ibus-hangul">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  ibus-hangul &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/app-i18n/ibus-pinyin">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  ibus-pinyin &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/app-i18n/ibus-table">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  ibus-table &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/app-i18n/ibus-table-chinese">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  ibus-table-chinese &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/app-i18n/ibus-table-others">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  ibus-table-others &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/app-i18n/libhangul">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  libhangul &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/app-i18n/libime">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  libime &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/app-i18n/opencc">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  opencc &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/dev-cpp/nlohmann_json">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  nlohmann_json &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/dev-cpp/tclap">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  tclap &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/dev-libs/marisa">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  marisa &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/dev-libs/rapidjson">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  rapidjson &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/kde-frameworks/extra-cmake-modules">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  extra-cmake-modules &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/x11-libs/xcb-imdkit">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  xcb-imdkit &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "etc\/anthy-conf" ],
+            
+              [  "etc\/xdg\/Xwayland-session.d\/20-fcitx-x11" ],
+            
+              [  "etc\/xdg\/autostart\/org.fcitx.Fcitx5.desktop" ],
+            
+              [  "usr\/bin\/anthy-agent" ],
+            
+              [  "usr\/bin\/anthy-dic-tool" ],
+            
+              [  "usr\/bin\/anthy-morphological-analyzer" ],
+            
+              [  "usr\/bin\/fcitx5" ],
+            
+              [  "usr\/bin\/fcitx5-config-qt" ],
+            
+              [  "usr\/bin\/fcitx5-configtool" ],
+            
+              [  "usr\/bin\/fcitx5-diagnose" ],
+            
+              [  "usr\/bin\/fcitx5-gtk3-immodule-probing" ],
+            
+              [  "usr\/bin\/fcitx5-gtk4-immodule-probing" ],
+            
+              [  "usr\/bin\/fcitx5-migrator" ],
+            
+              [  "usr\/bin\/fcitx5-qt6-immodule-probing" ],
+            
+              [  "usr\/bin\/fcitx5-remote" ],
+            
+              [  "usr\/bin\/hangul" ],
+            
+              [  "usr\/bin\/ibus-setup-hangul" ],
+            
+              [  "usr\/bin\/ibus-table-createdb" ],
+            
+              [  "usr\/bin\/kbd-layout-viewer5" ],
+            
+              [  "usr\/bin\/libime_history" ],
+            
+              [  "usr\/bin\/libime_migrate_fcitx4_pinyin" ],
+            
+              [  "usr\/bin\/libime_migrate_fcitx4_table" ],
+            
+              [  "usr\/bin\/libime_pinyindict" ],
+            
+              [  "usr\/bin\/libime_prediction" ],
+            
+              [  "usr\/bin\/libime_slm_build_binary" ],
+            
+              [  "usr\/bin\/libime_tabledict" ],
+            
+              [  "usr\/bin\/opencc" ],
+            
+              [  "usr\/bin\/opencc_dict" ],
+            
+              [  "usr\/bin\/opencc_phrase_extract" ],
+            
+              [  "usr\/bin\/scel2org5" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/opencc\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/opencc\/clib\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/opencc\/clib\/opencc_clib.cpython-314-x86_64-linux-gnu.so" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/opencc\/clib\/share\/opencc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/opencc-1.1.9.dist-info\/METADATA" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/opencc-1.1.9.dist-info\/WHEEL" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/opencc-1.1.9.dist-info\/top_level.txt" ],
+            
+              [  "usr\/lib64\/fcitx5\/libanthy.so" ],
+            
+              [  "usr\/lib64\/fcitx5\/libchttrans.so" ],
+            
+              [  "usr\/lib64\/fcitx5\/libclassicui.so" ],
+            
+              [  "usr\/lib64\/fcitx5\/libclipboard.so" ],
+            
+              [  "usr\/lib64\/fcitx5\/libcloudpinyin.so" ],
+            
+              [  "usr\/lib64\/fcitx5\/libdbus.so" ],
+            
+              [  "usr\/lib64\/fcitx5\/libdbusfrontend.so" ],
+            
+              [  "usr\/lib64\/fcitx5\/libemoji.so" ],
+            
+              [  "usr\/lib64\/fcitx5\/libexec\/comp-spell-dict" ],
+            
+              [  "usr\/lib64\/fcitx5\/libfcitx4frontend.so" ],
+            
+              [  "usr\/lib64\/fcitx5\/libfullwidth.so" ],
+            
+              [  "usr\/lib64\/fcitx5\/libhangul.so" ],
+            
+              [  "usr\/lib64\/fcitx5\/libibusfrontend.so" ],
+            
+              [  "usr\/lib64\/fcitx5\/libimselector.so" ],
+            
+              [  "usr\/lib64\/fcitx5\/libkimpanel.so" ],
+            
+              [  "usr\/lib64\/fcitx5\/libnotificationitem.so" ],
+            
+              [  "usr\/lib64\/fcitx5\/libnotifications.so" ],
+            
+              [  "usr\/lib64\/fcitx5\/libpinyin.so" ],
+            
+              [  "usr\/lib64\/fcitx5\/libpinyinhelper.so" ],
+            
+              [  "usr\/lib64\/fcitx5\/libpunctuation.so" ],
+            
+              [  "usr\/lib64\/fcitx5\/libquickphrase.so" ],
+            
+              [  "usr\/lib64\/fcitx5\/libspell.so" ],
+            
+              [  "usr\/lib64\/fcitx5\/libtable.so" ],
+            
+              [  "usr\/lib64\/fcitx5\/libtestfrontend.so" ],
+            
+              [  "usr\/lib64\/fcitx5\/libtestim.so" ],
+            
+              [  "usr\/lib64\/fcitx5\/libtestui.so" ],
+            
+              [  "usr\/lib64\/fcitx5\/libunicode.so" ],
+            
+              [  "usr\/lib64\/fcitx5\/libvirtualkeyboard.so" ],
+            
+              [  "usr\/lib64\/fcitx5\/libwayland.so" ],
+            
+              [  "usr\/lib64\/fcitx5\/libwaylandim.so" ],
+            
+              [  "usr\/lib64\/fcitx5\/libxcb.so" ],
+            
+              [  "usr\/lib64\/fcitx5\/libxim.so" ],
+            
+              [  "usr\/lib64\/fcitx5\/qt6\/libcustomphraseeditor.so" ],
+            
+              [  "usr\/lib64\/fcitx5\/qt6\/libfcitx-quickphrase-editor5.so" ],
+            
+              [  "usr\/lib64\/fcitx5\/qt6\/libpinyindictmanager.so" ],
+            
+              [  "usr\/lib64\/girepository-1.0\/Anthy-9000.typelib" ],
+            
+              [  "usr\/lib64\/girepository-1.0\/FcitxG-1.0.typelib" ],
+            
+              [  "usr\/lib64\/gtk-3.0\/3.0.0\/immodules\/im-fcitx5.so" ],
+            
+              [  "usr\/lib64\/gtk-4.0\/4.0.0\/immodules\/libim-fcitx5.so" ],
+            
+              [  "usr\/lib64\/libFcitx5Config.so" ],
+            
+              [  "usr\/lib64\/libFcitx5Config.so.5.1.21" ],
+            
+              [  "usr\/lib64\/libFcitx5Config.so.6" ],
+            
+              [  "usr\/lib64\/libFcitx5Core.so" ],
+            
+              [  "usr\/lib64\/libFcitx5Core.so.5.1.21" ],
+            
+              [  "usr\/lib64\/libFcitx5Core.so.7" ],
+            
+              [  "usr\/lib64\/libFcitx5GClient.so" ],
+            
+              [  "usr\/lib64\/libFcitx5GClient.so.2" ],
+            
+              [  "usr\/lib64\/libFcitx5GClient.so.5.1.7" ],
+            
+              [  "usr\/lib64\/libFcitx5Migrator.so" ],
+            
+              [  "usr\/lib64\/libFcitx5Migrator.so.1" ],
+            
+              [  "usr\/lib64\/libFcitx5Migrator.so.5.1.14" ],
+            
+              [  "usr\/lib64\/libFcitx5Qt6DBusAddons.so" ],
+            
+              [  "usr\/lib64\/libFcitx5Qt6DBusAddons.so.1" ],
+            
+              [  "usr\/lib64\/libFcitx5Qt6DBusAddons.so.5.1.14" ],
+            
+              [  "usr\/lib64\/libFcitx5Qt6WidgetsAddons.so" ],
+            
+              [  "usr\/lib64\/libFcitx5Qt6WidgetsAddons.so.2" ],
+            
+              [  "usr\/lib64\/libFcitx5Qt6WidgetsAddons.so.5.1.14" ],
+            
+              [  "usr\/lib64\/libFcitx5Utils.so" ],
+            
+              [  "usr\/lib64\/libFcitx5Utils.so.2" ],
+            
+              [  "usr\/lib64\/libFcitx5Utils.so.5.1.21" ],
+            
+              [  "usr\/lib64\/libIMECore.so" ],
+            
+              [  "usr\/lib64\/libIMECore.so.0" ],
+            
+              [  "usr\/lib64\/libIMECore.so.1.1.15" ],
+            
+              [  "usr\/lib64\/libIMEPinyin.so" ],
+            
+              [  "usr\/lib64\/libIMEPinyin.so.0" ],
+            
+              [  "usr\/lib64\/libIMEPinyin.so.1.1.15" ],
+            
+              [  "usr\/lib64\/libIMETable.so" ],
+            
+              [  "usr\/lib64\/libIMETable.so.0" ],
+            
+              [  "usr\/lib64\/libIMETable.so.1.1.15" ],
+            
+              [  "usr\/lib64\/libanthy.so" ],
+            
+              [  "usr\/lib64\/libanthy.so.0" ],
+            
+              [  "usr\/lib64\/libanthy.so.0.1.0" ],
+            
+              [  "usr\/lib64\/libanthydic.so" ],
+            
+              [  "usr\/lib64\/libanthydic.so.0" ],
+            
+              [  "usr\/lib64\/libanthydic.so.0.1.0" ],
+            
+              [  "usr\/lib64\/libanthygobject-1.0.so" ],
+            
+              [  "usr\/lib64\/libanthygobject-1.0.so.5" ],
+            
+              [  "usr\/lib64\/libanthygobject-1.0.so.5.0.518" ],
+            
+              [  "usr\/lib64\/libanthyinput.so" ],
+            
+              [  "usr\/lib64\/libanthyinput.so.0" ],
+            
+              [  "usr\/lib64\/libanthyinput.so.0.0.0" ],
+            
+              [  "usr\/lib64\/libhangul.so" ],
+            
+              [  "usr\/lib64\/libhangul.so.1" ],
+            
+              [  "usr\/lib64\/libhangul.so.1.1.0" ],
+            
+              [  "usr\/lib64\/libime\/zh_CN.lm" ],
+            
+              [  "usr\/lib64\/libime\/zh_CN.lm.predict" ],
+            
+              [  "usr\/lib64\/libmarisa.so" ],
+            
+              [  "usr\/lib64\/libmarisa.so.0" ],
+            
+              [  "usr\/lib64\/libmarisa.so.0.3.1" ],
+            
+              [  "usr\/lib64\/libopencc.so" ],
+            
+              [  "usr\/lib64\/libopencc.so.1.1" ],
+            
+              [  "usr\/lib64\/libopencc.so.1.1.9" ],
+            
+              [  "usr\/lib64\/libxcb-imdkit.so" ],
+            
+              [  "usr\/lib64\/libxcb-imdkit.so.1" ],
+            
+              [  "usr\/lib64\/libxcb-imdkit.so.1.0.9" ],
+            
+              [  "usr\/lib64\/pkgconfig\/Fcitx5Config.pc" ],
+            
+              [  "usr\/lib64\/pkgconfig\/Fcitx5Core.pc" ],
+            
+              [  "usr\/lib64\/pkgconfig\/Fcitx5GClient.pc" ],
+            
+              [  "usr\/lib64\/pkgconfig\/Fcitx5Module.pc" ],
+            
+              [  "usr\/lib64\/pkgconfig\/Fcitx5Utils.pc" ],
+            
+              [  "usr\/lib64\/pkgconfig\/anthy.pc" ],
+            
+              [  "usr\/lib64\/pkgconfig\/ibus-table.pc" ],
+            
+              [  "usr\/lib64\/pkgconfig\/libhangul.pc" ],
+            
+              [  "usr\/lib64\/pkgconfig\/marisa.pc" ],
+            
+              [  "usr\/lib64\/pkgconfig\/opencc.pc" ],
+            
+              [  "usr\/lib64\/pkgconfig\/xcb-imdkit.pc" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/platforminputcontexts\/libfcitx5platforminputcontextplugin.so" ],
+            
+              [  "usr\/libexec\/fcitx5-qt6-gui-wrapper" ],
+            
+              [  "usr\/libexec\/fcitx5-wayland-launcher" ],
+            
+              [  "usr\/libexec\/ibus-engine-anthy" ],
+            
+              [  "usr\/libexec\/ibus-engine-hangul" ],
+            
+              [  "usr\/libexec\/ibus-engine-pinyin" ],
+            
+              [  "usr\/libexec\/ibus-engine-table" ],
+            
+              [  "usr\/libexec\/ibus-setup-anthy" ],
+            
+              [  "usr\/libexec\/ibus-setup-hangul" ],
+            
+              [  "usr\/libexec\/ibus-setup-pinyin" ],
+            
+              [  "usr\/libexec\/ibus-setup-table" ],
+            
+              [  "usr\/share\/anthy\/anthy.dic" ],
+            
+              [  "usr\/share\/anthy\/dic-tool-usage.txt" ],
+            
+              [  "usr\/share\/anthy\/typetab" ],
+            
+              [  "usr\/share\/anthy\/zipcode.t" ],
+            
+              [  "usr\/share\/applications\/fcitx5-configtool.desktop" ],
+            
+              [  "usr\/share\/applications\/fcitx5-wayland-launcher.desktop" ],
+            
+              [  "usr\/share\/applications\/ibus-setup-anthy.desktop" ],
+            
+              [  "usr\/share\/applications\/ibus-setup-bopomofo.desktop" ],
+            
+              [  "usr\/share\/applications\/ibus-setup-hangul.desktop" ],
+            
+              [  "usr\/share\/applications\/ibus-setup-pinyin.desktop" ],
+            
+              [  "usr\/share\/applications\/ibus-setup-table.desktop" ],
+            
+              [  "usr\/share\/applications\/kbd-layout-viewer5.desktop" ],
+            
+              [  "usr\/share\/applications\/org.fcitx.Fcitx5.desktop" ],
+            
+              [  "usr\/share\/applications\/org.fcitx.fcitx5-config-qt.desktop" ],
+            
+              [  "usr\/share\/applications\/org.fcitx.fcitx5-migrator.desktop" ],
+            
+              [  "usr\/share\/applications\/org.fcitx.fcitx5-qt6-gui-wrapper.desktop" ],
+            
+              [  "usr\/share\/dbus-1\/services\/org.fcitx.Fcitx5.service" ],
+            
+              [  "usr\/share\/doc\/anthy-9100h-r3\/AUTHORS.bz2" ],
+            
+              [  "usr\/share\/doc\/anthy-9100h-r3\/ChangeLog.bz2" ],
+            
+              [  "usr\/share\/doc\/anthy-9100h-r3\/DIARY.bz2" ],
+            
+              [  "usr\/share\/doc\/anthy-9100h-r3\/NEWS.bz2" ],
+            
+              [  "usr\/share\/doc\/anthy-9100h-r3\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/anthy-9100h-r3\/doc\/00INDEX.bz2" ],
+            
+              [  "usr\/share\/doc\/anthy-9100h-r3\/doc\/DICLIB.bz2" ],
+            
+              [  "usr\/share\/doc\/anthy-9100h-r3\/doc\/DICUTIL.bz2" ],
+            
+              [  "usr\/share\/doc\/anthy-9100h-r3\/doc\/ELISP.bz2" ],
+            
+              [  "usr\/share\/doc\/anthy-9100h-r3\/doc\/GLOSSARY.bz2" ],
+            
+              [  "usr\/share\/doc\/anthy-9100h-r3\/doc\/GRAMMAR.bz2" ],
+            
+              [  "usr\/share\/doc\/anthy-9100h-r3\/doc\/GUIDE.bz2" ],
+            
+              [  "usr\/share\/doc\/anthy-9100h-r3\/doc\/GUIDE.english.bz2" ],
+            
+              [  "usr\/share\/doc\/anthy-9100h-r3\/doc\/ILIB.bz2" ],
+            
+              [  "usr\/share\/doc\/anthy-9100h-r3\/doc\/LEARNING.bz2" ],
+            
+              [  "usr\/share\/doc\/anthy-9100h-r3\/doc\/LIB.bz2" ],
+            
+              [  "usr\/share\/doc\/anthy-9100h-r3\/doc\/MISC.bz2" ],
+            
+              [  "usr\/share\/doc\/anthy-9100h-r3\/doc\/POS.bz2" ],
+            
+              [  "usr\/share\/doc\/anthy-9100h-r3\/doc\/SPLITTER.bz2" ],
+            
+              [  "usr\/share\/doc\/anthy-9100h-r3\/doc\/TESTING.bz2" ],
+            
+              [  "usr\/share\/doc\/anthy-9100h-r3\/doc\/protocol.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/fcitx-5.1.21\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/fcitx-anthy-5.1.10\/AUTHORS" ],
+            
+              [  "usr\/share\/doc\/fcitx-chinese-addons-5.1.12\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/fcitx-configtool-5.1.14\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/fcitx-gtk-5.1.7\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/fcitx-hangul-5.1.9\/AUTHORS" ],
+            
+              [  "usr\/share\/doc\/fcitx-qt-5.1.14\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/fcitx-table-extra-5.1.8\/AUTHORS" ],
+            
+              [  "usr\/share\/doc\/fcitx-table-extra-5.1.8\/NEWS" ],
+            
+              [  "usr\/share\/doc\/fcitx-table-extra-5.1.8\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/ibus-anthy-1.5.18\/AUTHORS.bz2" ],
+            
+              [  "usr\/share\/doc\/ibus-anthy-1.5.18\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/ibus-hangul-1.5.5\/AUTHORS" ],
+            
+              [  "usr\/share\/doc\/ibus-hangul-1.5.5\/ChangeLog.bz2" ],
+            
+              [  "usr\/share\/doc\/ibus-hangul-1.5.5\/NEWS.bz2" ],
+            
+              [  "usr\/share\/doc\/ibus-hangul-1.5.5\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/ibus-pinyin-1.5.1\/AUTHORS.bz2" ],
+            
+              [  "usr\/share\/doc\/ibus-pinyin-1.5.1\/README" ],
+            
+              [  "usr\/share\/doc\/ibus-table-1.17.18\/AUTHORS.bz2" ],
+            
+              [  "usr\/share\/doc\/ibus-table-1.17.18\/ChangeLog.bz2" ],
+            
+              [  "usr\/share\/doc\/ibus-table-1.17.18\/NEWS.bz2" ],
+            
+              [  "usr\/share\/doc\/ibus-table-1.17.18\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/ibus-table-chinese-1.8.14\/AUTHORS.bz2" ],
+            
+              [  "usr\/share\/doc\/ibus-table-chinese-1.8.14\/COPYING.bz2" ],
+            
+              [  "usr\/share\/doc\/ibus-table-chinese-1.8.14\/ChangeLog" ],
+            
+              [  "usr\/share\/doc\/ibus-table-chinese-1.8.14\/NEWS.bz2" ],
+            
+              [  "usr\/share\/doc\/ibus-table-chinese-1.8.14\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/ibus-table-others-1.3.22\/AUTHORS.bz2" ],
+            
+              [  "usr\/share\/doc\/ibus-table-others-1.3.22\/ChangeLog.bz2" ],
+            
+              [  "usr\/share\/doc\/ibus-table-others-1.3.22\/NEWS.bz2" ],
+            
+              [  "usr\/share\/doc\/ibus-table-others-1.3.22\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/libhangul-0.2.0\/AUTHORS" ],
+            
+              [  "usr\/share\/doc\/libhangul-0.2.0\/ChangeLog.bz2" ],
+            
+              [  "usr\/share\/doc\/libhangul-0.2.0\/NEWS.bz2" ],
+            
+              [  "usr\/share\/doc\/libhangul-0.2.0\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/libime-1.1.15\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/marisa-0.3.1-r2\/AUTHORS" ],
+            
+              [  "usr\/share\/doc\/marisa-0.3.1-r2\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/marisa-0.3.1-r2\/html\/readme.en.html" ],
+            
+              [  "usr\/share\/doc\/marisa-0.3.1-r2\/html\/readme.ja.html" ],
+            
+              [  "usr\/share\/doc\/marisa-0.3.1-r2\/html\/style.css" ],
+            
+              [  "usr\/share\/doc\/opencc-1.1.9\/AUTHORS.bz2" ],
+            
+              [  "usr\/share\/doc\/opencc-1.1.9\/NEWS.md.bz2" ],
+            
+              [  "usr\/share\/doc\/opencc-1.1.9\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/xcb-imdkit-1.0.9\/README.md.bz2" ],
+            
+              [  "usr\/share\/fcitx5\/addon\/anthy.conf" ],
+            
+              [  "usr\/share\/fcitx5\/addon\/chttrans.conf" ],
+            
+              [  "usr\/share\/fcitx5\/addon\/classicui.conf" ],
+            
+              [  "usr\/share\/fcitx5\/addon\/clipboard.conf" ],
+            
+              [  "usr\/share\/fcitx5\/addon\/cloudpinyin.conf" ],
+            
+              [  "usr\/share\/fcitx5\/addon\/dbus.conf" ],
+            
+              [  "usr\/share\/fcitx5\/addon\/dbusfrontend.conf" ],
+            
+              [  "usr\/share\/fcitx5\/addon\/emoji.conf" ],
+            
+              [  "usr\/share\/fcitx5\/addon\/fcitx4frontend.conf" ],
+            
+              [  "usr\/share\/fcitx5\/addon\/fullwidth.conf" ],
+            
+              [  "usr\/share\/fcitx5\/addon\/hangul.conf" ],
+            
+              [  "usr\/share\/fcitx5\/addon\/ibusfrontend.conf" ],
+            
+              [  "usr\/share\/fcitx5\/addon\/imselector.conf" ],
+            
+              [  "usr\/share\/fcitx5\/addon\/keyboard.conf" ],
+            
+              [  "usr\/share\/fcitx5\/addon\/kimpanel.conf" ],
+            
+              [  "usr\/share\/fcitx5\/addon\/notificationitem.conf" ],
+            
+              [  "usr\/share\/fcitx5\/addon\/notifications.conf" ],
+            
+              [  "usr\/share\/fcitx5\/addon\/pinyin.conf" ],
+            
+              [  "usr\/share\/fcitx5\/addon\/pinyinhelper.conf" ],
+            
+              [  "usr\/share\/fcitx5\/addon\/punctuation.conf" ],
+            
+              [  "usr\/share\/fcitx5\/addon\/quickphrase.conf" ],
+            
+              [  "usr\/share\/fcitx5\/addon\/spell.conf" ],
+            
+              [  "usr\/share\/fcitx5\/addon\/table.conf" ],
+            
+              [  "usr\/share\/fcitx5\/addon\/unicode.conf" ],
+            
+              [  "usr\/share\/fcitx5\/addon\/virtualkeyboard.conf" ],
+            
+              [  "usr\/share\/fcitx5\/addon\/wayland.conf" ],
+            
+              [  "usr\/share\/fcitx5\/addon\/waylandim.conf" ],
+            
+              [  "usr\/share\/fcitx5\/addon\/xcb.conf" ],
+            
+              [  "usr\/share\/fcitx5\/addon\/xim.conf" ],
+            
+              [  "usr\/share\/fcitx5\/anthy\/101kana.sty" ],
+            
+              [  "usr\/share\/fcitx5\/anthy\/atok.sty" ],
+            
+              [  "usr\/share\/fcitx5\/anthy\/azik.sty" ],
+            
+              [  "usr\/share\/fcitx5\/anthy\/canna.sty" ],
+            
+              [  "usr\/share\/fcitx5\/anthy\/msime.sty" ],
+            
+              [  "usr\/share\/fcitx5\/anthy\/nicola-a.sty" ],
+            
+              [  "usr\/share\/fcitx5\/anthy\/nicola-f.sty" ],
+            
+              [  "usr\/share\/fcitx5\/anthy\/nicola-j.sty" ],
+            
+              [  "usr\/share\/fcitx5\/anthy\/oasys100j.sty" ],
+            
+              [  "usr\/share\/fcitx5\/anthy\/qkana.sty" ],
+            
+              [  "usr\/share\/fcitx5\/anthy\/tron-dvorak.sty" ],
+            
+              [  "usr\/share\/fcitx5\/anthy\/tron-qwerty-jp.sty" ],
+            
+              [  "usr\/share\/fcitx5\/anthy\/tsuki-2-203-101.sty" ],
+            
+              [  "usr\/share\/fcitx5\/anthy\/tsuki-2-203-106.sty" ],
+            
+              [  "usr\/share\/fcitx5\/anthy\/vje-delta.sty" ],
+            
+              [  "usr\/share\/fcitx5\/anthy\/wnn.sty" ],
+            
+              [  "usr\/share\/fcitx5\/chttrans\/gbks2t.tab" ],
+            
+              [  "usr\/share\/fcitx5\/data\/quickphrase.d\/emoji-eac.mb" ],
+            
+              [  "usr\/share\/fcitx5\/data\/quickphrase.d\/emoji.mb" ],
+            
+              [  "usr\/share\/fcitx5\/data\/quickphrase.d\/latex.mb" ],
+            
+              [  "usr\/share\/fcitx5\/default\/ar_DZ" ],
+            
+              [  "usr\/share\/fcitx5\/default\/as_IN" ],
+            
+              [  "usr\/share\/fcitx5\/default\/ast_ES" ],
+            
+              [  "usr\/share\/fcitx5\/default\/az_AZ" ],
+            
+              [  "usr\/share\/fcitx5\/default\/be_BY" ],
+            
+              [  "usr\/share\/fcitx5\/default\/bg_BG" ],
+            
+              [  "usr\/share\/fcitx5\/default\/bn_IN" ],
+            
+              [  "usr\/share\/fcitx5\/default\/cat_ES" ],
+            
+              [  "usr\/share\/fcitx5\/default\/cs_CZ" ],
+            
+              [  "usr\/share\/fcitx5\/default\/de_CH" ],
+            
+              [  "usr\/share\/fcitx5\/default\/de_DE" ],
+            
+              [  "usr\/share\/fcitx5\/default\/el_CY" ],
+            
+              [  "usr\/share\/fcitx5\/default\/el_GR" ],
+            
+              [  "usr\/share\/fcitx5\/default\/en_GB" ],
+            
+              [  "usr\/share\/fcitx5\/default\/en_US" ],
+            
+              [  "usr\/share\/fcitx5\/default\/en_ZA" ],
+            
+              [  "usr\/share\/fcitx5\/default\/es_ES" ],
+            
+              [  "usr\/share\/fcitx5\/default\/es_GT" ],
+            
+              [  "usr\/share\/fcitx5\/default\/es_MX" ],
+            
+              [  "usr\/share\/fcitx5\/default\/fr_BE" ],
+            
+              [  "usr\/share\/fcitx5\/default\/fr_CH" ],
+            
+              [  "usr\/share\/fcitx5\/default\/fr_FR" ],
+            
+              [  "usr\/share\/fcitx5\/default\/gl_ES" ],
+            
+              [  "usr\/share\/fcitx5\/default\/gu_IN" ],
+            
+              [  "usr\/share\/fcitx5\/default\/he_IL" ],
+            
+              [  "usr\/share\/fcitx5\/default\/hi_IN" ],
+            
+              [  "usr\/share\/fcitx5\/default\/id_ID" ],
+            
+              [  "usr\/share\/fcitx5\/default\/it_IT" ],
+            
+              [  "usr\/share\/fcitx5\/default\/ja_JP" ],
+            
+              [  "usr\/share\/fcitx5\/default\/kn_IN" ],
+            
+              [  "usr\/share\/fcitx5\/default\/ko_KR" ],
+            
+              [  "usr\/share\/fcitx5\/default\/mai_IN" ],
+            
+              [  "usr\/share\/fcitx5\/default\/ml_IN" ],
+            
+              [  "usr\/share\/fcitx5\/default\/mr_IN" ],
+            
+              [  "usr\/share\/fcitx5\/default\/nl_NL" ],
+            
+              [  "usr\/share\/fcitx5\/default\/or_IN" ],
+            
+              [  "usr\/share\/fcitx5\/default\/pa_IN" ],
+            
+              [  "usr\/share\/fcitx5\/default\/pl_PL" ],
+            
+              [  "usr\/share\/fcitx5\/default\/pt_BR" ],
+            
+              [  "usr\/share\/fcitx5\/default\/pt_PT" ],
+            
+              [  "usr\/share\/fcitx5\/default\/ru_RU" ],
+            
+              [  "usr\/share\/fcitx5\/default\/sd_IN" ],
+            
+              [  "usr\/share\/fcitx5\/default\/sk_SK" ],
+            
+              [  "usr\/share\/fcitx5\/default\/ta_IN" ],
+            
+              [  "usr\/share\/fcitx5\/default\/te_IN" ],
+            
+              [  "usr\/share\/fcitx5\/default\/ur_IN" ],
+            
+              [  "usr\/share\/fcitx5\/default\/zh_CN" ],
+            
+              [  "usr\/share\/fcitx5\/default\/zh_HK" ],
+            
+              [  "usr\/share\/fcitx5\/default\/zh_TW" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/af.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/am.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/ar.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/ar_SA.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/as.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/ast.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/az.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/be.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/bg.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/bn.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/br.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/bs.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/ca.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/ccp.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/ceb.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/chr.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/ckb.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/cs.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/cy.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/da.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/de.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/de_CH.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/dsb.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/el.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/en.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/en_001.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/en_AU.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/en_CA.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/en_GB.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/es.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/es_419.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/es_MX.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/es_US.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/et.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/eu.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/fa.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/fi.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/fil.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/fo.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/fr.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/fr_CA.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/ga.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/gd.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/gl.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/gu.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/ha.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/he.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/hi.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/hi_Latn.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/hr.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/hsb.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/hu.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/hy.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/ia.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/id.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/ig.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/is.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/it.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/ja.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/jv.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/ka.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/kab.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/kk.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/kl.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/km.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/kn.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/ko.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/kok.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/ky.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/lb.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/lo.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/lt.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/lv.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/mi.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/mk.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/ml.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/mn.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/mni.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/mr.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/ms.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/mt.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/my.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/ne.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/nl.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/nn.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/no.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/or.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/pa.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/pa_Arab.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/pcm.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/pl.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/ps.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/pt.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/pt_PT.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/qu.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/rm.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/ro.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/ru.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/rw.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/sc.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/sd.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/si.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/sk.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/sl.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/so.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/sq.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/sr.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/sr_Cyrl_BA.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/sr_Latn.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/sr_Latn_BA.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/sv.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/sw.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/sw_KE.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/ta.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/te.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/tg.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/th.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/ti.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/tk.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/to.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/tr.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/ug.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/uk.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/ur.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/uz.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/vi.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/wo.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/xh.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/yo.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/yo_BJ.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/yue.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/yue_Hans.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/zh.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/zh_Hant.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/zh_Hant_HK.dict" ],
+            
+              [  "usr\/share\/fcitx5\/emoji\/data\/zu.dict" ],
+            
+              [  "usr\/share\/fcitx5\/hangul\/symbol.txt" ],
+            
+              [  "usr\/share\/fcitx5\/inputmethod\/anthy.conf" ],
+            
+              [  "usr\/share\/fcitx5\/inputmethod\/array30-large.conf" ],
+            
+              [  "usr\/share\/fcitx5\/inputmethod\/array30.conf" ],
+            
+              [  "usr\/share\/fcitx5\/inputmethod\/boshiamy.conf" ],
+            
+              [  "usr\/share\/fcitx5\/inputmethod\/cangjie-large.conf" ],
+            
+              [  "usr\/share\/fcitx5\/inputmethod\/cangjie.conf" ],
+            
+              [  "usr\/share\/fcitx5\/inputmethod\/cangjie3.conf" ],
+            
+              [  "usr\/share\/fcitx5\/inputmethod\/cangjie5.conf" ],
+            
+              [  "usr\/share\/fcitx5\/inputmethod\/cantonese.conf" ],
+            
+              [  "usr\/share\/fcitx5\/inputmethod\/cantonhk.conf" ],
+            
+              [  "usr\/share\/fcitx5\/inputmethod\/db.conf" ],
+            
+              [  "usr\/share\/fcitx5\/inputmethod\/easy-large.conf" ],
+            
+              [  "usr\/share\/fcitx5\/inputmethod\/erbi.conf" ],
+            
+              [  "usr\/share\/fcitx5\/inputmethod\/hangul.conf" ],
+            
+              [  "usr\/share\/fcitx5\/inputmethod\/jyutping-table.conf" ],
+            
+              [  "usr\/share\/fcitx5\/inputmethod\/pinyin.conf" ],
+            
+              [  "usr\/share\/fcitx5\/inputmethod\/quick-classic.conf" ],
+            
+              [  "usr\/share\/fcitx5\/inputmethod\/quick3.conf" ],
+            
+              [  "usr\/share\/fcitx5\/inputmethod\/quick5.conf" ],
+            
+              [  "usr\/share\/fcitx5\/inputmethod\/qxm.conf" ],
+            
+              [  "usr\/share\/fcitx5\/inputmethod\/scj6.conf" ],
+            
+              [  "usr\/share\/fcitx5\/inputmethod\/shuangpin.conf" ],
+            
+              [  "usr\/share\/fcitx5\/inputmethod\/stroke5.conf" ],
+            
+              [  "usr\/share\/fcitx5\/inputmethod\/t9.conf" ],
+            
+              [  "usr\/share\/fcitx5\/inputmethod\/wanfeng.conf" ],
+            
+              [  "usr\/share\/fcitx5\/inputmethod\/wbpy.conf" ],
+            
+              [  "usr\/share\/fcitx5\/inputmethod\/wbx.conf" ],
+            
+              [  "usr\/share\/fcitx5\/inputmethod\/wu.conf" ],
+            
+              [  "usr\/share\/fcitx5\/inputmethod\/wubi-large.conf" ],
+            
+              [  "usr\/share\/fcitx5\/inputmethod\/wubi98-large.conf" ],
+            
+              [  "usr\/share\/fcitx5\/inputmethod\/wubi98-pinyin.conf" ],
+            
+              [  "usr\/share\/fcitx5\/inputmethod\/wubi98-single.conf" ],
+            
+              [  "usr\/share\/fcitx5\/inputmethod\/wubi98.conf" ],
+            
+              [  "usr\/share\/fcitx5\/inputmethod\/zhengma-large.conf" ],
+            
+              [  "usr\/share\/fcitx5\/inputmethod\/zhengma-pinyin.conf" ],
+            
+              [  "usr\/share\/fcitx5\/inputmethod\/zhengma.conf" ],
+            
+              [  "usr\/share\/fcitx5\/inputmethod\/zrm.conf" ],
+            
+              [  "usr\/share\/fcitx5\/pinyin\/chaizi.dict" ],
+            
+              [  "usr\/share\/fcitx5\/pinyin\/symbols" ],
+            
+              [  "usr\/share\/fcitx5\/pinyinhelper\/py_stroke.mb" ],
+            
+              [  "usr\/share\/fcitx5\/pinyinhelper\/py_table.mb" ],
+            
+              [  "usr\/share\/fcitx5\/punctuation\/punc.mb.zh_CN" ],
+            
+              [  "usr\/share\/fcitx5\/punctuation\/punc.mb.zh_HK" ],
+            
+              [  "usr\/share\/fcitx5\/punctuation\/punc.mb.zh_TW" ],
+            
+              [  "usr\/share\/fcitx5\/spell\/en_dict.fscd" ],
+            
+              [  "usr\/share\/fcitx5\/table\/array30-large.main.dict" ],
+            
+              [  "usr\/share\/fcitx5\/table\/array30.main.dict" ],
+            
+              [  "usr\/share\/fcitx5\/table\/boshiamy.main.dict" ],
+            
+              [  "usr\/share\/fcitx5\/table\/cangjie-large.main.dict" ],
+            
+              [  "usr\/share\/fcitx5\/table\/cangjie3.main.dict" ],
+            
+              [  "usr\/share\/fcitx5\/table\/cangjie5.main.dict" ],
+            
+              [  "usr\/share\/fcitx5\/table\/cantonese.main.dict" ],
+            
+              [  "usr\/share\/fcitx5\/table\/cantonhk.main.dict" ],
+            
+              [  "usr\/share\/fcitx5\/table\/easy-large.main.dict" ],
+            
+              [  "usr\/share\/fcitx5\/table\/jyutping-table.main.dict" ],
+            
+              [  "usr\/share\/fcitx5\/table\/quick-classic.main.dict" ],
+            
+              [  "usr\/share\/fcitx5\/table\/quick3.main.dict" ],
+            
+              [  "usr\/share\/fcitx5\/table\/quick5.main.dict" ],
+            
+              [  "usr\/share\/fcitx5\/table\/scj6.main.dict" ],
+            
+              [  "usr\/share\/fcitx5\/table\/stroke5.main.dict" ],
+            
+              [  "usr\/share\/fcitx5\/table\/t9.main.dict" ],
+            
+              [  "usr\/share\/fcitx5\/table\/wu.main.dict" ],
+            
+              [  "usr\/share\/fcitx5\/table\/wubi-large.main.dict" ],
+            
+              [  "usr\/share\/fcitx5\/table\/wubi98-large.main.dict" ],
+            
+              [  "usr\/share\/fcitx5\/table\/wubi98-pinyin.main.dict" ],
+            
+              [  "usr\/share\/fcitx5\/table\/wubi98-single.main.dict" ],
+            
+              [  "usr\/share\/fcitx5\/table\/wubi98.main.dict" ],
+            
+              [  "usr\/share\/fcitx5\/table\/zhengma-large.main.dict" ],
+            
+              [  "usr\/share\/fcitx5\/table\/zhengma-pinyin.main.dict" ],
+            
+              [  "usr\/share\/fcitx5\/table\/zhengma.main.dict" ],
+            
+              [  "usr\/share\/fcitx5\/testing\/addon\/testfrontend.conf" ],
+            
+              [  "usr\/share\/fcitx5\/testing\/addon\/testim.conf" ],
+            
+              [  "usr\/share\/fcitx5\/testing\/addon\/testui.conf" ],
+            
+              [  "usr\/share\/fcitx5\/themes\/default\/arrow.png" ],
+            
+              [  "usr\/share\/fcitx5\/themes\/default\/next.png" ],
+            
+              [  "usr\/share\/fcitx5\/themes\/default\/prev.png" ],
+            
+              [  "usr\/share\/fcitx5\/themes\/default\/radio.png" ],
+            
+              [  "usr\/share\/fcitx5\/themes\/default\/theme.conf" ],
+            
+              [  "usr\/share\/fcitx5\/themes\/default-dark\/arrow.png" ],
+            
+              [  "usr\/share\/fcitx5\/themes\/default-dark\/next.png" ],
+            
+              [  "usr\/share\/fcitx5\/themes\/default-dark\/prev.png" ],
+            
+              [  "usr\/share\/fcitx5\/themes\/default-dark\/radio.png" ],
+            
+              [  "usr\/share\/fcitx5\/themes\/default-dark\/theme.conf" ],
+            
+              [  "usr\/share\/fcitx5\/unicode\/charselectdata" ],
+            
+              [  "usr\/share\/gir-1.0\/Anthy-9000.gir" ],
+            
+              [  "usr\/share\/gir-1.0\/FcitxG-1.0.gir" ],
+            
+              [  "usr\/share\/glib-2.0\/schemas\/org.freedesktop.ibus.engine.anthy.gschema.xml" ],
+            
+              [  "usr\/share\/glib-2.0\/schemas\/org.freedesktop.ibus.engine.hangul.gschema.xml" ],
+            
+              [  "usr\/share\/glib-2.0\/schemas\/org.freedesktop.ibus.engine.table.gschema.xml" ],
+            
+              [  "usr\/share\/ibus\/component\/anthy.xml" ],
+            
+              [  "usr\/share\/ibus\/component\/hangul.xml" ],
+            
+              [  "usr\/share\/ibus\/component\/pinyin.xml" ],
+            
+              [  "usr\/share\/ibus\/component\/table.xml" ],
+            
+              [  "usr\/share\/ibus-anthy\/dicts\/emoji.t" ],
+            
+              [  "usr\/share\/ibus-anthy\/dicts\/era.t" ],
+            
+              [  "usr\/share\/ibus-anthy\/dicts\/oldchar.t" ],
+            
+              [  "usr\/share\/ibus-anthy\/dicts\/symbol.t" ],
+            
+              [  "usr\/share\/ibus-anthy\/dicts\/zipcode.t" ],
+            
+              [  "usr\/share\/ibus-anthy\/engine\/__pycache__\/_config.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/ibus-anthy\/engine\/__pycache__\/_config.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/ibus-anthy\/engine\/__pycache__\/_config.cpython-314.pyc" ],
+            
+              [  "usr\/share\/ibus-anthy\/engine\/__pycache__\/engine.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/ibus-anthy\/engine\/__pycache__\/engine.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/ibus-anthy\/engine\/__pycache__\/engine.cpython-314.pyc" ],
+            
+              [  "usr\/share\/ibus-anthy\/engine\/__pycache__\/factory.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/ibus-anthy\/engine\/__pycache__\/factory.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/ibus-anthy\/engine\/__pycache__\/factory.cpython-314.pyc" ],
+            
+              [  "usr\/share\/ibus-anthy\/engine\/__pycache__\/jastring.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/ibus-anthy\/engine\/__pycache__\/jastring.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/ibus-anthy\/engine\/__pycache__\/jastring.cpython-314.pyc" ],
+            
+              [  "usr\/share\/ibus-anthy\/engine\/__pycache__\/kana.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/ibus-anthy\/engine\/__pycache__\/kana.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/ibus-anthy\/engine\/__pycache__\/kana.cpython-314.pyc" ],
+            
+              [  "usr\/share\/ibus-anthy\/engine\/__pycache__\/main.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/ibus-anthy\/engine\/__pycache__\/main.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/ibus-anthy\/engine\/__pycache__\/main.cpython-314.pyc" ],
+            
+              [  "usr\/share\/ibus-anthy\/engine\/__pycache__\/romaji.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/ibus-anthy\/engine\/__pycache__\/romaji.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/ibus-anthy\/engine\/__pycache__\/romaji.cpython-314.pyc" ],
+            
+              [  "usr\/share\/ibus-anthy\/engine\/__pycache__\/segment.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/ibus-anthy\/engine\/__pycache__\/segment.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/ibus-anthy\/engine\/__pycache__\/segment.cpython-314.pyc" ],
+            
+              [  "usr\/share\/ibus-anthy\/engine\/__pycache__\/tables.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/ibus-anthy\/engine\/__pycache__\/tables.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/ibus-anthy\/engine\/__pycache__\/tables.cpython-314.pyc" ],
+            
+              [  "usr\/share\/ibus-anthy\/engine\/__pycache__\/thumb.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/ibus-anthy\/engine\/__pycache__\/thumb.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/ibus-anthy\/engine\/__pycache__\/thumb.cpython-314.pyc" ],
+            
+              [  "usr\/share\/ibus-anthy\/engine\/_config.py" ],
+            
+              [  "usr\/share\/ibus-anthy\/engine\/default.xml" ],
+            
+              [  "usr\/share\/ibus-anthy\/engine\/engine.py" ],
+            
+              [  "usr\/share\/ibus-anthy\/engine\/factory.py" ],
+            
+              [  "usr\/share\/ibus-anthy\/engine\/jastring.py" ],
+            
+              [  "usr\/share\/ibus-anthy\/engine\/kana.py" ],
+            
+              [  "usr\/share\/ibus-anthy\/engine\/main.py" ],
+            
+              [  "usr\/share\/ibus-anthy\/engine\/romaji.py" ],
+            
+              [  "usr\/share\/ibus-anthy\/engine\/segment.py" ],
+            
+              [  "usr\/share\/ibus-anthy\/engine\/tables.py" ],
+            
+              [  "usr\/share\/ibus-anthy\/engine\/thumb.py" ],
+            
+              [  "usr\/share\/ibus-anthy\/icons\/ibus-anthy.png" ],
+            
+              [  "usr\/share\/ibus-anthy\/setup\/__pycache__\/_config.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/ibus-anthy\/setup\/__pycache__\/_config.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/ibus-anthy\/setup\/__pycache__\/_config.cpython-314.pyc" ],
+            
+              [  "usr\/share\/ibus-anthy\/setup\/__pycache__\/anthyprefs.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/ibus-anthy\/setup\/__pycache__\/anthyprefs.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/ibus-anthy\/setup\/__pycache__\/anthyprefs.cpython-314.pyc" ],
+            
+              [  "usr\/share\/ibus-anthy\/setup\/__pycache__\/main.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/ibus-anthy\/setup\/__pycache__\/main.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/ibus-anthy\/setup\/__pycache__\/main.cpython-314.pyc" ],
+            
+              [  "usr\/share\/ibus-anthy\/setup\/__pycache__\/prefs.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/ibus-anthy\/setup\/__pycache__\/prefs.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/ibus-anthy\/setup\/__pycache__\/prefs.cpython-314.pyc" ],
+            
+              [  "usr\/share\/ibus-anthy\/setup\/_config.py" ],
+            
+              [  "usr\/share\/ibus-anthy\/setup\/anthyprefs.py" ],
+            
+              [  "usr\/share\/ibus-anthy\/setup\/main.py" ],
+            
+              [  "usr\/share\/ibus-anthy\/setup\/prefs.py" ],
+            
+              [  "usr\/share\/ibus-anthy\/setup\/setup.ui" ],
+            
+              [  "usr\/share\/ibus-hangul\/data\/symbol.txt" ],
+            
+              [  "usr\/share\/ibus-hangul\/icons\/ibus-hangul.png" ],
+            
+              [  "usr\/share\/ibus-hangul\/icons\/ibus-hangul.svg" ],
+            
+              [  "usr\/share\/ibus-hangul\/setup\/__pycache__\/config.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/ibus-hangul\/setup\/__pycache__\/config.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/ibus-hangul\/setup\/__pycache__\/config.cpython-314.pyc" ],
+            
+              [  "usr\/share\/ibus-hangul\/setup\/__pycache__\/keycapturedialog.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/ibus-hangul\/setup\/__pycache__\/keycapturedialog.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/ibus-hangul\/setup\/__pycache__\/keycapturedialog.cpython-314.pyc" ],
+            
+              [  "usr\/share\/ibus-hangul\/setup\/__pycache__\/main.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/ibus-hangul\/setup\/__pycache__\/main.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/ibus-hangul\/setup\/__pycache__\/main.cpython-314.pyc" ],
+            
+              [  "usr\/share\/ibus-hangul\/setup\/config.py" ],
+            
+              [  "usr\/share\/ibus-hangul\/setup\/keycapturedialog.py" ],
+            
+              [  "usr\/share\/ibus-hangul\/setup\/main.py" ],
+            
+              [  "usr\/share\/ibus-hangul\/setup\/setup.ui" ],
+            
+              [  "usr\/share\/ibus-pinyin\/db\/english.db" ],
+            
+              [  "usr\/share\/ibus-pinyin\/icons\/chinese.svg" ],
+            
+              [  "usr\/share\/ibus-pinyin\/icons\/english.svg" ],
+            
+              [  "usr\/share\/ibus-pinyin\/icons\/full-punct.svg" ],
+            
+              [  "usr\/share\/ibus-pinyin\/icons\/full.svg" ],
+            
+              [  "usr\/share\/ibus-pinyin\/icons\/half-punct.svg" ],
+            
+              [  "usr\/share\/ibus-pinyin\/icons\/half.svg" ],
+            
+              [  "usr\/share\/ibus-pinyin\/icons\/ibus-bopomofo.svg" ],
+            
+              [  "usr\/share\/ibus-pinyin\/icons\/ibus-pinyin.svg" ],
+            
+              [  "usr\/share\/ibus-pinyin\/icons\/simp-chinese.svg" ],
+            
+              [  "usr\/share\/ibus-pinyin\/icons\/trad-chinese.svg" ],
+            
+              [  "usr\/share\/ibus-pinyin\/phrases.txt" ],
+            
+              [  "usr\/share\/ibus-pinyin\/setup\/__pycache__\/main.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/ibus-pinyin\/setup\/__pycache__\/main.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/ibus-pinyin\/setup\/__pycache__\/main.cpython-314.pyc" ],
+            
+              [  "usr\/share\/ibus-pinyin\/setup\/__pycache__\/version.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/ibus-pinyin\/setup\/__pycache__\/version.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/ibus-pinyin\/setup\/__pycache__\/version.cpython-314.pyc" ],
+            
+              [  "usr\/share\/ibus-pinyin\/setup\/ibus-pinyin-preferences.ui" ],
+            
+              [  "usr\/share\/ibus-pinyin\/setup\/main.py" ],
+            
+              [  "usr\/share\/ibus-pinyin\/setup\/version.py" ],
+            
+              [  "usr\/share\/ibus-table\/data\/coin9.wav" ],
+            
+              [  "usr\/share\/ibus-table\/data\/phrase.txt.bz2" ],
+            
+              [  "usr\/share\/ibus-table\/data\/pinyin_table.txt.bz2" ],
+            
+              [  "usr\/share\/ibus-table\/engine\/__pycache__\/chinese_variants.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/ibus-table\/engine\/__pycache__\/chinese_variants.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/ibus-table\/engine\/__pycache__\/chinese_variants.cpython-314.pyc" ],
+            
+              [  "usr\/share\/ibus-table\/engine\/__pycache__\/factory.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/ibus-table\/engine\/__pycache__\/factory.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/ibus-table\/engine\/__pycache__\/factory.cpython-314.pyc" ],
+            
+              [  "usr\/share\/ibus-table\/engine\/__pycache__\/ibus_table_location.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/ibus-table\/engine\/__pycache__\/ibus_table_location.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/ibus-table\/engine\/__pycache__\/ibus_table_location.cpython-314.pyc" ],
+            
+              [  "usr\/share\/ibus-table\/engine\/__pycache__\/it_active_window.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/ibus-table\/engine\/__pycache__\/it_active_window.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/ibus-table\/engine\/__pycache__\/it_active_window.cpython-314.pyc" ],
+            
+              [  "usr\/share\/ibus-table\/engine\/__pycache__\/it_sound.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/ibus-table\/engine\/__pycache__\/it_sound.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/ibus-table\/engine\/__pycache__\/it_sound.cpython-314.pyc" ],
+            
+              [  "usr\/share\/ibus-table\/engine\/__pycache__\/it_util.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/ibus-table\/engine\/__pycache__\/it_util.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/ibus-table\/engine\/__pycache__\/it_util.cpython-314.pyc" ],
+            
+              [  "usr\/share\/ibus-table\/engine\/__pycache__\/main.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/ibus-table\/engine\/__pycache__\/main.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/ibus-table\/engine\/__pycache__\/main.cpython-314.pyc" ],
+            
+              [  "usr\/share\/ibus-table\/engine\/__pycache__\/tabcreatedb.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/ibus-table\/engine\/__pycache__\/tabcreatedb.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/ibus-table\/engine\/__pycache__\/tabcreatedb.cpython-314.pyc" ],
+            
+              [  "usr\/share\/ibus-table\/engine\/__pycache__\/table.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/ibus-table\/engine\/__pycache__\/table.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/ibus-table\/engine\/__pycache__\/table.cpython-314.pyc" ],
+            
+              [  "usr\/share\/ibus-table\/engine\/__pycache__\/tabsqlitedb.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/ibus-table\/engine\/__pycache__\/tabsqlitedb.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/ibus-table\/engine\/__pycache__\/tabsqlitedb.cpython-314.pyc" ],
+            
+              [  "usr\/share\/ibus-table\/engine\/__pycache__\/version.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/ibus-table\/engine\/__pycache__\/version.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/ibus-table\/engine\/__pycache__\/version.cpython-314.pyc" ],
+            
+              [  "usr\/share\/ibus-table\/engine\/chinese_variants.py" ],
+            
+              [  "usr\/share\/ibus-table\/engine\/factory.py" ],
+            
+              [  "usr\/share\/ibus-table\/engine\/ibus_table_location.py" ],
+            
+              [  "usr\/share\/ibus-table\/engine\/it_active_window.py" ],
+            
+              [  "usr\/share\/ibus-table\/engine\/it_sound.py" ],
+            
+              [  "usr\/share\/ibus-table\/engine\/it_util.py" ],
+            
+              [  "usr\/share\/ibus-table\/engine\/main.py" ],
+            
+              [  "usr\/share\/ibus-table\/engine\/tabcreatedb.py" ],
+            
+              [  "usr\/share\/ibus-table\/engine\/table.py" ],
+            
+              [  "usr\/share\/ibus-table\/engine\/tabsqlitedb.py" ],
+            
+              [  "usr\/share\/ibus-table\/engine\/version.py" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/acommit.svg" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/array30-big.png" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/array30.png" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/cangjie-big.png" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/cangjie-big.svg" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/cangjie3.svg" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/cangjie5.svg" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/cantonese.png" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/cantonese.svg" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/cantonhk.png" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/cantonyale.png" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/cantonyale.svg" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/cb-mode.svg" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/chinese.svg" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/cns11643.png" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/compose.svg" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/easy-big.png" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/english.svg" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/erbi-qs.svg" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/erbi.png" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/full-letter.svg" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/full-punct.svg" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/half-letter.svg" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/half-punct.svg" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/hu-old-hungarian-rovas.svg" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/hu_Hung_HU_traditional.png" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/ibus-emoticon.svg" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/ibus-table.svg" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/ipa-x-sampa.svg" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/jyutping.png" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/latex.svg" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/lean.svg" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/mathwriter.png" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/mongol_bichig.svg" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/ncommit.svg" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/onechar.svg" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/phrase.svg" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/py-mode.svg" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/quick-classic.png" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/quick-classic.svg" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/quick3.png" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/quick5.png" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/rusle.png" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/rustrad.png" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/sc-mode.svg" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/scb-mode.svg" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/scj6.svg" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/stroke5.png" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/stroke5.svg" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/tab-mode.svg" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/tc-mode.svg" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/tcb-mode.svg" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/telex.png" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/thai.png" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/translit-ua.svg" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/translit.svg" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/viqr.png" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/vni.png" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/wu.png" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/wu.svg" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/wubi-haifeng86.svg" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/wubi-jidian86.svg" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/yawerty.png" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/yong.png" ],
+            
+              [  "usr\/share\/ibus-table\/icons\/yong.svg" ],
+            
+              [  "usr\/share\/ibus-table\/setup\/__pycache__\/i18n.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/ibus-table\/setup\/__pycache__\/i18n.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/ibus-table\/setup\/__pycache__\/i18n.cpython-314.pyc" ],
+            
+              [  "usr\/share\/ibus-table\/setup\/__pycache__\/main.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/ibus-table\/setup\/__pycache__\/main.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/ibus-table\/setup\/__pycache__\/main.cpython-314.pyc" ],
+            
+              [  "usr\/share\/ibus-table\/setup\/__pycache__\/version.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/share\/ibus-table\/setup\/__pycache__\/version.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/share\/ibus-table\/setup\/__pycache__\/version.cpython-314.pyc" ],
+            
+              [  "usr\/share\/ibus-table\/setup\/i18n.py" ],
+            
+              [  "usr\/share\/ibus-table\/setup\/main.py" ],
+            
+              [  "usr\/share\/ibus-table\/setup\/version.py" ],
+            
+              [  "usr\/share\/ibus-table\/tables\/array30-big.db" ],
+            
+              [  "usr\/share\/ibus-table\/tables\/array30.db" ],
+            
+              [  "usr\/share\/ibus-table\/tables\/cangjie-big.db" ],
+            
+              [  "usr\/share\/ibus-table\/tables\/cangjie3.db" ],
+            
+              [  "usr\/share\/ibus-table\/tables\/cangjie5.db" ],
+            
+              [  "usr\/share\/ibus-table\/tables\/cantonese.db" ],
+            
+              [  "usr\/share\/ibus-table\/tables\/cantonhk.db" ],
+            
+              [  "usr\/share\/ibus-table\/tables\/cantonyale.db" ],
+            
+              [  "usr\/share\/ibus-table\/tables\/cns11643.db" ],
+            
+              [  "usr\/share\/ibus-table\/tables\/compose.db" ],
+            
+              [  "usr\/share\/ibus-table\/tables\/easy-big.db" ],
+            
+              [  "usr\/share\/ibus-table\/tables\/emoticon-table.db" ],
+            
+              [  "usr\/share\/ibus-table\/tables\/erbi-qs.db" ],
+            
+              [  "usr\/share\/ibus-table\/tables\/erbi.db" ],
+            
+              [  "usr\/share\/ibus-table\/tables\/hu-old-hungarian-rovas.db" ],
+            
+              [  "usr\/share\/ibus-table\/tables\/hu_Hung_HU_traditional.db" ],
+            
+              [  "usr\/share\/ibus-table\/tables\/ipa-x-sampa.db" ],
+            
+              [  "usr\/share\/ibus-table\/tables\/jyutping.db" ],
+            
+              [  "usr\/share\/ibus-table\/tables\/latex.db" ],
+            
+              [  "usr\/share\/ibus-table\/tables\/lean.db" ],
+            
+              [  "usr\/share\/ibus-table\/tables\/mathwriter-ibus.db" ],
+            
+              [  "usr\/share\/ibus-table\/tables\/mongol_bichig.db" ],
+            
+              [  "usr\/share\/ibus-table\/tables\/quick-classic.db" ],
+            
+              [  "usr\/share\/ibus-table\/tables\/quick3.db" ],
+            
+              [  "usr\/share\/ibus-table\/tables\/quick5.db" ],
+            
+              [  "usr\/share\/ibus-table\/tables\/rusle.db" ],
+            
+              [  "usr\/share\/ibus-table\/tables\/rustrad.db" ],
+            
+              [  "usr\/share\/ibus-table\/tables\/scj6.db" ],
+            
+              [  "usr\/share\/ibus-table\/tables\/stroke5.db" ],
+            
+              [  "usr\/share\/ibus-table\/tables\/telex.db" ],
+            
+              [  "usr\/share\/ibus-table\/tables\/template.txt" ],
+            
+              [  "usr\/share\/ibus-table\/tables\/thai.db" ],
+            
+              [  "usr\/share\/ibus-table\/tables\/translit-ua.db" ],
+            
+              [  "usr\/share\/ibus-table\/tables\/translit.db" ],
+            
+              [  "usr\/share\/ibus-table\/tables\/viqr.db" ],
+            
+              [  "usr\/share\/ibus-table\/tables\/vni.db" ],
+            
+              [  "usr\/share\/ibus-table\/tables\/wu.db" ],
+            
+              [  "usr\/share\/ibus-table\/tables\/wubi-haifeng86.db" ],
+            
+              [  "usr\/share\/ibus-table\/tables\/wubi-jidian86.db" ],
+            
+              [  "usr\/share\/ibus-table\/tables\/yawerty.db" ],
+            
+              [  "usr\/share\/ibus-table\/tables\/yong.db" ],
+            
+              [  "usr\/share\/icons\/hicolor\/128x128\/apps\/fcitx.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/128x128\/apps\/ibus-table.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/128x128\/apps\/org.fcitx.Fcitx5.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/fcitx-anthy.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/fcitx-cangjie.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/fcitx-chn.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/fcitx-chttrans-active.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/fcitx-chttrans-inactive.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/fcitx-erbi.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/fcitx-fullwidth-active.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/fcitx-fullwidth-inactive.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/fcitx-hangul.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/fcitx-hanja-active.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/fcitx-hanja-inactive.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/fcitx-pinyin.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/fcitx-punc-active.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/fcitx-punc-inactive.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/fcitx-remind-active.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/fcitx-remind-inactive.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/fcitx-shuangpin.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/fcitx-wbpy.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/fcitx-wubi.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/fcitx-ziranma.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/fcitx.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/fcitx_array30.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/fcitx_array30_large.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/fcitx_boshiamy.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/fcitx_cantonese.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/fcitx_cantonhk.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/fcitx_easy_large.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/fcitx_jyutping_table.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/fcitx_quick3.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/fcitx_quick5.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/fcitx_quick_classic.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/fcitx_scj6.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/fcitx_stroke5.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/fcitx_t9.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/fcitx_wu.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/fcitx_zhengma.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/ibus-table.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/org.fcitx.Fcitx5.fcitx-anthy.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/org.fcitx.Fcitx5.fcitx-cangjie.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/org.fcitx.Fcitx5.fcitx-chn.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/org.fcitx.Fcitx5.fcitx-chttrans-active.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/org.fcitx.Fcitx5.fcitx-chttrans-inactive.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/org.fcitx.Fcitx5.fcitx-erbi.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/org.fcitx.Fcitx5.fcitx-fullwidth-active.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/org.fcitx.Fcitx5.fcitx-fullwidth-inactive.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/org.fcitx.Fcitx5.fcitx-hangul.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/org.fcitx.Fcitx5.fcitx-hanja-active.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/org.fcitx.Fcitx5.fcitx-hanja-inactive.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/org.fcitx.Fcitx5.fcitx-pinyin.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/org.fcitx.Fcitx5.fcitx-punc-active.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/org.fcitx.Fcitx5.fcitx-punc-inactive.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/org.fcitx.Fcitx5.fcitx-remind-active.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/org.fcitx.Fcitx5.fcitx-remind-inactive.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/org.fcitx.Fcitx5.fcitx-shuangpin.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/org.fcitx.Fcitx5.fcitx-wbpy.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/org.fcitx.Fcitx5.fcitx-wubi.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/org.fcitx.Fcitx5.fcitx-ziranma.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/org.fcitx.Fcitx5.fcitx_array30.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/org.fcitx.Fcitx5.fcitx_array30_large.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/org.fcitx.Fcitx5.fcitx_boshiamy.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/org.fcitx.Fcitx5.fcitx_cantonese.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/org.fcitx.Fcitx5.fcitx_cantonhk.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/org.fcitx.Fcitx5.fcitx_easy_large.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/org.fcitx.Fcitx5.fcitx_jyutping_table.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/org.fcitx.Fcitx5.fcitx_quick3.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/org.fcitx.Fcitx5.fcitx_quick5.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/org.fcitx.Fcitx5.fcitx_quick_classic.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/org.fcitx.Fcitx5.fcitx_scj6.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/org.fcitx.Fcitx5.fcitx_stroke5.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/org.fcitx.Fcitx5.fcitx_t9.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/org.fcitx.Fcitx5.fcitx_wu.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/org.fcitx.Fcitx5.fcitx_zhengma.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/org.fcitx.Fcitx5.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/fcitx-anthy.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/fcitx-cangjie.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/fcitx-chn.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/fcitx-chttrans-active.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/fcitx-chttrans-inactive.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/fcitx-erbi.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/fcitx-fullwidth-active.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/fcitx-fullwidth-inactive.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/fcitx-hangul.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/fcitx-hanja-active.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/fcitx-hanja-inactive.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/fcitx-pinyin.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/fcitx-punc-active.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/fcitx-punc-inactive.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/fcitx-remind-active.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/fcitx-remind-inactive.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/fcitx-shuangpin.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/fcitx-wbpy.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/fcitx-wubi.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/fcitx-ziranma.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/fcitx.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/fcitx_array30.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/fcitx_array30_large.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/fcitx_boshiamy.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/fcitx_cantonese.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/fcitx_cantonhk.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/fcitx_easy_large.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/fcitx_jyutping_table.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/fcitx_quick3.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/fcitx_quick5.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/fcitx_quick_classic.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/fcitx_scj6.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/fcitx_stroke5.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/fcitx_t9.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/fcitx_wu.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/fcitx_zhengma.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/ibus-table.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/org.fcitx.Fcitx5.fcitx-anthy.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/org.fcitx.Fcitx5.fcitx-cangjie.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/org.fcitx.Fcitx5.fcitx-chn.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/org.fcitx.Fcitx5.fcitx-chttrans-active.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/org.fcitx.Fcitx5.fcitx-chttrans-inactive.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/org.fcitx.Fcitx5.fcitx-erbi.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/org.fcitx.Fcitx5.fcitx-fullwidth-active.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/org.fcitx.Fcitx5.fcitx-fullwidth-inactive.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/org.fcitx.Fcitx5.fcitx-hangul.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/org.fcitx.Fcitx5.fcitx-hanja-active.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/org.fcitx.Fcitx5.fcitx-hanja-inactive.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/org.fcitx.Fcitx5.fcitx-pinyin.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/org.fcitx.Fcitx5.fcitx-punc-active.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/org.fcitx.Fcitx5.fcitx-punc-inactive.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/org.fcitx.Fcitx5.fcitx-remind-active.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/org.fcitx.Fcitx5.fcitx-remind-inactive.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/org.fcitx.Fcitx5.fcitx-shuangpin.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/org.fcitx.Fcitx5.fcitx-wbpy.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/org.fcitx.Fcitx5.fcitx-wubi.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/org.fcitx.Fcitx5.fcitx-ziranma.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/org.fcitx.Fcitx5.fcitx_array30.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/org.fcitx.Fcitx5.fcitx_array30_large.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/org.fcitx.Fcitx5.fcitx_boshiamy.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/org.fcitx.Fcitx5.fcitx_cantonese.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/org.fcitx.Fcitx5.fcitx_cantonhk.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/org.fcitx.Fcitx5.fcitx_easy_large.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/org.fcitx.Fcitx5.fcitx_jyutping_table.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/org.fcitx.Fcitx5.fcitx_quick3.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/org.fcitx.Fcitx5.fcitx_quick5.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/org.fcitx.Fcitx5.fcitx_quick_classic.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/org.fcitx.Fcitx5.fcitx_scj6.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/org.fcitx.Fcitx5.fcitx_stroke5.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/org.fcitx.Fcitx5.fcitx_t9.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/org.fcitx.Fcitx5.fcitx_wu.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/org.fcitx.Fcitx5.fcitx_zhengma.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/org.fcitx.Fcitx5.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/status\/fcitx-anthy-symbol.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/status\/org.fcitx.Fcitx5.fcitx-anthy-symbol.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/fcitx-anthy.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/fcitx-cangjie.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/fcitx-chn.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/fcitx-chttrans-active.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/fcitx-chttrans-inactive.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/fcitx-erbi.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/fcitx-fullwidth-active.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/fcitx-fullwidth-inactive.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/fcitx-hangul.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/fcitx-hanja-active.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/fcitx-hanja-inactive.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/fcitx-pinyin.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/fcitx-punc-active.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/fcitx-punc-inactive.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/fcitx-remind-active.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/fcitx-remind-inactive.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/fcitx-shuangpin.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/fcitx-wbpy.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/fcitx-wubi.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/fcitx-ziranma.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/fcitx.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/fcitx_array30.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/fcitx_array30_large.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/fcitx_boshiamy.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/fcitx_cantonese.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/fcitx_cantonhk.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/fcitx_easy_large.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/fcitx_jyutping_table.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/fcitx_quick3.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/fcitx_quick5.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/fcitx_quick_classic.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/fcitx_scj6.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/fcitx_stroke5.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/fcitx_t9.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/fcitx_wu.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/fcitx_zhengma.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/org.fcitx.Fcitx5.fcitx-anthy.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/org.fcitx.Fcitx5.fcitx-cangjie.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/org.fcitx.Fcitx5.fcitx-chn.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/org.fcitx.Fcitx5.fcitx-chttrans-active.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/org.fcitx.Fcitx5.fcitx-chttrans-inactive.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/org.fcitx.Fcitx5.fcitx-erbi.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/org.fcitx.Fcitx5.fcitx-fullwidth-active.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/org.fcitx.Fcitx5.fcitx-fullwidth-inactive.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/org.fcitx.Fcitx5.fcitx-hangul.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/org.fcitx.Fcitx5.fcitx-hanja-active.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/org.fcitx.Fcitx5.fcitx-hanja-inactive.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/org.fcitx.Fcitx5.fcitx-pinyin.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/org.fcitx.Fcitx5.fcitx-punc-active.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/org.fcitx.Fcitx5.fcitx-punc-inactive.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/org.fcitx.Fcitx5.fcitx-remind-active.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/org.fcitx.Fcitx5.fcitx-remind-inactive.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/org.fcitx.Fcitx5.fcitx-shuangpin.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/org.fcitx.Fcitx5.fcitx-wbpy.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/org.fcitx.Fcitx5.fcitx-wubi.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/org.fcitx.Fcitx5.fcitx-ziranma.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/org.fcitx.Fcitx5.fcitx_array30.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/org.fcitx.Fcitx5.fcitx_array30_large.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/org.fcitx.Fcitx5.fcitx_boshiamy.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/org.fcitx.Fcitx5.fcitx_cantonese.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/org.fcitx.Fcitx5.fcitx_cantonhk.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/org.fcitx.Fcitx5.fcitx_easy_large.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/org.fcitx.Fcitx5.fcitx_jyutping_table.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/org.fcitx.Fcitx5.fcitx_quick3.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/org.fcitx.Fcitx5.fcitx_quick5.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/org.fcitx.Fcitx5.fcitx_quick_classic.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/org.fcitx.Fcitx5.fcitx_scj6.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/org.fcitx.Fcitx5.fcitx_stroke5.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/org.fcitx.Fcitx5.fcitx_t9.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/org.fcitx.Fcitx5.fcitx_wu.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/org.fcitx.Fcitx5.fcitx_zhengma.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/org.fcitx.Fcitx5.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/256x256\/apps\/ibus-table.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/32x32\/apps\/fcitx.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/32x32\/apps\/ibus-table.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/32x32\/apps\/org.fcitx.Fcitx5.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/fcitx-anthy.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/fcitx-cangjie.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/fcitx-chn.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/fcitx-chttrans-active.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/fcitx-chttrans-inactive.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/fcitx-erbi.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/fcitx-fullwidth-active.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/fcitx-fullwidth-inactive.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/fcitx-hangul.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/fcitx-hanja-active.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/fcitx-hanja-inactive.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/fcitx-pinyin.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/fcitx-punc-active.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/fcitx-punc-inactive.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/fcitx-remind-active.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/fcitx-remind-inactive.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/fcitx-shuangpin.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/fcitx-wbpy.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/fcitx-wubi.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/fcitx-ziranma.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/fcitx.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/fcitx_array30.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/fcitx_array30_large.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/fcitx_boshiamy.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/fcitx_cantonese.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/fcitx_cantonhk.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/fcitx_easy_large.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/fcitx_jyutping_table.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/fcitx_quick3.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/fcitx_quick5.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/fcitx_quick_classic.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/fcitx_scj6.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/fcitx_stroke5.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/fcitx_t9.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/fcitx_wu.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/fcitx_zhengma.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/ibus-table.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/org.fcitx.Fcitx5.fcitx-anthy.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/org.fcitx.Fcitx5.fcitx-cangjie.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/org.fcitx.Fcitx5.fcitx-chn.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/org.fcitx.Fcitx5.fcitx-chttrans-active.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/org.fcitx.Fcitx5.fcitx-chttrans-inactive.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/org.fcitx.Fcitx5.fcitx-erbi.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/org.fcitx.Fcitx5.fcitx-fullwidth-active.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/org.fcitx.Fcitx5.fcitx-fullwidth-inactive.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/org.fcitx.Fcitx5.fcitx-hangul.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/org.fcitx.Fcitx5.fcitx-hanja-active.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/org.fcitx.Fcitx5.fcitx-hanja-inactive.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/org.fcitx.Fcitx5.fcitx-pinyin.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/org.fcitx.Fcitx5.fcitx-punc-active.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/org.fcitx.Fcitx5.fcitx-punc-inactive.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/org.fcitx.Fcitx5.fcitx-remind-active.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/org.fcitx.Fcitx5.fcitx-remind-inactive.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/org.fcitx.Fcitx5.fcitx-shuangpin.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/org.fcitx.Fcitx5.fcitx-wbpy.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/org.fcitx.Fcitx5.fcitx-wubi.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/org.fcitx.Fcitx5.fcitx-ziranma.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/org.fcitx.Fcitx5.fcitx_array30.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/org.fcitx.Fcitx5.fcitx_array30_large.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/org.fcitx.Fcitx5.fcitx_boshiamy.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/org.fcitx.Fcitx5.fcitx_cantonese.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/org.fcitx.Fcitx5.fcitx_cantonhk.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/org.fcitx.Fcitx5.fcitx_easy_large.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/org.fcitx.Fcitx5.fcitx_jyutping_table.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/org.fcitx.Fcitx5.fcitx_quick3.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/org.fcitx.Fcitx5.fcitx_quick5.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/org.fcitx.Fcitx5.fcitx_quick_classic.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/org.fcitx.Fcitx5.fcitx_scj6.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/org.fcitx.Fcitx5.fcitx_stroke5.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/org.fcitx.Fcitx5.fcitx_t9.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/org.fcitx.Fcitx5.fcitx_wu.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/org.fcitx.Fcitx5.fcitx_zhengma.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/org.fcitx.Fcitx5.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/64x64\/apps\/fcitx-hangul.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/64x64\/apps\/fcitx_array30.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/64x64\/apps\/fcitx_array30_large.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/64x64\/apps\/fcitx_boshiamy.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/64x64\/apps\/fcitx_easy_large.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/64x64\/apps\/fcitx_t9.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/64x64\/apps\/fcitx_zhengma.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/64x64\/apps\/ibus-hangul.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/64x64\/apps\/ibus-setup-hangul.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/64x64\/apps\/ibus-table.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/64x64\/apps\/org.fcitx.Fcitx5.fcitx-hangul.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/64x64\/apps\/org.fcitx.Fcitx5.fcitx_array30.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/64x64\/apps\/org.fcitx.Fcitx5.fcitx_array30_large.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/64x64\/apps\/org.fcitx.Fcitx5.fcitx_boshiamy.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/64x64\/apps\/org.fcitx.Fcitx5.fcitx_easy_large.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/64x64\/apps\/org.fcitx.Fcitx5.fcitx_t9.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/64x64\/apps\/org.fcitx.Fcitx5.fcitx_zhengma.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/apps\/fcitx-fullwidth-active-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/apps\/fcitx-fullwidth-active.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/apps\/fcitx-fullwidth-inactive-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/apps\/fcitx-fullwidth-inactive.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/apps\/fcitx-punc-active-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/apps\/fcitx-punc-active.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/apps\/fcitx-punc-inactive-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/apps\/fcitx-punc-inactive.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/apps\/fcitx.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/apps\/ibus-anthy.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/apps\/ibus-hangul.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/apps\/ibus-setup-hangul.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/apps\/ibus-table.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/apps\/org.fcitx.Fcitx5.fcitx-fullwidth-active-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/apps\/org.fcitx.Fcitx5.fcitx-fullwidth-active.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/apps\/org.fcitx.Fcitx5.fcitx-fullwidth-inactive-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/apps\/org.fcitx.Fcitx5.fcitx-fullwidth-inactive.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/apps\/org.fcitx.Fcitx5.fcitx-punc-active-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/apps\/org.fcitx.Fcitx5.fcitx-punc-active.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/apps\/org.fcitx.Fcitx5.fcitx-punc-inactive-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/apps\/org.fcitx.Fcitx5.fcitx-punc-inactive.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/apps\/org.fcitx.Fcitx5.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/status\/fcitx-anthy-period-japanese.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/status\/fcitx-anthy-period-latin.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/status\/fcitx-anthy-period-wide-japanese.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/status\/fcitx-anthy-period-wide-latin.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/status\/fcitx-anthy-symbol.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/status\/org.fcitx.Fcitx5.fcitx-anthy-period-japanese.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/status\/org.fcitx.Fcitx5.fcitx-anthy-period-latin.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/status\/org.fcitx.Fcitx5.fcitx-anthy-period-wide-japanese.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/status\/org.fcitx.Fcitx5.fcitx-anthy-period-wide-latin.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/status\/org.fcitx.Fcitx5.fcitx-anthy-symbol.svg" ],
+            
+              [  "usr\/share\/libhangul\/hanja\/hanja.txt" ],
+            
+              [  "usr\/share\/libhangul\/hanja\/mssymbol.txt" ],
+            
+              [  "usr\/share\/libime\/cj.main.dict" ],
+            
+              [  "usr\/share\/libime\/db.main.dict" ],
+            
+              [  "usr\/share\/libime\/erbi.main.dict" ],
+            
+              [  "usr\/share\/libime\/extb.dict" ],
+            
+              [  "usr\/share\/libime\/qxm.main.dict" ],
+            
+              [  "usr\/share\/libime\/sc.dict" ],
+            
+              [  "usr\/share\/libime\/wanfeng.main.dict" ],
+            
+              [  "usr\/share\/libime\/wbpy.main.dict" ],
+            
+              [  "usr\/share\/libime\/wbx.main.dict" ],
+            
+              [  "usr\/share\/libime\/zrm.main.dict" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/fcitx5-anthy.mo" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/fcitx5-chinese-addons.mo" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/fcitx5-configtool.mo" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/fcitx5-hangul.mo" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/fcitx5-qt.mo" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/fcitx5.mo" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/ibus-anthy.mo" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/ibus-table.mo" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/kcm_fcitx5.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/ibus-anthy.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/ibus-table.mo" ],
+            
+              [  "usr\/share\/locale\/da\/LC_MESSAGES\/fcitx5-anthy.mo" ],
+            
+              [  "usr\/share\/locale\/da\/LC_MESSAGES\/fcitx5-chinese-addons.mo" ],
+            
+              [  "usr\/share\/locale\/da\/LC_MESSAGES\/fcitx5-configtool.mo" ],
+            
+              [  "usr\/share\/locale\/da\/LC_MESSAGES\/fcitx5-hangul.mo" ],
+            
+              [  "usr\/share\/locale\/da\/LC_MESSAGES\/fcitx5-qt.mo" ],
+            
+              [  "usr\/share\/locale\/da\/LC_MESSAGES\/fcitx5.mo" ],
+            
+              [  "usr\/share\/locale\/da\/LC_MESSAGES\/kcm_fcitx5.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/fcitx5-anthy.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/fcitx5-chinese-addons.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/fcitx5-configtool.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/fcitx5-hangul.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/fcitx5-qt.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/fcitx5.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/ibus-anthy.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/ibus-table.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/kcm_fcitx5.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/ibus-anthy.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/ibus-table.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/fcitx5-qt.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/fcitx5.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/ibus-anthy.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/ibus-table.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/kcm_fcitx5.mo" ],
+            
+              [  "usr\/share\/locale\/et\/LC_MESSAGES\/ibus-anthy.mo" ],
+            
+              [  "usr\/share\/locale\/fa\/LC_MESSAGES\/ibus-table.mo" ],
+            
+              [  "usr\/share\/locale\/fi\/LC_MESSAGES\/ibus-anthy.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/fcitx5-anthy.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/fcitx5-chinese-addons.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/fcitx5-configtool.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/fcitx5-hangul.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/fcitx5-qt.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/fcitx5.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/ibus-anthy.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/ibus-pinyin.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/ibus-table.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/kcm_fcitx5.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/fcitx5-anthy.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/fcitx5-chinese-addons.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/fcitx5-configtool.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/fcitx5-hangul.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/fcitx5-qt.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/fcitx5.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/kcm_fcitx5.mo" ],
+            
+              [  "usr\/share\/locale\/hu\/LC_MESSAGES\/ibus-anthy.mo" ],
+            
+              [  "usr\/share\/locale\/hu\/LC_MESSAGES\/ibus-table.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/ibus-anthy.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/fcitx5-anthy.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/fcitx5-chinese-addons.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/fcitx5-configtool.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/fcitx5-hangul.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/fcitx5-qt.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/fcitx5.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/ibus-anthy.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/ibus-table.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/kcm_fcitx5.mo" ],
+            
+              [  "usr\/share\/locale\/ka\/LC_MESSAGES\/fcitx5-anthy.mo" ],
+            
+              [  "usr\/share\/locale\/ka\/LC_MESSAGES\/fcitx5-chinese-addons.mo" ],
+            
+              [  "usr\/share\/locale\/ka\/LC_MESSAGES\/fcitx5-configtool.mo" ],
+            
+              [  "usr\/share\/locale\/ka\/LC_MESSAGES\/fcitx5-hangul.mo" ],
+            
+              [  "usr\/share\/locale\/ka\/LC_MESSAGES\/fcitx5-qt.mo" ],
+            
+              [  "usr\/share\/locale\/ka\/LC_MESSAGES\/fcitx5.mo" ],
+            
+              [  "usr\/share\/locale\/ka\/LC_MESSAGES\/kcm_fcitx5.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/fcitx5-anthy.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/fcitx5-chinese-addons.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/fcitx5-configtool.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/fcitx5-hangul.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/fcitx5-qt.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/fcitx5.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/ibus-anthy.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/ibus-hangul.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/kcm_fcitx5.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/libhangul.mo" ],
+            
+              [  "usr\/share\/locale\/pa\/LC_MESSAGES\/ibus-anthy.mo" ],
+            
+              [  "usr\/share\/locale\/pt\/LC_MESSAGES\/ibus-anthy.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/ibus-anthy.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/ibus-table.mo" ],
+            
+              [  "usr\/share\/locale\/pt_PT\/LC_MESSAGES\/ibus-table.mo" ],
+            
+              [  "usr\/share\/locale\/ro\/LC_MESSAGES\/ibus-anthy.mo" ],
+            
+              [  "usr\/share\/locale\/ro\/LC_MESSAGES\/ibus-table.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/fcitx5-anthy.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/fcitx5-chinese-addons.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/fcitx5-configtool.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/fcitx5-hangul.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/fcitx5-qt.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/fcitx5.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/ibus-pinyin.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/ibus-table.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/kcm_fcitx5.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/ibus-anthy.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/fcitx5-configtool.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/fcitx5-hangul.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/fcitx5-qt.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/ibus-anthy.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/ibus-table.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/kcm_fcitx5.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/ibus-anthy.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/ibus-table.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/fcitx5-anthy.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/fcitx5-chinese-addons.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/fcitx5-configtool.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/fcitx5-hangul.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/fcitx5-qt.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/fcitx5.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/kcm_fcitx5.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/fcitx5-anthy.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/fcitx5-chinese-addons.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/fcitx5-configtool.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/fcitx5-hangul.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/fcitx5-qt.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/fcitx5.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/ibus-anthy.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/ibus-hangul.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/ibus-pinyin.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/ibus-table.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/kcm_fcitx5.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/fcitx5-anthy.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/fcitx5-chinese-addons.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/fcitx5-configtool.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/fcitx5-hangul.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/fcitx5-qt.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/fcitx5.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/ibus-pinyin.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/ibus-table.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/kcm_fcitx5.mo" ],
+            
+              [  "usr\/share\/man\/man1\/ibus-table-createdb.1.bz2" ],
+            
+              [  "usr\/share\/metainfo\/org.fcitx.Fcitx5.Addon.Anthy.metainfo.xml" ],
+            
+              [  "usr\/share\/metainfo\/org.fcitx.Fcitx5.Addon.ChineseAddons.metainfo.xml" ],
+            
+              [  "usr\/share\/metainfo\/org.fcitx.Fcitx5.Addon.Hangul.metainfo.xml" ],
+            
+              [  "usr\/share\/metainfo\/org.fcitx.Fcitx5.Addon.TableExtra.metainfo.xml" ],
+            
+              [  "usr\/share\/metainfo\/org.fcitx.Fcitx5.metainfo.xml" ],
+            
+              [  "usr\/share\/metainfo\/org.freedesktop.ibus.engine.anthy.metainfo.xml" ],
+            
+              [  "usr\/share\/metainfo\/org.freedesktop.ibus.engine.hangul.metainfo.xml" ],
+            
+              [  "usr\/share\/metainfo\/org.freedesktop.ibus.engine.table.metainfo.xml" ],
+            
+              [  "usr\/share\/opencc\/HKVariants.ocd2" ],
+            
+              [  "usr\/share\/opencc\/HKVariantsRev.ocd2" ],
+            
+              [  "usr\/share\/opencc\/HKVariantsRevPhrases.ocd2" ],
+            
+              [  "usr\/share\/opencc\/JPShinjitaiCharacters.ocd2" ],
+            
+              [  "usr\/share\/opencc\/JPShinjitaiPhrases.ocd2" ],
+            
+              [  "usr\/share\/opencc\/JPVariants.ocd2" ],
+            
+              [  "usr\/share\/opencc\/JPVariantsRev.ocd2" ],
+            
+              [  "usr\/share\/opencc\/STCharacters.ocd2" ],
+            
+              [  "usr\/share\/opencc\/STPhrases.ocd2" ],
+            
+              [  "usr\/share\/opencc\/TSCharacters.ocd2" ],
+            
+              [  "usr\/share\/opencc\/TSPhrases.ocd2" ],
+            
+              [  "usr\/share\/opencc\/TWPhrases.ocd2" ],
+            
+              [  "usr\/share\/opencc\/TWPhrasesRev.ocd2" ],
+            
+              [  "usr\/share\/opencc\/TWVariants.ocd2" ],
+            
+              [  "usr\/share\/opencc\/TWVariantsRev.ocd2" ],
+            
+              [  "usr\/share\/opencc\/TWVariantsRevPhrases.ocd2" ],
+            
+              [  "usr\/share\/opencc\/hk2s.json" ],
+            
+              [  "usr\/share\/opencc\/hk2t.json" ],
+            
+              [  "usr\/share\/opencc\/jp2t.json" ],
+            
+              [  "usr\/share\/opencc\/s2hk.json" ],
+            
+              [  "usr\/share\/opencc\/s2t.json" ],
+            
+              [  "usr\/share\/opencc\/s2tw.json" ],
+            
+              [  "usr\/share\/opencc\/s2twp.json" ],
+            
+              [  "usr\/share\/opencc\/t2hk.json" ],
+            
+              [  "usr\/share\/opencc\/t2jp.json" ],
+            
+              [  "usr\/share\/opencc\/t2s.json" ],
+            
+              [  "usr\/share\/opencc\/t2tw.json" ],
+            
+              [  "usr\/share\/opencc\/tw2s.json" ],
+            
+              [  "usr\/share\/opencc\/tw2sp.json" ],
+            
+              [  "usr\/share\/opencc\/tw2t.json" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

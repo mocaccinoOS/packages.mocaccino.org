@@ -1,0 +1,893 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing layers/qtile-0.36.0&#43;9 in mocaccino-desktop-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> layers/qtile-0.36.0&#43;9
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                A full-featured, hackable tiling window manager written in Python
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-desktop-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-desktop-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of layers/qtile
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/desktop:qtile-layers-0.36.0-9" target="_blank"> quay.io/mocaccino/desktop:qtile-layers-0.36.0-9 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/desktop:qtile-layers-0.36.0-9/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 0.36.0&#43;9  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> MIT </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/wlroots">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  wlroots &gt;=0 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 3
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: dev-python/dbus-fast dev-python/pulsectl dev-python/pulsectl-asyncio x11-wm/qtile
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://qtile.org" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://qtile.org </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/dev-python/dbus-fast">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  dbus-fast &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/dev-python/pulsectl">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  pulsectl &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/dev-python/pulsectl-asyncio">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  pulsectl-asyncio &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-desktop-stable/x11-wm/qtile">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  qtile &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "etc\/X11\/Sessions\/qtile" ],
+            
+              [  "usr\/bin\/qtile" ],
+            
+              [  "usr\/lib\/python-exec\/python3.14\/qtile" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast\/__version__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast\/_private\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast\/_private\/_cython_compat.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast\/_private\/address.cpython-314-x86_64-linux-gnu.so" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast\/_private\/address.pxd" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast\/_private\/address.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast\/_private\/constants.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast\/_private\/marshaller.cpython-314-x86_64-linux-gnu.so" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast\/_private\/marshaller.pxd" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast\/_private\/marshaller.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast\/_private\/unmarshaller.cpython-314-x86_64-linux-gnu.so" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast\/_private\/unmarshaller.pxd" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast\/_private\/unmarshaller.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast\/_private\/util.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast\/aio\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast\/aio\/message_bus.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast\/aio\/message_reader.cpython-314-x86_64-linux-gnu.so" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast\/aio\/message_reader.pxd" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast\/aio\/message_reader.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast\/aio\/proxy_object.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast\/annotations.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast\/auth.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast\/constants.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast\/errors.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast\/glib\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast\/glib\/message_bus.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast\/glib\/proxy_object.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast\/introspection.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast\/message.cpython-314-x86_64-linux-gnu.so" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast\/message.pxd" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast\/message.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast\/message_bus.cpython-314-x86_64-linux-gnu.so" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast\/message_bus.pxd" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast\/message_bus.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast\/proxy_object.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast\/py.typed" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast\/send_reply.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast\/service.cpython-314-x86_64-linux-gnu.so" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast\/service.pxd" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast\/service.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast\/signature.cpython-314-x86_64-linux-gnu.so" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast\/signature.pxd" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast\/signature.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast\/unpack.cpython-314-x86_64-linux-gnu.so" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast\/unpack.pxd" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast\/unpack.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast\/validators.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast-5.0.22.dist-info\/METADATA" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/dbus_fast-5.0.22.dist-info\/WHEEL" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/_build_config.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/base\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/base\/core.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/base\/drawer.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/base\/float_states.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/base\/idle_inhibit.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/base\/idle_notify.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/base\/window.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/wayland\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/wayland\/_ffi.cpython-314-x86_64-linux-gnu.so" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/wayland\/cffi\/build.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/wayland\/core.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/wayland\/drawer.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/wayland\/ffi_stub.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/wayland\/idle_inhibit.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/wayland\/idle_notify.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/wayland\/inputs.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/wayland\/proto\/wlr-layer-shell-unstable-v1.xml" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/wayland\/proto\/wlr-output-power-management-unstable-v1.xml" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/wayland\/qw\/cairo-buffer.c" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/wayland\/qw\/cairo-buffer.h" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/wayland\/qw\/cursor.c" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/wayland\/qw\/cursor.h" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/wayland\/qw\/input-device.c" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/wayland\/qw\/input-device.h" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/wayland\/qw\/internal-view.c" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/wayland\/qw\/internal-view.h" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/wayland\/qw\/keyboard.c" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/wayland\/qw\/keyboard.h" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/wayland\/qw\/layer-view.c" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/wayland\/qw\/layer-view.h" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/wayland\/qw\/log.c" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/wayland\/qw\/log.h" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/wayland\/qw\/output.c" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/wayland\/qw\/output.h" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/wayland\/qw\/server.c" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/wayland\/qw\/server.h" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/wayland\/qw\/session-lock.c" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/wayland\/qw\/session-lock.h" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/wayland\/qw\/util.c" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/wayland\/qw\/util.h" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/wayland\/qw\/view.c" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/wayland\/qw\/view.h" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/wayland\/qw\/xdg-view.c" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/wayland\/qw\/xdg-view.h" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/wayland\/qw\/xwayland-view.c" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/wayland\/qw\/xwayland-view.h" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/wayland\/window.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/x11\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/x11\/core.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/x11\/drawer.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/x11\/idle_notify.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/x11\/window.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/x11\/xcbq.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/x11\/xcursors.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/x11\/xcursors_ffi.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/backend\/x11\/xkeysyms.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/bar.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/command\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/command\/base.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/command\/client.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/command\/graph.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/command\/interface.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/config.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/configurable.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/confreader.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/core\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/core\/lifecycle.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/core\/loop.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/core\/manager.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/core\/state.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/dgroups.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/extension\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/extension\/base.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/extension\/command_set.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/extension\/dmenu.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/extension\/window_list.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/group.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/hook.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/images.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/interactive\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/interactive\/iqshell_install.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/interactive\/iqshell_kernel.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/interactive\/repl.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/ipc.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/layout\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/layout\/base.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/layout\/bsp.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/layout\/columns.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/layout\/floating.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/layout\/matrix.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/layout\/max.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/layout\/plasma.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/layout\/ratiotile.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/layout\/screensplit.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/layout\/slice.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/layout\/spiral.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/layout\/stack.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/layout\/tile.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/layout\/tree.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/layout\/verticaltile.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/layout\/xmonad.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/layout\/zoomy.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/lazy.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/log_utils.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/notify.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/pango_ffi.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/pangocffi.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/popup.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/py.typed" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/resources\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/resources\/battery-icons\/battery-caution-charging.png" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/resources\/battery-icons\/battery-caution.png" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/resources\/battery-icons\/battery-empty.png" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/resources\/battery-icons\/battery-full-charged.png" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/resources\/battery-icons\/battery-full-charging.png" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/resources\/battery-icons\/battery-full.png" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/resources\/battery-icons\/battery-good-charging.png" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/resources\/battery-icons\/battery-good.png" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/resources\/battery-icons\/battery-low-charging.png" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/resources\/battery-icons\/battery-low.png" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/resources\/battery-icons\/battery-missing.png" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/resources\/default_config.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/resources\/layout-icons\/layout-bsp.png" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/resources\/layout-icons\/layout-columns.png" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/resources\/layout-icons\/layout-floating.png" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/resources\/layout-icons\/layout-matrix.png" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/resources\/layout-icons\/layout-max.png" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/resources\/layout-icons\/layout-monadtall.png" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/resources\/layout-icons\/layout-monadthreecol.png" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/resources\/layout-icons\/layout-monadwide.png" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/resources\/layout-icons\/layout-plasma.png" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/resources\/layout-icons\/layout-ratiotile.png" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/resources\/layout-icons\/layout-screensplit.png" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/resources\/layout-icons\/layout-slice.png" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/resources\/layout-icons\/layout-spiral.png" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/resources\/layout-icons\/layout-stack.png" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/resources\/layout-icons\/layout-tile.png" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/resources\/layout-icons\/layout-treetab.png" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/resources\/layout-icons\/layout-unknown.png" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/resources\/layout-icons\/layout-verticaltile.png" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/resources\/layout-icons\/layout-wmii.png" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/resources\/layout-icons\/layout-zoomy.png" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/resources\/logo.png" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/resources\/sleep.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/scratchpad.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/scripts\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/scripts\/check.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/scripts\/cmd_obj.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/scripts\/launch.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/scripts\/main.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/scripts\/migrate.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/scripts\/migrations\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/scripts\/migrations\/_base.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/scripts\/migrations\/change_bluetooth_args.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/scripts\/migrations\/change_stockticker_args.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/scripts\/migrations\/change_wlan_args.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/scripts\/migrations\/match_list_regex.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/scripts\/migrations\/migrate_thread_pool_text.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/scripts\/migrations\/remove_cmd_prefix.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/scripts\/migrations\/rename_currentlayouticon.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/scripts\/migrations\/rename_unspecified.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/scripts\/repl.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/scripts\/run_cmd.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/scripts\/shell.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/scripts\/start.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/scripts\/top.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/scripts\/x11_identify_output.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/sh.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/utils.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/backlight.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/base.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/battery.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/bluetooth.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/canto.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/caps_num_lock_indicator.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/check_updates.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/chord.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/clipboard.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/clock.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/config_error.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/countdown.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/cpu.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/crashme.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/crypto_ticker.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/currentlayout.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/currentscreen.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/df.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/do_not_disturb.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/gen_poll_url.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/generic_poll_text.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/gmail_checker.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/graph.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/groupbox.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/hdd.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/helpers\/status_notifier\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/helpers\/status_notifier\/fallback_icon.png" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/helpers\/status_notifier\/statusnotifier.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/idlerpg.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/image.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/imapwidget.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/import_error.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/keyboardkbdd.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/keyboardlayout.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/khal_calendar.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/launchbar.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/load.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/maildir.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/memory.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/mpd2widget.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/mpris2widget.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/net.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/netup.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/notify.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/nvidia_sensors.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/open_weather.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/plasma.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/pomodoro.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/prompt.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/pulse_volume.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/quick_exit.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/redshift.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/screensplit.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/sensors.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/sep.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/she.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/spacer.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/statusnotifier.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/stock_ticker.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/swaync.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/systray.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/tasklist.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/textbox.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/thermal_zone.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/tuned_manager.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/vertical_clock.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/volume.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/wallpaper.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/widgetbox.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/window_count.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/windowname.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/windowtabs.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/wlan.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/wlaniw.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/libqtile\/widget\/wttr.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pulsectl\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pulsectl\/_pulsectl.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pulsectl\/lookup.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pulsectl\/pulsectl.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pulsectl-24.12.0.dist-info\/METADATA" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pulsectl-24.12.0.dist-info\/WHEEL" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pulsectl-24.12.0.dist-info\/top_level.txt" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pulsectl_asyncio\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pulsectl_asyncio\/pa_asyncio_mainloop.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pulsectl_asyncio\/pulsectl_async.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pulsectl_asyncio-1.3.2.dist-info\/METADATA" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pulsectl_asyncio-1.3.2.dist-info\/WHEEL" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pulsectl_asyncio-1.3.2.dist-info\/top_level.txt" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/qtile-0.36.0.dist-info\/METADATA" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/qtile-0.36.0.dist-info\/WHEEL" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/qtile-0.36.0.dist-info\/entry_points.txt" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/qtile-0.36.0.dist-info\/top_level.txt" ],
+            
+              [  "usr\/share\/doc\/dbus-fast-5.0.22\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/pulsectl-24.12.0\/README.rst.bz2" ],
+            
+              [  "usr\/share\/doc\/pulsectl-asyncio-1.3.2\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/qtile-0.36.0\/CHANGELOG.bz2" ],
+            
+              [  "usr\/share\/doc\/qtile-0.36.0\/README.rst.bz2" ],
+            
+              [  "usr\/share\/wayland-sessions\/qtile-wayland.desktop" ],
+            
+              [  "usr\/share\/xsessions\/qtile.desktop" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,409 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing apps/0ad-0.28.0-r1 in mocaccino-community-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> apps/0ad-0.28.0-r1
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                A free, real-time strategy game
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-community-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-community-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of apps/0ad
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/mocaccino-community:0ad-apps-0.28.0-r1" target="_blank"> quay.io/mocaccino/mocaccino-community:0ad-apps-0.28.0-r1 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/mocaccino-community:0ad-apps-0.28.0-r1/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 0.28.0-r1  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> BitstreamVera CC-BY-SA-3.0 GPL-2 LGPL-2.1 LPPL-1.3c MIT ZLIB </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/gnome-common">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  gnome-common &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/wxGTK">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  wxGTK 3.2.8.1-r2&#43;3 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/enet">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  enet 1.3.18&#43;1 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> appstream.id: com.play0ad.zeroad
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: games-strategy/0ad
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://play0ad.com/" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://play0ad.com/ </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/games-strategy/0ad">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  0ad &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/net-libs/gloox">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  gloox &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "usr\/bin\/0ad" ],
+            
+              [  "usr\/bin\/0ad-ActorEditor" ],
+            
+              [  "usr\/bin\/gloox-config" ],
+            
+              [  "usr\/lib64\/0ad\/libAtlasUI.so" ],
+            
+              [  "usr\/lib64\/0ad\/libCollada.so" ],
+            
+              [  "usr\/lib64\/0ad\/libnvcore.so" ],
+            
+              [  "usr\/lib64\/0ad\/libnvimage.so" ],
+            
+              [  "usr\/lib64\/0ad\/libnvmath.so" ],
+            
+              [  "usr\/lib64\/0ad\/libnvtt.so" ],
+            
+              [  "usr\/lib64\/libgloox.so" ],
+            
+              [  "usr\/lib64\/libgloox.so.18" ],
+            
+              [  "usr\/lib64\/libgloox.so.18.0.0" ],
+            
+              [  "usr\/lib64\/pkgconfig\/gloox.pc" ],
+            
+              [  "usr\/share\/0ad\/config\/default.cfg" ],
+            
+              [  "usr\/share\/0ad\/config\/keys.txt" ],
+            
+              [  "usr\/share\/0ad\/l10n\/ca.engine.po" ],
+            
+              [  "usr\/share\/0ad\/l10n\/cs.engine.po" ],
+            
+              [  "usr\/share\/0ad\/l10n\/de.engine.po" ],
+            
+              [  "usr\/share\/0ad\/l10n\/el.engine.po" ],
+            
+              [  "usr\/share\/0ad\/l10n\/en_GB.engine.po" ],
+            
+              [  "usr\/share\/0ad\/l10n\/engine.pot" ],
+            
+              [  "usr\/share\/0ad\/l10n\/es.engine.po" ],
+            
+              [  "usr\/share\/0ad\/l10n\/eu.engine.po" ],
+            
+              [  "usr\/share\/0ad\/l10n\/fi.engine.po" ],
+            
+              [  "usr\/share\/0ad\/l10n\/fr.engine.po" ],
+            
+              [  "usr\/share\/0ad\/l10n\/gl.engine.po" ],
+            
+              [  "usr\/share\/0ad\/l10n\/hu.engine.po" ],
+            
+              [  "usr\/share\/0ad\/l10n\/id.engine.po" ],
+            
+              [  "usr\/share\/0ad\/l10n\/it.engine.po" ],
+            
+              [  "usr\/share\/0ad\/l10n\/ja.engine.po" ],
+            
+              [  "usr\/share\/0ad\/l10n\/ko.engine.po" ],
+            
+              [  "usr\/share\/0ad\/l10n\/nl.engine.po" ],
+            
+              [  "usr\/share\/0ad\/l10n\/pl.engine.po" ],
+            
+              [  "usr\/share\/0ad\/l10n\/pt_BR.engine.po" ],
+            
+              [  "usr\/share\/0ad\/l10n\/pt_PT.engine.po" ],
+            
+              [  "usr\/share\/0ad\/l10n\/ru.engine.po" ],
+            
+              [  "usr\/share\/0ad\/l10n\/sk.engine.po" ],
+            
+              [  "usr\/share\/0ad\/l10n\/sv.engine.po" ],
+            
+              [  "usr\/share\/0ad\/l10n\/tr.engine.po" ],
+            
+              [  "usr\/share\/0ad\/l10n\/uk.engine.po" ],
+            
+              [  "usr\/share\/0ad\/l10n\/vi.engine.po" ],
+            
+              [  "usr\/share\/0ad\/l10n\/zh.engine.po" ],
+            
+              [  "usr\/share\/0ad\/l10n\/zh_TW.engine.po" ],
+            
+              [  "usr\/share\/0ad\/mods\/mod\/mod.zip" ],
+            
+              [  "usr\/share\/0ad\/mods\/public\/mod.json" ],
+            
+              [  "usr\/share\/0ad\/mods\/public\/public.zip" ],
+            
+              [  "usr\/share\/0ad\/tools\/atlas\/buttons\/next_s.bmp" ],
+            
+              [  "usr\/share\/0ad\/tools\/atlas\/buttons\/pause_s.bmp" ],
+            
+              [  "usr\/share\/0ad\/tools\/atlas\/buttons\/play_s.bmp" ],
+            
+              [  "usr\/share\/0ad\/tools\/atlas\/buttons\/previous_s.bmp" ],
+            
+              [  "usr\/share\/0ad\/tools\/atlas\/buttons\/record_s.bmp" ],
+            
+              [  "usr\/share\/0ad\/tools\/atlas\/buttons\/stop_s.bmp" ],
+            
+              [  "usr\/share\/0ad\/tools\/atlas\/help.json" ],
+            
+              [  "usr\/share\/0ad\/tools\/atlas\/icons\/ScenarioEditor.ico" ],
+            
+              [  "usr\/share\/0ad\/tools\/atlas\/lists.xml" ],
+            
+              [  "usr\/share\/0ad\/tools\/atlas\/toolbar\/alterelevation.png" ],
+            
+              [  "usr\/share\/0ad\/tools\/atlas\/toolbar\/alterelevation_s.png" ],
+            
+              [  "usr\/share\/0ad\/tools\/atlas\/toolbar\/cinematic.png" ],
+            
+              [  "usr\/share\/0ad\/tools\/atlas\/toolbar\/default.png" ],
+            
+              [  "usr\/share\/0ad\/tools\/atlas\/toolbar\/default_s.png" ],
+            
+              [  "usr\/share\/0ad\/tools\/atlas\/toolbar\/environment.png" ],
+            
+              [  "usr\/share\/0ad\/tools\/atlas\/toolbar\/flattenelevation.png" ],
+            
+              [  "usr\/share\/0ad\/tools\/atlas\/toolbar\/flattenelevation_s.png" ],
+            
+              [  "usr\/share\/0ad\/tools\/atlas\/toolbar\/map.png" ],
+            
+              [  "usr\/share\/0ad\/tools\/atlas\/toolbar\/mapsettings.png" ],
+            
+              [  "usr\/share\/0ad\/tools\/atlas\/toolbar\/moveobject.png" ],
+            
+              [  "usr\/share\/0ad\/tools\/atlas\/toolbar\/moveobject_s.png" ],
+            
+              [  "usr\/share\/0ad\/tools\/atlas\/toolbar\/movepath.png" ],
+            
+              [  "usr\/share\/0ad\/tools\/atlas\/toolbar\/object.png" ],
+            
+              [  "usr\/share\/0ad\/tools\/atlas\/toolbar\/objects.png" ],
+            
+              [  "usr\/share\/0ad\/tools\/atlas\/toolbar\/paintterrain.png" ],
+            
+              [  "usr\/share\/0ad\/tools\/atlas\/toolbar\/paintterrain_s.png" ],
+            
+              [  "usr\/share\/0ad\/tools\/atlas\/toolbar\/player.png" ],
+            
+              [  "usr\/share\/0ad\/tools\/atlas\/toolbar\/redo.png" ],
+            
+              [  "usr\/share\/0ad\/tools\/atlas\/toolbar\/smoothelevation.png" ],
+            
+              [  "usr\/share\/0ad\/tools\/atlas\/toolbar\/terrain.png" ],
+            
+              [  "usr\/share\/0ad\/tools\/atlas\/toolbar\/trigger.png" ],
+            
+              [  "usr\/share\/0ad\/tools\/atlas\/toolbar\/undo.png" ],
+            
+              [  "usr\/share\/applications\/0ad.desktop" ],
+            
+              [  "usr\/share\/icons\/hicolor\/128x128\/apps\/0ad.png" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

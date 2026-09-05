@@ -1,0 +1,3267 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing apps/librecad-2.2.2_alpha1_pre20250509&#43;1 in mocaccino-community-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> apps/librecad-2.2.2_alpha1_pre20250509&#43;1
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                Generic 2D CAD program
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-community-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-community-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of apps/librecad
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/mocaccino-community:librecad-apps-2.2.2_alpha1_pre20250509-1" target="_blank"> quay.io/mocaccino/mocaccino-community:librecad-apps-2.2.2_alpha1_pre20250509-1 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/mocaccino-community:librecad-apps-2.2.2_alpha1_pre20250509-1/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 2.2.2_alpha1_pre20250509&#43;1  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> GPL-2 </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/qt">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  qt &gt;=0 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> appstream.id: org.librecad.librecad
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: media-gfx/librecad
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://www.librecad.org/" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://www.librecad.org/ </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/media-gfx/librecad">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  librecad &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "usr\/bin\/librecad" ],
+            
+              [  "usr\/bin\/ttf2lff" ],
+            
+              [  "usr\/share\/applications\/librecad.desktop" ],
+            
+              [  "usr\/share\/librecad\/fonts\/amiri-regular.lff" ],
+            
+              [  "usr\/share\/librecad\/fonts\/azomix.lff" ],
+            
+              [  "usr\/share\/librecad\/fonts\/azomix_i.lff" ],
+            
+              [  "usr\/share\/librecad\/fonts\/cursive.lff" ],
+            
+              [  "usr\/share\/librecad\/fonts\/cyrillic_ii.lff" ],
+            
+              [  "usr\/share\/librecad\/fonts\/gothgbt.lff" ],
+            
+              [  "usr\/share\/librecad\/fonts\/gothgrt.lff" ],
+            
+              [  "usr\/share\/librecad\/fonts\/gothitt.lff" ],
+            
+              [  "usr\/share\/librecad\/fonts\/greek_ol.lff" ],
+            
+              [  "usr\/share\/librecad\/fonts\/greekc.lff" ],
+            
+              [  "usr\/share\/librecad\/fonts\/greekcs.lff" ],
+            
+              [  "usr\/share\/librecad\/fonts\/greekp.lff" ],
+            
+              [  "usr\/share\/librecad\/fonts\/greeks.lff" ],
+            
+              [  "usr\/share\/librecad\/fonts\/iso.lff" ],
+            
+              [  "usr\/share\/librecad\/fonts\/iso3098.lff" ],
+            
+              [  "usr\/share\/librecad\/fonts\/iso3098_i.lff" ],
+            
+              [  "usr\/share\/librecad\/fonts\/italicc.lff" ],
+            
+              [  "usr\/share\/librecad\/fonts\/italiccs.lff" ],
+            
+              [  "usr\/share\/librecad\/fonts\/italict.lff" ],
+            
+              [  "usr\/share\/librecad\/fonts\/kochigothic.lff" ],
+            
+              [  "usr\/share\/librecad\/fonts\/kochimincho.lff" ],
+            
+              [  "usr\/share\/librecad\/fonts\/kst32b.lff" ],
+            
+              [  "usr\/share\/librecad\/fonts\/lc_opengost-ar.lff" ],
+            
+              [  "usr\/share\/librecad\/fonts\/lc_opengost-br.lff" ],
+            
+              [  "usr\/share\/librecad\/fonts\/opengosttypea-regular.lff" ],
+            
+              [  "usr\/share\/librecad\/fonts\/opengosttypeb-regular.lff" ],
+            
+              [  "usr\/share\/librecad\/fonts\/romanc.lff" ],
+            
+              [  "usr\/share\/librecad\/fonts\/romancs.lff" ],
+            
+              [  "usr\/share\/librecad\/fonts\/romand.lff" ],
+            
+              [  "usr\/share\/librecad\/fonts\/romanp.lff" ],
+            
+              [  "usr\/share\/librecad\/fonts\/romans.lff" ],
+            
+              [  "usr\/share\/librecad\/fonts\/romansi.lff" ],
+            
+              [  "usr\/share\/librecad\/fonts\/romant.lff" ],
+            
+              [  "usr\/share\/librecad\/fonts\/scriptc.lff" ],
+            
+              [  "usr\/share\/librecad\/fonts\/scripts.lff" ],
+            
+              [  "usr\/share\/librecad\/fonts\/simplex.lff" ],
+            
+              [  "usr\/share\/librecad\/fonts\/standard.lff" ],
+            
+              [  "usr\/share\/librecad\/fonts\/syastro.lff" ],
+            
+              [  "usr\/share\/librecad\/fonts\/symap.lff" ],
+            
+              [  "usr\/share\/librecad\/fonts\/symath.lff" ],
+            
+              [  "usr\/share\/librecad\/fonts\/symbol.lff" ],
+            
+              [  "usr\/share\/librecad\/fonts\/symbol_misc1.lff" ],
+            
+              [  "usr\/share\/librecad\/fonts\/symbol_misc2.lff" ],
+            
+              [  "usr\/share\/librecad\/fonts\/symeteo.lff" ],
+            
+              [  "usr\/share\/librecad\/fonts\/symusic.lff" ],
+            
+              [  "usr\/share\/librecad\/fonts\/unicode.lff" ],
+            
+              [  "usr\/share\/librecad\/library\/algoritm\/alg1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/algoritm\/alg10.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/algoritm\/alg11.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/algoritm\/alg12.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/algoritm\/alg13.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/algoritm\/alg14.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/algoritm\/alg15.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/algoritm\/alg16.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/algoritm\/alg17.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/algoritm\/alg18.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/algoritm\/alg19.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/algoritm\/alg2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/algoritm\/alg20.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/algoritm\/alg21.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/algoritm\/alg22.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/algoritm\/alg23.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/algoritm\/alg24.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/algoritm\/alg25.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/algoritm\/alg26.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/algoritm\/alg27.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/algoritm\/alg28.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/algoritm\/alg29.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/algoritm\/alg3.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/algoritm\/alg30.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/algoritm\/alg31.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/algoritm\/alg32.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/algoritm\/alg33.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/algoritm\/alg34.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/algoritm\/alg35.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/algoritm\/alg4.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/algoritm\/alg5.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/algoritm\/alg6.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/algoritm\/alg7.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/algoritm\/alg8.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/algoritm\/alg9.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/block\/blk1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/block\/block10.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/block\/block11.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/block\/block12.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/block\/block13.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/block\/block14.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/block\/block15.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/block\/block16.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/block\/block17.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/block\/block18.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/block\/block19.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/block\/block2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/block\/block20.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/block\/block21.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/block\/block22.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/block\/block23.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/block\/block24.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/block\/block25.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/block\/block26.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/block\/block27.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/block\/block28.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/block\/block3.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/block\/block4.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/block\/block5.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/block\/block6.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/block\/block7.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/block\/block8.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/block\/block9.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/antenna\/ant1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/antenna\/ant10.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/antenna\/ant11.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/antenna\/ant12.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/antenna\/ant13.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/antenna\/ant14.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/antenna\/ant15.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/antenna\/ant16.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/antenna\/ant17.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/antenna\/ant18.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/antenna\/ant19.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/antenna\/ant2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/antenna\/ant3.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/antenna\/ant4.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/antenna\/ant5.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/antenna\/ant6.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/antenna\/ant7.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/antenna\/ant8.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/antenna\/ant9.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/antenna-iso\/Aerial-dipole.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/antenna-iso\/Aerial-loop.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/antenna-iso\/Aerial.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/audio\/buzzer.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/audio\/mg1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/audio\/mg2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/audio\/mg3.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/audio\/mg4.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/audio\/mik1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/audio\/mik2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/audio\/s1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/audio\/s2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/audio\/speak1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/audio\/speak2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/audio\/speak_phone.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/audio-iso\/Bell.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/audio-iso\/Buzzer.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/audio-iso\/Earphone.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/audio-iso\/Headphone.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/audio-iso\/Mic-condenser.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/audio-iso\/Microphone.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/audio-iso\/Record-pickup-coil.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/audio-iso\/Record-pickup-crys.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/audio-iso\/Signal.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/audio-iso\/Speaker.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/audio-iso\/Tape-head.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/battery\/gb1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/battery\/gb2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/battery\/sb1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/battery\/sb2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/battery\/tp1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/battery\/tp2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/battery\/tp3.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/capacitor\/Crystal.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/capacitor\/cap.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/capacitor\/cap1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/capacitor\/cap2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/capacitor\/cap3.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/capacitor\/cap4.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/capacitor\/cap5.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/capacitor\/cap6.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/capacitor\/cap7.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/capacitor\/cappol1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/capacitor\/cappol2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/capacitor\/cappol21.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/capacitor\/capvar1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/capacitor\/capvar12.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/capacitor\/capvar2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/capacitor\/capvar21.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/capacitor-iso\/Cap-FeedThro.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/capacitor-iso\/Cap-non-polar.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/capacitor-iso\/Cap-polar.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/capacitor-iso\/Cap-preset.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/capacitor-iso\/Cap-variable.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/capacitor-iso\/Crystal.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/coil\/L1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/coil\/L11.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/coil\/L2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/coil\/L21.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/coil\/L3.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/coil\/L31.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/coil\/L4.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/coil\/L41.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/coil\/L5.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/coil\/L6.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/coil\/L7.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/coil\/L8.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/coil\/L81.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/coil\/L9.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/coil\/L91.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/coil\/trr_1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/coil\/trr_2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/coil-iso\/Coil-air.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/coil-iso\/Coil-coupled.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/coil-iso\/Coil-ferrite.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/coil-iso\/Coil-iron-vert.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/coil-iso\/Coil-tuned.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/connector\/c1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/connector\/c10.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/connector\/c11.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/connector\/c13.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/connector\/c14.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/connector\/c15.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/connector\/c16.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/connector\/c17.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/connector\/c2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/connector\/c3.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/connector\/c4.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/connector\/c5.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/connector\/c6.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/connector\/c7.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/connector\/c8.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/connector\/c9.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/connector-iso\/Jack\u002bcontact.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/connector-iso\/Jack-relay.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/connector-iso\/Jack-socket.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/connector-iso\/Jack-stereo-cont.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/connector-iso\/Jack-stereo-sw.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/connector-iso\/Jack-stereo.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/connector-iso\/Junction-cross1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/connector-iso\/Junction-cross2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/connector-iso\/Junction-double1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/connector-iso\/Junction-double2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/connector-iso\/Junction-down1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/connector-iso\/Junction-down2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/connector-iso\/Junction-left1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/connector-iso\/Junction-left2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/connector-iso\/Junction-multi1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/connector-iso\/Junction-right1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/connector-iso\/Junction-right2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/connector-iso\/Junction-up1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/connector-iso\/Junction-up2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/connector-iso\/Socket-2pin.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/connector-iso\/Socket-Co-Ax.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/dev\/dev1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/dev\/dev10.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/dev\/dev11.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/dev\/dev12.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/dev\/dev13.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/dev\/dev14.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/dev\/dev15.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/dev\/dev16.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/dev\/dev17.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/dev\/dev18.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/dev\/dev19.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/dev\/dev2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/dev\/dev20.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/dev\/dev21.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/dev\/dev22.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/dev\/dev23.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/dev\/dev24.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/dev\/dev25.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/dev\/dev26.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/dev\/dev27.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/dev\/dev28.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/dev\/dev29.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/dev\/dev3.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/dev\/dev30.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/dev\/dev31.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/dev\/dev32.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/dev\/dev33.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/dev\/dev34.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/dev\/dev35.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/dev\/dev36.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/dev\/dev37.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/dev\/dev38.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/dev\/dev39.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/dev\/dev4.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/dev\/dev40.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/dev\/dev5.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/dev\/dev6.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/dev\/dev7.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/dev\/dev8.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/dev\/dev9.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/diode\/1vd1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/diode\/2vd1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/diode\/3vd1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/diode\/vd1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/diode\/vd10.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/diode\/vd11.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/diode\/vd2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/diode\/vd3.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/diode\/vd31.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/diode\/vd32.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/diode\/vd33.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/diode\/vd4.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/diode\/vd5.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/diode\/vd6.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/diode\/vd7.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/diode\/vd8.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/diode\/vd9.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/diode-iso\/Diode-Bridge.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/diode-iso\/Diode-Diac.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/diode-iso\/Diode-Gunn.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/diode-iso\/Diode-LED-Horiz.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/diode-iso\/Diode-LED.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/diode-iso\/Diode-PIN.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/diode-iso\/Diode-Photo-Horiz.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/diode-iso\/Diode-Photo.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/diode-iso\/Diode-Power.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/diode-iso\/Diode-SCS.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/diode-iso\/Diode-Schottky.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/diode-iso\/Diode-Shockley.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/diode-iso\/Diode-Thy-SCR.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/diode-iso\/Diode-Triac.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/diode-iso\/Diode-Tunnel.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/diode-iso\/Diode-Varactor(USA).dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/diode-iso\/Diode-Varactor-Varicap.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/diode-iso\/Diode-Varicap.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/diode-iso\/Diode-Zener.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk10.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk11.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk12.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk13.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk14.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk15.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk16.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk17.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk18.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk19.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk20.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk21.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk22.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk23.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk24.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk25.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk26.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk27.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk28.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk29.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk3.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk30.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk31.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk32.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk33.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk34.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk35.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk36.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk37.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk38.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk39.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk4.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk40.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk41.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk42.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk43.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk44.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk45.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk46.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk47.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk48.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk49.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk5.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk50.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk51.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk52.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk53.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk54.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk55.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk56.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk57.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk58.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk59.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk6.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk60.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk61.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk62.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk63.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk64.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk65.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk66.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk67.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk68.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk69.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk7.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk8.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/elk9.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electric_appliances\/lamp1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum\/evd1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum\/evd10.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum\/evd11.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum\/evd12.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum\/evd13.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum\/evd14.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum\/evd15.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum\/evd16.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum\/evd17.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum\/evd18.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum\/evd19.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum\/evd2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum\/evd20.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum\/evd21.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum\/evd22.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum\/evd23.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum\/evd24.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum\/evd25.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum\/evd26.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum\/evd27.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum\/evd28.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum\/evd29.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum\/evd3.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum\/evd30.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum\/evd31.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum\/evd32.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum\/evd33.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum\/evd34.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum\/evd35.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum\/evd36.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum\/evd37.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum\/evd4.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum\/evd5.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum\/evd6.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum\/evd7.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum\/evd8.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum\/evd9.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum-iso\/Valve-BT-horiz.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum-iso\/Valve-Barretter.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum-iso\/Valve-BeamTet.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum-iso\/Valve-Diode.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum-iso\/Valve-ECF80.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum-iso\/Valve-ECL86.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum-iso\/Valve-Indicator.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum-iso\/Valve-Pentode.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum-iso\/Valve-Rectifier.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum-iso\/Valve-Stabiliser.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum-iso\/Valve-Tetrode.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum-iso\/Valve-Tri-HalfDoub.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum-iso\/Valve-Tri-double.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum-iso\/Valve-Triode-Pen.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electro-vacuum-iso\/Valve-Triode.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electronics\/OY_1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electronics\/lm_29.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electronics\/mk1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electronics\/mk10.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electronics\/mk11.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electronics\/mk12.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electronics\/mk13.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electronics\/mk14.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electronics\/mk2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electronics\/mk3.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electronics\/mk4.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electronics\/mk5.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electronics\/mk6.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electronics\/mk7.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electronics\/mk8.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electronics\/mk9.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electronics\/s.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electronics\/trig.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electronics-iso\/Logic-AND-IEC.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electronics-iso\/Logic-AND.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electronics-iso\/Logic-NAND-IEC.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electronics-iso\/Logic-NAND.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electronics-iso\/Logic-NOR-IEC.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electronics-iso\/Logic-NOR.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electronics-iso\/Logic-NOT-IEC.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electronics-iso\/Logic-NOT.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electronics-iso\/Logic-OR-IEC.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electronics-iso\/Logic-OR.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electronics-iso\/Logic-XNOR-IEC.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electronics-iso\/Logic-XNOR.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electronics-iso\/Logic-XOR-IEC.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electronics-iso\/Logic-XOR.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electronics-iso\/Logic-buffer.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/electronics-iso\/Op-amp.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/filter-iso\/Delay-Chroma.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/filter-iso\/Delay.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/filter-iso\/Filter-IF.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/filter-iso\/Filter-SWAF.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/filter-iso\/Filter-ceramic.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/fuse\/1fu1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/fuse\/fu1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/fuse\/fu10.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/fuse\/fu11.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/fuse\/fu12.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/fuse\/fu13.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/fuse\/fu14.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/fuse\/fu15.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/fuse\/fu16.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/fuse\/fu2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/fuse\/fu3.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/fuse\/fu4.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/fuse\/fu5.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/fuse\/fu6.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/fuse\/fu7.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/fuse\/fu8.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/fuse\/fu9.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/fuse\/fv1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/fuse\/fv10.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/fuse\/fv11.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/fuse\/fv12.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/fuse\/fv13.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/fuse\/fv14.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/fuse\/fv15.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/fuse\/fv2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/fuse\/fv3.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/fuse\/fv4.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/fuse\/fv5.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/fuse\/fv6.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/fuse\/fv7.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/fuse\/fv8.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/fuse\/fv9.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/fuse-iso\/Fuse.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/fuse-iso\/Spark-gap.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/grounding\/arr.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/grounding\/arr1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/grounding\/arr2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/grounding\/arr3.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/grounding\/gnd1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/grounding\/gnd11.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/grounding\/gnd12.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/grounding\/gnd13.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/grounding\/gnd2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/grounding\/gnd3.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/grounding\/gnd4.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/grounding\/gnd5.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/grounding\/gnd6.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/grounding\/gr1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/grounding\/gr2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/grounding\/gr3.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/grounding\/gr4.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/grounding\/gr5.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/grounding\/gr6.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/grounding\/point.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/grounding-iso\/Terminal-Chassis.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/grounding-iso\/Terminal-Earth.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/grounding-iso\/Terminal-in.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/grounding-iso\/Terminal-out.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/lamp\/hl_1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/lamp\/hl_10.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/lamp\/hl_11.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/lamp\/hl_12.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/lamp\/hl_13.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/lamp\/hl_14.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/lamp\/hl_15.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/lamp\/hl_17.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/lamp\/hl_18.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/lamp\/hl_19.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/lamp\/hl_2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/lamp\/hl_20.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/lamp\/hl_21.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/lamp\/hl_22.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/lamp\/hl_23.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/lamp\/hl_24.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/lamp\/hl_25.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/lamp\/hl_26.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/lamp\/hl_27.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/lamp\/hl_28.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/lamp\/hl_29.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/lamp\/hl_3.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/lamp\/hl_4.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/lamp\/hl_5.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/lamp\/hl_6.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/lamp\/hl_7.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/lamp\/hl_8.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/lamp\/hl_9.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/lamp\/l1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/lamp\/l2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/lamp\/ln1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/lamp\/nl.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/lamp\/sg.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/lamp-iso\/Lamp.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/lamp-iso\/Neon-lamp.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/lamp-iso\/Neon.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/meter-iso\/Meter.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/meter-iso\/Tube-CRO.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/meter-iso\/Tube-CRT-RGB.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/motor\/gen1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/motor\/gen2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/motor\/gen3.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/motor\/m1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/motor\/m2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/motor\/m3.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/motor-iso\/Motor-DC.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/opto\/ve1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/opto\/ve10.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/opto\/ve11.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/opto\/ve12.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/opto\/ve13.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/opto\/ve14.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/opto\/ve15.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/opto\/ve16.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/opto\/ve2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/opto\/ve3.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/opto\/ve4.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/opto\/ve5.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/opto\/ve6.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/opto\/ve7.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/opto\/ve8.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/opto\/ve9.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/opto-iso\/Optocouple-trans.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/opto-iso\/Optocouple-triac.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power\/pe1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power\/pe10.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power\/pe11.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power\/pe12.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power\/pe13.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power\/pe14.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power\/pe15.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power\/pe16.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power\/pe17.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power\/pe18.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power\/pe19.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power\/pe2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power\/pe20.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power\/pe21.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power\/pe22.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power\/pe23.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power\/pe24.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power\/pe25.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power\/pe3.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power\/pe4.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power\/pe5.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power\/pe6.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power\/pe7.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power\/pe8.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power\/pe9.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power-iso\/2wt-1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power-iso\/2wt-2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power-iso\/3wt-1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power-iso\/3wt-2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power-iso\/ACB-1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power-iso\/ACB-2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power-iso\/C.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power-iso\/CB-1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power-iso\/CB-2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power-iso\/CB-3.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power-iso\/CT-1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power-iso\/CT-2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power-iso\/ES.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power-iso\/Fuse.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power-iso\/GOS.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power-iso\/Gen.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power-iso\/Gnd.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power-iso\/L.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power-iso\/LA-1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power-iso\/LA-2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power-iso\/LTCB.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power-iso\/MCCB.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power-iso\/Mot.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power-iso\/PT-1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power-iso\/PT-2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power-iso\/R.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/power-iso\/WaveTrap.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/relay\/n1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/relay\/n11.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/relay\/n12.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/relay\/n13.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/relay\/n14.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/relay\/n15.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/relay\/n17.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/relay\/n2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/relay\/n3.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/relay\/n4.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/relay\/n6.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/relay\/r1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/relay\/r10.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/relay\/r11.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/relay\/r12.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/relay\/r13.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/relay\/r2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/relay\/r3.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/relay\/r4.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/relay\/r5.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/relay\/r6.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/relay\/r7.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/relay\/r8.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/relay\/r9.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/relay\/sb1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/relay\/tn_3ph.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/relay\/tn_3ph1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/relay\/tr1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/relay\/tr2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/relay\/tr3.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/relay\/tt_3.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/relay\/tt_3p.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/relay\/tt_t.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/relay\/tt_zn.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/relay-iso\/Relay-2p2w.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/relay-iso\/Relay.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/resistor\/1r1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/resistor\/r1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/resistor\/r10.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/resistor\/r11.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/resistor\/r12.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/resistor\/r13.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/resistor\/r2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/resistor\/r3.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/resistor\/r4.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/resistor\/r5.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/resistor\/r6.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/resistor\/r7.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/resistor\/r8.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/resistor\/r9.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/resistor-iso\/Resistor-LDR.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/resistor-iso\/Resistor-Therm.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/resistor-iso\/Resistor-heatfuse.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/resistor-iso\/Resistor-horiz.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/resistor-iso\/Resistor-pot.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/resistor-iso\/Resistor-preset.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/resistor-iso\/Resistor-short.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/resistor-iso\/Resistor-variable.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/resistor-iso\/Resistor-vert.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/source\/si.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/source\/sv.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/source-iso\/Battery-Solar-1V5.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/source-iso\/Battery.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/switch\/qs1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/switch\/qsn1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/switch\/qsn2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/switch\/qsn3.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/switch\/s1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/switch\/s10.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/switch\/s11.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/switch\/s12.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/switch\/s13.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/switch\/s14.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/switch\/s15.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/switch\/s16.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/switch\/s17.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/switch\/s18.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/switch\/s19.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/switch\/s2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/switch\/s20.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/switch\/s21.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/switch\/s22.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/switch\/s23.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/switch\/s24.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/switch\/s25.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/switch\/s26.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/switch\/s27.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/switch\/s28.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/switch\/s29.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/switch\/s3.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/switch\/s4.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/switch\/s5.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/switch\/s6.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/switch\/s7.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/switch\/s8.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/switch\/s9.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/switch\/vv1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/switch-iso\/Switch-button-brk.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/switch-iso\/Switch-button-mk.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/switch-iso\/Switch.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transformer\/at2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transformer\/at3.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transformer\/t1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transformer\/t10.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transformer\/t11.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transformer\/t12.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transformer\/t13.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transformer\/t2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transformer\/t2o.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transformer\/t3.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transformer\/t3o.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transformer\/t4.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transformer\/t5.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transformer\/t51.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transformer\/t6.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transformer\/t7.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transformer\/t8.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transformer\/t9.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transformer\/tn3f.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transformer-iso\/Transform-output.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transformer-iso\/Transform-vert.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transistor\/igbt_npn.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transistor\/igbt_pnp.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transistor\/vt1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transistor\/vt10.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transistor\/vt11.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transistor\/vt12.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transistor\/vt13.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transistor\/vt14.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transistor\/vt15.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transistor\/vt16.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transistor\/vt17.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transistor\/vt18.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transistor\/vt19.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transistor\/vt2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transistor\/vt20.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transistor\/vt3.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transistor\/vt31.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transistor\/vt4.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transistor\/vt41.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transistor\/vt5.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transistor\/vt6.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transistor\/vt7.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transistor\/vt8.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transistor\/vt9.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transistor\/vtt.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transistor\/vtt1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transistor-iso\/Transistor-JFET-Nc.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transistor-iso\/Transistor-JFET-Pc.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transistor-iso\/Transistor-MOSFET-dep-Nc.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transistor-iso\/Transistor-MOSFET-dep-Pc.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transistor-iso\/Transistor-MOSFET-enh-Nc.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transistor-iso\/Transistor-MOSFET-enh-Pc.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transistor-iso\/Transistor-NPN.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transistor-iso\/Transistor-PNP.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/transistor-iso\/Transistor-Unijunc.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/triode\/t1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/triode\/t10.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/triode\/t11.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/triode\/t2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/triode\/t3.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/triode\/t4.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/triode\/t5.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/triode\/t6.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/triode\/t7.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/triode\/t8.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/elektro\/triode\/t9.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin10.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin100.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin101.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin102.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin103.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin104.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin105.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin106.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin107.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin108.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin109.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin11.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin110.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin111.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin112.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin113.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin114.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin115.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin116.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin117.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin118.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin119.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin12.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin120.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin121.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin122.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin123.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin124.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin125.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin126.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin127.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin128.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin129.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin13.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin130.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin131.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin132.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin133.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin134.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin135.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin136.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin137.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin138.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin139.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin14.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin140.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin141.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin142.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin143.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin144.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin145.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin146.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin147.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin148.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin149.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin15.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin150.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin151.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin152.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin153.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin154.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin155.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin156.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin157.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin16.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin17.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin18.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin19.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin20.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin21.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin22.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin23.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin24.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin25.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin26.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin27.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin28.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin29.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin3.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin30.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin31.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin32.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin33.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin34.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin35.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin36.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin37.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin38.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin39.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin4.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin40.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin41.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin42.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin43.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin44.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin45.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin46.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin47.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin48.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin49.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin5.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin50.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin51.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin52.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin53.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin54.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin55.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin56.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin57.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin58.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin59.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin6.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin60.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin61.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin62.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin63.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin64.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin65.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin66.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin67.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin68.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin69.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin7.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin70.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin71.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin72.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin73.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin74.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin75.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin76.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin77.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin78.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin79.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin8.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin80.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin81.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin82.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin83.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin84.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin85.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin86.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin87.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin88.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin89.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin9.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin90.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin91.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin92.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin93.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin94.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin95.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin96.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin97.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin98.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/kinetics\/kin99.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/misc\/a3.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/misc\/screw.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/misc\/t-part.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/misc\/tux.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw10.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw11.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw12.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw13.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw14.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw15.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw16.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw17.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw18.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw19.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw20.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw21.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw22.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw23.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw24.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw25.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw26.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw27.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw28.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw29.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw30.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw31.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw32.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw33.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw34.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw35.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw36.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw37.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw38.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw39.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw40.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw41.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw42.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw43.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw44.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw45.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw46.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw47.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw48.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw49.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw5.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw50.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw51.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw52.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw53.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw54.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw55.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw56.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw57.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw6.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw7.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw8.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/aw9.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/wt1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/wt10.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/wt11.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/wt12.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/wt13.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/wt14.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/wt15.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/wt16.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/wt17.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/wt18.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/wt19.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/wt2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/wt20.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/wt21.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/wt22.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/wt23.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/wt24.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/wt25.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/wt26.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/wt27.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/wt3.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/wt4.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/wt5.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/wt6.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/wt7.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/wt8.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/air_water\/wt9.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/architect\/Bathroom-basin-V.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/architect\/Bathroom-bath-E.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/architect\/Bathroom-bath-V.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/architect\/Bathroom-sink-E.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/architect\/Bathroom-toilet-E.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/architect\/Bathroom-toilet-V.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/architect\/Bed-double-E.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/architect\/Bed-single-V.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/architect\/Breakfast-bar-E.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/architect\/Chair-lounger-E.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/architect\/Chair-round-V.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/architect\/Chair-roundback-E.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/architect\/Chair-sofa-E.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/architect\/Chair-sofa-V.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/architect\/Complete-Lib-E.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/architect\/Complete-Lib-V.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/architect\/Kitchen-cooker-V.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/architect\/Kitchen-fridge-V.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/architect\/Kitchen-sink-E.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/architect\/Kitchen-sink-V.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/architect\/Kitchen-worktop-V.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/architect\/Table-bed-E.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/architect\/Table-bed-V.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/architect\/Table-coffee-E.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/architect\/Table-coffee-V.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/architect\/Table-dining-E.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/architect\/Table-drawers-V.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/architect\/Table-dresser-E.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/architect\/Table-round-V.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/architect\/Television-E.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/architect\/Wardrobe-E.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/doors\/d1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/doors\/d2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/doors\/d3.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/doors\/d4.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/gasification\/ga1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/gasification\/ga2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/gasification\/ga3.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/gasification\/ga4.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/gasification\/ga5.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/gasification\/ga6.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/gasification\/ga7.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/gasification\/ga8.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/gasification\/ga9.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/power_engineering\/pe1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/power_engineering\/pe10.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/power_engineering\/pe11.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/power_engineering\/pe2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/power_engineering\/pe3.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/power_engineering\/pe4.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/power_engineering\/pe5.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/power_engineering\/pe6.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/power_engineering\/pe7.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/power_engineering\/pe8.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/power_engineering\/pe9.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/vegetation\/v1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/vegetation\/v10.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/vegetation\/v12.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/vegetation\/v13.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/vegetation\/v14.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/vegetation\/v15.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/vegetation\/v17.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/vegetation\/v18.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/vegetation\/v19.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/vegetation\/v2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/vegetation\/v20.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/vegetation\/v21.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/vegetation\/v22.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/vegetation\/v23.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/vegetation\/v24.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/vegetation\/v25.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/vegetation\/v26.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/vegetation\/v27.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/vegetation\/v28.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/vegetation\/v29.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/vegetation\/v3.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/vegetation\/v30.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/vegetation\/v32.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/vegetation\/v33.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/vegetation\/v34.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/vegetation\/v36.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/vegetation\/v37.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/vegetation\/v4.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/vegetation\/v5.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/vegetation\/v6.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/vegetation\/v7.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/vegetation\/v8.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/plan\/vegetation\/v9.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed1.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed10.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed100.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed101.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed102.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed103.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed104.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed105.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed106.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed107.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed108.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed109.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed11.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed110.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed111.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed112.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed113.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed114.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed115.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed116.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed117.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed118.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed119.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed12.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed120.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed121.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed122.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed123.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed124.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed125.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed126.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed127.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed128.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed129.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed13.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed130.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed131.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed132.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed133.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed134.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed135.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed136.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed137.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed138.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed139.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed14.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed140.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed141.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed142.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed143.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed144.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed145.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed146.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed147.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed15.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed16.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed17.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed18.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed19.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed2.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed20.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed21.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed22.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed23.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed24.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed25.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed26.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed27.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed28.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed29.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed3.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed30.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed31.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed32.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed33.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed34.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed35.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed36.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed37.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed38.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed39.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed4.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed40.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed41.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed42.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed43.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed44.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed45.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed46.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed47.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed48.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed49.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed5.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed50.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed51.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed52.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed53.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed54.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed55.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed56.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed57.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed58.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed59.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed6.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed60.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed61.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed62.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed63.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed64.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed65.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed66.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed67.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed68.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed69.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed7.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed70.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed71.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed72.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed73.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed74.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed75.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed76.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed77.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed78.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed79.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed8.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed80.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed81.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed82.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed83.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed84.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed85.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed86.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed87.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed88.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed89.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed9.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed90.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed91.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed92.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed93.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed94.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed95.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed96.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed97.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed98.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/power_station\/ed99.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/sheets\/A0H.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/sheets\/A0V.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/sheets\/A1H.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/sheets\/A1V.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/sheets\/A1_1_draw.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/sheets\/A1_2_draw.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/sheets\/A2H.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/sheets\/A2V.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/sheets\/A2_1_draw.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/sheets\/A2_2_draw.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/sheets\/A3H.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/sheets\/A3V.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/sheets\/A3_1_draw.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/sheets\/A3_2_draw.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/sheets\/A4.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/sheets\/A4H.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/sheets\/A4V.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/sheets\/A4_1_draw.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/sheets\/A4_1_text.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/sheets\/A4_2_draw.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/sheets\/A4_2_text.dxf" ],
+            
+              [  "usr\/share\/librecad\/library\/templates\/empty.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/angle.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/ansi31.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/ar-b816.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/ar-b816c.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/ar-b88.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/ar-brelm.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/ar-brstd.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/ar-conc.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/ar-hbone.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/ar-parq1.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/ar-roof.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/ar-rshke.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/arcs.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/arcs_2.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/box.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/brick.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/brstone.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/clay.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/concrete.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/cross.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/daemon.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/dolmit.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/earth.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/escher.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/flex.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/gost_ceramics.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/gost_concrete.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/gost_ferroconcrete.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/gost_ferroconcrete1.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/gost_glass.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/gost_glass1.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/gost_ground.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/gost_ground1.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/gost_liquid.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/gost_metal.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/gost_non-metal.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/gost_sand.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/gost_stone.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/gost_wood.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/gost_wood1.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/grass.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/grass_b.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/hex.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/hexagon_a.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/hexagon_b.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/honeycomb.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/hound.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/iso03w100.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/iso03w100a.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/kerpele.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/millstone.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/misc01.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/misc02.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/misc03.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/paisley.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/pantagon_a.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/pantagon_b.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/plastic.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/sacncr.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/sand.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/square.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/triangle_a.dxf" ],
+            
+              [  "usr\/share\/librecad\/patterns\/triangle_b.dxf" ],
+            
+              [  "usr\/share\/librecad\/plugins\/libalign.so" ],
+            
+              [  "usr\/share\/librecad\/plugins\/libasciifile.so" ],
+            
+              [  "usr\/share\/librecad\/plugins\/libdivide.so" ],
+            
+              [  "usr\/share\/librecad\/plugins\/libgear.so" ],
+            
+              [  "usr\/share\/librecad\/plugins\/liblist.so" ],
+            
+              [  "usr\/share\/librecad\/plugins\/libpicfile.so" ],
+            
+              [  "usr\/share\/librecad\/plugins\/libplotequation.so" ],
+            
+              [  "usr\/share\/librecad\/plugins\/libpointstocsv.so" ],
+            
+              [  "usr\/share\/librecad\/plugins\/libsameprop.so" ],
+            
+              [  "usr\/share\/librecad\/plugins\/libsample.so" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_ar.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_ca.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_cs.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_da.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_de.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_el.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_en.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_en_au.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_es.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_es_ar.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_es_bo.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_es_cl.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_es_co.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_es_cr.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_es_do.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_es_ec.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_es_gt.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_es_hn.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_es_mx.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_es_ni.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_es_pa.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_es_pe.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_es_pr.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_es_py.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_es_sv.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_es_us.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_es_uy.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_es_ve.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_et.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_eu.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_fi.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_fr.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_gl.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_he.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_hi.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_hu.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_id_ID.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_it.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_ja.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_ka.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_ko.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_lv.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_mk.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_nl.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_no.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_pa.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_pl.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_pt_br.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_pt_pt.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_ro_ro.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_ru.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_sk.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_sl.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_sq_al.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_sr.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_sv.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_ta.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_th.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_tr.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_uk.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_zh_cn.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/librecad_zh_tw.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_ar.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_ca.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_cs.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_da.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_de.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_el.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_en.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_en_au.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_es.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_es_ar.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_es_bo.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_es_cl.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_es_co.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_es_cr.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_es_do.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_es_ec.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_es_gt.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_es_hn.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_es_mx.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_es_ni.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_es_pa.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_es_pe.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_es_pr.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_es_py.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_es_sv.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_es_us.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_es_uy.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_es_ve.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_et.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_eu.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_fi.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_fr.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_gl.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_hi.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_hu.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_id_ID.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_it.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_ja.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_ko.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_lv.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_mk.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_nl.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_no.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_pa.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_pl.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_pt_br.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_pt_pt.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_ro_ro.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_ru.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_sk.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_sl.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_sq_al.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_sv.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_ta.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_tr.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_uk.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_zh_cn.qm" ],
+            
+              [  "usr\/share\/librecad\/qm\/plugins_zh_tw.qm" ],
+            
+              [  "usr\/share\/metainfo\/org.librecad.librecad.appdata.xml" ],
+            
+              [  "usr\/share\/pixmaps\/librecad.png" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

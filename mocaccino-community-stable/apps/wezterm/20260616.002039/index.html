@@ -1,0 +1,601 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing apps/wezterm-20260616.002039 in mocaccino-community-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> apps/wezterm-20260616.002039
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                A GPU-accelerated cross-platform terminal emulator and multiplexer
+X.Org cursor themes: whiteglass, redglass and handhelds
+
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-community-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-community-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of apps/wezterm
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/mocaccino-community:wezterm-apps-20260616.002039" target="_blank"> quay.io/mocaccino/mocaccino-community:wezterm-apps-20260616.002039 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/mocaccino-community:wezterm-apps-20260616.002039/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 20260616.002039  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> 0BSD Apache-2.0 Apache-2.0-with-LLVM-exceptions Artistic-2 BSD BSD-2 Boost-1.0 CC0-1.0 GPL-3 ISC LGPL-2.1 MIT MPL-2.0 Unicode-DFS-2016 Unlicense WTFPL-2 ZLIB </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/X">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  X &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/fonts/jetbrains-mono">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  jetbrains-mono 2.304 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/fonts/roboto">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  roboto 2.138&#43;4 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> appstream.id: org.wezfurlong.wezterm
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: x11-terms/wezterm
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://wezfurlong.org/wezterm/" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://wezfurlong.org/wezterm/ </a>
+    </span>
+  
+    <span class="tag">
+    <a href="https://gitlab.freedesktop.org/xorg/data/xcursor-themes" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://gitlab.freedesktop.org/xorg/data/xcursor-themes </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/x11-terms/wezterm">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  wezterm &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/x11-themes/xcursor-themes">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  xcursor-themes &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "usr\/bin\/strip-ansi-escapes" ],
+            
+              [  "usr\/bin\/wezterm" ],
+            
+              [  "usr\/bin\/wezterm-gui" ],
+            
+              [  "usr\/bin\/wezterm-mux-server" ],
+            
+              [  "usr\/lib64\/libxcb-imdkit.so" ],
+            
+              [  "usr\/lib64\/libxcb-imdkit.so.1" ],
+            
+              [  "usr\/lib64\/libxcb-imdkit.so.1.0.9" ],
+            
+              [  "usr\/lib64\/pkgconfig\/xcb-imdkit.pc" ],
+            
+              [  "usr\/share\/applications\/org.wezfurlong.wezterm.desktop" ],
+            
+              [  "usr\/share\/bash-completion\/completions\/wezterm" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/handhelds\/cursors\/08e8e1c95fe2fc01f976f1e063a24ccd" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/handhelds\/cursors\/X_cursor" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/handhelds\/cursors\/arrow" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/handhelds\/cursors\/based_arrow_down" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/handhelds\/cursors\/based_arrow_up" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/handhelds\/cursors\/bottom_left_corner" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/handhelds\/cursors\/bottom_right_corner" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/handhelds\/cursors\/bottom_side" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/handhelds\/cursors\/bottom_tee" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/handhelds\/cursors\/center_ptr" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/handhelds\/cursors\/circle" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/handhelds\/cursors\/cross" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/handhelds\/cursors\/cross_reverse" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/handhelds\/cursors\/crosshair" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/handhelds\/cursors\/dot" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/handhelds\/cursors\/dotbox" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/handhelds\/cursors\/double_arrow" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/handhelds\/cursors\/draft_large" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/handhelds\/cursors\/draft_small" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/handhelds\/cursors\/draped_box" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/handhelds\/cursors\/fleur" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/handhelds\/cursors\/gumby" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/handhelds\/cursors\/hand2" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/handhelds\/cursors\/left_ptr" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/handhelds\/cursors\/left_ptr_watch" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/handhelds\/cursors\/left_side" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/handhelds\/cursors\/left_tee" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/handhelds\/cursors\/ll_angle" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/handhelds\/cursors\/pencil" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/handhelds\/cursors\/plus" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/handhelds\/cursors\/right_ptr" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/handhelds\/cursors\/right_side" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/handhelds\/cursors\/right_tee" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/handhelds\/cursors\/sb_h_double_arrow" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/handhelds\/cursors\/sb_right_arrow" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/handhelds\/cursors\/sb_up_arrow" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/handhelds\/cursors\/sb_v_double_arrow" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/handhelds\/cursors\/shuttle" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/handhelds\/cursors\/tcross" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/handhelds\/cursors\/top_left_arrow" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/handhelds\/cursors\/top_left_corner" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/handhelds\/cursors\/top_right_corner" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/handhelds\/cursors\/top_side" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/handhelds\/cursors\/top_tee" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/handhelds\/cursors\/watch" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/handhelds\/cursors\/xterm" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/redglass\/cursors\/08e8e1c95fe2fc01f976f1e063a24ccd" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/redglass\/cursors\/X_cursor" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/redglass\/cursors\/arrow" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/redglass\/cursors\/based_arrow_down" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/redglass\/cursors\/based_arrow_up" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/redglass\/cursors\/bottom_left_corner" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/redglass\/cursors\/bottom_right_corner" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/redglass\/cursors\/bottom_side" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/redglass\/cursors\/bottom_tee" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/redglass\/cursors\/center_ptr" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/redglass\/cursors\/circle" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/redglass\/cursors\/cross" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/redglass\/cursors\/cross_reverse" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/redglass\/cursors\/crosshair" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/redglass\/cursors\/dot" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/redglass\/cursors\/dotbox" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/redglass\/cursors\/double_arrow" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/redglass\/cursors\/draft_large" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/redglass\/cursors\/draft_small" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/redglass\/cursors\/draped_box" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/redglass\/cursors\/fleur" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/redglass\/cursors\/gumby" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/redglass\/cursors\/hand2" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/redglass\/cursors\/left_ptr" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/redglass\/cursors\/left_ptr_watch" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/redglass\/cursors\/left_side" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/redglass\/cursors\/left_tee" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/redglass\/cursors\/ll_angle" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/redglass\/cursors\/pencil" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/redglass\/cursors\/plus" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/redglass\/cursors\/right_ptr" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/redglass\/cursors\/right_side" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/redglass\/cursors\/right_tee" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/redglass\/cursors\/sb_h_double_arrow" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/redglass\/cursors\/sb_right_arrow" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/redglass\/cursors\/sb_up_arrow" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/redglass\/cursors\/sb_v_double_arrow" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/redglass\/cursors\/shuttle" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/redglass\/cursors\/tcross" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/redglass\/cursors\/top_left_arrow" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/redglass\/cursors\/top_left_corner" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/redglass\/cursors\/top_right_corner" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/redglass\/cursors\/top_side" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/redglass\/cursors\/top_tee" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/redglass\/cursors\/watch" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/redglass\/cursors\/xterm" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/08e8e1c95fe2fc01f976f1e063a24ccd" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/X_cursor" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/arrow" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/base_arrow_down" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/base_arrow_up" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/boat" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/bottom_left_corner" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/bottom_right_corner" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/bottom_side" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/bottom_tee" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/center_ptr" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/circle" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/cross" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/cross_reverse" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/crosshair" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/dnd-none" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/dot" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/dot_box_mask" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/double_arrow" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/draft_large" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/draft_small" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/draped_box" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/exchange" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/fleur" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/grab" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/gumby" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/hand" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/hand1" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/hand2" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/left_ptr" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/left_ptr_watch" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/left_side" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/left_tee" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/ll_angle" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/lr_angle" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/pencil" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/pirate" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/plus" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/pointer" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/question_arrow" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/right_ptr" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/right_side" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/right_tee" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/sailboat" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/sb_down_arrow" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/sb_h_double_arrow" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/sb_left_arrow" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/sb_right_arrow" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/sb_up_arrow" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/sb_v_double_arrow" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/shuttle" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/sizing" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/target" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/tcross" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/top_left_arrow" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/top_left_corner" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/top_right_corner" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/top_side" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/top_tee" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/trek" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/ul_angle" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/ur_angle" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/watch" ],
+            
+              [  "usr\/share\/cursors\/xorg-x11\/whiteglass\/cursors\/xterm" ],
+            
+              [  "usr\/share\/doc\/xcb-imdkit-1.0.9\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/xcursor-themes-1.0.7\/ChangeLog.bz2" ],
+            
+              [  "usr\/share\/doc\/xcursor-themes-1.0.7\/README.md.bz2" ],
+            
+              [  "usr\/share\/fish\/vendor_completions.d\/wezterm.fish" ],
+            
+              [  "usr\/share\/icons\/hicolor\/128x128\/apps\/org.wezfurlong.wezterm.png" ],
+            
+              [  "usr\/share\/metainfo\/org.wezfurlong.wezterm.appdata.xml" ],
+            
+              [  "usr\/share\/zsh\/site-functions\/_wezterm" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

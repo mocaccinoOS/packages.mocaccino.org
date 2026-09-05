@@ -1,0 +1,661 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing apps/mullvad-browser-bin-15.0.20 in mocaccino-community-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> apps/mullvad-browser-bin-15.0.20
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                The Mullvad Browser is developed to minimize tracking and fingerprinting.
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-community-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-community-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of apps/mullvad-browser-bin
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/mocaccino-community:mullvad-browser-bin-apps-15.0.20" target="_blank"> quay.io/mocaccino/mocaccino-community:mullvad-browser-bin-apps-15.0.20 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/mocaccino-community:mullvad-browser-bin-apps-15.0.20/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 15.0.20  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> MPL-2.0 </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/X">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  X &gt;=0 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> appstream.id: net.mullvad.MullvadBrowser
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: www-client/mullvad-browser-bin
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://github.com/mullvad/mullvad-browser/" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://github.com/mullvad/mullvad-browser/ </a>
+    </span>
+  
+    <span class="tag">
+    <a href="https://mullvad.net/" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://mullvad.net/ </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/www-client/mullvad-browser-bin">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  mullvad-browser-bin &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "opt\/mullvad-browser\/Browser\/.config\/gtk-3.0\/settings.ini" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/MullvadBrowser\/Docs\/ChangeLog.txt" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/MullvadBrowser\/Docs\/Licenses\/Firefox.txt" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/MullvadBrowser\/Docs\/Licenses\/NoScript.txt" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/MullvadBrowser\/Docs\/Licenses\/Noto-CJK-Font.txt" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/MullvadBrowser\/Docs\/Licenses\/Noto-Fonts.txt" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/MullvadBrowser\/Docs\/Licenses\/uBlockOrigin.txt" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/abicheck" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/application.ini" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/browser\/chrome\/icons\/default\/about-logo.svg" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/browser\/chrome\/icons\/default\/default128.png" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/browser\/chrome\/icons\/default\/default16.png" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/browser\/chrome\/icons\/default\/default32.png" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/browser\/chrome\/icons\/default\/default48.png" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/browser\/chrome\/icons\/default\/default64.png" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/browser\/omni.ja" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/defaults\/pref\/channel-prefs.js" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/dependentlibs.list" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/distribution\/extensions\/uBlock0@raymondhill.net.xpi" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/distribution\/extensions\/{73a6fe31-595d-460b-a920-fcc0f8843232}.xpi" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/distribution\/extensions\/{d19a89b9-76c1-4a61-bcd4-49e8de916403}.xpi" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/execdesktop" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/000_README.txt" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/Arimo-Bold.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/Arimo-BoldItalic.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/Arimo-Italic.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/Arimo-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/Cousine-Bold.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/Cousine-BoldItalic.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/Cousine-Italic.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/Cousine-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoColorEmoji.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoNaskhArabic-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansAdlam-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansArmenian-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansBalinese-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansBamum-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansBassaVah-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansBatak-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansBengali-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansBuginese-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansBuhid-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansCanadianAboriginal-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansChakma-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansCham-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansCherokee-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansCoptic-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansDeseret-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansDevanagari-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansElbasan-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansEthiopic-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansGeorgian-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansGrantha-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansGujarati-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansGunjalaGondi-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansGurmukhi-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansHanifiRohingya-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansHanunoo-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansHebrew-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansJP-Regular.otf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansJavanese-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansKR-Regular.otf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansKannada-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansKayahLi-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansKhmer-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansKhojki-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansKhudawadi-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansLao-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansLepcha-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansLimbu-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansLisu-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansMahajani-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansMalayalam-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansMandaic-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansMasaramGondi-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansMedefaidrin-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansMeeteiMayek-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansMendeKikakui-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansMiao-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansModi-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansMongolian-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansMro-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansMultani-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansNKo-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansNewTaiLue-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansNewa-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansOlChiki-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansOriya-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansOsage-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansOsmanya-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansPahawhHmong-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansPauCinHau-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansRejang-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansRunic-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansSC-Regular.otf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansSamaritan-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansSaurashtra-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansSharada-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansShavian-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansSinhala-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansSoraSompeng-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansSoyombo-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansSundanese-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansSylotiNagri-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansSymbols-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansSymbols2-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansSyriac-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansTC-Regular.otf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansTagalog-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansTagbanwa-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansTaiLe-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansTaiTham-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansTaiViet-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansTakri-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansTamil-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansTelugu-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansThaana-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansThai-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansTifinagh-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansTifinaghAPT-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansTifinaghAdrar-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansTifinaghAgrawImazighen-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansTifinaghAhaggar-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansTifinaghAir-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansTifinaghAzawagh-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansTifinaghGhat-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansTifinaghHawad-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansTifinaghRhissaIxa-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansTifinaghSIL-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansTifinaghTawellemmet-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansTirhuta-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansVai-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansWancho-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansWarangCiti-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansYi-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSansZanabazarSquare-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSerifArmenian-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSerifBalinese-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSerifBengali-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSerifDevanagari-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSerifDogra-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSerifEthiopic-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSerifGeorgian-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSerifGrantha-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSerifGujarati-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSerifGurmukhi-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSerifHebrew-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSerifKannada-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSerifKhmer-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSerifKhojki-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSerifLao-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSerifMalayalam-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSerifMyanmar-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSerifNPHmong-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSerifSinhala-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSerifTamil-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSerifTelugu-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSerifThai-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSerifTibetan-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/NotoSerifYezidi-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/Pyidaungsu-2.5.3_Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/STIXTwoMath-Regular.otf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/Tinos-Bold.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/Tinos-BoldItalic.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/Tinos-Italic.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/Tinos-Regular.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/TwemojiMozilla.ttf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/fonts\/fonts.conf" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/glxtest" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/icons\/updater.png" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/is-packaged-app" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/libfreeblpriv3.so" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/libgkcodecs.so" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/liblgpllibs.so" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/libmozavcodec.so" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/libmozavutil.so" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/libmozgtk.so" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/libmozsandbox.so" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/libmozsqlite3.so" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/libmozwayland.so" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/libnspr4.so" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/libnss3.so" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/libnssutil3.so" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/libplc4.so" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/libplds4.so" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/libsmime3.so" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/libsoftokn3.so" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/libssl3.so" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/libstdc\u002b\u002b\/libstdc\u002b\u002b.so.6" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/libxul.so" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/mullvadbrowser" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/mullvadbrowser.real" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/omni.ja" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/platform.ini" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/precomplete" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/removed-files" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/start-mullvad-browser" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/start-mullvad-browser.desktop" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/update-settings.ini" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/updater" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/updater.ini" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/vaapitest" ],
+            
+              [  "opt\/mullvad-browser\/Browser\/version.json" ],
+            
+              [  "opt\/mullvad-browser\/start-mullvad-browser.desktop" ],
+            
+              [  "usr\/bin\/mullvad-browser-bin" ],
+            
+              [  "usr\/share\/applications\/start-mullvad-browser.desktop" ],
+            
+              [  "usr\/share\/icons\/hicolor\/128x128\/apps\/mullvad-browser.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/mullvad-browser.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/32x32\/apps\/mullvad-browser.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/mullvad-browser.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/64x64\/apps\/mullvad-browser.png" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>
