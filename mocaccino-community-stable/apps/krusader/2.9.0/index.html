@@ -1,0 +1,969 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing apps/krusader-2.9.0 in mocaccino-community-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> apps/krusader-2.9.0
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                Advanced twin-panel (commander-style) file-manager with many extras
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-community-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-community-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of apps/krusader
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/mocaccino-community:krusader-apps-2.9.0" target="_blank"> quay.io/mocaccino/mocaccino-community:krusader-apps-2.9.0 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/mocaccino-community:krusader-apps-2.9.0/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 2.9.0  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> GPL-2&#43; </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/kde-common">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  kde-common &gt;=0 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> appstream.id: org.kde.krusader
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: kde-misc/krusader
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://krusader.org" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://krusader.org </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/kde-misc/krusader">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  krusader &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/kde-apps/thumbnailers">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  thumbnailers &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "etc\/xdg\/kio_isorc" ],
+            
+              [  "usr\/bin\/krusader" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/kf6\/kio\/kio_iso.so" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/kf6\/kio\/kio_krarc.so" ],
+            
+              [  "usr\/share\/applications\/org.kde.krusader.desktop" ],
+            
+              [  "usr\/share\/help\/ca\/krusader\/actionman.png" ],
+            
+              [  "usr\/share\/help\/ca\/krusader\/advanced-functions.docbook" ],
+            
+              [  "usr\/share\/help\/ca\/krusader\/archives.docbook" ],
+            
+              [  "usr\/share\/help\/ca\/krusader\/basic-functions.docbook" ],
+            
+              [  "usr\/share\/help\/ca\/krusader\/bookmarks.docbook" ],
+            
+              [  "usr\/share\/help\/ca\/krusader\/checksum.docbook" ],
+            
+              [  "usr\/share\/help\/ca\/krusader\/compare.docbook" ],
+            
+              [  "usr\/share\/help\/ca\/krusader\/configuration-files.docbook" ],
+            
+              [  "usr\/share\/help\/ca\/krusader\/credits-and-license.docbook" ],
+            
+              [  "usr\/share\/help\/ca\/krusader\/diskusage.docbook" ],
+            
+              [  "usr\/share\/help\/ca\/krusader\/editors-note.docbook" ],
+            
+              [  "usr\/share\/help\/ca\/krusader\/faq.docbook" ],
+            
+              [  "usr\/share\/help\/ca\/krusader\/features.docbook" ],
+            
+              [  "usr\/share\/help\/ca\/krusader\/fnkeys.png" ],
+            
+              [  "usr\/share\/help\/ca\/krusader\/glossary.docbook" ],
+            
+              [  "usr\/share\/help\/ca\/krusader\/help.docbook" ],
+            
+              [  "usr\/share\/help\/ca\/krusader\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/ca\/krusader\/index.docbook" ],
+            
+              [  "usr\/share\/help\/ca\/krusader\/introduction.docbook" ],
+            
+              [  "usr\/share\/help\/ca\/krusader\/keyboard-commands.docbook" ],
+            
+              [  "usr\/share\/help\/ca\/krusader\/kgstartup.png" ],
+            
+              [  "usr\/share\/help\/ca\/krusader\/konfigurator.docbook" ],
+            
+              [  "usr\/share\/help\/ca\/krusader\/krusader-tools.docbook" ],
+            
+              [  "usr\/share\/help\/ca\/krusader\/listpanel.png" ],
+            
+              [  "usr\/share\/help\/ca\/krusader\/locate.docbook" ],
+            
+              [  "usr\/share\/help\/ca\/krusader\/menu-commands.docbook" ],
+            
+              [  "usr\/share\/help\/ca\/krusader\/mount.docbook" ],
+            
+              [  "usr\/share\/help\/ca\/krusader\/mountman.png" ],
+            
+              [  "usr\/share\/help\/ca\/krusader\/mouse-commands.docbook" ],
+            
+              [  "usr\/share\/help\/ca\/krusader\/occupied-space.docbook" ],
+            
+              [  "usr\/share\/help\/ca\/krusader\/profiles.docbook" ],
+            
+              [  "usr\/share\/help\/ca\/krusader\/release-overview.docbook" ],
+            
+              [  "usr\/share\/help\/ca\/krusader\/remote-connections.docbook" ],
+            
+              [  "usr\/share\/help\/ca\/krusader\/search.docbook" ],
+            
+              [  "usr\/share\/help\/ca\/krusader\/search_advanced.png" ],
+            
+              [  "usr\/share\/help\/ca\/krusader\/search_general.png" ],
+            
+              [  "usr\/share\/help\/ca\/krusader\/splitter.docbook" ],
+            
+              [  "usr\/share\/help\/ca\/krusader\/synchronizer.docbook" ],
+            
+              [  "usr\/share\/help\/ca\/krusader\/tabbed_browsing.png" ],
+            
+              [  "usr\/share\/help\/ca\/krusader\/user-interface.docbook" ],
+            
+              [  "usr\/share\/help\/ca\/krusader\/useraction-xml.docbook" ],
+            
+              [  "usr\/share\/help\/ca\/krusader\/useractions.docbook" ],
+            
+              [  "usr\/share\/help\/ca\/krusader\/vfs.docbook" ],
+            
+              [  "usr\/share\/help\/ca\/krusader\/viewer-editor.docbook" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/Icon-edit-delete.png" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/actionman.png" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/advanced-functions.docbook" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/archives.docbook" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/basic-functions.docbook" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/bookmanadd.png" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/bookmanedit.png" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/bookmarks.docbook" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/checksum.docbook" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/cmdline.png" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/compare.docbook" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/configuration-files.docbook" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/copyjob.png" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/credits-and-license.docbook" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/diskusage.docbook" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/editors-note.docbook" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/faq.docbook" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/features.docbook" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/fnkeys.png" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/glossary.docbook" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/help.docbook" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/index.docbook" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/introduction.docbook" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/keyboard-commands.docbook" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/kgstartup.png" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/konfigurator.docbook" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/krusader-tools.docbook" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/krusader1.png" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/listpanel.png" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/locate.docbook" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/mainwindow.png" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/menu-commands.docbook" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/mount.docbook" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/mountman.png" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/mouse-commands.docbook" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/occupied-space.docbook" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/profiles.docbook" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/release-overview.docbook" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/remote-connections.docbook" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/search.docbook" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/search_advanced.png" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/search_general.png" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/splitter.docbook" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/syncdir.png" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/synchronizer.docbook" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/tabbed_browsing.png" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/terminalEmu.png" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/toolbar.png" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/user-interface.docbook" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/useraction-xml.docbook" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/useractions.docbook" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/vfs.docbook" ],
+            
+              [  "usr\/share\/help\/en\/krusader\/viewer-editor.docbook" ],
+            
+              [  "usr\/share\/help\/it\/krusader\/advanced-functions.docbook" ],
+            
+              [  "usr\/share\/help\/it\/krusader\/archives.docbook" ],
+            
+              [  "usr\/share\/help\/it\/krusader\/basic-functions.docbook" ],
+            
+              [  "usr\/share\/help\/it\/krusader\/bookmarks.docbook" ],
+            
+              [  "usr\/share\/help\/it\/krusader\/checksum.docbook" ],
+            
+              [  "usr\/share\/help\/it\/krusader\/compare.docbook" ],
+            
+              [  "usr\/share\/help\/it\/krusader\/configuration-files.docbook" ],
+            
+              [  "usr\/share\/help\/it\/krusader\/credits-and-license.docbook" ],
+            
+              [  "usr\/share\/help\/it\/krusader\/diskusage.docbook" ],
+            
+              [  "usr\/share\/help\/it\/krusader\/editors-note.docbook" ],
+            
+              [  "usr\/share\/help\/it\/krusader\/faq.docbook" ],
+            
+              [  "usr\/share\/help\/it\/krusader\/features.docbook" ],
+            
+              [  "usr\/share\/help\/it\/krusader\/glossary.docbook" ],
+            
+              [  "usr\/share\/help\/it\/krusader\/help.docbook" ],
+            
+              [  "usr\/share\/help\/it\/krusader\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/it\/krusader\/index.docbook" ],
+            
+              [  "usr\/share\/help\/it\/krusader\/introduction.docbook" ],
+            
+              [  "usr\/share\/help\/it\/krusader\/keyboard-commands.docbook" ],
+            
+              [  "usr\/share\/help\/it\/krusader\/konfigurator.docbook" ],
+            
+              [  "usr\/share\/help\/it\/krusader\/krusader-tools.docbook" ],
+            
+              [  "usr\/share\/help\/it\/krusader\/locate.docbook" ],
+            
+              [  "usr\/share\/help\/it\/krusader\/menu-commands.docbook" ],
+            
+              [  "usr\/share\/help\/it\/krusader\/mount.docbook" ],
+            
+              [  "usr\/share\/help\/it\/krusader\/mouse-commands.docbook" ],
+            
+              [  "usr\/share\/help\/it\/krusader\/occupied-space.docbook" ],
+            
+              [  "usr\/share\/help\/it\/krusader\/profiles.docbook" ],
+            
+              [  "usr\/share\/help\/it\/krusader\/release-overview.docbook" ],
+            
+              [  "usr\/share\/help\/it\/krusader\/remote-connections.docbook" ],
+            
+              [  "usr\/share\/help\/it\/krusader\/search.docbook" ],
+            
+              [  "usr\/share\/help\/it\/krusader\/splitter.docbook" ],
+            
+              [  "usr\/share\/help\/it\/krusader\/synchronizer.docbook" ],
+            
+              [  "usr\/share\/help\/it\/krusader\/user-interface.docbook" ],
+            
+              [  "usr\/share\/help\/it\/krusader\/useraction-xml.docbook" ],
+            
+              [  "usr\/share\/help\/it\/krusader\/useractions.docbook" ],
+            
+              [  "usr\/share\/help\/it\/krusader\/vfs.docbook" ],
+            
+              [  "usr\/share\/help\/it\/krusader\/viewer-editor.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/krusader\/advanced-functions.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/krusader\/archives.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/krusader\/basic-functions.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/krusader\/bookmarks.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/krusader\/checksum.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/krusader\/compare.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/krusader\/configuration-files.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/krusader\/credits-and-license.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/krusader\/diskusage.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/krusader\/editors-note.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/krusader\/faq.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/krusader\/features.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/krusader\/glossary.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/krusader\/help.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/krusader\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/nl\/krusader\/index.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/krusader\/introduction.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/krusader\/keyboard-commands.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/krusader\/konfigurator.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/krusader\/krusader-tools.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/krusader\/locate.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/krusader\/menu-commands.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/krusader\/mount.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/krusader\/mouse-commands.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/krusader\/occupied-space.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/krusader\/profiles.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/krusader\/release-overview.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/krusader\/remote-connections.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/krusader\/search.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/krusader\/splitter.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/krusader\/synchronizer.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/krusader\/user-interface.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/krusader\/useraction-xml.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/krusader\/useractions.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/krusader\/vfs.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/krusader\/viewer-editor.docbook" ],
+            
+              [  "usr\/share\/help\/sv\/krusader\/advanced-functions.docbook" ],
+            
+              [  "usr\/share\/help\/sv\/krusader\/archives.docbook" ],
+            
+              [  "usr\/share\/help\/sv\/krusader\/basic-functions.docbook" ],
+            
+              [  "usr\/share\/help\/sv\/krusader\/bookmarks.docbook" ],
+            
+              [  "usr\/share\/help\/sv\/krusader\/checksum.docbook" ],
+            
+              [  "usr\/share\/help\/sv\/krusader\/compare.docbook" ],
+            
+              [  "usr\/share\/help\/sv\/krusader\/configuration-files.docbook" ],
+            
+              [  "usr\/share\/help\/sv\/krusader\/credits-and-license.docbook" ],
+            
+              [  "usr\/share\/help\/sv\/krusader\/diskusage.docbook" ],
+            
+              [  "usr\/share\/help\/sv\/krusader\/editors-note.docbook" ],
+            
+              [  "usr\/share\/help\/sv\/krusader\/faq.docbook" ],
+            
+              [  "usr\/share\/help\/sv\/krusader\/features.docbook" ],
+            
+              [  "usr\/share\/help\/sv\/krusader\/glossary.docbook" ],
+            
+              [  "usr\/share\/help\/sv\/krusader\/help.docbook" ],
+            
+              [  "usr\/share\/help\/sv\/krusader\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/sv\/krusader\/index.docbook" ],
+            
+              [  "usr\/share\/help\/sv\/krusader\/installation.docbook" ],
+            
+              [  "usr\/share\/help\/sv\/krusader\/introduction.docbook" ],
+            
+              [  "usr\/share\/help\/sv\/krusader\/keyboard-commands.docbook" ],
+            
+              [  "usr\/share\/help\/sv\/krusader\/konfigurator.docbook" ],
+            
+              [  "usr\/share\/help\/sv\/krusader\/krusader-tools.docbook" ],
+            
+              [  "usr\/share\/help\/sv\/krusader\/locate.docbook" ],
+            
+              [  "usr\/share\/help\/sv\/krusader\/menu-commands.docbook" ],
+            
+              [  "usr\/share\/help\/sv\/krusader\/mount.docbook" ],
+            
+              [  "usr\/share\/help\/sv\/krusader\/mouse-commands.docbook" ],
+            
+              [  "usr\/share\/help\/sv\/krusader\/occupied-space.docbook" ],
+            
+              [  "usr\/share\/help\/sv\/krusader\/profiles.docbook" ],
+            
+              [  "usr\/share\/help\/sv\/krusader\/release-overview.docbook" ],
+            
+              [  "usr\/share\/help\/sv\/krusader\/remote-connections.docbook" ],
+            
+              [  "usr\/share\/help\/sv\/krusader\/search.docbook" ],
+            
+              [  "usr\/share\/help\/sv\/krusader\/splitter.docbook" ],
+            
+              [  "usr\/share\/help\/sv\/krusader\/synchronizer.docbook" ],
+            
+              [  "usr\/share\/help\/sv\/krusader\/user-interface.docbook" ],
+            
+              [  "usr\/share\/help\/sv\/krusader\/useraction-xml.docbook" ],
+            
+              [  "usr\/share\/help\/sv\/krusader\/useractions.docbook" ],
+            
+              [  "usr\/share\/help\/sv\/krusader\/vfs.docbook" ],
+            
+              [  "usr\/share\/help\/sv\/krusader\/viewer-editor.docbook" ],
+            
+              [  "usr\/share\/help\/uk\/krusader\/actionman.png" ],
+            
+              [  "usr\/share\/help\/uk\/krusader\/advanced-functions.docbook" ],
+            
+              [  "usr\/share\/help\/uk\/krusader\/archives.docbook" ],
+            
+              [  "usr\/share\/help\/uk\/krusader\/basic-functions.docbook" ],
+            
+              [  "usr\/share\/help\/uk\/krusader\/bookmanadd.png" ],
+            
+              [  "usr\/share\/help\/uk\/krusader\/bookmanedit.png" ],
+            
+              [  "usr\/share\/help\/uk\/krusader\/bookmarks.docbook" ],
+            
+              [  "usr\/share\/help\/uk\/krusader\/checksum.docbook" ],
+            
+              [  "usr\/share\/help\/uk\/krusader\/compare.docbook" ],
+            
+              [  "usr\/share\/help\/uk\/krusader\/configuration-files.docbook" ],
+            
+              [  "usr\/share\/help\/uk\/krusader\/credits-and-license.docbook" ],
+            
+              [  "usr\/share\/help\/uk\/krusader\/diskusage.docbook" ],
+            
+              [  "usr\/share\/help\/uk\/krusader\/editors-note.docbook" ],
+            
+              [  "usr\/share\/help\/uk\/krusader\/faq.docbook" ],
+            
+              [  "usr\/share\/help\/uk\/krusader\/features.docbook" ],
+            
+              [  "usr\/share\/help\/uk\/krusader\/fnkeys.png" ],
+            
+              [  "usr\/share\/help\/uk\/krusader\/glossary.docbook" ],
+            
+              [  "usr\/share\/help\/uk\/krusader\/help.docbook" ],
+            
+              [  "usr\/share\/help\/uk\/krusader\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/uk\/krusader\/index.docbook" ],
+            
+              [  "usr\/share\/help\/uk\/krusader\/introduction.docbook" ],
+            
+              [  "usr\/share\/help\/uk\/krusader\/keyboard-commands.docbook" ],
+            
+              [  "usr\/share\/help\/uk\/krusader\/kgstartup.png" ],
+            
+              [  "usr\/share\/help\/uk\/krusader\/konfigurator.docbook" ],
+            
+              [  "usr\/share\/help\/uk\/krusader\/krusader-tools.docbook" ],
+            
+              [  "usr\/share\/help\/uk\/krusader\/krusader1.png" ],
+            
+              [  "usr\/share\/help\/uk\/krusader\/listpanel.png" ],
+            
+              [  "usr\/share\/help\/uk\/krusader\/locate.docbook" ],
+            
+              [  "usr\/share\/help\/uk\/krusader\/mainwindow.png" ],
+            
+              [  "usr\/share\/help\/uk\/krusader\/menu-commands.docbook" ],
+            
+              [  "usr\/share\/help\/uk\/krusader\/mount.docbook" ],
+            
+              [  "usr\/share\/help\/uk\/krusader\/mountman.png" ],
+            
+              [  "usr\/share\/help\/uk\/krusader\/mouse-commands.docbook" ],
+            
+              [  "usr\/share\/help\/uk\/krusader\/occupied-space.docbook" ],
+            
+              [  "usr\/share\/help\/uk\/krusader\/profiles.docbook" ],
+            
+              [  "usr\/share\/help\/uk\/krusader\/release-overview.docbook" ],
+            
+              [  "usr\/share\/help\/uk\/krusader\/remote-connections.docbook" ],
+            
+              [  "usr\/share\/help\/uk\/krusader\/search.docbook" ],
+            
+              [  "usr\/share\/help\/uk\/krusader\/search_advanced.png" ],
+            
+              [  "usr\/share\/help\/uk\/krusader\/search_general.png" ],
+            
+              [  "usr\/share\/help\/uk\/krusader\/splitter.docbook" ],
+            
+              [  "usr\/share\/help\/uk\/krusader\/syncdir.png" ],
+            
+              [  "usr\/share\/help\/uk\/krusader\/synchronizer.docbook" ],
+            
+              [  "usr\/share\/help\/uk\/krusader\/user-interface.docbook" ],
+            
+              [  "usr\/share\/help\/uk\/krusader\/useraction-xml.docbook" ],
+            
+              [  "usr\/share\/help\/uk\/krusader\/useractions.docbook" ],
+            
+              [  "usr\/share\/help\/uk\/krusader\/vfs.docbook" ],
+            
+              [  "usr\/share\/help\/uk\/krusader\/viewer-editor.docbook" ],
+            
+              [  "usr\/share\/icons\/hicolor\/128x128\/apps\/krusader_root.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/128x128\/apps\/krusader_user.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/krusader_blue.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/krusader_red.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/krusader_root.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/krusader_user.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/krusader_blue.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/krusader_red.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/krusader_root.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/krusader_shield.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/krusader_user.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/32x32\/apps\/krusader_blue.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/32x32\/apps\/krusader_red.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/32x32\/apps\/krusader_root.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/32x32\/apps\/krusader_shield.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/32x32\/apps\/krusader_user.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/krusader_blue.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/krusader_red.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/krusader_root.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/krusader_shield.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/krusader_user.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/64x64\/apps\/krusader_blue.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/64x64\/apps\/krusader_red.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/64x64\/apps\/krusader_root.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/64x64\/apps\/krusader_shield.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/64x64\/apps\/krusader_user.png" ],
+            
+              [  "usr\/share\/krusader\/icons\/hicolor\/16x16\/actions\/kr_combine.png" ],
+            
+              [  "usr\/share\/krusader\/icons\/hicolor\/16x16\/actions\/kr_comparedirs.png" ],
+            
+              [  "usr\/share\/krusader\/icons\/hicolor\/16x16\/actions\/kr_diskusage.png" ],
+            
+              [  "usr\/share\/krusader\/icons\/hicolor\/16x16\/actions\/kr_mountman.png" ],
+            
+              [  "usr\/share\/krusader\/icons\/hicolor\/16x16\/actions\/kr_syncbrowse_off.png" ],
+            
+              [  "usr\/share\/krusader\/icons\/hicolor\/16x16\/actions\/kr_syncbrowse_on.png" ],
+            
+              [  "usr\/share\/krusader\/icons\/hicolor\/16x16\/actions\/kr_unselect.png" ],
+            
+              [  "usr\/share\/krusader\/icons\/hicolor\/22x22\/actions\/kr_combine.png" ],
+            
+              [  "usr\/share\/krusader\/icons\/hicolor\/22x22\/actions\/kr_comparedirs.png" ],
+            
+              [  "usr\/share\/krusader\/icons\/hicolor\/22x22\/actions\/kr_diskusage.png" ],
+            
+              [  "usr\/share\/krusader\/icons\/hicolor\/22x22\/actions\/kr_mountman.png" ],
+            
+              [  "usr\/share\/krusader\/icons\/hicolor\/22x22\/actions\/kr_unselect.png" ],
+            
+              [  "usr\/share\/krusader\/icons\/hicolor\/32x32\/actions\/kr_combine.png" ],
+            
+              [  "usr\/share\/krusader\/icons\/hicolor\/32x32\/actions\/kr_comparedirs.png" ],
+            
+              [  "usr\/share\/krusader\/icons\/hicolor\/32x32\/actions\/kr_diskusage.png" ],
+            
+              [  "usr\/share\/krusader\/icons\/hicolor\/32x32\/actions\/kr_mountman.png" ],
+            
+              [  "usr\/share\/krusader\/icons\/hicolor\/32x32\/actions\/kr_unselect.png" ],
+            
+              [  "usr\/share\/krusader\/layout.xml" ],
+            
+              [  "usr\/share\/krusader\/midnight_commander.color" ],
+            
+              [  "usr\/share\/krusader\/splash.png" ],
+            
+              [  "usr\/share\/krusader\/total_commander.color" ],
+            
+              [  "usr\/share\/krusader\/total_commander.keymap" ],
+            
+              [  "usr\/share\/krusader\/total_commander.keymap.info" ],
+            
+              [  "usr\/share\/krusader\/useraction_examples.xml" ],
+            
+              [  "usr\/share\/kxmlgui5\/krusader\/krusaderlisterui.rc" ],
+            
+              [  "usr\/share\/kxmlgui5\/krusader\/krusaderui.rc" ],
+            
+              [  "usr\/share\/kxmlgui5\/krusader\/krviewer.rc" ],
+            
+              [  "usr\/share\/locale\/ar\/LC_MESSAGES\/krusader.mo" ],
+            
+              [  "usr\/share\/locale\/bg\/LC_MESSAGES\/krusader.mo" ],
+            
+              [  "usr\/share\/locale\/bs\/LC_MESSAGES\/krusader.mo" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/krusader.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/krusader.mo" ],
+            
+              [  "usr\/share\/locale\/da\/LC_MESSAGES\/krusader.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/krusader.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/krusader.mo" ],
+            
+              [  "usr\/share\/locale\/en_GB\/LC_MESSAGES\/krusader.mo" ],
+            
+              [  "usr\/share\/locale\/eo\/LC_MESSAGES\/krusader.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/krusader.mo" ],
+            
+              [  "usr\/share\/locale\/et\/LC_MESSAGES\/krusader.mo" ],
+            
+              [  "usr\/share\/locale\/eu\/LC_MESSAGES\/krusader.mo" ],
+            
+              [  "usr\/share\/locale\/fi\/LC_MESSAGES\/krusader.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/krusader.mo" ],
+            
+              [  "usr\/share\/locale\/ga\/LC_MESSAGES\/krusader.mo" ],
+            
+              [  "usr\/share\/locale\/gl\/LC_MESSAGES\/krusader.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/krusader.mo" ],
+            
+              [  "usr\/share\/locale\/hr\/LC_MESSAGES\/krusader.mo" ],
+            
+              [  "usr\/share\/locale\/hu\/LC_MESSAGES\/krusader.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/krusader.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/krusader.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/krusader.mo" ],
+            
+              [  "usr\/share\/locale\/lt\/LC_MESSAGES\/krusader.mo" ],
+            
+              [  "usr\/share\/locale\/nb\/LC_MESSAGES\/krusader.mo" ],
+            
+              [  "usr\/share\/locale\/nds\/LC_MESSAGES\/krusader.mo" ],
+            
+              [  "usr\/share\/locale\/nl\/LC_MESSAGES\/krusader.mo" ],
+            
+              [  "usr\/share\/locale\/nn\/LC_MESSAGES\/krusader.mo" ],
+            
+              [  "usr\/share\/locale\/pa\/LC_MESSAGES\/krusader.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/krusader.mo" ],
+            
+              [  "usr\/share\/locale\/pt\/LC_MESSAGES\/krusader.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/krusader.mo" ],
+            
+              [  "usr\/share\/locale\/ro\/LC_MESSAGES\/krusader.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/krusader.mo" ],
+            
+              [  "usr\/share\/locale\/sk\/LC_MESSAGES\/krusader.mo" ],
+            
+              [  "usr\/share\/locale\/sl\/LC_MESSAGES\/krusader.mo" ],
+            
+              [  "usr\/share\/locale\/sr\/LC_MESSAGES\/krusader.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/krusader.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/krusader.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/krusader.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/krusader.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/krusader.mo" ],
+            
+              [  "usr\/share\/man\/ca\/man1\/krusader.1.bz2" ],
+            
+              [  "usr\/share\/man\/de\/man1\/krusader.1.bz2" ],
+            
+              [  "usr\/share\/man\/it\/man1\/krusader.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/krusader.1.bz2" ],
+            
+              [  "usr\/share\/man\/nl\/man1\/krusader.1.bz2" ],
+            
+              [  "usr\/share\/man\/pt\/man1\/krusader.1.bz2" ],
+            
+              [  "usr\/share\/man\/pt_BR\/man1\/krusader.1.bz2" ],
+            
+              [  "usr\/share\/man\/sv\/man1\/krusader.1.bz2" ],
+            
+              [  "usr\/share\/man\/uk\/man1\/krusader.1.bz2" ],
+            
+              [  "usr\/share\/metainfo\/org.kde.krusader.appdata.xml" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

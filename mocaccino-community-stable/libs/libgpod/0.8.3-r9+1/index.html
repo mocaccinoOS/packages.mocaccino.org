@@ -1,0 +1,663 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing libs/libgpod-0.8.3-r9&#43;1 in mocaccino-community-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> libs/libgpod-0.8.3-r9&#43;1
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                Shared library to access the contents of an iPod
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-community-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-community-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of libs/libgpod
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/mocaccino-community:libgpod-libs-0.8.3-r9-1" target="_blank"> quay.io/mocaccino/mocaccino-community:libgpod-libs-0.8.3-r9-1 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/mocaccino-community:libgpod-libs-0.8.3-r9-1/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 0.8.3-r9&#43;1  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> LGPL-2 </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/X">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  X &gt;=0 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: media-libs/libgpod
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="http://www.gtkpod.org/libgpod/" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> http://www.gtkpod.org/libgpod/ </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/media-libs/libgpod">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  libgpod &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/sys-apps/sg3_utils">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  sg3_utils &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "usr\/bin\/ipod-read-sysinfo-extended" ],
+            
+              [  "usr\/bin\/rescan-scsi-bus.sh" ],
+            
+              [  "usr\/bin\/scsi_logging_level" ],
+            
+              [  "usr\/bin\/scsi_mandat" ],
+            
+              [  "usr\/bin\/scsi_readcap" ],
+            
+              [  "usr\/bin\/scsi_ready" ],
+            
+              [  "usr\/bin\/scsi_satl" ],
+            
+              [  "usr\/bin\/scsi_start" ],
+            
+              [  "usr\/bin\/scsi_stop" ],
+            
+              [  "usr\/bin\/scsi_temperature" ],
+            
+              [  "usr\/bin\/sg_bg_ctl" ],
+            
+              [  "usr\/bin\/sg_compare_and_write" ],
+            
+              [  "usr\/bin\/sg_copy_results" ],
+            
+              [  "usr\/bin\/sg_dd" ],
+            
+              [  "usr\/bin\/sg_decode_sense" ],
+            
+              [  "usr\/bin\/sg_emc_trespass" ],
+            
+              [  "usr\/bin\/sg_format" ],
+            
+              [  "usr\/bin\/sg_get_config" ],
+            
+              [  "usr\/bin\/sg_get_elem_status" ],
+            
+              [  "usr\/bin\/sg_get_lba_status" ],
+            
+              [  "usr\/bin\/sg_ident" ],
+            
+              [  "usr\/bin\/sg_inq" ],
+            
+              [  "usr\/bin\/sg_logs" ],
+            
+              [  "usr\/bin\/sg_luns" ],
+            
+              [  "usr\/bin\/sg_map" ],
+            
+              [  "usr\/bin\/sg_map26" ],
+            
+              [  "usr\/bin\/sg_modes" ],
+            
+              [  "usr\/bin\/sg_opcodes" ],
+            
+              [  "usr\/bin\/sg_persist" ],
+            
+              [  "usr\/bin\/sg_prevent" ],
+            
+              [  "usr\/bin\/sg_raw" ],
+            
+              [  "usr\/bin\/sg_rbuf" ],
+            
+              [  "usr\/bin\/sg_rdac" ],
+            
+              [  "usr\/bin\/sg_read" ],
+            
+              [  "usr\/bin\/sg_read_attr" ],
+            
+              [  "usr\/bin\/sg_read_block_limits" ],
+            
+              [  "usr\/bin\/sg_read_buffer" ],
+            
+              [  "usr\/bin\/sg_read_long" ],
+            
+              [  "usr\/bin\/sg_readcap" ],
+            
+              [  "usr\/bin\/sg_reassign" ],
+            
+              [  "usr\/bin\/sg_referrals" ],
+            
+              [  "usr\/bin\/sg_rem_rest_elem" ],
+            
+              [  "usr\/bin\/sg_rep_density" ],
+            
+              [  "usr\/bin\/sg_rep_pip" ],
+            
+              [  "usr\/bin\/sg_rep_zones" ],
+            
+              [  "usr\/bin\/sg_requests" ],
+            
+              [  "usr\/bin\/sg_reset" ],
+            
+              [  "usr\/bin\/sg_reset_wp" ],
+            
+              [  "usr\/bin\/sg_rmsn" ],
+            
+              [  "usr\/bin\/sg_rtpg" ],
+            
+              [  "usr\/bin\/sg_safte" ],
+            
+              [  "usr\/bin\/sg_sanitize" ],
+            
+              [  "usr\/bin\/sg_sat_datetime" ],
+            
+              [  "usr\/bin\/sg_sat_identify" ],
+            
+              [  "usr\/bin\/sg_sat_phy_event" ],
+            
+              [  "usr\/bin\/sg_sat_read_gplog" ],
+            
+              [  "usr\/bin\/sg_sat_set_features" ],
+            
+              [  "usr\/bin\/sg_scan" ],
+            
+              [  "usr\/bin\/sg_seek" ],
+            
+              [  "usr\/bin\/sg_senddiag" ],
+            
+              [  "usr\/bin\/sg_ses" ],
+            
+              [  "usr\/bin\/sg_ses_microcode" ],
+            
+              [  "usr\/bin\/sg_start" ],
+            
+              [  "usr\/bin\/sg_stpg" ],
+            
+              [  "usr\/bin\/sg_stream_ctl" ],
+            
+              [  "usr\/bin\/sg_sync" ],
+            
+              [  "usr\/bin\/sg_test_rwbuf" ],
+            
+              [  "usr\/bin\/sg_timestamp" ],
+            
+              [  "usr\/bin\/sg_turs" ],
+            
+              [  "usr\/bin\/sg_unmap" ],
+            
+              [  "usr\/bin\/sg_verify" ],
+            
+              [  "usr\/bin\/sg_vpd" ],
+            
+              [  "usr\/bin\/sg_wr_mode" ],
+            
+              [  "usr\/bin\/sg_write_attr" ],
+            
+              [  "usr\/bin\/sg_write_buffer" ],
+            
+              [  "usr\/bin\/sg_write_long" ],
+            
+              [  "usr\/bin\/sg_write_same" ],
+            
+              [  "usr\/bin\/sg_write_verify" ],
+            
+              [  "usr\/bin\/sg_write_x" ],
+            
+              [  "usr\/bin\/sg_xcopy" ],
+            
+              [  "usr\/bin\/sg_z_act_query" ],
+            
+              [  "usr\/bin\/sg_zone" ],
+            
+              [  "usr\/bin\/sginfo" ],
+            
+              [  "usr\/bin\/sgm_dd" ],
+            
+              [  "usr\/bin\/sgp_dd" ],
+            
+              [  "usr\/lib\/udev\/ipod-set-info" ],
+            
+              [  "usr\/lib\/udev\/rules.d\/90-libgpod.rules" ],
+            
+              [  "usr\/lib64\/libgpod.so" ],
+            
+              [  "usr\/lib64\/libgpod.so.4" ],
+            
+              [  "usr\/lib64\/libgpod.so.4.3.2" ],
+            
+              [  "usr\/lib64\/libsgutils-1.48.so.2" ],
+            
+              [  "usr\/lib64\/libsgutils-1.48.so.2.0.0" ],
+            
+              [  "usr\/lib64\/libsgutils.so" ],
+            
+              [  "usr\/lib64\/libsgutils2-1.48.so.2" ],
+            
+              [  "usr\/lib64\/libsgutils2-1.48.so.2.0.0" ],
+            
+              [  "usr\/lib64\/libsgutils2.so" ],
+            
+              [  "usr\/lib64\/pkgconfig\/libgpod-1.0.pc" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/libgpod\/ch01.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/libgpod\/home.png" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/libgpod\/index.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/libgpod\/index.sgml" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/libgpod\/itunesdb.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/libgpod\/left.png" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/libgpod\/libgpod-Artwork.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/libgpod\/libgpod-Chapter-Data.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/libgpod\/libgpod-Device.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/libgpod\/libgpod-File-handling-functions.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/libgpod\/libgpod-Low-level-functions.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/libgpod\/libgpod-Photo-database.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/libgpod\/libgpod-Playlists.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/libgpod\/libgpod-Smart-Playlists.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/libgpod\/libgpod-The-Itdb-iTunesDB-structure.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/libgpod\/libgpod-Time-handling.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/libgpod\/libgpod-Tracks.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/libgpod\/libgpod.devhelp2" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/libgpod\/photodb.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/libgpod\/right.png" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/libgpod\/style.css" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/libgpod\/up.png" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/libgpod.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/libgpod.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/libgpod.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/libgpod.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/libgpod.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/libgpod.mo" ],
+            
+              [  "usr\/share\/locale\/ro\/LC_MESSAGES\/libgpod.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/libgpod.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/libgpod.mo" ],
+            
+              [  "usr\/share\/man\/man8\/rescan-scsi-bus.sh.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/scsi_logging_level.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/scsi_mandat.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/scsi_readcap.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/scsi_ready.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/scsi_satl.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/scsi_start.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/scsi_stop.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/scsi_temperature.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg3_utils.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg3_utils_json.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_bg_ctl.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_compare_and_write.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_copy_results.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_dd.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_decode_sense.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_emc_trespass.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_format.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_get_config.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_get_elem_status.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_get_lba_status.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_ident.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_inq.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_logs.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_luns.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_map.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_map26.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_modes.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_opcodes.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_persist.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_prevent.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_raw.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_rbuf.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_rdac.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_read.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_read_attr.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_read_block_limits.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_read_buffer.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_read_long.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_readcap.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_reassign.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_referrals.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_rem_rest_elem.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_rep_density.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_rep_pip.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_rep_zones.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_requests.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_reset.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_reset_wp.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_rmsn.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_rtpg.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_safte.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_sanitize.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_sat_datetime.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_sat_identify.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_sat_phy_event.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_sat_read_gplog.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_sat_set_features.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_scan.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_seek.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_senddiag.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_ses.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_ses_microcode.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_start.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_stpg.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_stream_ctl.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_sync.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_test_rwbuf.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_timestamp.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_turs.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_unmap.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_verify.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_vpd.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_wr_mode.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_write_attr.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_write_buffer.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_write_long.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_write_same.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_write_verify.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_write_x.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_xcopy.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_z_act_query.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sg_zone.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sginfo.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sgm_dd.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sgp_dd.8.bz2" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

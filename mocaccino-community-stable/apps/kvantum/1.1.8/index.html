@@ -1,0 +1,621 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing apps/kvantum-1.1.8 in mocaccino-community-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> apps/kvantum-1.1.8
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                SVG-based theme engine for Qt, KDE Plasma and LXQt
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-community-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-community-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of apps/kvantum
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/mocaccino-community:kvantum-apps-1.1.8" target="_blank"> quay.io/mocaccino/mocaccino-community:kvantum-apps-1.1.8 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/mocaccino-community:kvantum-apps-1.1.8/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 1.1.8  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> GPL-3 </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/kde-common">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  kde-common &gt;=0 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: x11-themes/kvantum
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://github.com/tsujan/Kvantum" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://github.com/tsujan/Kvantum </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/x11-themes/kvantum">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  kvantum &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "usr\/bin\/kvantummanager" ],
+            
+              [  "usr\/bin\/kvantumpreview" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/styles\/libkvantum.so" ],
+            
+              [  "usr\/share\/Kvantum\/KvAdapta\/KvAdapta.kvconfig" ],
+            
+              [  "usr\/share\/Kvantum\/KvAdapta\/KvAdapta.svg" ],
+            
+              [  "usr\/share\/Kvantum\/KvAdaptaDark\/KvAdaptaDark.kvconfig" ],
+            
+              [  "usr\/share\/Kvantum\/KvAdaptaDark\/KvAdaptaDark.svg" ],
+            
+              [  "usr\/share\/Kvantum\/KvAmbiance\/KvAmbiance.kvconfig" ],
+            
+              [  "usr\/share\/Kvantum\/KvAmbiance\/KvAmbiance.svg" ],
+            
+              [  "usr\/share\/Kvantum\/KvAmbience\/KvAmbience.kvconfig" ],
+            
+              [  "usr\/share\/Kvantum\/KvAmbience\/KvAmbience.svg" ],
+            
+              [  "usr\/share\/Kvantum\/KvArc\/KvArc.kvconfig" ],
+            
+              [  "usr\/share\/Kvantum\/KvArc\/KvArc.svg" ],
+            
+              [  "usr\/share\/Kvantum\/KvArcDark\/KvArcDark.kvconfig" ],
+            
+              [  "usr\/share\/Kvantum\/KvArcDark\/KvArcDark.svg" ],
+            
+              [  "usr\/share\/Kvantum\/KvBeige\/KvBeige.kvconfig" ],
+            
+              [  "usr\/share\/Kvantum\/KvBeige\/KvBeige.svg" ],
+            
+              [  "usr\/share\/Kvantum\/KvBlender\/KvBlender.kvconfig" ],
+            
+              [  "usr\/share\/Kvantum\/KvBlender\/KvBlender.svg" ],
+            
+              [  "usr\/share\/Kvantum\/KvBrown\/KvBrown.kvconfig" ],
+            
+              [  "usr\/share\/Kvantum\/KvBrown\/KvBrown.svg" ],
+            
+              [  "usr\/share\/Kvantum\/KvCurves\/KvCurves.kvconfig" ],
+            
+              [  "usr\/share\/Kvantum\/KvCurves\/KvCurves.svg" ],
+            
+              [  "usr\/share\/Kvantum\/KvCurves3d\/KvCurves3d.kvconfig" ],
+            
+              [  "usr\/share\/Kvantum\/KvCurves3d\/KvCurves3d.svg" ],
+            
+              [  "usr\/share\/Kvantum\/KvCurves3d1\/KvCurves3d1.kvconfig" ],
+            
+              [  "usr\/share\/Kvantum\/KvCurves3d1\/KvCurves3d1.svg" ],
+            
+              [  "usr\/share\/Kvantum\/KvCurvesLight\/KvCurvesLight.kvconfig" ],
+            
+              [  "usr\/share\/Kvantum\/KvCurvesLight\/KvCurvesLight.svg" ],
+            
+              [  "usr\/share\/Kvantum\/KvCurvesLight1\/KvCurvesLight1.kvconfig" ],
+            
+              [  "usr\/share\/Kvantum\/KvCurvesLight1\/KvCurvesLight1.svg" ],
+            
+              [  "usr\/share\/Kvantum\/KvCyan\/KvCyan.kvconfig" ],
+            
+              [  "usr\/share\/Kvantum\/KvCyan\/KvCyan.svg" ],
+            
+              [  "usr\/share\/Kvantum\/KvDark\/KvDark.kvconfig" ],
+            
+              [  "usr\/share\/Kvantum\/KvDark\/KvDark.svg" ],
+            
+              [  "usr\/share\/Kvantum\/KvDarkRed\/KvDarkRed.kvconfig" ],
+            
+              [  "usr\/share\/Kvantum\/KvDarkRed\/KvDarkRed.svg" ],
+            
+              [  "usr\/share\/Kvantum\/KvFlat\/KvFlat.kvconfig" ],
+            
+              [  "usr\/share\/Kvantum\/KvFlat\/KvFlat.svg" ],
+            
+              [  "usr\/share\/Kvantum\/KvFlatLight\/KvFlatLight.kvconfig" ],
+            
+              [  "usr\/share\/Kvantum\/KvFlatLight\/KvFlatLight.svg" ],
+            
+              [  "usr\/share\/Kvantum\/KvFlatRed\/KvFlatRed.kvconfig" ],
+            
+              [  "usr\/share\/Kvantum\/KvFlatRed\/KvFlatRed.svg" ],
+            
+              [  "usr\/share\/Kvantum\/KvGnome\/KvGnome.kvconfig" ],
+            
+              [  "usr\/share\/Kvantum\/KvGnome\/KvGnome.svg" ],
+            
+              [  "usr\/share\/Kvantum\/KvGnomeAlt\/KvGnomeAlt.kvconfig" ],
+            
+              [  "usr\/share\/Kvantum\/KvGnomeAlt\/KvGnomeAlt.svg" ],
+            
+              [  "usr\/share\/Kvantum\/KvGnomeDark\/KvGnomeDark.kvconfig" ],
+            
+              [  "usr\/share\/Kvantum\/KvGnomeDark\/KvGnomeDark.svg" ],
+            
+              [  "usr\/share\/Kvantum\/KvGnomish\/KvGnomish.kvconfig" ],
+            
+              [  "usr\/share\/Kvantum\/KvGnomish\/KvGnomish.svg" ],
+            
+              [  "usr\/share\/Kvantum\/KvGray\/KvGray.kvconfig" ],
+            
+              [  "usr\/share\/Kvantum\/KvGray\/KvGray.svg" ],
+            
+              [  "usr\/share\/Kvantum\/KvMojave\/KvMojave.kvconfig" ],
+            
+              [  "usr\/share\/Kvantum\/KvMojave\/KvMojave.svg" ],
+            
+              [  "usr\/share\/Kvantum\/KvMojaveLight\/KvMojaveLight.kvconfig" ],
+            
+              [  "usr\/share\/Kvantum\/KvMojaveLight\/KvMojaveLight.svg" ],
+            
+              [  "usr\/share\/Kvantum\/KvMojaveMixed\/KvMojaveMixed.kvconfig" ],
+            
+              [  "usr\/share\/Kvantum\/KvMojaveMixed\/KvMojaveMixed.svg" ],
+            
+              [  "usr\/share\/Kvantum\/KvMojaveMixed1\/KvMojaveMixed1.kvconfig" ],
+            
+              [  "usr\/share\/Kvantum\/KvMojaveMixed1\/KvMojaveMixed1.svg" ],
+            
+              [  "usr\/share\/Kvantum\/KvOxygen\/KvOxygen.kvconfig" ],
+            
+              [  "usr\/share\/Kvantum\/KvOxygen\/KvOxygen.svg" ],
+            
+              [  "usr\/share\/Kvantum\/KvRoughGlass\/KvRoughGlass.kvconfig" ],
+            
+              [  "usr\/share\/Kvantum\/KvRoughGlass\/KvRoughGlass.svg" ],
+            
+              [  "usr\/share\/Kvantum\/KvSimplicity\/KvSimplicity.kvconfig" ],
+            
+              [  "usr\/share\/Kvantum\/KvSimplicity\/KvSimplicity.svg" ],
+            
+              [  "usr\/share\/Kvantum\/KvSimplicityDark\/KvSimplicityDark.kvconfig" ],
+            
+              [  "usr\/share\/Kvantum\/KvSimplicityDark\/KvSimplicityDark.svg" ],
+            
+              [  "usr\/share\/Kvantum\/KvSimplicityDarkLight\/KvSimplicityDarkLight.kvconfig" ],
+            
+              [  "usr\/share\/Kvantum\/KvSimplicityDarkLight\/KvSimplicityDarkLight.svg" ],
+            
+              [  "usr\/share\/Kvantum\/KvSimplicityTurquoise\/KvSimplicityTurquoise.kvconfig" ],
+            
+              [  "usr\/share\/Kvantum\/KvSimplicityTurquoise\/KvSimplicityTurquoise.svg" ],
+            
+              [  "usr\/share\/Kvantum\/KvYaru\/KvYaru.kvconfig" ],
+            
+              [  "usr\/share\/Kvantum\/KvYaru\/KvYaru.svg" ],
+            
+              [  "usr\/share\/Kvantum\/KvantumAlt\/KvantumAlt.kvconfig" ],
+            
+              [  "usr\/share\/Kvantum\/KvantumAlt\/KvantumAlt.svg" ],
+            
+              [  "usr\/share\/applications\/kvantummanager.desktop" ],
+            
+              [  "usr\/share\/color-schemes\/KvAdapta.colors" ],
+            
+              [  "usr\/share\/color-schemes\/KvAdaptaDark.colors" ],
+            
+              [  "usr\/share\/color-schemes\/KvAmbiance.colors" ],
+            
+              [  "usr\/share\/color-schemes\/KvAmbience.colors" ],
+            
+              [  "usr\/share\/color-schemes\/KvArc.colors" ],
+            
+              [  "usr\/share\/color-schemes\/KvArcDark.colors" ],
+            
+              [  "usr\/share\/color-schemes\/KvBeige.colors" ],
+            
+              [  "usr\/share\/color-schemes\/KvBlender.colors" ],
+            
+              [  "usr\/share\/color-schemes\/KvBrown.colors" ],
+            
+              [  "usr\/share\/color-schemes\/KvCurves.colors" ],
+            
+              [  "usr\/share\/color-schemes\/KvCurves3d1.colors" ],
+            
+              [  "usr\/share\/color-schemes\/KvCurvesLight.colors" ],
+            
+              [  "usr\/share\/color-schemes\/KvCyan.colors" ],
+            
+              [  "usr\/share\/color-schemes\/KvDark.colors" ],
+            
+              [  "usr\/share\/color-schemes\/KvDarkRed.colors" ],
+            
+              [  "usr\/share\/color-schemes\/KvFlat.colors" ],
+            
+              [  "usr\/share\/color-schemes\/KvFlatLight.colors" ],
+            
+              [  "usr\/share\/color-schemes\/KvFlatRed.colors" ],
+            
+              [  "usr\/share\/color-schemes\/KvGnome.colors" ],
+            
+              [  "usr\/share\/color-schemes\/KvGnomeAlt.colors" ],
+            
+              [  "usr\/share\/color-schemes\/KvGnomeDark.colors" ],
+            
+              [  "usr\/share\/color-schemes\/KvGnomish.colors" ],
+            
+              [  "usr\/share\/color-schemes\/KvGray.colors" ],
+            
+              [  "usr\/share\/color-schemes\/KvMojave.colors" ],
+            
+              [  "usr\/share\/color-schemes\/KvMojaveLight.colors" ],
+            
+              [  "usr\/share\/color-schemes\/KvMojaveMixed.colors" ],
+            
+              [  "usr\/share\/color-schemes\/KvMojaveMixed1.colors" ],
+            
+              [  "usr\/share\/color-schemes\/KvOxygen.colors" ],
+            
+              [  "usr\/share\/color-schemes\/KvRoughGlass.colors" ],
+            
+              [  "usr\/share\/color-schemes\/KvSimplicity.colors" ],
+            
+              [  "usr\/share\/color-schemes\/KvSimplicityDark.colors" ],
+            
+              [  "usr\/share\/color-schemes\/KvSimplicityDarkLight.colors" ],
+            
+              [  "usr\/share\/color-schemes\/KvSimplicityTurquoise.colors" ],
+            
+              [  "usr\/share\/color-schemes\/KvYaru.colors" ],
+            
+              [  "usr\/share\/color-schemes\/Kvantum.colors" ],
+            
+              [  "usr\/share\/color-schemes\/KvantumAlt.colors" ],
+            
+              [  "usr\/share\/doc\/kvantum-1.1.8\/ChangeLog.bz2" ],
+            
+              [  "usr\/share\/doc\/kvantum-1.1.8\/NEWS" ],
+            
+              [  "usr\/share\/doc\/kvantum-1.1.8\/README.md.bz2" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/apps\/kvantum.svg" ],
+            
+              [  "usr\/share\/kvantummanager\/translations\/kvantummanager_ar_DZ.qm" ],
+            
+              [  "usr\/share\/kvantummanager\/translations\/kvantummanager_az.qm" ],
+            
+              [  "usr\/share\/kvantummanager\/translations\/kvantummanager_be.qm" ],
+            
+              [  "usr\/share\/kvantummanager\/translations\/kvantummanager_bg.qm" ],
+            
+              [  "usr\/share\/kvantummanager\/translations\/kvantummanager_ca.qm" ],
+            
+              [  "usr\/share\/kvantummanager\/translations\/kvantummanager_cs.qm" ],
+            
+              [  "usr\/share\/kvantummanager\/translations\/kvantummanager_cy.qm" ],
+            
+              [  "usr\/share\/kvantummanager\/translations\/kvantummanager_da.qm" ],
+            
+              [  "usr\/share\/kvantummanager\/translations\/kvantummanager_de.qm" ],
+            
+              [  "usr\/share\/kvantummanager\/translations\/kvantummanager_el.qm" ],
+            
+              [  "usr\/share\/kvantummanager\/translations\/kvantummanager_en_GB.qm" ],
+            
+              [  "usr\/share\/kvantummanager\/translations\/kvantummanager_eo.qm" ],
+            
+              [  "usr\/share\/kvantummanager\/translations\/kvantummanager_es.qm" ],
+            
+              [  "usr\/share\/kvantummanager\/translations\/kvantummanager_et.qm" ],
+            
+              [  "usr\/share\/kvantummanager\/translations\/kvantummanager_fa.qm" ],
+            
+              [  "usr\/share\/kvantummanager\/translations\/kvantummanager_fi.qm" ],
+            
+              [  "usr\/share\/kvantummanager\/translations\/kvantummanager_fr.qm" ],
+            
+              [  "usr\/share\/kvantummanager\/translations\/kvantummanager_he.qm" ],
+            
+              [  "usr\/share\/kvantummanager\/translations\/kvantummanager_hr.qm" ],
+            
+              [  "usr\/share\/kvantummanager\/translations\/kvantummanager_hu.qm" ],
+            
+              [  "usr\/share\/kvantummanager\/translations\/kvantummanager_id.qm" ],
+            
+              [  "usr\/share\/kvantummanager\/translations\/kvantummanager_it.qm" ],
+            
+              [  "usr\/share\/kvantummanager\/translations\/kvantummanager_ja.qm" ],
+            
+              [  "usr\/share\/kvantummanager\/translations\/kvantummanager_ka.qm" ],
+            
+              [  "usr\/share\/kvantummanager\/translations\/kvantummanager_ko.qm" ],
+            
+              [  "usr\/share\/kvantummanager\/translations\/kvantummanager_lt.qm" ],
+            
+              [  "usr\/share\/kvantummanager\/translations\/kvantummanager_nb_NO.qm" ],
+            
+              [  "usr\/share\/kvantummanager\/translations\/kvantummanager_nl.qm" ],
+            
+              [  "usr\/share\/kvantummanager\/translations\/kvantummanager_pa.qm" ],
+            
+              [  "usr\/share\/kvantummanager\/translations\/kvantummanager_pl.qm" ],
+            
+              [  "usr\/share\/kvantummanager\/translations\/kvantummanager_pt.qm" ],
+            
+              [  "usr\/share\/kvantummanager\/translations\/kvantummanager_pt_BR.qm" ],
+            
+              [  "usr\/share\/kvantummanager\/translations\/kvantummanager_ru.qm" ],
+            
+              [  "usr\/share\/kvantummanager\/translations\/kvantummanager_si.qm" ],
+            
+              [  "usr\/share\/kvantummanager\/translations\/kvantummanager_sk_SK.qm" ],
+            
+              [  "usr\/share\/kvantummanager\/translations\/kvantummanager_tr.qm" ],
+            
+              [  "usr\/share\/kvantummanager\/translations\/kvantummanager_uk.qm" ],
+            
+              [  "usr\/share\/kvantummanager\/translations\/kvantummanager_zh_CN.qm" ],
+            
+              [  "usr\/share\/kvantummanager\/translations\/kvantummanager_zh_Hant.qm" ],
+            
+              [  "usr\/share\/kvantummanager\/translations\/kvantummanager_zh_TW.qm" ],
+            
+              [  "usr\/share\/kvantumpreview\/translations\/kvantumpreview_ar_DZ.qm" ],
+            
+              [  "usr\/share\/kvantumpreview\/translations\/kvantumpreview_az.qm" ],
+            
+              [  "usr\/share\/kvantumpreview\/translations\/kvantumpreview_bg.qm" ],
+            
+              [  "usr\/share\/kvantumpreview\/translations\/kvantumpreview_ca.qm" ],
+            
+              [  "usr\/share\/kvantumpreview\/translations\/kvantumpreview_cs.qm" ],
+            
+              [  "usr\/share\/kvantumpreview\/translations\/kvantumpreview_cy.qm" ],
+            
+              [  "usr\/share\/kvantumpreview\/translations\/kvantumpreview_da.qm" ],
+            
+              [  "usr\/share\/kvantumpreview\/translations\/kvantumpreview_de.qm" ],
+            
+              [  "usr\/share\/kvantumpreview\/translations\/kvantumpreview_el.qm" ],
+            
+              [  "usr\/share\/kvantumpreview\/translations\/kvantumpreview_en_GB.qm" ],
+            
+              [  "usr\/share\/kvantumpreview\/translations\/kvantumpreview_eo.qm" ],
+            
+              [  "usr\/share\/kvantumpreview\/translations\/kvantumpreview_es.qm" ],
+            
+              [  "usr\/share\/kvantumpreview\/translations\/kvantumpreview_et.qm" ],
+            
+              [  "usr\/share\/kvantumpreview\/translations\/kvantumpreview_fa.qm" ],
+            
+              [  "usr\/share\/kvantumpreview\/translations\/kvantumpreview_fi.qm" ],
+            
+              [  "usr\/share\/kvantumpreview\/translations\/kvantumpreview_fr.qm" ],
+            
+              [  "usr\/share\/kvantumpreview\/translations\/kvantumpreview_he.qm" ],
+            
+              [  "usr\/share\/kvantumpreview\/translations\/kvantumpreview_hr.qm" ],
+            
+              [  "usr\/share\/kvantumpreview\/translations\/kvantumpreview_hu.qm" ],
+            
+              [  "usr\/share\/kvantumpreview\/translations\/kvantumpreview_id.qm" ],
+            
+              [  "usr\/share\/kvantumpreview\/translations\/kvantumpreview_it.qm" ],
+            
+              [  "usr\/share\/kvantumpreview\/translations\/kvantumpreview_ja.qm" ],
+            
+              [  "usr\/share\/kvantumpreview\/translations\/kvantumpreview_ka.qm" ],
+            
+              [  "usr\/share\/kvantumpreview\/translations\/kvantumpreview_ko.qm" ],
+            
+              [  "usr\/share\/kvantumpreview\/translations\/kvantumpreview_lt.qm" ],
+            
+              [  "usr\/share\/kvantumpreview\/translations\/kvantumpreview_nb_NO.qm" ],
+            
+              [  "usr\/share\/kvantumpreview\/translations\/kvantumpreview_nl.qm" ],
+            
+              [  "usr\/share\/kvantumpreview\/translations\/kvantumpreview_pl.qm" ],
+            
+              [  "usr\/share\/kvantumpreview\/translations\/kvantumpreview_pt.qm" ],
+            
+              [  "usr\/share\/kvantumpreview\/translations\/kvantumpreview_pt_BR.qm" ],
+            
+              [  "usr\/share\/kvantumpreview\/translations\/kvantumpreview_ru.qm" ],
+            
+              [  "usr\/share\/kvantumpreview\/translations\/kvantumpreview_si.qm" ],
+            
+              [  "usr\/share\/kvantumpreview\/translations\/kvantumpreview_sk.qm" ],
+            
+              [  "usr\/share\/kvantumpreview\/translations\/kvantumpreview_tr.qm" ],
+            
+              [  "usr\/share\/kvantumpreview\/translations\/kvantumpreview_uk.qm" ],
+            
+              [  "usr\/share\/kvantumpreview\/translations\/kvantumpreview_zh_CN.qm" ],
+            
+              [  "usr\/share\/kvantumpreview\/translations\/kvantumpreview_zh_Hant.qm" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

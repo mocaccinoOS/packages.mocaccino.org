@@ -1,0 +1,1559 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing apps/nut-2.8.4&#43;5 in mocaccino-community-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> apps/nut-2.8.4&#43;5
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                Network-UPS Tools
+Provides Remote-Console and System Management Software as per IPMI v1.5/2.0
+
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-community-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-community-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of apps/nut
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/mocaccino-community:nut-apps-2.8.4-5" target="_blank"> quay.io/mocaccino/mocaccino-community:nut-apps-2.8.4-5 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/mocaccino-community:nut-apps-2.8.4-5/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 2.8.4&#43;5  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> GPL-2 GPL-3 </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/X">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  X &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/entity/nut">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  nut &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/entity/uucp">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  uucp &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/apps/i2c-tools">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  i2c-tools 4.4&#43;1 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/apps/nagios">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  nagios 4.5.13 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/apps/net-snmp">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  net-snmp 5.9.5.2&#43;3 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/libgpiod">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  libgpiod 2.2.3 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: sys-power/nut
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://www.networkupstools.org" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://www.networkupstools.org </a>
+    </span>
+  
+    <span class="tag">
+    <a href="https://www.gnu.org/software/freeipmi/" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://www.gnu.org/software/freeipmi/ </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/sys-power/nut">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  nut &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-libs/libmodbus">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  libmodbus &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/sys-libs/freeipmi">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  freeipmi &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "etc\/avahi\/services\/nut.service" ],
+            
+              [  "etc\/conf.d\/bmc-watchdog" ],
+            
+              [  "etc\/conf.d\/ipmidetectd" ],
+            
+              [  "etc\/conf.d\/ipmiseld" ],
+            
+              [  "etc\/freeipmi\/freeipmi.conf" ],
+            
+              [  "etc\/freeipmi\/freeipmi_interpret_sel.conf" ],
+            
+              [  "etc\/freeipmi\/freeipmi_interpret_sensor.conf" ],
+            
+              [  "etc\/freeipmi\/ipmidetect.conf" ],
+            
+              [  "etc\/freeipmi\/ipmidetectd.conf" ],
+            
+              [  "etc\/freeipmi\/ipmiseld.conf" ],
+            
+              [  "etc\/freeipmi\/libipmiconsole.conf" ],
+            
+              [  "etc\/icinga\/conf.d\/freeipmi-command.cfg" ],
+            
+              [  "etc\/init.d\/bmc-watchdog" ],
+            
+              [  "etc\/init.d\/ipmidetectd" ],
+            
+              [  "etc\/init.d\/ipmiseld" ],
+            
+              [  "etc\/init.d\/nut.powerfail" ],
+            
+              [  "etc\/init.d\/upsd" ],
+            
+              [  "etc\/init.d\/upsdrv" ],
+            
+              [  "etc\/init.d\/upslog" ],
+            
+              [  "etc\/init.d\/upsmon" ],
+            
+              [  "etc\/nut\/hosts.conf" ],
+            
+              [  "etc\/nut\/nut.conf" ],
+            
+              [  "etc\/nut\/ups.conf" ],
+            
+              [  "etc\/nut\/upsd.conf" ],
+            
+              [  "etc\/nut\/upsd.users" ],
+            
+              [  "etc\/nut\/upsmon.conf" ],
+            
+              [  "etc\/nut\/upssched.conf" ],
+            
+              [  "etc\/nut\/upsset.conf" ],
+            
+              [  "etc\/nut\/upsstats-single.html" ],
+            
+              [  "etc\/nut\/upsstats.html" ],
+            
+              [  "etc\/sysconfig\/bmc-watchdog" ],
+            
+              [  "usr\/bin\/NUT-Monitor" ],
+            
+              [  "usr\/bin\/NUT-Monitor-py3qt5" ],
+            
+              [  "usr\/bin\/bmc-config" ],
+            
+              [  "usr\/bin\/bmc-device" ],
+            
+              [  "usr\/bin\/bmc-info" ],
+            
+              [  "usr\/bin\/bmc-watchdog" ],
+            
+              [  "usr\/bin\/ipmi-chassis" ],
+            
+              [  "usr\/bin\/ipmi-chassis-config" ],
+            
+              [  "usr\/bin\/ipmi-config" ],
+            
+              [  "usr\/bin\/ipmi-console" ],
+            
+              [  "usr\/bin\/ipmi-dcmi" ],
+            
+              [  "usr\/bin\/ipmi-detect" ],
+            
+              [  "usr\/bin\/ipmi-fru" ],
+            
+              [  "usr\/bin\/ipmi-locate" ],
+            
+              [  "usr\/bin\/ipmi-oem" ],
+            
+              [  "usr\/bin\/ipmi-pef-config" ],
+            
+              [  "usr\/bin\/ipmi-pet" ],
+            
+              [  "usr\/bin\/ipmi-ping" ],
+            
+              [  "usr\/bin\/ipmi-power" ],
+            
+              [  "usr\/bin\/ipmi-raw" ],
+            
+              [  "usr\/bin\/ipmi-sel" ],
+            
+              [  "usr\/bin\/ipmi-sensors" ],
+            
+              [  "usr\/bin\/ipmi-sensors-config" ],
+            
+              [  "usr\/bin\/ipmiconsole" ],
+            
+              [  "usr\/bin\/ipmidetect" ],
+            
+              [  "usr\/bin\/ipmidetectd" ],
+            
+              [  "usr\/bin\/ipmimonitoring" ],
+            
+              [  "usr\/bin\/ipmiping" ],
+            
+              [  "usr\/bin\/ipmipower" ],
+            
+              [  "usr\/bin\/ipmiseld" ],
+            
+              [  "usr\/bin\/nut-scanner" ],
+            
+              [  "usr\/bin\/nutconf" ],
+            
+              [  "usr\/bin\/pef-config" ],
+            
+              [  "usr\/bin\/rmcp-ping" ],
+            
+              [  "usr\/bin\/rmcpping" ],
+            
+              [  "usr\/bin\/upsc" ],
+            
+              [  "usr\/bin\/upscmd" ],
+            
+              [  "usr\/bin\/upsd" ],
+            
+              [  "usr\/bin\/upsdrvctl" ],
+            
+              [  "usr\/bin\/upsdrvsvcctl" ],
+            
+              [  "usr\/bin\/upslog" ],
+            
+              [  "usr\/bin\/upsmon" ],
+            
+              [  "usr\/bin\/upsrw" ],
+            
+              [  "usr\/bin\/upssched" ],
+            
+              [  "usr\/bin\/upssched-cmd" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/PyNUT.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/__pycache__\/PyNUT.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/__pycache__\/PyNUT.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/__pycache__\/PyNUT.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/__pycache__\/test_nutclient.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/__pycache__\/test_nutclient.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/__pycache__\/test_nutclient.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/test_nutclient.py" ],
+            
+              [  "usr\/lib\/systemd\/system\/bmc-watchdog.service" ],
+            
+              [  "usr\/lib\/systemd\/system\/ipmidetectd.service" ],
+            
+              [  "usr\/lib\/systemd\/system\/ipmiseld.service" ],
+            
+              [  "usr\/lib\/systemd\/system\/nut-driver-enumerator-daemon-activator.path" ],
+            
+              [  "usr\/lib\/systemd\/system\/nut-driver-enumerator-daemon-activator.service" ],
+            
+              [  "usr\/lib\/systemd\/system\/nut-driver-enumerator-daemon.service" ],
+            
+              [  "usr\/lib\/systemd\/system\/nut-driver-enumerator.path" ],
+            
+              [  "usr\/lib\/systemd\/system\/nut-driver-enumerator.service" ],
+            
+              [  "usr\/lib\/systemd\/system\/nut-driver.target" ],
+            
+              [  "usr\/lib\/systemd\/system\/nut-driver@.service" ],
+            
+              [  "usr\/lib\/systemd\/system\/nut-logger.service" ],
+            
+              [  "usr\/lib\/systemd\/system\/nut-monitor.service" ],
+            
+              [  "usr\/lib\/systemd\/system\/nut-server.service" ],
+            
+              [  "usr\/lib\/systemd\/system\/nut-udev-settle.service" ],
+            
+              [  "usr\/lib\/systemd\/system\/nut.target" ],
+            
+              [  "usr\/lib\/systemd\/system-preset\/nut-systemd.preset" ],
+            
+              [  "usr\/lib\/systemd\/system-shutdown\/nutshutdown" ],
+            
+              [  "usr\/lib\/tmpfiles.d\/nut-common-tmpfiles.conf" ],
+            
+              [  "usr\/lib\/udev\/rules.d\/52-nut-ipmipsu.rules" ],
+            
+              [  "usr\/lib\/udev\/rules.d\/62-nut-usbups.rules" ],
+            
+              [  "usr\/lib64\/libfreeipmi.so" ],
+            
+              [  "usr\/lib64\/libfreeipmi.so.17" ],
+            
+              [  "usr\/lib64\/libfreeipmi.so.17.2.16" ],
+            
+              [  "usr\/lib64\/libipmiconsole.so" ],
+            
+              [  "usr\/lib64\/libipmiconsole.so.2" ],
+            
+              [  "usr\/lib64\/libipmiconsole.so.2.3.7" ],
+            
+              [  "usr\/lib64\/libipmidetect.so" ],
+            
+              [  "usr\/lib64\/libipmidetect.so.0" ],
+            
+              [  "usr\/lib64\/libipmidetect.so.0.0.1" ],
+            
+              [  "usr\/lib64\/libipmimonitoring.so" ],
+            
+              [  "usr\/lib64\/libipmimonitoring.so.6" ],
+            
+              [  "usr\/lib64\/libipmimonitoring.so.6.0.10" ],
+            
+              [  "usr\/lib64\/libmodbus.so" ],
+            
+              [  "usr\/lib64\/libmodbus.so.5" ],
+            
+              [  "usr\/lib64\/libmodbus.so.5.1.0" ],
+            
+              [  "usr\/lib64\/libnutclient.so" ],
+            
+              [  "usr\/lib64\/libnutclient.so.2" ],
+            
+              [  "usr\/lib64\/libnutclient.so.2.0.2" ],
+            
+              [  "usr\/lib64\/libnutclientstub.so" ],
+            
+              [  "usr\/lib64\/libnutclientstub.so.1" ],
+            
+              [  "usr\/lib64\/libnutclientstub.so.1.0.1" ],
+            
+              [  "usr\/lib64\/libnutscan.so" ],
+            
+              [  "usr\/lib64\/libnutscan.so.4" ],
+            
+              [  "usr\/lib64\/libnutscan.so.4.0.0" ],
+            
+              [  "usr\/lib64\/libupsclient.so" ],
+            
+              [  "usr\/lib64\/libupsclient.so.7" ],
+            
+              [  "usr\/lib64\/libupsclient.so.7.0.0" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/nagios_ipmi_sensors.pl" ],
+            
+              [  "usr\/lib64\/nut\/adelsystem_cbi" ],
+            
+              [  "usr\/lib64\/nut\/al175" ],
+            
+              [  "usr\/lib64\/nut\/apc_modbus" ],
+            
+              [  "usr\/lib64\/nut\/apcsmart" ],
+            
+              [  "usr\/lib64\/nut\/apcsmart-old" ],
+            
+              [  "usr\/lib64\/nut\/apcupsd-ups" ],
+            
+              [  "usr\/lib64\/nut\/asem" ],
+            
+              [  "usr\/lib64\/nut\/bcmxcp" ],
+            
+              [  "usr\/lib64\/nut\/bcmxcp_usb" ],
+            
+              [  "usr\/lib64\/nut\/belkin" ],
+            
+              [  "usr\/lib64\/nut\/belkinunv" ],
+            
+              [  "usr\/lib64\/nut\/bestfcom" ],
+            
+              [  "usr\/lib64\/nut\/bestfortress" ],
+            
+              [  "usr\/lib64\/nut\/bestuferrups" ],
+            
+              [  "usr\/lib64\/nut\/bestups" ],
+            
+              [  "usr\/lib64\/nut\/bicker_ser" ],
+            
+              [  "usr\/lib64\/nut\/blazer_ser" ],
+            
+              [  "usr\/lib64\/nut\/blazer_usb" ],
+            
+              [  "usr\/lib64\/nut\/clone" ],
+            
+              [  "usr\/lib64\/nut\/clone-outlet" ],
+            
+              [  "usr\/lib64\/nut\/dummy-ups" ],
+            
+              [  "usr\/lib64\/nut\/etapro" ],
+            
+              [  "usr\/lib64\/nut\/everups" ],
+            
+              [  "usr\/lib64\/nut\/failover" ],
+            
+              [  "usr\/lib64\/nut\/gamatronic" ],
+            
+              [  "usr\/lib64\/nut\/generic_gpio_libgpiod" ],
+            
+              [  "usr\/lib64\/nut\/generic_modbus" ],
+            
+              [  "usr\/lib64\/nut\/genericups" ],
+            
+              [  "usr\/lib64\/nut\/huawei-ups2000" ],
+            
+              [  "usr\/lib64\/nut\/hwmon_ina219" ],
+            
+              [  "usr\/lib64\/nut\/isbmex" ],
+            
+              [  "usr\/lib64\/nut\/ivtscd" ],
+            
+              [  "usr\/lib64\/nut\/liebert" ],
+            
+              [  "usr\/lib64\/nut\/liebert-esp2" ],
+            
+              [  "usr\/lib64\/nut\/liebert-gxe" ],
+            
+              [  "usr\/lib64\/nut\/masterguard" ],
+            
+              [  "usr\/lib64\/nut\/metasys" ],
+            
+              [  "usr\/lib64\/nut\/mge-shut" ],
+            
+              [  "usr\/lib64\/nut\/mge-utalk" ],
+            
+              [  "usr\/lib64\/nut\/microdowell" ],
+            
+              [  "usr\/lib64\/nut\/microsol-apc" ],
+            
+              [  "usr\/lib64\/nut\/netxml-ups" ],
+            
+              [  "usr\/lib64\/nut\/nhs_ser" ],
+            
+              [  "usr\/lib64\/nut\/nut-ipmipsu" ],
+            
+              [  "usr\/lib64\/nut\/nutdrv_atcl_usb" ],
+            
+              [  "usr\/lib64\/nut\/nutdrv_hashx" ],
+            
+              [  "usr\/lib64\/nut\/nutdrv_qx" ],
+            
+              [  "usr\/lib64\/nut\/nutdrv_siemens-sitop" ],
+            
+              [  "usr\/lib64\/nut\/oneac" ],
+            
+              [  "usr\/lib64\/nut\/optiups" ],
+            
+              [  "usr\/lib64\/nut\/phoenixcontact_modbus" ],
+            
+              [  "usr\/lib64\/nut\/pijuice" ],
+            
+              [  "usr\/lib64\/nut\/powercom" ],
+            
+              [  "usr\/lib64\/nut\/powerpanel" ],
+            
+              [  "usr\/lib64\/nut\/powervar_cx_ser" ],
+            
+              [  "usr\/lib64\/nut\/powervar_cx_usb" ],
+            
+              [  "usr\/lib64\/nut\/rhino" ],
+            
+              [  "usr\/lib64\/nut\/richcomm_usb" ],
+            
+              [  "usr\/lib64\/nut\/riello_ser" ],
+            
+              [  "usr\/lib64\/nut\/riello_usb" ],
+            
+              [  "usr\/lib64\/nut\/safenet" ],
+            
+              [  "usr\/lib64\/nut\/skel" ],
+            
+              [  "usr\/lib64\/nut\/sms_ser" ],
+            
+              [  "usr\/lib64\/nut\/snmp-ups" ],
+            
+              [  "usr\/lib64\/nut\/socomec_jbus" ],
+            
+              [  "usr\/lib64\/nut\/solis" ],
+            
+              [  "usr\/lib64\/nut\/tripplite" ],
+            
+              [  "usr\/lib64\/nut\/tripplite_usb" ],
+            
+              [  "usr\/lib64\/nut\/tripplitesu" ],
+            
+              [  "usr\/lib64\/nut\/upscode2" ],
+            
+              [  "usr\/lib64\/nut\/usbhid-ups" ],
+            
+              [  "usr\/lib64\/nut\/ve-direct" ],
+            
+              [  "usr\/lib64\/nut\/victronups" ],
+            
+              [  "usr\/lib64\/pkgconfig\/libfreeipmi.pc" ],
+            
+              [  "usr\/lib64\/pkgconfig\/libipmiconsole.pc" ],
+            
+              [  "usr\/lib64\/pkgconfig\/libipmidetect.pc" ],
+            
+              [  "usr\/lib64\/pkgconfig\/libipmimonitoring.pc" ],
+            
+              [  "usr\/lib64\/pkgconfig\/libmodbus.pc" ],
+            
+              [  "usr\/lib64\/pkgconfig\/libnutclient.pc" ],
+            
+              [  "usr\/lib64\/pkgconfig\/libnutclientstub.pc" ],
+            
+              [  "usr\/lib64\/pkgconfig\/libnutscan.pc" ],
+            
+              [  "usr\/lib64\/pkgconfig\/libupsclient.pc" ],
+            
+              [  "usr\/libexec\/nut-driver-enumerator.sh" ],
+            
+              [  "usr\/libexec\/sockdebug" ],
+            
+              [  "usr\/share\/applications\/nut-monitor.desktop" ],
+            
+              [  "usr\/share\/bash-completion\/completions\/upsc" ],
+            
+              [  "usr\/share\/bash-completion\/completions\/upscmd" ],
+            
+              [  "usr\/share\/bash-completion\/completions\/upsd" ],
+            
+              [  "usr\/share\/bash-completion\/completions\/upsdrvctl" ],
+            
+              [  "usr\/share\/bash-completion\/completions\/upsmon" ],
+            
+              [  "usr\/share\/bash-completion\/completions\/upsrw" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/AUTHORS.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/COPYING.ZRESEARCH.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/COPYING.bmc-watchdog.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/COPYING.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/COPYING.ipmi-dcmi.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/COPYING.ipmi-fru.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/COPYING.ipmiconsole.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/COPYING.ipmidetect.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/COPYING.ipmimonitoring.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/COPYING.ipmiping.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/COPYING.ipmipower.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/COPYING.ipmiseld.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/COPYING.pstdout.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/COPYING.sunbmc.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/ChangeLog.0.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/ChangeLog.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/DISCLAIMER.bmc-watchdog.UC.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/DISCLAIMER.bmc-watchdog.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/DISCLAIMER.ipmi-dcmi.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/DISCLAIMER.ipmi-fru.UC.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/DISCLAIMER.ipmi-fru.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/DISCLAIMER.ipmiconsole.UC.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/DISCLAIMER.ipmiconsole.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/DISCLAIMER.ipmidetect.UC.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/DISCLAIMER.ipmidetect.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/DISCLAIMER.ipmimonitoring.UC.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/DISCLAIMER.ipmimonitoring.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/DISCLAIMER.ipmiping.UC.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/DISCLAIMER.ipmiping.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/DISCLAIMER.ipmipower.UC.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/DISCLAIMER.ipmipower.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/DISCLAIMER.ipmiseld.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/DISCLAIMER.pstdout.UC.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/DISCLAIMER.pstdout.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/INSTALL.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/NEWS.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/README.argp.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/README.build.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/README.openipmi.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/TODO.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/contrib\/ganglia\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/contrib\/ganglia\/ganglia_ipmi_sensors.pl.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/contrib\/libipmimonitoring\/ipmimonitoring-sel.c.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/contrib\/libipmimonitoring\/ipmimonitoring-sensors.c.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/contrib\/nagios\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/contrib\/pet\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/contrib\/pet\/check_rmcpping.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/contrib\/pet\/ipminodes.cfg.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/contrib\/pet\/petalert.pl.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/freeipmi-bugs-issues-and-workarounds.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/freeipmi-coding.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/freeipmi-design.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/freeipmi-hostrange.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/freeipmi-libraries.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/freeipmi-oem-documentation-requirements.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/freeipmi-1.6.18\/freeipmi-testing.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/libmodbus-3.1.12\/AUTHORS.bz2" ],
+            
+              [  "usr\/share\/doc\/libmodbus-3.1.12\/NEWS.md.bz2" ],
+            
+              [  "usr\/share\/doc\/libmodbus-3.1.12\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/AUTHORS.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/ChangeLog.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/ChangeLog.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/FAQ.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/MAINTAINERS.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/NEWS" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/NEWS.adoc.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/README" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/README.adoc-prepped.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/README.adoc.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/README.lib.adoc.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/TODO.adoc.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/UPGRADING.adoc.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/acknowledgements.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/asciidoc.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/cables\/Makefile.am" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/cables\/Makefile.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/cables\/Makefile.in.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/cables\/apc-rs500-serial.txt-prepped.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/cables\/apc-rs500-serial.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/cables\/apc.txt-prepped.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/cables\/apc.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/cables\/ge-imv-victron.txt-prepped.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/cables\/ge-imv-victron.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/cables\/imv.txt-prepped.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/cables\/imv.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/cables\/mgeups.txt-prepped.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/cables\/mgeups.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/cables\/powerware.txt-prepped.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/cables\/powerware.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/cables\/repotec.txt-prepped.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/cables\/repotec.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/cables\/sms.txt-prepped.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/cables\/sms.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/cables.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/ci-farm-lxc-setup.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/config-notes.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/config-prereqs.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/configure.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/contact-closure.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/daisychain.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/design.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/developer-guide.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/developers.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/documentation.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/download.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/features.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/hid-subdrivers.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/history.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/macros.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/net-protocol.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/new-clients.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/new-drivers.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/nut-names.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/nut-qa.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/nutdrv_qx-subdrivers.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/outlets.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/packager-guide.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/release-notes.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/scheduling.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/security.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/sms-brazil-protocol.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/snmp-subdrivers.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/snmp.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/sock-protocol.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/solaris-usb.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/support.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/nut-2.8.4\/user-manual.txt.bz2" ],
+            
+              [  "usr\/share\/icons\/hicolor\/256x256\/apps\/nut-monitor.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/nut-monitor.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/64x64\/apps\/nut-monitor.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/apps\/nut-monitor.svg" ],
+            
+              [  "usr\/share\/man\/man3\/libfreeipmi.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/libipmiconsole.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/libipmidetect.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/libipmimonitoring.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/libnutclient.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/libnutclient_commands.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/libnutclient_devices.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/libnutclient_general.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/libnutclient_misc.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/libnutclient_tcp.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/libnutclient_variables.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/nutclient_authenticate.3" ],
+            
+              [  "usr\/share\/man\/man3\/nutclient_destroy.3" ],
+            
+              [  "usr\/share\/man\/man3\/nutclient_device_forced_shutdown.3" ],
+            
+              [  "usr\/share\/man\/man3\/nutclient_device_login.3" ],
+            
+              [  "usr\/share\/man\/man3\/nutclient_device_master.3" ],
+            
+              [  "usr\/share\/man\/man3\/nutclient_execute_device_command.3" ],
+            
+              [  "usr\/share\/man\/man3\/nutclient_get_device_command_description.3" ],
+            
+              [  "usr\/share\/man\/man3\/nutclient_get_device_commands.3" ],
+            
+              [  "usr\/share\/man\/man3\/nutclient_get_device_description.3" ],
+            
+              [  "usr\/share\/man\/man3\/nutclient_get_device_num_logins.3" ],
+            
+              [  "usr\/share\/man\/man3\/nutclient_get_device_rw_variables.3" ],
+            
+              [  "usr\/share\/man\/man3\/nutclient_get_device_variable_description.3" ],
+            
+              [  "usr\/share\/man\/man3\/nutclient_get_device_variable_values.3" ],
+            
+              [  "usr\/share\/man\/man3\/nutclient_get_device_variables.3" ],
+            
+              [  "usr\/share\/man\/man3\/nutclient_get_devices.3" ],
+            
+              [  "usr\/share\/man\/man3\/nutclient_has_device.3" ],
+            
+              [  "usr\/share\/man\/man3\/nutclient_has_device_command.3" ],
+            
+              [  "usr\/share\/man\/man3\/nutclient_has_device_variable.3" ],
+            
+              [  "usr\/share\/man\/man3\/nutclient_logout.3" ],
+            
+              [  "usr\/share\/man\/man3\/nutclient_set_device_variable_value.3" ],
+            
+              [  "usr\/share\/man\/man3\/nutclient_set_device_variable_values.3" ],
+            
+              [  "usr\/share\/man\/man3\/nutclient_tcp_create_client.3" ],
+            
+              [  "usr\/share\/man\/man3\/nutclient_tcp_disconnect.3" ],
+            
+              [  "usr\/share\/man\/man3\/nutclient_tcp_get_timeout.3" ],
+            
+              [  "usr\/share\/man\/man3\/nutclient_tcp_is_connected.3" ],
+            
+              [  "usr\/share\/man\/man3\/nutclient_tcp_reconnect.3" ],
+            
+              [  "usr\/share\/man\/man3\/nutclient_tcp_set_timeout.3" ],
+            
+              [  "usr\/share\/man\/man3\/nutscan.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/nutscan_add_commented_option_to_device.3" ],
+            
+              [  "usr\/share\/man\/man3\/nutscan_add_device_to_device.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/nutscan_add_ip_range.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/nutscan_add_option_to_device.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/nutscan_cidr_to_ip.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/nutscan_display_parsable.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/nutscan_display_sanity_check.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/nutscan_display_sanity_check_serial.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/nutscan_display_ups_conf.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/nutscan_display_ups_conf_with_sanity_check.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/nutscan_free_device.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/nutscan_free_ip_ranges.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/nutscan_get_serial_ports_list.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/nutscan_init.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/nutscan_init_ip_ranges.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/nutscan_ip_ranges_iter_inc.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/nutscan_ip_ranges_iter_init.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/nutscan_new_device.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/nutscan_scan_avahi.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/nutscan_scan_eaton_serial.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/nutscan_scan_ipmi.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/nutscan_scan_nut.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/nutscan_scan_nut_simulation.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/nutscan_scan_snmp.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/nutscan_scan_usb.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/nutscan_scan_xml_http_range.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/nutscan_stringify_ip_ranges.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/upscli_add_host_cert.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/upscli_cleanup.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/upscli_connect.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/upscli_disconnect.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/upscli_fd.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/upscli_get.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/upscli_get_default_connect_timeout.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/upscli_init.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/upscli_init_default_connect_timeout.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/upscli_list_next.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/upscli_list_start.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/upscli_readline.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/upscli_readline_timeout.3" ],
+            
+              [  "usr\/share\/man\/man3\/upscli_sendline.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/upscli_sendline_timeout.3" ],
+            
+              [  "usr\/share\/man\/man3\/upscli_set_default_connect_timeout.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/upscli_splitaddr.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/upscli_splitname.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/upscli_ssl.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/upscli_str_add_unique_token.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/upscli_str_contains_token.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/upscli_strerror.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/upscli_tryconnect.3" ],
+            
+              [  "usr\/share\/man\/man3\/upscli_upserror.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/upsclient.3.bz2" ],
+            
+              [  "usr\/share\/man\/man5\/bmc-config.conf.5" ],
+            
+              [  "usr\/share\/man\/man5\/freeipmi.conf.5.bz2" ],
+            
+              [  "usr\/share\/man\/man5\/freeipmi_interpret_sel.conf.5.bz2" ],
+            
+              [  "usr\/share\/man\/man5\/freeipmi_interpret_sensor.conf.5.bz2" ],
+            
+              [  "usr\/share\/man\/man5\/hosts.conf.5.bz2" ],
+            
+              [  "usr\/share\/man\/man5\/ipmi-config.conf.5.bz2" ],
+            
+              [  "usr\/share\/man\/man5\/ipmi_monitoring_sensors.conf.5" ],
+            
+              [  "usr\/share\/man\/man5\/ipmiconsole.conf.5" ],
+            
+              [  "usr\/share\/man\/man5\/ipmidetect.conf.5.bz2" ],
+            
+              [  "usr\/share\/man\/man5\/ipmidetectd.conf.5.bz2" ],
+            
+              [  "usr\/share\/man\/man5\/ipmimonitoring.conf.5" ],
+            
+              [  "usr\/share\/man\/man5\/ipmimonitoring_sensors.conf.5" ],
+            
+              [  "usr\/share\/man\/man5\/ipmipower.conf.5" ],
+            
+              [  "usr\/share\/man\/man5\/ipmiseld.conf.5.bz2" ],
+            
+              [  "usr\/share\/man\/man5\/libipmiconsole.conf.5.bz2" ],
+            
+              [  "usr\/share\/man\/man5\/libipmimonitoring.conf.5" ],
+            
+              [  "usr\/share\/man\/man5\/nut.conf.5.bz2" ],
+            
+              [  "usr\/share\/man\/man5\/ups.conf.5.bz2" ],
+            
+              [  "usr\/share\/man\/man5\/upsd.conf.5.bz2" ],
+            
+              [  "usr\/share\/man\/man5\/upsd.users.5.bz2" ],
+            
+              [  "usr\/share\/man\/man5\/upsmon.conf.5.bz2" ],
+            
+              [  "usr\/share\/man\/man5\/upssched.conf.5.bz2" ],
+            
+              [  "usr\/share\/man\/man5\/upsset.conf.5.bz2" ],
+            
+              [  "usr\/share\/man\/man5\/upsstats.html.5.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/freeipmi.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/nut.7.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/NUT-Monitor-py2gtk2.8" ],
+            
+              [  "usr\/share\/man\/man8\/NUT-Monitor-py3qt5.8" ],
+            
+              [  "usr\/share\/man\/man8\/NUT-Monitor-py3qt6.8" ],
+            
+              [  "usr\/share\/man\/man8\/NUT-Monitor.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/adelsystem_cbi.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/al175.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/apc_modbus.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/apcsmart-old.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/apcsmart.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/apcupsd-ups.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/asem.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/bcmxcp.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/bcmxcp_usb.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/belkin.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/belkinunv.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/bestfcom.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/bestfortress.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/bestuferrups.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/bestups.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/bicker_ser.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/blazer_ser.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/blazer_usb.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/bmc-config.8" ],
+            
+              [  "usr\/share\/man\/man8\/bmc-device.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/bmc-info.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/bmc-watchdog.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/clone-outlet.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/clone.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/dummy-ups.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/etapro.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/everups.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/failover.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/gamatronic.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/generic_gpio.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/generic_modbus.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/genericups.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/huawei-ups2000.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/hwmon_ina219.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/ipmi-chassis-config.8" ],
+            
+              [  "usr\/share\/man\/man8\/ipmi-chassis.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/ipmi-config.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/ipmi-console.8" ],
+            
+              [  "usr\/share\/man\/man8\/ipmi-dcmi.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/ipmi-detect.8" ],
+            
+              [  "usr\/share\/man\/man8\/ipmi-fru.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/ipmi-locate.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/ipmi-oem.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/ipmi-pef-config.8" ],
+            
+              [  "usr\/share\/man\/man8\/ipmi-pet.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/ipmi-ping.8" ],
+            
+              [  "usr\/share\/man\/man8\/ipmi-power.8" ],
+            
+              [  "usr\/share\/man\/man8\/ipmi-raw.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/ipmi-sel.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/ipmi-sensors-config.8" ],
+            
+              [  "usr\/share\/man\/man8\/ipmi-sensors.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/ipmiconsole.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/ipmidetect.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/ipmidetectd.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/ipmimonitoring.8" ],
+            
+              [  "usr\/share\/man\/man8\/ipmiping.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/ipmipower.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/ipmiseld.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/isbmex.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/ivtscd.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/liebert-esp2.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/liebert-gxe.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/liebert.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/masterguard.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/metasys.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/mge-shut.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/mge-utalk.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/microdowell.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/microsol-apc.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/netxml-ups.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/nhs_ser.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/nut-driver-enumerator.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/nut-ipmipsu.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/nut-recorder.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/nut-scanner.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/nutconf.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/nutdrv_atcl_usb.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/nutdrv_hashx.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/nutdrv_qx.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/nutdrv_siemens_sitop.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/nutupsdrv.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/oneac.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/optiups.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/pef-config.8" ],
+            
+              [  "usr\/share\/man\/man8\/phoenixcontact_modbus.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/pijuice.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/powercom.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/powerpanel.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/powervar_cx_ser.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/powervar_cx_usb.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/rhino.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/richcomm_usb.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/riello_ser.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/riello_usb.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/rmcp-ping.8" ],
+            
+              [  "usr\/share\/man\/man8\/rmcpping.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/safenet.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sms_ser.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/snmp-ups.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/sockdebug.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/socomec_jbus.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/solis.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/tripplite.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/tripplite_usb.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/tripplitesu.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/upsc.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/upscmd.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/upscode2.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/upsd.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/upsdrvctl.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/upsdrvsvcctl.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/upsimage.cgi.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/upslog.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/upsmon.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/upsrw.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/upssched.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/upsset.cgi.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/upsstats.cgi.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/usbhid-ups.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/ve-direct.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/victronups.8.bz2" ],
+            
+              [  "usr\/share\/nut\/cgi\/upsimage.cgi" ],
+            
+              [  "usr\/share\/nut\/cgi\/upsset.cgi" ],
+            
+              [  "usr\/share\/nut\/cgi\/upsstats.cgi" ],
+            
+              [  "usr\/share\/nut\/cmdvartab" ],
+            
+              [  "usr\/share\/nut\/driver.list" ],
+            
+              [  "usr\/share\/nut\/html\/bottom.html" ],
+            
+              [  "usr\/share\/nut\/html\/header.html" ],
+            
+              [  "usr\/share\/nut\/html\/index.html" ],
+            
+              [  "usr\/share\/nut\/html\/nut-banner.png" ],
+            
+              [  "usr\/share\/nut\/nut-monitor\/README.adoc" ],
+            
+              [  "usr\/share\/nut\/nut-monitor\/app\/NUT-Monitor" ],
+            
+              [  "usr\/share\/nut\/nut-monitor\/app\/NUT-Monitor-py3qt6" ],
+            
+              [  "usr\/share\/nut\/nut-monitor\/app\/README.adoc" ],
+            
+              [  "usr\/share\/nut\/nut-monitor\/app\/icons\/256x256\/nut-monitor.png" ],
+            
+              [  "usr\/share\/nut\/nut-monitor\/app\/icons\/48x48\/nut-monitor.png" ],
+            
+              [  "usr\/share\/nut\/nut-monitor\/app\/icons\/64x64\/nut-monitor.png" ],
+            
+              [  "usr\/share\/nut\/nut-monitor\/app\/icons\/scalable\/nut-monitor.svg" ],
+            
+              [  "usr\/share\/nut\/nut-monitor\/app\/locale\/fr\/LC_MESSAGES\/NUT-Monitor.mo" ],
+            
+              [  "usr\/share\/nut\/nut-monitor\/app\/locale\/fr\/fr_FR.UTF-8.po" ],
+            
+              [  "usr\/share\/nut\/nut-monitor\/app\/locale\/fr_FR.UTF-8" ],
+            
+              [  "usr\/share\/nut\/nut-monitor\/app\/locale\/it\/LC_MESSAGES\/NUT-Monitor.mo" ],
+            
+              [  "usr\/share\/nut\/nut-monitor\/app\/locale\/it\/it_IT.UTF-8.po" ],
+            
+              [  "usr\/share\/nut\/nut-monitor\/app\/locale\/it_IT.UTF-8" ],
+            
+              [  "usr\/share\/nut\/nut-monitor\/app\/locale\/ru\/LC_MESSAGES\/NUT-Monitor.mo" ],
+            
+              [  "usr\/share\/nut\/nut-monitor\/app\/locale\/ru\/ru_RU.UTF-8.po" ],
+            
+              [  "usr\/share\/nut\/nut-monitor\/app\/locale\/ru_RU.UTF-8" ],
+            
+              [  "usr\/share\/nut\/nut-monitor\/app\/nut-monitor-py3qt6.desktop" ],
+            
+              [  "usr\/share\/nut\/nut-monitor\/app\/nut-monitor.appdata.xml" ],
+            
+              [  "usr\/share\/nut\/nut-monitor\/app\/nut-monitor.desktop" ],
+            
+              [  "usr\/share\/nut\/nut-monitor\/app\/pixmaps\/on_battery.png" ],
+            
+              [  "usr\/share\/nut\/nut-monitor\/app\/pixmaps\/on_line.png" ],
+            
+              [  "usr\/share\/nut\/nut-monitor\/app\/pixmaps\/var-ro.png" ],
+            
+              [  "usr\/share\/nut\/nut-monitor\/app\/pixmaps\/var-rw.png" ],
+            
+              [  "usr\/share\/nut\/nut-monitor\/app\/pixmaps\/warning.png" ],
+            
+              [  "usr\/share\/nut\/nut-monitor\/app\/screenshots\/nut-monitor-1.png" ],
+            
+              [  "usr\/share\/nut\/nut-monitor\/app\/screenshots\/nut-monitor-2.png" ],
+            
+              [  "usr\/share\/nut\/nut-monitor\/app\/screenshots\/nut-monitor-3.png" ],
+            
+              [  "usr\/share\/nut\/nut-monitor\/app\/ui\/aboutdialog1.ui" ],
+            
+              [  "usr\/share\/nut\/nut-monitor\/app\/ui\/dialog1.ui" ],
+            
+              [  "usr\/share\/nut\/nut-monitor\/app\/ui\/dialog2.ui" ],
+            
+              [  "usr\/share\/nut\/nut-monitor\/app\/ui\/window1.ui" ],
+            
+              [  "var\/cache\/ipmimonitoringsdrcache\/.keep_sys-libs_freeipmi-0" ],
+            
+              [  "var\/cache\/ipmiseld\/.keep_sys-libs_freeipmi-0" ],
+            
+              [  "var\/lib\/freeipmi\/.keep_sys-libs_freeipmi-0" ],
+            
+              [  "var\/lib\/freeipmi\/ipckey" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

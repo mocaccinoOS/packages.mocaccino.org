@@ -1,0 +1,773 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing libs/gtksourceview-3.24.11-r4&#43;1 in mocaccino-community-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> libs/gtksourceview-3.24.11-r4&#43;1
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                A text widget implementing syntax highlighting and other features
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-community-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-community-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of libs/gtksourceview
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/mocaccino-community:gtksourceview-libs-3.24.11-r4-1" target="_blank"> quay.io/mocaccino/mocaccino-community:gtksourceview-libs-3.24.11-r4-1 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/mocaccino-community:gtksourceview-libs-3.24.11-r4-1/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 3.24.11-r4&#43;1  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> LGPL-2.1&#43; </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/X">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  X &gt;=0 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: x11-libs/gtksourceview:3.0/3
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://wiki.gnome.org/Projects/GtkSourceView" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://wiki.gnome.org/Projects/GtkSourceView </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/x11-libs/gtksourceview">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  gtksourceview &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "usr\/lib64\/girepository-1.0\/GtkSource-3.0.typelib" ],
+            
+              [  "usr\/lib64\/libgtksourceview-3.0.so" ],
+            
+              [  "usr\/lib64\/libgtksourceview-3.0.so.1" ],
+            
+              [  "usr\/lib64\/libgtksourceview-3.0.so.1.8.0" ],
+            
+              [  "usr\/lib64\/pkgconfig\/gtksourceview-3.0.pc" ],
+            
+              [  "usr\/share\/gir-1.0\/GtkSource-3.0.gir" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/GtkSourceBuffer.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/GtkSourceCompletion.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/GtkSourceCompletionContext.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/GtkSourceCompletionInfo.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/GtkSourceCompletionItem.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/GtkSourceCompletionProposal.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/GtkSourceCompletionProvider.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/GtkSourceCompletionWords.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/GtkSourceEncoding.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/GtkSourceFile.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/GtkSourceFileLoader.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/GtkSourceFileSaver.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/GtkSourceGutter.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/GtkSourceGutterRenderer.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/GtkSourceGutterRendererPixbuf.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/GtkSourceGutterRendererText.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/GtkSourceLanguage.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/GtkSourceLanguageManager.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/GtkSourceMap.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/GtkSourceMark.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/GtkSourceMarkAttributes.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/GtkSourcePrintCompositor.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/GtkSourceRegion.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/GtkSourceSearchContext.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/GtkSourceSearchSettings.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/GtkSourceSpaceDrawer.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/GtkSourceStyle.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/GtkSourceStyleScheme.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/GtkSourceStyleSchemeChooser.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/GtkSourceStyleSchemeChooserButton.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/GtkSourceStyleSchemeChooserWidget.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/GtkSourceStyleSchemeManager.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/GtkSourceTag.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/GtkSourceUndoManager.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/GtkSourceView.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/annotation-glossary.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/api-index-full.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/ch01.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/ch02.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/ch03.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/ch04.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/ch05.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/ch06.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/ch07.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/ch08.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/ch09.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/gtksourceview-3.0-GtkSourceUtils.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/gtksourceview-3.0-Version-Information.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/gtksourceview-3.0.devhelp2" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/home.png" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/index.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/lang-reference.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/lang-tutorial.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/left-insensitive.png" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/left.png" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/object-tree.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/pt01.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/pt02.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/pt03.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/pt04.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/right-insensitive.png" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/right.png" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/style-reference.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/style.css" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/up-insensitive.png" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/gtksourceview-3.0\/up.png" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/R.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/abnf.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/actionscript.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/ada.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/ansforth94.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/asp.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/automake.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/awk.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/bennugd.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/bibtex.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/bluespec.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/boo.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/c.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/cg.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/changelog.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/chdr.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/cmake.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/cobol.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/cpp.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/cpphdr.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/csharp.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/css.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/csv.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/cuda.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/d.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/def.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/desktop.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/diff.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/docbook.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/dosbatch.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/dot.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/dpatch.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/dtd.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/dtl.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/eiffel.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/erlang.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/fcl.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/forth.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/fortran.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/fsharp.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/gap.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/gdb-log.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/genie.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/gentoo.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/glsl.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/go.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/groovy.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/gtk-doc.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/gtkrc.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/haddock.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/haskell-literate.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/haskell.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/haxe.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/html.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/idl-exelis.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/idl.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/imagej.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/ini.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/j.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/jade.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/java.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/javascript.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/json.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/julia.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/kotlin.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/language.dtd" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/language.rng" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/language2.rng" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/latex.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/less.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/lex.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/libtool.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/llvm.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/logcat.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/logtalk.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/lua.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/m4.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/makefile.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/mallard.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/markdown.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/matlab.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/maxima.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/mediawiki.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/meson.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/modelica.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/mxml.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/nemerle.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/netrexx.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/nsis.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/objc.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/objj.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/ocaml.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/ocl.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/octave.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/ooc.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/opal.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/opencl.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/pascal.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/perl.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/php.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/pig.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/pkgconfig.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/po.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/powershell.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/prolog.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/protobuf.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/puppet.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/python.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/python3.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/rpmspec.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/rst.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/ruby.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/rust.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/scala.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/scheme.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/scilab.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/scss.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/sh.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/sml.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/sparql.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/sql.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/sweave.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/swift.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/systemverilog.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/t2t.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/tcl.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/tera.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/texinfo.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/thrift.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/toml.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/vala.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/vbnet.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/verilog.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/vhdl.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/xml.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/xslt.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/yacc.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/language-specs\/yaml.lang" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/styles\/classic.xml" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/styles\/cobalt.xml" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/styles\/kate.xml" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/styles\/oblivion.xml" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/styles\/solarized-dark.xml" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/styles\/solarized-light.xml" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/styles\/styles.rng" ],
+            
+              [  "usr\/share\/gtksourceview-3.0\/styles\/tango.xml" ],
+            
+              [  "usr\/share\/locale\/ar\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/az\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/bg\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/bn\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/bs\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/cy\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/da\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/en_GB\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/eo\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/et\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/eu\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/fa\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/fi\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/ga\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/gl\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/gu\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/hi\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/hr\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/hu\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/lt\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/lv\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/mk\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/ms\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/nb\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/nl\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/pa\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/pt\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/ro\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/sk\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/sl\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/sr\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/ta\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/gtksourceview-3.0.mo" ],
+            
+              [  "usr\/share\/vala\/vapi\/gtksourceview-3.0.deps" ],
+            
+              [  "usr\/share\/vala\/vapi\/gtksourceview-3.0.vapi" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

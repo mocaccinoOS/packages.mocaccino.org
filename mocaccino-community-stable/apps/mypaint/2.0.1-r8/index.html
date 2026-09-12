@@ -1,0 +1,2280 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing apps/mypaint-2.0.1-r8 in mocaccino-community-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> apps/mypaint-2.0.1-r8
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                Fast and easy graphics application for digital painters
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-community-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-community-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of apps/mypaint
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/mocaccino-community:mypaint-apps-2.0.1-r8" target="_blank"> quay.io/mocaccino/mocaccino-community:mypaint-apps-2.0.1-r8 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/mocaccino-community:mypaint-apps-2.0.1-r8/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 2.0.1-r8  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> GPL-2 </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/X">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  X &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/python-protobuf">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  python-protobuf 7.35.1 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/libmypaint">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  libmypaint 1.6.1-r3&#43;4 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/apps/mypaint-brushes">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  mypaint-brushes 2.0.2-r2&#43;3 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> appstream.id: org.mypaint.MyPaint
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: media-gfx/mypaint
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="http://mypaint.org/" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> http://mypaint.org/ </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/media-gfx/mypaint">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  mypaint &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "usr\/bin\/mypaint" ],
+            
+              [  "usr\/bin\/mypaint-ora-thumbnailer" ],
+            
+              [  "usr\/lib\/mypaint\/MyPaint-2.0.0a0-py3.14.egg-info\/PKG-INFO" ],
+            
+              [  "usr\/lib\/mypaint\/MyPaint-2.0.0a0-py3.14.egg-info\/SOURCES.txt" ],
+            
+              [  "usr\/lib\/mypaint\/MyPaint-2.0.0a0-py3.14.egg-info\/dependency_links.txt" ],
+            
+              [  "usr\/lib\/mypaint\/MyPaint-2.0.0a0-py3.14.egg-info\/top_level.txt" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__init__.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/accelmap.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/accelmap.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/accelmap.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/application.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/application.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/application.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/autorecover.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/autorecover.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/autorecover.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/backgroundwindow.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/backgroundwindow.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/backgroundwindow.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/blendmodehandler.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/blendmodehandler.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/blendmodehandler.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/brushcolor.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/brushcolor.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/brushcolor.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/brusheditor.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/brusheditor.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/brusheditor.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/brushiconeditor.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/brushiconeditor.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/brushiconeditor.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/brushmanager.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/brushmanager.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/brushmanager.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/brushmodifier.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/brushmodifier.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/brushmodifier.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/brushselectionwindow.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/brushselectionwindow.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/brushselectionwindow.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/builderhacks.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/builderhacks.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/builderhacks.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/buttonmap.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/buttonmap.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/buttonmap.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/colorpicker.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/colorpicker.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/colorpicker.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/colorpreview.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/colorpreview.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/colorpreview.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/colortools.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/colortools.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/colortools.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/compatconfig.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/compatconfig.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/compatconfig.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/compatibility.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/compatibility.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/compatibility.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/cursor.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/cursor.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/cursor.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/curve.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/curve.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/curve.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/device.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/device.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/device.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/dialogs.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/dialogs.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/dialogs.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/displayfilter.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/displayfilter.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/displayfilter.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/document.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/document.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/document.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/drawutils.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/drawutils.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/drawutils.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/drawwindow.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/drawwindow.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/drawwindow.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/externalapp.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/externalapp.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/externalapp.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/factoryaction.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/factoryaction.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/factoryaction.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/filehandling.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/filehandling.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/filehandling.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/fill.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/fill.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/fill.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/footer.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/footer.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/footer.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/framewindow.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/framewindow.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/framewindow.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/freehand.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/freehand.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/freehand.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/gtkexcepthook.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/gtkexcepthook.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/gtkexcepthook.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/history.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/history.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/history.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/historypopup.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/historypopup.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/historypopup.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/inktool.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/inktool.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/inktool.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/inputtestwindow.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/inputtestwindow.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/inputtestwindow.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/keyboard.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/keyboard.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/keyboard.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/layermanip.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/layermanip.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/layermanip.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/layermodes.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/layermodes.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/layermodes.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/layerprops.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/layerprops.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/layerprops.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/layers.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/layers.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/layers.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/layerswindow.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/layerswindow.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/layerswindow.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/layervis.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/layervis.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/layervis.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/linemode.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/linemode.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/linemode.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/main.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/main.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/main.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/meta.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/meta.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/meta.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/mode.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/mode.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/mode.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/mvp.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/mvp.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/mvp.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/objfactory.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/objfactory.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/objfactory.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/optionspanel.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/optionspanel.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/optionspanel.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/overlays.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/overlays.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/overlays.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/picker.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/picker.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/picker.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/pixbuflist.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/pixbuflist.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/pixbuflist.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/preferenceswindow.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/preferenceswindow.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/preferenceswindow.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/previewwindow.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/previewwindow.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/previewwindow.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/profiling.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/profiling.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/profiling.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/quickchoice.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/quickchoice.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/quickchoice.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/scratchwindow.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/scratchwindow.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/scratchwindow.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/spinbox.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/spinbox.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/spinbox.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/stategroup.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/stategroup.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/stategroup.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/style.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/style.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/style.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/symmetry.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/symmetry.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/symmetry.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/tileddrawwidget.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/tileddrawwidget.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/tileddrawwidget.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/toolbar.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/toolbar.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/toolbar.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/toolstack.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/toolstack.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/toolstack.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/topbar.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/topbar.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/topbar.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/uicolor.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/uicolor.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/uicolor.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/userconfig.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/userconfig.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/userconfig.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/viewmanip.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/viewmanip.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/viewmanip.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/widgets.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/widgets.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/widgets.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/windowing.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/windowing.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/windowing.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/workspace.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/workspace.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/__pycache__\/workspace.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/accelmap.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/application.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/autorecover.glade" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/autorecover.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/backgroundwindow.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/blendmodehandler.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/brushcolor.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/brusheditor.glade" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/brusheditor.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/brushiconeditor.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/brushmanager.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/brushmodifier.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/brushselectionwindow.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/builderhacks.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/buttonmap.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colorpicker.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colorpreview.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/__init__.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/__pycache__\/adjbases.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/__pycache__\/adjbases.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/__pycache__\/adjbases.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/__pycache__\/bases.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/__pycache__\/bases.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/__pycache__\/bases.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/__pycache__\/changers.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/__pycache__\/changers.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/__pycache__\/changers.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/__pycache__\/combined.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/__pycache__\/combined.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/__pycache__\/combined.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/__pycache__\/hcywheel.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/__pycache__\/hcywheel.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/__pycache__\/hcywheel.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/__pycache__\/hsvcube.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/__pycache__\/hsvcube.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/__pycache__\/hsvcube.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/__pycache__\/hsvsquare.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/__pycache__\/hsvsquare.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/__pycache__\/hsvsquare.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/__pycache__\/hsvwheel.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/__pycache__\/hsvwheel.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/__pycache__\/hsvwheel.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/__pycache__\/paletteview.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/__pycache__\/paletteview.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/__pycache__\/paletteview.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/__pycache__\/sliders.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/__pycache__\/sliders.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/__pycache__\/sliders.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/__pycache__\/uimisc.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/__pycache__\/uimisc.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/__pycache__\/uimisc.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/__pycache__\/util.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/__pycache__\/util.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/__pycache__\/util.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/adjbases.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/bases.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/changers.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/combined.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/hcywheel.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/hsvcube.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/hsvsquare.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/hsvwheel.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/paletteview.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/sliders.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/uimisc.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colors\/util.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/colortools.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/compatconfig.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/compatibility.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/cursor.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/curve.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/device.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/dialogs.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/displayfilter.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/document.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/drawutils.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/drawwindow.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/externalapp.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/factoryaction.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/filehandling.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/fill.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/footer.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/framewindow.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/freehand.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/gtkexcepthook.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/history.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/historypopup.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/inktool.glade" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/inktool.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/inputtestwindow.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/keyboard.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/layermanip.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/layermodes.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/layerprops.glade" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/layerprops.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/layers.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/layerswindow.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/layerswindow.xml" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/layervis.glade" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/layervis.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/linemode.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/main.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/menu.xml" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/meta.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/mode.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/mvp.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/mypaint.glade" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/objfactory.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/optionspanel.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/overlays.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/picker.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/pixbuflist.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/preferenceswindow.glade" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/preferenceswindow.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/previewwindow.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/profiling.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/quickchoice.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/resources.xml" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/scratchwindow.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/spinbox.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/stategroup.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/style.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/symmetry.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/tileddrawwidget.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/toolbar-blendmodes.xml" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/toolbar-edit.xml" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/toolbar-file.xml" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/toolbar-linemodes.xml" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/toolbar-scrap.xml" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/toolbar-view-manips.xml" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/toolbar-view-modes.xml" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/toolbar-view-resets.xml" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/toolbar.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/toolbar.xml" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/toolstack.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/topbar.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/uicolor.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/userconfig.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/viewmanip.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/widgets.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/windowing.py" ],
+            
+              [  "usr\/lib\/mypaint\/gui\/workspace.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__init__.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/alg.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/alg.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/alg.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/autosave.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/autosave.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/autosave.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/brush.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/brush.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/brush.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/brushes_migrate_json.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/brushes_migrate_json.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/brushes_migrate_json.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/brushsettings.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/brushsettings.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/brushsettings.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/cache.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/cache.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/cache.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/color.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/color.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/color.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/command.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/command.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/command.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/config.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/config.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/config.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/document.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/document.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/document.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/eotf.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/eotf.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/eotf.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/errors.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/errors.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/errors.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/feedback.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/feedback.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/feedback.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/fileutils.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/fileutils.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/fileutils.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/fill_common.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/fill_common.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/fill_common.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/floodfill.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/floodfill.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/floodfill.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/gettext.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/gettext.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/gettext.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/gettext_setup.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/gettext_setup.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/gettext_setup.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/gibindings.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/gibindings.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/gibindings.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/glib.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/glib.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/glib.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/helpers.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/helpers.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/helpers.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/i18n.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/i18n.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/i18n.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/idletask.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/idletask.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/idletask.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/layervis.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/layervis.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/layervis.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/localecodes.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/localecodes.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/localecodes.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/meta.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/meta.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/meta.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/modes.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/modes.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/modes.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/morphology.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/morphology.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/morphology.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/mypaintlib.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/mypaintlib.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/mypaintlib.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/naming.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/naming.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/naming.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/observable.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/observable.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/observable.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/palette.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/palette.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/palette.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/pixbuf.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/pixbuf.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/pixbuf.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/pixbufsurface.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/pixbufsurface.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/pixbufsurface.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/pycompat.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/pycompat.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/pycompat.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/stroke.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/stroke.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/stroke.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/strokemap.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/strokemap.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/strokemap.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/surface.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/surface.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/surface.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/tiledsurface.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/tiledsurface.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/tiledsurface.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/validation.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/validation.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/validation.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/xml.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/xml.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/__pycache__\/xml.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/_mypaintlib.cpython-314-x86_64-linux-gnu.so" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/alg.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/autosave.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/brush.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/brushes_migrate_json.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/brushsettings.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/cache.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/color.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/command.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/config.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/document.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/eotf.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/errors.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/feedback.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/fileutils.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/fill_common.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/floodfill.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/gettext.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/gettext_setup.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/gibindings.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/glib.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/helpers.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/i18n.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/idletask.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/layer\/__init__.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/layer\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/layer\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/layer\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/layer\/__pycache__\/core.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/layer\/__pycache__\/core.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/layer\/__pycache__\/core.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/layer\/__pycache__\/data.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/layer\/__pycache__\/data.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/layer\/__pycache__\/data.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/layer\/__pycache__\/error.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/layer\/__pycache__\/error.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/layer\/__pycache__\/error.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/layer\/__pycache__\/group.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/layer\/__pycache__\/group.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/layer\/__pycache__\/group.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/layer\/__pycache__\/rendering.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/layer\/__pycache__\/rendering.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/layer\/__pycache__\/rendering.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/layer\/__pycache__\/test.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/layer\/__pycache__\/test.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/layer\/__pycache__\/test.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/layer\/__pycache__\/tree.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/layer\/__pycache__\/tree.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/layer\/__pycache__\/tree.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/layer\/core.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/layer\/data.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/layer\/error.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/layer\/group.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/layer\/rendering.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/layer\/test.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/layer\/tree.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/layervis.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/localecodes.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/meta.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/modes.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/morphology.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/mypaintlib.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/naming.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/observable.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/palette.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/pixbuf.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/pixbufsurface.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/pycompat.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/stroke.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/strokemap.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/surface.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/tiledsurface.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/validation.py" ],
+            
+              [  "usr\/lib\/mypaint\/lib\/xml.py" ],
+            
+              [  "usr\/share\/applications\/mypaint.desktop" ],
+            
+              [  "usr\/share\/doc\/mypaint-2.0.1-r8\/README.md.bz2" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/actions\/mypaint-tool-color-palette.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/actions\/mypaint-tool-component-sliders.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/actions\/mypaint-tool-crossed-bowl-color-changer.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/actions\/mypaint-tool-hcywheel.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/actions\/mypaint-tool-hsvcube.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/actions\/mypaint-tool-hsvsquare.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/actions\/mypaint-tool-hsvwheel.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/actions\/mypaint-tool-hue-wheel.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/actions\/mypaint-tool-rings-color-changer.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/actions\/mypaint-tool-wash-color-changer.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/actions\/mypaint-tool-color-palette.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/actions\/mypaint-tool-component-sliders.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/actions\/mypaint-tool-crossed-bowl-color-changer.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/actions\/mypaint-tool-hcywheel.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/actions\/mypaint-tool-hsvcube.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/actions\/mypaint-tool-hsvsquare.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/actions\/mypaint-tool-hsvwheel.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/actions\/mypaint-tool-hue-wheel.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/actions\/mypaint-tool-rings-color-changer.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/actions\/mypaint-tool-wash-color-changer.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-add-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-brush-blend-modes-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-brush-stroke-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-brush-tip-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-colorize-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-colors-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-compositing-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-document-properties-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-down-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-edit-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-eraser-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-expander-collapsed-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-expander-expanded-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-fill-gc-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-fill-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-frame-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-layer-move-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-layer-vector-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-layers-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-left-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-lock-alpha-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-object-move-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-paint-over-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-painting-context-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-pick-color-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-remove-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-right-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-scrap-next-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-scrap-prev-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-scrap-save-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-scratchpad-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-stroke-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-symmetry-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-tab-sidebar-swap-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-target-brush-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-target-layer-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-target-stroke-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-tool-color-palette.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-tool-component-sliders.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-tool-crossed-bowl-color-changer.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-tool-hcywheel.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-tool-hsvcube.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-tool-hsvsquare.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-tool-hsvwheel.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-tool-hue-wheel.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-tool-inking-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-tool-rings-color-changer.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-tool-wash-color-changer.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-up-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-view-100-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-view-fit-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-view-mirror-horizontal-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-view-mirror-vertical-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-view-pan-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-view-rotate-anticlockwise-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-view-rotate-clockwise-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-view-rotate-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-view-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-view-zoom-less-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-view-zoom-more-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/actions\/mypaint-view-zoom-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/32x32\/actions\/mypaint-tool-color-palette.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/32x32\/actions\/mypaint-tool-component-sliders.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/32x32\/actions\/mypaint-tool-crossed-bowl-color-changer.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/32x32\/actions\/mypaint-tool-hcywheel.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/32x32\/actions\/mypaint-tool-hsvcube.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/32x32\/actions\/mypaint-tool-hsvsquare.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/32x32\/actions\/mypaint-tool-hsvwheel.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/32x32\/actions\/mypaint-tool-hue-wheel.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/32x32\/actions\/mypaint-tool-rings-color-changer.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/32x32\/actions\/mypaint-tool-wash-color-changer.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/actions\/mypaint-tool-color-palette.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/actions\/mypaint-tool-component-sliders.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/actions\/mypaint-tool-crossed-bowl-color-changer.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/actions\/mypaint-tool-hcywheel.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/actions\/mypaint-tool-hsvcube.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/actions\/mypaint-tool-hsvsquare.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/actions\/mypaint-tool-hsvwheel.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/actions\/mypaint-tool-hue-wheel.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/actions\/mypaint-tool-rings-color-changer.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/actions\/mypaint-tool-wash-color-changer.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-about-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-add-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-bookmark-new-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-brush-blend-modes-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-brush-stroke-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-brush-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-brush-tip-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-brushes-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-clear-all-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-close-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-colorize-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-colors-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-compositing-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-copy-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-cut-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-delete-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-document-export-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-document-new-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-document-open-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-document-properties-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-document-revert-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-document-save-as-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-document-save-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-down-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-duplicate-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-edit-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-ellipse-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-eraser-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-expander-collapsed-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-expander-expanded-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-file-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-fill-gc-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-fill-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-frame-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-freehand-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-fullscreen-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-globe-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-help-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-history-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-hsv-rotate-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-info-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-layer-above-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-layer-below-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-layer-clone-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-layer-delete-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-layer-fallback-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-layer-group-new-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-layer-group-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-layer-lower-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-layer-merge-down-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-layer-move-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-layer-new-below-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-layer-new-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-layer-painting-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-layer-raise-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-layer-vector-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-layers-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-layers-view-add-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-left-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-line-sequence-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-lines-and-curves-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-lock-alpha-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-object-hidden-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-object-locked-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-object-move-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-object-unlocked-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-object-visible-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-ok-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-options-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-paint-over-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-painting-context-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-paste-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-pick-color-c-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-pick-color-h-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-pick-color-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-pick-color-y-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-quit-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-redo-ltr-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-redo-rtl-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-remove-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-right-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-run-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-scrap-next-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-scrap-prev-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-scrap-save-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-scratchpad-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-stroke-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-symmetry-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-tab-options-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-tab-sidebar-swap-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-target-brush-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-target-layer-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-target-stroke-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-target-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-tool-color-palette.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-tool-component-sliders.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-tool-hcywheel.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-tool-hsvcube.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-tool-hsvwheel.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-tool-hue-wheel.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-tool-inking-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-trash-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-undo-ltr-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-undo-rtl-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-unfullscreen-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-up-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-view-100-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-view-fit-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-view-mirror-horizontal-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-view-mirror-vertical-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-view-pan-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-view-rotate-anticlockwise-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-view-rotate-clockwise-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-view-rotate-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-view-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-view-zoom-less-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-view-zoom-more-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/actions\/mypaint-view-zoom-symbolic.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/apps\/org.mypaint.MyPaint.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/symbolic\/apps\/org.mypaint.MyPaint-symbolic.svg" ],
+            
+              [  "usr\/share\/locale\/af\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/ar\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/as\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/ast\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/az\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/be\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/bg\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/bn\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/br\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/brx\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/bs\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/ca@valencia\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/ckb\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/csb\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/da\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/dz\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/en_GB\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/eo\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/et\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/eu\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/fa\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/fi\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/fy\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/ga\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/gl\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/gu\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/hi\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/hr\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/hu\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/hy\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/is\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/ka\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/kab\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/kk\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/kn\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/lt\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/lv\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/mai\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/ml\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/mn\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/mr\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/ms\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/nb\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/nl\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/oc\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/pa\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/pt\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/ro\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/se\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/sk\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/sl\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/sq\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/sr\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/sr@latin\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/ta\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/te\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/tg\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/th\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/uz\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/wa\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/zh_HK\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/mypaint.mo" ],
+            
+              [  "usr\/share\/metainfo\/mypaint.appdata.xml" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/01_white.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/02_black.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/03_check1.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/03_check2.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/04_grey1.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/04_grey2.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/05_grey3.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/10_soft_yellow.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/11_weak_blue.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/50_comic_thumbnails.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/50_storyboard.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/README.md" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/canvas1_1.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/canvas1_2.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/canvas1_3.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/canvas2_1.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/canvas3_1.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/canvas3_2.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/canvas3_3.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/mrmamurk\/MrMamurk_readme.txt" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/mrmamurk\/mamurk_a_1.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/mrmamurk\/mamurk_a_2.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/mrmamurk\/mamurk_b_1.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/mrmamurk\/mamurk_c_3.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/mrmamurk\/mamurk_e_1.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/mrmamurk\/mamurk_e_2.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/mrmamurk\/mamurk_f_1.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/paper1_1.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/paper1_10.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/paper1_11.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/paper1_12.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/paper1_13.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/paper1_2.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/paper1_3.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/paper1_4.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/paper1_5.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/paper1_6.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/paper1_7.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/paper1_8.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/paper1_9.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/paper2_1.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/paper2_2.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/paper2_3.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/paper2_4.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/paper2_5.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/paper3_1.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/paper3_2.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/paper3_3.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/paper3_4.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/paper3_5.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/paper3_6.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/paper3_7.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/paper4_1.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/paper4_2.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/paper5_1.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/paper5_2.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/paper5_3.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/paper5a_score.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/paper6_1.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/paper6_2.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/paper6_3.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/paper6_4.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/paper7_1.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/paper7_10.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/paper7_2.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/paper7_3.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/paper7_4.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/paper7_5.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/paper7_6.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/paper7_7.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/paper7_8.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/paper7_9.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/pattern2.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/ramon\/HR_Canvas 01.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/ramon\/HR_Canvas 02.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/ramon\/HR_Cork.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/ramon\/HR_DecoPaper.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/ramon\/HR_PastelPaper 01.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/ramon\/HR_PastelPaper 02.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/ramon\/HR_RoughPaper.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/ramon\/HR_SketchPaper 02.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/ramon\/HR_SketchPaper.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/ramon\/HR_WaterColor.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/ramon\/readme_papers.txt" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/squares2.png" ],
+            
+              [  "usr\/share\/mypaint\/backgrounds\/squares2_blue.png" ],
+            
+              [  "usr\/share\/mypaint\/palettes\/All_color_choice.gpl" ],
+            
+              [  "usr\/share\/mypaint\/palettes\/Browns_And_Yellows.gpl" ],
+            
+              [  "usr\/share\/mypaint\/palettes\/Classic_4.gpl" ],
+            
+              [  "usr\/share\/mypaint\/palettes\/Cool_Colors.gpl" ],
+            
+              [  "usr\/share\/mypaint\/palettes\/Creative_Commons.gpl" ],
+            
+              [  "usr\/share\/mypaint\/palettes\/GIMP_Default.gpl" ],
+            
+              [  "usr\/share\/mypaint\/palettes\/Gnome_Palette.gpl" ],
+            
+              [  "usr\/share\/mypaint\/palettes\/Greys16.gpl" ],
+            
+              [  "usr\/share\/mypaint\/palettes\/Muted.gpl" ],
+            
+              [  "usr\/share\/mypaint\/palettes\/MyPaint_Default.gpl" ],
+            
+              [  "usr\/share\/mypaint\/palettes\/Pastels.gpl" ],
+            
+              [  "usr\/share\/mypaint\/palettes\/Reds_And_Purples.gpl" ],
+            
+              [  "usr\/share\/mypaint\/palettes\/Tango_Palette.gpl" ],
+            
+              [  "usr\/share\/mypaint\/palettes\/Ubuntu.gpl" ],
+            
+              [  "usr\/share\/mypaint\/palettes\/Visibone.gpl" ],
+            
+              [  "usr\/share\/mypaint\/palettes\/Visibone_2.gpl" ],
+            
+              [  "usr\/share\/mypaint\/palettes\/Warm_Colors.gpl" ],
+            
+              [  "usr\/share\/mypaint\/palettes\/Watercolor.gpl" ],
+            
+              [  "usr\/share\/mypaint\/palettes\/Zenburn.gpl" ],
+            
+              [  "usr\/share\/mypaint\/pixmaps\/crosshair_closed.png" ],
+            
+              [  "usr\/share\/mypaint\/pixmaps\/cursor_add.png" ],
+            
+              [  "usr\/share\/mypaint\/pixmaps\/cursor_alpha_lock.png" ],
+            
+              [  "usr\/share\/mypaint\/pixmaps\/cursor_arrow.png" ],
+            
+              [  "usr\/share\/mypaint\/pixmaps\/cursor_arrow_forbidden.png" ],
+            
+              [  "usr\/share\/mypaint\/pixmaps\/cursor_color_picker.png" ],
+            
+              [  "usr\/share\/mypaint\/pixmaps\/cursor_color_picker_c.png" ],
+            
+              [  "usr\/share\/mypaint\/pixmaps\/cursor_color_picker_h.png" ],
+            
+              [  "usr\/share\/mypaint\/pixmaps\/cursor_color_picker_y.png" ],
+            
+              [  "usr\/share\/mypaint\/pixmaps\/cursor_colorize.png" ],
+            
+              [  "usr\/share\/mypaint\/pixmaps\/cursor_crosshair_open.png" ],
+            
+              [  "usr\/share\/mypaint\/pixmaps\/cursor_crosshair_precise_open.png" ],
+            
+              [  "usr\/share\/mypaint\/pixmaps\/cursor_eraser.png" ],
+            
+              [  "usr\/share\/mypaint\/pixmaps\/cursor_forbidden_everywhere.png" ],
+            
+              [  "usr\/share\/mypaint\/pixmaps\/cursor_hand_closed.png" ],
+            
+              [  "usr\/share\/mypaint\/pixmaps\/cursor_hand_open.png" ],
+            
+              [  "usr\/share\/mypaint\/pixmaps\/cursor_move_n_s.png" ],
+            
+              [  "usr\/share\/mypaint\/pixmaps\/cursor_move_ne_sw.png" ],
+            
+              [  "usr\/share\/mypaint\/pixmaps\/cursor_move_nw_se.png" ],
+            
+              [  "usr\/share\/mypaint\/pixmaps\/cursor_move_w_e.png" ],
+            
+              [  "usr\/share\/mypaint\/pixmaps\/cursor_pencil.png" ],
+            
+              [  "usr\/share\/mypaint\/pixmaps\/cursor_remove.png" ],
+            
+              [  "usr\/share\/mypaint\/pixmaps\/layer_duplicate.png" ],
+            
+              [  "usr\/share\/mypaint\/pixmaps\/layers.png" ],
+            
+              [  "usr\/share\/mypaint\/pixmaps\/mypaint_logo.png" ],
+            
+              [  "usr\/share\/mypaint\/pixmaps\/plus.png" ],
+            
+              [  "usr\/share\/pixmaps\/mypaint.png" ],
+            
+              [  "usr\/share\/thumbnailers\/mypaint-ora.thumbnailer" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

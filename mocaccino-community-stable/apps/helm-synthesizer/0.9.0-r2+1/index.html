@@ -1,0 +1,866 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing apps/helm-synthesizer-0.9.0-r2&#43;1 in mocaccino-community-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> apps/helm-synthesizer-0.9.0-r2&#43;1
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                Open source polyphonic software synthesizer with lots of modulation
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-community-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-community-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of apps/helm-synthesizer
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/mocaccino-community:helm-synthesizer-apps-0.9.0-r2-1" target="_blank"> quay.io/mocaccino/mocaccino-community:helm-synthesizer-apps-0.9.0-r2-1 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/mocaccino-community:helm-synthesizer-apps-0.9.0-r2-1/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 0.9.0-r2&#43;1  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> GPL-3&#43; </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/X">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  X &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/lv2">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  lv2 1.18.10-r2&#43;1 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: media-sound/helm
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://tytel.org/helm/" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://tytel.org/helm/ </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/media-sound/helm">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  helm &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "usr\/bin\/helm" ],
+            
+              [  "usr\/lib64\/lv2\/helm.lv2\/helm.so" ],
+            
+              [  "usr\/lib64\/lv2\/helm.lv2\/helm.ttl" ],
+            
+              [  "usr\/lib64\/lv2\/helm.lv2\/manifest.ttl" ],
+            
+              [  "usr\/lib64\/lv2\/helm.lv2\/presets.ttl" ],
+            
+              [  "usr\/lib64\/lxvst\/helm.so" ],
+            
+              [  "usr\/share\/applications\/helm-1.desktop" ],
+            
+              [  "usr\/share\/applications\/helm.desktop" ],
+            
+              [  "usr\/share\/helm\/icons\/helm_debian_icon.xpm" ],
+            
+              [  "usr\/share\/helm\/icons\/helm_icon_128_1x.ico" ],
+            
+              [  "usr\/share\/helm\/icons\/helm_icon_128_1x.png" ],
+            
+              [  "usr\/share\/helm\/icons\/helm_icon_128_2x.png" ],
+            
+              [  "usr\/share\/helm\/icons\/helm_icon_16_1x.png" ],
+            
+              [  "usr\/share\/helm\/icons\/helm_icon_16_2x.png" ],
+            
+              [  "usr\/share\/helm\/icons\/helm_icon_22_1x.png" ],
+            
+              [  "usr\/share\/helm\/icons\/helm_icon_24_1x.png" ],
+            
+              [  "usr\/share\/helm\/icons\/helm_icon_256_1x.png" ],
+            
+              [  "usr\/share\/helm\/icons\/helm_icon_256_2x.png" ],
+            
+              [  "usr\/share\/helm\/icons\/helm_icon_32_1x.png" ],
+            
+              [  "usr\/share\/helm\/icons\/helm_icon_32_2x.png" ],
+            
+              [  "usr\/share\/helm\/icons\/helm_icon_48_1x.png" ],
+            
+              [  "usr\/share\/helm\/icons\/helm_icon_512_1x.png" ],
+            
+              [  "usr\/share\/helm\/icons\/helm_icon_512_2x.png" ],
+            
+              [  "usr\/share\/helm\/icons\/modulation_selected_active_1x.png" ],
+            
+              [  "usr\/share\/helm\/icons\/modulation_selected_active_2x.png" ],
+            
+              [  "usr\/share\/helm\/icons\/modulation_selected_inactive_1x.png" ],
+            
+              [  "usr\/share\/helm\/icons\/modulation_selected_inactive_2x.png" ],
+            
+              [  "usr\/share\/helm\/icons\/modulation_unselected_active_1x.png" ],
+            
+              [  "usr\/share\/helm\/icons\/modulation_unselected_active_2x.png" ],
+            
+              [  "usr\/share\/helm\/icons\/modulation_unselected_inactive_1x.png" ],
+            
+              [  "usr\/share\/helm\/icons\/modulation_unselected_inactive_2x.png" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Arp\/CM Kleer Arp.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Arp\/CM Tremolo.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Arp\/COA Running Toy.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Arp\/MT On the Run.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Arp\/OZ Prarie Arp.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Arp\/SF Arp 1.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Arp\/SF Arp 2.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/CM Diddly.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/CM Electro Bass.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/CM Grit Bass.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/CM Subsine.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/COA Hard Bass 1.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/COA Hard Bass 10.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/COA Hard Bass 11.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/COA Hard Bass 2.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/COA Hard Bass 3.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/COA Hard Bass 4.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/COA Hard Bass 5.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/COA Hard Bass 6.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/COA Hard Bass 7.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/COA Hard Bass 8.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/COA Hard Bass 9.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/COA Killer Chipsound Pluck 1.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/COA Killer Chipsound Pluck 2.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/COA Scary Rotten DNB.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/COA Stab Bass Vocal Sound.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/COA Stab Bass.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/COA Sub-Layer for Trap Kick 1.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/COA Sub-Layer for Trap Kick 2.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/COA Sub-Layer for Trap Kick 3.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/COA Sub-Layer for Trap Kick 4.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/COA Sub-Layer for Trap Kick 5.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/COA Terror Bass 1.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/COA Terror Bass 2.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/COA Terror Bass 3.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/COA Terror Bass 4.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/COA Timpani Digital Bass.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/COA Trap Bass 1.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/COA Trap Bass 2.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/COA Trap Bass 3.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/COA Trap Bass 4.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/COA Trap Bass 5.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/COA Trap Bass 6.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/COA Trap Bass 7.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/COA Trap Bass 8.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/COA Trap Bass 9.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/MT Cracklette.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/MT Filtered Bass 1.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/MT Filtered Bass 2.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/MT Spectrum.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/MT Stinky Bass 1.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/MT Stinky Bass 2.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/MT Stinky Bass 3.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/SF Bass Formant.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/SF Bass Picked.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/SF Bass.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/SF Contrabass.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Bass\/SF Double Bass.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Chip\/COA Insane Gamer.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Chip\/COA Random Chip Bass.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Chip\/MT Bounce.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Chip\/MT Chip Waltz.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Chip\/MT Easy Vibrato.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Chip\/MT Octaves.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Chip\/MT Punch.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Chip\/MT Wind Up.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Harsh\/CM Hard (Style).helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Harsh\/CM Skreech Bass.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Harsh\/CM Ugly Mess.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Keys\/CM Bells.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Keys\/CM Pluck Time.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Keys\/CM Xylo.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Keys\/COA 90 Videogame Pluck.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Keys\/COA Alien Ocarina 1.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Keys\/COA Alien Ocarina 2.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Keys\/COA Broken Digital Organ.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Keys\/COA Pluck Digital String 1.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Keys\/COA Pluck Digital String 2.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Keys\/COA Pluck Digital String 3.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Keys\/COA Plucked Digital String.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Keys\/COA Post Funk Keys 1.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Keys\/COA Post Funk Keys 2.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Keys\/COA Steampunk Phantom of the Opera.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Keys\/MT Duper Saw.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Keys\/MT Eighties Science Movie.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Keys\/MT Organ 1.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Keys\/MT Organ 2.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Keys\/MT Striking Discovery.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Keys\/MT Stuttering Organ.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Keys\/MT Toy Piano.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Keys\/OZ Drifter 1.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Keys\/OZ Drifter 2.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Keys\/OZ Drifter 3.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Keys\/OZ Homebase.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Keys\/OZ Natures Best.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Keys\/OZ Portamento One.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Keys\/OZ Prarie.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Keys\/OZ Skewd with Noise.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Keys\/OZ Skewd.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Keys\/SF Brass CC2 A.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Keys\/SF Brass CC2.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Keys\/SF Brass Soft Stutter.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Keys\/SF Brass Soft.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Keys\/SF Celesta.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Keys\/SF Formant 1.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Keys\/SF Formant 2.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Keys\/SF Piano 1.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Keys\/SF Piano 2.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Keys\/SF Piano 3.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Keys\/SF Piano 4.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Keys\/SF Piano Tremolo 1.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Keys\/SF Piano Tremolo 2.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/LICENSE" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Lead\/CM Hoboe.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Lead\/CM Monstah Lead.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Lead\/CM Super(er) Saw.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Lead\/CM Supersaw Gate.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Lead\/CM Supersaw.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Lead\/COA Acid Distorted Lead.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Lead\/COA Alien Lead Guitar.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Lead\/COA Arabian Android Flute.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Lead\/COA Convolution.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Lead\/COA Digital Reflected Glass 1.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Lead\/COA Digital Reflected Glass 2.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Lead\/COA Digital Reflected Glass 3.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Lead\/COA Electro Bell.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Lead\/COA Hard Lead 1.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Lead\/COA Hard Lead 2.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Lead\/COA Hard Lead 3.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Lead\/COA Hard Terror Lead.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Lead\/COA Leadgun.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Lead\/COA Tension 1.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Lead\/COA Tension 2.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Lead\/COA Tension 3.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Lead\/COA Tension 4.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Lead\/COA Trumpet.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Lead\/COA Witchy Lead 1.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Lead\/COA Witchy Lead 2.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Lead\/COA Witchy Lead 3.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Lead\/COA Zap Hard.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Lead\/MT Formantish.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Lead\/OZ Freedom.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Lead\/OZ Gold.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Lead\/OZ Platinum Poly.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Lead\/OZ Platinum.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Lead\/OZ Silverrr.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Lead\/SF Brass_Portamento.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Lead\/SF Clarinet.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Lead\/SF Nasty.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Lead\/SF Pizz.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Pad\/CM Epic.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Pad\/CM Soothing.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Pad\/CM Stars.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Pad\/COA Ambient Metallic.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Pad\/COA Broken Old Analog.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Pad\/COA Crispy Pad Organ.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Pad\/COA Digital Enigma.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Pad\/COA Digital Wind Ensemble 1.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Pad\/COA Digital Wind Ensemble 2.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Pad\/COA Hard Brass Synth Ensemble.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Pad\/COA Lofi Soft Pad 1.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Pad\/COA Lofi Soft Pad 2.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Pad\/COA Lofi Soft Pad 3.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Pad\/COA Pulsating Pad.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Pad\/COA Resonant Pad.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Pad\/COA Sad Scifi Strings 1.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Pad\/COA Sad Scifi Strings 2.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Pad\/COA Sad Scifi Strings 3.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Pad\/COA Scifi Interference.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Pad\/COA Soft Neo Church Organ.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Pad\/COA Soft Scifi Pad 1.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Pad\/COA Soft Scifi Pad 2.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Pad\/COA Soft Scifi Pad 3.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Pad\/COA Soft Scifi Pad 4.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Pad\/COA Soft Scifi Pad 5.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Pad\/COA Soft Scifi Pad 6.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Pad\/MT Chamber Chatter.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Pad\/MT Electrobike Cruise.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Pad\/MT Fluffy Landscape.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Pad\/MT Hypnotizing Pulse.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Pad\/MT Pulsing Daisies.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Pad\/MT Stuck in the Basement.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Pad\/MT Talk Radio.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Pad\/MT Waiting for Takeoff.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Pad\/MT Wandering Lost.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Pad\/MT Watching the Clock.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Pad\/SF Mandolin.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Pad\/SF OSC 2.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Pad\/SF Soft Pulse 1.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Pad\/SF Soft Pulse 2.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/CM House Pluck.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/CM Lo-Fi Pluck.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/COA Broken Digital Snare.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/COA Cinematic Hit.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/COA Closed Hat.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/COA Dark Perc 1.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/COA Dark Perc 2.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/COA Electro Clsd HH.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/COA Electro Crash Ride.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/COA Electro Kick 1.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/COA Electro Kick 2.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/COA Electro Kick 3.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/COA Electro Kick 4.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/COA Electro Metal Perc 1.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/COA Electro Metal Perc 2.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/COA Electro Open HH.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/COA Electro Semiopen HH.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/COA Electro Tom 1.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/COA Electro Tom 2.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/COA Fat HH Clsd.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/COA Kung Fu Crash.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/COA Kung Fu Fight Crash.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/COA Pluck Tom.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/COA Toy Snare 1.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/COA Toy Snare 2.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/OZ Bass 1.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/OZ Hat 1.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/OZ Hat 2.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/OZ Kick 1.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/OZ Kick 2.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/OZ Snare 1.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/OZ Some Kind of Percussion.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/OZ Some Kinda Dubby Cycle.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/OZ Some Kinda Stab.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/SF AD2 4 Toms.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/SF Cowbell 1.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/SF Cowbell 2.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/SF HH High.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/SF HH Low Eco 1.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/SF HH Low Eco 2.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/SF HH Low.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/SF HH Silver.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/SF Horse 1.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/SF Horse 2.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/SF Kick 1.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/SF Kick 2.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/SF Kick 3.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/SF Nocky.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/SF Snare 1.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/SF Snare 2.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/SF Snare 3.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/SF Snare 4.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/SF Snare Brush.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/SF Tom 1.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/SF Tom 2.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/SF Tom 3.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/SF Toms Nock 1.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/Percussion\/SF Toms Nock 2.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/SFX\/CM Downfall.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/SFX\/CM Riser.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/SFX\/COA Alien Creature Crying.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/SFX\/COA Alien Radio Interferences.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/SFX\/COA Another Angry Robot.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/SFX\/COA Chiptune Automatic Gun 1.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/SFX\/COA Chiptune Automatic Gun 2.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/SFX\/COA Digital Cello Arp.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/SFX\/COA Digital Waterdrops.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/SFX\/COA Lasersword.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/SFX\/COA Satan in Your Headphones 1.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/SFX\/COA Satan in Your Headphones 2.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/SFX\/COA Scifi Gunshot.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/SFX\/COA Sinister Ambient 1.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/SFX\/COA Sinister Ambient 2.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/SFX\/MT Elven Door Stop.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/SFX\/MT Game Show Clock.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/SFX\/MT Glitch Power.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/SFX\/MT Powering On 1.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/SFX\/MT Powering On 2.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/SFX\/MT Pulse Alarm.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/SFX\/MT Rotary Slingshot.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/SFX\/SF Stutter Teeth.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/SFX\/SF Whistle 1.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/SFX\/SF Whistle 2.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/SFX\/SF Whistle 3.helm" ],
+            
+              [  "usr\/share\/helm\/patches\/Factory Presets\/SFX\/SF Wind.helm" ],
+            
+              [  "usr\/share\/icons\/hicolor\/128x128\/apps\/helm.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/helm.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/helm.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/helm.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/256x256\/apps\/helm.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/32x32\/apps\/helm.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/helm.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/64x64\/apps\/helm.png" ],
+            
+              [  "usr\/share\/man\/man1\/helm.1.bz2" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>
