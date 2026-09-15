@@ -1,0 +1,1206 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing apps/gitkraken-12.4.1 in mocaccino-community-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> apps/gitkraken-12.4.1
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                cross-platform Git client
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-community-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-community-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of apps/gitkraken
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/mocaccino-community:gitkraken-apps-12.4.1" target="_blank"> quay.io/mocaccino/mocaccino-community:gitkraken-apps-12.4.1 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/mocaccino-community:gitkraken-apps-12.4.1/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 12.4.1  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> EULA </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/X">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  X &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/apps/trash-cli">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  trash-cli 0.24.5.26&#43;1 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> appstream.id: com.axosoft.GitKraken
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: dev-vcs/gitkraken
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://www.gitkraken.com" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://www.gitkraken.com </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-vcs/gitkraken">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  gitkraken &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "opt\/gitkraken\/LICENSE" ],
+            
+              [  "opt\/gitkraken\/LICENSE.electron" ],
+            
+              [  "opt\/gitkraken\/LICENSES.chromium.html" ],
+            
+              [  "opt\/gitkraken\/chrome-sandbox" ],
+            
+              [  "opt\/gitkraken\/chrome_100_percent.pak" ],
+            
+              [  "opt\/gitkraken\/chrome_200_percent.pak" ],
+            
+              [  "opt\/gitkraken\/chrome_crashpad_handler" ],
+            
+              [  "opt\/gitkraken\/gitkraken" ],
+            
+              [  "opt\/gitkraken\/gitkraken.png" ],
+            
+              [  "opt\/gitkraken\/icudtl.dat" ],
+            
+              [  "opt\/gitkraken\/libEGL.so" ],
+            
+              [  "opt\/gitkraken\/libGLESv2.so" ],
+            
+              [  "opt\/gitkraken\/libffmpeg.so" ],
+            
+              [  "opt\/gitkraken\/libvk_swiftshader.so" ],
+            
+              [  "opt\/gitkraken\/libvulkan.so.1" ],
+            
+              [  "opt\/gitkraken\/locales\/af.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/am.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/ar.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/bg.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/bn.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/ca.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/cs.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/da.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/de.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/el.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/en-GB.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/en-US.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/es-419.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/es.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/et.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/fa.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/fi.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/fil.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/fr.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/gu.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/he.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/hi.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/hr.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/hu.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/id.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/it.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/ja.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/kn.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/ko.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/lt.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/lv.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/ml.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/mr.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/ms.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/nb.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/nl.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/pl.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/pt-BR.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/pt-PT.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/ro.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/ru.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/sk.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/sl.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/sr.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/sv.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/sw.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/ta.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/te.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/th.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/tr.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/uk.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/ur.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/vi.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/zh-CN.pak" ],
+            
+              [  "opt\/gitkraken\/locales\/zh-TW.pak" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/bin\/git" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/bin\/scalar" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-add" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-am" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-annotate" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-apply" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-archimport" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-archive" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-backfill" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-bisect" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-blame" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-branch" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-bugreport" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-bundle" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-cat-file" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-check-attr" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-check-ignore" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-check-mailmap" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-check-ref-format" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-checkout" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-checkout--worker" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-checkout-index" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-cherry" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-cherry-pick" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-clean" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-clone" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-column" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-commit" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-commit-graph" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-commit-tree" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-config" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-count-objects" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-credential" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-credential-cache" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-credential-cache--daemon" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-credential-store" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-cvsexportcommit" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-cvsimport" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-cvsserver" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-daemon" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-describe" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-diagnose" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-diff" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-diff-files" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-diff-index" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-diff-pairs" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-diff-tree" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-difftool" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-difftool--helper" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-fast-export" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-fast-import" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-fetch" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-fetch-pack" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-filter-branch" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-fmt-merge-msg" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-for-each-ref" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-for-each-repo" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-format-patch" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-fsck" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-fsck-objects" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-fsmonitor--daemon" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-gc" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-get-tar-commit-id" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-grep" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-hash-object" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-help" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-history" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-hook" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-http-backend" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-http-fetch" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-http-push" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-imap-send" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-index-pack" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-init" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-init-db" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-instaweb" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-interpret-trailers" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-last-modified" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-lfs" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-log" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-ls-files" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-ls-remote" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-ls-tree" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-mailinfo" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-mailsplit" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-maintenance" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-merge" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-merge-base" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-merge-file" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-merge-index" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-merge-octopus" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-merge-one-file" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-merge-ours" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-merge-recursive" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-merge-resolve" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-merge-subtree" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-merge-tree" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-mergetool" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-mergetool--lib" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-mktag" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-mktree" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-multi-pack-index" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-mv" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-name-rev" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-notes" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-pack-objects" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-pack-redundant" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-pack-refs" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-patch-id" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-prune" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-prune-packed" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-pull" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-push" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-quiltimport" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-range-diff" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-read-tree" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-rebase" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-receive-pack" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-reflog" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-refs" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-remote" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-remote-ext" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-remote-fd" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-remote-ftp" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-remote-ftps" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-remote-http" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-remote-https" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-repack" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-replace" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-replay" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-repo" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-request-pull" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-rerere" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-reset" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-restore" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-rev-list" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-rev-parse" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-revert" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-rm" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-send-email" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-send-pack" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-sh-i18n" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-sh-i18n--envsubst" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-sh-setup" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-shell" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-shortlog" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-show" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-show-branch" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-show-index" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-show-ref" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-sparse-checkout" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-stage" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-stash" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-status" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-stripspace" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-submodule" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-submodule--helper" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-switch" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-symbolic-ref" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-tag" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-unpack-file" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-unpack-objects" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-update-index" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-update-ref" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-update-server-info" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-upload-archive" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-upload-pack" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-var" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-verify-commit" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-verify-pack" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-verify-tag" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-version" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-web--browse" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-whatchanged" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-worktree" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/git-write-tree" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/html\/git-lfs-checkout.1.html" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/html\/git-lfs-clean.1.html" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/html\/git-lfs-clone.1.html" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/html\/git-lfs-completion.1.html" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/html\/git-lfs-config.5.html" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/html\/git-lfs-dedup.1.html" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/html\/git-lfs-env.1.html" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/html\/git-lfs-ext.1.html" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/html\/git-lfs-faq.7.html" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/html\/git-lfs-fetch.1.html" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/html\/git-lfs-filter-process.1.html" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/html\/git-lfs-fsck.1.html" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/html\/git-lfs-install.1.html" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/html\/git-lfs-lock.1.html" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/html\/git-lfs-locks.1.html" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/html\/git-lfs-logs.1.html" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/html\/git-lfs-ls-files.1.html" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/html\/git-lfs-merge-driver.1.html" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/html\/git-lfs-migrate.1.html" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/html\/git-lfs-pointer.1.html" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/html\/git-lfs-post-checkout.1.html" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/html\/git-lfs-post-commit.1.html" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/html\/git-lfs-post-merge.1.html" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/html\/git-lfs-pre-push.1.html" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/html\/git-lfs-prune.1.html" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/html\/git-lfs-pull.1.html" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/html\/git-lfs-push.1.html" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/html\/git-lfs-smudge.1.html" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/html\/git-lfs-standalone-file.1.html" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/html\/git-lfs-status.1.html" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/html\/git-lfs-track.1.html" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/html\/git-lfs-uninstall.1.html" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/html\/git-lfs-unlock.1.html" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/html\/git-lfs-untrack.1.html" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/html\/git-lfs-update.1.html" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/html\/git-lfs.1.html" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/man1\/git-lfs-checkout.1" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/man1\/git-lfs-clean.1" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/man1\/git-lfs-clone.1" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/man1\/git-lfs-completion.1" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/man1\/git-lfs-dedup.1" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/man1\/git-lfs-env.1" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/man1\/git-lfs-ext.1" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/man1\/git-lfs-fetch.1" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/man1\/git-lfs-filter-process.1" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/man1\/git-lfs-fsck.1" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/man1\/git-lfs-install.1" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/man1\/git-lfs-lock.1" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/man1\/git-lfs-locks.1" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/man1\/git-lfs-logs.1" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/man1\/git-lfs-ls-files.1" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/man1\/git-lfs-merge-driver.1" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/man1\/git-lfs-migrate.1" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/man1\/git-lfs-pointer.1" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/man1\/git-lfs-post-checkout.1" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/man1\/git-lfs-post-commit.1" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/man1\/git-lfs-post-merge.1" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/man1\/git-lfs-pre-push.1" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/man1\/git-lfs-prune.1" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/man1\/git-lfs-pull.1" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/man1\/git-lfs-push.1" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/man1\/git-lfs-smudge.1" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/man1\/git-lfs-standalone-file.1" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/man1\/git-lfs-status.1" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/man1\/git-lfs-track.1" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/man1\/git-lfs-uninstall.1" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/man1\/git-lfs-unlock.1" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/man1\/git-lfs-untrack.1" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/man1\/git-lfs-update.1" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/man1\/git-lfs.1" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/man5\/git-lfs-config.5" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/man\/man7\/git-lfs-faq.7" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/mergetools\/araxis" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/mergetools\/bc" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/mergetools\/codecompare" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/mergetools\/deltawalker" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/mergetools\/diffmerge" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/mergetools\/diffuse" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/mergetools\/ecmerge" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/mergetools\/emerge" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/mergetools\/examdiff" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/mergetools\/guiffy" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/mergetools\/gvimdiff" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/mergetools\/kdiff3" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/mergetools\/kompare" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/mergetools\/meld" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/mergetools\/nvimdiff" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/mergetools\/opendiff" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/mergetools\/p4merge" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/mergetools\/smerge" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/mergetools\/tkdiff" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/mergetools\/tortoisemerge" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/mergetools\/vimdiff" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/mergetools\/vscode" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/mergetools\/winmerge" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/mergetools\/xxdiff" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/libexec\/git-core\/scalar" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/bash-completion\/completions\/git" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/git-core\/templates\/description" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/git-core\/templates\/hooks\/applypatch-msg.sample" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/git-core\/templates\/hooks\/commit-msg.sample" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/git-core\/templates\/hooks\/fsmonitor-watchman.sample" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/git-core\/templates\/hooks\/post-update.sample" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/git-core\/templates\/hooks\/pre-applypatch.sample" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/git-core\/templates\/hooks\/pre-commit.sample" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/git-core\/templates\/hooks\/pre-merge-commit.sample" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/git-core\/templates\/hooks\/pre-push.sample" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/git-core\/templates\/hooks\/pre-rebase.sample" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/git-core\/templates\/hooks\/pre-receive.sample" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/git-core\/templates\/hooks\/prepare-commit-msg.sample" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/git-core\/templates\/hooks\/push-to-checkout.sample" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/git-core\/templates\/hooks\/sendemail-validate.sample" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/git-core\/templates\/hooks\/update.sample" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/git-core\/templates\/info\/exclude" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/gitweb\/gitweb.cgi" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/gitweb\/static\/git-favicon.png" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/gitweb\/static\/git-logo.png" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/gitweb\/static\/gitweb.css" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/gitweb\/static\/gitweb.js" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/locale\/bg\/LC_MESSAGES\/git.mo" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/locale\/ca\/LC_MESSAGES\/git.mo" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/locale\/de\/LC_MESSAGES\/git.mo" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/locale\/el\/LC_MESSAGES\/git.mo" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/locale\/es\/LC_MESSAGES\/git.mo" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/locale\/fr\/LC_MESSAGES\/git.mo" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/locale\/ga\/LC_MESSAGES\/git.mo" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/locale\/id\/LC_MESSAGES\/git.mo" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/locale\/is\/LC_MESSAGES\/git.mo" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/locale\/it\/LC_MESSAGES\/git.mo" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/locale\/ko\/LC_MESSAGES\/git.mo" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/locale\/pl\/LC_MESSAGES\/git.mo" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/locale\/pt_PT\/LC_MESSAGES\/git.mo" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/locale\/ru\/LC_MESSAGES\/git.mo" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/locale\/sv\/LC_MESSAGES\/git.mo" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/locale\/tr\/LC_MESSAGES\/git.mo" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/locale\/uk\/LC_MESSAGES\/git.mo" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/locale\/vi\/LC_MESSAGES\/git.mo" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/locale\/zh_CN\/LC_MESSAGES\/git.mo" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/locale\/zh_TW\/LC_MESSAGES\/git.mo" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/perl5\/FromCPAN\/Error.pm" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/perl5\/FromCPAN\/Mail\/Address.pm" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/perl5\/Git\/I18N.pm" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/perl5\/Git\/IndexInfo.pm" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/perl5\/Git\/LoadCPAN\/Error.pm" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/perl5\/Git\/LoadCPAN\/Mail\/Address.pm" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/perl5\/Git\/LoadCPAN.pm" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/perl5\/Git\/Packet.pm" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/perl5\/Git\/SVN\/Editor.pm" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/perl5\/Git\/SVN\/Fetcher.pm" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/perl5\/Git\/SVN\/GlobSpec.pm" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/perl5\/Git\/SVN\/Log.pm" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/perl5\/Git\/SVN\/Memoize\/YAML.pm" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/perl5\/Git\/SVN\/Migration.pm" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/perl5\/Git\/SVN\/Prompt.pm" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/perl5\/Git\/SVN\/Ra.pm" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/perl5\/Git\/SVN\/Utils.pm" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/perl5\/Git\/SVN.pm" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/share\/perl5\/Git.pm" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/git\/ssl\/cacert.pem" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/gkcli\/gk" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/node_modules\/@axosoft\/node-spawn-server\/target\/release\/node-spawn-server" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/node_modules\/@axosoft\/nodegit\/build\/Release\/nodegit-x64-ubuntu-20-ssl-static.node" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/node_modules\/@axosoft\/nodegit\/build\/Release\/nodegit-x64-ubuntu-20.node" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/node_modules\/@axosoft\/rust-socket-bridge\/target\/release\/rust-socket-bridge" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/node_modules\/@msgpackr-extract\/msgpackr-extract-linux-x64\/node.abi115.glibc.node" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/node_modules\/@msgpackr-extract\/msgpackr-extract-linux-x64\/node.napi.glibc.node" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/node_modules\/@vscode\/windows-process-tree\/build\/Release\/windows_process_tree.node" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/node_modules\/find-git-repositories\/build\/Release\/findGitRepos.node" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/node_modules\/native-keymap\/build\/Release\/keymapping.node" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/node_modules\/node-pty\/build\/Release\/pty.node" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/node_modules\/node-pty\/third_party\/conpty\/1.22.250204002\/win10-arm64\/OpenConsole.exe" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/node_modules\/node-pty\/third_party\/conpty\/1.22.250204002\/win10-arm64\/conpty.dll" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/node_modules\/node-pty\/third_party\/conpty\/1.22.250204002\/win10-x64\/OpenConsole.exe" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/node_modules\/node-pty\/third_party\/conpty\/1.22.250204002\/win10-x64\/conpty.dll" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/node_modules\/nsfw\/build\/Release\/nsfw.node" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/resources\/cli\/unix\/.zdotdir\/.zlogin" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/resources\/cli\/unix\/.zdotdir\/.zlogout" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/resources\/cli\/unix\/.zdotdir\/.zprofile" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/resources\/cli\/unix\/.zdotdir\/.zshenv" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/resources\/cli\/unix\/.zdotdir\/.zshrc" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/resources\/cli\/unix\/bashrc" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/resources\/cli\/unix\/gkc" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/resources\/cli\/unix\/gkcrc" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/resources\/cli\/win\/GKCPrompt\/GKCPrompt.psm1" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/resources\/cli\/win\/bashrc" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/resources\/cli\/win\/gkc" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/resources\/cli\/win\/gkc.cmd" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/resources\/cli\/win\/gkc.ps1" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/resources\/cli\/win\/gkcrc" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/resources\/hooks\/hook.template" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/src\/THIRD-PARTY-LICENSES.txt" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/src\/js\/redux\/domain\/AskPass\/AskPass.sh" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/src\/js\/redux\/domain\/AskPass\/AskPassClient.js" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/src\/js\/redux\/domain\/Rebase\/GitSequenceEditor.sh" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/src\/js\/redux\/domain\/Rebase\/GitSequenceEditorClient.js" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/src\/strings.json" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/tutorials\/Intro\/._git_\/HEAD" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/tutorials\/Intro\/._git_\/config" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/tutorials\/Intro\/._git_\/hooks\/applypatch-msg.sample" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/tutorials\/Intro\/._git_\/hooks\/commit-msg.sample" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/tutorials\/Intro\/._git_\/hooks\/fsmonitor-watchman.sample" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/tutorials\/Intro\/._git_\/hooks\/post-update.sample" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/tutorials\/Intro\/._git_\/hooks\/pre-applypatch.sample" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/tutorials\/Intro\/._git_\/hooks\/pre-commit.sample" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/tutorials\/Intro\/._git_\/hooks\/pre-merge-commit.sample" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/tutorials\/Intro\/._git_\/hooks\/pre-push.sample" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/tutorials\/Intro\/._git_\/hooks\/pre-rebase.sample" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/tutorials\/Intro\/._git_\/hooks\/pre-receive.sample" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/tutorials\/Intro\/._git_\/hooks\/prepare-commit-msg.sample" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/tutorials\/Intro\/._git_\/hooks\/push-to-checkout.sample" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/tutorials\/Intro\/._git_\/hooks\/sendemail-validate.sample" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/tutorials\/Intro\/._git_\/hooks\/update.sample" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/tutorials\/Intro\/._git_\/index" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/tutorials\/Intro\/._git_\/objects\/pack\/pack-05c656c7f6d53edd93b5f5bc3cac49fc391e3322.idx" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/tutorials\/Intro\/._git_\/objects\/pack\/pack-05c656c7f6d53edd93b5f5bc3cac49fc391e3322.pack" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/tutorials\/Intro\/._git_\/objects\/pack\/pack-05c656c7f6d53edd93b5f5bc3cac49fc391e3322.rev" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/tutorials\/Intro\/._git_\/packed-refs" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/tutorials\/Intro\/._git_\/refs\/heads\/main" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/tutorials\/Intro\/README.md" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/tutorials\/Intro\/index.html" ],
+            
+              [  "opt\/gitkraken\/resources\/app.asar.unpacked\/tutorials\/Intro\/styles.css" ],
+            
+              [  "opt\/gitkraken\/resources\/bin\/gitkraken.sh" ],
+            
+              [  "opt\/gitkraken\/resources\/default_app.asar" ],
+            
+              [  "opt\/gitkraken\/resources.pak" ],
+            
+              [  "opt\/gitkraken\/snapshot_blob.bin" ],
+            
+              [  "opt\/gitkraken\/v8_context_snapshot.bin" ],
+            
+              [  "opt\/gitkraken\/version" ],
+            
+              [  "opt\/gitkraken\/vk_swiftshader_icd.json" ],
+            
+              [  "usr\/bin\/gitkraken" ],
+            
+              [  "usr\/share\/applications\/gitkraken-url-handler.desktop" ],
+            
+              [  "usr\/share\/applications\/gitkraken.desktop" ],
+            
+              [  "usr\/share\/applications\/gk-cli-url-handler.desktop" ],
+            
+              [  "usr\/share\/doc\/gitkraken-12.4.1\/copyright" ],
+            
+              [  "usr\/share\/lintian\/overrides\/gitkraken" ],
+            
+              [  "usr\/share\/pixmaps\/gitkraken.png" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,1595 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing apps/gaupol-1.16&#43;1 in mocaccino-community-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> apps/gaupol-1.16&#43;1
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                A subtitle editor for text-based subtitles
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-community-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-community-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of apps/gaupol
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/mocaccino-community:gaupol-apps-1.16-1" target="_blank"> quay.io/mocaccino/mocaccino-community:gaupol-apps-1.16-1 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/mocaccino-community:gaupol-apps-1.16-1/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 1.16&#43;1  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> GPL-2&#43; </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/gnome-common">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  gnome-common &gt;=0 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> appstream.id: io.otsaloma.gaupol.desktop
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: media-video/gaupol
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://otsaloma.io/gaupol/" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://otsaloma.io/gaupol/ </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/media-video/gaupol">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  gaupol &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "usr\/bin\/gaupol" ],
+            
+              [  "usr\/lib\/python-exec\/python3.14\/gaupol" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/calculator.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/calculator.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/calculator.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/clipboard.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/clipboard.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/clipboard.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/containers.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/containers.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/containers.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/countries.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/countries.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/countries.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/deco.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/deco.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/deco.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/delegate.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/delegate.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/delegate.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/encodings.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/encodings.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/encodings.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/enum.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/enum.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/enum.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/enums.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/enums.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/enums.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/errors.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/errors.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/errors.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/file.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/file.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/file.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/finder.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/finder.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/finder.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/i18n.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/i18n.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/i18n.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/languages.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/languages.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/languages.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/liner.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/liner.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/liner.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/locales.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/locales.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/locales.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/markup.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/markup.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/markup.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/markupconv.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/markupconv.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/markupconv.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/metadata.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/metadata.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/metadata.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/mutables.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/mutables.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/mutables.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/observable.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/observable.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/observable.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/parser.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/parser.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/parser.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/paths.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/paths.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/paths.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/pattern.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/pattern.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/pattern.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/patternman.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/patternman.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/patternman.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/position.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/position.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/position.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/project.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/project.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/project.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/revertable.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/revertable.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/revertable.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/scripts.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/scripts.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/scripts.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/singleton.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/singleton.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/singleton.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/spell.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/spell.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/spell.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/subtitle.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/subtitle.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/subtitle.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/temp.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/temp.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/temp.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/unittest.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/unittest.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/unittest.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/util.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/util.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/__pycache__\/util.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/__pycache__\/clipboard.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/__pycache__\/clipboard.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/__pycache__\/clipboard.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/__pycache__\/edit.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/__pycache__\/edit.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/__pycache__\/edit.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/__pycache__\/format.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/__pycache__\/format.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/__pycache__\/format.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/__pycache__\/open.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/__pycache__\/open.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/__pycache__\/open.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/__pycache__\/position.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/__pycache__\/position.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/__pycache__\/position.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/__pycache__\/preview.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/__pycache__\/preview.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/__pycache__\/preview.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/__pycache__\/register.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/__pycache__\/register.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/__pycache__\/register.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/__pycache__\/save.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/__pycache__\/save.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/__pycache__\/save.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/__pycache__\/search.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/__pycache__\/search.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/__pycache__\/search.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/__pycache__\/set.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/__pycache__\/set.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/__pycache__\/set.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/__pycache__\/text.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/__pycache__\/text.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/__pycache__\/text.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/__pycache__\/util.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/__pycache__\/util.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/__pycache__\/util.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/clipboard.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/edit.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/format.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/open.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/position.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/preview.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/register.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/save.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/search.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/set.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/text.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/agents\/util.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/calculator.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/clipboard.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/containers.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/countries.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/deco.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/delegate.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/encodings.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/enum.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/enums.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/errors.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/file.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/files\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/files\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/files\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/files\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/files\/__pycache__\/ass.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/files\/__pycache__\/ass.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/files\/__pycache__\/ass.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/files\/__pycache__\/lrc.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/files\/__pycache__\/lrc.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/files\/__pycache__\/lrc.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/files\/__pycache__\/microdvd.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/files\/__pycache__\/microdvd.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/files\/__pycache__\/microdvd.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/files\/__pycache__\/mpl2.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/files\/__pycache__\/mpl2.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/files\/__pycache__\/mpl2.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/files\/__pycache__\/ssa.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/files\/__pycache__\/ssa.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/files\/__pycache__\/ssa.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/files\/__pycache__\/subrip.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/files\/__pycache__\/subrip.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/files\/__pycache__\/subrip.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/files\/__pycache__\/subviewer2.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/files\/__pycache__\/subviewer2.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/files\/__pycache__\/subviewer2.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/files\/__pycache__\/tmplayer.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/files\/__pycache__\/tmplayer.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/files\/__pycache__\/tmplayer.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/files\/__pycache__\/webvtt.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/files\/__pycache__\/webvtt.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/files\/__pycache__\/webvtt.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/files\/ass.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/files\/lrc.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/files\/microdvd.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/files\/mpl2.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/files\/ssa.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/files\/subrip.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/files\/subviewer2.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/files\/tmplayer.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/files\/webvtt.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/finder.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/i18n.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/languages.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/liner.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/locales.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/markup.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/markupconv.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/markups\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/markups\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/markups\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/markups\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/markups\/__pycache__\/ass.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/markups\/__pycache__\/ass.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/markups\/__pycache__\/ass.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/markups\/__pycache__\/lrc.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/markups\/__pycache__\/lrc.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/markups\/__pycache__\/lrc.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/markups\/__pycache__\/microdvd.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/markups\/__pycache__\/microdvd.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/markups\/__pycache__\/microdvd.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/markups\/__pycache__\/mpl2.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/markups\/__pycache__\/mpl2.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/markups\/__pycache__\/mpl2.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/markups\/__pycache__\/ssa.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/markups\/__pycache__\/ssa.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/markups\/__pycache__\/ssa.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/markups\/__pycache__\/subrip.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/markups\/__pycache__\/subrip.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/markups\/__pycache__\/subrip.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/markups\/__pycache__\/subviewer2.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/markups\/__pycache__\/subviewer2.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/markups\/__pycache__\/subviewer2.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/markups\/__pycache__\/tmplayer.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/markups\/__pycache__\/tmplayer.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/markups\/__pycache__\/tmplayer.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/markups\/__pycache__\/webvtt.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/markups\/__pycache__\/webvtt.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/markups\/__pycache__\/webvtt.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/markups\/ass.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/markups\/lrc.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/markups\/microdvd.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/markups\/mpl2.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/markups\/ssa.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/markups\/subrip.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/markups\/subviewer2.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/markups\/tmplayer.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/markups\/webvtt.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/metadata.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/mutables.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/observable.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/parser.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/paths.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/pattern.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/patternman.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/position.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/project.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/revertable.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/scripts.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/singleton.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/spell.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/subtitle.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/temp.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/unittest.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/aeidon\/util.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/action.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/action.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/action.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/application.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/application.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/application.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/applicationman.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/applicationman.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/applicationman.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/assistants.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/assistants.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/assistants.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/attrdict.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/attrdict.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/attrdict.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/config.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/config.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/config.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/entries.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/entries.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/entries.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/enums.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/enums.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/enums.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/errors.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/errors.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/errors.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/extension.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/extension.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/extension.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/extensionman.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/extensionman.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/extensionman.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/floatlabel.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/floatlabel.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/floatlabel.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/page.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/page.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/page.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/player.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/player.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/player.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/ruler.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/ruler.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/ruler.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/spell.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/spell.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/spell.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/style.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/style.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/style.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/unittest.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/unittest.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/unittest.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/urls.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/urls.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/urls.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/util.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/util.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/util.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/view.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/view.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/__pycache__\/view.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/action.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/actions\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/actions\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/actions\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/actions\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/actions\/__pycache__\/audio.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/actions\/__pycache__\/audio.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/actions\/__pycache__\/audio.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/actions\/__pycache__\/edit.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/actions\/__pycache__\/edit.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/actions\/__pycache__\/edit.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/actions\/__pycache__\/file.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/actions\/__pycache__\/file.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/actions\/__pycache__\/file.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/actions\/__pycache__\/help.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/actions\/__pycache__\/help.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/actions\/__pycache__\/help.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/actions\/__pycache__\/projects.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/actions\/__pycache__\/projects.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/actions\/__pycache__\/projects.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/actions\/__pycache__\/text.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/actions\/__pycache__\/text.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/actions\/__pycache__\/text.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/actions\/__pycache__\/tools.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/actions\/__pycache__\/tools.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/actions\/__pycache__\/tools.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/actions\/__pycache__\/video.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/actions\/__pycache__\/video.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/actions\/__pycache__\/video.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/actions\/__pycache__\/view.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/actions\/__pycache__\/view.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/actions\/__pycache__\/view.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/actions\/audio.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/actions\/edit.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/actions\/file.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/actions\/help.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/actions\/projects.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/actions\/text.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/actions\/tools.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/actions\/video.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/actions\/view.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/__pycache__\/close.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/__pycache__\/close.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/__pycache__\/close.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/__pycache__\/edit.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/__pycache__\/edit.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/__pycache__\/edit.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/__pycache__\/format.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/__pycache__\/format.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/__pycache__\/format.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/__pycache__\/help.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/__pycache__\/help.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/__pycache__\/help.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/__pycache__\/menu.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/__pycache__\/menu.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/__pycache__\/menu.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/__pycache__\/open.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/__pycache__\/open.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/__pycache__\/open.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/__pycache__\/preview.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/__pycache__\/preview.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/__pycache__\/preview.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/__pycache__\/save.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/__pycache__\/save.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/__pycache__\/save.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/__pycache__\/search.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/__pycache__\/search.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/__pycache__\/search.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/__pycache__\/tools.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/__pycache__\/tools.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/__pycache__\/tools.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/__pycache__\/update.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/__pycache__\/update.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/__pycache__\/update.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/__pycache__\/util.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/__pycache__\/util.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/__pycache__\/util.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/__pycache__\/video.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/__pycache__\/video.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/__pycache__\/video.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/__pycache__\/view.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/__pycache__\/view.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/__pycache__\/view.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/close.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/edit.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/format.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/help.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/menu.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/open.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/preview.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/save.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/search.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/tools.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/update.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/util.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/video.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/agents\/view.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/application.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/applicationman.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/assistants.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/attrdict.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/config.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/about.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/about.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/about.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/append.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/append.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/append.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/builder.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/builder.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/builder.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/debug.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/debug.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/debug.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/duration_adjust.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/duration_adjust.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/duration_adjust.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/encoding.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/encoding.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/encoding.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/file.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/file.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/file.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/framerate_convert.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/framerate_convert.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/framerate_convert.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/insert.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/insert.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/insert.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/language.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/language.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/language.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/message.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/message.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/message.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/multi_close.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/multi_close.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/multi_close.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/multi_save.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/multi_save.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/multi_save.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/open.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/open.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/open.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/position_shift.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/position_shift.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/position_shift.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/position_transform.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/position_transform.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/position_transform.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/preferences.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/preferences.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/preferences.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/preview_error.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/preview_error.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/preview_error.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/save.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/save.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/save.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/search.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/search.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/search.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/spell_check.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/spell_check.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/spell_check.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/split.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/split.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/split.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/text_edit.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/text_edit.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/text_edit.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/video.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/video.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/__pycache__\/video.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/about.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/append.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/builder.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/debug.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/duration_adjust.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/encoding.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/file.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/framerate_convert.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/insert.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/language.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/message.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/multi_close.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/multi_save.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/open.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/position_shift.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/position_transform.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/preferences.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/preview_error.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/save.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/search.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/spell_check.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/split.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/text_edit.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/dialogs\/video.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/entries.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/enums.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/errors.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/extension.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/extensionman.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/floatlabel.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/page.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/player.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/renderers\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/renderers\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/renderers\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/renderers\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/renderers\/__pycache__\/float.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/renderers\/__pycache__\/float.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/renderers\/__pycache__\/float.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/renderers\/__pycache__\/integer.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/renderers\/__pycache__\/integer.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/renderers\/__pycache__\/integer.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/renderers\/__pycache__\/multiline.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/renderers\/__pycache__\/multiline.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/renderers\/__pycache__\/multiline.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/renderers\/__pycache__\/time.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/renderers\/__pycache__\/time.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/renderers\/__pycache__\/time.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/renderers\/float.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/renderers\/integer.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/renderers\/multiline.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/renderers\/time.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/ruler.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/spell.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/style.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/unittest.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/urls.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/util.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol\/view.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol-1.16.dist-info\/METADATA" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol-1.16.dist-info\/WHEEL" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/gaupol-1.16.dist-info\/top_level.txt" ],
+            
+              [  "usr\/share\/applications\/io.otsaloma.gaupol.desktop" ],
+            
+              [  "usr\/share\/doc\/gaupol-1.16\/AUTHORS.md" ],
+            
+              [  "usr\/share\/doc\/gaupol-1.16\/NEWS.md.bz2" ],
+            
+              [  "usr\/share\/doc\/gaupol-1.16\/README.aeidon.md.bz2" ],
+            
+              [  "usr\/share\/doc\/gaupol-1.16\/README.md.bz2" ],
+            
+              [  "usr\/share\/gaupol\/extensions\/custom-framerates\/add-framerate-dialog.ui" ],
+            
+              [  "usr\/share\/gaupol\/extensions\/custom-framerates\/custom-framerates.extension" ],
+            
+              [  "usr\/share\/gaupol\/extensions\/custom-framerates\/custom-framerates.py" ],
+            
+              [  "usr\/share\/gaupol\/extensions\/custom-framerates\/preferences-dialog.ui" ],
+            
+              [  "usr\/share\/gaupol\/headers\/ass" ],
+            
+              [  "usr\/share\/gaupol\/headers\/lrc" ],
+            
+              [  "usr\/share\/gaupol\/headers\/microdvd" ],
+            
+              [  "usr\/share\/gaupol\/headers\/ssa" ],
+            
+              [  "usr\/share\/gaupol\/headers\/subviewer2" ],
+            
+              [  "usr\/share\/gaupol\/headers\/webvtt" ],
+            
+              [  "usr\/share\/gaupol\/iso-codes\/iso_15924.json" ],
+            
+              [  "usr\/share\/gaupol\/iso-codes\/iso_3166-1.json" ],
+            
+              [  "usr\/share\/gaupol\/iso-codes\/iso_639-2.json" ],
+            
+              [  "usr\/share\/gaupol\/patterns\/Latn-en-US.common-error" ],
+            
+              [  "usr\/share\/gaupol\/patterns\/Latn-en-US.common-error.conf" ],
+            
+              [  "usr\/share\/gaupol\/patterns\/Latn-en.capitalization" ],
+            
+              [  "usr\/share\/gaupol\/patterns\/Latn-en.capitalization.conf" ],
+            
+              [  "usr\/share\/gaupol\/patterns\/Latn-en.common-error" ],
+            
+              [  "usr\/share\/gaupol\/patterns\/Latn-en.common-error.conf" ],
+            
+              [  "usr\/share\/gaupol\/patterns\/Latn-en.hearing-impaired" ],
+            
+              [  "usr\/share\/gaupol\/patterns\/Latn-en.hearing-impaired.conf" ],
+            
+              [  "usr\/share\/gaupol\/patterns\/Latn-en.line-break" ],
+            
+              [  "usr\/share\/gaupol\/patterns\/Latn-en.line-break.conf" ],
+            
+              [  "usr\/share\/gaupol\/patterns\/Latn-fi.common-error" ],
+            
+              [  "usr\/share\/gaupol\/patterns\/Latn-fi.common-error.conf" ],
+            
+              [  "usr\/share\/gaupol\/patterns\/Latn-fr.common-error" ],
+            
+              [  "usr\/share\/gaupol\/patterns\/Latn-fr.common-error.conf" ],
+            
+              [  "usr\/share\/gaupol\/patterns\/Latn.capitalization" ],
+            
+              [  "usr\/share\/gaupol\/patterns\/Latn.capitalization.conf" ],
+            
+              [  "usr\/share\/gaupol\/patterns\/Latn.common-error" ],
+            
+              [  "usr\/share\/gaupol\/patterns\/Latn.common-error.conf" ],
+            
+              [  "usr\/share\/gaupol\/patterns\/Latn.hearing-impaired" ],
+            
+              [  "usr\/share\/gaupol\/patterns\/Latn.hearing-impaired.conf" ],
+            
+              [  "usr\/share\/gaupol\/patterns\/Latn.line-break" ],
+            
+              [  "usr\/share\/gaupol\/patterns\/Latn.line-break.conf" ],
+            
+              [  "usr\/share\/gaupol\/patterns\/Zyyy.common-error" ],
+            
+              [  "usr\/share\/gaupol\/patterns\/Zyyy.common-error.conf" ],
+            
+              [  "usr\/share\/gaupol\/ui\/columns-popup.ui" ],
+            
+              [  "usr\/share\/gaupol\/ui\/duration-adjust-dialog.ui" ],
+            
+              [  "usr\/share\/gaupol\/ui\/framerate-convert-dialog.ui" ],
+            
+              [  "usr\/share\/gaupol\/ui\/gaupol.css" ],
+            
+              [  "usr\/share\/gaupol\/ui\/insert-dialog.ui" ],
+            
+              [  "usr\/share\/gaupol\/ui\/language-dialog.ui" ],
+            
+              [  "usr\/share\/gaupol\/ui\/menubar.ui" ],
+            
+              [  "usr\/share\/gaupol\/ui\/multi-save-dialog.ui" ],
+            
+              [  "usr\/share\/gaupol\/ui\/open-dialog.ui" ],
+            
+              [  "usr\/share\/gaupol\/ui\/position-shift-dialog.ui" ],
+            
+              [  "usr\/share\/gaupol\/ui\/position-transform-dialog.ui" ],
+            
+              [  "usr\/share\/gaupol\/ui\/preferences-dialog.ui" ],
+            
+              [  "usr\/share\/gaupol\/ui\/save-dialog.ui" ],
+            
+              [  "usr\/share\/gaupol\/ui\/search-dialog.ui" ],
+            
+              [  "usr\/share\/gaupol\/ui\/spell-check-dialog.ui" ],
+            
+              [  "usr\/share\/gaupol\/ui\/split-dialog.ui" ],
+            
+              [  "usr\/share\/gaupol\/ui\/tab-popup.ui" ],
+            
+              [  "usr\/share\/gaupol\/ui\/text-assistant\/capitalization-page.ui" ],
+            
+              [  "usr\/share\/gaupol\/ui\/text-assistant\/common-error-page.ui" ],
+            
+              [  "usr\/share\/gaupol\/ui\/text-assistant\/confirmation-page.ui" ],
+            
+              [  "usr\/share\/gaupol\/ui\/text-assistant\/hearing-impaired-page.ui" ],
+            
+              [  "usr\/share\/gaupol\/ui\/text-assistant\/introduction-page.ui" ],
+            
+              [  "usr\/share\/gaupol\/ui\/text-assistant\/join-split-page.ui" ],
+            
+              [  "usr\/share\/gaupol\/ui\/text-assistant\/line-break-options-page.ui" ],
+            
+              [  "usr\/share\/gaupol\/ui\/text-assistant\/line-break-page.ui" ],
+            
+              [  "usr\/share\/gaupol\/ui\/text-assistant\/progress-page.ui" ],
+            
+              [  "usr\/share\/gaupol\/ui\/view-popup.ui" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/apps\/io.otsaloma.gaupol.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/symbolic\/apps\/io.otsaloma.gaupol-symbolic.svg" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/gaupol.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/gaupol.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/gaupol.mo" ],
+            
+              [  "usr\/share\/locale\/fi\/LC_MESSAGES\/gaupol.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/gaupol.mo" ],
+            
+              [  "usr\/share\/locale\/gl\/LC_MESSAGES\/gaupol.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/gaupol.mo" ],
+            
+              [  "usr\/share\/locale\/hu\/LC_MESSAGES\/gaupol.mo" ],
+            
+              [  "usr\/share\/locale\/ie\/LC_MESSAGES\/gaupol.mo" ],
+            
+              [  "usr\/share\/locale\/is\/LC_MESSAGES\/gaupol.mo" ],
+            
+              [  "usr\/share\/locale\/nl\/LC_MESSAGES\/gaupol.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/gaupol.mo" ],
+            
+              [  "usr\/share\/locale\/pt\/LC_MESSAGES\/gaupol.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/gaupol.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/gaupol.mo" ],
+            
+              [  "usr\/share\/locale\/sr\/LC_MESSAGES\/gaupol.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/gaupol.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/gaupol.mo" ],
+            
+              [  "usr\/share\/man\/man1\/gaupol.1.bz2" ],
+            
+              [  "usr\/share\/metainfo\/io.otsaloma.gaupol.appdata.xml" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,909 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing apps/plasma-keyboard-6.6.6 in mocaccino-community-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> apps/plasma-keyboard-6.6.6
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                Virtual keyboard based on Qt Virtual Keyboard
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-community-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-community-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of apps/plasma-keyboard
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/mocaccino-community:plasma-keyboard-apps-6.6.6" target="_blank"> quay.io/mocaccino/mocaccino-community:plasma-keyboard-apps-6.6.6 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/mocaccino-community:plasma-keyboard-apps-6.6.6/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 6.6.6  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> || ( GPL-2 GPL-3 ) LGPL-2.1 LGPL-3 </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/kde-common">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  kde-common &gt;=0 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: kde-plasma/plasma-keyboard
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://kde.org/plasma-desktop" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://kde.org/plasma-desktop </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/kde-plasma/plasma-keyboard">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  plasma-keyboard &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "usr\/bin\/plasma-keyboard" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/plasma\/kcms\/systemsettings\/kcm_plasmakeyboard.so" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/QtQuick\/VirtualKeyboard\/Styles\/Breeze\/breezestyle.qmltypes" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/QtQuick\/VirtualKeyboard\/Styles\/Breeze\/kde-qmlmodule.version" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/QtQuick\/VirtualKeyboard\/Styles\/Breeze\/libbreezestyle.so" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/QtQuick\/VirtualKeyboard\/Styles\/Breeze\/qmldir" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/QtQuick\/VirtualKeyboard\/Styles\/Breeze\/style.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/plasma\/keyboard\/lib\/BreezeConstants.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/plasma\/keyboard\/lib\/BreezeKeyPanel.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/plasma\/keyboard\/lib\/BreezePopup.qml" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/plasma\/keyboard\/lib\/kde-qmlmodule.version" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/plasma\/keyboard\/lib\/keyboardlib.qmltypes" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/plasma\/keyboard\/lib\/libkeyboardlib.so" ],
+            
+              [  "usr\/lib64\/qt6\/qml\/org\/kde\/plasma\/keyboard\/lib\/qmldir" ],
+            
+              [  "usr\/share\/applications\/kcm_plasmakeyboard.desktop" ],
+            
+              [  "usr\/share\/applications\/org.kde.plasma.keyboard.desktop" ],
+            
+              [  "usr\/share\/doc\/plasma-keyboard-6.6.6\/README.md.bz2" ],
+            
+              [  "usr\/share\/locale\/ar\/LC_MESSAGES\/kcm_plasmakeyboard.mo" ],
+            
+              [  "usr\/share\/locale\/ar\/LC_MESSAGES\/plasma-keyboard.mo" ],
+            
+              [  "usr\/share\/locale\/bg\/LC_MESSAGES\/kcm_plasmakeyboard.mo" ],
+            
+              [  "usr\/share\/locale\/bg\/LC_MESSAGES\/plasma-keyboard.mo" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/kcm_plasmakeyboard.mo" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/plasma-keyboard.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/kcm_plasmakeyboard.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/plasma-keyboard.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/kcm_plasmakeyboard.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/plasma-keyboard.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/kcm_plasmakeyboard.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/plasma-keyboard.mo" ],
+            
+              [  "usr\/share\/locale\/eu\/LC_MESSAGES\/kcm_plasmakeyboard.mo" ],
+            
+              [  "usr\/share\/locale\/eu\/LC_MESSAGES\/plasma-keyboard.mo" ],
+            
+              [  "usr\/share\/locale\/fi\/LC_MESSAGES\/kcm_plasmakeyboard.mo" ],
+            
+              [  "usr\/share\/locale\/fi\/LC_MESSAGES\/plasma-keyboard.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/kcm_plasmakeyboard.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/plasma-keyboard.mo" ],
+            
+              [  "usr\/share\/locale\/ga\/LC_MESSAGES\/kcm_plasmakeyboard.mo" ],
+            
+              [  "usr\/share\/locale\/ga\/LC_MESSAGES\/plasma-keyboard.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/kcm_plasmakeyboard.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/plasma-keyboard.mo" ],
+            
+              [  "usr\/share\/locale\/is\/LC_MESSAGES\/kcm_plasmakeyboard.mo" ],
+            
+              [  "usr\/share\/locale\/is\/LC_MESSAGES\/plasma-keyboard.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/kcm_plasmakeyboard.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/plasma-keyboard.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/kcm_plasmakeyboard.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/plasma-keyboard.mo" ],
+            
+              [  "usr\/share\/locale\/lt\/LC_MESSAGES\/kcm_plasmakeyboard.mo" ],
+            
+              [  "usr\/share\/locale\/lt\/LC_MESSAGES\/plasma-keyboard.mo" ],
+            
+              [  "usr\/share\/locale\/lv\/LC_MESSAGES\/kcm_plasmakeyboard.mo" ],
+            
+              [  "usr\/share\/locale\/lv\/LC_MESSAGES\/plasma-keyboard.mo" ],
+            
+              [  "usr\/share\/locale\/nb\/LC_MESSAGES\/kcm_plasmakeyboard.mo" ],
+            
+              [  "usr\/share\/locale\/nb\/LC_MESSAGES\/plasma-keyboard.mo" ],
+            
+              [  "usr\/share\/locale\/nl\/LC_MESSAGES\/kcm_plasmakeyboard.mo" ],
+            
+              [  "usr\/share\/locale\/nl\/LC_MESSAGES\/plasma-keyboard.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/kcm_plasmakeyboard.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/plasma-keyboard.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/kcm_plasmakeyboard.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/plasma-keyboard.mo" ],
+            
+              [  "usr\/share\/locale\/ro\/LC_MESSAGES\/kcm_plasmakeyboard.mo" ],
+            
+              [  "usr\/share\/locale\/ro\/LC_MESSAGES\/plasma-keyboard.mo" ],
+            
+              [  "usr\/share\/locale\/sk\/LC_MESSAGES\/kcm_plasmakeyboard.mo" ],
+            
+              [  "usr\/share\/locale\/sk\/LC_MESSAGES\/plasma-keyboard.mo" ],
+            
+              [  "usr\/share\/locale\/sl\/LC_MESSAGES\/kcm_plasmakeyboard.mo" ],
+            
+              [  "usr\/share\/locale\/sl\/LC_MESSAGES\/plasma-keyboard.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/kcm_plasmakeyboard.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/plasma-keyboard.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/kcm_plasmakeyboard.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/plasma-keyboard.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/kcm_plasmakeyboard.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/plasma-keyboard.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/kcm_plasmakeyboard.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/plasma-keyboard.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/kcm_plasmakeyboard.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/plasma-keyboard.mo" ],
+            
+              [  "usr\/share\/metainfo\/org.kde.plasma.keyboard.metainfo.xml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/ar_AR\/dialpad.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/ar_AR\/digits.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/ar_AR\/handwriting.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/ar_AR\/main.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/ar_AR\/numbers.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/ar_AR\/symbols.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/bg_BG\/dialpad.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/bg_BG\/digits.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/bg_BG\/handwriting.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/bg_BG\/main.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/bg_BG\/numbers.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/bg_BG\/symbols.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/cs_CZ\/dialpad.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/cs_CZ\/digits.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/cs_CZ\/handwriting.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/cs_CZ\/main.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/cs_CZ\/numbers.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/cs_CZ\/symbols.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/da_DK\/dialpad.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/da_DK\/digits.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/da_DK\/handwriting.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/da_DK\/main.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/da_DK\/numbers.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/da_DK\/symbols.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/de_DE\/dialpad.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/de_DE\/digits.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/de_DE\/handwriting.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/de_DE\/main.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/de_DE\/numbers.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/de_DE\/symbols.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/el_GR\/dialpad.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/el_GR\/digits.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/el_GR\/handwriting.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/el_GR\/main.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/el_GR\/numbers.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/el_GR\/symbols.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/en_GB\/dialpad.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/en_GB\/digits.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/en_GB\/handwriting.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/en_GB\/main.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/en_GB\/numbers.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/en_GB\/symbols.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/en_US\/dialpad.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/en_US\/digits.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/en_US\/handwriting.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/en_US\/main.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/en_US\/numbers.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/en_US\/symbols.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/es_ES\/dialpad.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/es_ES\/digits.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/es_ES\/handwriting.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/es_ES\/main.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/es_ES\/numbers.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/es_ES\/symbols.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/es_MX\/dialpad.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/es_MX\/digits.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/es_MX\/handwriting.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/es_MX\/main.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/es_MX\/numbers.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/es_MX\/symbols.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/et_EE\/dialpad.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/et_EE\/digits.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/et_EE\/handwriting.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/et_EE\/main.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/et_EE\/numbers.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/et_EE\/symbols.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/fa_FA\/dialpad.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/fa_FA\/digits.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/fa_FA\/handwriting.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/fa_FA\/main.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/fa_FA\/numbers.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/fa_FA\/symbols.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/fallback\/dialpad.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/fallback\/digits.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/fallback\/handwriting.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/fallback\/main.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/fallback\/numbers.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/fallback\/symbols.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/fi_FI\/dialpad.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/fi_FI\/digits.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/fi_FI\/handwriting.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/fi_FI\/main.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/fi_FI\/numbers.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/fi_FI\/symbols.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/fr_CA\/dialpad.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/fr_CA\/digits.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/fr_CA\/handwriting.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/fr_CA\/main.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/fr_CA\/numbers.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/fr_CA\/symbols.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/fr_FR\/dialpad.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/fr_FR\/digits.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/fr_FR\/handwriting.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/fr_FR\/main.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/fr_FR\/numbers.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/fr_FR\/symbols.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/he_IL\/dialpad.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/he_IL\/digits.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/he_IL\/handwriting.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/he_IL\/main.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/he_IL\/numbers.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/he_IL\/symbols.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/hi_IN\/dialpad.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/hi_IN\/digits.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/hi_IN\/handwriting.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/hi_IN\/main.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/hi_IN\/numbers.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/hi_IN\/symbols.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/hr_HR\/dialpad.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/hr_HR\/digits.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/hr_HR\/handwriting.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/hr_HR\/main.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/hr_HR\/numbers.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/hr_HR\/symbols.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/hu_HU\/dialpad.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/hu_HU\/digits.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/hu_HU\/handwriting.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/hu_HU\/main.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/hu_HU\/numbers.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/hu_HU\/symbols.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/id_ID\/dialpad.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/id_ID\/digits.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/id_ID\/handwriting.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/id_ID\/main.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/id_ID\/numbers.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/id_ID\/symbols.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/it_IT\/dialpad.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/it_IT\/digits.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/it_IT\/handwriting.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/it_IT\/main.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/it_IT\/numbers.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/it_IT\/symbols.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/ja_JP\/dialpad.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/ja_JP\/digits.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/ja_JP\/handwriting.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/ja_JP\/main.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/ja_JP\/numbers.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/ja_JP\/symbols.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/ko_KR\/dialpad.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/ko_KR\/digits.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/ko_KR\/handwriting.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/ko_KR\/main.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/ko_KR\/numbers.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/ko_KR\/symbols.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/lv_LV\/dialpad.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/lv_LV\/digits.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/lv_LV\/handwriting.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/lv_LV\/main.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/lv_LV\/numbers.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/lv_LV\/symbols.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/ms_MY\/dialpad.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/ms_MY\/digits.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/ms_MY\/handwriting.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/ms_MY\/main.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/ms_MY\/numbers.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/ms_MY\/symbols.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/nb_NO\/dialpad.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/nb_NO\/digits.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/nb_NO\/handwriting.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/nb_NO\/main.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/nb_NO\/numbers.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/nb_NO\/symbols.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/nl_NL\/dialpad.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/nl_NL\/digits.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/nl_NL\/handwriting.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/nl_NL\/main.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/nl_NL\/numbers.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/nl_NL\/symbols.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/pl_PL\/dialpad.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/pl_PL\/digits.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/pl_PL\/handwriting.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/pl_PL\/main.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/pl_PL\/numbers.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/pl_PL\/symbols.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/pt_BR\/dialpad.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/pt_BR\/digits.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/pt_BR\/handwriting.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/pt_BR\/main.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/pt_BR\/numbers.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/pt_BR\/symbols.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/pt_PT\/dialpad.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/pt_PT\/digits.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/pt_PT\/handwriting.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/pt_PT\/main.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/pt_PT\/numbers.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/pt_PT\/symbols.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/ro_RO\/dialpad.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/ro_RO\/digits.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/ro_RO\/handwriting.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/ro_RO\/main.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/ro_RO\/numbers.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/ro_RO\/symbols.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/ru_RU\/dialpad.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/ru_RU\/digits.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/ru_RU\/handwriting.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/ru_RU\/main.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/ru_RU\/numbers.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/ru_RU\/symbols.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/sk_SK\/dialpad.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/sk_SK\/digits.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/sk_SK\/handwriting.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/sk_SK\/main.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/sk_SK\/numbers.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/sk_SK\/symbols.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/sl_SI\/dialpad.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/sl_SI\/digits.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/sl_SI\/handwriting.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/sl_SI\/main.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/sl_SI\/numbers.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/sl_SI\/symbols.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/sq_AL\/dialpad.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/sq_AL\/digits.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/sq_AL\/handwriting.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/sq_AL\/main.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/sq_AL\/numbers.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/sq_AL\/symbols.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/sr_SP\/dialpad.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/sr_SP\/digits.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/sr_SP\/handwriting.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/sr_SP\/main.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/sr_SP\/numbers.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/sr_SP\/symbols.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/sv_SE\/dialpad.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/sv_SE\/digits.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/sv_SE\/handwriting.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/sv_SE\/main.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/sv_SE\/numbers.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/sv_SE\/symbols.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/th_TH\/dialpad.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/th_TH\/digits.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/th_TH\/handwriting.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/th_TH\/handwriting.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/th_TH\/main.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/th_TH\/numbers.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/th_TH\/symbols.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/tr_TR\/dialpad.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/tr_TR\/digits.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/tr_TR\/handwriting.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/tr_TR\/main.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/tr_TR\/numbers.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/tr_TR\/symbols.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/uk_UA\/dialpad.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/uk_UA\/digits.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/uk_UA\/handwriting.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/uk_UA\/main.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/uk_UA\/numbers.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/uk_UA\/symbols.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/vi_VN\/dialpad.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/vi_VN\/digits.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/vi_VN\/handwriting.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/vi_VN\/main.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/vi_VN\/numbers.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/vi_VN\/symbols.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/zh_CN\/dialpad.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/zh_CN\/digits.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/zh_CN\/handwriting.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/zh_CN\/main.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/zh_CN\/numbers.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/zh_CN\/symbols.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/zh_TW\/dialpad.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/zh_TW\/digits.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/zh_TW\/handwriting.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/zh_TW\/main.qml" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/zh_TW\/numbers.fallback" ],
+            
+              [  "usr\/share\/plasma\/keyboard\/layouts\/zh_TW\/symbols.qml" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>
