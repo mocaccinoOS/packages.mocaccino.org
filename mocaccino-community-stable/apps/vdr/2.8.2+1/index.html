@@ -1,0 +1,657 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing apps/vdr-2.8.2&#43;1 in mocaccino-community-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> apps/vdr-2.8.2&#43;1
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                Video Disk Recorder - turns a pc into a powerful set top box for DVB
+VDR Plugin: use various devices for controlling vdr (keyboards, lirc...)
+VDR Plugin: output device for the &#39;Full Featured&#39; SD DVB Card
+VDR Plugin: output device for the &#39;Full Featured&#39; TechnoTrend S2-6400 DVB Card
+VDR plugin: show weather for specified place
+VDR plugin: use a PVR350 as output device
+VDR Plugin: Xinelib PlugIn
+
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-community-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-community-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of apps/vdr
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/mocaccino-community:vdr-apps-2.8.2-1" target="_blank"> quay.io/mocaccino/mocaccino-community:vdr-apps-2.8.2-1 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/mocaccino-community:vdr-apps-2.8.2-1/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 2.8.2&#43;1  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> metapackage </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/X">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  X &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/xine-lib">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  xine-lib 1.2.13-r5&#43;3 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/apps/twolame">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  twolame 0.4.0-r1 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/entity/vdr">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  vdr &gt;=0 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: media-video/vdr media-plugins/vdr-dvbsddevice media-plugins/vdr-dvbhddevice media-plugins/vdr-pvr350 media-plugins/vdr-xineliboutput
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="http://www.tvdr.de/" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> http://www.tvdr.de/ </a>
+    </span>
+  
+    <span class="tag">
+    <a href="http://www.escape-edv.de/endriss/vdr/" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> http://www.escape-edv.de/endriss/vdr/ </a>
+    </span>
+  
+    <span class="tag">
+    <a href="https://bitbucket.org/powARman/dvbhddevice" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://bitbucket.org/powARman/dvbhddevice </a>
+    </span>
+  
+    <span class="tag">
+    <a href="https://projects.vdr-developer.org/projects/plg-pvr350" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://projects.vdr-developer.org/projects/plg-pvr350 </a>
+    </span>
+  
+    <span class="tag">
+    <a href="https://sourceforge.net/projects/xineliboutput/" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://sourceforge.net/projects/xineliboutput/ </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/app-eselect/eselect-vdr">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  eselect-vdr &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/media-video/vdr">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  vdr &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/media-plugins/vdr-dvbsddevice">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  vdr-dvbsddevice &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/media-plugins/vdr-dvbhddevice">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  vdr-dvbhddevice &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/media-plugins/vdr-pvr350">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  vdr-pvr350 &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/media-plugins/vdr-xineliboutput">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  vdr-xineliboutput &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/media-tv/gentoo-vdr-scripts">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  gentoo-vdr-scripts &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/sys-process/wait_on_pid">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  wait_on_pid &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "etc\/conf.d\/vdr" ],
+            
+              [  "etc\/conf.d\/vdr.cd-dvd" ],
+            
+              [  "etc\/conf.d\/vdr.periodic.epgscan" ],
+            
+              [  "etc\/conf.d\/vdr.periodic.general" ],
+            
+              [  "etc\/conf.d\/vdr.plugins" ],
+            
+              [  "etc\/conf.d\/vdr.shutdown" ],
+            
+              [  "etc\/conf.d\/vdr.watchdogd" ],
+            
+              [  "etc\/conf.d\/vdr.xineliboutput" ],
+            
+              [  "etc\/init.d\/vdr" ],
+            
+              [  "etc\/init.d\/vdr-frontend" ],
+            
+              [  "etc\/init.d\/vdr-x11" ],
+            
+              [  "etc\/init.d\/wakeup-reboot-halt" ],
+            
+              [  "etc\/sudoers.d\/vdr" ],
+            
+              [  "etc\/systemd\/system\/vdr.service.d\/00-gentoo-vdr-user.conf" ],
+            
+              [  "etc\/vdr\/camresponses.conf" ],
+            
+              [  "etc\/vdr\/channels.conf" ],
+            
+              [  "etc\/vdr\/commands\/commands.custom.conf" ],
+            
+              [  "etc\/vdr\/commands\/commands.custom.conf.de" ],
+            
+              [  "etc\/vdr\/commands\/commands.system.conf" ],
+            
+              [  "etc\/vdr\/commands\/commands.system.conf.de" ],
+            
+              [  "etc\/vdr\/diseqc.conf" ],
+            
+              [  "etc\/vdr\/keymacros.conf" ],
+            
+              [  "etc\/vdr\/plugins\/.keep_media-video_vdr-0" ],
+            
+              [  "etc\/vdr\/plugins\/xineliboutput\/allowed_hosts.conf" ],
+            
+              [  "etc\/vdr\/reccmds\/reccmds.custom.conf" ],
+            
+              [  "etc\/vdr\/scr.conf" ],
+            
+              [  "etc\/vdr\/sources.conf" ],
+            
+              [  "etc\/vdr\/svdrphosts.conf" ],
+            
+              [  "usr\/bin\/dvb-reload-modules" ],
+            
+              [  "usr\/bin\/rtc-wakeup.sh" ],
+            
+              [  "usr\/bin\/svdrpsend" ],
+            
+              [  "usr\/bin\/vdr" ],
+            
+              [  "usr\/bin\/vdr-fbfe" ],
+            
+              [  "usr\/bin\/vdr-get-header-checksum" ],
+            
+              [  "usr\/bin\/vdr-plugin-config" ],
+            
+              [  "usr\/bin\/vdr-sxfe" ],
+            
+              [  "usr\/bin\/vdr-watchdogd" ],
+            
+              [  "usr\/bin\/vdr-wlfe" ],
+            
+              [  "usr\/bin\/vdrplugin-rebuild" ],
+            
+              [  "usr\/bin\/wait_on_pid" ],
+            
+              [  "usr\/lib\/systemd\/system\/vdr.service" ],
+            
+              [  "usr\/lib\/tmpfiles.d\/gentoo-vdr-scripts.conf" ],
+            
+              [  "usr\/lib64\/pkgconfig\/vdr.pc" ],
+            
+              [  "usr\/lib64\/vdr\/checksums\/header-md5-vdr-dvbhddevice" ],
+            
+              [  "usr\/lib64\/vdr\/checksums\/header-md5-vdr-pvr350" ],
+            
+              [  "usr\/lib64\/vdr\/checksums\/header-md5-vdr-xineliboutput" ],
+            
+              [  "usr\/lib64\/vdr\/plugins\/.keep_media-video_vdr-0" ],
+            
+              [  "usr\/lib64\/vdr\/plugins\/libvdr-dvbhddevice.so.13" ],
+            
+              [  "usr\/lib64\/vdr\/plugins\/libvdr-dvbsddevice.so.13" ],
+            
+              [  "usr\/lib64\/vdr\/plugins\/libvdr-pvr350.so.13" ],
+            
+              [  "usr\/lib64\/vdr\/plugins\/libvdr-xineliboutput.so.13" ],
+            
+              [  "usr\/lib64\/vdr\/plugins\/libxineliboutput-fbfe.so.2.3.0" ],
+            
+              [  "usr\/lib64\/vdr\/plugins\/libxineliboutput-sxfe.so.2.3.0" ],
+            
+              [  "usr\/lib64\/vdr\/plugins\/libxineliboutput-wlfe.so.2.3.0" ],
+            
+              [  "usr\/lib64\/xine\/plugins\/2.11\/post\/xineplug_post_audiochannel.so" ],
+            
+              [  "usr\/lib64\/xine\/plugins\/2.11\/post\/xineplug_post_autocrop.so" ],
+            
+              [  "usr\/lib64\/xine\/plugins\/2.11\/post\/xineplug_post_swscale.so" ],
+            
+              [  "usr\/lib64\/xine\/plugins\/2.11\/xineplug_inp_xvdr.so" ],
+            
+              [  "usr\/share\/doc\/gentoo-vdr-scripts-3.0_rc2-r1\/ChangeLog.bz2" ],
+            
+              [  "usr\/share\/doc\/gentoo-vdr-scripts-3.0_rc2-r1\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/gentoo-vdr-scripts-3.0_rc2-r1\/README.grub2.bz2" ],
+            
+              [  "usr\/share\/doc\/gentoo-vdr-scripts-3.0_rc2-r1\/README.guid-migration" ],
+            
+              [  "usr\/share\/doc\/gentoo-vdr-scripts-3.0_rc2-r1\/README.shutdown-jobs.bz2" ],
+            
+              [  "usr\/share\/doc\/gentoo-vdr-scripts-3.0_rc2-r1\/README.shutdown.bz2" ],
+            
+              [  "usr\/share\/doc\/gentoo-vdr-scripts-3.0_rc2-r1\/README.systemd.bz2" ],
+            
+              [  "usr\/share\/doc\/gentoo-vdr-scripts-3.0_rc2-r1\/README.vdrcaps.bz2" ],
+            
+              [  "usr\/share\/doc\/gentoo-vdr-scripts-3.0_rc2-r1\/README.x11-setup.bz2" ],
+            
+              [  "usr\/share\/doc\/gentoo-vdr-scripts-3.0_rc2-r1\/TODO.bz2" ],
+            
+              [  "usr\/share\/doc\/vdr-2.8.2\/CONTRIBUTORS.bz2" ],
+            
+              [  "usr\/share\/doc\/vdr-2.8.2\/HISTORY.bz2" ],
+            
+              [  "usr\/share\/doc\/vdr-2.8.2\/INSTALL.bz2" ],
+            
+              [  "usr\/share\/doc\/vdr-2.8.2\/MANUAL.bz2" ],
+            
+              [  "usr\/share\/doc\/vdr-2.8.2\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/vdr-2.8.2\/README.i18n.bz2" ],
+            
+              [  "usr\/share\/doc\/vdr-2.8.2\/UPDATE-2.0.0.bz2" ],
+            
+              [  "usr\/share\/doc\/vdr-2.8.2\/UPDATE-2.2.0.bz2" ],
+            
+              [  "usr\/share\/doc\/vdr-2.8.2\/UPDATE-2.4.0.bz2" ],
+            
+              [  "usr\/share\/doc\/vdr-2.8.2\/UPDATE-2.6.0.bz2" ],
+            
+              [  "usr\/share\/doc\/vdr-2.8.2\/html\/PLUGINS.html" ],
+            
+              [  "usr\/share\/doc\/vdr-dvbhddevice-2.2.0_p20180420-r1\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/vdr-dvbsddevice-2.2.0-r2\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/vdr-pvr350-2.0.0\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/vdr-xineliboutput-2.3.0\/HISTORY.bz2" ],
+            
+              [  "usr\/share\/doc\/vdr-xineliboutput-2.3.0\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/wait_on_pid-0.0.2-r2\/README.bz2" ],
+            
+              [  "usr\/share\/eselect\/modules\/vdr-plugin.eselect" ],
+            
+              [  "usr\/share\/locale\/ar\/LC_MESSAGES\/vdr.mo" ],
+            
+              [  "usr\/share\/locale\/ca_ES\/LC_MESSAGES\/vdr.mo" ],
+            
+              [  "usr\/share\/locale\/cs_CZ\/LC_MESSAGES\/vdr.mo" ],
+            
+              [  "usr\/share\/locale\/da_DK\/LC_MESSAGES\/vdr.mo" ],
+            
+              [  "usr\/share\/locale\/de_DE\/LC_MESSAGES\/vdr-dvbhddevice.mo" ],
+            
+              [  "usr\/share\/locale\/de_DE\/LC_MESSAGES\/vdr-pvr350.mo" ],
+            
+              [  "usr\/share\/locale\/de_DE\/LC_MESSAGES\/vdr.mo" ],
+            
+              [  "usr\/share\/locale\/el_GR\/LC_MESSAGES\/vdr.mo" ],
+            
+              [  "usr\/share\/locale\/es_ES\/LC_MESSAGES\/vdr.mo" ],
+            
+              [  "usr\/share\/locale\/et_EE\/LC_MESSAGES\/vdr-dvbhddevice.mo" ],
+            
+              [  "usr\/share\/locale\/et_EE\/LC_MESSAGES\/vdr.mo" ],
+            
+              [  "usr\/share\/locale\/fi_FI\/LC_MESSAGES\/vdr-dvbhddevice.mo" ],
+            
+              [  "usr\/share\/locale\/fi_FI\/LC_MESSAGES\/vdr.mo" ],
+            
+              [  "usr\/share\/locale\/fr_FR\/LC_MESSAGES\/vdr.mo" ],
+            
+              [  "usr\/share\/locale\/hr_HR\/LC_MESSAGES\/vdr.mo" ],
+            
+              [  "usr\/share\/locale\/hu_HU\/LC_MESSAGES\/vdr.mo" ],
+            
+              [  "usr\/share\/locale\/it_IT\/LC_MESSAGES\/vdr-dvbhddevice.mo" ],
+            
+              [  "usr\/share\/locale\/it_IT\/LC_MESSAGES\/vdr-pvr350.mo" ],
+            
+              [  "usr\/share\/locale\/it_IT\/LC_MESSAGES\/vdr.mo" ],
+            
+              [  "usr\/share\/locale\/lt_LT\/LC_MESSAGES\/vdr.mo" ],
+            
+              [  "usr\/share\/locale\/mk_MK\/LC_MESSAGES\/vdr.mo" ],
+            
+              [  "usr\/share\/locale\/nl_NL\/LC_MESSAGES\/vdr.mo" ],
+            
+              [  "usr\/share\/locale\/pl_PL\/LC_MESSAGES\/vdr.mo" ],
+            
+              [  "usr\/share\/locale\/pt_PT\/LC_MESSAGES\/vdr.mo" ],
+            
+              [  "usr\/share\/locale\/ro_RO\/LC_MESSAGES\/vdr.mo" ],
+            
+              [  "usr\/share\/locale\/ru_RU\/LC_MESSAGES\/vdr.mo" ],
+            
+              [  "usr\/share\/locale\/sk_SK\/LC_MESSAGES\/vdr.mo" ],
+            
+              [  "usr\/share\/locale\/sl_SI\/LC_MESSAGES\/vdr.mo" ],
+            
+              [  "usr\/share\/locale\/sr_RS\/LC_MESSAGES\/vdr.mo" ],
+            
+              [  "usr\/share\/locale\/sv_SE\/LC_MESSAGES\/vdr.mo" ],
+            
+              [  "usr\/share\/locale\/tr_TR\/LC_MESSAGES\/vdr.mo" ],
+            
+              [  "usr\/share\/locale\/uk_UA\/LC_MESSAGES\/vdr-dvbhddevice.mo" ],
+            
+              [  "usr\/share\/locale\/uk_UA\/LC_MESSAGES\/vdr.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/vdr.mo" ],
+            
+              [  "usr\/share\/man\/man1\/svdrpsend.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/vdr.1.bz2" ],
+            
+              [  "usr\/share\/man\/man5\/vdr.5.bz2" ],
+            
+              [  "usr\/share\/portage\/config\/sets\/vdr.conf" ],
+            
+              [  "usr\/share\/vdr\/bin\/vdr-bg.sh" ],
+            
+              [  "usr\/share\/vdr\/bin\/vdrrecord-gate.sh" ],
+            
+              [  "usr\/share\/vdr\/bin\/vdrshutdown-gate.sh" ],
+            
+              [  "usr\/share\/vdr\/bin\/vdrshutdown-periodic-thread.sh" ],
+            
+              [  "usr\/share\/vdr\/bin\/vdrshutdown-really.sh" ],
+            
+              [  "usr\/share\/vdr\/bin\/vdrshutdown-wakeup-helper.sh" ],
+            
+              [  "usr\/share\/vdr\/capabilities.sh" ],
+            
+              [  "usr\/share\/vdr\/dvdchanger\/dvdchanger_readdvd.sh" ],
+            
+              [  "usr\/share\/vdr\/dvdchanger\/dvdchanger_writedvd.sh" ],
+            
+              [  "usr\/share\/vdr\/inc\/commands-functions.sh" ],
+            
+              [  "usr\/share\/vdr\/inc\/functions.sh" ],
+            
+              [  "usr\/share\/vdr\/inc\/language-functions.sh" ],
+            
+              [  "usr\/share\/vdr\/inc\/plugin-functions.sh" ],
+            
+              [  "usr\/share\/vdr\/inc\/rc-functions.sh" ],
+            
+              [  "usr\/share\/vdr\/inc\/shutdown-functions.sh" ],
+            
+              [  "usr\/share\/vdr\/inc\/svdrpcmd.sh" ],
+            
+              [  "usr\/share\/vdr\/inc\/time.sh" ],
+            
+              [  "usr\/share\/vdr\/rcscript\/post-start-05-plugins.sh" ],
+            
+              [  "usr\/share\/vdr\/rcscript\/post-start-50-svdrp.sh" ],
+            
+              [  "usr\/share\/vdr\/rcscript\/post-start-60-check-syslog-errors.sh" ],
+            
+              [  "usr\/share\/vdr\/rcscript\/post-stop-05-plugins.sh" ],
+            
+              [  "usr\/share\/vdr\/rcscript\/pre-start-10-chuid.sh" ],
+            
+              [  "usr\/share\/vdr\/rcscript\/pre-start-20-dvb-device.sh" ],
+            
+              [  "usr\/share\/vdr\/rcscript\/pre-start-30-parameter.sh" ],
+            
+              [  "usr\/share\/vdr\/rcscript\/pre-start-40-config-files.sh" ],
+            
+              [  "usr\/share\/vdr\/rcscript\/pre-start-45-locales.sh" ],
+            
+              [  "usr\/share\/vdr\/rcscript\/pre-start-45-nptl-check.sh" ],
+            
+              [  "usr\/share\/vdr\/rcscript\/pre-start-50-shutdown.sh" ],
+            
+              [  "usr\/share\/vdr\/rcscript\/pre-start-60-check-syslog-errors.sh" ],
+            
+              [  "usr\/share\/vdr\/rcscript\/pre-start-95-plugins.sh" ],
+            
+              [  "usr\/share\/vdr\/rcscript\/pre-start-98-wait-conditions.sh" ],
+            
+              [  "usr\/share\/vdr\/rcscript\/pre-stop-95-plugins.sh" ],
+            
+              [  "usr\/share\/vdr\/rcscript\/watchdog-restart-20-modules.sh" ],
+            
+              [  "usr\/share\/vdr\/record\/record-10-custom.sh" ],
+            
+              [  "usr\/share\/vdr\/shutdown\/periodic-50-epgscan.sh" ],
+            
+              [  "usr\/share\/vdr\/shutdown\/pre-shutdown-05-time-calculations.sh" ],
+            
+              [  "usr\/share\/vdr\/shutdown\/pre-shutdown-10-check-enabled.sh" ],
+            
+              [  "usr\/share\/vdr\/shutdown\/pre-shutdown-20-check-blocking-programs.sh" ],
+            
+              [  "usr\/share\/vdr\/shutdown\/pre-shutdown-30-check-logins.sh" ],
+            
+              [  "usr\/share\/vdr\/shutdown\/pre-shutdown-40-time.sh" ],
+            
+              [  "usr\/share\/vdr\/shutdown\/pre-shutdown-90-systohc.sh" ],
+            
+              [  "usr\/share\/vdr\/shutdown\/pre-shutdown-99-periodic-thread.sh" ],
+            
+              [  "usr\/share\/vdr\/shutdown\/shutdown-custom_cmd.sh" ],
+            
+              [  "usr\/share\/vdr\/shutdown\/shutdown-halt.sh" ],
+            
+              [  "usr\/share\/vdr\/shutdown\/shutdown-reboot.sh" ],
+            
+              [  "usr\/share\/vdr\/shutdown\/wakeup-none.sh" ],
+            
+              [  "usr\/share\/vdr\/shutdown\/wakeup-nvram.sh" ],
+            
+              [  "usr\/share\/vdr\/shutdown\/wakeup-rtc.sh" ],
+            
+              [  "usr\/share\/vdr\/systemd\/vdr-systemd_helper.sh" ],
+            
+              [  "usr\/share\/vdr\/vdrplugin-rebuild\/media-plugins-vdr-dvbhddevice-2.2.0_p20180420-r1" ],
+            
+              [  "usr\/share\/vdr\/vdrplugin-rebuild\/media-plugins-vdr-pvr350-2.0.0" ],
+            
+              [  "usr\/share\/vdr\/vdrplugin-rebuild\/media-plugins-vdr-xineliboutput-2.3.0" ],
+            
+              [  "var\/lib\/vdr\/dvd-images\/.keep_media-tv_gentoo-vdr-scripts-0" ],
+            
+              [  "var\/lib\/vdr\/merged-config-files\/.keep_media-tv_gentoo-vdr-scripts-0" ],
+            
+              [  "var\/lib\/vdr\/shutdown-data\/.keep_media-tv_gentoo-vdr-scripts-0" ],
+            
+              [  "var\/lib\/vdr\/tmp\/systemd_env" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

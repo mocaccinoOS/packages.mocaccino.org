@@ -1,0 +1,2859 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing apps/ardour-9.2.0 in mocaccino-community-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> apps/ardour-9.2.0
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                Digital Audio Workstation
+A flexible pure-C library for implementing network protocols
+
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-community-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-community-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of apps/ardour
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/mocaccino-community:ardour-apps-9.2.0" target="_blank"> quay.io/mocaccino/mocaccino-community:ardour-apps-9.2.0 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/mocaccino-community:ardour-apps-9.2.0/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 9.2.0  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> AGPL-3 MIT </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/X">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  X &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/aubio">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  aubio 0.4.9-r5&#43;6 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/liblo">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  liblo 0.32 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/liblrdf">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  liblrdf 0.6.1-r1&#43;7 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/libsoundtouch">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  libsoundtouch 2.4.0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/lilv">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  lilv 0.24.26-r1&#43;1 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/rubberband">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  rubberband 4.0.0-r1 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> appstream.id: org.ardour.Ardour
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: media-sound/ardour
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://ardour.org/" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://ardour.org/ </a>
+    </span>
+  
+    <span class="tag">
+    <a href="https://libwebsockets.org/" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://libwebsockets.org/ </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/media-sound/ardour">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  ardour &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/net-libs/libwebsockets">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  libwebsockets &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "etc\/ardour9\/ardour.keys" ],
+            
+              [  "etc\/ardour9\/ardour.menus" ],
+            
+              [  "etc\/ardour9\/clearlooks.ardoursans.rc" ],
+            
+              [  "etc\/ardour9\/clearlooks.rc" ],
+            
+              [  "etc\/ardour9\/default_ui_config" ],
+            
+              [  "etc\/ardour9\/system_config" ],
+            
+              [  "usr\/bin\/ardour9" ],
+            
+              [  "usr\/bin\/ardour9-export" ],
+            
+              [  "usr\/bin\/ardour9-lua" ],
+            
+              [  "usr\/bin\/ardour9-new_empty_session" ],
+            
+              [  "usr\/bin\/ardour9-new_session" ],
+            
+              [  "usr\/lib64\/ardour9\/LV2\/a-comp.lv2\/a-comp#stereo.ttl" ],
+            
+              [  "usr\/lib64\/ardour9\/LV2\/a-comp.lv2\/a-comp.so" ],
+            
+              [  "usr\/lib64\/ardour9\/LV2\/a-comp.lv2\/a-comp.ttl" ],
+            
+              [  "usr\/lib64\/ardour9\/LV2\/a-comp.lv2\/manifest.ttl" ],
+            
+              [  "usr\/lib64\/ardour9\/LV2\/a-comp.lv2\/presets.ttl" ],
+            
+              [  "usr\/lib64\/ardour9\/LV2\/a-delay.lv2\/a-delay.so" ],
+            
+              [  "usr\/lib64\/ardour9\/LV2\/a-delay.lv2\/a-delay.ttl" ],
+            
+              [  "usr\/lib64\/ardour9\/LV2\/a-delay.lv2\/manifest.ttl" ],
+            
+              [  "usr\/lib64\/ardour9\/LV2\/a-delay.lv2\/presets.ttl" ],
+            
+              [  "usr\/lib64\/ardour9\/LV2\/a-eq.lv2\/a-eq.so" ],
+            
+              [  "usr\/lib64\/ardour9\/LV2\/a-eq.lv2\/a-eq.ttl" ],
+            
+              [  "usr\/lib64\/ardour9\/LV2\/a-eq.lv2\/manifest.ttl" ],
+            
+              [  "usr\/lib64\/ardour9\/LV2\/a-exp.lv2\/a-exp#stereo.ttl" ],
+            
+              [  "usr\/lib64\/ardour9\/LV2\/a-exp.lv2\/a-exp.so" ],
+            
+              [  "usr\/lib64\/ardour9\/LV2\/a-exp.lv2\/a-exp.ttl" ],
+            
+              [  "usr\/lib64\/ardour9\/LV2\/a-exp.lv2\/manifest.ttl" ],
+            
+              [  "usr\/lib64\/ardour9\/LV2\/a-fluidsynth.lv2\/a-fluidsynth.so" ],
+            
+              [  "usr\/lib64\/ardour9\/LV2\/a-fluidsynth.lv2\/a-fluidsynth.ttl" ],
+            
+              [  "usr\/lib64\/ardour9\/LV2\/a-fluidsynth.lv2\/manifest.ttl" ],
+            
+              [  "usr\/lib64\/ardour9\/LV2\/a-reverb.lv2\/a-reverb.so" ],
+            
+              [  "usr\/lib64\/ardour9\/LV2\/a-reverb.lv2\/a-reverb.ttl" ],
+            
+              [  "usr\/lib64\/ardour9\/LV2\/a-reverb.lv2\/manifest.ttl" ],
+            
+              [  "usr\/lib64\/ardour9\/LV2\/reasonablesynth.lv2\/manifest.ttl" ],
+            
+              [  "usr\/lib64\/ardour9\/LV2\/reasonablesynth.lv2\/reasonablesynth.so" ],
+            
+              [  "usr\/lib64\/ardour9\/LV2\/reasonablesynth.lv2\/reasonablesynth.ttl" ],
+            
+              [  "usr\/lib64\/ardour9\/ardour-9.2.0" ],
+            
+              [  "usr\/lib64\/ardour9\/ardour-avahi" ],
+            
+              [  "usr\/lib64\/ardour9\/ardour-exec-wrapper" ],
+            
+              [  "usr\/lib64\/ardour9\/ardour-request-device" ],
+            
+              [  "usr\/lib64\/ardour9\/ardour-vst-scanner" ],
+            
+              [  "usr\/lib64\/ardour9\/ardour-vst3-scanner" ],
+            
+              [  "usr\/lib64\/ardour9\/backends\/libalsa_audiobackend.so" ],
+            
+              [  "usr\/lib64\/ardour9\/backends\/libdummy_audiobackend.so" ],
+            
+              [  "usr\/lib64\/ardour9\/backends\/libjack_audiobackend.so" ],
+            
+              [  "usr\/lib64\/ardour9\/backends\/libpulseaudio_backend.so" ],
+            
+              [  "usr\/lib64\/ardour9\/engines\/libclearlooks.so" ],
+            
+              [  "usr\/lib64\/ardour9\/hardour-9.2.0" ],
+            
+              [  "usr\/lib64\/ardour9\/libaaf.so" ],
+            
+              [  "usr\/lib64\/ardour9\/libaaf.so.0" ],
+            
+              [  "usr\/lib64\/ardour9\/libaaf.so.0.0.0" ],
+            
+              [  "usr\/lib64\/ardour9\/libardour.so" ],
+            
+              [  "usr\/lib64\/ardour9\/libardour.so.3" ],
+            
+              [  "usr\/lib64\/ardour9\/libardour.so.3.0.0" ],
+            
+              [  "usr\/lib64\/ardour9\/libardour_midisurface.so" ],
+            
+              [  "usr\/lib64\/ardour9\/libardouralsautil.so" ],
+            
+              [  "usr\/lib64\/ardour9\/libardouralsautil.so.0" ],
+            
+              [  "usr\/lib64\/ardour9\/libardouralsautil.so.0.0.1" ],
+            
+              [  "usr\/lib64\/ardour9\/libardourcp.so" ],
+            
+              [  "usr\/lib64\/ardour9\/libaudiographer.so" ],
+            
+              [  "usr\/lib64\/ardour9\/libaudiographer.so.0" ],
+            
+              [  "usr\/lib64\/ardour9\/libaudiographer.so.0.0.0" ],
+            
+              [  "usr\/lib64\/ardour9\/libcanvas.so" ],
+            
+              [  "usr\/lib64\/ardour9\/libcanvas.so.0" ],
+            
+              [  "usr\/lib64\/ardour9\/libcanvas.so.0.0.0" ],
+            
+              [  "usr\/lib64\/ardour9\/libevoral.so" ],
+            
+              [  "usr\/lib64\/ardour9\/libevoral.so.0" ],
+            
+              [  "usr\/lib64\/ardour9\/libevoral.so.0.0.0" ],
+            
+              [  "usr\/lib64\/ardour9\/libgtkmm2ext.so" ],
+            
+              [  "usr\/lib64\/ardour9\/libgtkmm2ext.so.0" ],
+            
+              [  "usr\/lib64\/ardour9\/libgtkmm2ext.so.0.8.3" ],
+            
+              [  "usr\/lib64\/ardour9\/libhidapi.a" ],
+            
+              [  "usr\/lib64\/ardour9\/libmidipp.so" ],
+            
+              [  "usr\/lib64\/ardour9\/libmidipp.so.4" ],
+            
+              [  "usr\/lib64\/ardour9\/libmidipp.so.4.1.0" ],
+            
+              [  "usr\/lib64\/ardour9\/libpbd.so" ],
+            
+              [  "usr\/lib64\/ardour9\/libpbd.so.4" ],
+            
+              [  "usr\/lib64\/ardour9\/libpbd.so.4.1.0" ],
+            
+              [  "usr\/lib64\/ardour9\/libptformat.so" ],
+            
+              [  "usr\/lib64\/ardour9\/libptformat.so.0" ],
+            
+              [  "usr\/lib64\/ardour9\/libptformat.so.0.0.0" ],
+            
+              [  "usr\/lib64\/ardour9\/libsuil.so" ],
+            
+              [  "usr\/lib64\/ardour9\/libsuil.so.0" ],
+            
+              [  "usr\/lib64\/ardour9\/libsuil.so.0.10.8" ],
+            
+              [  "usr\/lib64\/ardour9\/libsuil_x11_in_gtk2.so" ],
+            
+              [  "usr\/lib64\/ardour9\/libtemporal.so" ],
+            
+              [  "usr\/lib64\/ardour9\/libtemporal.so.0" ],
+            
+              [  "usr\/lib64\/ardour9\/libtemporal.so.0.0.0" ],
+            
+              [  "usr\/lib64\/ardour9\/libwaveview.so" ],
+            
+              [  "usr\/lib64\/ardour9\/libwaveview.so.0" ],
+            
+              [  "usr\/lib64\/ardour9\/libwaveview.so.0.0.0" ],
+            
+              [  "usr\/lib64\/ardour9\/libwidgets.so" ],
+            
+              [  "usr\/lib64\/ardour9\/libwidgets.so.0" ],
+            
+              [  "usr\/lib64\/ardour9\/libwidgets.so.0.0.0" ],
+            
+              [  "usr\/lib64\/ardour9\/libydk-pixbuf.so" ],
+            
+              [  "usr\/lib64\/ardour9\/libydk-pixbuf.so.2" ],
+            
+              [  "usr\/lib64\/ardour9\/libydk-pixbuf.so.2.31.1" ],
+            
+              [  "usr\/lib64\/ardour9\/libydk.so" ],
+            
+              [  "usr\/lib64\/ardour9\/libydk.so.2" ],
+            
+              [  "usr\/lib64\/ardour9\/libydk.so.2.24.23" ],
+            
+              [  "usr\/lib64\/ardour9\/libydkmm.so" ],
+            
+              [  "usr\/lib64\/ardour9\/libydkmm.so.2" ],
+            
+              [  "usr\/lib64\/ardour9\/libydkmm.so.2.24.5" ],
+            
+              [  "usr\/lib64\/ardour9\/libytk.so" ],
+            
+              [  "usr\/lib64\/ardour9\/libytk.so.2" ],
+            
+              [  "usr\/lib64\/ardour9\/libytk.so.2.24.23" ],
+            
+              [  "usr\/lib64\/ardour9\/libytkmm.so" ],
+            
+              [  "usr\/lib64\/ardour9\/libytkmm.so.2" ],
+            
+              [  "usr\/lib64\/ardour9\/libytkmm.so.2.24.5" ],
+            
+              [  "usr\/lib64\/ardour9\/libztk.so" ],
+            
+              [  "usr\/lib64\/ardour9\/libztk.so.2" ],
+            
+              [  "usr\/lib64\/ardour9\/libztk.so.2.14.0" ],
+            
+              [  "usr\/lib64\/ardour9\/libztkmm.so" ],
+            
+              [  "usr\/lib64\/ardour9\/libztkmm.so.2" ],
+            
+              [  "usr\/lib64\/ardour9\/libztkmm.so.2.22.7" ],
+            
+              [  "usr\/lib64\/ardour9\/luasession" ],
+            
+              [  "usr\/lib64\/ardour9\/panners\/libpan1in2out.so" ],
+            
+              [  "usr\/lib64\/ardour9\/panners\/libpan2in2out.so" ],
+            
+              [  "usr\/lib64\/ardour9\/panners\/libpanbalance.so" ],
+            
+              [  "usr\/lib64\/ardour9\/panners\/libpanvbap.so" ],
+            
+              [  "usr\/lib64\/ardour9\/sanityCheck" ],
+            
+              [  "usr\/lib64\/ardour9\/surfaces\/libardour_cc121.so" ],
+            
+              [  "usr\/lib64\/ardour9\/surfaces\/libardour_console1.so" ],
+            
+              [  "usr\/lib64\/ardour9\/surfaces\/libardour_contourdesign.so" ],
+            
+              [  "usr\/lib64\/ardour9\/surfaces\/libardour_faderport.so" ],
+            
+              [  "usr\/lib64\/ardour9\/surfaces\/libardour_faderport16.so" ],
+            
+              [  "usr\/lib64\/ardour9\/surfaces\/libardour_faderport2.so" ],
+            
+              [  "usr\/lib64\/ardour9\/surfaces\/libardour_faderport8.so" ],
+            
+              [  "usr\/lib64\/ardour9\/surfaces\/libardour_generic_midi.so" ],
+            
+              [  "usr\/lib64\/ardour9\/surfaces\/libardour_launch_control_xl.so" ],
+            
+              [  "usr\/lib64\/ardour9\/surfaces\/libardour_launchkey_4.so" ],
+            
+              [  "usr\/lib64\/ardour9\/surfaces\/libardour_launchpad_mini.so" ],
+            
+              [  "usr\/lib64\/ardour9\/surfaces\/libardour_launchpad_pro.so" ],
+            
+              [  "usr\/lib64\/ardour9\/surfaces\/libardour_launchpad_x.so" ],
+            
+              [  "usr\/lib64\/ardour9\/surfaces\/libardour_mcp.so" ],
+            
+              [  "usr\/lib64\/ardour9\/surfaces\/libardour_osc.so" ],
+            
+              [  "usr\/lib64\/ardour9\/surfaces\/libardour_push2.so" ],
+            
+              [  "usr\/lib64\/ardour9\/surfaces\/libardour_ssl_uf8.so" ],
+            
+              [  "usr\/lib64\/ardour9\/surfaces\/libardour_us2400.so" ],
+            
+              [  "usr\/lib64\/ardour9\/surfaces\/libardour_websockets.so" ],
+            
+              [  "usr\/lib64\/ardour9\/utils\/ardour-util.sh" ],
+            
+              [  "usr\/lib64\/ardour9\/utils\/ardour9-export" ],
+            
+              [  "usr\/lib64\/ardour9\/utils\/ardour9-new_empty_session" ],
+            
+              [  "usr\/lib64\/ardour9\/utils\/ardour9-new_session" ],
+            
+              [  "usr\/lib64\/ardour9\/vamp\/libardourvampplugins.so" ],
+            
+              [  "usr\/lib64\/ardour9\/vamp\/libardourvamppyin.so" ],
+            
+              [  "usr\/lib64\/ardour9\/vamp\/libardourvamppyin.so.0" ],
+            
+              [  "usr\/lib64\/ardour9\/vamp\/libardourvamppyin.so.0.0.0" ],
+            
+              [  "usr\/lib64\/libwebsockets.so" ],
+            
+              [  "usr\/lib64\/libwebsockets.so.21" ],
+            
+              [  "usr\/lib64\/pkgconfig\/libwebsockets.pc" ],
+            
+              [  "usr\/lib64\/pkgconfig\/libwebsockets_static.pc" ],
+            
+              [  "usr\/share\/applications\/ardour9.desktop" ],
+            
+              [  "usr\/share\/ardour9\/ArdourMono.ttf" ],
+            
+              [  "usr\/share\/ardour9\/ArdourSans.ttf" ],
+            
+              [  "usr\/share\/ardour9\/export\/Amazon Music.format" ],
+            
+              [  "usr\/share\/ardour9\/export\/Apple Music.format" ],
+            
+              [  "usr\/share\/ardour9\/export\/BWAV 24bit Export.format" ],
+            
+              [  "usr\/share\/ardour9\/export\/BWAV 32float Export.format" ],
+            
+              [  "usr\/share\/ardour9\/export\/CD (Red Book).format" ],
+            
+              [  "usr\/share\/ardour9\/export\/CD \u002b Ogg_Vorbis \u002b FLAC.preset" ],
+            
+              [  "usr\/share\/ardour9\/export\/CD only.preset" ],
+            
+              [  "usr\/share\/ardour9\/export\/FLAC 24 bit.format" ],
+            
+              [  "usr\/share\/ardour9\/export\/FLAC.preset" ],
+            
+              [  "usr\/share\/ardour9\/export\/MP3 (extreme).format" ],
+            
+              [  "usr\/share\/ardour9\/export\/MP3 (medium).format" ],
+            
+              [  "usr\/share\/ardour9\/export\/MP3 (standard).format" ],
+            
+              [  "usr\/share\/ardour9\/export\/Ogg_Vorbis \u002b FLAC.preset" ],
+            
+              [  "usr\/share\/ardour9\/export\/Ogg_Vorbis.format" ],
+            
+              [  "usr\/share\/ardour9\/export\/Ogg_Vorbis.preset" ],
+            
+              [  "usr\/share\/ardour9\/export\/Ring Tone.format" ],
+            
+              [  "usr\/share\/ardour9\/export\/Soundcloud and Spotify.format" ],
+            
+              [  "usr\/share\/ardour9\/export\/Streaming.preset" ],
+            
+              [  "usr\/share\/ardour9\/export\/WAV (tagged).format" ],
+            
+              [  "usr\/share\/ardour9\/export\/YouTube and Deezer.format" ],
+            
+              [  "usr\/share\/ardour9\/export\/mp3.preset" ],
+            
+              [  "usr\/share\/ardour9\/export\/wav.preset" ],
+            
+              [  "usr\/share\/ardour9\/icons\/act-disabled.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/add.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/anchored_trim_left_cursor.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/anchored_trim_right_cursor.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/application-x-ardour_16px.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/application-x-ardour_22px.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/application-x-ardour_32px.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/application-x-ardour_48px.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/ardour-app-icon_osx.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/ardour-app-icon_osx_mask.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/cc121.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/chord.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/close.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/computer_keyboard.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/computer_keyboard_active.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/console1.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/eighthnote.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/expand_left_right_cursor.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/expand_up_down_cursor.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/fade_in_cursor.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/fade_out_cursor.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/fadein-constant-power.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/fadein-fast-cut.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/fadein-linear.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/fadein-slow-cut.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/fadein-symmetric.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/fadeout-constant-power.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/fadeout-fast-cut.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/fadeout-linear.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/fadeout-slow-cut.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/fadeout-symmetric.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/faderport-small.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/faderport16-small.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/faderport2018-small.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/faderport8-small.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/favorite-no.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/favorite-yes.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/ferret_02.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/forte.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/fortissimo.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/fortississimo.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/grabber.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/grabber_edit_point.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/grabber_note.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/halfnote.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/i_beam_cursor.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/launch_control_xl.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/launchpad-mini.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/launchpad-pro.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/launchpad-x.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/lkmk4.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/lkmk4mini.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/mezzforte.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/mezzoforte.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/mezzopiano.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/midi-input-active.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/midi-input-inactive.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/midi_socket_small.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/midi_sound_notes.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/midi_tool_erase.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/midi_tool_pencil.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/midi_tool_select.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/move_cursor.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/mute-disabled.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/mute-enabled.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/muted-by-others.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/padlock_closed.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/padlock_open.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/pianissimo.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/pianississimo.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/piano.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/push2-small.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/quarternote.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/rec-enabled.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/rec-in-progress.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/rec-safe-disabled.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/rec-safe-enabled.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/record-normal-disabled.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/record-normal-enabled.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/record-normal-in-progress.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/record-step.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/record_disabled_grey.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/record_normal_red.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/record_tape_red.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/resize_bottom_cursor.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/resize_bottom_left_cursor.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/resize_bottom_right_cursor.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/resize_left_cursor.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/resize_right_cursor.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/resize_top_cursor.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/resize_top_left_cursor.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/resize_top_right_cursor.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/sae.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/scissors.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/search.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/sixteenthnote.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/sixtyfourthnote.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/solo-disabled.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/solo-enabled.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/solo-isolate-disabled.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/solo-isolate-enabled.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/solo-isolated.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/solo-safe-disabled.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/solo-safe-enabled.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/solo-safe-icon.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/soloed-by-others.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/soundcloud.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/ssl-uf8-small.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/thirtysecondnote.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/time_exp.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/trim_bottom_cursor.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/trim_left_cursor.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/trim_left_cursor_5.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/trim_left_cursor_right_only.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/trim_right_cursor.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/trim_right_cursor_5.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/trim_right_cursor_left_only.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/trim_top_cursor.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/wholenote.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/zoom_in_cursor.png" ],
+            
+              [  "usr\/share\/ardour9\/icons\/zoom_out_cursor.png" ],
+            
+              [  "usr\/share\/ardour9\/locale\/ca\/LC_MESSAGES\/gtk2_ardour9.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/ca\/LC_MESSAGES\/gtkmm2ext3.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/ca\/LC_MESSAGES\/libytk9.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/cs\/LC_MESSAGES\/ardour9.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/cs\/LC_MESSAGES\/gtk2_ardour9.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/cs\/LC_MESSAGES\/gtkmm2ext3.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/cs\/LC_MESSAGES\/libytk9.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/de\/LC_MESSAGES\/ardour9.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/de\/LC_MESSAGES\/gtk2_ardour9.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/de\/LC_MESSAGES\/gtkmm2ext3.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/de\/LC_MESSAGES\/libytk9.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/el\/LC_MESSAGES\/ardour9.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/el\/LC_MESSAGES\/gtk2_ardour9.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/el\/LC_MESSAGES\/gtkmm2ext3.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/el\/LC_MESSAGES\/libytk9.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/en_GB\/LC_MESSAGES\/ardour9.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/en_GB\/LC_MESSAGES\/gtk2_ardour9.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/en_GB\/LC_MESSAGES\/libytk9.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/es\/LC_MESSAGES\/ardour9.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/es\/LC_MESSAGES\/gtk2_ardour9.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/es\/LC_MESSAGES\/gtkmm2ext3.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/es\/LC_MESSAGES\/libytk9.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/eu\/LC_MESSAGES\/ardour9.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/eu\/LC_MESSAGES\/gtk2_ardour9.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/eu\/LC_MESSAGES\/gtkmm2ext3.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/eu\/LC_MESSAGES\/libytk9.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/fr\/LC_MESSAGES\/ardour9.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/fr\/LC_MESSAGES\/gtk2_ardour9.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/fr\/LC_MESSAGES\/gtkmm2ext3.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/fr\/LC_MESSAGES\/libytk9.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/it\/LC_MESSAGES\/ardour9.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/it\/LC_MESSAGES\/gtk2_ardour9.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/it\/LC_MESSAGES\/gtkmm2ext3.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/ja\/LC_MESSAGES\/ardour9.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/ja\/LC_MESSAGES\/gtk2_ardour9.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/ja\/LC_MESSAGES\/gtkmm2ext3.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/ja\/LC_MESSAGES\/libytk9.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/ko\/LC_MESSAGES\/ardour9.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/ko\/LC_MESSAGES\/gtk2_ardour9.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/ko\/LC_MESSAGES\/gtkmm2ext3.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/ko\/LC_MESSAGES\/libytk9.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/nn\/LC_MESSAGES\/ardour9.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/nn\/LC_MESSAGES\/gtk2_ardour9.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/nn\/LC_MESSAGES\/gtkmm2ext3.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/nn\/LC_MESSAGES\/libytk9.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/pl\/LC_MESSAGES\/ardour9.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/pl\/LC_MESSAGES\/gtk2_ardour9.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/pl\/LC_MESSAGES\/gtkmm2ext3.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/pl\/LC_MESSAGES\/libytk9.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/pt\/LC_MESSAGES\/gtk2_ardour9.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/pt\/LC_MESSAGES\/gtkmm2ext3.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/pt\/LC_MESSAGES\/libytk9.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/pt_BR\/LC_MESSAGES\/libytk9.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/pt_PT\/LC_MESSAGES\/gtk2_ardour9.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/ru\/LC_MESSAGES\/ardour9.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/ru\/LC_MESSAGES\/gtk2_ardour9.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/ru\/LC_MESSAGES\/gtkmm2ext3.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/ru\/LC_MESSAGES\/libytk9.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/sv\/LC_MESSAGES\/ardour9.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/sv\/LC_MESSAGES\/gtk2_ardour9.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/sv\/LC_MESSAGES\/libytk9.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/zh\/LC_MESSAGES\/ardour9.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/zh\/LC_MESSAGES\/gtk2_ardour9.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/zh\/LC_MESSAGES\/gtkmm2ext3.mo" ],
+            
+              [  "usr\/share\/ardour9\/locale\/zh\/LC_MESSAGES\/libytk9.mo" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/SSL Nucleus Ardour.profile" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/artist_control.device" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/artist_mix.device" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/arturiaMkII.device" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/arturiaMkII.profile" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/bcf2000.device" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/cmc.device" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/mc\u002bxt\u002bxt.device" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/mc\u002bxt.device" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/mc.device" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/mcpro.device" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/mcproxt.device" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/midikbd.device" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/nucleus-platform-midi.device" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/nucleus.device" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/p1-m\u002bp1-x.device" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/p1-m.device" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/p1-x\u002bp1-m.device" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/p1_nano\u002bp1-x.device" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/p1_nano.device" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/p1_x\u002bp1_nano.device" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/platform_m\u002b.device" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/platform_m\u002b_platformx\u002b.device" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/platform_x\u002b_platform_m\u002b.device" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/qcon\u002bqex.device" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/qcon.device" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/qcon_g2\u002bg2ex.device" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/qcon_g2.device" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/qcon_g2ex\u002bg2.device" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/qex\u002bqcon.device" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/ruco.device" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/ssl-uf1.device" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/ssl-uf8\u002b1.device" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/ssl-uf8\u002b2.device" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/ssl-uf8\u002b3.device" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/ssl-uf8.device" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/two_platform_x\u002b_platform_m\u002b.device" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/user.profile" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/v1-m\u002bv1-x.device" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/v1-m.device" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/v1-x\u002bv1-m.device" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/x-touch\u002b2x-touch-compact.device" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/x-touch\u002bx-touch-compact.device" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/x-touch-compact.device" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/x-touch-mini.device" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/x-touch-one.device" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/x-touch.device" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/xt\u002bmc\u002bxt.device" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/xt\u002bmc.device" ],
+            
+              [  "usr\/share\/ardour9\/mcp\/xt\u002bxt\u002bmc.device" ],
+            
+              [  "usr\/share\/ardour9\/media\/.daw-meta.xml" ],
+            
+              [  "usr\/share\/ardour9\/media\/click-120bpm.flac" ],
+            
+              [  "usr\/share\/ardour9\/media\/click.mid" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/AKAI_APCmini.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/AKAI_APCmini_mk2.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/AKAI_MIDIMix_EQ_Mode.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/AKAI_MIDIMix_Normal_Mode.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/AKAI_MPK225_Normal.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/AKAI_MPK225_Plugins.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/AKAI_MPK249.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/AKAI_MPK61.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/AKAI_MPKmini.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/AKAI_MPKmini_mk3.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/AKAI_MPKminiplus.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/Alesis_Q49v2.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/Alesis_QX25.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/Alesis_VI25.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/Arturia_KeyLab49.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/Arturia_KeyLab_49-61-88_mk2.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/Arturia_MiniLab_3.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/Arturia_MiniLab_mkII.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/DDX3216.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/Devine_Versakey.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/Donner_StarryPad.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/Korg_nanoKONTROL.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/Korg_nanoKONTROL2.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/Korg_nanoKONTROL2_With_Master.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/Korg_nanoKONTROL_Master.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/Korg_nanoKONTROL_Studio.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/Korg_taktile.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/LAudio_EASYCONTROL9.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/M-Audio_Axiom25.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/M-Audio_Axiom61.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/M-Audio_Axiom_49_mkII.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/M-Audio_Axiom_AIR_Mini_32.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/M-Audio_Axiom_Air_25_2015_Model_Transport_Only.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/M-Audio_Oxygen49.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/M-Audio_Oxygen61v3.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/Nektar_Impact_GX.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/Nektar_Impact_LX.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/Nektar_Panorama.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/Novation Impulse 49.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/Novation_Impulse61.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/Novation_LaunchControl_XL.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/Novation_LaunchKey25.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/Novation_LaunchKey49.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/Roland_A-30.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/Roland_SI-24.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/Roland_V_Studio_20.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/Yamaha_KX25.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/akai-mpd-32.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/bcf2000.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/bcf2000_mackie.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/donnerdmk25.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/m-audio-oxygen61v3.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/m-audio_oxygen25.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/m-audio_oxygen25_3rdGen.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/m-audio_oxygen8v2.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/midikb_wiimote.map" ],
+            
+              [  "usr\/share\/ardour9\/midi_maps\/xboard-61.map" ],
+            
+              [  "usr\/share\/ardour9\/osc\/TTC2.preset" ],
+            
+              [  "usr\/share\/ardour9\/osc\/basic-touchosc.preset" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/ART_Multiverb_Alpha_2_0.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Access_Virus_A.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Access_Virus_B_KB_Indigo.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Access_Virus_Rack.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Alesis_DM5.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Alesis_MIDIVerb_4.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Alesis_MIDIVerb_II.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Alesis_MIDIVerb_III.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Alesis_MicroVerb4.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Alesis_NanoBass.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Alesis_NanoPiano.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Alesis_NanoSynth.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Alesis_Q20.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Alesis_QS6.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Alesis_QS6_1.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Alesis_QS78.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Alesis_QS7_1_8_1.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Alesis_Q_Cards.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Alesis_QuadraSynth.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Alesis_QuadraSynth_Plus.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Alesis_Quadraverb_2.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Alesis_Quadraverb_Plus.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Alesis_S4.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Alesis_S4_Plus.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Alesis_SR_16.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Bitheadz_Retro_AS_1.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Casio_CZ_1.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Clavia_Nord.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Clavia_Nord_Lead_II.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Clavia_Nord_Rack_3.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/DSI_Evolver.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/DSI_Mopho.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/DSI_Tetra.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Digidesign_MP1.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Digitech_DSP128plus.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Digitech_DSP_128.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Digitech_Quad_4.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Digitech_S100.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Digitech_Whammy_DT.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Dynacord_DRP_20X.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Brass_01_Generic_Brass.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Brass_02_1FH_KS_Sus_Short_C0_A#0.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Brass_03_1FH_KS_Effects_C0_A0.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Brass_04_2FH_KS_Sus_Short_C0_G0.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Brass_05_2FH_KS_Effects_C0_F#0.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Brass_06_6FH_KS_Sus_Short_C0_G#0.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Brass_07_6FH_KS_Effects_C0_A0.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Brass_08_1TP_KS_Sus_Short_C0_A0.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Brass_09_1TP_KS_Effects_C0_E0.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Brass_10_2TP_KS_Sus_Short_C0_G#0.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Brass_11_2TP_KS_Effects_C0_A0.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Brass_12_3TP_KS_Sus_Short_C0_A#0.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Brass_13_3TP_KS_Effects_C0_A0.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Brass_14_1TB_KS_Sus_Short_C0_G#0.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Brass_15_1TB_KS_Effects_C0_E0.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Brass_16_3TB_KS_Sus_Short_C#4_G#4.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Brass_17_3TB_KS_Effects_C#4_F4.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Brass_18_1CM_KS_Sus_Short_C#3_G3.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Brass_19_1TU_KS_Sus_Short_C3_G#3.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Brass_20_1TU_KS_Effects_C3_E3.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Brass_21_LB_KS_Sus_Short_C0_D0.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Brass_22_LB_KS_Effects_C3_B3.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Harp_01_Generic_Harp.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Harp_02_Harp_KS_Master_C0_G#0.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Orchestral_Percussion_01_Generic_Percussion.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Orchestral_Percussion_02_Timpani_Flt_KS.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Orchestral_Percussion_03_Timpani_Hrd_KS.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Orchestral_Woodwinds_01_Generic_Woodwinds.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Orchestral_Woodwinds_02_PF_KS_Sus_Short_C0_C1.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Orchestral_Woodwinds_03_PF_KS_Runs_FX_C0_G0.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Orchestral_Woodwinds_04_FL_KS_Sus_Short_C0_C#1.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Orchestral_Woodwinds_05_FL_KS_Runs_FX_C0_G0.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Orchestral_Woodwinds_06_FL2_KS_Sus_Short_C0_C#1.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Orchestral_Woodwinds_07_FL2_KS_Runs_FX_C0_G0.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Orchestral_Woodwinds_08_AF_KS_Sus_Short_C0_F#0.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Orchestral_Woodwinds_09_BF_KS_Sus_Short_C0_E0.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Orchestral_Woodwinds_10_OB_KS_Sus_Short_C0_A#0.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Orchestral_Woodwinds_11_OB_KS_Runs_FX_C0_G0.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Orchestral_Woodwinds_12_EH_KS_Sus_Short_C0_A#0.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Orchestral_Woodwinds_13_CL_KS_Sus_Short_C0_A#0.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Orchestral_Woodwinds_14_CL_KS_Runs_FX_C0_G0.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Orchestral_Woodwinds_15_BC_KS_Sus_Short_C0_A0.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Orchestral_Woodwinds_16_BS_KS_Sus_Short_C0_G#0.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Orchestral_Woodwinds_17_BS_KS_Runs_FX_C0_G0.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Orchestral_Woodwinds_18_CB_KS_Sus_Short_C3_G#3.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Strings_01_Generic_Strings.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Strings_02_1st_Violins_Sus_KS_C0_F#0_Ni.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Strings_03_1st_Violins_Sus_KS_C0_F#0_Ni_DIV_A.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Strings_04_1st_Violins_Sus_KS_C0_F#0_Ni_DIV_B.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Strings_05_2nd_Violins_Sus_KS_C0_G#0_Ni.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Strings_06_2nd_Violins_Sus_KS_C0_G#0_Ni_DIV_A.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Strings_07_2nd_Violins_Sus_KS_C0_G#0_Ni_DIV_B.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Strings_08_Violas_Sus_KS_C0_G0_Ni.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Strings_09_Violas_Sus_KS_C0_G0_Ni_DIV_A.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Strings_10_Violas_Sus_KS_C0_G0_Ni_DIV_B.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Strings_11_Celli_Sus_KS_C0_F#0_Ni.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Strings_12_Celli_Sus_KS_C0_F#0_Ni_DIV_A.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Strings_13_Celli_Sus_KS_C0_F#0_Ni_DIV_B.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Strings_14_Basses_Sus_KS_C4_F4_Ni.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Strings_15_Basses_Sus_KS_C4_F4_Ni_DIV_A.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Hollywood_Strings_16_Basses_Sus_KS_C4_F4_Ni_DIV_B.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Pianos_01_Bechstein_280_copy.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Pianos_02_Bosendorfer_290.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Pianos_03_Steinway_D.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/EW_Pianos_04_Yamaha_C7.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Mo_Phatt.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Orbit_3.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Proteus_2000.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_HALO.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_MK_6.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_MPS.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_MPS_Orch.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_MP_7.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_Mo_Phatt.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_Morpheus.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_Orbit.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_Orbit_V2.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_P2000_Audity.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_P2000_Beat_Garden.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_P2000_Composer.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_P2000_Definitive_B3.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_P2000_Holy_Grail.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_P2000_MP_7_MROM1.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_P2000_Mo_Phatt.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_P2000_Orchestral1.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_P2000_Orchestral2.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_P2000_PS_Orchestra.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_P2000_Planet_Earth.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_P2000_Protean_Drums.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_P2000_Proteus_Pop.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_P2000_Protozoa.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_P2000_Pure_Phat.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_P2000_Sound_of_the_ZR.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_P2000_Techno_Synth.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_P2000_Vintage_Collection.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_P2000_World_Expedition.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_P2000_XL_7_ROM.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_P2000_XTREM.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_P2000_X_Lead.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_PK_6.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_Planet_Earth.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_Planet_Phatt.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_Procussion.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_ProteusFX.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_Proteus_1.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_Proteus_1_XR.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_Proteus_1_XR_Orch.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_Proteus_1_w_Protologic.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_Proteus_2.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_Proteus_2500.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_Proteus_2_XR.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_Proteus_3.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_Proteus_3_XR.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_Proteus_Custom.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_SoundEngine.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_UltraProteus.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_Vintage_Keys.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_Vintage_Pro.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_Virtuoso_2000.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_Systems_XK_6.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/E_mu_XL_1.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Ensoniq_ESQ.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Ensoniq_KS_32.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Ensoniq_MR_Rack_61_76.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Ensoniq_SD_1.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Ensoniq_SQ_1.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Ensoniq_SQ_1_2_R_.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Ensoniq_SQ_1_2_R_32.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Ensoniq_SQ_R.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Ensoniq_TS_10_12.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Ensoniq_VFX_SD.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Ensoniq_ZR.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Eventide_Eclipse.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Gotharmoon_deMoon.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Johnson_J_Station.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Jomox_MBase_11.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Kawai_GMega.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Kawai_K1.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Kawai_K11.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_01R_W.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_01_W(fd).midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_01_W_Pro(X).midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_03R_W.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_05R_W.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_AG_10.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_AG_3.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_CX3.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_C_15_25.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_C_303_505.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_DW_8000.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_ER_1.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_EX_8000.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_Karma.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_Kross_2.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_M1(R).midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_M3R.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_MS2000R.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_MicroKORG.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_N1_N5.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_N264.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_N364.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_NS5R.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_NX5R.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_Prophecy.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_Radias.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_T1.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_TR_Rack.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_TR_Workstation.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_Trinity.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_Trinity_Plus.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_Trinity_Pro(X).midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_Trinity_Track.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_Triton.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_Triton_Expansion.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_Triton_Le.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_Triton_Rack.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_Triton_Studio.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_Volca_Bass.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_Volca_Beats.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_Volca_Keys.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_Wavestation_A_D.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_Wavestation_EX.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_Wavestation_SR.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_X2_3_3R.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_X5(D).midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_X50.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_X5DR.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_Z1.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Korg_iSeries.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Kurzweil_1200_Pro_I.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Kurzweil_1200_Pro_II.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Kurzweil_K1200.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Kurzweil_K2000.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Kurzweil_K2000R.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Kurzweil_K2000_Expansion.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Kurzweil_K2500X.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Kurzweil_K2500_2600_Expansion.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Kurzweil_K2600.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Kurzweil_K2661.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Kurzweil_K2700.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Kurzweil_Mark_12_152.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Kurzweil_Micro_Piano.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Kurzweil_PC2_PC2r_w_Orch.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Kurzweil_PC3A.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Kurzweil_PC88.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Kurzweil_PC88_MX.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Kurzweil_PC88_VGM.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Kurzweil_PX_Plus.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Kurzweil_SP4.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Kurzweil_SP88x.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Lexicon_DR_Music_FX_Expansion.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Lexicon_Dual_FX_Expansion.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Lexicon_Dual_Vrb_Expansion.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Lexicon_MPX100.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Lexicon_MPX500.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Lexicon_MPX_1.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Lexicon_MPX_500.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Lexicon_MX200.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Lexicon_MX300.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Lexicon_PCM_80.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Lexicon_PCM_81.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Lexicon_PCM_90.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Lexicon_PCM_91.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Lexicon_Pitch_FX_Expansion.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Lexicon_SMG_Post_FX_Expansion.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Line_6_Bass_POD.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Line_6_Bass_PODxt.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Line_6_EchoPro.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Line_6_FilterPro.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Line_6_ModPro.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Line_6_POD.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Line_6_POD_2_Pro.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Line_6_PODxt.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Linn_AdrenaLinn_II.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/MFB_503.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/MFB_Tanzbar.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/MIDI.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Moog_Grandmother.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Moog_MF_104M_Analog_Delay.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Moog_MF_108M_Cluster_Flux.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Moog_Minitaur.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Moog_Slim_Phatty.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Moog_Subsequent_37.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Morning_Star_MacWaveMaker.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Nord_Modular.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Novation_A_Station.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Novation_BassStationII.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Novation_Bass_Station_Rack.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Novation_Circuit.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Novation_DrumStation.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Novation_Drum_Station_Rack.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Novation_Nova.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Novation_Super_BassStation.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Novation_Supernova_II.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Oberheim_Matrix_1000.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Peavey_DPM_V3.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Rocktron_Replifex.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_60s_70s_Expansion.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_Asia_Expansion.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_Bass\u0026Drums_Expansion.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_Big_Brass_Expansion.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_Boss_DS_330.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_Boss_GT_3.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_Boss_GT_8.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_Boss_SE_50.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_Boss_SE_70_Guitar.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_Boss_SE_70_Standard.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_Complete_Orchestra_Exp.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_Concert_Piano_Exp.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_Concert_Piano_Expansion.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_Country_Expansion.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_D_10.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_D_110.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_D_5.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_D_50.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_D_550.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_D_70.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_Dance_Expansion.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_Dynamic_Drums_Exp.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_Dynamic_Drums_Expansion.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_Experience_2_Expansion.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_Experience_Expansion.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_Fantom.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_FantomX8.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_FantomXR.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_Fantom_Xa.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_GR_1.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_GR_1_w_Exp.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_GR_30.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_GR_33.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_Handsonic.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_Hip_Hop_Expansion.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_House_Expansion.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_JD_990.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_JP_8000.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_JP_8080.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_JV_1010.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_JV_1080.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_JV_2080.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_JV_30.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_JV_35_50.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_JV_80_880.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_JV_90.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_JX_305.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_JX_8P.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_Juno_106.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_Latin_Expansion.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_MC_303.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_MC_307.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_MC_505.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_MT_32.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_M_BD1.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_M_DC1.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_M_GS64.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_M_OC1.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_M_SE1.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_M_VS1.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_Orchestral_Expansion.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_Orchestral_II_Expansion.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_PMA_5.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_Piano_Expansion.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_Platinum_Trax_Exp.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_Platinum_Trax_Expansion.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_Pop_Expansion.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_RD_250s.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_RD_600.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_RD_700.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_RD_700sx.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_RS_5_9.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_RS_9.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_R_8M.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_SC_50.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_SC_55.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_SC_55mkII.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_SC_7.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_SC_88.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_SC_88_Pro.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_SH_32.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_Session_Expansion.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_Sirius.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_SonicCell.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_Special_FX_Expansion.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_Studio_Exp.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_Studio_Expansion.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_Super_Sound_Expansion.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_Supreme_Dance_Exp.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_Supreme_Dance_Expansion.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_Symphonic_Strings_Exp.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_TB_03.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_Techno_Expansion.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_U_220.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_Ultimate_Keys_Exp.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_Ultimate_Keys_Expansion.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_V_Synth_GT.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_Vintage_Synth_Expansion.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_Vocal_Expansion.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_World_Collection_Exp.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_World_Expansion.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_XP_10.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_XP_80.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_XV_2020.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_XV_3080.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_XV_5050.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_XV_5080.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Roland_XV_88.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Sequential_Circuits_Prophet_600.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/TC_Electronic_M3000.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Tascam_TM_D1000.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Waldorf_Blofeld.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Waldorf_Blofeld_2012.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Waldorf_Micro_Q.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Waldorf_Pulse.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/XLN_Audio_Addictive_Drums.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/XLN_Audio_Addictive_Drums_2.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/XLN_Audio_Addictive_Drums_2_Brushes.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/XLN_Audio_Addictive_Drums_Brushes.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_AN1X.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_CS1X.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_CS2X.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_CS6R_x.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_CVP_103_105.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_CVP_107_109_700.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_DX_7.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_EX_5.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_EX_5_7.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_FS1R.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_MM6.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_MOTIF_6_7_8.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_MOTIF_ES_6_7_8.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_MOTIF_RACK_ES.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_MOTIF_Rack.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_MOTIF_XS.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_MU100R.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_MU10XG.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_MU50.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_MU80.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_MU90R.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_MX-49-61-88.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_NP-V80.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_PLG100_XG_Expansion.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_PLG150DX_Expansion.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_PLG150PF_Expansion.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_PLG150VL_Expansion.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_PLG150_AN_Expansion.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_PLG150_DR_PC_Expansion.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_PSR540.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_PSR_275.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_PSR_530_630_730.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_PSR_8000.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_PSR_9000.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_PSR_DJX.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_PSR_DJX_II.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_PSR_S900.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_P_121_125.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_QS300.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_QY70.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_RM50.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_S30_80.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_S90.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_SY77.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_SY85.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_SY99.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_So3.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_So8.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_TG100.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_TG500.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_TG77.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_TX81Z.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_Tyros.midnam" ],
+            
+              [  "usr\/share\/ardour9\/patchfiles\/Yamaha_Tyros2.midnam" ],
+            
+              [  "usr\/share\/ardour9\/plugin_metadata\/plugin_statuses" ],
+            
+              [  "usr\/share\/ardour9\/plugin_metadata\/plugin_tags" ],
+            
+              [  "usr\/share\/ardour9\/resources\/Ardour-icon_16px.png" ],
+            
+              [  "usr\/share\/ardour9\/resources\/Ardour-icon_22px.png" ],
+            
+              [  "usr\/share\/ardour9\/resources\/Ardour-icon_256px.png" ],
+            
+              [  "usr\/share\/ardour9\/resources\/Ardour-icon_32px.png" ],
+            
+              [  "usr\/share\/ardour9\/resources\/Ardour-icon_48px.png" ],
+            
+              [  "usr\/share\/ardour9\/resources\/Ardour-icon_512px.png" ],
+            
+              [  "usr\/share\/ardour9\/resources\/Ardour-small-splash.png" ],
+            
+              [  "usr\/share\/ardour9\/resources\/Ardour-splash.png" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/HiAndLowPass.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/a-noise.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/a_dtmf_phone.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/a_mute.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/a_slow_mute.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/a_stereo_routing.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/ab_switch.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/access_action.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/add_MIDI_monitor.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/add_audio_track.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/add_cdmarker.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/addscopes.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/amp5.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/avldrums_midimap.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/barlow_arp.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/blank_midi_region_clone.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/bounce_replace.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/brutalize_midi.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/bypass_all_plugins.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/collapse_playlists.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/create_drum_tracks.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/delete_xrun_markers.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/dm10studio.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/duplicate_to_grid.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/export_mp4chaps.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/ir_capture.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/jump_to_marker.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/lfo_automation.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/list_plugins.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/ltc_reader.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/metering_point.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/midi_cc_to_automation.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/midi_remap.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/midimon.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/mixer_screenshot.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/mono_to_stereo_pan.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/mute_all_tracks.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/new_clean_playlists.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/normalize_all_tracks.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/notch_bank.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/periodic_backup.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/pitch_to_mts.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/post_export_save_hook.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/preare_record_example.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/raptor_arp.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/record_now.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/remove_sysex_from_region.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/remove_unknown_procs.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/reset_mixer.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/reverse_midi.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/rubberband_swing.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/s_add_sources_to_track.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/s_chanmap.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/s_color_transparency.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/s_cut_copy_section.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/s_ducks.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/s_fader_automation.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/s_foreach_track.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/s_group_color.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/s_import_files.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/s_plugin_automation.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/s_plugin_reorder.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/s_pluginutils.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/s_portengine.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/s_region_envelope.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/s_region_gain.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/s_region_gain2.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/s_region_gain_curve.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/s_replaceplugin.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/s_sections.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/s_selection.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/s_set_region_fades.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/s_showhide_track.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/s_tempo_map.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/s_thin_automation.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/s_timecode.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/s_track_props.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/s_vamp_plugin_index.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/s_whoami.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/scl_to_mts.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/scope.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/select_every_2nd_region.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/select_regions_at_playhead.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/send_to_bus.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/session_template_advanced.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/session_template_record.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/set_automation_mode.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/simple_arp.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/singen.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/spectrogram.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/split_all_markers.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/stop_at_marker.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/store_recall_mixer.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/surround_to_stereo.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/tomsloop.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/track_organizer.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/trigger_mixer_scene.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/tx_raw_midi_from_file.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/vamp_audio_to_midi.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/voice_activate.lua" ],
+            
+              [  "usr\/share\/ardour9\/scripts\/x-fade.lua" ],
+            
+              [  "usr\/share\/ardour9\/templates\/.stub" ],
+            
+              [  "usr\/share\/ardour9\/themes\/adwaita_dark-ardour.colors" ],
+            
+              [  "usr\/share\/ardour9\/themes\/blueberry_milk-ardour.colors" ],
+            
+              [  "usr\/share\/ardour9\/themes\/caineville-ardour.colors" ],
+            
+              [  "usr\/share\/ardour9\/themes\/captain_light-ardour.colors" ],
+            
+              [  "usr\/share\/ardour9\/themes\/clear_gray-ardour.colors" ],
+            
+              [  "usr\/share\/ardour9\/themes\/cubasish-ardour.colors" ],
+            
+              [  "usr\/share\/ardour9\/themes\/dark-ardour.colors" ],
+            
+              [  "usr\/share\/ardour9\/themes\/diehard3-ardour.colors" ],
+            
+              [  "usr\/share\/ardour9\/themes\/recbox-ardour.colors" ],
+            
+              [  "usr\/share\/ardour9\/themes\/unastudia-ardour.colors" ],
+            
+              [  "usr\/share\/ardour9\/themes\/xcolors-ardour.colors" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/css\/button.css" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/css\/buttonarray.css" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/css\/chart.css" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/css\/circular.css" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/css\/clock.css" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/css\/colorpicker.css" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/css\/colorpickerdialog.css" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/css\/container.css" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/css\/crossover.css" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/css\/dialog.css" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/css\/dynamics.css" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/css\/expander.css" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/css\/fader.css" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/css\/frame.css" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/css\/frequencyresponse.css" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/css\/gauge.css" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/css\/globalcursor.css" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/css\/graph.css" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/css\/grid.css" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/css\/icon.css" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/css\/knob.css" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/css\/label.css" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/css\/levelmeter.css" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/css\/meterbase.css" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/css\/multimeter.css" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/css\/notification.css" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/css\/notifications.css" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/css\/pager.css" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/css\/responsehandle.css" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/css\/responsehandler.css" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/css\/root.css" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/css\/scale.css" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/css\/select.css" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/css\/slider.css" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/css\/state.css" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/css\/toggle.css" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/css\/tooltip.css" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/css\/value.css" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/css\/valuebutton.css" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/css\/valueknob.css" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/css\/window.css" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/images\/background.png" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/images\/chart\/background.png" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/images\/chart\/background.xcf" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/images\/fader\/background_horizontal_center.png" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/images\/fader\/background_horizontal_left.png" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/images\/fader\/background_horizontal_right.png" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/images\/fader\/background_vertical_bottom.png" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/images\/fader\/background_vertical_center.png" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/images\/fader\/background_vertical_top.png" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/images\/fader\/handle_horizontal.png" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/images\/fader\/handle_horizontal_warn.png" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/images\/fader\/handle_vertical.png" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/images\/fader\/handle_vertical_warn.png" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/images\/gradients\/blue_in.jpg" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/images\/gradients\/blue_in.png" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/images\/gradients\/blue_out.jpg" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/images\/gradients\/blue_out.png" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/images\/gradients\/grey_in.jpg" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/images\/gradients\/grey_in.png" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/images\/gradients\/grey_out.jpg" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/images\/gradients\/grey_out.png" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/images\/knob\/background.svg" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/images\/meterbase\/bevel_soft_horizontal.png" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/images\/meterbase\/bevel_soft_vertical.png" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/images\/meterbase\/bevel_strong_horizontal.png" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/images\/meterbase\/bevel_strong_vertical.png" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/images\/meterbase\/grid_soft.png" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/images\/meterbase\/grid_strong.png" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/images\/meterbase\/led_horizontal.png" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/images\/meterbase\/led_vertical.png" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/images\/meterbase\/slim_soft_horizontal.png" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/images\/meterbase\/slim_soft_vertical.png" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/images\/meterbase\/slim_strong_horizontal.png" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/images\/meterbase\/slim_strong_vertical.png" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/images\/select\/arrow_down.png" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/images\/state\/circle.png" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/images\/state\/horizontal.png" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/images\/state\/over.xcf" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/images\/state\/square.png" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/images\/state\/vertical.png" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/images\/window\/background.png" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/images\/window\/resize.png" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/ardour-toolkit-theme\/theme.css" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/expand.svg" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/index.html" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/js\/main.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/js\/scale.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/js\/tkloader.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/js\/tkwidget.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/js\/widget.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/main.css" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/manifest.xml" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/COPYING" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/G.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/implements\/README" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/implements\/anchor.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/implements\/audiomath.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/implements\/base.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/implements\/globalcursor.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/implements\/gradient.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/implements\/notes.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/implements\/ranged.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/implements\/ranges.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/implements\/warning.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/modules\/README" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/modules\/circular.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/modules\/drag.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/modules\/dragcapture.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/modules\/dragvalue.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/modules\/eqband.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/modules\/filter.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/modules\/graph.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/modules\/grid.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/modules\/range.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/modules\/resize.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/modules\/responsehandle.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/modules\/scale.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/modules\/scrollvalue.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/polyfill\/raf.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/styles\/fonts\/Toolkit.css" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/styles\/fonts\/Toolkit.css.in" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/styles\/fonts\/Toolkit.html" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/styles\/fonts\/Toolkit.html.in" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/styles\/fonts\/Toolkit.svg" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/styles\/fonts\/Toolkit.ttf" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/styles\/toolkit.css" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/toolkit.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/README" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/button.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/buttonarray.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/chart.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/clock.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/colorpicker.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/colorpickerdialog.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/colors.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/confirmbutton.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/container.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/crossover.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/dialog.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/dynamics.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/equalizer.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/expander.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/fader.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/frame.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/frequencyresponse.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/gauge.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/icon.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/knob.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/label.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/levelmeter.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/list.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/listitem.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/meterbase.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/multimeter.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/notification.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/notifications.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/pager.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/responsehandler.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/root.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/select.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/slider.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/sortablelist.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/sortablelistitem.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/state.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/tag.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/taggable.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/taggablelistitem.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/taggabletreeitem.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/tagger.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/tagnode.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/tags.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/toggle.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/tooltips.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/treeitem.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/value.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/valuebutton.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/valueknob.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/widget.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/mixer\/toolkit\/widgets\/window.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/protocol\/ardour-icon.svg" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/protocol\/index.html" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/protocol\/main.css" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/protocol\/main.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/protocol\/manifest.xml" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/transport\/img\/expand.svg" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/transport\/img\/pause.svg" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/transport\/img\/play.svg" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/transport\/img\/record-off.svg" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/transport\/img\/record-on.svg" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/transport\/index.html" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/transport\/main.css" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/transport\/main.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/transport\/manifest.xml" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/builtin\/transport\/square.ttf" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/index\/junge-regular-webfont.ttf" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/index\/junge-regular-webfont.woff" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/index\/logo.png" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/index\/main.css" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/index\/main.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/index.html" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/shared\/ardour.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/shared\/base\/channel.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/shared\/base\/component.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/shared\/base\/observable.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/shared\/base\/protocol.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/shared\/components\/mixer.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/shared\/components\/parameter.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/shared\/components\/plugin.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/shared\/components\/strip.js" ],
+            
+              [  "usr\/share\/ardour9\/web_surfaces\/shared\/components\/transport.js" ],
+            
+              [  "usr\/share\/doc\/ardour-9.2.0\/README-GITHUB.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/ardour-9.2.0\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/libwebsockets-4.5.8-r1\/README.md.bz2" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/ardour9.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/ardour9.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/256x256\/apps\/ardour9.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/32x32\/apps\/ardour9.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/ardour9.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/512x512\/apps\/ardour9.png" ],
+            
+              [  "usr\/share\/man\/man1\/ardour9.1.bz2" ],
+            
+              [  "usr\/share\/metainfo\/ardour9.appdata.xml" ],
+            
+              [  "usr\/share\/mime\/application\/x-ardour.xml" ],
+            
+              [  "usr\/share\/mime\/packages\/ardour9.xml" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

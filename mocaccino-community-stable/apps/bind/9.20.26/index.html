@@ -1,0 +1,666 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing apps/bind-9.20.26 in mocaccino-community-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> apps/bind-9.20.26
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                Berkeley Internet Name Domain - Name Server
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-community-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-community-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of apps/bind
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/mocaccino-community:bind-apps-9.20.26" target="_blank"> quay.io/mocaccino/mocaccino-community:bind-apps-9.20.26 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/mocaccino-community:bind-apps-9.20.26/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 9.20.26  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> MPL-2.0 </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/sys-fs">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  sys-fs &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/entity/named">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  named &gt;=0 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: net-dns/bind
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://www.isc.org/bind/" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://www.isc.org/bind/ </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/net-dns/bind">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  bind &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "etc\/bind\/.keep_acct-user_named-0" ],
+            
+              [  "etc\/bind\/dyn" ],
+            
+              [  "etc\/bind\/named.conf" ],
+            
+              [  "etc\/bind\/named.conf.auth" ],
+            
+              [  "etc\/bind\/pri" ],
+            
+              [  "etc\/bind\/rndc.key" ],
+            
+              [  "etc\/bind\/sec" ],
+            
+              [  "etc\/conf.d\/named" ],
+            
+              [  "etc\/env.d\/10bind" ],
+            
+              [  "etc\/init.d\/named" ],
+            
+              [  "usr\/bin\/arpaname" ],
+            
+              [  "usr\/bin\/ddns-confgen" ],
+            
+              [  "usr\/bin\/delv" ],
+            
+              [  "usr\/bin\/dig" ],
+            
+              [  "usr\/bin\/dnssec-cds" ],
+            
+              [  "usr\/bin\/dnssec-dsfromkey" ],
+            
+              [  "usr\/bin\/dnssec-importkey" ],
+            
+              [  "usr\/bin\/dnssec-keyfromlabel" ],
+            
+              [  "usr\/bin\/dnssec-keygen" ],
+            
+              [  "usr\/bin\/dnssec-ksr" ],
+            
+              [  "usr\/bin\/dnssec-revoke" ],
+            
+              [  "usr\/bin\/dnssec-settime" ],
+            
+              [  "usr\/bin\/dnssec-signzone" ],
+            
+              [  "usr\/bin\/dnssec-verify" ],
+            
+              [  "usr\/bin\/host" ],
+            
+              [  "usr\/bin\/mdig" ],
+            
+              [  "usr\/bin\/named" ],
+            
+              [  "usr\/bin\/named-checkconf" ],
+            
+              [  "usr\/bin\/named-checkzone" ],
+            
+              [  "usr\/bin\/named-compilezone" ],
+            
+              [  "usr\/bin\/named-journalprint" ],
+            
+              [  "usr\/bin\/named-rrchecker" ],
+            
+              [  "usr\/bin\/nsec3hash" ],
+            
+              [  "usr\/bin\/nslookup" ],
+            
+              [  "usr\/bin\/nsupdate" ],
+            
+              [  "usr\/bin\/rndc" ],
+            
+              [  "usr\/bin\/rndc-confgen" ],
+            
+              [  "usr\/bin\/tsig-keygen" ],
+            
+              [  "usr\/lib\/systemd\/system\/named.service" ],
+            
+              [  "usr\/lib\/sysusers.d\/acct-group-named.conf" ],
+            
+              [  "usr\/lib\/sysusers.d\/acct-user-named.conf" ],
+            
+              [  "usr\/lib\/tmpfiles.d\/named.conf" ],
+            
+              [  "usr\/lib64\/bind\/filter-a.so" ],
+            
+              [  "usr\/lib64\/bind\/filter-aaaa.so" ],
+            
+              [  "usr\/lib64\/libdns-9.20.26.so" ],
+            
+              [  "usr\/lib64\/libdns.so" ],
+            
+              [  "usr\/lib64\/libisc-9.20.26.so" ],
+            
+              [  "usr\/lib64\/libisc.so" ],
+            
+              [  "usr\/lib64\/libisccc-9.20.26.so" ],
+            
+              [  "usr\/lib64\/libisccc.so" ],
+            
+              [  "usr\/lib64\/libisccfg-9.20.26.so" ],
+            
+              [  "usr\/lib64\/libisccfg.so" ],
+            
+              [  "usr\/lib64\/libns-9.20.26.so" ],
+            
+              [  "usr\/lib64\/libns.so" ],
+            
+              [  "usr\/libexec\/generate-rndc-key.sh" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/AUTHORS.bz2" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/ChangeLog.bz2" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/NEWS.bz2" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/contrib\/nanny.pl.bz2" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/dnssec-guide\/dnssec-guide\/advanced-discussions.rst.bz2" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/dnssec-guide\/dnssec-guide\/commonly-asked-questions.rst.bz2" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/dnssec-guide\/dnssec-guide\/getting-started.rst.bz2" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/dnssec-guide\/dnssec-guide\/img\/add-ds-1.png" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/dnssec-guide\/dnssec-guide\/img\/add-ds-2.png" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/dnssec-guide\/dnssec-guide\/img\/add-ds-3.png" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/dnssec-guide\/dnssec-guide\/img\/add-ds-4.png" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/dnssec-guide\/dnssec-guide\/img\/add-ds-5.png" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/dnssec-guide\/dnssec-guide\/img\/add-ds-6.png" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/dnssec-guide\/dnssec-guide\/img\/dnssec-12-steps.png" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/dnssec-guide\/dnssec-guide\/img\/dnssec-8-steps.png" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/dnssec-guide\/dnssec-guide\/img\/dnssec-inline-signing-1.png" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/dnssec-guide\/dnssec-guide\/img\/dnssec-inline-signing-2.png" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/dnssec-guide\/dnssec-guide\/img\/dnsviz-example-small.png" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/dnssec-guide\/dnssec-guide\/img\/remove-ds-1.png" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/dnssec-guide\/dnssec-guide\/img\/remove-ds-2.png" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/dnssec-guide\/dnssec-guide\/img\/remove-ds-3.png" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/dnssec-guide\/dnssec-guide\/img\/signature-generation.png" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/dnssec-guide\/dnssec-guide\/img\/signature-verification.png" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/dnssec-guide\/dnssec-guide\/img\/unsign-1.png" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/dnssec-guide\/dnssec-guide\/img\/unsign-2.png" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/dnssec-guide\/dnssec-guide\/img\/unsign-3.png" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/dnssec-guide\/dnssec-guide\/img\/unsign-4.png" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/dnssec-guide\/dnssec-guide\/img\/verisign-dnssec-debugger-example.png" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/dnssec-guide\/dnssec-guide\/introduction.rst.bz2" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/dnssec-guide\/dnssec-guide\/preface.rst.bz2" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/dnssec-guide\/dnssec-guide\/recipes.rst.bz2" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/dnssec-guide\/dnssec-guide\/signing.rst.bz2" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/dnssec-guide\/dnssec-guide\/troubleshooting.rst.bz2" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/dnssec-guide\/dnssec-guide\/validation.rst.bz2" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/Makefile" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/Makefile.am" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/Makefile.in" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/_ext\/iscconf.py" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/_ext\/mergegrammar.py" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/_ext\/namedconf.py" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/_ext\/rndcconf.py" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/_static\/custom.css" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/advanced.inc.rst" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/build.inc.rst" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/catz.inc.rst" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/changelog.rst" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/chapter1.rst" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/chapter10.rst" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/chapter2.rst" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/chapter3.rst" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/chapter4.rst" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/chapter5.rst" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/chapter6.rst" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/chapter7.rst" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/chapter9.rst" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/conf.py" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/config-auth.inc.rst" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/config-intro.inc.rst" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/config-resolve.inc.rst" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/dlz.inc.rst" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/dns-ops.inc.rst" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/dns-security-overview.dia" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/dns-security-overview.png" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/dns-servers.dia" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/dns-servers.png" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/dns-tree.dia" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/dns-tree.png" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/dnssec-guide.rst" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/dnssec.inc.rst" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/dyndb.inc.rst" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/general.rst" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/history.rst" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/index.rst" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/intro-dns-bind.inc.rst" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/intro-security.inc.rst" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/introduction.inc.rst" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/isc-logo.pdf" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/logging-categories.inc.rst" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/managed-keys.inc.rst" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/manpages.rst" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/name-resolution.dia" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/name-resolution.png" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/notes.rst" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/pkcs11.inc.rst" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/platforms.inc.rst" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/plugins.inc.rst" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/primary-secondary.dia" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/primary-secondary.png" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/recursive-query.dia" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/recursive-query.png" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/reference.rst" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/requirements.inc.rst" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/resolver-forward.dia" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/resolver-forward.png" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/rpz.inc.rst" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/security.inc.rst" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/sig0.inc.rst" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/troubleshooting.inc.rst" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/tsig.inc.rst" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/html\/arm\/zones.inc.rst" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/misc\/misc\/.libs\/cfg_test.bz2" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/misc\/misc\/Makefile.am.bz2" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/misc\/misc\/Makefile.bz2" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/misc\/misc\/Makefile.in.bz2" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/misc\/misc\/cfg_test-cfg_test.o.bz2" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/misc\/misc\/cfg_test.bz2" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/misc\/misc\/cfg_test.c.bz2" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/misc\/misc\/checkgrammar.py.bz2" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/misc\/misc\/forward.zoneopt.bz2" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/misc\/misc\/hint.zoneopt" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/misc\/misc\/in-view.zoneopt" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/misc\/misc\/mirror.zoneopt.bz2" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/misc\/misc\/options.bz2" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/misc\/misc\/parsegrammar.py.bz2" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/misc\/misc\/primary.zoneopt.bz2" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/misc\/misc\/redirect.zoneopt.bz2" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/misc\/misc\/rndc.grammar.bz2" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/misc\/misc\/secondary.zoneopt.bz2" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/misc\/misc\/sort-options.pl.bz2" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/misc\/misc\/static-stub.zoneopt.bz2" ],
+            
+              [  "usr\/share\/doc\/bind-9.20.26\/misc\/misc\/stub.zoneopt.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/arpaname.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/delv.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/dig.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/dnssec-cds.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/dnssec-dsfromkey.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/dnssec-importkey.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/dnssec-keyfromlabel.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/dnssec-keygen.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/dnssec-ksr.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/dnssec-revoke.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/dnssec-settime.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/dnssec-signzone.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/dnssec-verify.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/host.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/mdig.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/named-checkconf.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/named-checkzone.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/named-compilezone.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/named-journalprint.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/named-rrchecker.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/nsec3hash.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/nslookup.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/nsupdate.1.bz2" ],
+            
+              [  "usr\/share\/man\/man5\/named.conf.5.bz2" ],
+            
+              [  "usr\/share\/man\/man5\/rndc.conf.5.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/ddns-confgen.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/filter-a.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/filter-aaaa.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/named.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/rndc-confgen.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/rndc.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/tsig-keygen.8.bz2" ],
+            
+              [  "var\/bind\/dyn\/.keep_net-dns_bind-0" ],
+            
+              [  "var\/bind\/named.cache" ],
+            
+              [  "var\/bind\/pri\/.keep_net-dns_bind-0" ],
+            
+              [  "var\/bind\/pri\/localhost.zone" ],
+            
+              [  "var\/bind\/root.cache" ],
+            
+              [  "var\/bind\/sec\/.keep_net-dns_bind-0" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>
