@@ -1,0 +1,621 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing apps/docker-tools-29.5.2 in mocaccino-community-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> apps/docker-tools-29.5.2
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                The command line binary for docker
+Multi-container orchestration for Docker
+Docker CLI plugin for extended build capabilities with BuildKit
+
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-community-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-community-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of apps/docker-tools
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/mocaccino-community:docker-tools-apps-29.5.2" target="_blank"> quay.io/mocaccino/mocaccino-community:docker-tools-apps-29.5.2 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/mocaccino-community:docker-tools-apps-29.5.2/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 29.5.2  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> Apache-2.0 </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/sys-fs">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  sys-fs &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/container/docker">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  docker &gt;=0 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: app-containers/docker-cli app-containers/docker-compose
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://www.docker.com/" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://www.docker.com/ </a>
+    </span>
+  
+    <span class="tag">
+    <a href="https://github.com/docker/compose" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://github.com/docker/compose </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/app-containers/docker-cli">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  docker-cli &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/app-containers/docker-compose">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  docker-compose &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "usr\/libexec\/docker\/cli-plugins\/docker-compose" ],
+            
+              [  "usr\/share\/bash-completion\/completions\/docker" ],
+            
+              [  "usr\/share\/bash-completion\/completions\/dockerd" ],
+            
+              [  "usr\/share\/doc\/docker-compose-5.1.4-r1\/README.md.bz2" ],
+            
+              [  "usr\/share\/fish\/vendor_completions.d\/docker.fish" ],
+            
+              [  "usr\/share\/man\/man1\/docker-attach.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-bake.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-build.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-builder-build.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-builder-prune.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-builder.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-checkpoint-create.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-checkpoint-ls.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-checkpoint-rm.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-checkpoint.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-commit.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-config-create.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-config-inspect.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-config-ls.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-config-rm.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-config.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-container-attach.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-container-commit.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-container-cp.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-container-create.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-container-diff.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-container-exec.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-container-export.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-container-inspect.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-container-kill.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-container-logs.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-container-ls.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-container-pause.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-container-port.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-container-prune.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-container-rename.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-container-restart.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-container-rm.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-container-run.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-container-start.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-container-stats.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-container-stop.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-container-top.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-container-unpause.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-container-update.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-container-wait.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-container.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-context-create.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-context-export.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-context-import.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-context-inspect.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-context-ls.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-context-rm.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-context-show.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-context-update.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-context-use.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-context.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-cp.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-create.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-diff.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-events.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-exec.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-export.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-history.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-image-build.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-image-history.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-image-import.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-image-inspect.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-image-load.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-image-ls.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-image-prune.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-image-pull.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-image-push.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-image-rm.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-image-save.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-image-tag.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-image.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-images.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-import.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-info.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-inspect.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-kill.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-load.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-login.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-logout.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-logs.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-manifest-annotate.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-manifest-create.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-manifest-inspect.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-manifest-push.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-manifest-rm.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-manifest.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-network-connect.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-network-create.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-network-disconnect.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-network-inspect.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-network-ls.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-network-prune.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-network-rm.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-network.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-node-demote.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-node-inspect.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-node-ls.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-node-promote.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-node-ps.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-node-rm.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-node-update.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-node.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-pause.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-plugin-create.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-plugin-disable.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-plugin-enable.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-plugin-inspect.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-plugin-install.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-plugin-ls.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-plugin-push.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-plugin-rm.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-plugin-set.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-plugin-upgrade.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-plugin.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-port.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-ps.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-pull.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-push.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-rename.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-restart.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-rm.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-rmi.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-run.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-save.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-search.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-secret-create.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-secret-inspect.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-secret-ls.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-secret-rm.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-secret.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-service-create.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-service-inspect.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-service-logs.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-service-ls.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-service-ps.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-service-rm.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-service-rollback.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-service-scale.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-service-update.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-service.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-stack-config.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-stack-deploy.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-stack-ls.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-stack-ps.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-stack-rm.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-stack-services.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-stack.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-start.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-stats.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-stop.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-swarm-ca.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-swarm-init.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-swarm-join-token.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-swarm-join.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-swarm-leave.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-swarm-unlock-key.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-swarm-unlock.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-swarm-update.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-swarm.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-system-df.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-system-events.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-system-info.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-system-prune.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-system.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-tag.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-top.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-unpause.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-update.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-version.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-volume-create.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-volume-inspect.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-volume-ls.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-volume-prune.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-volume-rm.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-volume-update.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-volume.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker-wait.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/docker.1.bz2" ],
+            
+              [  "usr\/share\/man\/man5\/Dockerfile.5.bz2" ],
+            
+              [  "usr\/share\/man\/man5\/docker-config-json.5.bz2" ],
+            
+              [  "usr\/share\/zsh\/site-functions\/_docker" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>
