@@ -1,0 +1,1445 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing apps/nagios-4.5.13 in mocaccino-community-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> apps/nagios-4.5.13
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                The Nagios metapackage
+Nagios core - monitoring daemon, web GUI, and documentation
+Official plugins for Nagios
+50&#43; standard plugins for Icinga, Naemon, Nagios, Shinken, Sensu
+FreeRADIUS Client framework
+Nagios plugin to monitor the values of onboard sensors and disk temperatures
+Strictly RFC 3986 compliant URI parsing library in C
+Modules to streamline Nagios, Icinga, Shinken, etc. plugins
+A SNMP Perl Module
+Perl DES encryption module
+Crypt::CBC compliant Rijndael encryption module
+NIST SHA message digest algorithm
+
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-community-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-community-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of apps/nagios
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/mocaccino-community:nagios-apps-4.5.13" target="_blank"> quay.io/mocaccino/mocaccino-community:nagios-apps-4.5.13 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/mocaccino-community:nagios-apps-4.5.13/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 4.5.13  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> metapackage </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/perl-libs">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  perl-libs &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/apps/bind">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  bind 9.20.26 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/apps/fping">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  fping 5.4 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/apps/net-snmp">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  net-snmp 5.9.5.2&#43;3 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/entity/nagios">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  nagios &gt;=0 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: net-analyzer/nagios net-analyzer/nagios-plugin-check_lm_sensors
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://www.nagios.org/" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://www.nagios.org/ </a>
+    </span>
+  
+    <span class="tag">
+    <a href="https://www.monitoring-plugins.org/" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://www.monitoring-plugins.org/ </a>
+    </span>
+  
+    <span class="tag">
+    <a href="https://github.com/matteocorti/check_lm_sensors" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://github.com/matteocorti/check_lm_sensors </a>
+    </span>
+  
+    <span class="tag">
+    <a href="https://uriparser.github.io/" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://uriparser.github.io/ </a>
+    </span>
+  
+    <span class="tag">
+    <a href="https://wiki.freeradius.org/project/Radiusclient" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://wiki.freeradius.org/project/Radiusclient </a>
+    </span>
+  
+    <span class="tag">
+    <a href="https://metacpan.org/release/Monitoring-Plugin" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://metacpan.org/release/Monitoring-Plugin </a>
+    </span>
+  
+    <span class="tag">
+    <a href="https://metacpan.org/release/Crypt-DES" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://metacpan.org/release/Crypt-DES </a>
+    </span>
+  
+    <span class="tag">
+    <a href="https://metacpan.org/release/Crypt-Rijndael" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://metacpan.org/release/Crypt-Rijndael </a>
+    </span>
+  
+    <span class="tag">
+    <a href="https://metacpan.org/release/Digest-SHA1" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://metacpan.org/release/Digest-SHA1 </a>
+    </span>
+  
+    <span class="tag">
+    <a href="https://metacpan.org/release/Net-SNMP" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://metacpan.org/release/Net-SNMP </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Crypt-DES">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Crypt-DES &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Crypt-Rijndael">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Crypt-Rijndael &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Digest-SHA1">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Digest-SHA1 &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Monitoring-Plugin">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Monitoring-Plugin &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Net-SNMP">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Net-SNMP &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/net-analyzer/nagios">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  nagios &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/net-analyzer/nagios-core">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  nagios-core &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/net-analyzer/nagios-plugin-check_lm_sensors">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  nagios-plugin-check_lm_sensors &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/net-analyzer/nagios-plugins">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  nagios-plugins &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/virtual/perl-Digest">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  perl-Digest &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "etc\/init.d\/nagios" ],
+            
+              [  "etc\/nagios\/cgi.cfg" ],
+            
+              [  "etc\/nagios\/nagios.cfg" ],
+            
+              [  "etc\/nagios\/objects\/commands.cfg" ],
+            
+              [  "etc\/nagios\/objects\/contacts.cfg" ],
+            
+              [  "etc\/nagios\/objects\/localhost.cfg" ],
+            
+              [  "etc\/nagios\/objects\/printer.cfg" ],
+            
+              [  "etc\/nagios\/objects\/switch.cfg" ],
+            
+              [  "etc\/nagios\/objects\/templates.cfg" ],
+            
+              [  "etc\/nagios\/objects\/timeperiods.cfg" ],
+            
+              [  "etc\/nagios\/objects\/windows.cfg" ],
+            
+              [  "etc\/nagios\/resource.cfg" ],
+            
+              [  "usr\/bin\/nagios" ],
+            
+              [  "usr\/bin\/nagiostats" ],
+            
+              [  "usr\/bin\/snmpkey" ],
+            
+              [  "usr\/lib\/systemd\/system\/nagios.service" ],
+            
+              [  "usr\/lib\/sysusers.d\/acct-group-nagios.conf" ],
+            
+              [  "usr\/lib\/sysusers.d\/acct-user-nagios.conf" ],
+            
+              [  "usr\/lib64\/nagios\/cgi-bin\/archivejson.cgi" ],
+            
+              [  "usr\/lib64\/nagios\/cgi-bin\/avail.cgi" ],
+            
+              [  "usr\/lib64\/nagios\/cgi-bin\/cmd.cgi" ],
+            
+              [  "usr\/lib64\/nagios\/cgi-bin\/config.cgi" ],
+            
+              [  "usr\/lib64\/nagios\/cgi-bin\/extinfo.cgi" ],
+            
+              [  "usr\/lib64\/nagios\/cgi-bin\/histogram.cgi" ],
+            
+              [  "usr\/lib64\/nagios\/cgi-bin\/history.cgi" ],
+            
+              [  "usr\/lib64\/nagios\/cgi-bin\/notifications.cgi" ],
+            
+              [  "usr\/lib64\/nagios\/cgi-bin\/objectjson.cgi" ],
+            
+              [  "usr\/lib64\/nagios\/cgi-bin\/outages.cgi" ],
+            
+              [  "usr\/lib64\/nagios\/cgi-bin\/showlog.cgi" ],
+            
+              [  "usr\/lib64\/nagios\/cgi-bin\/status.cgi" ],
+            
+              [  "usr\/lib64\/nagios\/cgi-bin\/statusjson.cgi" ],
+            
+              [  "usr\/lib64\/nagios\/cgi-bin\/statusmap.cgi" ],
+            
+              [  "usr\/lib64\/nagios\/cgi-bin\/statuswml.cgi" ],
+            
+              [  "usr\/lib64\/nagios\/cgi-bin\/statuswrl.cgi" ],
+            
+              [  "usr\/lib64\/nagios\/cgi-bin\/summary.cgi" ],
+            
+              [  "usr\/lib64\/nagios\/cgi-bin\/tac.cgi" ],
+            
+              [  "usr\/lib64\/nagios\/cgi-bin\/trends.cgi" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_apt" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_breeze" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_by_ssh" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_clamd" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_cluster" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_dhcp" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_dig" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_disk" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_disk_smb" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_dns" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_dummy" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_file_age" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_flexlm" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_fping" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_ftp" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_hpjd" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_http" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_icmp" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_ide_smart" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_ifoperstatus" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_ifstatus" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_imap" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_ircd" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_jabber" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_ldap" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_ldaps" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_lm_sensors" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_load" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_log" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_mailq" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_mrtg" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_mrtgtraf" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_mysql" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_mysql_query" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_nagios" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_nntp" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_nntps" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_nt" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_ntp" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_ntp_peer" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_ntp_time" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_nwstat" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_oracle" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_overcr" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_ping" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_pop" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_procs" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_real" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_rpc" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_sensors" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_simap" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_smtp" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_snmp" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_spop" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_ssh" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_ssl_validity" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_ssmtp" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_swap" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_tcp" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_time" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_udp" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_ups" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_uptime" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_users" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/check_wave" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/negate" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/remove_perfdata" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/urlize" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/utils.pm" ],
+            
+              [  "usr\/lib64\/nagios\/plugins\/utils.sh" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.42\/Monitoring\/Plugin\/Config.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.42\/Monitoring\/Plugin\/ExitResult.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.42\/Monitoring\/Plugin\/Functions.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.42\/Monitoring\/Plugin\/Getopt.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.42\/Monitoring\/Plugin\/Performance.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.42\/Monitoring\/Plugin\/Range.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.42\/Monitoring\/Plugin\/Threshold.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.42\/Monitoring\/Plugin.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.42\/Net\/SNMP\/Dispatcher.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.42\/Net\/SNMP\/Message.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.42\/Net\/SNMP\/MessageProcessing.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.42\/Net\/SNMP\/PDU.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.42\/Net\/SNMP\/Security\/Community.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.42\/Net\/SNMP\/Security\/USM.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.42\/Net\/SNMP\/Security.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.42\/Net\/SNMP\/Transport\/IPv4\/TCP.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.42\/Net\/SNMP\/Transport\/IPv4\/UDP.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.42\/Net\/SNMP\/Transport\/IPv4.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.42\/Net\/SNMP\/Transport\/IPv6\/TCP.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.42\/Net\/SNMP\/Transport\/IPv6\/UDP.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.42\/Net\/SNMP\/Transport\/IPv6.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.42\/Net\/SNMP\/Transport.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.42\/Net\/SNMP.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.42\/check_lm_sensors.pod" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.42\/x86_64-linux\/Crypt\/DES.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.42\/x86_64-linux\/Crypt\/Rijndael.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.42\/x86_64-linux\/Digest\/SHA1.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.42\/x86_64-linux\/auto\/Crypt\/DES\/.packlist" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.42\/x86_64-linux\/auto\/Crypt\/DES\/DES.so" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.42\/x86_64-linux\/auto\/Crypt\/Rijndael\/.packlist" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.42\/x86_64-linux\/auto\/Crypt\/Rijndael\/Rijndael.so" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.42\/x86_64-linux\/auto\/Digest\/SHA1\/.packlist" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.42\/x86_64-linux\/auto\/Digest\/SHA1\/SHA1.so" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.42\/x86_64-linux\/auto\/Monitoring\/Plugin\/.packlist" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.42\/x86_64-linux\/auto\/Net\/SNMP\/.packlist" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.42\/x86_64-linux\/auto\/check_lm_sensors\/.packlist" ],
+            
+              [  "usr\/share\/doc\/Crypt-DES-2.70.0-r3\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/Crypt-Rijndael-1.160.0\/Changes.bz2" ],
+            
+              [  "usr\/share\/doc\/Crypt-Rijndael-1.160.0\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/Digest-SHA1-2.130.0-r3\/Changes.bz2" ],
+            
+              [  "usr\/share\/doc\/Digest-SHA1-2.130.0-r3\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/Monitoring-Plugin-0.400.0-r1\/Changes.bz2" ],
+            
+              [  "usr\/share\/doc\/Monitoring-Plugin-0.400.0-r1\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/Net-SNMP-6.0.1-r3\/Changes.bz2" ],
+            
+              [  "usr\/share\/doc\/Net-SNMP-6.0.1-r3\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/nagios-core-4.5.13\/CONTRIBUTING.md.bz2" ],
+            
+              [  "usr\/share\/doc\/nagios-core-4.5.13\/Changelog.bz2" ],
+            
+              [  "usr\/share\/doc\/nagios-core-4.5.13\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/nagios-core-4.5.13\/THANKS.bz2" ],
+            
+              [  "usr\/share\/doc\/nagios-core-4.5.13\/UPGRADING.bz2" ],
+            
+              [  "usr\/share\/doc\/nagios-plugin-check_lm_sensors-4.1.1_p20191028\/Changes.bz2" ],
+            
+              [  "usr\/share\/doc\/nagios-plugin-check_lm_sensors-4.1.1_p20191028\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/nagios-plugin-check_lm_sensors-4.1.1_p20191028\/TODO" ],
+            
+              [  "usr\/share\/doc\/nagios-plugins-2.5\/ACKNOWLEDGEMENTS.bz2" ],
+            
+              [  "usr\/share\/doc\/nagios-plugins-2.5\/AUTHORS.bz2" ],
+            
+              [  "usr\/share\/doc\/nagios-plugins-2.5\/CODING.bz2" ],
+            
+              [  "usr\/share\/doc\/nagios-plugins-2.5\/ChangeLog.bz2" ],
+            
+              [  "usr\/share\/doc\/nagios-plugins-2.5\/FAQ.bz2" ],
+            
+              [  "usr\/share\/doc\/nagios-plugins-2.5\/NEWS.bz2" ],
+            
+              [  "usr\/share\/doc\/nagios-plugins-2.5\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/nagios-plugins-2.5\/REQUIREMENTS.bz2" ],
+            
+              [  "usr\/share\/doc\/nagios-plugins-2.5\/SUPPORT.bz2" ],
+            
+              [  "usr\/share\/doc\/nagios-plugins-2.5\/THANKS.bz2" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/nagios-plugins.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/nagios-plugins.mo" ],
+            
+              [  "usr\/share\/man\/man1\/check_lm_sensors.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/snmpkey.1.bz2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/config.inc.php" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/A1.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/A2.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/A3.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/A4.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/A5.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/A6.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/A7.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/B1.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/C1.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/D1.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/E1.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/F1.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/G1.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/G2.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/G3.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/G4.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/G5.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/G6.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/H1.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/H2.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/H3.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/H4.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/H5.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/H6.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/H7.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/H8.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/I1.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/I2.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/I3.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/I4.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/I5.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/I6.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/I7.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/I8.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/I9.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/J1.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/K1.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/L1.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/L10.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/L11.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/L12.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/L13.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/L2.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/L3.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/L4.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/L5.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/L6.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/L7.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/L8.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/L9.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/M1.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/M2.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/M3.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/M4.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/M5.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/M6.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/N1.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/N2.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/N3.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/N4.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/N5.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/N6.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/contexthelp\/N7.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/fonts\/Geist-Black.woff2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/fonts\/Geist-Bold.woff2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/fonts\/Geist-ExtraBold.woff2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/fonts\/Geist-ExtraLight.woff2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/fonts\/Geist-Light.woff2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/fonts\/Geist-Medium.woff2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/fonts\/Geist-Regular.woff2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/fonts\/Geist-SemiBold.woff2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/fonts\/Geist-Thin.woff2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/fonts\/Geist[wght].woff2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/Nagios-clearbg.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/NagiosEnterprises-whitebg-112x46.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/ack.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/action-graph.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/action-nagios.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/action-orig.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/action.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/b_first2.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/b_last2.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/b_next2.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/b_prev2.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/command.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/comment.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/contexthelp1.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/contexthelp2.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/critical.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/csp-dashboard.avif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/delay.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/delete.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/detail.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/disabled.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/down.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/downtime.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/empty.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/enabled.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/extinfo.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/favicon.ico" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/flapping.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/globe-support-150x150.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/graph.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/greendot.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/histogram.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/history.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/hostevent.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/info.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/left.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logofullsize.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/aix.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/aix.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/aix.jpg" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/aix.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/amiga.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/amiga.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/amiga.jpg" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/amiga.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/apple.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/apple.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/apple.jpg" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/apple.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/beos.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/beos.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/beos.jpg" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/beos.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/bluetooth.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/caldera.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/caldera.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/caldera.jpg" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/caldera.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/cat1900.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/cat2900.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/cat5000.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/database.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/database.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/debian.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/debian.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/debian.jpg" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/debian.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/desktop-server.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/desktop-server.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/ethernet_card.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/fax.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/fax.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/firewall.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/firewall.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/freebsd40.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/freebsd40.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/freebsd40.jpg" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/freebsd40.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/gentoo.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/gentoo.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/gentoo.jpg" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/gentoo.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/gentoo40.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/gentoo40.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/gentoo40.jpg" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/gentoo40.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/globe.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/graph.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/horizontal-nagios-full-logo.svg" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/hp-printer40.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/hp-printer40.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/hp-printer40.jpg" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/hp-printer40.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/hpux.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/hpux.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/hpux.jpg" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/hpux.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/hub.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/hub.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/internet.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/internet.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/internet_device.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/ip-pbx.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/ip-pbx.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/irix.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/irix.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/irix.jpg" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/irix.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/linux40.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/linux40.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/linux40.jpg" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/linux40.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/logo.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/mac40.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/mac40.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/mac40.jpg" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/mac40.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/mainframe.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/mainframe.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/mandrake.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/mandrake.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/mandrake.jpg" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/mandrake.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/monitor.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/nagios-n-logo.svg" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/nagios.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/nagios.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/nagiosvrml.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/netbsd.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/netbsd.jpg" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/netbsd.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/next.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/next.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/next.jpg" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/next.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/ng-switch40.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/ng-switch40.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/ng-switch40.jpg" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/ng-switch40.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/notebook.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/notebook.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/novell40.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/novell40.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/novell40.jpg" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/novell40.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/openbsd.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/openbsd.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/openbsd.jpg" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/openbsd.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/printer.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/printer.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/rack-server.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/rack-server.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/redhat.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/redhat.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/redhat.jpg" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/redhat.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/router.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/router.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/router40.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/router40.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/router40.jpg" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/router40.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/san.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/san.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/satellite.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/server.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/signal.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/slackware.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/slackware.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/slackware.jpg" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/slackware.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/stampede.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/stampede.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/stampede.jpg" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/stampede.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/station.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/storm.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/storm.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/storm.jpg" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/storm.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/sun40.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/sun40.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/sun40.jpg" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/sun40.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/sunlogo.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/sunlogo.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/sunlogo.jpg" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/sunlogo.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/suse.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/suse.jpg" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/suse.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/switch.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/switch.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/switch40.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/switch40.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/switch40.jpg" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/switch40.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/thin-client.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/thin-client.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/turbolinux.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/turbolinux.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/turbolinux.jpg" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/turbolinux.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/ultrapenguin.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/ultrapenguin.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/ultrapenguin.jpg" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/ultrapenguin.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/unicos.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/unicos.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/unicos.jpg" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/unicos.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/unknown.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/unknown.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/webcamera.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/wifi.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/wifi.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/wifi_modem.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/win40.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/win40.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/win40.jpg" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/win40.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/workstation.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/workstation.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/workstation.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/workstation_locked.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/yellowdog.gd2" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/yellowdog.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/yellowdog.jpg" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logos\/yellowdog.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/logrotate.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/menu.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/ndisabled.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/noack.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/notes.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/notify.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/orangedot.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/passiveonly.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/recovery.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/redudancy.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/redundancy.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/restart.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/right.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/sblogo.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/serviceevent.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/sflogo.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/splunk1.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/splunk2.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/start.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/status.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/status2.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/status3.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/status4.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/stop.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/tacdisabled.jpg" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/tacdisabled.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/tacenabled.jpg" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/tacenabled.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/thermcrit.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/thermok.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/thermwarn.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/trends.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/trendshost.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/trendssvc.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/unknown.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/up.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/warning.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/weblogo1.png" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/zoom1.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/images\/zoom2.gif" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/includes\/utils.inc.php" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/index.php" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/js\/jquery-3.7.1.min.js" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/js\/jsonquery.js" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/js\/nag_funcs.js" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/jsonquery.html" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/main.php" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/robots.txt" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/side.php" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/stylesheets\/avail.css" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/stylesheets\/checksanity.css" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/stylesheets\/cmd.css" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/stylesheets\/common.css" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/stylesheets\/config.css" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/stylesheets\/extinfo.css" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/stylesheets\/histogram.css" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/stylesheets\/histogramgraph.css" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/stylesheets\/history.css" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/stylesheets\/jsonquery.css" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/stylesheets\/map-directive.css" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/stylesheets\/map.css" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/stylesheets\/ministatus.css" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/stylesheets\/nag_funcs.css" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/stylesheets\/notifications.css" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/stylesheets\/outages.css" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/stylesheets\/showlog.css" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/stylesheets\/status.css" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/stylesheets\/statusmap.css" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/stylesheets\/summary.css" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/stylesheets\/tac.css" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/stylesheets\/trends.css" ],
+            
+              [  "usr\/share\/nagios\/htdocs\/stylesheets\/trendsgraph.css" ],
+            
+              [  "var\/lib\/nagios\/.keep_net-analyzer_nagios-core-0" ],
+            
+              [  "var\/lib\/nagios\/archives\/.keep_net-analyzer_nagios-core-0" ],
+            
+              [  "var\/lib\/nagios\/rw\/.keep_net-analyzer_nagios-core-0" ],
+            
+              [  "var\/lib\/nagios\/spool\/.keep_net-analyzer_nagios-core-0" ],
+            
+              [  "var\/lib\/nagios\/spool\/checkresults\/.keep_net-analyzer_nagios-core-0" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

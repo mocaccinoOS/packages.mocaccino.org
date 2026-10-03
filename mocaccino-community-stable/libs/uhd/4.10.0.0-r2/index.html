@@ -1,0 +1,2281 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing libs/uhd-4.10.0.0-r2 in mocaccino-community-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> libs/uhd-4.10.0.0-r2
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                Universal Software Radio Peripheral (USRP) Hardware Driver
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-community-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-community-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of libs/uhd
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/mocaccino-community:uhd-libs-4.10.0.0-r2" target="_blank"> quay.io/mocaccino/mocaccino-community:uhd-libs-4.10.0.0-r2 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/mocaccino-community:uhd-libs-4.10.0.0-r2/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 4.10.0.0-r2  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> GPL-3 </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/sys-fs">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  sys-fs &gt;=0 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: net-wireless/uhd
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://kb.ettus.com" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://kb.ettus.com </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/net-wireless/uhd">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  uhd &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "usr\/bin\/uhd_adc_self_cal" ],
+            
+              [  "usr\/bin\/uhd_cal_rx_iq_balance" ],
+            
+              [  "usr\/bin\/uhd_cal_tx_dc_offset" ],
+            
+              [  "usr\/bin\/uhd_cal_tx_iq_balance" ],
+            
+              [  "usr\/bin\/uhd_config_info" ],
+            
+              [  "usr\/bin\/uhd_find_devices" ],
+            
+              [  "usr\/bin\/uhd_image_loader" ],
+            
+              [  "usr\/bin\/uhd_usrp_probe" ],
+            
+              [  "usr\/bin\/usrp2_card_burner" ],
+            
+              [  "usr\/bin\/usrp_hwd.py" ],
+            
+              [  "usr\/bin\/usrpctl" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/__pycache__\/chdr.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/__pycache__\/chdr.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/__pycache__\/chdr.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/__pycache__\/filters.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/__pycache__\/filters.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/__pycache__\/filters.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/__pycache__\/property_tree.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/__pycache__\/property_tree.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/__pycache__\/property_tree.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/__pycache__\/rfnoc.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/__pycache__\/rfnoc.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/__pycache__\/rfnoc.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/__pycache__\/types.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/__pycache__\/types.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/__pycache__\/types.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/chdr.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/dsp\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/dsp\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/dsp\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/dsp\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/dsp\/__pycache__\/signals.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/dsp\/__pycache__\/signals.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/dsp\/__pycache__\/signals.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/dsp\/signals.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/filters.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/libpyuhd.cpython-314-x86_64-linux-gnu.so" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/property_tree.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/__pycache__\/builder_config.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/__pycache__\/builder_config.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/__pycache__\/builder_config.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/__pycache__\/common.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/__pycache__\/common.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/__pycache__\/common.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/__pycache__\/connections.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/__pycache__\/connections.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/__pycache__\/connections.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/__pycache__\/grc.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/__pycache__\/grc.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/__pycache__\/grc.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/__pycache__\/image_builder.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/__pycache__\/image_builder.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/__pycache__\/image_builder.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/__pycache__\/log.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/__pycache__\/log.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/__pycache__\/log.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/__pycache__\/rfnoc_modtool.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/__pycache__\/rfnoc_modtool.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/__pycache__\/rfnoc_modtool.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/__pycache__\/step_executor.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/__pycache__\/step_executor.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/__pycache__\/step_executor.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/__pycache__\/template.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/__pycache__\/template.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/__pycache__\/template.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/__pycache__\/utils.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/__pycache__\/utils.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/__pycache__\/utils.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/__pycache__\/yaml_utils.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/__pycache__\/yaml_utils.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/__pycache__\/yaml_utils.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/builder_config.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/common.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/connections.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/grc.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/image_builder.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/log.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/modtool_commands\/add-gr-block.yml" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/modtool_commands\/add-gr-oot.yml" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/modtool_commands\/add-grc.yml" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/modtool_commands\/add.yml" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/modtool_commands\/create.yml" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/modtool_commands\/make-yaml.yml" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/rfnoc_modtool.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/step_executor.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/template.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/Makefile.inc.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/blocktool\/CMakeLists.txt.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/blocktool\/Makefile.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/blocktool\/Makefile.srcs.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/blocktool\/descriptor.yml.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/blocktool\/functions.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/blocktool\/grc_bindings_template.block.yml.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/blocktool\/modules\/axis_chdr_connect_template.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/blocktool\/modules\/axis_chdr_loopback_template.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/blocktool\/modules\/axis_chdr_modules_template.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/blocktool\/modules\/axis_chdr_wires_template.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/blocktool\/modules\/axis_ctrl_connect_template.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/blocktool\/modules\/axis_ctrl_modules_template.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/blocktool\/modules\/axis_ctrl_wires_template.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/blocktool\/modules\/axis_data_connect_template.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/blocktool\/modules\/axis_data_loopback_template.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/blocktool\/modules\/axis_data_modules_template.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/blocktool\/modules\/axis_data_wires_template.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/blocktool\/modules\/axis_pyld_ctxt_connect_template.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/blocktool\/modules\/axis_pyld_ctxt_loopback_template.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/blocktool\/modules\/axis_pyld_ctxt_modules_template.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/blocktool\/modules\/axis_pyld_ctxt_wires_template.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/blocktool\/modules\/ctrlport_connect_template.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/blocktool\/modules\/ctrlport_modules_template.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/blocktool\/modules\/ctrlport_wires_template.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/blocktool\/noc_shell_template.sv.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/blocktool\/rfnoc_block_template.sv.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/blocktool\/rfnoc_block_template_tb.sv.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/blocktool\/template_block_control.cpp.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/blocktool\/template_block_control.hpp.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/blocktool\/template_block_control_python.hpp.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/blocktool\/template_block_test.cpp.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/device_tree.dts.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/keyfile.v.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/modules\/chdr_xb_sep_transport.v.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/modules\/connect_clk_domains.v.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/modules\/connect_io_ports.v.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/modules\/ctrl_crossbar.v.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/modules\/device_io_ports.v.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/modules\/device_transport.v.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/modules\/drive_unused_ioports.v.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/modules\/drive_unused_ports.v.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/modules\/module.v.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/modules\/rfnoc_block.v.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/modules\/secure_image_core_inst.v.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/modules\/sep_xb_wires.v.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/modules\/static_router.v.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/modules\/stream_endpoints.v.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/modules\/transport_adapter.v.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/rfnoc_image_core.sv.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/rfnoc_image_core.vh.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/templates\/secure_image_core.sv.mako" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/utils.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/rfnoc_utils\/yaml_utils.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/types.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/__pycache__\/dram_utils.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/__pycache__\/dram_utils.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/__pycache__\/dram_utils.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/__pycache__\/libtypes.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/__pycache__\/libtypes.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/__pycache__\/libtypes.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/__pycache__\/multi_usrp.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/__pycache__\/multi_usrp.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/__pycache__\/multi_usrp.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/cal\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/cal\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/cal\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/cal\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/cal\/__pycache__\/iq_dc_compensation.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/cal\/__pycache__\/iq_dc_compensation.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/cal\/__pycache__\/iq_dc_compensation.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/cal\/__pycache__\/libtypes.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/cal\/__pycache__\/libtypes.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/cal\/__pycache__\/libtypes.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/cal\/__pycache__\/meas_device.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/cal\/__pycache__\/meas_device.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/cal\/__pycache__\/meas_device.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/cal\/__pycache__\/ni_rf_instr.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/cal\/__pycache__\/ni_rf_instr.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/cal\/__pycache__\/ni_rf_instr.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/cal\/__pycache__\/switch.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/cal\/__pycache__\/switch.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/cal\/__pycache__\/switch.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/cal\/__pycache__\/tone_gen.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/cal\/__pycache__\/tone_gen.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/cal\/__pycache__\/tone_gen.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/cal\/__pycache__\/usrp_calibrator.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/cal\/__pycache__\/usrp_calibrator.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/cal\/__pycache__\/usrp_calibrator.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/cal\/__pycache__\/visa.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/cal\/__pycache__\/visa.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/cal\/__pycache__\/visa.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/cal\/iq_dc_compensation.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/cal\/libtypes.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/cal\/meas_device.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/cal\/ni_rf_instr.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/cal\/switch.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/cal\/tone_gen.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/cal\/usrp_calibrator.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/cal\/visa.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/chips\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/chips\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/chips\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/chips\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/chips\/__pycache__\/max287x.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/chips\/__pycache__\/max287x.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/chips\/__pycache__\/max287x.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/chips\/max287x.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/dram_utils.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/libtypes.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp\/multi_usrp.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp_clock\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp_clock\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp_clock\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp_clock\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp_clock\/__pycache__\/multi_usrp_clock.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp_clock\/__pycache__\/multi_usrp_clock.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp_clock\/__pycache__\/multi_usrp_clock.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrp_clock\/multi_usrp_clock.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrpctl\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrpctl\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrpctl\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrpctl\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrpctl\/commands\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrpctl\/commands\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrpctl\/commands\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrpctl\/commands\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrpctl\/commands\/__pycache__\/command.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrpctl\/commands\/__pycache__\/command.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrpctl\/commands\/__pycache__\/command.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrpctl\/commands\/__pycache__\/find.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrpctl\/commands\/__pycache__\/find.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrpctl\/commands\/__pycache__\/find.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrpctl\/commands\/__pycache__\/probe.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrpctl\/commands\/__pycache__\/probe.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrpctl\/commands\/__pycache__\/probe.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrpctl\/commands\/__pycache__\/reset.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrpctl\/commands\/__pycache__\/reset.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrpctl\/commands\/__pycache__\/reset.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrpctl\/commands\/command.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrpctl\/commands\/find.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrpctl\/commands\/probe.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/usrpctl\/commands\/reset.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/utils\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/utils\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/utils\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/utils\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/utils\/__pycache__\/convert_cal_data.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/utils\/__pycache__\/convert_cal_data.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/utils\/__pycache__\/convert_cal_data.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/utils\/__pycache__\/dram.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/utils\/__pycache__\/dram.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/utils\/__pycache__\/dram.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/utils\/__pycache__\/mpmtools.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/utils\/__pycache__\/mpmtools.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/utils\/__pycache__\/mpmtools.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/utils\/__pycache__\/uhd_iq_dc_correction.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/utils\/__pycache__\/uhd_iq_dc_correction.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/utils\/__pycache__\/uhd_iq_dc_correction.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/utils\/__pycache__\/uhd_power_cal.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/utils\/__pycache__\/uhd_power_cal.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/utils\/__pycache__\/uhd_power_cal.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/utils\/__pycache__\/version_check.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/utils\/__pycache__\/version_check.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/utils\/__pycache__\/version_check.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/utils\/convert_cal_data.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/utils\/dram.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/utils\/mpmtools.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/utils\/uhd_iq_dc_correction.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/utils\/uhd_power_cal.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/uhd\/utils\/version_check.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/aurora_control.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/aurora_control.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/aurora_control.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/bfrfs.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/bfrfs.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/bfrfs.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/bist.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/bist.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/bist.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/compat_num.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/compat_num.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/compat_num.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/components.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/components.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/components.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/discovery.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/discovery.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/discovery.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/e31x_legacy_eeprom.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/e31x_legacy_eeprom.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/e31x_legacy_eeprom.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/eeprom.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/eeprom.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/eeprom.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/ethdispatch.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/ethdispatch.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/ethdispatch.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/fpga_bit_to_bin.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/fpga_bit_to_bin.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/fpga_bit_to_bin.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/gpsd_iface.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/gpsd_iface.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/gpsd_iface.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/mpmlog.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/mpmlog.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/mpmlog.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/mpmtypes.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/mpmtypes.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/mpmtypes.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/mpmutils.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/mpmutils.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/mpmutils.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/prefs.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/prefs.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/prefs.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/process_manager.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/process_manager.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/process_manager.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/rpc_server.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/rpc_server.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/rpc_server.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/rpc_utils.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/rpc_utils.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/rpc_utils.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/test_bfrfs.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/test_bfrfs.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/test_bfrfs.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/tlv_eeprom.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/tlv_eeprom.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/tlv_eeprom.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/user_eeprom.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/user_eeprom.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/__pycache__\/user_eeprom.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/aurora_control.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/bfrfs.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/bist.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/chips\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/chips\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/chips\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/chips\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/chips\/__pycache__\/adf400x.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/chips\/__pycache__\/adf400x.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/chips\/__pycache__\/adf400x.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/chips\/__pycache__\/ds125df410.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/chips\/__pycache__\/ds125df410.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/chips\/__pycache__\/ds125df410.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/chips\/__pycache__\/lmk03328.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/chips\/__pycache__\/lmk03328.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/chips\/__pycache__\/lmk03328.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/chips\/__pycache__\/lmk04828.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/chips\/__pycache__\/lmk04828.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/chips\/__pycache__\/lmk04828.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/chips\/__pycache__\/lmk04832.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/chips\/__pycache__\/lmk04832.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/chips\/__pycache__\/lmk04832.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/chips\/__pycache__\/lmk05318.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/chips\/__pycache__\/lmk05318.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/chips\/__pycache__\/lmk05318.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/chips\/__pycache__\/lmx2572.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/chips\/__pycache__\/lmx2572.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/chips\/__pycache__\/lmx2572.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/chips\/__pycache__\/max10_cpld_flash_ctrl.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/chips\/__pycache__\/max10_cpld_flash_ctrl.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/chips\/__pycache__\/max10_cpld_flash_ctrl.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/chips\/adf400x.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/chips\/ds125df410.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/chips\/ic_reg_maps\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/chips\/ic_reg_maps\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/chips\/ic_reg_maps\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/chips\/ic_reg_maps\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/chips\/lmk03328.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/chips\/lmk04828.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/chips\/lmk04832.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/chips\/lmk05318.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/chips\/lmx2572.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/chips\/max10_cpld_flash_ctrl.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/compat_num.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/components.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/cores\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/cores\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/cores\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/cores\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/cores\/__pycache__\/eyescan.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/cores\/__pycache__\/eyescan.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/cores\/__pycache__\/eyescan.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/cores\/__pycache__\/nijesdcore.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/cores\/__pycache__\/nijesdcore.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/cores\/__pycache__\/nijesdcore.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/cores\/__pycache__\/tdc_sync.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/cores\/__pycache__\/tdc_sync.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/cores\/__pycache__\/tdc_sync.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/cores\/__pycache__\/white_rabbit.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/cores\/__pycache__\/white_rabbit.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/cores\/__pycache__\/white_rabbit.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/cores\/eyescan.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/cores\/nijesdcore.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/cores\/tdc_sync.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/cores\/white_rabbit.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/ad936x_db.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/ad936x_db.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/ad936x_db.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/adc_rh.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/adc_rh.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/adc_rh.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/base.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/base.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/base.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/dac_rh.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/dac_rh.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/dac_rh.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/dboard_iface.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/dboard_iface.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/dboard_iface.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/e31x_db.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/e31x_db.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/e31x_db.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/empty_slot.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/empty_slot.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/empty_slot.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/fbx.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/fbx.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/fbx.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/gain_rh.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/gain_rh.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/gain_rh.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/gaintables_rh.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/gaintables_rh.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/gaintables_rh.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/hbx.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/hbx.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/hbx.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/lmk_mg.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/lmk_mg.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/lmk_mg.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/lmk_rh.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/lmk_rh.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/lmk_rh.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/magnesium.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/magnesium.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/magnesium.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/magnesium_update_cpld.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/magnesium_update_cpld.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/magnesium_update_cpld.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/mg_init.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/mg_init.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/mg_init.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/mg_periphs.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/mg_periphs.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/mg_periphs.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/neon.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/neon.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/neon.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/rh_init.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/rh_init.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/rh_init.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/rh_periphs.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/rh_periphs.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/rh_periphs.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/rhodium.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/rhodium.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/rhodium.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/rhodium_update_cpld.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/rhodium_update_cpld.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/rhodium_update_cpld.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/test.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/test.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/test.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/unknown.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/unknown.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/unknown.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/x4xx_db.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/x4xx_db.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/x4xx_db.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/x4xx_db_iface.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/x4xx_db_iface.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/x4xx_db_iface.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/x4xx_db_update_cpld.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/x4xx_db_update_cpld.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/x4xx_db_update_cpld.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/x4xx_debug_db.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/x4xx_debug_db.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/x4xx_debug_db.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/x4xx_if_test_cca.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/x4xx_if_test_cca.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/x4xx_if_test_cca.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/zbx.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/zbx.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/__pycache__\/zbx.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/ad936x_db.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/adc_rh.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/base.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/dac_rh.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/dboard_iface.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/e31x_db.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/empty_slot.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/fbx.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/gain_rh.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/gaintables_rh.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/hbx.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/lmk_mg.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/lmk_rh.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/magnesium.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/magnesium_update_cpld.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/mg_init.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/mg_periphs.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/neon.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/rh_init.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/rh_periphs.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/rhodium.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/rhodium_update_cpld.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/test.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/unknown.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/x4xx_db.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/x4xx_db_iface.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/x4xx_db_update_cpld.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/x4xx_debug_db.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/x4xx_if_test_cca.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/dboard_manager\/zbx.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/discovery.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/e31x_legacy_eeprom.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/eeprom.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/ethdispatch.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/fpga_bit_to_bin.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/gpsd_iface.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/mpmlog.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/mpmtypes.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/mpmutils.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/base.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/base.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/base.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/common.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/common.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/common.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/e31x.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/e31x.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/e31x.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/e31x_periphs.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/e31x_periphs.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/e31x_periphs.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/e320.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/e320.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/e320.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/e320_periphs.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/e320_periphs.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/e320_periphs.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/n3xx.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/n3xx.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/n3xx.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/n3xx_periphs.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/n3xx_periphs.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/n3xx_periphs.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/sim.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/sim.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/sim.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/x4xx.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/x4xx.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/x4xx.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/x4xx_clk_aux.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/x4xx_clk_aux.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/x4xx_clk_aux.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/x4xx_clock_ctrl.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/x4xx_clock_ctrl.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/x4xx_clock_ctrl.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/x4xx_clock_lookup.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/x4xx_clock_lookup.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/x4xx_clock_lookup.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/x4xx_clock_mgr.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/x4xx_clock_mgr.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/x4xx_clock_mgr.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/x4xx_clock_policy.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/x4xx_clock_policy.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/x4xx_clock_policy.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/x4xx_clock_types.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/x4xx_clock_types.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/x4xx_clock_types.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/x4xx_dio_control.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/x4xx_dio_control.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/x4xx_dio_control.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/x4xx_gps_mgr.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/x4xx_gps_mgr.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/x4xx_gps_mgr.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/x4xx_mb_cpld.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/x4xx_mb_cpld.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/x4xx_mb_cpld.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/x4xx_periphs.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/x4xx_periphs.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/x4xx_periphs.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/x4xx_reference_pll.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/x4xx_reference_pll.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/x4xx_reference_pll.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/x4xx_rfdc_ctrl.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/x4xx_rfdc_ctrl.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/x4xx_rfdc_ctrl.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/x4xx_rfdc_regs.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/x4xx_rfdc_regs.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/x4xx_rfdc_regs.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/x4xx_sample_pll.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/x4xx_sample_pll.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/x4xx_sample_pll.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/x4xx_update_cpld.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/x4xx_update_cpld.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/__pycache__\/x4xx_update_cpld.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/base.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/common.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/e31x.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/e31x_periphs.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/e320.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/e320_periphs.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/n3xx.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/n3xx_periphs.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/sim.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/x4xx.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/x4xx_clk_aux.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/x4xx_clock_ctrl.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/x4xx_clock_lookup.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/x4xx_clock_mgr.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/x4xx_clock_policy.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/x4xx_clock_types.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/x4xx_dio_control.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/x4xx_gps_mgr.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/x4xx_mb_cpld.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/x4xx_periphs.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/x4xx_reference_pll.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/x4xx_rfdc_ctrl.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/x4xx_rfdc_regs.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/x4xx_sample_pll.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/periph_manager\/x4xx_update_cpld.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/prefs.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/process_manager.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/rpc_server.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/rpc_utils.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/simulator\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/simulator\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/simulator\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/simulator\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/simulator\/__pycache__\/chdr_endpoint.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/simulator\/__pycache__\/chdr_endpoint.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/simulator\/__pycache__\/chdr_endpoint.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/simulator\/__pycache__\/chdr_stream.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/simulator\/__pycache__\/chdr_stream.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/simulator\/__pycache__\/chdr_stream.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/simulator\/__pycache__\/config.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/simulator\/__pycache__\/config.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/simulator\/__pycache__\/config.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/simulator\/__pycache__\/hardware_presets.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/simulator\/__pycache__\/hardware_presets.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/simulator\/__pycache__\/hardware_presets.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/simulator\/__pycache__\/noc_block_regs.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/simulator\/__pycache__\/noc_block_regs.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/simulator\/__pycache__\/noc_block_regs.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/simulator\/__pycache__\/rfnoc_common.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/simulator\/__pycache__\/rfnoc_common.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/simulator\/__pycache__\/rfnoc_common.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/simulator\/__pycache__\/rfnoc_graph.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/simulator\/__pycache__\/rfnoc_graph.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/simulator\/__pycache__\/rfnoc_graph.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/simulator\/__pycache__\/sample_source.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/simulator\/__pycache__\/sample_source.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/simulator\/__pycache__\/sample_source.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/simulator\/__pycache__\/sim_dboard.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/simulator\/__pycache__\/sim_dboard.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/simulator\/__pycache__\/sim_dboard.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/simulator\/__pycache__\/stream_endpoint_node.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/simulator\/__pycache__\/stream_endpoint_node.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/simulator\/__pycache__\/stream_endpoint_node.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/simulator\/__pycache__\/stream_ep_regs.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/simulator\/__pycache__\/stream_ep_regs.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/simulator\/__pycache__\/stream_ep_regs.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/simulator\/chdr_endpoint.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/simulator\/chdr_stream.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/simulator\/config.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/simulator\/hardware_presets.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/simulator\/noc_block_regs.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/simulator\/rfnoc_common.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/simulator\/rfnoc_graph.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/simulator\/sample_source.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/simulator\/sim_dboard.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/simulator\/stream_endpoint_node.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/simulator\/stream_ep_regs.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/__pycache__\/db_flash.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/__pycache__\/db_flash.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/__pycache__\/db_flash.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/__pycache__\/dtoverlay.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/__pycache__\/dtoverlay.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/__pycache__\/dtoverlay.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/__pycache__\/ectool.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/__pycache__\/ectool.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/__pycache__\/ectool.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/__pycache__\/filesystem_status.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/__pycache__\/filesystem_status.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/__pycache__\/filesystem_status.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/__pycache__\/gpio.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/__pycache__\/gpio.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/__pycache__\/gpio.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/__pycache__\/gpio_v1_x.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/__pycache__\/gpio_v1_x.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/__pycache__\/gpio_v1_x.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/__pycache__\/gpio_v2_x.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/__pycache__\/gpio_v2_x.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/__pycache__\/gpio_v2_x.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/__pycache__\/i2c_dev.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/__pycache__\/i2c_dev.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/__pycache__\/i2c_dev.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/__pycache__\/mount.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/__pycache__\/mount.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/__pycache__\/mount.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/__pycache__\/net.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/__pycache__\/net.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/__pycache__\/net.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/__pycache__\/sysfs_gpio.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/__pycache__\/sysfs_gpio.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/__pycache__\/sysfs_gpio.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/__pycache__\/sysfs_thermal.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/__pycache__\/sysfs_thermal.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/__pycache__\/sysfs_thermal.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/__pycache__\/udev.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/__pycache__\/udev.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/__pycache__\/udev.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/__pycache__\/uio.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/__pycache__\/uio.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/__pycache__\/uio.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/__pycache__\/watchdog.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/__pycache__\/watchdog.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/__pycache__\/watchdog.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/db_flash.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/dtoverlay.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/ectool.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/filesystem_status.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/gpio.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/gpio_v1_x.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/gpio_v2_x.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/i2c_dev.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/mount.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/net.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/sysfs_gpio.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/sysfs_thermal.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/udev.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/uio.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/sys_utils\/watchdog.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/test_bfrfs.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/tlv_eeprom.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/user_eeprom.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/xports\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/xports\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/xports\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/xports\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/xports\/__pycache__\/xport_adapter_ctrl.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/xports\/__pycache__\/xport_adapter_ctrl.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/xports\/__pycache__\/xport_adapter_ctrl.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/xports\/__pycache__\/xport_adapter_mgr.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/xports\/__pycache__\/xport_adapter_mgr.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/xports\/__pycache__\/xport_adapter_mgr.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/xports\/__pycache__\/xportmgr_udp.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/xports\/__pycache__\/xportmgr_udp.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/xports\/__pycache__\/xportmgr_udp.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/xports\/xport_adapter_ctrl.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/xports\/xport_adapter_mgr.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/usrp_mpm\/xports\/xportmgr_udp.py" ],
+            
+              [  "usr\/lib\/udev\/rules.d\/uhd-usrp.rules" ],
+            
+              [  "usr\/lib64\/libuhd.so" ],
+            
+              [  "usr\/lib64\/libuhd.so.4.10.0" ],
+            
+              [  "usr\/lib64\/pkgconfig\/uhd.pc" ],
+            
+              [  "usr\/lib64\/uhd\/utils\/b2xx_fx3_utils" ],
+            
+              [  "usr\/lib64\/uhd\/utils\/converter_benchmark" ],
+            
+              [  "usr\/lib64\/uhd\/utils\/converter_benchmark.py" ],
+            
+              [  "usr\/lib64\/uhd\/utils\/fx2_init_eeprom" ],
+            
+              [  "usr\/lib64\/uhd\/utils\/latency\/graph.py" ],
+            
+              [  "usr\/lib64\/uhd\/utils\/latency\/responder" ],
+            
+              [  "usr\/lib64\/uhd\/utils\/latency\/run_tests.py" ],
+            
+              [  "usr\/lib64\/uhd\/utils\/query_gpsdo_sensors" ],
+            
+              [  "usr\/lib64\/uhd\/utils\/uhd-usrp.rules" ],
+            
+              [  "usr\/lib64\/uhd\/utils\/uhd_images_downloader.py" ],
+            
+              [  "usr\/lib64\/uhd\/utils\/usrp2_card_burner.py" ],
+            
+              [  "usr\/lib64\/uhd\/utils\/usrp2_recovery.py" ],
+            
+              [  "usr\/lib64\/uhd\/utils\/usrp_burn_db_eeprom" ],
+            
+              [  "usr\/lib64\/uhd\/utils\/usrp_burn_mb_eeprom" ],
+            
+              [  "usr\/share\/doc\/uhd-4.10.0.0-r2\/LICENSE.bz2" ],
+            
+              [  "usr\/share\/doc\/uhd-4.10.0.0-r2\/README.md.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/rfnoc_image_builder.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/rfnoc_modtool.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/uhd_adc_self_cal.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/uhd_cal_rx_iq_balance.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/uhd_cal_tx_dc_offset.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/uhd_cal_tx_iq_balance.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/uhd_config_info.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/uhd_find_devices.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/uhd_image_loader.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/uhd_images_downloader.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/uhd_usrp_probe.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/usrp2_card_burner.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/usrpctl.1.bz2" ],
+            
+              [  "usr\/share\/uhd\/cal\/cal_metadata.fbs" ],
+            
+              [  "usr\/share\/uhd\/cal\/dsa_cal.fbs" ],
+            
+              [  "usr\/share\/uhd\/cal\/iq_cal.fbs" ],
+            
+              [  "usr\/share\/uhd\/cal\/iq_dc_cal.fbs" ],
+            
+              [  "usr\/share\/uhd\/cal\/pwr_cal.fbs" ],
+            
+              [  "usr\/share\/uhd\/images\/LICENSE" ],
+            
+              [  "usr\/share\/uhd\/images\/bit\/usrp_n200_r3_fpga.bit" ],
+            
+              [  "usr\/share\/uhd\/images\/bit\/usrp_n200_r4_fpga.bit" ],
+            
+              [  "usr\/share\/uhd\/images\/bit\/usrp_n210_r3_fpga.bit" ],
+            
+              [  "usr\/share\/uhd\/images\/bit\/usrp_n210_r4_fpga.bit" ],
+            
+              [  "usr\/share\/uhd\/images\/erllc_uhd.cat" ],
+            
+              [  "usr\/share\/uhd\/images\/erllc_uhd_b100.inf" ],
+            
+              [  "usr\/share\/uhd\/images\/erllc_uhd_b200.inf" ],
+            
+              [  "usr\/share\/uhd\/images\/erllc_uhd_b200_reinit.inf" ],
+            
+              [  "usr\/share\/uhd\/images\/erllc_uhd_b200mini.inf" ],
+            
+              [  "usr\/share\/uhd\/images\/erllc_uhd_b205mini.inf" ],
+            
+              [  "usr\/share\/uhd\/images\/erllc_uhd_b206mini.inf" ],
+            
+              [  "usr\/share\/uhd\/images\/erllc_uhd_makecat.cdf" ],
+            
+              [  "usr\/share\/uhd\/images\/erllc_uhd_ni29xx.inf" ],
+            
+              [  "usr\/share\/uhd\/images\/erllc_uhd_usrp1.inf" ],
+            
+              [  "usr\/share\/uhd\/images\/inventory.json" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp1_fpga.rbf" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp1_fpga_4rx.rbf" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp1_fw.ihx" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp2_fpga.bin" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp2_fw.bin" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_b100_fpga.bin" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_b100_fpga_2rx.bin" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_b100_fw.ihx" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_b200_bl.img" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_b200_fpga.bin" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_b200_fpga.rpt" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_b200_fw.hex" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_b200mini_fpga.bin" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_b200mini_fpga.rpt" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_b205mini_fpga.bin" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_b205mini_fpga.rpt" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_b210_fpga.bin" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_b210_fpga.rpt" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n200_fw.bin" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n200_r2_fpga.bin" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n200_r3_fpga.bin" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n200_r4_fpga.bin" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n210_fw.bin" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n210_r2_fpga.bin" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n210_r3_fpga.bin" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n210_r4_fpga.bin" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n300_fpga_AA.bit" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n300_fpga_AA.bit.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n300_fpga_AA.dts" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n300_fpga_AA.dts.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n300_fpga_AA.rpt" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n300_fpga_HG.bit" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n300_fpga_HG.bit.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n300_fpga_HG.dts" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n300_fpga_HG.dts.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n300_fpga_HG.rpt" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n300_fpga_WX.bit" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n300_fpga_WX.bit.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n300_fpga_WX.dts" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n300_fpga_WX.dts.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n300_fpga_WX.rpt" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n300_fpga_XG.bit" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n300_fpga_XG.bit.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n300_fpga_XG.dts" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n300_fpga_XG.dts.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n300_fpga_XG.rpt" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n310_fpga_AA.bit" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n310_fpga_AA.bit.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n310_fpga_AA.dts" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n310_fpga_AA.dts.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n310_fpga_AA.rpt" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n310_fpga_HG.bit" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n310_fpga_HG.bit.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n310_fpga_HG.dts" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n310_fpga_HG.dts.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n310_fpga_HG.rpt" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n310_fpga_WX.bit" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n310_fpga_WX.bit.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n310_fpga_WX.dts" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n310_fpga_WX.dts.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n310_fpga_WX.rpt" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n310_fpga_XG.bit" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n310_fpga_XG.bit.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n310_fpga_XG.dts" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n310_fpga_XG.dts.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n310_fpga_XG.rpt" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n320_fpga_AA.bit" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n320_fpga_AA.bit.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n320_fpga_AA.dts" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n320_fpga_AA.dts.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n320_fpga_AA.rpt" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n320_fpga_AQ.bit" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n320_fpga_AQ.bit.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n320_fpga_AQ.dts" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n320_fpga_AQ.dts.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n320_fpga_AQ.rpt" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n320_fpga_HG.bit" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n320_fpga_HG.bit.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n320_fpga_HG.dts" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n320_fpga_HG.dts.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n320_fpga_HG.rpt" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n320_fpga_WX.bit" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n320_fpga_WX.bit.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n320_fpga_WX.dts" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n320_fpga_WX.dts.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n320_fpga_WX.rpt" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n320_fpga_XG.bit" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n320_fpga_XG.bit.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n320_fpga_XG.dts" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n320_fpga_XG.dts.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n320_fpga_XG.rpt" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n320_fpga_XQ.bit" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n320_fpga_XQ.bit.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n320_fpga_XQ.dts" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n320_fpga_XQ.dts.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_n320_fpga_XQ.rpt" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x300_fpga_HG.bit" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x300_fpga_HG.lvbitx" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x300_fpga_HG.rpt" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x300_fpga_XG.bit" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x300_fpga_XG.lvbitx" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x300_fpga_XG.rpt" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x310_fpga_HG.bit" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x310_fpga_HG.lvbitx" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x310_fpga_HG.rpt" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x310_fpga_XG.bit" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x310_fpga_XG.lvbitx" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x310_fpga_XG.rpt" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x410_fpga_CG_400.bit" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x410_fpga_CG_400.bit.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x410_fpga_CG_400.dts" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x410_fpga_CG_400.dts.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x410_fpga_CG_400.rpt" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x410_fpga_UC_200.bit" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x410_fpga_UC_200.bit.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x410_fpga_UC_200.dts" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x410_fpga_UC_200.dts.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x410_fpga_UC_200.rpt" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x410_fpga_X4_200.bit" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x410_fpga_X4_200.bit.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x410_fpga_X4_200.dts" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x410_fpga_X4_200.dts.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x410_fpga_X4_200.rpt" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x420_fpga_CG_1000.bit" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x420_fpga_CG_1000.bit.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x420_fpga_CG_1000.dts" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x420_fpga_CG_1000.dts.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x420_fpga_CG_1000.rpt" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x420_fpga_X4_1000.bit" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x420_fpga_X4_1000.bit.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x420_fpga_X4_1000.dts" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x420_fpga_X4_1000.dts.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x420_fpga_X4_1000.rpt" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x420_fpga_X4_200.bit" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x420_fpga_X4_200.bit.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x420_fpga_X4_200.dts" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x420_fpga_X4_200.dts.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x420_fpga_X4_200.rpt" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x440_fpga_CG_1600.bit" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x440_fpga_CG_1600.bit.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x440_fpga_CG_1600.dts" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x440_fpga_CG_1600.dts.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x440_fpga_CG_1600.rpt" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x440_fpga_CG_400.bit" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x440_fpga_CG_400.bit.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x440_fpga_CG_400.dts" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x440_fpga_CG_400.dts.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x440_fpga_CG_400.rpt" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x440_fpga_X4_1600.bit" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x440_fpga_X4_1600.bit.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x440_fpga_X4_1600.dts" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x440_fpga_X4_1600.dts.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x440_fpga_X4_1600.rpt" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x440_fpga_X4_200.bit" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x440_fpga_X4_200.bit.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x440_fpga_X4_200.dts" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x440_fpga_X4_200.dts.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x440_fpga_X4_200.rpt" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x440_fpga_X4_400.bit" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x440_fpga_X4_400.bit.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x440_fpga_X4_400.dts" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x440_fpga_X4_400.dts.md5" ],
+            
+              [  "usr\/share\/uhd\/images\/usrp_x440_fpga_X4_400.rpt" ],
+            
+              [  "usr\/share\/uhd\/rfnoc\/blocks\/addsub.yml" ],
+            
+              [  "usr\/share\/uhd\/rfnoc\/blocks\/axi_ram_fifo.yml" ],
+            
+              [  "usr\/share\/uhd\/rfnoc\/blocks\/ddc.yml" ],
+            
+              [  "usr\/share\/uhd\/rfnoc\/blocks\/duc.yml" ],
+            
+              [  "usr\/share\/uhd\/rfnoc\/blocks\/fft.yml" ],
+            
+              [  "usr\/share\/uhd\/rfnoc\/blocks\/fir_filter.yml" ],
+            
+              [  "usr\/share\/uhd\/rfnoc\/blocks\/fosphor.yml" ],
+            
+              [  "usr\/share\/uhd\/rfnoc\/blocks\/keep_one_in_n.yml" ],
+            
+              [  "usr\/share\/uhd\/rfnoc\/blocks\/license_check.yml" ],
+            
+              [  "usr\/share\/uhd\/rfnoc\/blocks\/logpwr.yml" ],
+            
+              [  "usr\/share\/uhd\/rfnoc\/blocks\/moving_avg.yml" ],
+            
+              [  "usr\/share\/uhd\/rfnoc\/blocks\/null_src_sink.yml" ],
+            
+              [  "usr\/share\/uhd\/rfnoc\/blocks\/radio.yml" ],
+            
+              [  "usr\/share\/uhd\/rfnoc\/blocks\/replay.yml" ],
+            
+              [  "usr\/share\/uhd\/rfnoc\/blocks\/siggen.yml" ],
+            
+              [  "usr\/share\/uhd\/rfnoc\/blocks\/split_stream.yml" ],
+            
+              [  "usr\/share\/uhd\/rfnoc\/blocks\/switchboard.yml" ],
+            
+              [  "usr\/share\/uhd\/rfnoc\/blocks\/vector_iir.yml" ],
+            
+              [  "usr\/share\/uhd\/rfnoc\/blocks\/window.yml" ],
+            
+              [  "usr\/share\/uhd\/rfnoc\/core\/e310_bsp.yml" ],
+            
+              [  "usr\/share\/uhd\/rfnoc\/core\/e320_bsp.yml" ],
+            
+              [  "usr\/share\/uhd\/rfnoc\/core\/io_signatures.yml" ],
+            
+              [  "usr\/share\/uhd\/rfnoc\/core\/n300_bsp.yml" ],
+            
+              [  "usr\/share\/uhd\/rfnoc\/core\/n310_bsp.yml" ],
+            
+              [  "usr\/share\/uhd\/rfnoc\/core\/n320_bsp.yml" ],
+            
+              [  "usr\/share\/uhd\/rfnoc\/core\/rfnoc_imagebuilder_args.json" ],
+            
+              [  "usr\/share\/uhd\/rfnoc\/core\/x300_bsp.yml" ],
+            
+              [  "usr\/share\/uhd\/rfnoc\/core\/x310_bsp.yml" ],
+            
+              [  "usr\/share\/uhd\/rfnoc\/core\/x410_bsp.yml" ],
+            
+              [  "usr\/share\/uhd\/rfnoc\/core\/x420_bsp.yml" ],
+            
+              [  "usr\/share\/uhd\/rfnoc\/core\/x440_bsp.yml" ],
+            
+              [  "usr\/share\/uhd\/rfnoc\/modules\/device_dna.yml" ],
+            
+              [  "usr\/share\/uhd\/rfnoc\/transport_adapters\/chdr_dma.yml" ],
+            
+              [  "usr\/share\/uhd\/rfnoc\/transport_adapters\/x4xx_eth.yml" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

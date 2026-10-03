@@ -1,0 +1,1651 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing libs/ffmpeg-compat-8.1.2 in mocaccino-community-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> libs/ffmpeg-compat-8.1.2
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                Complete solution to record/convert/stream audio and video
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-community-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-community-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of libs/ffmpeg-compat
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/mocaccino-community:ffmpeg-compat-libs-8.1.2" target="_blank"> quay.io/mocaccino/mocaccino-community:ffmpeg-compat-libs-8.1.2 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/mocaccino-community:ffmpeg-compat-libs-8.1.2/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 8.1.2  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> GPL-2&#43; </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/X">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  X &gt;=0 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: media-video/ffmpeg-compat media-video/ffmpeg-compat:6 media-video/ffmpeg-compat:4
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://ffmpeg.org/" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://ffmpeg.org/ </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/media-video/ffmpeg-compat">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  ffmpeg-compat &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "usr\/lib\/ffmpeg4\/bin\/ffmpeg" ],
+            
+              [  "usr\/lib\/ffmpeg4\/bin\/ffprobe" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavcodec\/ac3_parser.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavcodec\/adts_parser.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavcodec\/avcodec.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavcodec\/avdct.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavcodec\/avfft.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavcodec\/bsf.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavcodec\/codec.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavcodec\/codec_desc.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavcodec\/codec_id.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavcodec\/codec_par.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavcodec\/d3d11va.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavcodec\/dirac.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavcodec\/dv_profile.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavcodec\/dxva2.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavcodec\/jni.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavcodec\/mediacodec.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavcodec\/packet.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavcodec\/qsv.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavcodec\/vaapi.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavcodec\/vdpau.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavcodec\/version.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavcodec\/videotoolbox.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavcodec\/vorbis_parser.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavcodec\/xvmc.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavdevice\/avdevice.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavdevice\/version.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavfilter\/avfilter.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavfilter\/buffersink.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavfilter\/buffersrc.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavfilter\/version.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavformat\/avformat.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavformat\/avio.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavformat\/version.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/adler32.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/aes.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/aes_ctr.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/attributes.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/audio_fifo.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/avassert.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/avconfig.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/avstring.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/avutil.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/base64.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/blowfish.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/bprint.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/bswap.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/buffer.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/camellia.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/cast5.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/channel_layout.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/common.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/cpu.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/crc.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/des.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/dict.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/display.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/dovi_meta.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/downmix_info.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/encryption_info.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/error.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/eval.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/ffversion.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/fifo.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/file.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/film_grain_params.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/frame.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/hash.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/hdr_dynamic_metadata.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/hmac.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/hwcontext.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/hwcontext_cuda.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/hwcontext_d3d11va.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/hwcontext_drm.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/hwcontext_dxva2.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/hwcontext_mediacodec.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/hwcontext_opencl.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/hwcontext_qsv.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/hwcontext_vaapi.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/hwcontext_vdpau.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/hwcontext_videotoolbox.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/hwcontext_vulkan.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/imgutils.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/intfloat.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/intreadwrite.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/lfg.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/log.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/lzo.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/macros.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/mastering_display_metadata.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/mathematics.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/md5.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/mem.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/motion_vector.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/murmur3.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/opt.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/parseutils.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/pixdesc.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/pixelutils.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/pixfmt.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/random_seed.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/rational.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/rc4.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/replaygain.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/ripemd.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/samplefmt.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/sha.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/sha512.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/spherical.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/stereo3d.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/tea.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/threadmessage.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/time.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/timecode.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/timestamp.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/tree.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/twofish.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/tx.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/version.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/video_enc_params.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libavutil\/xtea.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libpostproc\/postprocess.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libpostproc\/version.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libswresample\/swresample.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libswresample\/version.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libswscale\/swscale.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/include\/libswscale\/version.h" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib\/libavcodec.so" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib\/libavcodec.so.58" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib\/libavcodec.so.58.134.100" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib\/libavdevice.so" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib\/libavdevice.so.58" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib\/libavdevice.so.58.13.100" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib\/libavfilter.so" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib\/libavfilter.so.7" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib\/libavfilter.so.7.110.100" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib\/libavformat.so" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib\/libavformat.so.58" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib\/libavformat.so.58.76.100" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib\/libavutil.so" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib\/libavutil.so.56" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib\/libavutil.so.56.70.100" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib\/libpostproc.so" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib\/libpostproc.so.55" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib\/libpostproc.so.55.9.100" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib\/libswresample.so" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib\/libswresample.so.3" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib\/libswresample.so.3.9.100" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib\/libswscale.so" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib\/libswscale.so.5" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib\/libswscale.so.5.9.100" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib\/pkgconfig\/libavcodec.pc" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib\/pkgconfig\/libavdevice.pc" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib\/pkgconfig\/libavfilter.pc" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib\/pkgconfig\/libavformat.pc" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib\/pkgconfig\/libavutil.pc" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib\/pkgconfig\/libpostproc.pc" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib\/pkgconfig\/libswresample.pc" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib\/pkgconfig\/libswscale.pc" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib64\/libavcodec.so" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib64\/libavcodec.so.58" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib64\/libavcodec.so.58.134.100" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib64\/libavdevice.so" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib64\/libavdevice.so.58" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib64\/libavdevice.so.58.13.100" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib64\/libavfilter.so" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib64\/libavfilter.so.7" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib64\/libavfilter.so.7.110.100" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib64\/libavformat.so" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib64\/libavformat.so.58" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib64\/libavformat.so.58.76.100" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib64\/libavutil.so" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib64\/libavutil.so.56" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib64\/libavutil.so.56.70.100" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib64\/libpostproc.so" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib64\/libpostproc.so.55" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib64\/libpostproc.so.55.9.100" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib64\/libswresample.so" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib64\/libswresample.so.3" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib64\/libswresample.so.3.9.100" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib64\/libswscale.so" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib64\/libswscale.so.5" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib64\/libswscale.so.5.9.100" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib64\/pkgconfig\/libavcodec.pc" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib64\/pkgconfig\/libavdevice.pc" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib64\/pkgconfig\/libavfilter.pc" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib64\/pkgconfig\/libavformat.pc" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib64\/pkgconfig\/libavutil.pc" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib64\/pkgconfig\/libpostproc.pc" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib64\/pkgconfig\/libswresample.pc" ],
+            
+              [  "usr\/lib\/ffmpeg4\/lib64\/pkgconfig\/libswscale.pc" ],
+            
+              [  "usr\/lib\/ffmpeg4\/share\/ffmpeg\/examples\/Makefile" ],
+            
+              [  "usr\/lib\/ffmpeg4\/share\/ffmpeg\/examples\/README" ],
+            
+              [  "usr\/lib\/ffmpeg4\/share\/ffmpeg\/examples\/avio_list_dir.c" ],
+            
+              [  "usr\/lib\/ffmpeg4\/share\/ffmpeg\/examples\/avio_reading.c" ],
+            
+              [  "usr\/lib\/ffmpeg4\/share\/ffmpeg\/examples\/decode_audio.c" ],
+            
+              [  "usr\/lib\/ffmpeg4\/share\/ffmpeg\/examples\/decode_video.c" ],
+            
+              [  "usr\/lib\/ffmpeg4\/share\/ffmpeg\/examples\/demuxing_decoding.c" ],
+            
+              [  "usr\/lib\/ffmpeg4\/share\/ffmpeg\/examples\/encode_audio.c" ],
+            
+              [  "usr\/lib\/ffmpeg4\/share\/ffmpeg\/examples\/encode_video.c" ],
+            
+              [  "usr\/lib\/ffmpeg4\/share\/ffmpeg\/examples\/extract_mvs.c" ],
+            
+              [  "usr\/lib\/ffmpeg4\/share\/ffmpeg\/examples\/filter_audio.c" ],
+            
+              [  "usr\/lib\/ffmpeg4\/share\/ffmpeg\/examples\/filtering_audio.c" ],
+            
+              [  "usr\/lib\/ffmpeg4\/share\/ffmpeg\/examples\/filtering_video.c" ],
+            
+              [  "usr\/lib\/ffmpeg4\/share\/ffmpeg\/examples\/http_multiclient.c" ],
+            
+              [  "usr\/lib\/ffmpeg4\/share\/ffmpeg\/examples\/hw_decode.c" ],
+            
+              [  "usr\/lib\/ffmpeg4\/share\/ffmpeg\/examples\/metadata.c" ],
+            
+              [  "usr\/lib\/ffmpeg4\/share\/ffmpeg\/examples\/muxing.c" ],
+            
+              [  "usr\/lib\/ffmpeg4\/share\/ffmpeg\/examples\/qsvdec.c" ],
+            
+              [  "usr\/lib\/ffmpeg4\/share\/ffmpeg\/examples\/remuxing.c" ],
+            
+              [  "usr\/lib\/ffmpeg4\/share\/ffmpeg\/examples\/resampling_audio.c" ],
+            
+              [  "usr\/lib\/ffmpeg4\/share\/ffmpeg\/examples\/scaling_video.c" ],
+            
+              [  "usr\/lib\/ffmpeg4\/share\/ffmpeg\/examples\/transcode_aac.c" ],
+            
+              [  "usr\/lib\/ffmpeg4\/share\/ffmpeg\/examples\/transcoding.c" ],
+            
+              [  "usr\/lib\/ffmpeg4\/share\/ffmpeg\/examples\/vaapi_encode.c" ],
+            
+              [  "usr\/lib\/ffmpeg4\/share\/ffmpeg\/examples\/vaapi_transcode.c" ],
+            
+              [  "usr\/lib\/ffmpeg4\/share\/ffmpeg\/ffprobe.xsd" ],
+            
+              [  "usr\/lib\/ffmpeg4\/share\/ffmpeg\/libvpx-1080p.ffpreset" ],
+            
+              [  "usr\/lib\/ffmpeg4\/share\/ffmpeg\/libvpx-1080p50_60.ffpreset" ],
+            
+              [  "usr\/lib\/ffmpeg4\/share\/ffmpeg\/libvpx-360p.ffpreset" ],
+            
+              [  "usr\/lib\/ffmpeg4\/share\/ffmpeg\/libvpx-720p.ffpreset" ],
+            
+              [  "usr\/lib\/ffmpeg4\/share\/ffmpeg\/libvpx-720p50_60.ffpreset" ],
+            
+              [  "usr\/lib\/ffmpeg6\/bin\/ffmpeg" ],
+            
+              [  "usr\/lib\/ffmpeg6\/bin\/ffprobe" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavcodec\/ac3_parser.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavcodec\/adts_parser.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavcodec\/avcodec.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavcodec\/avdct.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavcodec\/avfft.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavcodec\/bsf.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavcodec\/codec.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavcodec\/codec_desc.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavcodec\/codec_id.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavcodec\/codec_par.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavcodec\/d3d11va.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavcodec\/defs.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavcodec\/dirac.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavcodec\/dv_profile.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavcodec\/dxva2.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavcodec\/jni.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavcodec\/mediacodec.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavcodec\/packet.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavcodec\/qsv.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavcodec\/vdpau.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavcodec\/version.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavcodec\/version_major.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavcodec\/videotoolbox.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavcodec\/vorbis_parser.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavcodec\/xvmc.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavdevice\/avdevice.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavdevice\/version.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavdevice\/version_major.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavfilter\/avfilter.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavfilter\/buffersink.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavfilter\/buffersrc.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavfilter\/version.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavfilter\/version_major.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavformat\/avformat.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavformat\/avio.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavformat\/version.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavformat\/version_major.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/adler32.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/aes.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/aes_ctr.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/ambient_viewing_environment.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/attributes.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/audio_fifo.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/avassert.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/avconfig.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/avstring.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/avutil.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/base64.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/blowfish.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/bprint.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/bswap.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/buffer.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/camellia.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/cast5.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/channel_layout.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/common.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/cpu.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/crc.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/csp.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/des.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/detection_bbox.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/dict.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/display.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/dovi_meta.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/downmix_info.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/encryption_info.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/error.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/eval.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/executor.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/ffversion.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/fifo.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/file.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/film_grain_params.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/frame.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/hash.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/hdr_dynamic_metadata.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/hdr_dynamic_vivid_metadata.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/hmac.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/hwcontext.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/hwcontext_cuda.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/hwcontext_d3d11va.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/hwcontext_drm.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/hwcontext_dxva2.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/hwcontext_mediacodec.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/hwcontext_opencl.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/hwcontext_qsv.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/hwcontext_vaapi.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/hwcontext_vdpau.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/hwcontext_videotoolbox.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/hwcontext_vulkan.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/imgutils.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/intfloat.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/intreadwrite.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/lfg.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/log.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/lzo.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/macros.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/mastering_display_metadata.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/mathematics.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/md5.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/mem.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/motion_vector.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/murmur3.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/opt.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/parseutils.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/pixdesc.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/pixelutils.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/pixfmt.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/random_seed.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/rational.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/rc4.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/replaygain.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/ripemd.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/samplefmt.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/sha.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/sha512.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/spherical.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/stereo3d.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/tea.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/threadmessage.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/time.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/timecode.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/timestamp.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/tree.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/twofish.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/tx.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/uuid.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/version.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/video_enc_params.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/video_hint.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libavutil\/xtea.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libpostproc\/postprocess.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libpostproc\/version.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libpostproc\/version_major.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libswresample\/swresample.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libswresample\/version.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libswresample\/version_major.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libswscale\/swscale.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libswscale\/version.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/include\/libswscale\/version_major.h" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib\/libavcodec.so" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib\/libavcodec.so.60" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib\/libavcodec.so.60.31.102" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib\/libavdevice.so" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib\/libavdevice.so.60" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib\/libavdevice.so.60.3.100" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib\/libavfilter.so" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib\/libavfilter.so.9" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib\/libavfilter.so.9.12.100" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib\/libavformat.so" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib\/libavformat.so.60" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib\/libavformat.so.60.16.101" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib\/libavutil.so" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib\/libavutil.so.58" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib\/libavutil.so.58.29.100" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib\/libpostproc.so" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib\/libpostproc.so.57" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib\/libpostproc.so.57.3.100" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib\/libswresample.so" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib\/libswresample.so.4" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib\/libswresample.so.4.12.100" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib\/libswscale.so" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib\/libswscale.so.7" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib\/libswscale.so.7.5.100" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib\/pkgconfig\/libavcodec.pc" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib\/pkgconfig\/libavdevice.pc" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib\/pkgconfig\/libavfilter.pc" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib\/pkgconfig\/libavformat.pc" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib\/pkgconfig\/libavutil.pc" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib\/pkgconfig\/libpostproc.pc" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib\/pkgconfig\/libswresample.pc" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib\/pkgconfig\/libswscale.pc" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib64\/libavcodec.so" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib64\/libavcodec.so.60" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib64\/libavcodec.so.60.31.102" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib64\/libavdevice.so" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib64\/libavdevice.so.60" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib64\/libavdevice.so.60.3.100" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib64\/libavfilter.so" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib64\/libavfilter.so.9" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib64\/libavfilter.so.9.12.100" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib64\/libavformat.so" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib64\/libavformat.so.60" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib64\/libavformat.so.60.16.101" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib64\/libavutil.so" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib64\/libavutil.so.58" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib64\/libavutil.so.58.29.100" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib64\/libpostproc.so" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib64\/libpostproc.so.57" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib64\/libpostproc.so.57.3.100" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib64\/libswresample.so" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib64\/libswresample.so.4" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib64\/libswresample.so.4.12.100" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib64\/libswscale.so" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib64\/libswscale.so.7" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib64\/libswscale.so.7.5.100" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib64\/pkgconfig\/libavcodec.pc" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib64\/pkgconfig\/libavdevice.pc" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib64\/pkgconfig\/libavfilter.pc" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib64\/pkgconfig\/libavformat.pc" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib64\/pkgconfig\/libavutil.pc" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib64\/pkgconfig\/libpostproc.pc" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib64\/pkgconfig\/libswresample.pc" ],
+            
+              [  "usr\/lib\/ffmpeg6\/lib64\/pkgconfig\/libswscale.pc" ],
+            
+              [  "usr\/lib\/ffmpeg6\/share\/ffmpeg\/examples\/Makefile" ],
+            
+              [  "usr\/lib\/ffmpeg6\/share\/ffmpeg\/examples\/README" ],
+            
+              [  "usr\/lib\/ffmpeg6\/share\/ffmpeg\/examples\/avio_http_serve_files.c" ],
+            
+              [  "usr\/lib\/ffmpeg6\/share\/ffmpeg\/examples\/avio_list_dir.c" ],
+            
+              [  "usr\/lib\/ffmpeg6\/share\/ffmpeg\/examples\/avio_read_callback.c" ],
+            
+              [  "usr\/lib\/ffmpeg6\/share\/ffmpeg\/examples\/decode_audio.c" ],
+            
+              [  "usr\/lib\/ffmpeg6\/share\/ffmpeg\/examples\/decode_filter_audio.c" ],
+            
+              [  "usr\/lib\/ffmpeg6\/share\/ffmpeg\/examples\/decode_filter_video.c" ],
+            
+              [  "usr\/lib\/ffmpeg6\/share\/ffmpeg\/examples\/decode_video.c" ],
+            
+              [  "usr\/lib\/ffmpeg6\/share\/ffmpeg\/examples\/demux_decode.c" ],
+            
+              [  "usr\/lib\/ffmpeg6\/share\/ffmpeg\/examples\/encode_audio.c" ],
+            
+              [  "usr\/lib\/ffmpeg6\/share\/ffmpeg\/examples\/encode_video.c" ],
+            
+              [  "usr\/lib\/ffmpeg6\/share\/ffmpeg\/examples\/extract_mvs.c" ],
+            
+              [  "usr\/lib\/ffmpeg6\/share\/ffmpeg\/examples\/filter_audio.c" ],
+            
+              [  "usr\/lib\/ffmpeg6\/share\/ffmpeg\/examples\/hw_decode.c" ],
+            
+              [  "usr\/lib\/ffmpeg6\/share\/ffmpeg\/examples\/mux.c" ],
+            
+              [  "usr\/lib\/ffmpeg6\/share\/ffmpeg\/examples\/qsv_decode.c" ],
+            
+              [  "usr\/lib\/ffmpeg6\/share\/ffmpeg\/examples\/qsv_transcode.c" ],
+            
+              [  "usr\/lib\/ffmpeg6\/share\/ffmpeg\/examples\/remux.c" ],
+            
+              [  "usr\/lib\/ffmpeg6\/share\/ffmpeg\/examples\/resample_audio.c" ],
+            
+              [  "usr\/lib\/ffmpeg6\/share\/ffmpeg\/examples\/scale_video.c" ],
+            
+              [  "usr\/lib\/ffmpeg6\/share\/ffmpeg\/examples\/show_metadata.c" ],
+            
+              [  "usr\/lib\/ffmpeg6\/share\/ffmpeg\/examples\/transcode.c" ],
+            
+              [  "usr\/lib\/ffmpeg6\/share\/ffmpeg\/examples\/transcode_aac.c" ],
+            
+              [  "usr\/lib\/ffmpeg6\/share\/ffmpeg\/examples\/vaapi_encode.c" ],
+            
+              [  "usr\/lib\/ffmpeg6\/share\/ffmpeg\/examples\/vaapi_transcode.c" ],
+            
+              [  "usr\/lib\/ffmpeg6\/share\/ffmpeg\/ffprobe.xsd" ],
+            
+              [  "usr\/lib\/ffmpeg6\/share\/ffmpeg\/libvpx-1080p.ffpreset" ],
+            
+              [  "usr\/lib\/ffmpeg6\/share\/ffmpeg\/libvpx-1080p50_60.ffpreset" ],
+            
+              [  "usr\/lib\/ffmpeg6\/share\/ffmpeg\/libvpx-360p.ffpreset" ],
+            
+              [  "usr\/lib\/ffmpeg6\/share\/ffmpeg\/libvpx-720p.ffpreset" ],
+            
+              [  "usr\/lib\/ffmpeg6\/share\/ffmpeg\/libvpx-720p50_60.ffpreset" ],
+            
+              [  "usr\/lib\/ffmpeg8\/bin\/ffmpeg" ],
+            
+              [  "usr\/lib\/ffmpeg8\/bin\/ffprobe" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavcodec\/ac3_parser.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavcodec\/adts_parser.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavcodec\/avcodec.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavcodec\/avdct.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavcodec\/bsf.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavcodec\/codec.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavcodec\/codec_desc.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavcodec\/codec_id.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavcodec\/codec_par.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavcodec\/d3d11va.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavcodec\/defs.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavcodec\/dirac.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavcodec\/dv_profile.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavcodec\/dxva2.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavcodec\/exif.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavcodec\/jni.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavcodec\/mediacodec.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavcodec\/packet.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavcodec\/qsv.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavcodec\/smpte_436m.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavcodec\/vdpau.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavcodec\/version.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavcodec\/version_major.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavcodec\/videotoolbox.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavcodec\/vorbis_parser.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavdevice\/avdevice.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavdevice\/version.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavdevice\/version_major.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavfilter\/avfilter.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavfilter\/buffersink.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavfilter\/buffersrc.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavfilter\/version.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavfilter\/version_major.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavformat\/avformat.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavformat\/avio.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavformat\/version.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavformat\/version_major.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/adler32.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/aes.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/aes_ctr.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/ambient_viewing_environment.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/attributes.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/audio_fifo.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/avassert.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/avconfig.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/avstring.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/avutil.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/base64.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/blowfish.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/bprint.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/bswap.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/buffer.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/camellia.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/cast5.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/channel_layout.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/common.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/container_fifo.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/cpu.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/crc.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/csp.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/des.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/detection_bbox.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/dict.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/display.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/dovi_meta.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/downmix_info.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/encryption_info.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/error.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/eval.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/executor.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/ffversion.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/fifo.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/file.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/film_grain_params.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/frame.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/hash.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/hdr_dynamic_metadata.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/hdr_dynamic_vivid_metadata.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/hmac.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/hwcontext.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/hwcontext_amf.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/hwcontext_cuda.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/hwcontext_d3d11va.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/hwcontext_d3d12va.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/hwcontext_drm.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/hwcontext_dxva2.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/hwcontext_mediacodec.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/hwcontext_oh.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/hwcontext_opencl.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/hwcontext_qsv.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/hwcontext_vaapi.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/hwcontext_vdpau.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/hwcontext_videotoolbox.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/hwcontext_vulkan.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/iamf.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/imgutils.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/intfloat.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/intreadwrite.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/lfg.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/log.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/lzo.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/macros.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/mastering_display_metadata.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/mathematics.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/md5.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/mem.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/motion_vector.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/murmur3.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/opt.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/parseutils.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/pixdesc.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/pixelutils.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/pixfmt.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/random_seed.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/rational.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/rc4.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/refstruct.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/replaygain.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/ripemd.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/samplefmt.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/sha.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/sha512.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/spherical.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/stereo3d.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/tdrdi.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/tea.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/threadmessage.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/time.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/timecode.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/timestamp.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/tree.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/twofish.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/tx.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/uuid.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/version.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/video_enc_params.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/video_hint.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libavutil\/xtea.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libswresample\/swresample.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libswresample\/version.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libswresample\/version_major.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libswscale\/swscale.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libswscale\/version.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/include\/libswscale\/version_major.h" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib\/libavcodec.so" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib\/libavcodec.so.62" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib\/libavcodec.so.62.28.102" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib\/libavdevice.so" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib\/libavdevice.so.62" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib\/libavdevice.so.62.3.102" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib\/libavfilter.so" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib\/libavfilter.so.11" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib\/libavfilter.so.11.14.102" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib\/libavformat.so" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib\/libavformat.so.62" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib\/libavformat.so.62.12.102" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib\/libavutil.so" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib\/libavutil.so.60" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib\/libavutil.so.60.26.102" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib\/libswresample.so" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib\/libswresample.so.6" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib\/libswresample.so.6.3.102" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib\/libswscale.so" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib\/libswscale.so.9" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib\/libswscale.so.9.5.102" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib\/pkgconfig\/libavcodec.pc" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib\/pkgconfig\/libavdevice.pc" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib\/pkgconfig\/libavfilter.pc" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib\/pkgconfig\/libavformat.pc" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib\/pkgconfig\/libavutil.pc" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib\/pkgconfig\/libswresample.pc" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib\/pkgconfig\/libswscale.pc" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib64\/libavcodec.so" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib64\/libavcodec.so.62" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib64\/libavcodec.so.62.28.102" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib64\/libavdevice.so" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib64\/libavdevice.so.62" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib64\/libavdevice.so.62.3.102" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib64\/libavfilter.so" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib64\/libavfilter.so.11" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib64\/libavfilter.so.11.14.102" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib64\/libavformat.so" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib64\/libavformat.so.62" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib64\/libavformat.so.62.12.102" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib64\/libavutil.so" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib64\/libavutil.so.60" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib64\/libavutil.so.60.26.102" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib64\/libswresample.so" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib64\/libswresample.so.6" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib64\/libswresample.so.6.3.102" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib64\/libswscale.so" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib64\/libswscale.so.9" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib64\/libswscale.so.9.5.102" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib64\/pkgconfig\/libavcodec.pc" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib64\/pkgconfig\/libavdevice.pc" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib64\/pkgconfig\/libavfilter.pc" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib64\/pkgconfig\/libavformat.pc" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib64\/pkgconfig\/libavutil.pc" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib64\/pkgconfig\/libswresample.pc" ],
+            
+              [  "usr\/lib\/ffmpeg8\/lib64\/pkgconfig\/libswscale.pc" ],
+            
+              [  "usr\/lib\/ffmpeg8\/share\/ffmpeg\/examples\/Makefile" ],
+            
+              [  "usr\/lib\/ffmpeg8\/share\/ffmpeg\/examples\/README" ],
+            
+              [  "usr\/lib\/ffmpeg8\/share\/ffmpeg\/examples\/avio_http_serve_files.c" ],
+            
+              [  "usr\/lib\/ffmpeg8\/share\/ffmpeg\/examples\/avio_list_dir.c" ],
+            
+              [  "usr\/lib\/ffmpeg8\/share\/ffmpeg\/examples\/avio_read_callback.c" ],
+            
+              [  "usr\/lib\/ffmpeg8\/share\/ffmpeg\/examples\/decode_audio.c" ],
+            
+              [  "usr\/lib\/ffmpeg8\/share\/ffmpeg\/examples\/decode_filter_audio.c" ],
+            
+              [  "usr\/lib\/ffmpeg8\/share\/ffmpeg\/examples\/decode_filter_video.c" ],
+            
+              [  "usr\/lib\/ffmpeg8\/share\/ffmpeg\/examples\/decode_video.c" ],
+            
+              [  "usr\/lib\/ffmpeg8\/share\/ffmpeg\/examples\/demux_decode.c" ],
+            
+              [  "usr\/lib\/ffmpeg8\/share\/ffmpeg\/examples\/encode_audio.c" ],
+            
+              [  "usr\/lib\/ffmpeg8\/share\/ffmpeg\/examples\/encode_video.c" ],
+            
+              [  "usr\/lib\/ffmpeg8\/share\/ffmpeg\/examples\/extract_mvs.c" ],
+            
+              [  "usr\/lib\/ffmpeg8\/share\/ffmpeg\/examples\/filter_audio.c" ],
+            
+              [  "usr\/lib\/ffmpeg8\/share\/ffmpeg\/examples\/hw_decode.c" ],
+            
+              [  "usr\/lib\/ffmpeg8\/share\/ffmpeg\/examples\/mux.c" ],
+            
+              [  "usr\/lib\/ffmpeg8\/share\/ffmpeg\/examples\/qsv_decode.c" ],
+            
+              [  "usr\/lib\/ffmpeg8\/share\/ffmpeg\/examples\/qsv_transcode.c" ],
+            
+              [  "usr\/lib\/ffmpeg8\/share\/ffmpeg\/examples\/remux.c" ],
+            
+              [  "usr\/lib\/ffmpeg8\/share\/ffmpeg\/examples\/resample_audio.c" ],
+            
+              [  "usr\/lib\/ffmpeg8\/share\/ffmpeg\/examples\/scale_video.c" ],
+            
+              [  "usr\/lib\/ffmpeg8\/share\/ffmpeg\/examples\/show_metadata.c" ],
+            
+              [  "usr\/lib\/ffmpeg8\/share\/ffmpeg\/examples\/transcode.c" ],
+            
+              [  "usr\/lib\/ffmpeg8\/share\/ffmpeg\/examples\/transcode_aac.c" ],
+            
+              [  "usr\/lib\/ffmpeg8\/share\/ffmpeg\/examples\/vaapi_encode.c" ],
+            
+              [  "usr\/lib\/ffmpeg8\/share\/ffmpeg\/examples\/vaapi_transcode.c" ],
+            
+              [  "usr\/lib\/ffmpeg8\/share\/ffmpeg\/ffprobe.xsd" ],
+            
+              [  "usr\/lib\/ffmpeg8\/share\/ffmpeg\/libvpx-1080p.ffpreset" ],
+            
+              [  "usr\/lib\/ffmpeg8\/share\/ffmpeg\/libvpx-1080p50_60.ffpreset" ],
+            
+              [  "usr\/lib\/ffmpeg8\/share\/ffmpeg\/libvpx-360p.ffpreset" ],
+            
+              [  "usr\/lib\/ffmpeg8\/share\/ffmpeg\/libvpx-720p.ffpreset" ],
+            
+              [  "usr\/lib\/ffmpeg8\/share\/ffmpeg\/libvpx-720p50_60.ffpreset" ],
+            
+              [  "usr\/share\/doc\/ffmpeg-compat-4.4.8\/APIchanges.bz2" ],
+            
+              [  "usr\/share\/doc\/ffmpeg-compat-4.4.8\/CREDITS.bz2" ],
+            
+              [  "usr\/share\/doc\/ffmpeg-compat-4.4.8\/Changelog.bz2" ],
+            
+              [  "usr\/share\/doc\/ffmpeg-compat-4.4.8\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/ffmpeg-compat-4.4.8\/RELEASE_NOTES.bz2" ],
+            
+              [  "usr\/share\/doc\/ffmpeg-compat-6.1.6\/APIchanges.bz2" ],
+            
+              [  "usr\/share\/doc\/ffmpeg-compat-6.1.6\/CREDITS.bz2" ],
+            
+              [  "usr\/share\/doc\/ffmpeg-compat-6.1.6\/Changelog.bz2" ],
+            
+              [  "usr\/share\/doc\/ffmpeg-compat-6.1.6\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/ffmpeg-compat-6.1.6\/RELEASE_NOTES.bz2" ],
+            
+              [  "usr\/share\/doc\/ffmpeg-compat-8.1.2\/APIchanges.bz2" ],
+            
+              [  "usr\/share\/doc\/ffmpeg-compat-8.1.2\/CREDITS.bz2" ],
+            
+              [  "usr\/share\/doc\/ffmpeg-compat-8.1.2\/Changelog.bz2" ],
+            
+              [  "usr\/share\/doc\/ffmpeg-compat-8.1.2\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/ffmpeg-compat-8.1.2\/RELEASE_NOTES.bz2" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

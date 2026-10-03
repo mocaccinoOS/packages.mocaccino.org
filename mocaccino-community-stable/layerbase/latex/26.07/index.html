@@ -1,0 +1,616 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing layerbase/latex-26.07 in mocaccino-community-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> layerbase/latex-26.07
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                A complete TeX distribution
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-community-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-community-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of layerbase/latex
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/mocaccino-community:latex-layerbase-26.07" target="_blank"> quay.io/mocaccino/mocaccino-community:latex-layerbase-26.07 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/mocaccino-community:latex-layerbase-26.07/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 26.07  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong>  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/perl-libs">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  perl-libs &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/ruby">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  ruby &gt;=0 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: app-text/dvipng app-text/ps2eps app-text/texlive dev-tex/html2latex dev-tex/pgf dev-tex/tth dev-texlive/texlive-fontsrecommended dev-texlive/texlive-langgreek dev-texlive/texlive-latex dev-texlive/texlive-latexextra dev-texlive/texlive-latexrecommended dev-texlive/texlive-mathscience dev-texlive/texlive-metapost dev-texlive/texlive-pictures dev-texlive/texlive-plaingeneric virtual/latex-base
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="http://www.tug.org/texlive/" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> http://www.tug.org/texlive/ </a>
+    </span>
+  
+    <span class="tag">
+    <a href="http://hutchinson.belmont.ma.us/tth/" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> http://hutchinson.belmont.ma.us/tth/ </a>
+    </span>
+  
+    <span class="tag">
+    <a href="http://ivritex.sourceforge.net/" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> http://ivritex.sourceforge.net/ </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/app-text/dvipng">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  dvipng &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/app-text/dvisvgm">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  dvisvgm &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/app-text/epspdf">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  epspdf &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/app-text/lcdf-typetools">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  lcdf-typetools &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/app-text/pdfjam">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  pdfjam &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/app-text/ps2eps">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  ps2eps &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/app-text/ps2pkm">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  ps2pkm &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/app-text/t1utils">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  t1utils &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/app-text/texi2html">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  texi2html &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/app-text/texlive">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  texlive &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/app-text/ttf2pk2">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  ttf2pk2 &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/app-text/xdvik">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  xdvik &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Business-ISBN">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Business-ISBN &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Business-ISBN-Data">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Business-ISBN-Data &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Business-ISMN">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Business-ISMN &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Business-ISSN">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Business-ISSN &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Class-Singleton">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Class-Singleton &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Data-Compare">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Data-Compare &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Data-Dump">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Data-Dump &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Data-Uniqid">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Data-Uniqid &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/DateTime">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  DateTime &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/DateTime-Calendar-Julian">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  DateTime-Calendar-Julian &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/DateTime-Format-Builder">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  DateTime-Format-Builder &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/DateTime-Format-Strptime">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  DateTime-Format-Strptime &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/DateTime-Locale">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  DateTime-Locale &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/DateTime-TimeZone">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  DateTime-TimeZone &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Encode-JIS2K">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Encode-JIS2K &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/File-Find-Rule">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  File-Find-Rule &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/HTML-Tree">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  HTML-Tree &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/IPC-Run3">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  IPC-Run3 &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Lingua-Translit">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Lingua-Translit &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/List-AllUtils">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  List-AllUtils &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/List-SomeUtils">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  List-SomeUtils &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/List-SomeUtils-XS">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  List-SomeUtils-XS &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/List-UtilsBy">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  List-UtilsBy &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Log-Log4perl">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Log-Log4perl &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Number-Compare">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Number-Compare &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Parse-RecDescent">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Parse-RecDescent &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Regexp-Common">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Regexp-Common &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Sort-Key">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Sort-Key &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Spreadsheet-ParseExcel">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Spreadsheet-ParseExcel &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Text-BibTeX">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Text-BibTeX &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Text-Glob">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Text-Glob &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Text-Roman">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Text-Roman &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Tie-Cycle">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Tie-Cycle &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Unicode-EastAsianWidth">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Unicode-EastAsianWidth &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/XML-LibXML-Simple">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  XML-LibXML-Simple &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/XML-LibXSLT">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  XML-LibXSLT &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/XML-Writer">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  XML-Writer &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/autovivification">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  autovivification &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/libintl-perl">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  libintl-perl &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-tex/biber">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  biber &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-tex/biblatex">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  biblatex &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-tex/bibtexu">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  bibtexu &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-tex/glossaries">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  glossaries &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-tex/html2latex">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  html2latex &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-tex/latex-beamer">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  latex-beamer &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-tex/latex2pydata">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  latex2pydata &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-tex/latexdiff">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  latexdiff &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-tex/latexmk">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  latexmk &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-tex/minted">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  minted &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-tex/pgf">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  pgf &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-tex/tex4ht">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  tex4ht &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-tex/tth">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  tth &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-texlive/texlive-basic">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  texlive-basic &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-texlive/texlive-bibtexextra">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  texlive-bibtexextra &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-texlive/texlive-binextra">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  texlive-binextra &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-texlive/texlive-context">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  texlive-context &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-texlive/texlive-fontsextra">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  texlive-fontsextra &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-texlive/texlive-fontsrecommended">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  texlive-fontsrecommended &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-texlive/texlive-fontutils">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  texlive-fontutils &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-texlive/texlive-formatsextra">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  texlive-formatsextra &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-texlive/texlive-games">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  texlive-games &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-texlive/texlive-humanities">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  texlive-humanities &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-texlive/texlive-langarabic">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  texlive-langarabic &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-texlive/texlive-langcyrillic">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  texlive-langcyrillic &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-texlive/texlive-langczechslovak">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  texlive-langczechslovak &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-texlive/texlive-langenglish">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  texlive-langenglish &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-texlive/texlive-langeuropean">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  texlive-langeuropean &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-texlive/texlive-langfrench">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  texlive-langfrench &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-texlive/texlive-langgerman">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  texlive-langgerman &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-texlive/texlive-langgreek">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  texlive-langgreek &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-texlive/texlive-langitalian">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  texlive-langitalian &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-texlive/texlive-langother">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  texlive-langother &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-texlive/texlive-langpolish">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  texlive-langpolish &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-texlive/texlive-langportuguese">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  texlive-langportuguese &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-texlive/texlive-langspanish">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  texlive-langspanish &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-texlive/texlive-latex">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  texlive-latex &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-texlive/texlive-latexextra">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  texlive-latexextra &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-texlive/texlive-latexrecommended">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  texlive-latexrecommended &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-texlive/texlive-luatex">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  texlive-luatex &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-texlive/texlive-mathscience">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  texlive-mathscience &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-texlive/texlive-metapost">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  texlive-metapost &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-texlive/texlive-music">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  texlive-music &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-texlive/texlive-pictures">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  texlive-pictures &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-texlive/texlive-plaingeneric">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  texlive-plaingeneric &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-texlive/texlive-pstricks">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  texlive-pstricks &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-texlive/texlive-publishers">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  texlive-publishers &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-texlive/texlive-xetex">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  texlive-xetex &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/media-gfx/sam2p">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  sam2p &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/media-gfx/sam2p">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  sam2p &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/virtual/latex-base">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  latex-base &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/virtual/perl-Text-Balanced">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  perl-Text-Balanced &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/virtual/texi2dvi">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  texi2dvi &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+Package is hidden
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

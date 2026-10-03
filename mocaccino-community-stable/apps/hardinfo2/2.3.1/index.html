@@ -1,0 +1,1214 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing apps/hardinfo2-2.3.1 in mocaccino-community-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> apps/hardinfo2-2.3.1
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                System information and benchmark tool for Linux systems
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-community-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-community-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of apps/hardinfo2
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/mocaccino-community:hardinfo2-apps-2.3.1" target="_blank"> quay.io/mocaccino/mocaccino-community:hardinfo2-apps-2.3.1 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/mocaccino-community:hardinfo2-apps-2.3.1/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 2.3.1  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> GPL-2&#43; GPL-3&#43; LGPL-2.1&#43; </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/X">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  X &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/apps/flatpak">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  flatpak &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/apps/luajit">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  luajit 2.1.1780076327 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/cJSON">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  cJSON 1.7.19 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> appstream.id: org.hardinfo2.hardinfo2
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: app-admin/hardinfo2
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://hardinfo2.org" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://hardinfo2.org </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/app-admin/hardinfo2">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  hardinfo2 &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/app-benchmark/sysbench">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  sysbench &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-libs/concurrencykit">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  concurrencykit &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/net-misc/iperf">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  iperf &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/sys-fs/lsscsi">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  lsscsi &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "etc\/conf.d\/iperf3" ],
+            
+              [  "etc\/init.d\/iperf3" ],
+            
+              [  "usr\/bin\/hardinfo2" ],
+            
+              [  "usr\/bin\/hwinfo2_fetch_sysdata" ],
+            
+              [  "usr\/bin\/iperf3" ],
+            
+              [  "usr\/bin\/lsscsi" ],
+            
+              [  "usr\/bin\/sysbench" ],
+            
+              [  "usr\/lib\/systemd\/system\/hardinfo2.service" ],
+            
+              [  "usr\/lib\/systemd\/system\/iperf3.service" ],
+            
+              [  "usr\/lib64\/hardinfo2\/modules\/benchmark.so" ],
+            
+              [  "usr\/lib64\/hardinfo2\/modules\/computer.so" ],
+            
+              [  "usr\/lib64\/hardinfo2\/modules\/devices.so" ],
+            
+              [  "usr\/lib64\/hardinfo2\/modules\/network.so" ],
+            
+              [  "usr\/lib64\/hardinfo2\/modules\/vkgears" ],
+            
+              [  "usr\/lib64\/libck.so" ],
+            
+              [  "usr\/lib64\/libck.so.0" ],
+            
+              [  "usr\/lib64\/libck.so.0.7.2" ],
+            
+              [  "usr\/lib64\/libiperf.so" ],
+            
+              [  "usr\/lib64\/libiperf.so.0" ],
+            
+              [  "usr\/lib64\/libiperf.so.0.0.0" ],
+            
+              [  "usr\/lib64\/pkgconfig\/ck.pc" ],
+            
+              [  "usr\/share\/applications\/hardinfo2.desktop" ],
+            
+              [  "usr\/share\/doc\/concurrencykit-0.7.2-r1\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/hardinfo2-2.3.1\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/iperf-3.21\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/iperf-3.21\/RELNOTES.md.bz2" ],
+            
+              [  "usr\/share\/doc\/lsscsi-0.32-r1\/AUTHORS" ],
+            
+              [  "usr\/share\/doc\/lsscsi-0.32-r1\/CREDITS.bz2" ],
+            
+              [  "usr\/share\/doc\/lsscsi-0.32-r1\/ChangeLog.bz2" ],
+            
+              [  "usr\/share\/doc\/lsscsi-0.32-r1\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/sysbench-1.0.20-r101\/ChangeLog.bz2" ],
+            
+              [  "usr\/share\/doc\/sysbench-1.0.20-r101\/README-Oracle.md.bz2" ],
+            
+              [  "usr\/share\/doc\/sysbench-1.0.20-r101\/README-WIN.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/sysbench-1.0.20-r101\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/sysbench-1.0.20-r101\/html\/manual.html" ],
+            
+              [  "usr\/share\/hardinfo2\/arm.ids" ],
+            
+              [  "usr\/share\/hardinfo2\/benchmark.data" ],
+            
+              [  "usr\/share\/hardinfo2\/benchmark.json" ],
+            
+              [  "usr\/share\/hardinfo2\/blobs-update-version.json" ],
+            
+              [  "usr\/share\/hardinfo2\/edid.ids" ],
+            
+              [  "usr\/share\/hardinfo2\/ieee_oui.ids" ],
+            
+              [  "usr\/share\/hardinfo2\/kernel-module-icons.json" ],
+            
+              [  "usr\/share\/hardinfo2\/pci.ids" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/audio.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/battery.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/benchmark.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/bg1_dark.jpg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/bg1_light.jpg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/bg2_dark.jpg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/bg2_light.jpg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/bg3_dark.jpg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/bg3_light.jpg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/bg4_dark.jpg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/bg4_light.jpg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/bg5_dark.jpg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/bg5_light.jpg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/bg6_dark.jpg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/bg6_light.jpg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/blowfish.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/bluetooth.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/bolt.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/boot.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/camera-photo.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/camera-web.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/cdrom.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/chip.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/circle_green_check.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/circle_red_x.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/circle_yellow_exclaim.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/close.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/compress.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/computer.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/cryptohash.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/dev_removable.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/devel.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/devices.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/devicetree.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/dialog-error.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/dialog-information.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/dialog-warning.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/Vendefoul.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/almalinux.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/alpine.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/altlinux.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/arch.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/armbian.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/artix.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/astra.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/bodhi.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/cachyos.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/centos.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/clear-linux-os.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/debian.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/devuan.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/edubuntu.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/endeavouros.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/fedora-asahi-remix.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/fedora.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/garuda.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/gentoo.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/kali.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/kubuntu.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/liguros.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/linuxmint.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/lubuntu.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/mageia.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/manjaro.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/mxlinux.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/nixos.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/nobara.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/ol.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/openkylin.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/openmandriva.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/opensuse-leap.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/opensuse-tumbleweed.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/opensuse.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/parrot.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/pclinuxos.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/pop.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/postmarketos.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/puppy.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/pureos.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/raspberry-pi.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/raspbian.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/rebornos.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/revyos.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/rhel.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/rocky.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/slackware.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/slint.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/sparky.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/sysrescue.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/ubuntu-budgie.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/ubuntu-gnome.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/ubuntu-kylin.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/ubuntu-mate.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/ubuntu-studio.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/ubuntu.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/ultramarine.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/void.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/winux.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/xubuntu.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/distros\/zorin.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/dmi.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/environment.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/fan.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/fft.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/filesystem.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/firmware.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/gpu.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/hardinfo2.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/hdd.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/help.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/home.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/inputdevices.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/internet.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/joystick.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/keyboard.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/language.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/mb.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/media-floppy.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/media-removable.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/media-sd.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/media-usb.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/memory.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/memory_empty.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/modem.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/module.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/monitor.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/mouse.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/nautilus.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/network-arp.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/network-connections.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/network-interface.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/network-statistics.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/network.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/nqueens.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/os.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/pci.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/pcmcia.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/pen.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/printer.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/processor.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/raytrace.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/refresh.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/report-bug.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/report.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/resources.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/route.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/security.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/shares.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/summary.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/sync.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/therm.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/touch.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/updates.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/usb.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/users.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/pixmaps\/wireless.svg" ],
+            
+              [  "usr\/share\/hardinfo2\/releaseyear.json" ],
+            
+              [  "usr\/share\/hardinfo2\/sdcard.ids" ],
+            
+              [  "usr\/share\/hardinfo2\/usb.ids" ],
+            
+              [  "usr\/share\/hardinfo2\/vendor.ids" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/apps\/hardinfo2.svg" ],
+            
+              [  "usr\/share\/locale\/da\/LC_MESSAGES\/hardinfo2.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/hardinfo2.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/hardinfo2.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/hardinfo2.mo" ],
+            
+              [  "usr\/share\/locale\/hu\/LC_MESSAGES\/hardinfo2.mo" ],
+            
+              [  "usr\/share\/locale\/ka\/LC_MESSAGES\/hardinfo2.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/hardinfo2.mo" ],
+            
+              [  "usr\/share\/locale\/pt\/LC_MESSAGES\/hardinfo2.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/hardinfo2.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/hardinfo2.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/hardinfo2.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/hardinfo2.mo" ],
+            
+              [  "usr\/share\/locale\/ua\/LC_MESSAGES\/hardinfo2.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/hardinfo2.mo" ],
+            
+              [  "usr\/share\/man\/man1\/hardinfo2.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/iperf3.1.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/CK_ARRAY_FOREACH.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/CK_COHORT_INIT.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/CK_COHORT_INSTANCE.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/CK_COHORT_LOCK.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/CK_COHORT_PROTOTYPE.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/CK_COHORT_TRYLOCK.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/CK_COHORT_TRYLOCK_PROTOTYPE.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/CK_COHORT_UNLOCK.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/CK_HS_HASH.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/CK_RHS_HASH.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/CK_RWCOHORT_INIT.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/CK_RWCOHORT_INSTANCE.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/CK_RWCOHORT_PROTOTYPE.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/CK_RWCOHORT_READ_LOCK.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/CK_RWCOHORT_READ_UNLOCK.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/CK_RWCOHORT_WRITE_LOCK.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/CK_RWCOHORT_WRITE_UNLOCK.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_array_buffer.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_array_commit.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_array_deinit.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_array_init.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_array_initialized.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_array_length.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_array_put.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_array_put_unique.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_array_remove.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_bitmap_base.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_bitmap_bits.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_bitmap_bts.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_bitmap_buffer.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_bitmap_clear.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_bitmap_init.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_bitmap_iterator_init.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_bitmap_next.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_bitmap_reset.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_bitmap_set.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_bitmap_size.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_bitmap_test.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_bitmap_union.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_brlock.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_cohort.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_elide.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_epoch_barrier.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_epoch_begin.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_epoch_call.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_epoch_end.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_epoch_init.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_epoch_poll.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_epoch_reclaim.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_epoch_recycle.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_epoch_register.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_epoch_synchronize.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_epoch_unregister.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_hs_apply.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_hs_count.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_hs_destroy.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_hs_fas.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_hs_gc.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_hs_get.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_hs_grow.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_hs_init.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_hs_iterator_init.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_hs_move.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_hs_next.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_hs_put.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_hs_put_unique.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_hs_rebuild.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_hs_remove.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_hs_reset.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_hs_reset_size.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_hs_set.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_hs_stat.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_ht_count.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_ht_destroy.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_ht_entry_empty.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_ht_entry_key.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_ht_entry_key_direct.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_ht_entry_key_length.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_ht_entry_key_set.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_ht_entry_key_set_direct.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_ht_entry_set.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_ht_entry_set_direct.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_ht_entry_value.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_ht_entry_value_direct.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_ht_gc.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_ht_get_spmc.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_ht_grow_spmc.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_ht_hash.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_ht_hash_direct.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_ht_init.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_ht_iterator_init.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_ht_next.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_ht_put_spmc.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_ht_remove_spmc.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_ht_reset_size_spmc.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_ht_reset_spmc.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_ht_set_spmc.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_ht_stat.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_pflock.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_pr.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_pr_add.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_pr_and.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_pr_barrier.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_pr_btc.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_pr_btr.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_pr_bts.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_pr_cas.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_pr_dec.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_pr_faa.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_pr_fas.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_pr_fence_acquire.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_pr_fence_atomic.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_pr_fence_atomic_load.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_pr_fence_atomic_store.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_pr_fence_load.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_pr_fence_load_atomic.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_pr_fence_load_depends.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_pr_fence_load_store.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_pr_fence_memory.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_pr_fence_release.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_pr_fence_store.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_pr_fence_store_atomic.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_pr_fence_store_load.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_pr_inc.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_pr_load.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_pr_neg.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_pr_not.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_pr_or.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_pr_rtm.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_pr_stall.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_pr_store.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_pr_sub.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_pr_xor.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_queue.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_rhs_apply.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_rhs_count.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_rhs_destroy.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_rhs_fas.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_rhs_gc.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_rhs_get.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_rhs_grow.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_rhs_init.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_rhs_iterator_init.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_rhs_move.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_rhs_next.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_rhs_put.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_rhs_put_unique.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_rhs_rebuild.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_rhs_remove.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_rhs_reset.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_rhs_reset_size.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_rhs_set.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_rhs_stat.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_ring_capacity.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_ring_dequeue_spmc.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_ring_dequeue_spsc.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_ring_enqueue_spmc.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_ring_enqueue_spmc_size.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_ring_enqueue_spsc.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_ring_enqueue_spsc_size.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_ring_init.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_ring_size.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_ring_trydequeue_spmc.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_rwcohort.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_rwlock.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_sequence.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_spinlock.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_swlock.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ck_tflock.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/libiperf.3.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/lsscsi.8.bz2" ],
+            
+              [  "usr\/share\/metainfo\/org.hardinfo2.hardinfo2.metainfo.xml" ],
+            
+              [  "usr\/share\/sysbench\/bulk_insert.lua" ],
+            
+              [  "usr\/share\/sysbench\/oltp_common.lua" ],
+            
+              [  "usr\/share\/sysbench\/oltp_delete.lua" ],
+            
+              [  "usr\/share\/sysbench\/oltp_insert.lua" ],
+            
+              [  "usr\/share\/sysbench\/oltp_point_select.lua" ],
+            
+              [  "usr\/share\/sysbench\/oltp_read_only.lua" ],
+            
+              [  "usr\/share\/sysbench\/oltp_read_write.lua" ],
+            
+              [  "usr\/share\/sysbench\/oltp_update_index.lua" ],
+            
+              [  "usr\/share\/sysbench\/oltp_update_non_index.lua" ],
+            
+              [  "usr\/share\/sysbench\/oltp_write_only.lua" ],
+            
+              [  "usr\/share\/sysbench\/select_random_points.lua" ],
+            
+              [  "usr\/share\/sysbench\/select_random_ranges.lua" ],
+            
+              [  "usr\/share\/sysbench\/tests\/include\/api_sql_common.sh" ],
+            
+              [  "usr\/share\/sysbench\/tests\/include\/config.sh" ],
+            
+              [  "usr\/share\/sysbench\/tests\/include\/drv_common.sh" ],
+            
+              [  "usr\/share\/sysbench\/tests\/include\/inspect.lua" ],
+            
+              [  "usr\/share\/sysbench\/tests\/include\/mysql_common.sh" ],
+            
+              [  "usr\/share\/sysbench\/tests\/include\/oltp_legacy\/bulk_insert.lua" ],
+            
+              [  "usr\/share\/sysbench\/tests\/include\/oltp_legacy\/common.lua" ],
+            
+              [  "usr\/share\/sysbench\/tests\/include\/oltp_legacy\/delete.lua" ],
+            
+              [  "usr\/share\/sysbench\/tests\/include\/oltp_legacy\/insert.lua" ],
+            
+              [  "usr\/share\/sysbench\/tests\/include\/oltp_legacy\/oltp.lua" ],
+            
+              [  "usr\/share\/sysbench\/tests\/include\/oltp_legacy\/oltp_simple.lua" ],
+            
+              [  "usr\/share\/sysbench\/tests\/include\/oltp_legacy\/parallel_prepare.lua" ],
+            
+              [  "usr\/share\/sysbench\/tests\/include\/oltp_legacy\/select.lua" ],
+            
+              [  "usr\/share\/sysbench\/tests\/include\/oltp_legacy\/select_random_points.lua" ],
+            
+              [  "usr\/share\/sysbench\/tests\/include\/oltp_legacy\/select_random_ranges.lua" ],
+            
+              [  "usr\/share\/sysbench\/tests\/include\/oltp_legacy\/update_index.lua" ],
+            
+              [  "usr\/share\/sysbench\/tests\/include\/oltp_legacy\/update_non_index.lua" ],
+            
+              [  "usr\/share\/sysbench\/tests\/include\/pgsql_common.sh" ],
+            
+              [  "usr\/share\/sysbench\/tests\/include\/script_bulk_insert_common.sh" ],
+            
+              [  "usr\/share\/sysbench\/tests\/include\/script_oltp_common.sh" ],
+            
+              [  "usr\/share\/sysbench\/tests\/include\/script_oltp_legacy_common.sh" ],
+            
+              [  "usr\/share\/sysbench\/tests\/include\/script_select_random_common.sh" ],
+            
+              [  "usr\/share\/sysbench\/tests\/include\/script_select_random_legacy_common.sh" ],
+            
+              [  "usr\/share\/sysbench\/tests\/t\/1st.t" ],
+            
+              [  "usr\/share\/sysbench\/tests\/t\/api_basic.t" ],
+            
+              [  "usr\/share\/sysbench\/tests\/t\/api_histogram.t" ],
+            
+              [  "usr\/share\/sysbench\/tests\/t\/api_legacy_basic.t" ],
+            
+              [  "usr\/share\/sysbench\/tests\/t\/api_legacy_rand.t" ],
+            
+              [  "usr\/share\/sysbench\/tests\/t\/api_legacy_sql.t" ],
+            
+              [  "usr\/share\/sysbench\/tests\/t\/api_rand.t" ],
+            
+              [  "usr\/share\/sysbench\/tests\/t\/api_reports.t" ],
+            
+              [  "usr\/share\/sysbench\/tests\/t\/api_sql_mysql.t" ],
+            
+              [  "usr\/share\/sysbench\/tests\/t\/api_sql_pgsql.t" ],
+            
+              [  "usr\/share\/sysbench\/tests\/t\/cmd_cleanup.t" ],
+            
+              [  "usr\/share\/sysbench\/tests\/t\/cmd_help.t" ],
+            
+              [  "usr\/share\/sysbench\/tests\/t\/cmd_prepare.t" ],
+            
+              [  "usr\/share\/sysbench\/tests\/t\/cmd_run.t" ],
+            
+              [  "usr\/share\/sysbench\/tests\/t\/cmdline.t" ],
+            
+              [  "usr\/share\/sysbench\/tests\/t\/commands.t" ],
+            
+              [  "usr\/share\/sysbench\/tests\/t\/drivers.t" ],
+            
+              [  "usr\/share\/sysbench\/tests\/t\/drv_mysql.t" ],
+            
+              [  "usr\/share\/sysbench\/tests\/t\/drv_pgsql.t" ],
+            
+              [  "usr\/share\/sysbench\/tests\/t\/help_drv_mysql.t" ],
+            
+              [  "usr\/share\/sysbench\/tests\/t\/help_drv_pgsql.t" ],
+            
+              [  "usr\/share\/sysbench\/tests\/t\/opt_help.t" ],
+            
+              [  "usr\/share\/sysbench\/tests\/t\/opt_histogram.t" ],
+            
+              [  "usr\/share\/sysbench\/tests\/t\/opt_rate.t" ],
+            
+              [  "usr\/share\/sysbench\/tests\/t\/opt_report_checkpoints.t" ],
+            
+              [  "usr\/share\/sysbench\/tests\/t\/opt_report_interval.t" ],
+            
+              [  "usr\/share\/sysbench\/tests\/t\/opt_version.t" ],
+            
+              [  "usr\/share\/sysbench\/tests\/t\/script_bulk_insert_mysql.t" ],
+            
+              [  "usr\/share\/sysbench\/tests\/t\/script_bulk_insert_pgsql.t" ],
+            
+              [  "usr\/share\/sysbench\/tests\/t\/script_oltp_delete_mysql.t" ],
+            
+              [  "usr\/share\/sysbench\/tests\/t\/script_oltp_delete_pgsql.t" ],
+            
+              [  "usr\/share\/sysbench\/tests\/t\/script_oltp_help.t" ],
+            
+              [  "usr\/share\/sysbench\/tests\/t\/script_oltp_insert_mysql.t" ],
+            
+              [  "usr\/share\/sysbench\/tests\/t\/script_oltp_insert_pgsql.t" ],
+            
+              [  "usr\/share\/sysbench\/tests\/t\/script_oltp_point_select_mysql.t" ],
+            
+              [  "usr\/share\/sysbench\/tests\/t\/script_oltp_point_select_pgsql.t" ],
+            
+              [  "usr\/share\/sysbench\/tests\/t\/script_oltp_read_write_mysql.t" ],
+            
+              [  "usr\/share\/sysbench\/tests\/t\/script_oltp_read_write_pgsql.t" ],
+            
+              [  "usr\/share\/sysbench\/tests\/t\/script_select_random_mysql.t" ],
+            
+              [  "usr\/share\/sysbench\/tests\/t\/script_select_random_pgsql.t" ],
+            
+              [  "usr\/share\/sysbench\/tests\/t\/test_cpu.t" ],
+            
+              [  "usr\/share\/sysbench\/tests\/t\/test_fileio.t" ],
+            
+              [  "usr\/share\/sysbench\/tests\/t\/test_memory.t" ],
+            
+              [  "usr\/share\/sysbench\/tests\/t\/test_mutex.t" ],
+            
+              [  "usr\/share\/sysbench\/tests\/t\/test_threads.t" ],
+            
+              [  "usr\/share\/sysbench\/tests\/t\/tests.t" ],
+            
+              [  "usr\/share\/sysbench\/tests\/test_run.sh" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

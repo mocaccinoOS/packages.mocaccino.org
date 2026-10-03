@@ -1,0 +1,597 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing apps/retroarch-1.22.2&#43;2 in mocaccino-community-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> apps/retroarch-1.22.2&#43;2
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                RetroArch is a frontend for emulators, game engines and media players
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-community-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-community-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of apps/retroarch
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/mocaccino-community:retroarch-apps-1.22.2-2" target="_blank"> quay.io/mocaccino/mocaccino-community:retroarch-apps-1.22.2-2 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/mocaccino-community:retroarch-apps-1.22.2-2/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 1.22.2&#43;2  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> GPL-3 </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/X">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  X &gt;=0 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> appstream.id: org.libretro.RetroArch
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: games-emulation/libretro-info games-emulation/RetroArch
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://www.retroarch.com" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://www.retroarch.com </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/games-emulation/libretro-info">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  libretro-info &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/games-emulation/RetroArch">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  RetroArch &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "etc\/retroarch.cfg" ],
+            
+              [  "usr\/bin\/retroarch" ],
+            
+              [  "usr\/bin\/retroarch-cg2glsl" ],
+            
+              [  "usr\/share\/applications\/com.libretro.RetroArch.desktop" ],
+            
+              [  "usr\/share\/doc\/RetroArch-1.22.2\/COPYING.bz2" ],
+            
+              [  "usr\/share\/doc\/RetroArch-1.22.2\/README.md.bz2" ],
+            
+              [  "usr\/share\/libretro\/info\/00_example_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/2048_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/3dengine_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/4do_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/81_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/advanced_tests_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/atari800_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/blastem_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/bluemsx_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/bnes_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/bsnes_accuracy_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/bsnes_balanced_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/bsnes_cplusplus98_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/bsnes_mercury_accuracy_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/bsnes_mercury_balanced_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/bsnes_mercury_performance_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/bsnes_performance_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/cannonball_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/cap32_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/chailove_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/citra_canary_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/citra_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/craft_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/crocods_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/cruzes_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/desmume2015_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/desmume_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/dinothawr_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/dolphin_launcher_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/dolphin_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/dosbox_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/dosbox_svn_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/easyrpg_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/emux_chip8_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/emux_gb_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/emux_nes_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/emux_sms_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/fbalpha2012_cps1_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/fbalpha2012_cps2_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/fbalpha2012_cps3_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/fbalpha2012_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/fbalpha2012_neogeo_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/fbalpha_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/fceumm_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/ffmpeg_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/fixgb_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/fixnes_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/fmsx_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/freeintv_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/freej2me_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/frodo_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/fsuae_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/fuse_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/gambatte_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/gearboy_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/gearsystem_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/genesis_plus_gx_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/gme_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/gpsp_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/gw_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/handy_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/hatari_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/higan_sfc_balanced_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/higan_sfc_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/imageviewer_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/lutro_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/mame2000_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/mame2003_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/mame2003_midway_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/mame2003_plus_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/mame2009_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/mame2010_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/mame2014_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/mame2016_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/mame_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/mednafen_gba_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/mednafen_lynx_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/mednafen_ngp_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/mednafen_pce_fast_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/mednafen_pcfx_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/mednafen_psx_hw_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/mednafen_psx_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/mednafen_saturn_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/mednafen_snes_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/mednafen_supergrafx_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/mednafen_vb_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/mednafen_wswan_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/melonds_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/mesen_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/mess2014_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/meteor_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/mgba_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/mpv_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/mrboom_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/mupen64plus_gles3_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/mupen64plus_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/nekop2_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/nestopia_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/np2kai_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/nxengine_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/o2em_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/openlara_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/opentyrian_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/parallel_n64_debug_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/parallel_n64_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/pascal_pong_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/pcem_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/pcsx1_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/pcsx_rearmed_interpreter_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/pcsx_rearmed_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/pcsx_rearmed_libretro_neon.info" ],
+            
+              [  "usr\/share\/libretro\/info\/picodrive_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/pocketcdg_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/pokemini_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/ppsspp_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/prboom_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/prosystem_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/puae_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/px68k_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/quicknes_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/redream_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/reicast_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/reicast_oit_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/reminiscence_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/remotejoy_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/rustation_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/sameboy_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/scummvm_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/snes9x2002_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/snes9x2005_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/snes9x2005_plus_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/snes9x2010_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/snes9x_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/stella_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/stonesoup_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/tempgba_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/test_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/test_netplay_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/testaudio_callback_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/testaudio_no_callback_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/testaudio_playback_wav_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/testgl_compute_shaders_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/testgl_ff_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/testgl_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/testinput_buttontest_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/testretroluxury_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/testsw_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/testsw_vram_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/testvulkan_async_compute_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/testvulkan_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/tgbdual_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/theodore_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/thepowdertoy_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/tyrquake_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/uae4arm_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/ume2014_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/uzem_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/vba_next_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/vbam_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/vecx_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/vemulator_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/vice_x128_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/vice_x64_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/vice_xplus4_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/vice_xvic_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/virtualjaguar_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/x64sdl_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/xrick_libretro.info" ],
+            
+              [  "usr\/share\/libretro\/info\/yabause_libretro.info" ],
+            
+              [  "usr\/share\/man\/man6\/retroarch-cg2glsl.6.bz2" ],
+            
+              [  "usr\/share\/man\/man6\/retroarch.6.bz2" ],
+            
+              [  "usr\/share\/metainfo\/com.libretro.RetroArch.metainfo.xml" ],
+            
+              [  "usr\/share\/pixmaps\/com.libretro.RetroArch.svg" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

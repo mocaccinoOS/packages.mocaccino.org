@@ -1,0 +1,4027 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing apps/postgresql-18.6 in mocaccino-community-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> apps/postgresql-18.6
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                PostgreSQL RDBMS
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-community-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-community-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of apps/postgresql
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/mocaccino-community:postgresql-apps-18.6" target="_blank"> quay.io/mocaccino/mocaccino-community:postgresql-apps-18.6 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/mocaccino-community:postgresql-apps-18.6/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 18.6  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> POSTGRESQL GPL-2 </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/sys-fs">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  sys-fs &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/ossp-uuid">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  ossp-uuid 1.6.2-r7&#43;3 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/entity/postgres">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  postgres &gt;=0 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: dev-db/postgresql
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://www.postgresql.org" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://www.postgresql.org </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-db/postgresql">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  postgresql &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/app-eselect/eselect-postgresql">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  eselect-postgresql &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "etc\/conf.d\/postgresql-18" ],
+            
+              [  "etc\/init.d\/postgresql-18" ],
+            
+              [  "etc\/pam.d\/postgresql-18" ],
+            
+              [  "etc\/postgresql-18\/psqlrc" ],
+            
+              [  "usr\/bin\/clusterdb" ],
+            
+              [  "usr\/bin\/clusterdb18" ],
+            
+              [  "usr\/bin\/createdb" ],
+            
+              [  "usr\/bin\/createdb18" ],
+            
+              [  "usr\/bin\/createuser" ],
+            
+              [  "usr\/bin\/createuser18" ],
+            
+              [  "usr\/bin\/dropdb" ],
+            
+              [  "usr\/bin\/dropdb18" ],
+            
+              [  "usr\/bin\/dropuser" ],
+            
+              [  "usr\/bin\/dropuser18" ],
+            
+              [  "usr\/bin\/ecpg" ],
+            
+              [  "usr\/bin\/ecpg18" ],
+            
+              [  "usr\/bin\/initdb" ],
+            
+              [  "usr\/bin\/initdb18" ],
+            
+              [  "usr\/bin\/oid2name" ],
+            
+              [  "usr\/bin\/oid2name18" ],
+            
+              [  "usr\/bin\/pg_amcheck" ],
+            
+              [  "usr\/bin\/pg_amcheck18" ],
+            
+              [  "usr\/bin\/pg_archivecleanup" ],
+            
+              [  "usr\/bin\/pg_archivecleanup18" ],
+            
+              [  "usr\/bin\/pg_basebackup" ],
+            
+              [  "usr\/bin\/pg_basebackup18" ],
+            
+              [  "usr\/bin\/pg_checksums" ],
+            
+              [  "usr\/bin\/pg_checksums18" ],
+            
+              [  "usr\/bin\/pg_combinebackup" ],
+            
+              [  "usr\/bin\/pg_combinebackup18" ],
+            
+              [  "usr\/bin\/pg_config" ],
+            
+              [  "usr\/bin\/pg_config18" ],
+            
+              [  "usr\/bin\/pg_controldata" ],
+            
+              [  "usr\/bin\/pg_controldata18" ],
+            
+              [  "usr\/bin\/pg_createsubscriber" ],
+            
+              [  "usr\/bin\/pg_createsubscriber18" ],
+            
+              [  "usr\/bin\/pg_ctl" ],
+            
+              [  "usr\/bin\/pg_ctl18" ],
+            
+              [  "usr\/bin\/pg_dump" ],
+            
+              [  "usr\/bin\/pg_dump18" ],
+            
+              [  "usr\/bin\/pg_dumpall" ],
+            
+              [  "usr\/bin\/pg_dumpall18" ],
+            
+              [  "usr\/bin\/pg_isready" ],
+            
+              [  "usr\/bin\/pg_isready18" ],
+            
+              [  "usr\/bin\/pg_receivewal" ],
+            
+              [  "usr\/bin\/pg_receivewal18" ],
+            
+              [  "usr\/bin\/pg_recvlogical" ],
+            
+              [  "usr\/bin\/pg_recvlogical18" ],
+            
+              [  "usr\/bin\/pg_resetwal" ],
+            
+              [  "usr\/bin\/pg_resetwal18" ],
+            
+              [  "usr\/bin\/pg_restore" ],
+            
+              [  "usr\/bin\/pg_restore18" ],
+            
+              [  "usr\/bin\/pg_rewind" ],
+            
+              [  "usr\/bin\/pg_rewind18" ],
+            
+              [  "usr\/bin\/pg_test_fsync" ],
+            
+              [  "usr\/bin\/pg_test_fsync18" ],
+            
+              [  "usr\/bin\/pg_test_timing" ],
+            
+              [  "usr\/bin\/pg_test_timing18" ],
+            
+              [  "usr\/bin\/pg_upgrade" ],
+            
+              [  "usr\/bin\/pg_upgrade18" ],
+            
+              [  "usr\/bin\/pg_verifybackup" ],
+            
+              [  "usr\/bin\/pg_verifybackup18" ],
+            
+              [  "usr\/bin\/pg_waldump" ],
+            
+              [  "usr\/bin\/pg_waldump18" ],
+            
+              [  "usr\/bin\/pg_walsummary" ],
+            
+              [  "usr\/bin\/pg_walsummary18" ],
+            
+              [  "usr\/bin\/pgbench" ],
+            
+              [  "usr\/bin\/pgbench18" ],
+            
+              [  "usr\/bin\/postgres" ],
+            
+              [  "usr\/bin\/postgres18" ],
+            
+              [  "usr\/bin\/postgresql-18-check-db-dir" ],
+            
+              [  "usr\/bin\/postgresql-config" ],
+            
+              [  "usr\/bin\/psql" ],
+            
+              [  "usr\/bin\/psql18" ],
+            
+              [  "usr\/bin\/reindexdb" ],
+            
+              [  "usr\/bin\/reindexdb18" ],
+            
+              [  "usr\/bin\/vacuumdb" ],
+            
+              [  "usr\/bin\/vacuumdb18" ],
+            
+              [  "usr\/bin\/vacuumlo" ],
+            
+              [  "usr\/bin\/vacuumlo18" ],
+            
+              [  "usr\/lib\/systemd\/system\/postgresql-18.service" ],
+            
+              [  "usr\/lib\/tmpfiles.d\/postgresql-18.conf" ],
+            
+              [  "usr\/lib64\/libecpg.so" ],
+            
+              [  "usr\/lib64\/libecpg.so.6" ],
+            
+              [  "usr\/lib64\/libecpg.so.6.18" ],
+            
+              [  "usr\/lib64\/libecpg_compat.so" ],
+            
+              [  "usr\/lib64\/libecpg_compat.so.3" ],
+            
+              [  "usr\/lib64\/libecpg_compat.so.3.18" ],
+            
+              [  "usr\/lib64\/libpgcommon.a" ],
+            
+              [  "usr\/lib64\/libpgport.a" ],
+            
+              [  "usr\/lib64\/libpgtypes.so" ],
+            
+              [  "usr\/lib64\/libpgtypes.so.3" ],
+            
+              [  "usr\/lib64\/libpgtypes.so.3.18" ],
+            
+              [  "usr\/lib64\/libpq.so" ],
+            
+              [  "usr\/lib64\/libpq.so.5" ],
+            
+              [  "usr\/lib64\/libpq.so.5.18" ],
+            
+              [  "usr\/lib64\/libpqwalreceiver.so" ],
+            
+              [  "usr\/lib64\/postgresql" ],
+            
+              [  "usr\/lib64\/postgresql-18\/bin\/clusterdb" ],
+            
+              [  "usr\/lib64\/postgresql-18\/bin\/createdb" ],
+            
+              [  "usr\/lib64\/postgresql-18\/bin\/createuser" ],
+            
+              [  "usr\/lib64\/postgresql-18\/bin\/dropdb" ],
+            
+              [  "usr\/lib64\/postgresql-18\/bin\/dropuser" ],
+            
+              [  "usr\/lib64\/postgresql-18\/bin\/ecpg" ],
+            
+              [  "usr\/lib64\/postgresql-18\/bin\/initdb" ],
+            
+              [  "usr\/lib64\/postgresql-18\/bin\/oid2name" ],
+            
+              [  "usr\/lib64\/postgresql-18\/bin\/pg_amcheck" ],
+            
+              [  "usr\/lib64\/postgresql-18\/bin\/pg_archivecleanup" ],
+            
+              [  "usr\/lib64\/postgresql-18\/bin\/pg_basebackup" ],
+            
+              [  "usr\/lib64\/postgresql-18\/bin\/pg_checksums" ],
+            
+              [  "usr\/lib64\/postgresql-18\/bin\/pg_combinebackup" ],
+            
+              [  "usr\/lib64\/postgresql-18\/bin\/pg_config" ],
+            
+              [  "usr\/lib64\/postgresql-18\/bin\/pg_controldata" ],
+            
+              [  "usr\/lib64\/postgresql-18\/bin\/pg_createsubscriber" ],
+            
+              [  "usr\/lib64\/postgresql-18\/bin\/pg_ctl" ],
+            
+              [  "usr\/lib64\/postgresql-18\/bin\/pg_dump" ],
+            
+              [  "usr\/lib64\/postgresql-18\/bin\/pg_dumpall" ],
+            
+              [  "usr\/lib64\/postgresql-18\/bin\/pg_isready" ],
+            
+              [  "usr\/lib64\/postgresql-18\/bin\/pg_receivewal" ],
+            
+              [  "usr\/lib64\/postgresql-18\/bin\/pg_recvlogical" ],
+            
+              [  "usr\/lib64\/postgresql-18\/bin\/pg_resetwal" ],
+            
+              [  "usr\/lib64\/postgresql-18\/bin\/pg_restore" ],
+            
+              [  "usr\/lib64\/postgresql-18\/bin\/pg_rewind" ],
+            
+              [  "usr\/lib64\/postgresql-18\/bin\/pg_test_fsync" ],
+            
+              [  "usr\/lib64\/postgresql-18\/bin\/pg_test_timing" ],
+            
+              [  "usr\/lib64\/postgresql-18\/bin\/pg_upgrade" ],
+            
+              [  "usr\/lib64\/postgresql-18\/bin\/pg_verifybackup" ],
+            
+              [  "usr\/lib64\/postgresql-18\/bin\/pg_waldump" ],
+            
+              [  "usr\/lib64\/postgresql-18\/bin\/pg_walsummary" ],
+            
+              [  "usr\/lib64\/postgresql-18\/bin\/pgbench" ],
+            
+              [  "usr\/lib64\/postgresql-18\/bin\/postgres" ],
+            
+              [  "usr\/lib64\/postgresql-18\/bin\/psql" ],
+            
+              [  "usr\/lib64\/postgresql-18\/bin\/reindexdb" ],
+            
+              [  "usr\/lib64\/postgresql-18\/bin\/vacuumdb" ],
+            
+              [  "usr\/lib64\/postgresql-18\/bin\/vacuumlo" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/_int.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/amcheck.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/auth_delay.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/auto_explain.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/autoinc.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/basebackup_to_shell.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/basic_archive.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/bloom.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/bool_plperl.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/btree_gin.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/btree_gist.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/citext.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/cube.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/cyrillic_and_mic.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/dblink.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/dict_int.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/dict_snowball.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/dict_xsyn.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/earthdistance.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/euc2004_sjis2004.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/euc_cn_and_mic.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/euc_jp_and_sjis.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/euc_kr_and_mic.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/euc_tw_and_big5.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/file_fdw.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/fuzzystrmatch.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/hstore.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/hstore_plperl.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/hstore_plpython3.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/insert_username.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/isn.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/jsonb_plperl.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/jsonb_plpython3.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/latin2_and_win1250.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/latin_and_mic.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/libecpg.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/libecpg.so.6" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/libecpg.so.6.18" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/libecpg_compat.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/libecpg_compat.so.3" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/libecpg_compat.so.3.18" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/libpgcommon.a" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/libpgport.a" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/libpgtypes.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/libpgtypes.so.3" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/libpgtypes.so.3.18" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/libpq.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/libpq.so.5" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/libpq.so.5.18" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/libpqwalreceiver.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/lo.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/ltree.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/ltree_plpython3.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/moddatetime.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/pageinspect.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/passwordcheck.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/pg_buffercache.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/pg_freespacemap.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/pg_logicalinspect.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/pg_overexplain.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/pg_prewarm.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/pg_stat_statements.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/pg_surgery.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/pg_trgm.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/pg_visibility.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/pg_walinspect.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/pgcrypto.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/pgoutput.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/pgrowlocks.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/pgstattuple.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/pgxml.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/pgxs\/config\/install-sh" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/pgxs\/config\/missing" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/pgxs\/src\/Makefile.global" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/pgxs\/src\/Makefile.port" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/pgxs\/src\/Makefile.shlib" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/pgxs\/src\/makefiles\/pgxs.mk" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/pgxs\/src\/nls-global.mk" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/pgxs\/src\/test\/isolation\/isolationtester" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/pgxs\/src\/test\/isolation\/pg_isolation_regress" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/pgxs\/src\/test\/regress\/pg_regress" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/pkgconfig\/libecpg.pc" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/pkgconfig\/libecpg_compat.pc" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/pkgconfig\/libpgtypes.pc" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/pkgconfig\/libpq.pc" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/plperl.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/plpgsql.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/plpython3.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/postgres_fdw.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/refint.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/seg.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/sslinfo.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/tablefunc.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/tcn.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/test_decoding.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/tsm_system_rows.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/tsm_system_time.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/unaccent.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/utf8_and_big5.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/utf8_and_cyrillic.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/utf8_and_euc2004.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/utf8_and_euc_cn.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/utf8_and_euc_jp.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/utf8_and_euc_kr.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/utf8_and_euc_tw.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/utf8_and_gb18030.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/utf8_and_gbk.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/utf8_and_iso8859.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/utf8_and_iso8859_1.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/utf8_and_johab.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/utf8_and_sjis.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/utf8_and_sjis2004.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/utf8_and_uhc.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/utf8_and_win.so" ],
+            
+              [  "usr\/lib64\/postgresql-18\/lib64\/uuid-ossp.so" ],
+            
+              [  "usr\/share\/doc\/postgresql-18.6\/HISTORY.bz2" ],
+            
+              [  "usr\/share\/doc\/postgresql-18.6\/extension\/autoinc.example.bz2" ],
+            
+              [  "usr\/share\/doc\/postgresql-18.6\/extension\/insert_username.example.bz2" ],
+            
+              [  "usr\/share\/doc\/postgresql-18.6\/extension\/moddatetime.example.bz2" ],
+            
+              [  "usr\/share\/doc\/postgresql-18.6\/extension\/refint.example.bz2" ],
+            
+              [  "usr\/share\/eselect\/modules\/postgresql.eselect" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/ecpg-18.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/ecpglib6-18.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/initdb-18.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/libpq5-18.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/pg_archivecleanup-18.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/pg_basebackup-18.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/pg_checksums-18.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/pg_config-18.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/pg_controldata-18.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/pg_ctl-18.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/pg_dump-18.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/pg_resetwal-18.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/pg_rewind-18.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/pg_test_fsync-18.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/pg_test_timing-18.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/pg_upgrade-18.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/pg_waldump-18.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/pgscripts-18.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/plperl-18.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/plpgsql-18.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/plpython-18.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/psql-18.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/ecpg-18.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/ecpglib6-18.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/initdb-18.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/libpq5-18.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/pg_amcheck-18.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/pg_archivecleanup-18.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/pg_basebackup-18.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/pg_checksums-18.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/pg_combinebackup-18.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/pg_config-18.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/pg_controldata-18.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/pg_ctl-18.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/pg_dump-18.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/pg_resetwal-18.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/pg_rewind-18.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/pg_test_fsync-18.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/pg_test_timing-18.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/pg_upgrade-18.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/pg_verifybackup-18.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/pg_waldump-18.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/pg_walsummary-18.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/pgscripts-18.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/plperl-18.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/plpgsql-18.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/plpython-18.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/postgres-18.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/psql-18.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/ecpg-18.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/ecpglib6-18.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/initdb-18.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/libpq5-18.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/pg_amcheck-18.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/pg_archivecleanup-18.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/pg_basebackup-18.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/pg_checksums-18.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/pg_config-18.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/pg_controldata-18.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/pg_ctl-18.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/pg_dump-18.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/pg_resetwal-18.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/pg_rewind-18.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/pg_test_fsync-18.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/pg_test_timing-18.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/pg_verifybackup-18.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/pg_waldump-18.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/pgscripts-18.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/plperl-18.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/plpgsql-18.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/plpython-18.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/psql-18.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/ecpg-18.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/ecpglib6-18.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/initdb-18.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/libpq5-18.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/pg_amcheck-18.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/pg_archivecleanup-18.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/pg_basebackup-18.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/pg_checksums-18.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/pg_combinebackup-18.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/pg_config-18.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/pg_controldata-18.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/pg_ctl-18.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/pg_dump-18.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/pg_resetwal-18.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/pg_rewind-18.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/pg_test_fsync-18.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/pg_test_timing-18.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/pg_upgrade-18.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/pg_verifybackup-18.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/pg_waldump-18.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/pg_walsummary-18.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/pgscripts-18.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/plperl-18.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/plpgsql-18.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/plpython-18.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/postgres-18.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/psql-18.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/ecpg-18.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/ecpglib6-18.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/initdb-18.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/libpq5-18.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/pg_amcheck-18.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/pg_archivecleanup-18.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/pg_basebackup-18.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/pg_checksums-18.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/pg_combinebackup-18.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/pg_config-18.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/pg_controldata-18.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/pg_ctl-18.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/pg_dump-18.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/pg_resetwal-18.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/pg_rewind-18.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/pg_test_fsync-18.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/pg_test_timing-18.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/pg_upgrade-18.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/pg_verifybackup-18.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/pg_waldump-18.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/pg_walsummary-18.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/pgscripts-18.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/plperl-18.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/plpgsql-18.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/plpython-18.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/postgres-18.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/psql-18.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/initdb-18.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/libpq5-18.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/pg_basebackup-18.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/pg_config-18.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/pg_ctl-18.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/pg_dump-18.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/pgscripts-18.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/psql-18.mo" ],
+            
+              [  "usr\/share\/locale\/id\/LC_MESSAGES\/postgres-18.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/ecpg-18.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/ecpglib6-18.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/initdb-18.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/libpq5-18.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/pg_amcheck-18.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/pg_archivecleanup-18.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/pg_basebackup-18.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/pg_checksums-18.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/pg_config-18.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/pg_controldata-18.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/pg_ctl-18.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/pg_dump-18.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/pg_resetwal-18.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/pg_rewind-18.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/pg_test_fsync-18.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/pg_test_timing-18.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/pg_verifybackup-18.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/pg_waldump-18.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/pgscripts-18.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/plperl-18.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/plpgsql-18.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/plpython-18.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/postgres-18.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/psql-18.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/ecpg-18.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/ecpglib6-18.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/initdb-18.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/libpq5-18.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/pg_amcheck-18.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/pg_archivecleanup-18.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/pg_basebackup-18.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/pg_checksums-18.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/pg_combinebackup-18.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/pg_config-18.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/pg_controldata-18.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/pg_ctl-18.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/pg_dump-18.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/pg_resetwal-18.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/pg_rewind-18.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/pg_test_fsync-18.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/pg_test_timing-18.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/pg_upgrade-18.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/pg_verifybackup-18.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/pg_waldump-18.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/pg_walsummary-18.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/pgscripts-18.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/plperl-18.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/plpgsql-18.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/plpython-18.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/postgres-18.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/psql-18.mo" ],
+            
+              [  "usr\/share\/locale\/ka\/LC_MESSAGES\/ecpg-18.mo" ],
+            
+              [  "usr\/share\/locale\/ka\/LC_MESSAGES\/ecpglib6-18.mo" ],
+            
+              [  "usr\/share\/locale\/ka\/LC_MESSAGES\/initdb-18.mo" ],
+            
+              [  "usr\/share\/locale\/ka\/LC_MESSAGES\/libpq5-18.mo" ],
+            
+              [  "usr\/share\/locale\/ka\/LC_MESSAGES\/pg_amcheck-18.mo" ],
+            
+              [  "usr\/share\/locale\/ka\/LC_MESSAGES\/pg_archivecleanup-18.mo" ],
+            
+              [  "usr\/share\/locale\/ka\/LC_MESSAGES\/pg_basebackup-18.mo" ],
+            
+              [  "usr\/share\/locale\/ka\/LC_MESSAGES\/pg_checksums-18.mo" ],
+            
+              [  "usr\/share\/locale\/ka\/LC_MESSAGES\/pg_combinebackup-18.mo" ],
+            
+              [  "usr\/share\/locale\/ka\/LC_MESSAGES\/pg_config-18.mo" ],
+            
+              [  "usr\/share\/locale\/ka\/LC_MESSAGES\/pg_controldata-18.mo" ],
+            
+              [  "usr\/share\/locale\/ka\/LC_MESSAGES\/pg_ctl-18.mo" ],
+            
+              [  "usr\/share\/locale\/ka\/LC_MESSAGES\/pg_dump-18.mo" ],
+            
+              [  "usr\/share\/locale\/ka\/LC_MESSAGES\/pg_resetwal-18.mo" ],
+            
+              [  "usr\/share\/locale\/ka\/LC_MESSAGES\/pg_rewind-18.mo" ],
+            
+              [  "usr\/share\/locale\/ka\/LC_MESSAGES\/pg_test_fsync-18.mo" ],
+            
+              [  "usr\/share\/locale\/ka\/LC_MESSAGES\/pg_test_timing-18.mo" ],
+            
+              [  "usr\/share\/locale\/ka\/LC_MESSAGES\/pg_upgrade-18.mo" ],
+            
+              [  "usr\/share\/locale\/ka\/LC_MESSAGES\/pg_verifybackup-18.mo" ],
+            
+              [  "usr\/share\/locale\/ka\/LC_MESSAGES\/pg_waldump-18.mo" ],
+            
+              [  "usr\/share\/locale\/ka\/LC_MESSAGES\/pg_walsummary-18.mo" ],
+            
+              [  "usr\/share\/locale\/ka\/LC_MESSAGES\/pgscripts-18.mo" ],
+            
+              [  "usr\/share\/locale\/ka\/LC_MESSAGES\/plperl-18.mo" ],
+            
+              [  "usr\/share\/locale\/ka\/LC_MESSAGES\/plpgsql-18.mo" ],
+            
+              [  "usr\/share\/locale\/ka\/LC_MESSAGES\/plpython-18.mo" ],
+            
+              [  "usr\/share\/locale\/ka\/LC_MESSAGES\/postgres-18.mo" ],
+            
+              [  "usr\/share\/locale\/ka\/LC_MESSAGES\/psql-18.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/ecpg-18.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/ecpglib6-18.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/initdb-18.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/libpq5-18.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/pg_amcheck-18.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/pg_archivecleanup-18.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/pg_basebackup-18.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/pg_checksums-18.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/pg_combinebackup-18.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/pg_config-18.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/pg_controldata-18.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/pg_ctl-18.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/pg_dump-18.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/pg_resetwal-18.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/pg_rewind-18.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/pg_test_fsync-18.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/pg_test_timing-18.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/pg_upgrade-18.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/pg_verifybackup-18.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/pg_waldump-18.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/pg_walsummary-18.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/pgscripts-18.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/plperl-18.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/plpgsql-18.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/plpython-18.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/postgres-18.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/psql-18.mo" ],
+            
+              [  "usr\/share\/locale\/nb\/LC_MESSAGES\/pg_config-18.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/ecpg-18.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/ecpglib6-18.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/initdb-18.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/libpq5-18.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/pg_archivecleanup-18.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/pg_basebackup-18.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/pg_config-18.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/pg_controldata-18.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/pg_ctl-18.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/pg_dump-18.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/pg_resetwal-18.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/pg_rewind-18.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/pg_test_fsync-18.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/pg_test_timing-18.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/pgscripts-18.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/plperl-18.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/plpgsql-18.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/plpython-18.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/postgres-18.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/psql-18.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/ecpg-18.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/ecpglib6-18.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/initdb-18.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/libpq5-18.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/pg_archivecleanup-18.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/pg_basebackup-18.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/pg_checksums-18.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/pg_config-18.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/pg_controldata-18.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/pg_ctl-18.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/pg_dump-18.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/pg_resetwal-18.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/pg_rewind-18.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/pg_test_fsync-18.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/pg_test_timing-18.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/pgscripts-18.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/plperl-18.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/plpgsql-18.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/plpython-18.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/postgres-18.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/psql-18.mo" ],
+            
+              [  "usr\/share\/locale\/ro\/LC_MESSAGES\/pg_config-18.mo" ],
+            
+              [  "usr\/share\/locale\/ro\/LC_MESSAGES\/plperl-18.mo" ],
+            
+              [  "usr\/share\/locale\/ro\/LC_MESSAGES\/plpgsql-18.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/ecpg-18.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/ecpglib6-18.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/initdb-18.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/libpq5-18.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/pg_amcheck-18.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/pg_archivecleanup-18.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/pg_basebackup-18.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/pg_checksums-18.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/pg_combinebackup-18.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/pg_config-18.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/pg_controldata-18.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/pg_ctl-18.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/pg_dump-18.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/pg_resetwal-18.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/pg_rewind-18.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/pg_test_fsync-18.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/pg_test_timing-18.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/pg_upgrade-18.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/pg_verifybackup-18.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/pg_waldump-18.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/pg_walsummary-18.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/pgscripts-18.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/plperl-18.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/plpgsql-18.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/plpython-18.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/postgres-18.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/psql-18.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/ecpg-18.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/ecpglib6-18.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/initdb-18.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/libpq5-18.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/pg_amcheck-18.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/pg_archivecleanup-18.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/pg_basebackup-18.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/pg_checksums-18.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/pg_combinebackup-18.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/pg_config-18.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/pg_controldata-18.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/pg_ctl-18.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/pg_dump-18.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/pg_resetwal-18.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/pg_rewind-18.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/pg_test_fsync-18.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/pg_test_timing-18.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/pg_upgrade-18.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/pg_verifybackup-18.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/pg_waldump-18.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/pg_walsummary-18.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/pgscripts-18.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/plperl-18.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/plpgsql-18.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/plpython-18.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/postgres-18.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/psql-18.mo" ],
+            
+              [  "usr\/share\/locale\/ta\/LC_MESSAGES\/pg_config-18.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/ecpg-18.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/ecpglib6-18.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/initdb-18.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/libpq5-18.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/pg_archivecleanup-18.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/pg_basebackup-18.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/pg_checksums-18.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/pg_config-18.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/pg_controldata-18.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/pg_ctl-18.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/pg_dump-18.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/pg_resetwal-18.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/pg_rewind-18.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/pg_test_fsync-18.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/pg_test_timing-18.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/pg_upgrade-18.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/pg_waldump-18.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/pgscripts-18.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/plperl-18.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/plpgsql-18.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/plpython-18.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/postgres-18.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/psql-18.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/ecpg-18.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/ecpglib6-18.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/initdb-18.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/libpq5-18.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/pg_amcheck-18.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/pg_archivecleanup-18.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/pg_basebackup-18.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/pg_checksums-18.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/pg_combinebackup-18.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/pg_config-18.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/pg_controldata-18.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/pg_ctl-18.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/pg_dump-18.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/pg_resetwal-18.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/pg_rewind-18.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/pg_test_fsync-18.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/pg_test_timing-18.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/pg_upgrade-18.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/pg_verifybackup-18.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/pg_waldump-18.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/pg_walsummary-18.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/pgscripts-18.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/plperl-18.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/plpgsql-18.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/plpython-18.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/postgres-18.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/psql-18.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/ecpg-18.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/ecpglib6-18.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/initdb-18.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/pg_archivecleanup-18.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/pg_basebackup-18.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/pg_config-18.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/pg_controldata-18.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/pg_test_fsync-18.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/pg_test_timing-18.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/pg_waldump-18.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/plperl-18.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/plpgsql-18.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/plpython-18.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/ecpg-18.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/ecpglib6-18.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/initdb-18.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/libpq5-18.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/pg_amcheck-18.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/pg_archivecleanup-18.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/pg_basebackup-18.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/pg_checksums-18.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/pg_config-18.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/pg_controldata-18.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/pg_ctl-18.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/pg_dump-18.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/pg_resetwal-18.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/pg_rewind-18.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/pg_test_fsync-18.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/pg_test_timing-18.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/pg_upgrade-18.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/pg_verifybackup-18.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/pg_waldump-18.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/pgscripts-18.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/plperl-18.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/plpgsql-18.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/plpython-18.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/postgres-18.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/psql-18.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/ecpg-18.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/ecpglib6-18.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/initdb-18.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/libpq5-18.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/pg_amcheck-18.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/pg_checksums-18.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/pg_config-18.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/pg_controldata-18.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/pg_ctl-18.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/pg_dump-18.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/pg_rewind-18.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/pg_test_fsync-18.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/pg_test_timing-18.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/pg_verifybackup-18.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/pg_waldump-18.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/plperl-18.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/plpgsql-18.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/plpython-18.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/psql-18.mo" ],
+            
+              [  "usr\/share\/man\/man1\/clusterdb.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/clusterdb18.1" ],
+            
+              [  "usr\/share\/man\/man1\/createdb.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/createdb18.1" ],
+            
+              [  "usr\/share\/man\/man1\/createuser.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/createuser18.1" ],
+            
+              [  "usr\/share\/man\/man1\/dropdb.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/dropdb18.1" ],
+            
+              [  "usr\/share\/man\/man1\/dropuser.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/dropuser18.1" ],
+            
+              [  "usr\/share\/man\/man1\/ecpg.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/ecpg18.1" ],
+            
+              [  "usr\/share\/man\/man1\/initdb.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/initdb18.1" ],
+            
+              [  "usr\/share\/man\/man1\/oid2name.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/oid2name18.1" ],
+            
+              [  "usr\/share\/man\/man1\/pg_amcheck.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/pg_amcheck18.1" ],
+            
+              [  "usr\/share\/man\/man1\/pg_archivecleanup.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/pg_archivecleanup18.1" ],
+            
+              [  "usr\/share\/man\/man1\/pg_basebackup.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/pg_basebackup18.1" ],
+            
+              [  "usr\/share\/man\/man1\/pg_checksums.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/pg_checksums18.1" ],
+            
+              [  "usr\/share\/man\/man1\/pg_combinebackup.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/pg_combinebackup18.1" ],
+            
+              [  "usr\/share\/man\/man1\/pg_config.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/pg_config18.1" ],
+            
+              [  "usr\/share\/man\/man1\/pg_controldata.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/pg_controldata18.1" ],
+            
+              [  "usr\/share\/man\/man1\/pg_createsubscriber.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/pg_createsubscriber18.1" ],
+            
+              [  "usr\/share\/man\/man1\/pg_ctl.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/pg_ctl18.1" ],
+            
+              [  "usr\/share\/man\/man1\/pg_dump.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/pg_dump18.1" ],
+            
+              [  "usr\/share\/man\/man1\/pg_dumpall.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/pg_dumpall18.1" ],
+            
+              [  "usr\/share\/man\/man1\/pg_isready.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/pg_isready18.1" ],
+            
+              [  "usr\/share\/man\/man1\/pg_receivewal.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/pg_receivewal18.1" ],
+            
+              [  "usr\/share\/man\/man1\/pg_recvlogical.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/pg_recvlogical18.1" ],
+            
+              [  "usr\/share\/man\/man1\/pg_resetwal.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/pg_resetwal18.1" ],
+            
+              [  "usr\/share\/man\/man1\/pg_restore.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/pg_restore18.1" ],
+            
+              [  "usr\/share\/man\/man1\/pg_rewind.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/pg_rewind18.1" ],
+            
+              [  "usr\/share\/man\/man1\/pg_test_fsync.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/pg_test_fsync18.1" ],
+            
+              [  "usr\/share\/man\/man1\/pg_test_timing.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/pg_test_timing18.1" ],
+            
+              [  "usr\/share\/man\/man1\/pg_upgrade.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/pg_upgrade18.1" ],
+            
+              [  "usr\/share\/man\/man1\/pg_verifybackup.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/pg_verifybackup18.1" ],
+            
+              [  "usr\/share\/man\/man1\/pg_waldump.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/pg_waldump18.1" ],
+            
+              [  "usr\/share\/man\/man1\/pg_walsummary.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/pg_walsummary18.1" ],
+            
+              [  "usr\/share\/man\/man1\/pgbench.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/pgbench18.1" ],
+            
+              [  "usr\/share\/man\/man1\/postgres.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/postgres18.1" ],
+            
+              [  "usr\/share\/man\/man1\/psql.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/psql18.1" ],
+            
+              [  "usr\/share\/man\/man1\/reindexdb.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/reindexdb18.1" ],
+            
+              [  "usr\/share\/man\/man1\/vacuumdb.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/vacuumdb18.1" ],
+            
+              [  "usr\/share\/man\/man1\/vacuumlo.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/vacuumlo18.1" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_commit.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_commit18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_commit_and_chain.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_commit_and_chain18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_connect.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_connect18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_connect_ext.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_connect_ext18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_copytuple.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_copytuple18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_cursor_close.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_cursor_close18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_cursor_fetch.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_cursor_fetch18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_cursor_find.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_cursor_find18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_cursor_move.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_cursor_move18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_cursor_open.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_cursor_open18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_cursor_open_with_args.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_cursor_open_with_args18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_cursor_open_with_paramlist.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_cursor_open_with_paramlist18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_cursor_parse_open.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_cursor_parse_open18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_exec.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_exec18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_execp.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_execp18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_execute.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_execute18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_execute_extended.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_execute_extended18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_execute_plan.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_execute_plan18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_execute_plan_extended.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_execute_plan_extended18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_execute_plan_with_paramlist.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_execute_plan_with_paramlist18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_execute_with_args.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_execute_with_args18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_finish.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_finish18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_fname.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_fname18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_fnumber.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_fnumber18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_freeplan.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_freeplan18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_freetuple.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_freetuple18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_freetuptable.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_freetuptable18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_getargcount.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_getargcount18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_getargtypeid.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_getargtypeid18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_getbinval.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_getbinval18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_getnspname.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_getnspname18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_getrelname.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_getrelname18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_gettype.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_gettype18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_gettypeid.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_gettypeid18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_getvalue.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_getvalue18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_is_cursor_plan.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_is_cursor_plan18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_keepplan.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_keepplan18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_modifytuple.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_modifytuple18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_palloc.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_palloc18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_pfree.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_pfree18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_prepare.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_prepare18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_prepare_cursor.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_prepare_cursor18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_prepare_extended.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_prepare_extended18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_prepare_params.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_prepare_params18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_register_relation.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_register_relation18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_register_trigger_data.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_register_trigger_data18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_repalloc.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_repalloc18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_result_code_string.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_result_code_string18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_returntuple.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_returntuple18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_rollback.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_rollback18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_rollback_and_chain.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_rollback_and_chain18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_saveplan.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_saveplan18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_scroll_cursor_fetch.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_scroll_cursor_fetch18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_scroll_cursor_move.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_scroll_cursor_move18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_start_transaction.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_start_transaction18.3" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_unregister_relation.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/SPI_unregister_relation18.3" ],
+            
+              [  "usr\/share\/man\/man3\/dblink.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/dblink18.3" ],
+            
+              [  "usr\/share\/man\/man3\/dblink_build_sql_delete.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/dblink_build_sql_delete18.3" ],
+            
+              [  "usr\/share\/man\/man3\/dblink_build_sql_insert.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/dblink_build_sql_insert18.3" ],
+            
+              [  "usr\/share\/man\/man3\/dblink_build_sql_update.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/dblink_build_sql_update18.3" ],
+            
+              [  "usr\/share\/man\/man3\/dblink_cancel_query.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/dblink_cancel_query18.3" ],
+            
+              [  "usr\/share\/man\/man3\/dblink_close.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/dblink_close18.3" ],
+            
+              [  "usr\/share\/man\/man3\/dblink_connect.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/dblink_connect18.3" ],
+            
+              [  "usr\/share\/man\/man3\/dblink_connect_u.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/dblink_connect_u18.3" ],
+            
+              [  "usr\/share\/man\/man3\/dblink_disconnect.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/dblink_disconnect18.3" ],
+            
+              [  "usr\/share\/man\/man3\/dblink_error_message.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/dblink_error_message18.3" ],
+            
+              [  "usr\/share\/man\/man3\/dblink_exec.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/dblink_exec18.3" ],
+            
+              [  "usr\/share\/man\/man3\/dblink_fetch.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/dblink_fetch18.3" ],
+            
+              [  "usr\/share\/man\/man3\/dblink_get_connections.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/dblink_get_connections18.3" ],
+            
+              [  "usr\/share\/man\/man3\/dblink_get_notify.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/dblink_get_notify18.3" ],
+            
+              [  "usr\/share\/man\/man3\/dblink_get_pkey.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/dblink_get_pkey18.3" ],
+            
+              [  "usr\/share\/man\/man3\/dblink_get_result.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/dblink_get_result18.3" ],
+            
+              [  "usr\/share\/man\/man3\/dblink_is_busy.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/dblink_is_busy18.3" ],
+            
+              [  "usr\/share\/man\/man3\/dblink_open.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/dblink_open18.3" ],
+            
+              [  "usr\/share\/man\/man3\/dblink_send_query.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/dblink_send_query18.3" ],
+            
+              [  "usr\/share\/man\/man7\/ABORT.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/ABORT18.7" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_AGGREGATE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_AGGREGATE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_COLLATION.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_COLLATION18.7" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_CONVERSION.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_CONVERSION18.7" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_DATABASE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_DATABASE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_DEFAULT_PRIVILEGES.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_DEFAULT_PRIVILEGES18.7" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_DOMAIN.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_DOMAIN18.7" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_EVENT_TRIGGER.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_EVENT_TRIGGER18.7" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_EXTENSION.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_EXTENSION18.7" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_FOREIGN_DATA_WRAPPER.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_FOREIGN_DATA_WRAPPER18.7" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_FOREIGN_TABLE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_FOREIGN_TABLE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_FUNCTION.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_FUNCTION18.7" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_GROUP.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_GROUP18.7" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_INDEX.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_INDEX18.7" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_LANGUAGE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_LANGUAGE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_LARGE_OBJECT.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_LARGE_OBJECT18.7" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_MATERIALIZED_VIEW.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_MATERIALIZED_VIEW18.7" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_OPERATOR.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_OPERATOR18.7" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_OPERATOR_CLASS.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_OPERATOR_CLASS18.7" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_OPERATOR_FAMILY.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_OPERATOR_FAMILY18.7" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_POLICY.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_POLICY18.7" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_PROCEDURE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_PROCEDURE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_PUBLICATION.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_PUBLICATION18.7" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_ROLE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_ROLE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_ROUTINE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_ROUTINE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_RULE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_RULE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_SCHEMA.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_SCHEMA18.7" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_SEQUENCE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_SEQUENCE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_SERVER.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_SERVER18.7" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_STATISTICS.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_STATISTICS18.7" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_SUBSCRIPTION.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_SUBSCRIPTION18.7" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_SYSTEM.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_SYSTEM18.7" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_TABLE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_TABLE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_TABLESPACE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_TABLESPACE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_TEXT_SEARCH_CONFIGURATION.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_TEXT_SEARCH_CONFIGURATION18.7" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_TEXT_SEARCH_DICTIONARY.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_TEXT_SEARCH_DICTIONARY18.7" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_TEXT_SEARCH_PARSER.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_TEXT_SEARCH_PARSER18.7" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_TEXT_SEARCH_TEMPLATE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_TEXT_SEARCH_TEMPLATE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_TRIGGER.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_TRIGGER18.7" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_TYPE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_TYPE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_USER.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_USER18.7" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_USER_MAPPING.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_USER_MAPPING18.7" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_VIEW.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/ALTER_VIEW18.7" ],
+            
+              [  "usr\/share\/man\/man7\/ANALYZE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/ANALYZE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/BEGIN.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/BEGIN18.7" ],
+            
+              [  "usr\/share\/man\/man7\/CALL.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/CALL18.7" ],
+            
+              [  "usr\/share\/man\/man7\/CHECKPOINT.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/CHECKPOINT18.7" ],
+            
+              [  "usr\/share\/man\/man7\/CLOSE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/CLOSE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/CLUSTER.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/CLUSTER18.7" ],
+            
+              [  "usr\/share\/man\/man7\/COMMENT.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/COMMENT18.7" ],
+            
+              [  "usr\/share\/man\/man7\/COMMIT.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/COMMIT18.7" ],
+            
+              [  "usr\/share\/man\/man7\/COMMIT_PREPARED.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/COMMIT_PREPARED18.7" ],
+            
+              [  "usr\/share\/man\/man7\/COPY.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/COPY18.7" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_ACCESS_METHOD.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_ACCESS_METHOD18.7" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_AGGREGATE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_AGGREGATE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_CAST.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_CAST18.7" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_COLLATION.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_COLLATION18.7" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_CONVERSION.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_CONVERSION18.7" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_DATABASE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_DATABASE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_DOMAIN.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_DOMAIN18.7" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_EVENT_TRIGGER.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_EVENT_TRIGGER18.7" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_EXTENSION.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_EXTENSION18.7" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_FOREIGN_DATA_WRAPPER.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_FOREIGN_DATA_WRAPPER18.7" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_FOREIGN_TABLE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_FOREIGN_TABLE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_FUNCTION.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_FUNCTION18.7" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_GROUP.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_GROUP18.7" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_INDEX.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_INDEX18.7" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_LANGUAGE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_LANGUAGE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_MATERIALIZED_VIEW.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_MATERIALIZED_VIEW18.7" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_OPERATOR.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_OPERATOR18.7" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_OPERATOR_CLASS.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_OPERATOR_CLASS18.7" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_OPERATOR_FAMILY.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_OPERATOR_FAMILY18.7" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_POLICY.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_POLICY18.7" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_PROCEDURE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_PROCEDURE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_PUBLICATION.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_PUBLICATION18.7" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_ROLE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_ROLE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_RULE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_RULE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_SCHEMA.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_SCHEMA18.7" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_SEQUENCE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_SEQUENCE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_SERVER.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_SERVER18.7" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_STATISTICS.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_STATISTICS18.7" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_SUBSCRIPTION.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_SUBSCRIPTION18.7" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_TABLE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_TABLE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_TABLESPACE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_TABLESPACE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_TABLE_AS.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_TABLE_AS18.7" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_TEXT_SEARCH_CONFIGURATION.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_TEXT_SEARCH_CONFIGURATION18.7" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_TEXT_SEARCH_DICTIONARY.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_TEXT_SEARCH_DICTIONARY18.7" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_TEXT_SEARCH_PARSER.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_TEXT_SEARCH_PARSER18.7" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_TEXT_SEARCH_TEMPLATE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_TEXT_SEARCH_TEMPLATE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_TRANSFORM.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_TRANSFORM18.7" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_TRIGGER.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_TRIGGER18.7" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_TYPE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_TYPE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_USER.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_USER18.7" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_USER_MAPPING.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_USER_MAPPING18.7" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_VIEW.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/CREATE_VIEW18.7" ],
+            
+              [  "usr\/share\/man\/man7\/DEALLOCATE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/DEALLOCATE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/DECLARE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/DECLARE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/DELETE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/DELETE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/DISCARD.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/DISCARD18.7" ],
+            
+              [  "usr\/share\/man\/man7\/DO.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/DO18.7" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_ACCESS_METHOD.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_ACCESS_METHOD18.7" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_AGGREGATE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_AGGREGATE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_CAST.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_CAST18.7" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_COLLATION.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_COLLATION18.7" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_CONVERSION.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_CONVERSION18.7" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_DATABASE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_DATABASE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_DOMAIN.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_DOMAIN18.7" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_EVENT_TRIGGER.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_EVENT_TRIGGER18.7" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_EXTENSION.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_EXTENSION18.7" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_FOREIGN_DATA_WRAPPER.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_FOREIGN_DATA_WRAPPER18.7" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_FOREIGN_TABLE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_FOREIGN_TABLE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_FUNCTION.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_FUNCTION18.7" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_GROUP.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_GROUP18.7" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_INDEX.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_INDEX18.7" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_LANGUAGE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_LANGUAGE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_MATERIALIZED_VIEW.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_MATERIALIZED_VIEW18.7" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_OPERATOR.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_OPERATOR18.7" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_OPERATOR_CLASS.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_OPERATOR_CLASS18.7" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_OPERATOR_FAMILY.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_OPERATOR_FAMILY18.7" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_OWNED.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_OWNED18.7" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_POLICY.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_POLICY18.7" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_PROCEDURE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_PROCEDURE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_PUBLICATION.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_PUBLICATION18.7" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_ROLE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_ROLE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_ROUTINE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_ROUTINE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_RULE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_RULE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_SCHEMA.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_SCHEMA18.7" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_SEQUENCE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_SEQUENCE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_SERVER.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_SERVER18.7" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_STATISTICS.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_STATISTICS18.7" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_SUBSCRIPTION.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_SUBSCRIPTION18.7" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_TABLE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_TABLE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_TABLESPACE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_TABLESPACE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_TEXT_SEARCH_CONFIGURATION.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_TEXT_SEARCH_CONFIGURATION18.7" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_TEXT_SEARCH_DICTIONARY.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_TEXT_SEARCH_DICTIONARY18.7" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_TEXT_SEARCH_PARSER.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_TEXT_SEARCH_PARSER18.7" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_TEXT_SEARCH_TEMPLATE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_TEXT_SEARCH_TEMPLATE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_TRANSFORM.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_TRANSFORM18.7" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_TRIGGER.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_TRIGGER18.7" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_TYPE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_TYPE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_USER.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_USER18.7" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_USER_MAPPING.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_USER_MAPPING18.7" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_VIEW.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/DROP_VIEW18.7" ],
+            
+              [  "usr\/share\/man\/man7\/END.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/END18.7" ],
+            
+              [  "usr\/share\/man\/man7\/EXECUTE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/EXECUTE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/EXPLAIN.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/EXPLAIN18.7" ],
+            
+              [  "usr\/share\/man\/man7\/FETCH.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/FETCH18.7" ],
+            
+              [  "usr\/share\/man\/man7\/GRANT.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/GRANT18.7" ],
+            
+              [  "usr\/share\/man\/man7\/IMPORT_FOREIGN_SCHEMA.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/IMPORT_FOREIGN_SCHEMA18.7" ],
+            
+              [  "usr\/share\/man\/man7\/INSERT.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/INSERT18.7" ],
+            
+              [  "usr\/share\/man\/man7\/LISTEN.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/LISTEN18.7" ],
+            
+              [  "usr\/share\/man\/man7\/LOAD.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/LOAD18.7" ],
+            
+              [  "usr\/share\/man\/man7\/LOCK.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/LOCK18.7" ],
+            
+              [  "usr\/share\/man\/man7\/MERGE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/MERGE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/MOVE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/MOVE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/NOTIFY.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/NOTIFY18.7" ],
+            
+              [  "usr\/share\/man\/man7\/PREPARE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/PREPARE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/PREPARE_TRANSACTION.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/PREPARE_TRANSACTION18.7" ],
+            
+              [  "usr\/share\/man\/man7\/REASSIGN_OWNED.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/REASSIGN_OWNED18.7" ],
+            
+              [  "usr\/share\/man\/man7\/REFRESH_MATERIALIZED_VIEW.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/REFRESH_MATERIALIZED_VIEW18.7" ],
+            
+              [  "usr\/share\/man\/man7\/REINDEX.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/REINDEX18.7" ],
+            
+              [  "usr\/share\/man\/man7\/RELEASE_SAVEPOINT.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/RELEASE_SAVEPOINT18.7" ],
+            
+              [  "usr\/share\/man\/man7\/RESET.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/RESET18.7" ],
+            
+              [  "usr\/share\/man\/man7\/REVOKE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/REVOKE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/ROLLBACK.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/ROLLBACK18.7" ],
+            
+              [  "usr\/share\/man\/man7\/ROLLBACK_PREPARED.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/ROLLBACK_PREPARED18.7" ],
+            
+              [  "usr\/share\/man\/man7\/ROLLBACK_TO_SAVEPOINT.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/ROLLBACK_TO_SAVEPOINT18.7" ],
+            
+              [  "usr\/share\/man\/man7\/SAVEPOINT.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/SAVEPOINT18.7" ],
+            
+              [  "usr\/share\/man\/man7\/SECURITY_LABEL.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/SECURITY_LABEL18.7" ],
+            
+              [  "usr\/share\/man\/man7\/SELECT.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/SELECT18.7" ],
+            
+              [  "usr\/share\/man\/man7\/SELECT_INTO.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/SELECT_INTO18.7" ],
+            
+              [  "usr\/share\/man\/man7\/SET.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/SET18.7" ],
+            
+              [  "usr\/share\/man\/man7\/SET_CONSTRAINTS.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/SET_CONSTRAINTS18.7" ],
+            
+              [  "usr\/share\/man\/man7\/SET_ROLE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/SET_ROLE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/SET_SESSION_AUTHORIZATION.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/SET_SESSION_AUTHORIZATION18.7" ],
+            
+              [  "usr\/share\/man\/man7\/SET_TRANSACTION.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/SET_TRANSACTION18.7" ],
+            
+              [  "usr\/share\/man\/man7\/SHOW.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/SHOW18.7" ],
+            
+              [  "usr\/share\/man\/man7\/START_TRANSACTION.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/START_TRANSACTION18.7" ],
+            
+              [  "usr\/share\/man\/man7\/TABLE.7" ],
+            
+              [  "usr\/share\/man\/man7\/TABLE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/TRUNCATE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/TRUNCATE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/UNLISTEN.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/UNLISTEN18.7" ],
+            
+              [  "usr\/share\/man\/man7\/UPDATE.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/UPDATE18.7" ],
+            
+              [  "usr\/share\/man\/man7\/VACUUM.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/VACUUM18.7" ],
+            
+              [  "usr\/share\/man\/man7\/VALUES.7.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/VALUES18.7" ],
+            
+              [  "usr\/share\/man\/man7\/WITH.7" ],
+            
+              [  "usr\/share\/man\/man7\/WITH18.7" ],
+            
+              [  "usr\/share\/pkgconfig\/libecpg.pc" ],
+            
+              [  "usr\/share\/pkgconfig\/libecpg_compat.pc" ],
+            
+              [  "usr\/share\/pkgconfig\/libpgtypes.pc" ],
+            
+              [  "usr\/share\/pkgconfig\/libpq.pc" ],
+            
+              [  "usr\/share\/postgresql" ],
+            
+              [  "usr\/share\/postgresql-18\/errcodes.txt" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/amcheck--1.0--1.1.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/amcheck--1.0.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/amcheck--1.1--1.2.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/amcheck--1.2--1.3.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/amcheck--1.3--1.4.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/amcheck--1.4--1.5.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/amcheck.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/autoinc--1.0.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/autoinc.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/bloom--1.0.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/bloom.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/bool_plperl--1.0.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/bool_plperl.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/bool_plperlu--1.0.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/bool_plperlu.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/btree_gin--1.0--1.1.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/btree_gin--1.0.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/btree_gin--1.1--1.2.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/btree_gin--1.2--1.3.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/btree_gin.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/btree_gist--1.0--1.1.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/btree_gist--1.1--1.2.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/btree_gist--1.2--1.3.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/btree_gist--1.2.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/btree_gist--1.3--1.4.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/btree_gist--1.4--1.5.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/btree_gist--1.5--1.6.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/btree_gist--1.6--1.7.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/btree_gist--1.7--1.8.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/btree_gist.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/citext--1.0--1.1.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/citext--1.1--1.2.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/citext--1.2--1.3.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/citext--1.3--1.4.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/citext--1.4--1.5.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/citext--1.4.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/citext--1.5--1.6.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/citext--1.6--1.7.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/citext--1.7--1.8.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/citext.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/cube--1.0--1.1.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/cube--1.1--1.2.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/cube--1.2--1.3.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/cube--1.2.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/cube--1.3--1.4.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/cube--1.4--1.5.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/cube.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/dblink--1.0--1.1.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/dblink--1.1--1.2.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/dblink--1.2.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/dblink.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/dict_int--1.0.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/dict_int.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/dict_xsyn--1.0.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/dict_xsyn.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/earthdistance--1.0--1.1.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/earthdistance--1.1--1.2.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/earthdistance--1.1.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/earthdistance.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/file_fdw--1.0.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/file_fdw.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/fuzzystrmatch--1.0--1.1.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/fuzzystrmatch--1.1--1.2.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/fuzzystrmatch--1.1.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/fuzzystrmatch.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/hstore--1.1--1.2.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/hstore--1.2--1.3.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/hstore--1.3--1.4.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/hstore--1.4--1.5.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/hstore--1.4.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/hstore--1.5--1.6.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/hstore--1.6--1.7.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/hstore--1.7--1.8.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/hstore.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/hstore_plperl--1.0.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/hstore_plperl.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/hstore_plperlu--1.0.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/hstore_plperlu.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/hstore_plpython3u--1.0.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/hstore_plpython3u.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/insert_username--1.0.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/insert_username.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/intagg--1.0--1.1.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/intagg--1.1.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/intagg.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/intarray--1.0--1.1.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/intarray--1.1--1.2.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/intarray--1.2--1.3.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/intarray--1.2.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/intarray--1.3--1.4.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/intarray--1.4--1.5.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/intarray.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/isn--1.0--1.1.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/isn--1.1--1.2.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/isn--1.1.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/isn--1.2--1.3.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/isn.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/jsonb_plperl--1.0.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/jsonb_plperl.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/jsonb_plperlu--1.0.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/jsonb_plperlu.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/jsonb_plpython3u--1.0.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/jsonb_plpython3u.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/lo--1.0--1.1.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/lo--1.1--1.2.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/lo--1.1.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/lo.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/ltree--1.0--1.1.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/ltree--1.1--1.2.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/ltree--1.1.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/ltree--1.2--1.3.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/ltree.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/ltree_plpython3u--1.0.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/ltree_plpython3u.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/moddatetime--1.0.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/moddatetime.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pageinspect--1.0--1.1.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pageinspect--1.1--1.2.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pageinspect--1.10--1.11.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pageinspect--1.11--1.12.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pageinspect--1.12--1.13.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pageinspect--1.2--1.3.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pageinspect--1.3--1.4.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pageinspect--1.4--1.5.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pageinspect--1.5--1.6.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pageinspect--1.5.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pageinspect--1.6--1.7.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pageinspect--1.7--1.8.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pageinspect--1.8--1.9.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pageinspect--1.9--1.10.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pageinspect.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_buffercache--1.0--1.1.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_buffercache--1.1--1.2.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_buffercache--1.2--1.3.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_buffercache--1.2.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_buffercache--1.3--1.4.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_buffercache--1.4--1.5.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_buffercache--1.5--1.6.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_buffercache.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_freespacemap--1.0--1.1.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_freespacemap--1.1--1.2.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_freespacemap--1.1.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_freespacemap--1.2--1.3.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_freespacemap.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_logicalinspect--1.0.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_logicalinspect.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_prewarm--1.0--1.1.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_prewarm--1.1--1.2.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_prewarm--1.1.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_prewarm.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_stat_statements--1.0--1.1.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_stat_statements--1.1--1.2.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_stat_statements--1.10--1.11.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_stat_statements--1.11--1.12.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_stat_statements--1.2--1.3.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_stat_statements--1.3--1.4.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_stat_statements--1.4--1.5.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_stat_statements--1.4.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_stat_statements--1.5--1.6.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_stat_statements--1.6--1.7.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_stat_statements--1.7--1.8.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_stat_statements--1.8--1.9.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_stat_statements--1.9--1.10.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_stat_statements.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_surgery--1.0.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_surgery.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_trgm--1.0--1.1.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_trgm--1.1--1.2.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_trgm--1.2--1.3.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_trgm--1.3--1.4.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_trgm--1.3.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_trgm--1.4--1.5.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_trgm--1.5--1.6.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_trgm.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_visibility--1.0--1.1.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_visibility--1.1--1.2.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_visibility--1.1.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_visibility.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_walinspect--1.0--1.1.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_walinspect--1.0.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pg_walinspect.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pgcrypto--1.0--1.1.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pgcrypto--1.1--1.2.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pgcrypto--1.2--1.3.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pgcrypto--1.3--1.4.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pgcrypto--1.3.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pgcrypto.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pgrowlocks--1.0--1.1.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pgrowlocks--1.1--1.2.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pgrowlocks--1.2.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pgrowlocks.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pgstattuple--1.0--1.1.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pgstattuple--1.1--1.2.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pgstattuple--1.2--1.3.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pgstattuple--1.3--1.4.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pgstattuple--1.4--1.5.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pgstattuple--1.4.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/pgstattuple.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/plperl--1.0.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/plperl.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/plperlu--1.0.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/plperlu.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/plpgsql--1.0.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/plpgsql.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/plpython3u--1.0.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/plpython3u.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/postgres_fdw--1.0--1.1.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/postgres_fdw--1.0.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/postgres_fdw--1.1--1.2.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/postgres_fdw.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/refint--1.0.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/refint.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/seg--1.0--1.1.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/seg--1.1--1.2.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/seg--1.1.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/seg--1.2--1.3.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/seg--1.3--1.4.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/seg.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/sslinfo--1.0--1.1.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/sslinfo--1.1--1.2.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/sslinfo--1.2.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/sslinfo.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/tablefunc--1.0.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/tablefunc.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/tcn--1.0.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/tcn.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/tsm_system_rows--1.0.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/tsm_system_rows.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/tsm_system_time--1.0.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/tsm_system_time.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/unaccent--1.0--1.1.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/unaccent--1.1.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/unaccent.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/uuid-ossp--1.0--1.1.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/uuid-ossp--1.1.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/uuid-ossp.control" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/xml2--1.0--1.1.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/xml2--1.1--1.2.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/xml2--1.1.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/extension\/xml2.control" ],
+            
+              [  "usr\/share\/postgresql-18\/information_schema.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man1\/clusterdb.1.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man1\/createdb.1.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man1\/createuser.1.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man1\/dropdb.1.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man1\/dropuser.1.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man1\/ecpg.1.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man1\/initdb.1.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man1\/oid2name.1.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man1\/pg_amcheck.1.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man1\/pg_archivecleanup.1.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man1\/pg_basebackup.1.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man1\/pg_checksums.1.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man1\/pg_combinebackup.1.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man1\/pg_config.1.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man1\/pg_controldata.1.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man1\/pg_createsubscriber.1.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man1\/pg_ctl.1.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man1\/pg_dump.1.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man1\/pg_dumpall.1.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man1\/pg_isready.1.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man1\/pg_receivewal.1.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man1\/pg_recvlogical.1.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man1\/pg_resetwal.1.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man1\/pg_restore.1.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man1\/pg_rewind.1.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man1\/pg_test_fsync.1.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man1\/pg_test_timing.1.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man1\/pg_upgrade.1.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man1\/pg_verifybackup.1.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man1\/pg_waldump.1.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man1\/pg_walsummary.1.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man1\/pgbench.1.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man1\/postgres.1.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man1\/psql.1.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man1\/reindexdb.1.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man1\/vacuumdb.1.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man1\/vacuumlo.1.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_commit.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_commit_and_chain.3" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_connect.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_connect_ext.3" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_copytuple.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_cursor_close.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_cursor_fetch.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_cursor_find.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_cursor_move.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_cursor_open.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_cursor_open_with_args.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_cursor_open_with_paramlist.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_cursor_parse_open.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_exec.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_execp.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_execute.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_execute_extended.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_execute_plan.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_execute_plan_extended.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_execute_plan_with_paramlist.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_execute_with_args.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_finish.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_fname.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_fnumber.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_freeplan.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_freetuple.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_freetuptable.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_getargcount.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_getargtypeid.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_getbinval.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_getnspname.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_getrelname.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_gettype.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_gettypeid.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_getvalue.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_is_cursor_plan.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_keepplan.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_modifytuple.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_palloc.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_pfree.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_prepare.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_prepare_cursor.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_prepare_extended.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_prepare_params.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_register_relation.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_register_trigger_data.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_repalloc.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_result_code_string.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_returntuple.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_rollback.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_rollback_and_chain.3" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_saveplan.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_scroll_cursor_fetch.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_scroll_cursor_move.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_start_transaction.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/SPI_unregister_relation.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/dblink.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/dblink_build_sql_delete.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/dblink_build_sql_insert.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/dblink_build_sql_update.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/dblink_cancel_query.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/dblink_close.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/dblink_connect.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/dblink_connect_u.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/dblink_disconnect.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/dblink_error_message.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/dblink_exec.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/dblink_fetch.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/dblink_get_connections.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/dblink_get_notify.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/dblink_get_pkey.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/dblink_get_result.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/dblink_is_busy.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/dblink_open.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man3\/dblink_send_query.3.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/ABORT.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/ALTER_AGGREGATE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/ALTER_COLLATION.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/ALTER_CONVERSION.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/ALTER_DATABASE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/ALTER_DEFAULT_PRIVILEGES.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/ALTER_DOMAIN.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/ALTER_EVENT_TRIGGER.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/ALTER_EXTENSION.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/ALTER_FOREIGN_DATA_WRAPPER.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/ALTER_FOREIGN_TABLE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/ALTER_FUNCTION.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/ALTER_GROUP.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/ALTER_INDEX.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/ALTER_LANGUAGE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/ALTER_LARGE_OBJECT.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/ALTER_MATERIALIZED_VIEW.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/ALTER_OPERATOR.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/ALTER_OPERATOR_CLASS.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/ALTER_OPERATOR_FAMILY.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/ALTER_POLICY.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/ALTER_PROCEDURE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/ALTER_PUBLICATION.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/ALTER_ROLE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/ALTER_ROUTINE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/ALTER_RULE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/ALTER_SCHEMA.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/ALTER_SEQUENCE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/ALTER_SERVER.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/ALTER_STATISTICS.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/ALTER_SUBSCRIPTION.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/ALTER_SYSTEM.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/ALTER_TABLE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/ALTER_TABLESPACE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/ALTER_TEXT_SEARCH_CONFIGURATION.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/ALTER_TEXT_SEARCH_DICTIONARY.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/ALTER_TEXT_SEARCH_PARSER.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/ALTER_TEXT_SEARCH_TEMPLATE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/ALTER_TRIGGER.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/ALTER_TYPE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/ALTER_USER.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/ALTER_USER_MAPPING.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/ALTER_VIEW.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/ANALYZE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/BEGIN.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/CALL.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/CHECKPOINT.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/CLOSE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/CLUSTER.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/COMMENT.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/COMMIT.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/COMMIT_PREPARED.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/COPY.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/CREATE_ACCESS_METHOD.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/CREATE_AGGREGATE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/CREATE_CAST.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/CREATE_COLLATION.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/CREATE_CONVERSION.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/CREATE_DATABASE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/CREATE_DOMAIN.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/CREATE_EVENT_TRIGGER.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/CREATE_EXTENSION.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/CREATE_FOREIGN_DATA_WRAPPER.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/CREATE_FOREIGN_TABLE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/CREATE_FUNCTION.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/CREATE_GROUP.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/CREATE_INDEX.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/CREATE_LANGUAGE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/CREATE_MATERIALIZED_VIEW.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/CREATE_OPERATOR.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/CREATE_OPERATOR_CLASS.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/CREATE_OPERATOR_FAMILY.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/CREATE_POLICY.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/CREATE_PROCEDURE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/CREATE_PUBLICATION.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/CREATE_ROLE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/CREATE_RULE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/CREATE_SCHEMA.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/CREATE_SEQUENCE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/CREATE_SERVER.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/CREATE_STATISTICS.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/CREATE_SUBSCRIPTION.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/CREATE_TABLE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/CREATE_TABLESPACE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/CREATE_TABLE_AS.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/CREATE_TEXT_SEARCH_CONFIGURATION.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/CREATE_TEXT_SEARCH_DICTIONARY.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/CREATE_TEXT_SEARCH_PARSER.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/CREATE_TEXT_SEARCH_TEMPLATE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/CREATE_TRANSFORM.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/CREATE_TRIGGER.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/CREATE_TYPE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/CREATE_USER.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/CREATE_USER_MAPPING.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/CREATE_VIEW.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/DEALLOCATE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/DECLARE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/DELETE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/DISCARD.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/DO.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/DROP_ACCESS_METHOD.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/DROP_AGGREGATE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/DROP_CAST.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/DROP_COLLATION.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/DROP_CONVERSION.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/DROP_DATABASE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/DROP_DOMAIN.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/DROP_EVENT_TRIGGER.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/DROP_EXTENSION.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/DROP_FOREIGN_DATA_WRAPPER.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/DROP_FOREIGN_TABLE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/DROP_FUNCTION.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/DROP_GROUP.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/DROP_INDEX.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/DROP_LANGUAGE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/DROP_MATERIALIZED_VIEW.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/DROP_OPERATOR.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/DROP_OPERATOR_CLASS.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/DROP_OPERATOR_FAMILY.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/DROP_OWNED.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/DROP_POLICY.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/DROP_PROCEDURE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/DROP_PUBLICATION.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/DROP_ROLE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/DROP_ROUTINE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/DROP_RULE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/DROP_SCHEMA.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/DROP_SEQUENCE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/DROP_SERVER.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/DROP_STATISTICS.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/DROP_SUBSCRIPTION.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/DROP_TABLE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/DROP_TABLESPACE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/DROP_TEXT_SEARCH_CONFIGURATION.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/DROP_TEXT_SEARCH_DICTIONARY.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/DROP_TEXT_SEARCH_PARSER.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/DROP_TEXT_SEARCH_TEMPLATE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/DROP_TRANSFORM.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/DROP_TRIGGER.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/DROP_TYPE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/DROP_USER.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/DROP_USER_MAPPING.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/DROP_VIEW.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/END.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/EXECUTE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/EXPLAIN.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/FETCH.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/GRANT.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/IMPORT_FOREIGN_SCHEMA.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/INSERT.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/LISTEN.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/LOAD.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/LOCK.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/MERGE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/MOVE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/NOTIFY.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/PREPARE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/PREPARE_TRANSACTION.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/REASSIGN_OWNED.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/REFRESH_MATERIALIZED_VIEW.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/REINDEX.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/RELEASE_SAVEPOINT.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/RESET.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/REVOKE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/ROLLBACK.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/ROLLBACK_PREPARED.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/ROLLBACK_TO_SAVEPOINT.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/SAVEPOINT.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/SECURITY_LABEL.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/SELECT.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/SELECT_INTO.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/SET.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/SET_CONSTRAINTS.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/SET_ROLE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/SET_SESSION_AUTHORIZATION.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/SET_TRANSACTION.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/SHOW.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/START_TRANSACTION.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/TABLE.7" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/TRUNCATE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/UNLISTEN.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/UPDATE.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/VACUUM.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/VALUES.7.bz2" ],
+            
+              [  "usr\/share\/postgresql-18\/man\/man7\/WITH.7" ],
+            
+              [  "usr\/share\/postgresql-18\/pg_hba.conf.sample" ],
+            
+              [  "usr\/share\/postgresql-18\/pg_ident.conf.sample" ],
+            
+              [  "usr\/share\/postgresql-18\/pg_service.conf.sample" ],
+            
+              [  "usr\/share\/postgresql-18\/postgres.bki" ],
+            
+              [  "usr\/share\/postgresql-18\/postgresql.conf.sample" ],
+            
+              [  "usr\/share\/postgresql-18\/psqlrc.sample" ],
+            
+              [  "usr\/share\/postgresql-18\/snowball_create.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/sql_features.txt" ],
+            
+              [  "usr\/share\/postgresql-18\/system_constraints.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/system_functions.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/system_views.sql" ],
+            
+              [  "usr\/share\/postgresql-18\/timezonesets\/Africa.txt" ],
+            
+              [  "usr\/share\/postgresql-18\/timezonesets\/America.txt" ],
+            
+              [  "usr\/share\/postgresql-18\/timezonesets\/Antarctica.txt" ],
+            
+              [  "usr\/share\/postgresql-18\/timezonesets\/Asia.txt" ],
+            
+              [  "usr\/share\/postgresql-18\/timezonesets\/Atlantic.txt" ],
+            
+              [  "usr\/share\/postgresql-18\/timezonesets\/Australia" ],
+            
+              [  "usr\/share\/postgresql-18\/timezonesets\/Australia.txt" ],
+            
+              [  "usr\/share\/postgresql-18\/timezonesets\/Default" ],
+            
+              [  "usr\/share\/postgresql-18\/timezonesets\/Etc.txt" ],
+            
+              [  "usr\/share\/postgresql-18\/timezonesets\/Europe.txt" ],
+            
+              [  "usr\/share\/postgresql-18\/timezonesets\/India" ],
+            
+              [  "usr\/share\/postgresql-18\/timezonesets\/Indian.txt" ],
+            
+              [  "usr\/share\/postgresql-18\/timezonesets\/Pacific.txt" ],
+            
+              [  "usr\/share\/postgresql-18\/tsearch_data\/danish.stop" ],
+            
+              [  "usr\/share\/postgresql-18\/tsearch_data\/dutch.stop" ],
+            
+              [  "usr\/share\/postgresql-18\/tsearch_data\/english.stop" ],
+            
+              [  "usr\/share\/postgresql-18\/tsearch_data\/finnish.stop" ],
+            
+              [  "usr\/share\/postgresql-18\/tsearch_data\/french.stop" ],
+            
+              [  "usr\/share\/postgresql-18\/tsearch_data\/german.stop" ],
+            
+              [  "usr\/share\/postgresql-18\/tsearch_data\/hungarian.stop" ],
+            
+              [  "usr\/share\/postgresql-18\/tsearch_data\/hunspell_sample.affix" ],
+            
+              [  "usr\/share\/postgresql-18\/tsearch_data\/hunspell_sample_long.affix" ],
+            
+              [  "usr\/share\/postgresql-18\/tsearch_data\/hunspell_sample_long.dict" ],
+            
+              [  "usr\/share\/postgresql-18\/tsearch_data\/hunspell_sample_num.affix" ],
+            
+              [  "usr\/share\/postgresql-18\/tsearch_data\/hunspell_sample_num.dict" ],
+            
+              [  "usr\/share\/postgresql-18\/tsearch_data\/ispell_sample.affix" ],
+            
+              [  "usr\/share\/postgresql-18\/tsearch_data\/ispell_sample.dict" ],
+            
+              [  "usr\/share\/postgresql-18\/tsearch_data\/italian.stop" ],
+            
+              [  "usr\/share\/postgresql-18\/tsearch_data\/nepali.stop" ],
+            
+              [  "usr\/share\/postgresql-18\/tsearch_data\/norwegian.stop" ],
+            
+              [  "usr\/share\/postgresql-18\/tsearch_data\/portuguese.stop" ],
+            
+              [  "usr\/share\/postgresql-18\/tsearch_data\/russian.stop" ],
+            
+              [  "usr\/share\/postgresql-18\/tsearch_data\/spanish.stop" ],
+            
+              [  "usr\/share\/postgresql-18\/tsearch_data\/swedish.stop" ],
+            
+              [  "usr\/share\/postgresql-18\/tsearch_data\/synonym_sample.syn" ],
+            
+              [  "usr\/share\/postgresql-18\/tsearch_data\/thesaurus_sample.ths" ],
+            
+              [  "usr\/share\/postgresql-18\/tsearch_data\/turkish.stop" ],
+            
+              [  "usr\/share\/postgresql-18\/tsearch_data\/unaccent.rules" ],
+            
+              [  "usr\/share\/postgresql-18\/tsearch_data\/xsyn_sample.rules" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

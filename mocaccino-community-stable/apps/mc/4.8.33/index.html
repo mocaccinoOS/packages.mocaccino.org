@@ -1,0 +1,904 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing apps/mc-4.8.33 in mocaccino-community-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> apps/mc-4.8.33
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                GNU Midnight Commander is a text based file manager
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-community-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-community-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of apps/mc
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/mocaccino-community:mc-apps-4.8.33" target="_blank"> quay.io/mocaccino/mocaccino-community:mc-apps-4.8.33 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/mocaccino-community:mc-apps-4.8.33/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 4.8.33  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> GPL-3 </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/system-x">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  system-x &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/gpm">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  gpm 1.20.7-r6 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: app-misc/mc
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://midnight-commander.org" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://midnight-commander.org </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/app-misc/mc">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  mc &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "etc\/mc\/edit.indent.rc" ],
+            
+              [  "etc\/mc\/filehighlight.ini" ],
+            
+              [  "etc\/mc\/mc.default.keymap" ],
+            
+              [  "etc\/mc\/mc.emacs.keymap" ],
+            
+              [  "etc\/mc\/mc.ext.ini" ],
+            
+              [  "etc\/mc\/mc.keymap" ],
+            
+              [  "etc\/mc\/mc.menu" ],
+            
+              [  "etc\/mc\/mc.vim.keymap" ],
+            
+              [  "etc\/mc\/mcedit.menu" ],
+            
+              [  "etc\/mc\/sfs.ini" ],
+            
+              [  "usr\/bin\/mc" ],
+            
+              [  "usr\/bin\/mcdiff" ],
+            
+              [  "usr\/bin\/mcedit" ],
+            
+              [  "usr\/bin\/mcview" ],
+            
+              [  "usr\/libexec\/mc\/cons.saver" ],
+            
+              [  "usr\/libexec\/mc\/ext.d\/archive.sh" ],
+            
+              [  "usr\/libexec\/mc\/ext.d\/doc.sh" ],
+            
+              [  "usr\/libexec\/mc\/ext.d\/image.sh" ],
+            
+              [  "usr\/libexec\/mc\/ext.d\/misc.sh" ],
+            
+              [  "usr\/libexec\/mc\/ext.d\/package.sh" ],
+            
+              [  "usr\/libexec\/mc\/ext.d\/sound.sh" ],
+            
+              [  "usr\/libexec\/mc\/ext.d\/text.sh" ],
+            
+              [  "usr\/libexec\/mc\/ext.d\/video.sh" ],
+            
+              [  "usr\/libexec\/mc\/ext.d\/web.sh" ],
+            
+              [  "usr\/libexec\/mc\/extfs.d\/README" ],
+            
+              [  "usr\/libexec\/mc\/extfs.d\/README.extfs" ],
+            
+              [  "usr\/libexec\/mc\/extfs.d\/a\u002b" ],
+            
+              [  "usr\/libexec\/mc\/extfs.d\/apt\u002b" ],
+            
+              [  "usr\/libexec\/mc\/extfs.d\/audio" ],
+            
+              [  "usr\/libexec\/mc\/extfs.d\/bpp" ],
+            
+              [  "usr\/libexec\/mc\/extfs.d\/changesetfs" ],
+            
+              [  "usr\/libexec\/mc\/extfs.d\/deb" ],
+            
+              [  "usr\/libexec\/mc\/extfs.d\/deba" ],
+            
+              [  "usr\/libexec\/mc\/extfs.d\/debd" ],
+            
+              [  "usr\/libexec\/mc\/extfs.d\/dpkg\u002b" ],
+            
+              [  "usr\/libexec\/mc\/extfs.d\/gitfs\u002b" ],
+            
+              [  "usr\/libexec\/mc\/extfs.d\/hp48\u002b" ],
+            
+              [  "usr\/libexec\/mc\/extfs.d\/iso9660" ],
+            
+              [  "usr\/libexec\/mc\/extfs.d\/lslR" ],
+            
+              [  "usr\/libexec\/mc\/extfs.d\/mailfs" ],
+            
+              [  "usr\/libexec\/mc\/extfs.d\/patchfs" ],
+            
+              [  "usr\/libexec\/mc\/extfs.d\/patchsetfs" ],
+            
+              [  "usr\/libexec\/mc\/extfs.d\/rpm" ],
+            
+              [  "usr\/libexec\/mc\/extfs.d\/rpms\u002b" ],
+            
+              [  "usr\/libexec\/mc\/extfs.d\/s3\u002b" ],
+            
+              [  "usr\/libexec\/mc\/extfs.d\/torrent" ],
+            
+              [  "usr\/libexec\/mc\/extfs.d\/trpm" ],
+            
+              [  "usr\/libexec\/mc\/extfs.d\/u7z" ],
+            
+              [  "usr\/libexec\/mc\/extfs.d\/uace" ],
+            
+              [  "usr\/libexec\/mc\/extfs.d\/ualz" ],
+            
+              [  "usr\/libexec\/mc\/extfs.d\/uar" ],
+            
+              [  "usr\/libexec\/mc\/extfs.d\/uarc" ],
+            
+              [  "usr\/libexec\/mc\/extfs.d\/uarj" ],
+            
+              [  "usr\/libexec\/mc\/extfs.d\/uc1541" ],
+            
+              [  "usr\/libexec\/mc\/extfs.d\/ucab" ],
+            
+              [  "usr\/libexec\/mc\/extfs.d\/uha" ],
+            
+              [  "usr\/libexec\/mc\/extfs.d\/ulha" ],
+            
+              [  "usr\/libexec\/mc\/extfs.d\/ulib" ],
+            
+              [  "usr\/libexec\/mc\/extfs.d\/unar" ],
+            
+              [  "usr\/libexec\/mc\/extfs.d\/urar" ],
+            
+              [  "usr\/libexec\/mc\/extfs.d\/uwim" ],
+            
+              [  "usr\/libexec\/mc\/extfs.d\/uzip" ],
+            
+              [  "usr\/libexec\/mc\/extfs.d\/uzoo" ],
+            
+              [  "usr\/libexec\/mc\/mc-wrapper.csh" ],
+            
+              [  "usr\/libexec\/mc\/mc-wrapper.sh" ],
+            
+              [  "usr\/libexec\/mc\/mc.csh" ],
+            
+              [  "usr\/libexec\/mc\/mc.sh" ],
+            
+              [  "usr\/libexec\/mc\/shell\/README.shell" ],
+            
+              [  "usr\/libexec\/mc\/shell\/append" ],
+            
+              [  "usr\/libexec\/mc\/shell\/chmod" ],
+            
+              [  "usr\/libexec\/mc\/shell\/chown" ],
+            
+              [  "usr\/libexec\/mc\/shell\/fexists" ],
+            
+              [  "usr\/libexec\/mc\/shell\/get" ],
+            
+              [  "usr\/libexec\/mc\/shell\/hardlink" ],
+            
+              [  "usr\/libexec\/mc\/shell\/info" ],
+            
+              [  "usr\/libexec\/mc\/shell\/ln" ],
+            
+              [  "usr\/libexec\/mc\/shell\/ls" ],
+            
+              [  "usr\/libexec\/mc\/shell\/mkdir" ],
+            
+              [  "usr\/libexec\/mc\/shell\/mv" ],
+            
+              [  "usr\/libexec\/mc\/shell\/rmdir" ],
+            
+              [  "usr\/libexec\/mc\/shell\/send" ],
+            
+              [  "usr\/libexec\/mc\/shell\/unlink" ],
+            
+              [  "usr\/libexec\/mc\/shell\/utime" ],
+            
+              [  "usr\/share\/locale\/af\/LC_MESSAGES\/mc.mo" ],
+            
+              [  "usr\/share\/locale\/ar\/LC_MESSAGES\/mc.mo" ],
+            
+              [  "usr\/share\/locale\/az\/LC_MESSAGES\/mc.mo" ],
+            
+              [  "usr\/share\/locale\/bg\/LC_MESSAGES\/mc.mo" ],
+            
+              [  "usr\/share\/locale\/br\/LC_MESSAGES\/mc.mo" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/mc.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/mc.mo" ],
+            
+              [  "usr\/share\/locale\/da\/LC_MESSAGES\/mc.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/mc.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/mc.mo" ],
+            
+              [  "usr\/share\/locale\/en_GB\/LC_MESSAGES\/mc.mo" ],
+            
+              [  "usr\/share\/locale\/eo\/LC_MESSAGES\/mc.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/mc.mo" ],
+            
+              [  "usr\/share\/locale\/et\/LC_MESSAGES\/mc.mo" ],
+            
+              [  "usr\/share\/locale\/eu\/LC_MESSAGES\/mc.mo" ],
+            
+              [  "usr\/share\/locale\/fa\/LC_MESSAGES\/mc.mo" ],
+            
+              [  "usr\/share\/locale\/fi\/LC_MESSAGES\/mc.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/mc.mo" ],
+            
+              [  "usr\/share\/locale\/ga\/LC_MESSAGES\/mc.mo" ],
+            
+              [  "usr\/share\/locale\/gl\/LC_MESSAGES\/mc.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/mc.mo" ],
+            
+              [  "usr\/share\/locale\/hr\/LC_MESSAGES\/mc.mo" ],
+            
+              [  "usr\/share\/locale\/hu\/LC_MESSAGES\/mc.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/mc.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/mc.mo" ],
+            
+              [  "usr\/share\/locale\/kk\/LC_MESSAGES\/mc.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/mc.mo" ],
+            
+              [  "usr\/share\/locale\/lt\/LC_MESSAGES\/mc.mo" ],
+            
+              [  "usr\/share\/locale\/lv\/LC_MESSAGES\/mc.mo" ],
+            
+              [  "usr\/share\/locale\/mn\/LC_MESSAGES\/mc.mo" ],
+            
+              [  "usr\/share\/locale\/nb\/LC_MESSAGES\/mc.mo" ],
+            
+              [  "usr\/share\/locale\/nl\/LC_MESSAGES\/mc.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/mc.mo" ],
+            
+              [  "usr\/share\/locale\/pt\/LC_MESSAGES\/mc.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/mc.mo" ],
+            
+              [  "usr\/share\/locale\/ro\/LC_MESSAGES\/mc.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/mc.mo" ],
+            
+              [  "usr\/share\/locale\/sk\/LC_MESSAGES\/mc.mo" ],
+            
+              [  "usr\/share\/locale\/sl\/LC_MESSAGES\/mc.mo" ],
+            
+              [  "usr\/share\/locale\/sr\/LC_MESSAGES\/mc.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/mc.mo" ],
+            
+              [  "usr\/share\/locale\/ta\/LC_MESSAGES\/mc.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/mc.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/mc.mo" ],
+            
+              [  "usr\/share\/locale\/uz\/LC_MESSAGES\/mc.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/mc.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/mc.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/mc.mo" ],
+            
+              [  "usr\/share\/man\/es\/man1\/mc.1.bz2" ],
+            
+              [  "usr\/share\/man\/hu\/man1\/mc.1.bz2" ],
+            
+              [  "usr\/share\/man\/it\/man1\/mc.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/mc.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/mcdiff.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/mcedit.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/mcview.1.bz2" ],
+            
+              [  "usr\/share\/man\/pl\/man1\/mc.1.bz2" ],
+            
+              [  "usr\/share\/man\/ru\/man1\/mc.1.bz2" ],
+            
+              [  "usr\/share\/man\/sr\/man1\/mc.1.bz2" ],
+            
+              [  "usr\/share\/mc\/examples\/macros.d\/macro.0.sh" ],
+            
+              [  "usr\/share\/mc\/examples\/macros.d\/macro.1.sh" ],
+            
+              [  "usr\/share\/mc\/examples\/macros.d\/macro.3.sh" ],
+            
+              [  "usr\/share\/mc\/examples\/macros.d\/macro.4.sh" ],
+            
+              [  "usr\/share\/mc\/examples\/macros.d\/macro.5.sh" ],
+            
+              [  "usr\/share\/mc\/examples\/macros.d\/macro.6.sh" ],
+            
+              [  "usr\/share\/mc\/examples\/macros.d\/macro.7.sh" ],
+            
+              [  "usr\/share\/mc\/help\/mc.hlp" ],
+            
+              [  "usr\/share\/mc\/help\/mc.hlp.es" ],
+            
+              [  "usr\/share\/mc\/help\/mc.hlp.hu" ],
+            
+              [  "usr\/share\/mc\/help\/mc.hlp.it" ],
+            
+              [  "usr\/share\/mc\/help\/mc.hlp.pl" ],
+            
+              [  "usr\/share\/mc\/help\/mc.hlp.ru" ],
+            
+              [  "usr\/share\/mc\/help\/mc.hlp.sr" ],
+            
+              [  "usr\/share\/mc\/hints\/mc.hint" ],
+            
+              [  "usr\/share\/mc\/hints\/mc.hint.be" ],
+            
+              [  "usr\/share\/mc\/hints\/mc.hint.bg" ],
+            
+              [  "usr\/share\/mc\/hints\/mc.hint.ca" ],
+            
+              [  "usr\/share\/mc\/hints\/mc.hint.cs" ],
+            
+              [  "usr\/share\/mc\/hints\/mc.hint.da" ],
+            
+              [  "usr\/share\/mc\/hints\/mc.hint.de" ],
+            
+              [  "usr\/share\/mc\/hints\/mc.hint.el" ],
+            
+              [  "usr\/share\/mc\/hints\/mc.hint.en_GB" ],
+            
+              [  "usr\/share\/mc\/hints\/mc.hint.eo" ],
+            
+              [  "usr\/share\/mc\/hints\/mc.hint.es" ],
+            
+              [  "usr\/share\/mc\/hints\/mc.hint.et" ],
+            
+              [  "usr\/share\/mc\/hints\/mc.hint.eu" ],
+            
+              [  "usr\/share\/mc\/hints\/mc.hint.fa" ],
+            
+              [  "usr\/share\/mc\/hints\/mc.hint.fr" ],
+            
+              [  "usr\/share\/mc\/hints\/mc.hint.ga" ],
+            
+              [  "usr\/share\/mc\/hints\/mc.hint.gl" ],
+            
+              [  "usr\/share\/mc\/hints\/mc.hint.hu" ],
+            
+              [  "usr\/share\/mc\/hints\/mc.hint.id" ],
+            
+              [  "usr\/share\/mc\/hints\/mc.hint.it" ],
+            
+              [  "usr\/share\/mc\/hints\/mc.hint.ja" ],
+            
+              [  "usr\/share\/mc\/hints\/mc.hint.ka" ],
+            
+              [  "usr\/share\/mc\/hints\/mc.hint.ko" ],
+            
+              [  "usr\/share\/mc\/hints\/mc.hint.lt" ],
+            
+              [  "usr\/share\/mc\/hints\/mc.hint.nb" ],
+            
+              [  "usr\/share\/mc\/hints\/mc.hint.nl" ],
+            
+              [  "usr\/share\/mc\/hints\/mc.hint.pl" ],
+            
+              [  "usr\/share\/mc\/hints\/mc.hint.pt" ],
+            
+              [  "usr\/share\/mc\/hints\/mc.hint.pt_BR" ],
+            
+              [  "usr\/share\/mc\/hints\/mc.hint.ro" ],
+            
+              [  "usr\/share\/mc\/hints\/mc.hint.ru" ],
+            
+              [  "usr\/share\/mc\/hints\/mc.hint.sk" ],
+            
+              [  "usr\/share\/mc\/hints\/mc.hint.sr" ],
+            
+              [  "usr\/share\/mc\/hints\/mc.hint.sv" ],
+            
+              [  "usr\/share\/mc\/hints\/mc.hint.tr" ],
+            
+              [  "usr\/share\/mc\/hints\/mc.hint.uk" ],
+            
+              [  "usr\/share\/mc\/hints\/mc.hint.zh_CN" ],
+            
+              [  "usr\/share\/mc\/hints\/mc.hint.zh_TW" ],
+            
+              [  "usr\/share\/mc\/mc.charsets" ],
+            
+              [  "usr\/share\/mc\/mc.lib" ],
+            
+              [  "usr\/share\/mc\/skins\/dark.ini" ],
+            
+              [  "usr\/share\/mc\/skins\/darkfar.ini" ],
+            
+              [  "usr\/share\/mc\/skins\/default.ini" ],
+            
+              [  "usr\/share\/mc\/skins\/double-lines.ini" ],
+            
+              [  "usr\/share\/mc\/skins\/featured-plus.ini" ],
+            
+              [  "usr\/share\/mc\/skins\/featured.ini" ],
+            
+              [  "usr\/share\/mc\/skins\/gotar.ini" ],
+            
+              [  "usr\/share\/mc\/skins\/gray-green-purple256.ini" ],
+            
+              [  "usr\/share\/mc\/skins\/gray-orange-blue256.ini" ],
+            
+              [  "usr\/share\/mc\/skins\/julia256.ini" ],
+            
+              [  "usr\/share\/mc\/skins\/julia256root.ini" ],
+            
+              [  "usr\/share\/mc\/skins\/mc46.ini" ],
+            
+              [  "usr\/share\/mc\/skins\/modarcon16-defbg-thin.ini" ],
+            
+              [  "usr\/share\/mc\/skins\/modarcon16-defbg.ini" ],
+            
+              [  "usr\/share\/mc\/skins\/modarcon16-thin.ini" ],
+            
+              [  "usr\/share\/mc\/skins\/modarcon16.ini" ],
+            
+              [  "usr\/share\/mc\/skins\/modarcon16root-defbg-thin.ini" ],
+            
+              [  "usr\/share\/mc\/skins\/modarcon16root-defbg.ini" ],
+            
+              [  "usr\/share\/mc\/skins\/modarcon16root-thin.ini" ],
+            
+              [  "usr\/share\/mc\/skins\/modarcon16root.ini" ],
+            
+              [  "usr\/share\/mc\/skins\/modarin256-defbg-thin.ini" ],
+            
+              [  "usr\/share\/mc\/skins\/modarin256-defbg.ini" ],
+            
+              [  "usr\/share\/mc\/skins\/modarin256-thin.ini" ],
+            
+              [  "usr\/share\/mc\/skins\/modarin256.ini" ],
+            
+              [  "usr\/share\/mc\/skins\/modarin256root-defbg-thin.ini" ],
+            
+              [  "usr\/share\/mc\/skins\/modarin256root-defbg.ini" ],
+            
+              [  "usr\/share\/mc\/skins\/modarin256root-thin.ini" ],
+            
+              [  "usr\/share\/mc\/skins\/modarin256root.ini" ],
+            
+              [  "usr\/share\/mc\/skins\/nicedark.ini" ],
+            
+              [  "usr\/share\/mc\/skins\/sand256.ini" ],
+            
+              [  "usr\/share\/mc\/skins\/seasons-autumn16M.ini" ],
+            
+              [  "usr\/share\/mc\/skins\/seasons-spring16M.ini" ],
+            
+              [  "usr\/share\/mc\/skins\/seasons-summer16M.ini" ],
+            
+              [  "usr\/share\/mc\/skins\/seasons-winter16M.ini" ],
+            
+              [  "usr\/share\/mc\/skins\/xoria256-thin.ini" ],
+            
+              [  "usr\/share\/mc\/skins\/xoria256.ini" ],
+            
+              [  "usr\/share\/mc\/skins\/xoria256root-thin.ini" ],
+            
+              [  "usr\/share\/mc\/skins\/yadt256-defbg.ini" ],
+            
+              [  "usr\/share\/mc\/skins\/yadt256.ini" ],
+            
+              [  "usr\/share\/mc\/syntax\/PKGBUILD.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/Syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/ada95.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/as.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/aspx.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/assembler.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/awk.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/b.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/c.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/cabal.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/changelog.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/cmake.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/cobol.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/cs.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/css.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/cuda.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/cxx.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/cython.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/d.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/debian-changelog.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/debian-control.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/debian-description.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/debian-sources-list.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/diff.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/dlink.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/dos.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/dot.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/ebuild.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/eiffel.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/erlang.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/f90.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/filehighlight.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/fortran.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/glsl.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/go.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/haskell.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/hive.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/html.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/idl.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/ini.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/j.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/jal.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/java.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/js.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/json.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/kotlin.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/latex.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/lisp.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/lkr.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/lsm.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/lua.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/m4.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/mail.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/makefile.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/markdown.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/meson.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/ml.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/named.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/nemerle.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/nroff.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/octave.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/opencl.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/osl.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/pascal.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/perl.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/php.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/po.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/povray.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/privoxy.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/procmail.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/properties.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/protobuf.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/puppet.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/python.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/r.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/ruby.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/rust.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/sh.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/slang.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/smalltalk.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/spec.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/spice.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/sql.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/strace.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/swift.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/swig.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/syntax.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/tcl.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/texinfo.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/toml.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/ts.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/tt.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/unknown.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/verilog.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/vhdl.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/xml.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/yabasic.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/yaml.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/yum-repo.syntax" ],
+            
+              [  "usr\/share\/mc\/syntax\/yxx.syntax" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

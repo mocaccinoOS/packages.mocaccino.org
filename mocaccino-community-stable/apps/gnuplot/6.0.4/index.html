@@ -1,0 +1,1073 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing apps/gnuplot-6.0.4 in mocaccino-community-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> apps/gnuplot-6.0.4
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                Command-line driven interactive plotting program
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-community-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-community-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of apps/gnuplot
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/mocaccino-community:gnuplot-apps-6.0.4" target="_blank"> quay.io/mocaccino/mocaccino-community:gnuplot-apps-6.0.4 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/mocaccino-community:gnuplot-apps-6.0.4/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 6.0.4  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> gnuplot </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/gnome-common">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  gnome-common &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/qt">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  qt &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/latex">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  latex &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/wxGTK">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  wxGTK 3.2.8.1-r2&#43;3 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/libcaca">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  libcaca 0.99_beta20-r1 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/libgii">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  libgii 0.2&#43;20 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/libcerf">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  libcerf 2.5 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: sci-visualization/gnuplot
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="http://www.gnuplot.info/" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> http://www.gnuplot.info/ </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/sci-visualization/gnuplot">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  gnuplot &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "usr\/bin\/gnuplot" ],
+            
+              [  "usr\/libexec\/gnuplot\/6.0\/gnuplot_qt" ],
+            
+              [  "usr\/libexec\/gnuplot\/6.0\/gnuplot_x11" ],
+            
+              [  "usr\/share\/doc\/gnuplot-6.0.4\/BUGS" ],
+            
+              [  "usr\/share\/doc\/gnuplot-6.0.4\/NEWS.bz2" ],
+            
+              [  "usr\/share\/doc\/gnuplot-6.0.4\/PGPKEYS.bz2" ],
+            
+              [  "usr\/share\/doc\/gnuplot-6.0.4\/README-js.bz2" ],
+            
+              [  "usr\/share\/doc\/gnuplot-6.0.4\/README-lua.bz2" ],
+            
+              [  "usr\/share\/doc\/gnuplot-6.0.4\/README-ps.bz2" ],
+            
+              [  "usr\/share\/doc\/gnuplot-6.0.4\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/gnuplot-6.0.4\/README.gentoo.bz2" ],
+            
+              [  "usr\/share\/doc\/gnuplot-6.0.4\/RELEASE_NOTES.bz2" ],
+            
+              [  "usr\/share\/doc\/gnuplot-6.0.4\/gnuplot.pdf" ],
+            
+              [  "usr\/share\/doc\/gnuplot-6.0.4\/psdoc\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/gnuplot-6.0.4\/psdoc\/ps_file.doc.bz2" ],
+            
+              [  "usr\/share\/doc\/gnuplot-6.0.4\/psdoc\/ps_fontfile_doc.tex.bz2" ],
+            
+              [  "usr\/share\/doc\/gnuplot-6.0.4\/psdoc\/ps_guide.ps.bz2" ],
+            
+              [  "usr\/share\/doc\/gnuplot-6.0.4\/psdoc\/ps_symbols.gpi.bz2" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/PostScript\/8859-1.ps" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/PostScript\/8859-15.ps" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/PostScript\/8859-2.ps" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/PostScript\/8859-9.ps" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/PostScript\/aglfn.txt" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/PostScript\/cp1250.ps" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/PostScript\/cp1251.ps" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/PostScript\/cp1252.ps" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/PostScript\/cp437.ps" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/PostScript\/cp850.ps" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/PostScript\/cp852.ps" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/PostScript\/koi8r.ps" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/PostScript\/koi8u.ps" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/PostScript\/prologue.ps" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/PostScript\/utf-8.ps" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/app-defaults\/Gnuplot" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/colors_default.gp" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/colors_mono.gp" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/colors_podo.gp" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/1.dat" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/2.dat" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/3.dat" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/3Dboxes.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/BesselJ.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/BesselK.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/Dawson.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/Fresnel.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/GM1_bonds.r3d" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/GM1_sugar.pdb" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/Makefile" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/Makefile.am" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/Makefile.am.in" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/Makefile.in" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/WorldEnergy.dat" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/airfoil.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/all.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/animate.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/animate2.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/animation.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/antenna.dat" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/approximate.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/argb_hexdata.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/aries.png" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/armillary.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/array.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/array_index.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/arrows.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/arrowstyle.dat" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/arrowstyle.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/asciimat.dat" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/autoscale.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/azimuth.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/barchart_art.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/battery.dat" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/big_peak.dat" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/binary.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/binary_polygon.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/bins.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/bivariat.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/bldg.png" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/blutux.rgb" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/bolditalic.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/borders.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/boxclusters.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/boxes3d.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/boxplot.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/break_continue.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/callargs.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/candlesticks.dat" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/candlesticks.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/cerf.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/charset.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/chi_shapes.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/circles.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/cities.dat" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/cities.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/clip14in.dat" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/clip_radial.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/clipobject.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/colornames.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/colorscheme.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/colorwheel.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/columnhead.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/complex_airy.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/complex_trig.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/concave_hull.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/contourfill.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/contours.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/controls.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/convex_hull.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/ctg-y2.dat" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/custom_contours.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/custom_key.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/dashcolor.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/dashtypes.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/datastrings.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/demo.edf" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/density.fnc" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/dgrid3d.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/discrete.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/dodecahedron.bin" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/dodecahedron.dat" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/electron.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/ellipse.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/ellipses.dat" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/ellipses_style.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/elliptic.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/empty-circles.dat" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/energy_circles.dat" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/enhanced_utf8.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/enhancedtext.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/epi_data.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/epslatex.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/errorbars.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/expint.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/fenceplot.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/fillbetween.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/fillcrvs.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/fillstyle.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/finance.dat" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/finance.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/fit.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/fit3.dat" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/fitmulti.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/fontfile.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/fs_empty.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/function_block.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/gantt.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/gen-random.inc" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/glass.dat" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/gnu-valley" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/gnuplot.cfg" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/gnuplot.rot" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/gpdemos.tcl" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/gradient.png" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/heatmap_4D.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/heatmap_points.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/heatmaps.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/hemisphr.dat" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/hexa.fnc" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/hidden.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/hidden2.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/hidden_compare.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/histerror.dat" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/histerror.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/histogram_colors.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/histograms.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/histograms2.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/histopt.dat" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/hsteps.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/html\/Makefile" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/html\/Makefile.canvas" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/html\/Makefile.svg" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/html\/animation.gp" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/html\/animation.html.save" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/html\/canvas_utf8.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/html\/favicon.ico" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/html\/gnuplot_demo.css" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/html\/index.6new" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/html\/index.canvas" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/html\/index.save" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/html\/index.special_functions" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/html\/index.svg" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/html\/linkedaxes.1.js.orig" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/html\/linkedaxes.patch" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/html\/mouseable.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/html\/mousebox.template" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/html\/webify.pl" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/html\/webify_canvas.pl" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/html\/webify_svg.pl" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/hull.dat" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/hypertext.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/hypertext_surface.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/ibeta.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/icon64x64.png" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/icosahedron.dat" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/if_filter.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/igamma.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/image.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/image2.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/imageNaN.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/immigration.dat" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/int64.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/invibeta.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/invigamma.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/iris.dat" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/iris.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/isosurface.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/iterate.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/iterbugs.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/jitter.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/kdensity2d.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/key.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/keyentry.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/klein.dat" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/label_stacked_histograms.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/lambert.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/latex_demo.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/layout.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/lcdemo.dat" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/line.fnc" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/lines_arrows.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/linked_autoscale.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/linkedaxes.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/lnGamma.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/log_tics.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/logic_timing.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/logscale_clipping.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/macros.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/map_projection.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/margins.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/mask_image.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/mask_pm3d.dat" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/mask_pm3d.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/matrix_every.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/matrix_index.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/mgr.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/molecule.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/moli3.dat" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/monotonic_spline.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/mouselab_1.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/mouselab_2.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/mouselabels.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/mousevariables.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/multiaxis.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/multipalette.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/multiplt.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/mxtics_time.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/named_palettes.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/named_var.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/nokey.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/nonlinear1.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/nonlinear2.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/nonlinear3.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/nonlinear4.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/nonlinear5.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/nonlinear6.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/optimize.dat" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/orbital_elements.dat" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/orbits.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/overflow.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/palette\u002balpha.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/parallel.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/param.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/piecewise.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/pixmap.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/plugin\/Makefile" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/plugin\/Makefile.am" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/plugin\/Makefile.in" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/plugin\/README" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/plugin\/demo_plugin.c" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/plugin\/gnuplot_plugin.h" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/plugin\/plugin.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/pm3d.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/pm3d_clip.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/pm3d_lighting.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/pm3dcolors.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/pm3dgamma.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/pointsize.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/polar.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/polar_quadrants.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/polargrid.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/poldat.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/polygon_border.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/polygons.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/prob.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/prob2.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/prob3.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/probably_tux.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/projection.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/pt_variable.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/rainbow.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/random-points" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/random.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/rank_sequence.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/rectangle.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/reflect.fnc" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/rgb_variable.dat" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/rgb_variable.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/rgba_lines.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/rotate_labels.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/rugplot.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/running_avg.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/sampling.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/sampling2.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/scatter.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/scatter2.bin" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/scatter2.dat" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/sectors.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/sharpen.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/short_vector.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/silver.dat" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/simple.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/sine.bin" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/singulr.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/smooth.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/smooth_path.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/smooth_splines.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/solar_params.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/solar_path.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/sound.par" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/sound2.par" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/soundvel.dat" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/special_chars.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/special_functions.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/spiderplot.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/spline.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/split.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/spotlight.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/srl.dat" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/start.par" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/stat.inc" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/stats.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/steps.dat" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/steps.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/stringvar.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/surface1.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/surface2.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/surface_explicit.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/synchrotron.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/table.dat" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/textbox.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/textcolor.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/textrotate.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/tics.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/timedat.dat" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/timedat.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/transparent.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/transparent_solids.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/triangle.dat" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/truncated_cube.dat" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/ttics.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/uigamma.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/unicode.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/using.bin" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/using.dat" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/using.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/utf8.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/varcolor.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/vector.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/violinplot.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/viridis.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/volatile.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/voxel.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/vplot.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/walls.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/watch_contours.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/watchmouse.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/watchpoints.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/watchpoints2.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/waterfallplot.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/week_date.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/whale.dat" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/windrose.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/world.cor" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/world.dat" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/world.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/world2.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/zerror.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/zeta.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/demo\/zsort.dem" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/gnuplot.gih" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/gnuplotrc" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/js\/README" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/js\/canvasmath.js" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/js\/canvastext.js" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/js\/gnuplot_common.js" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/js\/gnuplot_dashedlines.js" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/js\/gnuplot_mouse.css" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/js\/gnuplot_mouse.js" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/js\/gnuplot_svg.js" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/js\/gnuplot_svg_2018.js" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/js\/grid.png" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/js\/help.png" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/js\/nextzoom.png" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/js\/previouszoom.png" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/js\/return.png" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/js\/textzoom.png" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/lua\/gnuplot-tikz.lua" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/qt\/qtgnuplot_fr.qm" ],
+            
+              [  "usr\/share\/gnuplot\/6.0\/qt\/qtgnuplot_ja.qm" ],
+            
+              [  "usr\/share\/man\/ja\/man1\/gnuplot.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/gnuplot.1.bz2" ],
+            
+              [  "usr\/share\/texmf-site\/tex\/latex\/gnuplot\/gnuplot-lua-tikz-common.tex" ],
+            
+              [  "usr\/share\/texmf-site\/tex\/latex\/gnuplot\/gnuplot-lua-tikz.sty" ],
+            
+              [  "usr\/share\/texmf-site\/tex\/latex\/gnuplot\/gnuplot-lua-tikz.tex" ],
+            
+              [  "usr\/share\/texmf-site\/tex\/latex\/gnuplot\/gnuplot.cfg" ],
+            
+              [  "usr\/share\/texmf-site\/tex\/latex\/gnuplot\/t-gnuplot-lua-tikz.tex" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>
