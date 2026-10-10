@@ -1,0 +1,1565 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing apps/rawtherapee-5.13&#43;1 in mocaccino-community-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> apps/rawtherapee-5.13&#43;1
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                A powerful cross-platform raw image processing program
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-community-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-community-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of apps/rawtherapee
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/mocaccino-community:rawtherapee-apps-5.13-1" target="_blank"> quay.io/mocaccino/mocaccino-community:rawtherapee-apps-5.13-1 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/mocaccino-community:rawtherapee-apps-5.13-1/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 5.13&#43;1  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> GPL-3 </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/gnome-common">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  gnome-common &gt;=0 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> appstream.id: com.rawtherapee.RawTherapee
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: media-gfx/rawtherapee
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://www.rawtherapee.com" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://www.rawtherapee.com </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/media-libs/libiptcdata">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  libiptcdata &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/media-gfx/rawtherapee">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  rawtherapee &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "usr\/bin\/iptc" ],
+            
+              [  "usr\/bin\/rawtherapee" ],
+            
+              [  "usr\/bin\/rawtherapee-cli" ],
+            
+              [  "usr\/lib64\/libiptcdata.so" ],
+            
+              [  "usr\/lib64\/libiptcdata.so.0" ],
+            
+              [  "usr\/lib64\/libiptcdata.so.0.3.3" ],
+            
+              [  "usr\/lib64\/librtengine.a" ],
+            
+              [  "usr\/lib64\/pkgconfig\/libiptcdata.pc" ],
+            
+              [  "usr\/share\/applications\/rawtherapee.desktop" ],
+            
+              [  "usr\/share\/doc\/libiptcdata-1.0.5-r1\/AUTHORS.bz2" ],
+            
+              [  "usr\/share\/doc\/libiptcdata-1.0.5-r1\/ChangeLog.bz2" ],
+            
+              [  "usr\/share\/doc\/libiptcdata-1.0.5-r1\/NEWS.bz2" ],
+            
+              [  "usr\/share\/doc\/libiptcdata-1.0.5-r1\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/libiptcdata-1.0.5-r1\/TODO" ],
+            
+              [  "usr\/share\/doc\/rawtherapee-5.13\/README.md.bz2" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/libiptcdata\/ch01.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/libiptcdata\/ch02.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/libiptcdata\/ch03.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/libiptcdata\/home.png" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/libiptcdata\/index.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/libiptcdata\/iptc-about.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/libiptcdata\/iptc-commandline.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/libiptcdata\/iptc-i18n.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/libiptcdata\/iptc-libjpeg.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/libiptcdata\/iptc-overview.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/libiptcdata\/left-insensitive.png" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/libiptcdata\/left.png" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/libiptcdata\/libiptcdata-data.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/libiptcdata\/libiptcdata-dataset.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/libiptcdata\/libiptcdata-jpeg.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/libiptcdata\/libiptcdata-log.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/libiptcdata\/libiptcdata-mem.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/libiptcdata\/libiptcdata-tag.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/libiptcdata\/libiptcdata-utils.html" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/libiptcdata\/libiptcdata.devhelp2" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/libiptcdata\/right-insensitive.png" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/libiptcdata\/right.png" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/libiptcdata\/style.css" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/libiptcdata\/up-insensitive.png" ],
+            
+              [  "usr\/share\/gtk-doc\/html\/libiptcdata\/up.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/128x128\/apps\/rawtherapee.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/rawtherapee.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/rawtherapee.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/256x256\/apps\/rawtherapee.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/32x32\/apps\/rawtherapee.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/rawtherapee.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/64x64\/apps\/rawtherapee.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/apps\/rawtherapee.svg" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/iptc.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/libiptcdata.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/iptc.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/libiptcdata.mo" ],
+            
+              [  "usr\/share\/man\/man1\/rawtherapee.1.bz2" ],
+            
+              [  "usr\/share\/metainfo\/com.rawtherapee.RawTherapee.appdata.xml" ],
+            
+              [  "usr\/share\/rawtherapee\/AUTHORS.txt" ],
+            
+              [  "usr\/share\/rawtherapee\/AboutThisBuild.txt" ],
+            
+              [  "usr\/share\/rawtherapee\/LICENSE" ],
+            
+              [  "usr\/share\/rawtherapee\/RELEASE_NOTES.txt" ],
+            
+              [  "usr\/share\/rawtherapee\/camconst.json" ],
+            
+              [  "usr\/share\/rawtherapee\/cammatrices.json" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/CANON EOS 250D.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/CANON EOS 800D.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/CANON EOS M50.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/CANON POWERSHOT G5 X MARK II.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Canon EOS 100D.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Canon EOS 1300D.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Canon EOS 20D.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Canon EOS 400D.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Canon EOS 40D.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Canon EOS 450D.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Canon EOS 50D.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Canon EOS 550D.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Canon EOS 5D Mark II.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Canon EOS 5D Mark III.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Canon EOS 5D Mark IV.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Canon EOS 5D.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Canon EOS 600D.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Canon EOS 60D.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Canon EOS 650D.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Canon EOS 6D Mark II.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Canon EOS 6D.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Canon EOS 7D Mark II.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Canon EOS 7D.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Canon EOS 90D.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Canon EOS D60.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Canon EOS M6 Mark II.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Canon EOS R.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Canon EOS R5.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Canon EOS R6.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Canon EOS R8.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Canon EOS RP.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Canon EOS-1D Mark III.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Canon EOS-1D X Mark III.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Canon EOS-1Ds Mark II.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Canon PowerShot G1 X Mark II.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Canon PowerShot G10.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Canon PowerShot G12.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Canon PowerShot G7 X.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Canon PowerShot S110.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Canon PowerShot S120.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/FUJIFILM DBP for GX680.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/FUJIFILM FinePix F600EXR.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/FUJIFILM GFX 50R.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/FUJIFILM X-A5.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/FUJIFILM X-A7.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/FUJIFILM X-E3.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/FUJIFILM X-H1.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/FUJIFILM X-Pro2.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/FUJIFILM X-Pro3.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/FUJIFILM X-S1.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/FUJIFILM X-S10.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/FUJIFILM X-T1.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/FUJIFILM X-T10.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/FUJIFILM X-T2.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/FUJIFILM X-T20.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/FUJIFILM X-T3.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/FUJIFILM X-T30.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/FUJIFILM X-T4.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/FUJIFILM X100S.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/FUJIFILM X100T.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Fujifilm FinePix S9500.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Fujifilm X-E1.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Fujifilm X-E2.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/LG Mobile LG-H815.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Leaf Aptus 75.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/MINOLTA DYNAX 7D.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/NIKON COOLPIX P7800.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/NIKON D300.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/NIKON D3300.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/NIKON D50.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/NIKON D500.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/NIKON D5000.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/NIKON D5300.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/NIKON D5600.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/NIKON D600.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/NIKON D610.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/NIKON D700.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/NIKON D70s.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/NIKON D7100.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/NIKON D7200.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/NIKON D750.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/NIKON D7500.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/NIKON D80.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/NIKON D800.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/NIKON D800E.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/NIKON D810.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/NIKON D850.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/NIKON Z 5.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/NIKON Z 50.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/NIKON Z 6.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/NIKON Z 6_2.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/NIKON Z 7.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/NIKON Z 8.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/NIKON Z 9.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/NIKON Z F.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Nikon D200.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Nikon D3000.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Nikon D3100.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Nikon D3S.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Nikon D5100.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Nikon D7000.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/OLYMPUS E-510.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/OLYMPUS E-M1.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/OLYMPUS E-M10.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/OLYMPUS E-M1MarkII.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/OLYMPUS E-M5MarkII.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Olympus E-1.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Olympus E-520.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Olympus E-M5.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Olympus E-P2.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Olympus XZ-1.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/PANASONIC DC-S5M2.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/PANASONIC DMC-LX100.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/PENTAX K-5 II.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/PENTAX K-5.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/PENTAX K-50.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/PENTAX K10D.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Panasonic DC-G9.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Panasonic DC-GX9.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Panasonic DC-S1.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Panasonic DC-S5.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Panasonic DC-TZ91.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Panasonic DMC-FZ1000.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Panasonic DMC-FZ150.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Panasonic DMC-FZ35.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Panasonic DMC-FZ38.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Panasonic DMC-G1.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Panasonic DMC-G3.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Panasonic DMC-G5.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Panasonic DMC-GH1.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Panasonic DMC-GH2.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Panasonic DMC-GX7.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Panasonic DMC-GX85.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Pentax K-r.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Pentax K200D.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/RICOH GR III.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/RICOH PENTAX K-1.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/RICOH PENTAX K-3.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/SONY DSC-RX100M6.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/SONY DSLR-A580.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/SONY ILCE-6000.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/SONY ILCE-6300.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/SONY ILCE-6400.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/SONY ILCE-6500.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/SONY ILCE-6600.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/SONY ILCE-7.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/SONY ILCE-7C.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/SONY ILCE-7M2.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/SONY ILCE-7M3.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/SONY ILCE-7M4.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/SONY ILCE-7RM3.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/SONY ILCE-7RM4.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/SONY ILCE-7SM3.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/SONY ILCE-9.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/SONY SLT-A99V.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Sony DSLR-A700.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Sony DSLR-A900.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Sony NEX-5N.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/Sony SLT-A55V.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/YI TECHNOLOGY M1.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/camera_model_aliases.json" ],
+            
+              [  "usr\/share\/rawtherapee\/dcpprofiles\/samsung SM-G930V.dcp" ],
+            
+              [  "usr\/share\/rawtherapee\/dcraw.json" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/input\/Canon EOS 20D.icc" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/input\/Canon EOS 40D.icc" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/input\/Canon EOS 450D.icc" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/input\/Canon EOS 550D.icc" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/input\/Canon EOS 5D.icc" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/input\/Canon EOS-1D Mark III.icc" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/input\/Canon PowerShot G10.icc" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/input\/Canon PowerShot G12.icc" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/input\/Nikon D200.icc" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/input\/Nikon D3000.icc" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/input\/Nikon D3100.icc" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/input\/Nikon D3S.icc" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/input\/Nikon D700.icc" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/input\/Nikon D7000.icc" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/input\/Olympus E-P2.icc" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/input\/Panasonic DMC-FZ150.icc" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/input\/Panasonic DMC-FZ35.icc" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/input\/Panasonic DMC-FZ38.icc" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/input\/Panasonic DMC-G1.icc" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/input\/Panasonic DMC-G3.icc" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/input\/Panasonic DMC-GH1.icc" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/input\/Panasonic DMC-GH2.icc" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/input\/Pentax K200D.icc" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/input\/Sony DSLR-A700.icc" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/input\/Sony DSLR-A900.icc" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/input\/Sony SLT-A55V.icc" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/input\/sd14-bl15-crop-matrix-gamma-wp10.icm" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/input\/sd14-bl15-crop-matrix-gamma-wp11.icm" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/input\/sd14-bl15-crop-matrix-gamma-wp12.icm" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/input\/sd1_merrill_cloudy8140-CROP-WP10.icm" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/input\/sd1_merrill_cloudy8140-CROP-WP11.icm" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/input\/sd1_merrill_sunny8161-crop-wp10.icm" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/input\/sd1_merrill_sunny8161-crop-wp11.icm" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/input\/sd1_merrill_tungsten8130-CROP-WP10.icm" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/input\/sd1_merrill_tungsten8130-CROP-WP11.icm" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/output\/DCI-P3 D65.icc" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/output\/DCI-P3 Theater.icc" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/output\/RTv2_ACES-AP0.icc" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/output\/RTv2_ACES-AP1.icc" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/output\/RTv2_Best.icc" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/output\/RTv2_Beta.icc" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/output\/RTv2_Bruce.icc" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/output\/RTv2_Large.icc" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/output\/RTv2_Medium.icc" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/output\/RTv2_Rec2020.icc" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/output\/RTv2_Wide.icc" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/output\/RTv2_sRGB.icc" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/output\/RTv4_ACES-AP0.icc" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/output\/RTv4_ACES-AP1.icc" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/output\/RTv4_Best.icc" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/output\/RTv4_Beta.icc" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/output\/RTv4_Bruce.icc" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/output\/RTv4_Large.icc" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/output\/RTv4_Medium.icc" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/output\/RTv4_Rec2020.icc" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/output\/RTv4_Wide.icc" ],
+            
+              [  "usr\/share\/rawtherapee\/iccprofiles\/output\/RTv4_sRGB.icc" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/24x24\/apps\/empty.png" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/index.theme" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/add-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/add.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/aperture.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/arrow-down-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/arrow-left-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/arrow-right-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/arrow-up-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/arrow-updown.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/arrow2-left.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/arrow2-right.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/atom.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/bayer.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/beforeafter.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/bidirectional-arrow-horizontal-hicontrast.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/bidirectional-arrow-horizontal-prelight.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/bidirectional-arrow-vertical-hicontrast.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/bidirectional-arrow-vertical-prelight.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/box.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/cancel-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/cancel.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/circle-black-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/circle-blue-green-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/circle-blue-red-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/circle-blue-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/circle-blue-yellow-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/circle-cyan-red-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/circle-cyan-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/circle-darkgray-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/circle-empty-blue-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/circle-empty-darkgray-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/circle-empty-gray-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/circle-empty-green-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/circle-empty-purple-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/circle-empty-red-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/circle-empty-yellow-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/circle-gray-blue-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/circle-gray-green-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/circle-gray-red-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/circle-gray-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/circle-green-blue-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/circle-green-red-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/circle-green-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/circle-magenta-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/circle-multicolor-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/circle-orange-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/circle-purple-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/circle-red-blue-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/circle-red-cyan-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/circle-red-green-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/circle-red-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/circle-white-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/circle-yellow-blue-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/circle-yellow-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/color-circles.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/color-picker-add-hicontrast.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/color-picker-add.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/color-picker-bars.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/color-picker-hicontrast.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/color-picker-hide.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/color-picker-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/color-picker.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/contrastmask-off.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/contrastmask-on.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/copy.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/crop-auto-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/crop-auto.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/crop-point-hicontrast.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/crop-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/crop.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/crossed-arrows-in.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/crossed-arrows-out.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/crosshair-adjust.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/crosshair-hicontrast.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/crosshair-node-curve.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/crosshair-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/curve-catmullrom-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/curve-catmullrom.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/curve-controlpoints-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/curve-controlpoints.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/curve-flat-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/curve-flat.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/curve-linear-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/curve-linear.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/curve-nurbs-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/curve-nurbs.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/curve-parametric-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/curve-parametric.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/curve-spline-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/curve-spline.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/detail.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/device-floppy.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/device-hdd.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/device-network.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/device-optical.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/device-usb.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/distortion-auto-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/distortion-auto.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/distortion-barrel-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/distortion-barrel.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/distortion-pincushion-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/distortion-pincushion.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/draw.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/edit-point.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/edit-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/edit.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/equilizer-narrow.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/equilizer-wide.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/expander-closed-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/expander-open-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/exposure.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/filetype-hdr.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/filetype-ps.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/filter-clear.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/filter-original.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/filter-original2.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/filter.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/flip-horizontal.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/flip-vertical.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/focusscreen-off.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/focusscreen-on.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/folder-closed-home-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/folder-closed-home.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/folder-closed-recent-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/folder-closed-recent.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/folder-closed-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/folder-closed.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/folder-open-recent-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/folder-open-recent.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/folder-open-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/folder-open.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/folder-subfolder.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/fullscreen-enter.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/fullscreen-leave.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/gamut-hist.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/gamut-plus.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/gamut-softproof.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/gamut-warning.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/gamut_srgb_prophoto_xy.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/gears-pause.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/gears-play.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/gears-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/gears.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/goto-end-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/goto-start-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/hand-closed-hicontrast.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/hand-open-hicontrast.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/hand-open.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/histogram-bar-off-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/histogram-bar-on-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/histogram-blue-off-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/histogram-blue-on-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/histogram-ellipsis-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/histogram-gold-off-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/histogram-gold-on-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/histogram-green-off-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/histogram-green-on-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/histogram-mode-linear-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/histogram-mode-logx-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/histogram-mode-logxy-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/histogram-red-off-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/histogram-red-on-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/histogram-silver-off-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/histogram-silver-on-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/histogram-type-histogram-raw-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/histogram-type-histogram-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/histogram-type-parade-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/histogram-type-vectorscope-hc-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/histogram-type-vectorscope-hs-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/histogram-type-waveform-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/info.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/intent-absolute.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/intent-perceptual.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/intent-relative.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/intent-saturation.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/magnifier-1to1-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/magnifier-1to1.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/magnifier-crop.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/magnifier-fit.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/magnifier-minus-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/magnifier-minus.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/magnifier-plus-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/magnifier-plus.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/magnifier.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/metadata.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/node-move-nw-se-hicontrast.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/node-move-sw-ne-hicontrast.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/node-move-x-hicontrast.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/node-move-xy-hicontrast.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/node-move-y-hicontrast.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/one-to-one-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/padlock-locked-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/padlock-unlocked-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/palette-brush.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/panel-to-bottom.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/panel-to-left.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/panel-to-right.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/panel-to-top.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/paste.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/perspective-horizontal-left-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/perspective-horizontal-left.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/perspective-horizontal-right-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/perspective-horizontal-right.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/perspective-horizontal-vertical.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/perspective-vertical-bottom-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/perspective-vertical-bottom.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/perspective-vertical-top-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/perspective-vertical-top.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/power-inconsistent-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/power-off-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/power-on-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/preferences.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/profile-filled.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/profile-partial.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/questionmark.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/redo-all.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/redo-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/redo.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/refresh-red-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/refresh-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/refresh.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/remove-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/remove.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/rotate-aroundnode-hicontrast.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/rotate-aroundnode.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/rotate-left-90.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/rotate-left-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/rotate-left.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/rotate-right-90.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/rotate-right-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/rotate-right.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/rotate-straighten-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/rotate-straighten.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/rt-spot.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/save-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/save.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/saved-no-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/saved-yes-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/spot-active.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/spot-normal.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/spot-prelight.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/square-toggle-black-off-narrow.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/square-toggle-black-on-narrow.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/square-toggle-blue-off-narrow.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/square-toggle-blue-on-narrow.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/square-toggle-gray-off-narrow.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/square-toggle-gray-on-narrow.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/square-toggle-green-off-narrow.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/square-toggle-green-on-narrow.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/square-toggle-luminosity-off-narrow.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/square-toggle-luminosity-on-narrow.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/square-toggle-red-off-narrow.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/square-toggle-red-on-narrow.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/square-toggle-theme-off-narrow.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/square-toggle-theme-on-narrow.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/square-toggle-white-off-narrow.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/square-toggle-white-on-narrow.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/star-gold-hollow-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/star-gold-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/star-hollow-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/star-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/star.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/template-16.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/template-24.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/template-narrow.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/tick-green-hollow-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/tick-green-hollow.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/tick-green-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/tick-green.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/tick-hollow-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/tick-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/tick.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/transform.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/trash-delete.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/trash-empty-show.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/trash-empty.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/trash-full-show.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/trash-full.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/trash-hide-deleted.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/trash-remove-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/trash-remove.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/trash-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/undo-all.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/undo-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/undo.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/warning-highlights.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/warning-shadows.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/warning.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/wavelets.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/wb-auto-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/wb-auto.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/wb-camera-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/wb-camera.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/wb-cloudy-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/wb-cloudy.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/wb-custom-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/wb-custom.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/wb-flash-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/wb-flash.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/wb-fluorescent-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/wb-fluorescent.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/wb-lamp-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/wb-lamp.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/wb-led-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/wb-led.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/wb-shade-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/wb-shade.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/wb-sun-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/wb-sun.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/wb-tungsten-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/wb-tungsten.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/wb-water-small.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/wb-water.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/icons\/rawtherapee\/scalable\/apps\/window-add.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/images\/ornament1.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/images\/rawtherapee.ico" ],
+            
+              [  "usr\/share\/rawtherapee\/images\/rt-logo-text-black.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/images\/rt-logo-text-white.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/images\/splash.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/images\/splash_template.svg" ],
+            
+              [  "usr\/share\/rawtherapee\/languages\/Catala" ],
+            
+              [  "usr\/share\/rawtherapee\/languages\/Chinese (Simplified)" ],
+            
+              [  "usr\/share\/rawtherapee\/languages\/Czech" ],
+            
+              [  "usr\/share\/rawtherapee\/languages\/Dansk" ],
+            
+              [  "usr\/share\/rawtherapee\/languages\/Deutsch" ],
+            
+              [  "usr\/share\/rawtherapee\/languages\/English (UK)" ],
+            
+              [  "usr\/share\/rawtherapee\/languages\/English (US)" ],
+            
+              [  "usr\/share\/rawtherapee\/languages\/Espanol (Castellano)" ],
+            
+              [  "usr\/share\/rawtherapee\/languages\/Espanol (Latin America)" ],
+            
+              [  "usr\/share\/rawtherapee\/languages\/Francais" ],
+            
+              [  "usr\/share\/rawtherapee\/languages\/Hebrew" ],
+            
+              [  "usr\/share\/rawtherapee\/languages\/Italiano" ],
+            
+              [  "usr\/share\/rawtherapee\/languages\/Japanese" ],
+            
+              [  "usr\/share\/rawtherapee\/languages\/Korean" ],
+            
+              [  "usr\/share\/rawtherapee\/languages\/LICENSE" ],
+            
+              [  "usr\/share\/rawtherapee\/languages\/Magyar" ],
+            
+              [  "usr\/share\/rawtherapee\/languages\/Nederlands" ],
+            
+              [  "usr\/share\/rawtherapee\/languages\/Polish" ],
+            
+              [  "usr\/share\/rawtherapee\/languages\/Portugues" ],
+            
+              [  "usr\/share\/rawtherapee\/languages\/Portugues (Brasil)" ],
+            
+              [  "usr\/share\/rawtherapee\/languages\/README" ],
+            
+              [  "usr\/share\/rawtherapee\/languages\/Russian" ],
+            
+              [  "usr\/share\/rawtherapee\/languages\/Serbian (Cyrilic Characters)" ],
+            
+              [  "usr\/share\/rawtherapee\/languages\/Slovenian" ],
+            
+              [  "usr\/share\/rawtherapee\/languages\/Swedish" ],
+            
+              [  "usr\/share\/rawtherapee\/languages\/Ukrainian" ],
+            
+              [  "usr\/share\/rawtherapee\/languages\/default" ],
+            
+              [  "usr\/share\/rawtherapee\/options" ],
+            
+              [  "usr\/share\/rawtherapee\/profiles\/Auto-Matched Curve - ISO High.pp3" ],
+            
+              [  "usr\/share\/rawtherapee\/profiles\/Auto-Matched Curve - ISO Low.pp3" ],
+            
+              [  "usr\/share\/rawtherapee\/profiles\/Auto-Matched Curve - ISO Medium.pp3" ],
+            
+              [  "usr\/share\/rawtherapee\/profiles\/Film Negative - Black and White.pp3" ],
+            
+              [  "usr\/share\/rawtherapee\/profiles\/Film Negative.pp3" ],
+            
+              [  "usr\/share\/rawtherapee\/profiles\/Non-raw\/Brighten.pp3" ],
+            
+              [  "usr\/share\/rawtherapee\/profiles\/Pixel Shift\/PS ISO High.pp3" ],
+            
+              [  "usr\/share\/rawtherapee\/profiles\/Pixel Shift\/PS ISO Low.pp3" ],
+            
+              [  "usr\/share\/rawtherapee\/profiles\/Pixel Shift\/PS ISO Medium.pp3" ],
+            
+              [  "usr\/share\/rawtherapee\/profiles\/Pixel Shift\/PS No Motion.pp3" ],
+            
+              [  "usr\/share\/rawtherapee\/profiles\/Pop\/Pop 1.pp3" ],
+            
+              [  "usr\/share\/rawtherapee\/profiles\/Pop\/Pop 2 Lab.pp3" ],
+            
+              [  "usr\/share\/rawtherapee\/profiles\/Pop\/Pop 3 Skin.pp3" ],
+            
+              [  "usr\/share\/rawtherapee\/profiles\/Pop\/Pop 4 Black-and-White.pp3" ],
+            
+              [  "usr\/share\/rawtherapee\/profiles\/Standard Film Curve - ISO High.pp3" ],
+            
+              [  "usr\/share\/rawtherapee\/profiles\/Standard Film Curve - ISO Low.pp3" ],
+            
+              [  "usr\/share\/rawtherapee\/profiles\/Standard Film Curve - ISO Medium.pp3" ],
+            
+              [  "usr\/share\/rawtherapee\/profiles\/Unclipped.pp3" ],
+            
+              [  "usr\/share\/rawtherapee\/rt.json" ],
+            
+              [  "usr\/share\/rawtherapee\/sounds\/BatchComplete.wav" ],
+            
+              [  "usr\/share\/rawtherapee\/sounds\/Empty.wav" ],
+            
+              [  "usr\/share\/rawtherapee\/sounds\/ProcessComplete.wav" ],
+            
+              [  "usr\/share\/rawtherapee\/themes\/RawTherapee - Legacy.css" ],
+            
+              [  "usr\/share\/rawtherapee\/themes\/RawTherapee.css" ],
+            
+              [  "usr\/share\/rawtherapee\/themes\/TooWaBlue - Bright.css" ],
+            
+              [  "usr\/share\/rawtherapee\/themes\/TooWaBlue - Dark.css" ],
+            
+              [  "usr\/share\/rawtherapee\/themes\/TooWaBlue.css" ],
+            
+              [  "usr\/share\/rawtherapee\/themes\/TooWaGrey - Average Surround.css" ],
+            
+              [  "usr\/share\/rawtherapee\/themes\/TooWaGrey - Bright.css" ],
+            
+              [  "usr\/share\/rawtherapee\/themes\/TooWaGrey - Dark.css" ],
+            
+              [  "usr\/share\/rawtherapee\/themes\/TooWaGrey.css" ],
+            
+              [  "usr\/share\/rawtherapee\/themes\/common\/size - Legacy.css" ],
+            
+              [  "usr\/share\/rawtherapee\/themes\/common\/size.css" ],
+            
+              [  "usr\/share\/rawtherapee\/themes\/system.iconset" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

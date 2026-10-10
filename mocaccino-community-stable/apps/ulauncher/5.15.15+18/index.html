@@ -1,0 +1,1515 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing apps/ulauncher-5.15.15&#43;18 in mocaccino-community-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> apps/ulauncher-5.15.15&#43;18
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                Feature rich application Launcher for Linux
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-community-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-community-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of apps/ulauncher
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/mocaccino-community:ulauncher-apps-5.15.15-18" target="_blank"> quay.io/mocaccino/mocaccino-community:ulauncher-apps-5.15.15-18 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/mocaccino-community:ulauncher-apps-5.15.15-18/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 5.15.15&#43;18  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> GPL-3 </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/gnome-common">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  gnome-common &gt;=0 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: dev-python/levenshtein dev-python/websocket-client
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://ulauncher.io" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://ulauncher.io </a>
+    </span>
+  
+    <span class="tag">
+    <a href="https://github.com/Ulauncher/Ulauncher/" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://github.com/Ulauncher/Ulauncher/ </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/net-misc/ulauncher">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  ulauncher &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-python/levenshtein">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  levenshtein &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-python/websocket-client">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  websocket-client &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-python/rapidfuzz">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  rapidfuzz &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "usr\/bin\/ulauncher" ],
+            
+              [  "usr\/bin\/ulauncher-toggle" ],
+            
+              [  "usr\/bin\/wsdump" ],
+            
+              [  "usr\/lib\/python-exec\/python3.14\/wsdump" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/Levenshtein\/StringMatcher.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/Levenshtein\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/Levenshtein\/__init__.pyi" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/Levenshtein\/__pycache__\/StringMatcher.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/Levenshtein\/__pycache__\/StringMatcher.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/Levenshtein\/__pycache__\/StringMatcher.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/Levenshtein\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/Levenshtein\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/Levenshtein\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/Levenshtein\/levenshtein_cpp.cpython-314-x86_64-linux-gnu.so" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/Levenshtein\/py.typed" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/levenshtein-0.27.3.dist-info\/METADATA" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/levenshtein-0.27.3.dist-info\/WHEEL" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/__init__.pyi" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/__pycache__\/_common_py.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/__pycache__\/_common_py.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/__pycache__\/_common_py.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/__pycache__\/_feature_detector.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/__pycache__\/_feature_detector.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/__pycache__\/_feature_detector.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/__pycache__\/_utils.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/__pycache__\/_utils.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/__pycache__\/_utils.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/__pycache__\/fuzz.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/__pycache__\/fuzz.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/__pycache__\/fuzz.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/__pycache__\/fuzz_py.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/__pycache__\/fuzz_py.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/__pycache__\/fuzz_py.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/__pycache__\/process.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/__pycache__\/process.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/__pycache__\/process.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/__pycache__\/process_cpp.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/__pycache__\/process_cpp.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/__pycache__\/process_cpp.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/__pycache__\/process_py.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/__pycache__\/process_py.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/__pycache__\/process_py.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/__pycache__\/utils.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/__pycache__\/utils.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/__pycache__\/utils.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/__pycache__\/utils_py.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/__pycache__\/utils_py.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/__pycache__\/utils_py.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/__pyinstaller\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/__pyinstaller\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/__pyinstaller\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/__pyinstaller\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/__pyinstaller\/__pycache__\/test_rapidfuzz_packaging.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/__pyinstaller\/__pycache__\/test_rapidfuzz_packaging.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/__pyinstaller\/__pycache__\/test_rapidfuzz_packaging.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/__pyinstaller\/test_rapidfuzz_packaging.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/_common_py.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/_feature_detector.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/_feature_detector_cpp.cpython-314-x86_64-linux-gnu.so" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/_utils.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/DamerauLevenshtein.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/DamerauLevenshtein.pyi" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/DamerauLevenshtein_py.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/Hamming.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/Hamming.pyi" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/Hamming_py.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/Indel.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/Indel.pyi" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/Indel_py.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/Jaro.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/Jaro.pyi" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/JaroWinkler.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/JaroWinkler.pyi" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/JaroWinkler_py.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/Jaro_py.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/LCSseq.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/LCSseq.pyi" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/LCSseq_py.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/Levenshtein.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/Levenshtein.pyi" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/Levenshtein_py.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/OSA.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/OSA.pyi" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/OSA_py.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/Postfix.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/Postfix.pyi" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/Postfix_py.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/Prefix.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/Prefix.pyi" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/Prefix_py.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__init__.pyi" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/DamerauLevenshtein.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/DamerauLevenshtein.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/DamerauLevenshtein.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/DamerauLevenshtein_py.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/DamerauLevenshtein_py.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/DamerauLevenshtein_py.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/Hamming.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/Hamming.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/Hamming.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/Hamming_py.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/Hamming_py.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/Hamming_py.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/Indel.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/Indel.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/Indel.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/Indel_py.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/Indel_py.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/Indel_py.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/Jaro.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/Jaro.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/Jaro.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/JaroWinkler.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/JaroWinkler.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/JaroWinkler.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/JaroWinkler_py.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/JaroWinkler_py.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/JaroWinkler_py.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/Jaro_py.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/Jaro_py.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/Jaro_py.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/LCSseq.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/LCSseq.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/LCSseq.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/LCSseq_py.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/LCSseq_py.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/LCSseq_py.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/Levenshtein.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/Levenshtein.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/Levenshtein.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/Levenshtein_py.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/Levenshtein_py.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/Levenshtein_py.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/OSA.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/OSA.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/OSA.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/OSA_py.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/OSA_py.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/OSA_py.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/Postfix.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/Postfix.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/Postfix.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/Postfix_py.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/Postfix_py.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/Postfix_py.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/Prefix.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/Prefix.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/Prefix.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/Prefix_py.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/Prefix_py.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/Prefix_py.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/_initialize.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/_initialize.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/_initialize.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/_initialize_py.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/_initialize_py.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/_initialize_py.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/metrics_py.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/metrics_py.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/__pycache__\/metrics_py.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/_initialize.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/_initialize.pyi" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/_initialize_cpp.cpython-314-x86_64-linux-gnu.so" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/_initialize_py.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/metrics_cpp.cpython-314-x86_64-linux-gnu.so" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/metrics_cpp_avx2.cpython-314-x86_64-linux-gnu.so" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/distance\/metrics_py.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/fuzz.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/fuzz.pyi" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/fuzz_cpp.cpython-314-x86_64-linux-gnu.so" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/fuzz_cpp_avx2.cpython-314-x86_64-linux-gnu.so" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/fuzz_py.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/process.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/process.pyi" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/process_cpp.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/process_cpp_impl.cpython-314-x86_64-linux-gnu.so" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/process_py.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/py.typed" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/utils.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/utils.pyi" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/utils_cpp.cpython-314-x86_64-linux-gnu.so" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz\/utils_py.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz-3.14.5.dist-info\/METADATA" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz-3.14.5.dist-info\/WHEEL" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/rapidfuzz-3.14.5.dist-info\/entry_points.txt" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/api\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/api\/client\/Client.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/api\/client\/EventListener.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/api\/client\/Extension.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/api\/client\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/api\/client\/setup_logging.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/api\/server\/DeferredResultRenderer.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/api\/server\/ExtensionController.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/api\/server\/ExtensionDb.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/api\/server\/ExtensionDownloader.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/api\/server\/ExtensionKeywordResultItem.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/api\/server\/ExtensionManifest.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/api\/server\/ExtensionPreferences.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/api\/server\/ExtensionRunner.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/api\/server\/ExtensionSearchMode.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/api\/server\/ExtensionServer.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/api\/server\/GithubExtension.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/api\/server\/ProcessErrorExtractor.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/api\/server\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/api\/server\/extension_finder.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/api\/server\/port_finder.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/api\/shared\/Response.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/api\/shared\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/api\/shared\/action\/ActionList.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/api\/shared\/action\/BaseAction.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/api\/shared\/action\/CopyToClipboardAction.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/api\/shared\/action\/DoNothingAction.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/api\/shared\/action\/ExtensionCustomAction.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/api\/shared\/action\/HideWindowAction.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/api\/shared\/action\/LaunchAppAction.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/api\/shared\/action\/OpenAction.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/api\/shared\/action\/OpenUrlAction.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/api\/shared\/action\/RenderResultListAction.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/api\/shared\/action\/RunScriptAction.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/api\/shared\/action\/SetUserQueryAction.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/api\/shared\/action\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/api\/shared\/errors.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/api\/shared\/event.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/api\/shared\/item\/ExtensionResultItem.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/api\/shared\/item\/ExtensionSmallResultItem.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/api\/shared\/item\/ResultItem.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/api\/shared\/item\/SmallResultItem.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/api\/shared\/item\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/api\/version.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/config.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/main.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/search\/BaseSearchMode.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/search\/Query.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/search\/QueryHistoryDb.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/search\/Search.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/search\/SortedList.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/search\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/search\/apps\/AppDb.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/search\/apps\/AppIconCache.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/search\/apps\/AppResultItem.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/search\/apps\/AppSearchMode.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/search\/apps\/AppStatDb.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/search\/apps\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/search\/apps\/app_watcher.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/search\/calc\/CalcMode.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/search\/calc\/CalcResultItem.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/search\/calc\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/search\/file_browser\/FileBrowserMode.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/search\/file_browser\/FileBrowserResultItem.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/search\/file_browser\/FileQueries.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/search\/file_browser\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/search\/file_browser\/alt_menu\/CopyPathToClipboardItem.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/search\/file_browser\/alt_menu\/OpenFolderItem.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/search\/file_browser\/alt_menu\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/search\/shortcuts\/ShortcutResultItem.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/search\/shortcuts\/ShortcutSearchMode.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/search\/shortcuts\/ShortcutsDb.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/search\/shortcuts\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/ui\/AppIndicator.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/ui\/ItemNavigation.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/ui\/ResultItemWidget.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/ui\/SmallResultItemWidget.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/ui\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/ui\/windows\/Builder.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/ui\/windows\/HotkeyDialog.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/ui\/windows\/PreferencesUlauncherDialog.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/ui\/windows\/UlauncherWindow.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/ui\/windows\/WindowHelper.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/ui\/windows\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/utils\/AppCacheDb.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/utils\/AutostartPreference.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/utils\/Path.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/utils\/Router.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/utils\/Settings.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/utils\/SimpleWebSocketServer.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/utils\/SortedCollection.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/utils\/Theme.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/utils\/WebKit2.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/utils\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/utils\/date.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/utils\/db\/KeyValueDb.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/utils\/db\/KeyValueJsonDb.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/utils\/db\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/utils\/decorator\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/utils\/decorator\/alias.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/utils\/decorator\/debounce.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/utils\/decorator\/glib_idle_add.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/utils\/decorator\/run_async.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/utils\/decorator\/singleton.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/utils\/desktop\/DesktopParser.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/utils\/desktop\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/utils\/desktop\/notification.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/utils\/desktop\/reader.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/utils\/desktopappinfo.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/utils\/display.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/utils\/file_finder.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/utils\/fuzzy_search.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/utils\/image_loader.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/utils\/mypy_extensions.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/utils\/named_tuple_from_dict.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/utils\/semver.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/utils\/setup_logging.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/utils\/string.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/utils\/text_highlighter.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/utils\/version_cmp.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/utils\/wayland.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher\/utils\/xinit.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher-5.15.15-py3.14.egg-info\/PKG-INFO" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher-5.15.15-py3.14.egg-info\/SOURCES.txt" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher-5.15.15-py3.14.egg-info\/dependency_links.txt" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/ulauncher-5.15.15-py3.14.egg-info\/top_level.txt" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/__pycache__\/_abnf.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/__pycache__\/_abnf.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/__pycache__\/_abnf.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/__pycache__\/_app.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/__pycache__\/_app.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/__pycache__\/_app.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/__pycache__\/_cookiejar.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/__pycache__\/_cookiejar.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/__pycache__\/_cookiejar.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/__pycache__\/_core.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/__pycache__\/_core.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/__pycache__\/_core.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/__pycache__\/_dispatcher.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/__pycache__\/_dispatcher.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/__pycache__\/_dispatcher.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/__pycache__\/_exceptions.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/__pycache__\/_exceptions.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/__pycache__\/_exceptions.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/__pycache__\/_handshake.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/__pycache__\/_handshake.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/__pycache__\/_handshake.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/__pycache__\/_http.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/__pycache__\/_http.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/__pycache__\/_http.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/__pycache__\/_logging.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/__pycache__\/_logging.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/__pycache__\/_logging.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/__pycache__\/_socket.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/__pycache__\/_socket.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/__pycache__\/_socket.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/__pycache__\/_ssl_compat.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/__pycache__\/_ssl_compat.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/__pycache__\/_ssl_compat.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/__pycache__\/_url.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/__pycache__\/_url.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/__pycache__\/_url.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/__pycache__\/_utils.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/__pycache__\/_utils.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/__pycache__\/_utils.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/__pycache__\/_wsdump.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/__pycache__\/_wsdump.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/__pycache__\/_wsdump.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/_abnf.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/_app.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/_cookiejar.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/_core.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/_dispatcher.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/_exceptions.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/_handshake.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/_http.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/_logging.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/_socket.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/_ssl_compat.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/_url.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/_utils.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/_wsdump.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/py.typed" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/__pycache__\/echo-server.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/__pycache__\/echo-server.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/__pycache__\/echo-server.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/__pycache__\/test_abnf.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/__pycache__\/test_abnf.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/__pycache__\/test_abnf.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/__pycache__\/test_app.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/__pycache__\/test_app.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/__pycache__\/test_app.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/__pycache__\/test_cookiejar.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/__pycache__\/test_cookiejar.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/__pycache__\/test_cookiejar.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/__pycache__\/test_dispatcher.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/__pycache__\/test_dispatcher.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/__pycache__\/test_dispatcher.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/__pycache__\/test_handshake_large_response.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/__pycache__\/test_handshake_large_response.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/__pycache__\/test_handshake_large_response.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/__pycache__\/test_http.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/__pycache__\/test_http.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/__pycache__\/test_http.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/__pycache__\/test_large_payloads.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/__pycache__\/test_large_payloads.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/__pycache__\/test_large_payloads.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/__pycache__\/test_socket.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/__pycache__\/test_socket.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/__pycache__\/test_socket.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/__pycache__\/test_socket_bugs.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/__pycache__\/test_socket_bugs.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/__pycache__\/test_socket_bugs.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/__pycache__\/test_ssl_compat.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/__pycache__\/test_ssl_compat.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/__pycache__\/test_ssl_compat.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/__pycache__\/test_ssl_edge_cases.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/__pycache__\/test_ssl_edge_cases.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/__pycache__\/test_ssl_edge_cases.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/__pycache__\/test_url.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/__pycache__\/test_url.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/__pycache__\/test_url.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/__pycache__\/test_utils.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/__pycache__\/test_utils.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/__pycache__\/test_utils.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/__pycache__\/test_websocket.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/__pycache__\/test_websocket.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/__pycache__\/test_websocket.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/data\/header01.txt" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/data\/header02.txt" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/data\/header03.txt" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/echo-server.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/test_abnf.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/test_app.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/test_cookiejar.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/test_dispatcher.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/test_handshake_large_response.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/test_http.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/test_large_payloads.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/test_socket.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/test_socket_bugs.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/test_ssl_compat.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/test_ssl_edge_cases.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/test_url.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/test_utils.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket\/tests\/test_websocket.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket_client-1.9.0.dist-info\/METADATA" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket_client-1.9.0.dist-info\/WHEEL" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket_client-1.9.0.dist-info\/entry_points.txt" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/websocket_client-1.9.0.dist-info\/top_level.txt" ],
+            
+              [  "usr\/lib\/systemd\/user\/ulauncher.service" ],
+            
+              [  "usr\/share\/applications\/ulauncher.desktop" ],
+            
+              [  "usr\/share\/doc\/levenshtein-0.27.3\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/rapidfuzz-3.14.5\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/ulauncher\/README.md" ],
+            
+              [  "usr\/share\/doc\/websocket-client-1.9.0\/ChangeLog.bz2" ],
+            
+              [  "usr\/share\/doc\/websocket-client-1.9.0\/README.md.bz2" ],
+            
+              [  "usr\/share\/icons\/breeze\/apps\/48\/ulauncher-indicator.svg" ],
+            
+              [  "usr\/share\/icons\/elementary\/scalable\/apps\/ulauncher-indicator.svg" ],
+            
+              [  "usr\/share\/icons\/gnome\/scalable\/apps\/ulauncher-indicator.svg" ],
+            
+              [  "usr\/share\/icons\/gnome\/scalable\/apps\/ulauncher.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/ulauncher-indicator.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/ulauncher.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/apps\/ulauncher-indicator.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/apps\/ulauncher.svg" ],
+            
+              [  "usr\/share\/icons\/ubuntu-mono-dark\/scalable\/apps\/ulauncher-indicator.svg" ],
+            
+              [  "usr\/share\/icons\/ubuntu-mono-light\/scalable\/apps\/ulauncher-indicator.svg" ],
+            
+              [  "usr\/share\/ulauncher\/media\/calculator-icon.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/executable-icon.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/3g2.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/3gp.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/ai.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/air.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/asf.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/avi.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/bib.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/cls.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/csv.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/deb.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/djvu.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/dmg.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/doc.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/docx.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/dwf.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/dwg.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/eps.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/epub.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/exe.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/f.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/f77.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/f90.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/flac.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/flv.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/gif.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/gz.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/ico.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/indd.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/iso.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/jpeg.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/jpg.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/log.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/m4a.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/m4v.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/midi.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/mkv.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/mov.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/mp3.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/mp4.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/mpeg.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/mpg.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/msi.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/odp.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/ods.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/odt.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/oga.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/ogg.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/ogv.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/pdf.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/png.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/pps.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/ppsx.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/ppt.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/pptx.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/psd.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/pub.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/py.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/qt.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/ra.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/ram.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/rar.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/rm.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/rpm.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/rtf.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/rv.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/skp.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/spx.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/sql.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/sty.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/tar.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/tex.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/tgz.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/tiff.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/ttf.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/txt.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/vob.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/wav.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/wmv.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/xls.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/xlsx.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/xml.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/xpi.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/fileicons\/zip.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/gear.svg" ],
+            
+              [  "usr\/share\/ulauncher\/media\/google-search-icon.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/stackoverflow-icon.svg" ],
+            
+              [  "usr\/share\/ulauncher\/media\/unknown-file-icon.png" ],
+            
+              [  "usr\/share\/ulauncher\/media\/wikipedia-icon.png" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/README.md" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/build\/build.js" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/build\/check-versions.js" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/build\/dev-client.js" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/build\/dev-server.js" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/build\/utils.js" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/build\/vue-loader.conf.js" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/build\/webpack.base.conf.js" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/build\/webpack.dev.conf.js" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/build\/webpack.prod.conf.js" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/build\/webpack.test.conf.js" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/config\/dev.env.js" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/config\/index.js" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/config\/prod.env.js" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/config\/test.env.js" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/index.html" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/package.json" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/src\/App.vue" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/src\/api\/fixture.js" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/src\/api\/index.js" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/src\/api\/jsonp.js" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/src\/assets\/close-sign.png" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/src\/assets\/executable-icon.png" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/src\/assets\/stripe.png" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/src\/components\/NavBar.vue" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/src\/components\/pages\/About.vue" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/src\/components\/pages\/EditShortcut.vue" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/src\/components\/pages\/ExtensionConfig.vue" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/src\/components\/pages\/Extensions.vue" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/src\/components\/pages\/Help.vue" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/src\/components\/pages\/Preferences.vue" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/src\/components\/pages\/Shortcuts.vue" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/src\/components\/widgets\/EditableTextList.vue" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/src\/components\/widgets\/ExtensionErrorExplanation.vue" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/src\/components\/widgets\/ExtensionRuntimeError.vue" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/src\/event-bus.js" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/src\/main.js" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/src\/router\/index.js" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/src\/store.js" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/static\/font-awesome.min.css" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/static\/fonts\/FontAwesome.otf" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/static\/fonts\/fontawesome-webfont.eot" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/static\/fonts\/fontawesome-webfont.svg" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/static\/fonts\/fontawesome-webfont.ttf" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/static\/fonts\/fontawesome-webfont.woff" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/static\/fonts\/fontawesome-webfont.woff2" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/test\/unit\/index.js" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/test\/unit\/karma.conf.js" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/test\/unit\/specs\/widgets\/EditableTextList.spec.js" ],
+            
+              [  "usr\/share\/ulauncher\/preferences\/yarn.lock" ],
+            
+              [  "usr\/share\/ulauncher\/styles\/preferences.css" ],
+            
+              [  "usr\/share\/ulauncher\/themes\/adwaita\/manifest.json" ],
+            
+              [  "usr\/share\/ulauncher\/themes\/adwaita\/theme-gtk-3.20.css" ],
+            
+              [  "usr\/share\/ulauncher\/themes\/adwaita\/theme.css" ],
+            
+              [  "usr\/share\/ulauncher\/themes\/dark\/manifest.json" ],
+            
+              [  "usr\/share\/ulauncher\/themes\/dark\/theme-gtk-3.20.css" ],
+            
+              [  "usr\/share\/ulauncher\/themes\/dark\/theme.css" ],
+            
+              [  "usr\/share\/ulauncher\/themes\/light\/manifest.json" ],
+            
+              [  "usr\/share\/ulauncher\/themes\/light\/reset.css" ],
+            
+              [  "usr\/share\/ulauncher\/themes\/light\/theme-gtk-3.20.css" ],
+            
+              [  "usr\/share\/ulauncher\/themes\/light\/theme.css" ],
+            
+              [  "usr\/share\/ulauncher\/themes\/ubuntu\/manifest.json" ],
+            
+              [  "usr\/share\/ulauncher\/themes\/ubuntu\/theme-gtk-3.20.css" ],
+            
+              [  "usr\/share\/ulauncher\/themes\/ubuntu\/theme.css" ],
+            
+              [  "usr\/share\/ulauncher\/timer-shortcut\/timer.png" ],
+            
+              [  "usr\/share\/ulauncher\/ui\/HotkeyDialog.ui" ],
+            
+              [  "usr\/share\/ulauncher\/ui\/PreferencesUlauncherDialog.ui" ],
+            
+              [  "usr\/share\/ulauncher\/ui\/UlauncherWindow.ui" ],
+            
+              [  "usr\/share\/ulauncher\/ui\/file_item.xml" ],
+            
+              [  "usr\/share\/ulauncher\/ui\/hotkey_dialog.xml" ],
+            
+              [  "usr\/share\/ulauncher\/ui\/preferences_ulauncher_dialog.xml" ],
+            
+              [  "usr\/share\/ulauncher\/ui\/result_item.ui" ],
+            
+              [  "usr\/share\/ulauncher\/ui\/result_item.xml" ],
+            
+              [  "usr\/share\/ulauncher\/ui\/small_result_item.ui" ],
+            
+              [  "usr\/share\/ulauncher\/ui\/ulauncher_window.xml" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

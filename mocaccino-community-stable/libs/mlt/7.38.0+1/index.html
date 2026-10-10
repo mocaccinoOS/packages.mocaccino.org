@@ -1,0 +1,1900 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing libs/mlt-7.38.0&#43;1 in mocaccino-community-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> libs/mlt-7.38.0&#43;1
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                Open source multimedia framework for television broadcasting
+A minimalistic plugin API for video effects
+Library for handling uncompressed audio and video data
+
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-community-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-community-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of libs/mlt
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/mocaccino-community:mlt-libs-7.38.0-1" target="_blank"> quay.io/mocaccino/mocaccino-community:mlt-libs-7.38.0-1 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/mocaccino-community:mlt-libs-7.38.0-1/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 7.38.0&#43;1  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> GPL-2 GPL-3 </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/kde-common">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  kde-common &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/ladspa-sdk">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  ladspa-sdk 1.17-r2&#43;1 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/libebur128">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  libebur128 1.2.6-r1 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/rubberband">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  rubberband 4.0.0-r1 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/sdl2">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  sdl2 26.07&#43;3 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/xine-lib">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  xine-lib 1.2.13-r5&#43;3 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/rtaudio">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  rtaudio 6.0.1 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: media-libs/mlt
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="http://www.mltframework.org/" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> http://www.mltframework.org/ </a>
+    </span>
+  
+    <span class="tag">
+    <a href="http://www.dyne.org/software/frei0r/" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> http://www.dyne.org/software/frei0r/ </a>
+    </span>
+  
+    <span class="tag">
+    <a href="http://gmerlin.sourceforge.net" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> http://gmerlin.sourceforge.net </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/media-libs/mlt">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  mlt &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/media-plugins/frei0r-plugins">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  frei0r-plugins &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/media-libs/gavl">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  gavl &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "usr\/bin\/melt" ],
+            
+              [  "usr\/bin\/melt-7" ],
+            
+              [  "usr\/lib\/frei0r-1\/3dflippo.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/B.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/G.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/IIRblur.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/R.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/RGB.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/addition.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/addition_alpha.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/aech0r.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/alpha0ps_alpha0ps.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/alpha0ps_alphagrad.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/alpha0ps_alphaspot.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/alphaatop.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/alphain.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/alphainjection.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/alphaout.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/alphaover.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/alphaxor.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/balanc0r.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/baltan.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/bgsubtract0r.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/blend.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/bluescreen0r.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/brightness.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/burn.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/bw0r.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/c0rners.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/cairoaffineblend.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/cairoblend.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/cairogradient.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/cairoimagegrid.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/cartoon.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/cluster.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/colgate.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/color_only.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/coloradj_RGB.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/colordistance.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/colorhalftone.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/colorize.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/colortap.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/composition.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/contrast0r.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/curves.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/d90stairsteppingfix.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/darken.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/defish0r.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/delay0r.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/delaygrab.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/denoise_hqdn3d.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/difference.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/distort0r.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/dither.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/divide.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/dodge.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/edgeglow.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/elastic_scale.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/emboss.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/equaliz0r.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/euclid_eraser.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/facebl0r.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/facedetect.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/filmgrain.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/flippo.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/gamma.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/gateweave.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/glitch0r.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/glow.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/grain_extract.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/grain_merge.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/hardlight.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/hue.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/hueshift0r.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/invert0r.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/ising0r.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/kaleid0sc0pe.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/keyspillm0pup.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/lenscorrection.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/letterb0xed.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/levels.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/lighten.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/lightgraffiti.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/lissajous0r.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/luminance.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/mask0mate.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/measure_pr0be.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/measure_pr0file.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/medians.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/mirr0r.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/multiply.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/ndvi.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/nervous.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/nois0r.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/normaliz0r.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/nosync0r.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/ntsc.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/onecol0r.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/overlay.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/partik0l.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/perspective.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/pixeliz0r.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/pixs0r.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/plasma.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/posterize.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/premultiply.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/primaries.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/rgbnoise.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/rgbparade.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/rgbsplit0r.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/saturat0r.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/saturation.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/scale0tilt.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/scanline0r.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/screen.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/select0r.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/sharpness.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/sigmoidaltransfer.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/sleid0r_push-down.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/sleid0r_push-left.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/sleid0r_push-right.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/sleid0r_push-up.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/sleid0r_slide-down.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/sleid0r_slide-left.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/sleid0r_slide-right.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/sleid0r_slide-up.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/sleid0r_wipe-barn-door-h.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/sleid0r_wipe-barn-door-v.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/sleid0r_wipe-circle.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/sleid0r_wipe-down.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/sleid0r_wipe-left.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/sleid0r_wipe-rect.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/sleid0r_wipe-right.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/sleid0r_wipe-up.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/sobel.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/softglow.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/softlight.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/sopsat.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/spillsupress.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/squareblur.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/subtract.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/tehroxx0r.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/test_pat_B.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/test_pat_C.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/test_pat_G.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/test_pat_I.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/test_pat_L.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/test_pat_R.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/three_point_balance.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/threelay0r.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/threshold0r.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/timeout.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/tint0r.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/transparency.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/twolay0r.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/uvmap.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/value.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/vectorscope.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/vertigo.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/vignette.so" ],
+            
+              [  "usr\/lib\/frei0r-1\/xfade0r.so" ],
+            
+              [  "usr\/lib\/libgavl.so" ],
+            
+              [  "usr\/lib\/libgavl.so.1" ],
+            
+              [  "usr\/lib\/libgavl.so.1.0.0" ],
+            
+              [  "usr\/lib\/pkgconfig\/frei0r.pc" ],
+            
+              [  "usr\/lib\/pkgconfig\/gavl.pc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/__pycache__\/mlt7.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/__pycache__\/mlt7.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/__pycache__\/mlt7.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/_mlt7.so" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/mlt7.py" ],
+            
+              [  "usr\/lib64\/frei0r-1\/3dflippo.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/B.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/G.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/IIRblur.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/R.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/RGB.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/addition.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/addition_alpha.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/aech0r.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/alpha0ps_alpha0ps.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/alpha0ps_alphagrad.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/alpha0ps_alphaspot.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/alphaatop.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/alphain.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/alphainjection.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/alphaout.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/alphaover.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/alphaxor.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/balanc0r.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/baltan.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/bgsubtract0r.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/blend.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/bluescreen0r.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/brightness.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/burn.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/bw0r.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/c0rners.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/cairoaffineblend.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/cairoblend.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/cairogradient.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/cairoimagegrid.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/cartoon.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/cluster.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/colgate.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/color_only.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/coloradj_RGB.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/colordistance.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/colorhalftone.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/colorize.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/colortap.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/composition.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/contrast0r.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/curves.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/d90stairsteppingfix.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/darken.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/defish0r.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/delay0r.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/delaygrab.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/denoise_hqdn3d.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/difference.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/distort0r.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/dither.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/divide.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/dodge.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/edgeglow.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/elastic_scale.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/emboss.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/equaliz0r.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/euclid_eraser.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/facebl0r.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/facedetect.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/filmgrain.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/flippo.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/gamma.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/gateweave.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/glitch0r.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/glow.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/grain_extract.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/grain_merge.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/hardlight.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/hue.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/hueshift0r.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/invert0r.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/ising0r.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/kaleid0sc0pe.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/keyspillm0pup.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/lenscorrection.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/letterb0xed.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/levels.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/lighten.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/lightgraffiti.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/lissajous0r.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/luminance.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/mask0mate.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/measure_pr0be.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/measure_pr0file.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/medians.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/mirr0r.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/multiply.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/ndvi.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/nervous.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/nois0r.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/normaliz0r.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/nosync0r.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/ntsc.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/onecol0r.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/overlay.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/partik0l.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/perspective.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/pixeliz0r.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/pixs0r.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/plasma.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/posterize.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/premultiply.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/primaries.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/rgbnoise.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/rgbparade.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/rgbsplit0r.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/saturat0r.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/saturation.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/scale0tilt.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/scanline0r.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/screen.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/select0r.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/sharpness.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/sigmoidaltransfer.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/sleid0r_push-down.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/sleid0r_push-left.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/sleid0r_push-right.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/sleid0r_push-up.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/sleid0r_slide-down.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/sleid0r_slide-left.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/sleid0r_slide-right.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/sleid0r_slide-up.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/sleid0r_wipe-barn-door-h.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/sleid0r_wipe-barn-door-v.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/sleid0r_wipe-circle.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/sleid0r_wipe-down.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/sleid0r_wipe-left.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/sleid0r_wipe-rect.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/sleid0r_wipe-right.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/sleid0r_wipe-up.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/sobel.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/softglow.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/softlight.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/sopsat.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/spillsupress.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/squareblur.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/subtract.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/tehroxx0r.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/test_pat_B.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/test_pat_C.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/test_pat_G.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/test_pat_I.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/test_pat_L.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/test_pat_R.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/three_point_balance.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/threelay0r.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/threshold0r.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/timeout.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/tint0r.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/transparency.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/twolay0r.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/uvmap.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/value.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/vectorscope.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/vertigo.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/vignette.so" ],
+            
+              [  "usr\/lib64\/frei0r-1\/xfade0r.so" ],
+            
+              [  "usr\/lib64\/libgavl.so" ],
+            
+              [  "usr\/lib64\/libgavl.so.1" ],
+            
+              [  "usr\/lib64\/libgavl.so.1.0.0" ],
+            
+              [  "usr\/lib64\/libmlt\u002b\u002b-7.so" ],
+            
+              [  "usr\/lib64\/libmlt\u002b\u002b-7.so.7" ],
+            
+              [  "usr\/lib64\/libmlt\u002b\u002b-7.so.7.38.0" ],
+            
+              [  "usr\/lib64\/libmlt-7.so" ],
+            
+              [  "usr\/lib64\/libmlt-7.so.7" ],
+            
+              [  "usr\/lib64\/libmlt-7.so.7.38.0" ],
+            
+              [  "usr\/lib64\/mlt-7\/libmltavformat.so" ],
+            
+              [  "usr\/lib64\/mlt-7\/libmltcore.so" ],
+            
+              [  "usr\/lib64\/mlt-7\/libmltdecklink.so" ],
+            
+              [  "usr\/lib64\/mlt-7\/libmltfrei0r.so" ],
+            
+              [  "usr\/lib64\/mlt-7\/libmltgdk.so" ],
+            
+              [  "usr\/lib64\/mlt-7\/libmltglaxnimate-qt6.so" ],
+            
+              [  "usr\/lib64\/mlt-7\/libmltjackrack.so" ],
+            
+              [  "usr\/lib64\/mlt-7\/libmltkdenlive.so" ],
+            
+              [  "usr\/lib64\/mlt-7\/libmltladspa.so" ],
+            
+              [  "usr\/lib64\/mlt-7\/libmltmovit.so" ],
+            
+              [  "usr\/lib64\/mlt-7\/libmltnormalize.so" ],
+            
+              [  "usr\/lib64\/mlt-7\/libmltoldfilm.so" ],
+            
+              [  "usr\/lib64\/mlt-7\/libmltopencv.so" ],
+            
+              [  "usr\/lib64\/mlt-7\/libmltopenfx.so" ],
+            
+              [  "usr\/lib64\/mlt-7\/libmltplus.so" ],
+            
+              [  "usr\/lib64\/mlt-7\/libmltplusgpl.so" ],
+            
+              [  "usr\/lib64\/mlt-7\/libmltqt6.so" ],
+            
+              [  "usr\/lib64\/mlt-7\/libmltresample.so" ],
+            
+              [  "usr\/lib64\/mlt-7\/libmltrtaudio.so" ],
+            
+              [  "usr\/lib64\/mlt-7\/libmltrubberband.so" ],
+            
+              [  "usr\/lib64\/mlt-7\/libmltsdl2.so" ],
+            
+              [  "usr\/lib64\/mlt-7\/libmltvidstab.so" ],
+            
+              [  "usr\/lib64\/mlt-7\/libmltxine.so" ],
+            
+              [  "usr\/lib64\/mlt-7\/libmltxml.so" ],
+            
+              [  "usr\/lib64\/pkgconfig\/frei0r.pc" ],
+            
+              [  "usr\/lib64\/pkgconfig\/gavl.pc" ],
+            
+              [  "usr\/lib64\/pkgconfig\/mlt\u002b\u002b-7.pc" ],
+            
+              [  "usr\/lib64\/pkgconfig\/mlt-framework-7.pc" ],
+            
+              [  "usr\/share\/doc\/frei0r-plugins-2.4.1-r1\/AUTHORS.md.bz2" ],
+            
+              [  "usr\/share\/doc\/frei0r-plugins-2.4.1-r1\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/gavl-1.4.0-r3\/AUTHORS.bz2" ],
+            
+              [  "usr\/share\/doc\/gavl-1.4.0-r3\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/gavl-1.4.0-r3\/TODO.bz2" ],
+            
+              [  "usr\/share\/doc\/mlt-7.38.0\/AUTHORS.bz2" ],
+            
+              [  "usr\/share\/doc\/mlt-7.38.0\/NEWS.bz2" ],
+            
+              [  "usr\/share\/doc\/mlt-7.38.0\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/mlt-7.38.0\/swig\/play.py.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/melt-7.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/melt.1.bz2" ],
+            
+              [  "usr\/share\/mlt\/demo\/README" ],
+            
+              [  "usr\/share\/mlt\/demo\/circle.png" ],
+            
+              [  "usr\/share\/mlt\/demo\/circle.svg" ],
+            
+              [  "usr\/share\/mlt\/demo\/consumers.ini" ],
+            
+              [  "usr\/share\/mlt\/demo\/demo" ],
+            
+              [  "usr\/share\/mlt\/demo\/demo.ini" ],
+            
+              [  "usr\/share\/mlt\/demo\/demo.kino" ],
+            
+              [  "usr\/share\/mlt\/demo\/entity.mlt" ],
+            
+              [  "usr\/share\/mlt\/demo\/luma1.pgm" ],
+            
+              [  "usr\/share\/mlt\/demo\/mlt_all" ],
+            
+              [  "usr\/share\/mlt\/demo\/mlt_audio_stuff" ],
+            
+              [  "usr\/share\/mlt\/demo\/mlt_avantika_title" ],
+            
+              [  "usr\/share\/mlt\/demo\/mlt_bouncy" ],
+            
+              [  "usr\/share\/mlt\/demo\/mlt_clock_in_and_out" ],
+            
+              [  "usr\/share\/mlt\/demo\/mlt_composite_transition" ],
+            
+              [  "usr\/share\/mlt\/demo\/mlt_effect_in_middle" ],
+            
+              [  "usr\/share\/mlt\/demo\/mlt_fade_black" ],
+            
+              [  "usr\/share\/mlt\/demo\/mlt_fade_in_and_out" ],
+            
+              [  "usr\/share\/mlt\/demo\/mlt_intro" ],
+            
+              [  "usr\/share\/mlt\/demo\/mlt_jcut" ],
+            
+              [  "usr\/share\/mlt\/demo\/mlt_lcut" ],
+            
+              [  "usr\/share\/mlt\/demo\/mlt_levels" ],
+            
+              [  "usr\/share\/mlt\/demo\/mlt_my_name_is" ],
+            
+              [  "usr\/share\/mlt\/demo\/mlt_news" ],
+            
+              [  "usr\/share\/mlt\/demo\/mlt_pango_keyframes" ],
+            
+              [  "usr\/share\/mlt\/demo\/mlt_push" ],
+            
+              [  "usr\/share\/mlt\/demo\/mlt_slideshow" ],
+            
+              [  "usr\/share\/mlt\/demo\/mlt_slideshow2" ],
+            
+              [  "usr\/share\/mlt\/demo\/mlt_squeeze" ],
+            
+              [  "usr\/share\/mlt\/demo\/mlt_squeeze_box" ],
+            
+              [  "usr\/share\/mlt\/demo\/mlt_ticker" ],
+            
+              [  "usr\/share\/mlt\/demo\/mlt_title_over_gfx" ],
+            
+              [  "usr\/share\/mlt\/demo\/mlt_titleshadow_watermark" ],
+            
+              [  "usr\/share\/mlt\/demo\/mlt_typewriter" ],
+            
+              [  "usr\/share\/mlt\/demo\/mlt_voiceover" ],
+            
+              [  "usr\/share\/mlt\/demo\/mlt_watermark" ],
+            
+              [  "usr\/share\/mlt\/demo\/new.mlt" ],
+            
+              [  "usr\/share\/mlt\/demo\/pango.mlt" ],
+            
+              [  "usr\/share\/mlt\/demo\/pango_keyframes.mpl" ],
+            
+              [  "usr\/share\/mlt\/demo\/svg.mlt" ],
+            
+              [  "usr\/share\/mlt\/demo\/watermark1.png" ],
+            
+              [  "usr\/share\/mlt-7\/avformat\/blacklist.txt" ],
+            
+              [  "usr\/share\/mlt-7\/avformat\/consumer_avformat.yml" ],
+            
+              [  "usr\/share\/mlt-7\/avformat\/filter_avcolour_space.yml" ],
+            
+              [  "usr\/share\/mlt-7\/avformat\/filter_avdeinterlace.yml" ],
+            
+              [  "usr\/share\/mlt-7\/avformat\/filter_swresample.yml" ],
+            
+              [  "usr\/share\/mlt-7\/avformat\/filter_sws_colortransform.yml" ],
+            
+              [  "usr\/share\/mlt-7\/avformat\/filter_swscale.yml" ],
+            
+              [  "usr\/share\/mlt-7\/avformat\/link_avdeinterlace.yml" ],
+            
+              [  "usr\/share\/mlt-7\/avformat\/link_swresample.yml" ],
+            
+              [  "usr\/share\/mlt-7\/avformat\/producer_avformat-novalidate.yml" ],
+            
+              [  "usr\/share\/mlt-7\/avformat\/producer_avformat.yml" ],
+            
+              [  "usr\/share\/mlt-7\/avformat\/resolution_scale.yml" ],
+            
+              [  "usr\/share\/mlt-7\/avformat\/yuv_only.txt" ],
+            
+              [  "usr\/share\/mlt-7\/chain_normalizers.ini" ],
+            
+              [  "usr\/share\/mlt-7\/core\/consumer_multi.yml" ],
+            
+              [  "usr\/share\/mlt-7\/core\/consumer_null.yml" ],
+            
+              [  "usr\/share\/mlt-7\/core\/filter_audiochannels.yml" ],
+            
+              [  "usr\/share\/mlt-7\/core\/filter_audioconvert.yml" ],
+            
+              [  "usr\/share\/mlt-7\/core\/filter_audiomap.yml" ],
+            
+              [  "usr\/share\/mlt-7\/core\/filter_audioseam.yml" ],
+            
+              [  "usr\/share\/mlt-7\/core\/filter_audiowave.yml" ],
+            
+              [  "usr\/share\/mlt-7\/core\/filter_autofade.yml" ],
+            
+              [  "usr\/share\/mlt-7\/core\/filter_box_blur.yml" ],
+            
+              [  "usr\/share\/mlt-7\/core\/filter_brightness.yml" ],
+            
+              [  "usr\/share\/mlt-7\/core\/filter_channelcopy.yml" ],
+            
+              [  "usr\/share\/mlt-7\/core\/filter_choppy.yml" ],
+            
+              [  "usr\/share\/mlt-7\/core\/filter_color_transform.yml" ],
+            
+              [  "usr\/share\/mlt-7\/core\/filter_crop.yml" ],
+            
+              [  "usr\/share\/mlt-7\/core\/filter_fieldorder.yml" ],
+            
+              [  "usr\/share\/mlt-7\/core\/filter_gamma.yml" ],
+            
+              [  "usr\/share\/mlt-7\/core\/filter_greyscale.yml" ],
+            
+              [  "usr\/share\/mlt-7\/core\/filter_imageconvert.yml" ],
+            
+              [  "usr\/share\/mlt-7\/core\/filter_luma.yml" ],
+            
+              [  "usr\/share\/mlt-7\/core\/filter_mask_apply.yml" ],
+            
+              [  "usr\/share\/mlt-7\/core\/filter_mask_start.yml" ],
+            
+              [  "usr\/share\/mlt-7\/core\/filter_mirror.yml" ],
+            
+              [  "usr\/share\/mlt-7\/core\/filter_mono.yml" ],
+            
+              [  "usr\/share\/mlt-7\/core\/filter_obscure.yml" ],
+            
+              [  "usr\/share\/mlt-7\/core\/filter_panner.yml" ],
+            
+              [  "usr\/share\/mlt-7\/core\/filter_pillar_echo.yml" ],
+            
+              [  "usr\/share\/mlt-7\/core\/filter_rescale.yml" ],
+            
+              [  "usr\/share\/mlt-7\/core\/filter_resize.yml" ],
+            
+              [  "usr\/share\/mlt-7\/core\/filter_transition.yml" ],
+            
+              [  "usr\/share\/mlt-7\/core\/filter_watermark.yml" ],
+            
+              [  "usr\/share\/mlt-7\/core\/link_timeremap.yml" ],
+            
+              [  "usr\/share\/mlt-7\/core\/loader.dict" ],
+            
+              [  "usr\/share\/mlt-7\/core\/loader.ini" ],
+            
+              [  "usr\/share\/mlt-7\/core\/producer_abnormal.yml" ],
+            
+              [  "usr\/share\/mlt-7\/core\/producer_blank.yml" ],
+            
+              [  "usr\/share\/mlt-7\/core\/producer_colour.yml" ],
+            
+              [  "usr\/share\/mlt-7\/core\/producer_consumer.yml" ],
+            
+              [  "usr\/share\/mlt-7\/core\/producer_hold.yml" ],
+            
+              [  "usr\/share\/mlt-7\/core\/producer_loader-nogl.yml" ],
+            
+              [  "usr\/share\/mlt-7\/core\/producer_loader.yml" ],
+            
+              [  "usr\/share\/mlt-7\/core\/producer_melt.yml" ],
+            
+              [  "usr\/share\/mlt-7\/core\/producer_melt_file.yml" ],
+            
+              [  "usr\/share\/mlt-7\/core\/producer_noise.yml" ],
+            
+              [  "usr\/share\/mlt-7\/core\/producer_timewarp.yml" ],
+            
+              [  "usr\/share\/mlt-7\/core\/producer_tone.yml" ],
+            
+              [  "usr\/share\/mlt-7\/core\/transition_composite.yml" ],
+            
+              [  "usr\/share\/mlt-7\/core\/transition_luma.yml" ],
+            
+              [  "usr\/share\/mlt-7\/core\/transition_matte.yml" ],
+            
+              [  "usr\/share\/mlt-7\/core\/transition_mix.yml" ],
+            
+              [  "usr\/share\/mlt-7\/decklink\/consumer_decklink.yml" ],
+            
+              [  "usr\/share\/mlt-7\/decklink\/producer_decklink.yml" ],
+            
+              [  "usr\/share\/mlt-7\/frei0r\/aliases.yaml" ],
+            
+              [  "usr\/share\/mlt-7\/frei0r\/alpha_only.txt" ],
+            
+              [  "usr\/share\/mlt-7\/frei0r\/blacklist.txt" ],
+            
+              [  "usr\/share\/mlt-7\/frei0r\/filter_cairoblend_mode.yml" ],
+            
+              [  "usr\/share\/mlt-7\/frei0r\/not_thread_safe.txt" ],
+            
+              [  "usr\/share\/mlt-7\/frei0r\/param_name_map.yaml" ],
+            
+              [  "usr\/share\/mlt-7\/frei0r\/resolution_scale.yml" ],
+            
+              [  "usr\/share\/mlt-7\/gdk\/filter_rescale.yml" ],
+            
+              [  "usr\/share\/mlt-7\/gdk\/producer_pango.yml" ],
+            
+              [  "usr\/share\/mlt-7\/gdk\/producer_pixbuf.yml" ],
+            
+              [  "usr\/share\/mlt-7\/glaxnimate-qt6\/producer_glaxnimate.yml" ],
+            
+              [  "usr\/share\/mlt-7\/jackrack\/blacklist.txt" ],
+            
+              [  "usr\/share\/mlt-7\/jackrack\/consumer_jack.yml" ],
+            
+              [  "usr\/share\/mlt-7\/jackrack\/filter_jack.yml" ],
+            
+              [  "usr\/share\/mlt-7\/jackrack\/filter_jackrack.yml" ],
+            
+              [  "usr\/share\/mlt-7\/jackrack\/filter_ladspa.yml" ],
+            
+              [  "usr\/share\/mlt-7\/jackrack\/producer_ladspa.yml" ],
+            
+              [  "usr\/share\/mlt-7\/kdenlive\/filter_boxblur.yml" ],
+            
+              [  "usr\/share\/mlt-7\/kdenlive\/filter_freeze.yml" ],
+            
+              [  "usr\/share\/mlt-7\/kdenlive\/filter_wave.yml" ],
+            
+              [  "usr\/share\/mlt-7\/kdenlive\/producer_framebuffer.yml" ],
+            
+              [  "usr\/share\/mlt-7\/metaschema.yaml" ],
+            
+              [  "usr\/share\/mlt-7\/movit\/consumer_xgl.yml" ],
+            
+              [  "usr\/share\/mlt-7\/movit\/filter_glsl_manager.yml" ],
+            
+              [  "usr\/share\/mlt-7\/movit\/filter_movit_blur.yml" ],
+            
+              [  "usr\/share\/mlt-7\/movit\/filter_movit_convert.yml" ],
+            
+              [  "usr\/share\/mlt-7\/movit\/filter_movit_crop.yml" ],
+            
+              [  "usr\/share\/mlt-7\/movit\/filter_movit_deconvolution_sharpen.yml" ],
+            
+              [  "usr\/share\/mlt-7\/movit\/filter_movit_diffusion.yml" ],
+            
+              [  "usr\/share\/mlt-7\/movit\/filter_movit_flip.yml" ],
+            
+              [  "usr\/share\/mlt-7\/movit\/filter_movit_glow.yml" ],
+            
+              [  "usr\/share\/mlt-7\/movit\/filter_movit_lift_gamma_gain.yml" ],
+            
+              [  "usr\/share\/mlt-7\/movit\/filter_movit_mirror.yml" ],
+            
+              [  "usr\/share\/mlt-7\/movit\/filter_movit_opacity.yml" ],
+            
+              [  "usr\/share\/mlt-7\/movit\/filter_movit_overlay_mode.yml" ],
+            
+              [  "usr\/share\/mlt-7\/movit\/filter_movit_rect.yml" ],
+            
+              [  "usr\/share\/mlt-7\/movit\/filter_movit_resample.yml" ],
+            
+              [  "usr\/share\/mlt-7\/movit\/filter_movit_resize.yml" ],
+            
+              [  "usr\/share\/mlt-7\/movit\/filter_movit_saturation.yml" ],
+            
+              [  "usr\/share\/mlt-7\/movit\/filter_movit_vignette.yml" ],
+            
+              [  "usr\/share\/mlt-7\/movit\/filter_movit_white_balance.yml" ],
+            
+              [  "usr\/share\/mlt-7\/movit\/transition_movit_luma.yml" ],
+            
+              [  "usr\/share\/mlt-7\/movit\/transition_movit_mix.yml" ],
+            
+              [  "usr\/share\/mlt-7\/movit\/transition_movit_overlay.yml" ],
+            
+              [  "usr\/share\/mlt-7\/normalize\/filter_audiolevel.yml" ],
+            
+              [  "usr\/share\/mlt-7\/normalize\/filter_volume.yml" ],
+            
+              [  "usr\/share\/mlt-7\/oldfilm\/dust1.svg" ],
+            
+              [  "usr\/share\/mlt-7\/oldfilm\/dust2.svg" ],
+            
+              [  "usr\/share\/mlt-7\/oldfilm\/dust3.svg" ],
+            
+              [  "usr\/share\/mlt-7\/oldfilm\/dust4.svg" ],
+            
+              [  "usr\/share\/mlt-7\/oldfilm\/dust5.svg" ],
+            
+              [  "usr\/share\/mlt-7\/oldfilm\/fdust.svg" ],
+            
+              [  "usr\/share\/mlt-7\/oldfilm\/filter_dust.yml" ],
+            
+              [  "usr\/share\/mlt-7\/oldfilm\/filter_grain.yml" ],
+            
+              [  "usr\/share\/mlt-7\/oldfilm\/filter_lines.yml" ],
+            
+              [  "usr\/share\/mlt-7\/oldfilm\/filter_oldfilm.yml" ],
+            
+              [  "usr\/share\/mlt-7\/oldfilm\/filter_tcolor.yml" ],
+            
+              [  "usr\/share\/mlt-7\/oldfilm\/filter_vignette.yml" ],
+            
+              [  "usr\/share\/mlt-7\/oldfilm\/grain.svg" ],
+            
+              [  "usr\/share\/mlt-7\/oldfilm\/lines.svg" ],
+            
+              [  "usr\/share\/mlt-7\/oldfilm\/oldfilm.svg" ],
+            
+              [  "usr\/share\/mlt-7\/oldfilm\/tcolor.svg" ],
+            
+              [  "usr\/share\/mlt-7\/oldfilm\/vignette.svg" ],
+            
+              [  "usr\/share\/mlt-7\/opencv\/filter_opencv_tracker.yml" ],
+            
+              [  "usr\/share\/mlt-7\/openfx\/filter_openfx.yml" ],
+            
+              [  "usr\/share\/mlt-7\/plus\/consumer_blipflash.yml" ],
+            
+              [  "usr\/share\/mlt-7\/plus\/filter_affine.yml" ],
+            
+              [  "usr\/share\/mlt-7\/plus\/filter_charcoal.yml" ],
+            
+              [  "usr\/share\/mlt-7\/plus\/filter_chroma.yml" ],
+            
+              [  "usr\/share\/mlt-7\/plus\/filter_chroma_hold.yml" ],
+            
+              [  "usr\/share\/mlt-7\/plus\/filter_dance.yml" ],
+            
+              [  "usr\/share\/mlt-7\/plus\/filter_dynamic_loudness.yml" ],
+            
+              [  "usr\/share\/mlt-7\/plus\/filter_dynamictext.yml" ],
+            
+              [  "usr\/share\/mlt-7\/plus\/filter_fft.yml" ],
+            
+              [  "usr\/share\/mlt-7\/plus\/filter_gradientmap.yml" ],
+            
+              [  "usr\/share\/mlt-7\/plus\/filter_hslprimaries.yml" ],
+            
+              [  "usr\/share\/mlt-7\/plus\/filter_hslrange.yml" ],
+            
+              [  "usr\/share\/mlt-7\/plus\/filter_invert.yml" ],
+            
+              [  "usr\/share\/mlt-7\/plus\/filter_lift_gamma_gain.yml" ],
+            
+              [  "usr\/share\/mlt-7\/plus\/filter_loudness.yml" ],
+            
+              [  "usr\/share\/mlt-7\/plus\/filter_loudness_meter.yml" ],
+            
+              [  "usr\/share\/mlt-7\/plus\/filter_lumakey.yml" ],
+            
+              [  "usr\/share\/mlt-7\/plus\/filter_rgblut.yml" ],
+            
+              [  "usr\/share\/mlt-7\/plus\/filter_sepia.yml" ],
+            
+              [  "usr\/share\/mlt-7\/plus\/filter_shape.yml" ],
+            
+              [  "usr\/share\/mlt-7\/plus\/filter_spot_remover.yml" ],
+            
+              [  "usr\/share\/mlt-7\/plus\/filter_strobe.yml" ],
+            
+              [  "usr\/share\/mlt-7\/plus\/filter_subtitle.yml" ],
+            
+              [  "usr\/share\/mlt-7\/plus\/filter_subtitle_feed.yml" ],
+            
+              [  "usr\/share\/mlt-7\/plus\/filter_text.yml" ],
+            
+              [  "usr\/share\/mlt-7\/plus\/filter_threshold.yml" ],
+            
+              [  "usr\/share\/mlt-7\/plus\/filter_timer.yml" ],
+            
+              [  "usr\/share\/mlt-7\/plus\/producer_blipflash.yml" ],
+            
+              [  "usr\/share\/mlt-7\/plus\/producer_count.yml" ],
+            
+              [  "usr\/share\/mlt-7\/plus\/producer_pgm.yml" ],
+            
+              [  "usr\/share\/mlt-7\/plus\/producer_subtitle.yml" ],
+            
+              [  "usr\/share\/mlt-7\/plus\/transition_affine.yml" ],
+            
+              [  "usr\/share\/mlt-7\/plusgpl\/consumer_cbrts.yml" ],
+            
+              [  "usr\/share\/mlt-7\/plusgpl\/filter_burningtv.yml" ],
+            
+              [  "usr\/share\/mlt-7\/plusgpl\/filter_lumaliftgaingamma.yml" ],
+            
+              [  "usr\/share\/mlt-7\/plusgpl\/filter_outline.yml" ],
+            
+              [  "usr\/share\/mlt-7\/plusgpl\/filter_rotoscoping.yml" ],
+            
+              [  "usr\/share\/mlt-7\/plusgpl\/filter_telecide.yml" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/AAC" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/ALAC" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/AV1" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/FLAC" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/Flash" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/GIF" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/MJPEG" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/MP3" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/MPEG-2" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/MPEG-4" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/MPEG-4-ASP" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/SVT-AV1" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/Slide-Deck-H264" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/Slide-Deck-HEVC" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/Sony-PSP" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/Vorbis" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/WAV" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/WMA" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/WMV" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/XDCAM-HD422" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/YouTube" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/alpha\/Quicktime Animation" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/alpha\/Ut Video" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/alpha\/vp8" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/alpha\/vp9" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/atsc_1080i_50\/DNxHD" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/atsc_1080i_5994\/DNxHD" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/atsc_1080p_2398\/DNxHD" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/atsc_1080p_24\/DNxHD" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/atsc_1080p_25\/DNxHD" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/atsc_1080p_2997\/DNxHD" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/atsc_1080p_30\/DNxHD" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/atsc_1080p_50\/DNxHD" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/atsc_1080p_5994\/DNxHD" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/atsc_1080p_60\/DNxHD" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/atsc_720p_2398\/DNxHD" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/atsc_720p_50\/DNxHD" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/atsc_720p_5994\/DNxHD" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/atsc_720p_60\/DNxHD" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/dv_ntsc\/D10" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/dv_ntsc\/DV" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/dv_ntsc\/DVCPRO50" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/dv_ntsc\/DVD" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/dv_ntsc_wide\/D10" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/dv_ntsc_wide\/DV" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/dv_ntsc_wide\/DVCPRO50" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/dv_ntsc_wide\/DVD" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/dv_pal\/D10" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/dv_pal\/DV" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/dv_pal\/DVCPRO50" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/dv_pal\/DVD" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/dv_pal_wide\/D10" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/dv_pal_wide\/DV" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/dv_pal_wide\/DVCPRO50" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/dv_pal_wide\/DVD" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/hdv_1080_25p\/HDV" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/hdv_1080_30p\/HDV" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/hdv_1080_50i\/HDV" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/hdv_1080_60i\/HDV" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/hdv_720_25p\/HDV" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/hdv_720_30p\/HDV" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/hdv_720_50p\/HDV" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/hdv_720_60p\/HDV" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/intermediate\/DNxHR-HQ" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/intermediate\/MJPEG" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/intermediate\/MPEG-2" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/intermediate\/MPEG-4" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/intermediate\/ProRes" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/intermediate\/ProRes HQ" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/intermediate\/ProRes-Kostya" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/lossless\/FFV1" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/lossless\/H.264" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/lossless\/HuffYUV" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/lossless\/Ut Video" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/stills\/BMP" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/stills\/DPX" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/stills\/JPEG" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/stills\/PNG" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/stills\/PPM" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/stills\/TGA" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/stills\/TIFF" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/stills\/webp" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/ten_bit\/AV1" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/ten_bit\/DNxHR-HQ" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/ten_bit\/FFV1" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/ten_bit\/ProRes 422" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/ten_bit\/ProRes 444" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/ten_bit\/ProRes HQ" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/ten_bit\/SVT-AV1" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/ten_bit\/vp9-eac3-mp4" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/ten_bit\/vp9-opus-webm" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/ten_bit\/x264-high10" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/ten_bit\/x265-main10" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/vp9" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/webm" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/webm-pass1" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/webp" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/x264-medium" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/x264-medium-baseline" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/x264-medium-main" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/x264-medium-pass1" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/x265-medium" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/consumer\/avformat\/x265-medium-pass1" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/filter\/brightness\/from_black" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/filter\/brightness\/to_black" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/filter\/movit.blur\/blur_in" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/filter\/movit.blur\/blur_in_out" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/filter\/movit.blur\/blur_out" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/filter\/movit.opacity\/fade_in" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/filter\/movit.opacity\/fade_in_out" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/filter\/movit.opacity\/fade_out" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/filter\/volume\/fade_in" ],
+            
+              [  "usr\/share\/mlt-7\/presets\/filter\/volume\/fade_out" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/atsc_1080i_50" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/atsc_1080i_5994" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/atsc_1080i_60" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/atsc_1080p_2398" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/atsc_1080p_24" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/atsc_1080p_25" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/atsc_1080p_2997" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/atsc_1080p_30" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/atsc_1080p_50" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/atsc_1080p_5994" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/atsc_1080p_60" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/atsc_720p_2398" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/atsc_720p_24" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/atsc_720p_25" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/atsc_720p_2997" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/atsc_720p_30" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/atsc_720p_50" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/atsc_720p_5994" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/atsc_720p_60" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/cif_15" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/cif_ntsc" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/cif_pal" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/cvd_ntsc" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/cvd_pal" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/dv_ntsc" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/dv_ntsc_wide" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/dv_pal" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/dv_pal_wide" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/hdv_1080_25p" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/hdv_1080_30p" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/hdv_1080_50i" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/hdv_1080_60i" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/hdv_720_25p" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/hdv_720_30p" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/hdv_720_50p" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/hdv_720_60p" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/qcif_15" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/qcif_ntsc" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/qcif_pal" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/qhd_1440p_2398" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/qhd_1440p_24" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/qhd_1440p_25" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/qhd_1440p_2997" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/qhd_1440p_30" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/qhd_1440p_50" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/qhd_1440p_5994" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/qhd_1440p_60" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/quarter_15" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/quarter_ntsc" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/quarter_ntsc_wide" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/quarter_pal" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/quarter_pal_wide" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/sdi_486i_5994" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/sdi_486p_2398" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/square_1080p_30" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/square_1080p_60" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/square_ntsc" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/square_ntsc_wide" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/square_pal" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/square_pal_wide" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/svcd_ntsc" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/svcd_ntsc_wide" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/svcd_pal" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/svcd_pal_wide" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/uhd_2160p_2398" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/uhd_2160p_24" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/uhd_2160p_25" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/uhd_2160p_2997" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/uhd_2160p_30" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/uhd_2160p_50" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/uhd_2160p_5994" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/uhd_2160p_60" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/vcd_ntsc" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/vcd_pal" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/vertical_hd_30" ],
+            
+              [  "usr\/share\/mlt-7\/profiles\/vertical_hd_60" ],
+            
+              [  "usr\/share\/mlt-7\/qt6\/consumer_qglsl.yml" ],
+            
+              [  "usr\/share\/mlt-7\/qt6\/filter_audiolevelgraph.yml" ],
+            
+              [  "usr\/share\/mlt-7\/qt6\/filter_audiospectrum.yml" ],
+            
+              [  "usr\/share\/mlt-7\/qt6\/filter_audiowaveform.yml" ],
+            
+              [  "usr\/share\/mlt-7\/qt6\/filter_dropshadow.yml" ],
+            
+              [  "usr\/share\/mlt-7\/qt6\/filter_gpsgraphic.yml" ],
+            
+              [  "usr\/share\/mlt-7\/qt6\/filter_gpstext.yml" ],
+            
+              [  "usr\/share\/mlt-7\/qt6\/filter_lightshow.yml" ],
+            
+              [  "usr\/share\/mlt-7\/qt6\/filter_qtblend.yml" ],
+            
+              [  "usr\/share\/mlt-7\/qt6\/filter_qtblend_mode.yml" ],
+            
+              [  "usr\/share\/mlt-7\/qt6\/filter_qtcrop.yml" ],
+            
+              [  "usr\/share\/mlt-7\/qt6\/filter_qtext.yml" ],
+            
+              [  "usr\/share\/mlt-7\/qt6\/filter_typewriter.yml" ],
+            
+              [  "usr\/share\/mlt-7\/qt6\/producer_kdenlivetitle.yml" ],
+            
+              [  "usr\/share\/mlt-7\/qt6\/producer_qimage.yml" ],
+            
+              [  "usr\/share\/mlt-7\/qt6\/producer_qtext.yml" ],
+            
+              [  "usr\/share\/mlt-7\/qt6\/transition_qtblend.yml" ],
+            
+              [  "usr\/share\/mlt-7\/qt6\/transition_vqm.yml" ],
+            
+              [  "usr\/share\/mlt-7\/resample\/filter_resample.yml" ],
+            
+              [  "usr\/share\/mlt-7\/resample\/link_resample.yml" ],
+            
+              [  "usr\/share\/mlt-7\/rtaudio\/consumer_rtaudio.yml" ],
+            
+              [  "usr\/share\/mlt-7\/rubberband\/filter_rbpitch.yml" ],
+            
+              [  "usr\/share\/mlt-7\/sdl2\/consumer_sdl2.yml" ],
+            
+              [  "usr\/share\/mlt-7\/sdl2\/consumer_sdl2_audio.yml" ],
+            
+              [  "usr\/share\/mlt-7\/vid.stab\/filter_deshake.yml" ],
+            
+              [  "usr\/share\/mlt-7\/vid.stab\/filter_vidstab.yml" ],
+            
+              [  "usr\/share\/mlt-7\/xine\/filter_deinterlace.yml" ],
+            
+              [  "usr\/share\/mlt-7\/xine\/link_deinterlace.yml" ],
+            
+              [  "usr\/share\/mlt-7\/xml\/consumer_xml.yml" ],
+            
+              [  "usr\/share\/mlt-7\/xml\/mlt-xml.dtd" ],
+            
+              [  "usr\/share\/mlt-7\/xml\/producer_xml-clip.yml" ],
+            
+              [  "usr\/share\/mlt-7\/xml\/producer_xml-nogl.yml" ],
+            
+              [  "usr\/share\/mlt-7\/xml\/producer_xml-string.yml" ],
+            
+              [  "usr\/share\/mlt-7\/xml\/producer_xml.yml" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

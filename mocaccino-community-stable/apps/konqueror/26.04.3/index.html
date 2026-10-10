@@ -1,0 +1,3989 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing apps/konqueror-26.04.3 in mocaccino-community-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> apps/konqueror-26.04.3
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                Web browser and file manager based on KDE Frameworks
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-community-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-community-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of apps/konqueror
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/mocaccino-community:konqueror-apps-26.04.3" target="_blank"> quay.io/mocaccino/mocaccino-community:konqueror-apps-26.04.3 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/mocaccino-community:konqueror-apps-26.04.3/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 26.04.3  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> GPL-2 </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/plasma">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  plasma &gt;=0 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> appstream.id: org.kde.konqueror
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: kde-apps/konqueror
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://apps.kde.org/konqueror/" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://apps.kde.org/konqueror/ </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/kde-apps/konqueror">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  konqueror &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "etc\/xdg\/autostart\/konqy_preload.desktop" ],
+            
+              [  "etc\/xdg\/konqautofiltersrc" ],
+            
+              [  "etc\/xdg\/konqsidebartngrc" ],
+            
+              [  "etc\/xdg\/translaterc" ],
+            
+              [  "etc\/xdg\/useragenttemplatesrc" ],
+            
+              [  "usr\/bin\/fsview" ],
+            
+              [  "usr\/bin\/kcreatewebarchive" ],
+            
+              [  "usr\/bin\/kfmclient" ],
+            
+              [  "usr\/bin\/konqueror" ],
+            
+              [  "usr\/lib64\/libKF6Konq.so" ],
+            
+              [  "usr\/lib64\/libKF6Konq.so.5.97.0" ],
+            
+              [  "usr\/lib64\/libKF6Konq.so.7" ],
+            
+              [  "usr\/lib64\/libKF6KonqSettings.so" ],
+            
+              [  "usr\/lib64\/libKF6KonqSettings.so.5.97.0" ],
+            
+              [  "usr\/lib64\/libKF6KonqSettings.so.7" ],
+            
+              [  "usr\/lib64\/libkonqsidebarplugin.so" ],
+            
+              [  "usr\/lib64\/libkonqsidebarplugin.so.26.04.3" ],
+            
+              [  "usr\/lib64\/libkonqsidebarplugin.so.6" ],
+            
+              [  "usr\/lib64\/libkonquerorprivate.so.26.04.3" ],
+            
+              [  "usr\/lib64\/libkonquerorprivate.so.5" ],
+            
+              [  "usr\/lib64\/libkwebenginepart.so" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/akregatorkonqfeedicon.so" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/autorefresh.so" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/babelfishplugin.so" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/dolphinpart\/kpartplugins\/dirfilterplugin.so" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/dolphinpart\/kpartplugins\/kimgallery.so" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/dolphinpart\/kpartplugins\/konq_shellcmdplugin.so" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/kf6\/kfileitemaction\/akregatorplugin.so" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/kf6\/kio\/bookmarks.so" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/kf6\/parts\/fsviewpart.so" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/kf6\/parts\/konq_sidebar.so" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/kf6\/parts\/webenginepart.so" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/kf6\/thumbcreator\/webarchivethumbnail.so" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/khtmlsettingsplugin.so" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/konqueror\/kpartplugins\/searchbarplugin.so" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/konqueror\/sidebar\/konqsidebar_bookmarks.so" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/konqueror\/sidebar\/konqsidebar_history.so" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/konqueror\/sidebar\/konqsidebar_places.so" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/konqueror\/sidebar\/konqsidebar_tree.so" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/konqueror\/sidebar\/konqsidebar_verticaltabbar.so" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/konqueror_kcms\/kcm_bookmarks.so" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/konqueror_kcms\/kcm_history.so" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/konqueror_kcms\/kcm_konq.so" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/konqueror_kcms\/kcm_performance.so" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/konqueror_kcms\/kcm_speeddial.so" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/konqueror_kcms\/khtml_appearance.so" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/konqueror_kcms\/khtml_behavior.so" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/konqueror_kcms\/khtml_cache.so" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/konqueror_kcms\/khtml_cookies.so" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/konqueror_kcms\/khtml_filter.so" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/konqueror_kcms\/khtml_general.so" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/konqueror_kcms\/khtml_java_js.so" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/konqueror_kcms\/khtml_tabs.so" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/konqueror_kcms\/khtml_useragent.so" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/konqueror_kget_browser_integration.so" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/temporarysavedir.so" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/uachangerplugin.so" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/webarchiverplugin.so" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/webenginepart\/kpartplugins\/akregatorkonqfeediconwebenginepart_kpartplugins.so" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/webenginepart\/kpartplugins\/autorefreshwebenginepart_kpartplugins.so" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/webenginepart\/kpartplugins\/babelfishpluginwebenginepart_kpartplugins.so" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/webenginepart\/kpartplugins\/khtmlsettingspluginwebenginepart_kpartplugins.so" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/webenginepart\/kpartplugins\/konqueror_kget_browser_integrationwebenginepart_kpartplugins.so" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/webenginepart\/kpartplugins\/temporarysavedirwebenginepart_kpartplugins.so" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/webenginepart\/kpartplugins\/uachangerpluginwebenginepart_kpartplugins.so" ],
+            
+              [  "usr\/lib64\/qt6\/plugins\/webenginepart\/kpartplugins\/webarchiverpluginwebenginepart_kpartplugins.so" ],
+            
+              [  "usr\/share\/akregator\/pics\/feed.png" ],
+            
+              [  "usr\/share\/applications\/bookmarks.desktop" ],
+            
+              [  "usr\/share\/applications\/kcm_bookmarks.desktop" ],
+            
+              [  "usr\/share\/applications\/kcm_speeddial.desktop" ],
+            
+              [  "usr\/share\/applications\/kfmclient.desktop" ],
+            
+              [  "usr\/share\/applications\/kfmclient_dir.desktop" ],
+            
+              [  "usr\/share\/applications\/kfmclient_html.desktop" ],
+            
+              [  "usr\/share\/applications\/kfmclient_war.desktop" ],
+            
+              [  "usr\/share\/applications\/konqbrowser.desktop" ],
+            
+              [  "usr\/share\/applications\/org.kde.konqueror.desktop" ],
+            
+              [  "usr\/share\/applications\/speeddial.desktop" ],
+            
+              [  "usr\/share\/config.kcfg\/kcreatewebarchive.kcfg" ],
+            
+              [  "usr\/share\/config.kcfg\/konqueror.kcfg" ],
+            
+              [  "usr\/share\/dbus-1\/interfaces\/org.kde.Konqueror.Main.xml" ],
+            
+              [  "usr\/share\/dbus-1\/interfaces\/org.kde.Konqueror.MainWindow.xml" ],
+            
+              [  "usr\/share\/doc\/konqueror-26.04.3\/AUTHORS.bz2" ],
+            
+              [  "usr\/share\/doc\/konqueror-26.04.3\/ChangeLog.bz2" ],
+            
+              [  "usr\/share\/help\/ca\/kcontrol\/bookmarks\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/ca\/kcontrol\/bookmarks\/index.docbook" ],
+            
+              [  "usr\/share\/help\/ca\/kcontrol\/filemanager\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/ca\/kcontrol\/filemanager\/index.docbook" ],
+            
+              [  "usr\/share\/help\/ca\/kcontrol\/history\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/ca\/kcontrol\/history\/index.docbook" ],
+            
+              [  "usr\/share\/help\/ca\/kcontrol\/kcmcss\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/ca\/kcontrol\/kcmcss\/index.docbook" ],
+            
+              [  "usr\/share\/help\/ca\/kcontrol\/khtml-adblock\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/ca\/kcontrol\/khtml-adblock\/index.docbook" ],
+            
+              [  "usr\/share\/help\/ca\/kcontrol\/khtml-behavior\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/ca\/kcontrol\/khtml-behavior\/index.docbook" ],
+            
+              [  "usr\/share\/help\/ca\/kcontrol\/khtml-general\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/ca\/kcontrol\/khtml-general\/index.docbook" ],
+            
+              [  "usr\/share\/help\/ca\/kcontrol\/khtml-java-js\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/ca\/kcontrol\/khtml-java-js\/index.docbook" ],
+            
+              [  "usr\/share\/help\/ca\/kcontrol\/performance\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/ca\/kcontrol\/performance\/index.docbook" ],
+            
+              [  "usr\/share\/help\/ca\/konqueror\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/ca\/konqueror\/index.docbook" ],
+            
+              [  "usr\/share\/help\/ca\/konqueror\/konqorg.png" ],
+            
+              [  "usr\/share\/help\/ca\/konqueror\/viewproperties-dialog.png" ],
+            
+              [  "usr\/share\/help\/de\/kcontrol\/bookmarks\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/de\/kcontrol\/bookmarks\/index.docbook" ],
+            
+              [  "usr\/share\/help\/de\/kcontrol\/filemanager\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/de\/kcontrol\/filemanager\/index.docbook" ],
+            
+              [  "usr\/share\/help\/de\/kcontrol\/history\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/de\/kcontrol\/history\/index.docbook" ],
+            
+              [  "usr\/share\/help\/de\/kcontrol\/kcmcss\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/de\/kcontrol\/kcmcss\/index.docbook" ],
+            
+              [  "usr\/share\/help\/de\/kcontrol\/khtml-adblock\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/de\/kcontrol\/khtml-adblock\/index.docbook" ],
+            
+              [  "usr\/share\/help\/de\/kcontrol\/khtml-behavior\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/de\/kcontrol\/khtml-behavior\/index.docbook" ],
+            
+              [  "usr\/share\/help\/de\/kcontrol\/khtml-general\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/de\/kcontrol\/khtml-general\/index.docbook" ],
+            
+              [  "usr\/share\/help\/de\/kcontrol\/khtml-java-js\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/de\/kcontrol\/khtml-java-js\/index.docbook" ],
+            
+              [  "usr\/share\/help\/de\/kcontrol\/performance\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/de\/kcontrol\/performance\/index.docbook" ],
+            
+              [  "usr\/share\/help\/el\/konqueror\/basics.docbook" ],
+            
+              [  "usr\/share\/help\/el\/konqueror\/bookmarks.docbook" ],
+            
+              [  "usr\/share\/help\/el\/konqueror\/browser.docbook" ],
+            
+              [  "usr\/share\/help\/el\/konqueror\/cmndline.png" ],
+            
+              [  "usr\/share\/help\/el\/konqueror\/commands.docbook" ],
+            
+              [  "usr\/share\/help\/el\/konqueror\/config.docbook" ],
+            
+              [  "usr\/share\/help\/el\/konqueror\/credits.docbook" ],
+            
+              [  "usr\/share\/help\/el\/konqueror\/dirtree.png" ],
+            
+              [  "usr\/share\/help\/el\/konqueror\/dragdrop.png" ],
+            
+              [  "usr\/share\/help\/el\/konqueror\/faq.docbook" ],
+            
+              [  "usr\/share\/help\/el\/konqueror\/filemanager.docbook" ],
+            
+              [  "usr\/share\/help\/el\/konqueror\/folders.png" ],
+            
+              [  "usr\/share\/help\/el\/konqueror\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/el\/konqueror\/index.docbook" ],
+            
+              [  "usr\/share\/help\/el\/konqueror\/introduction.docbook" ],
+            
+              [  "usr\/share\/help\/el\/konqueror\/konqorg.png" ],
+            
+              [  "usr\/share\/help\/el\/konqueror\/look.png" ],
+            
+              [  "usr\/share\/help\/el\/konqueror\/parts.png" ],
+            
+              [  "usr\/share\/help\/el\/konqueror\/path-complete.docbook" ],
+            
+              [  "usr\/share\/help\/el\/konqueror\/plugins.docbook" ],
+            
+              [  "usr\/share\/help\/el\/konqueror\/save-settings.docbook" ],
+            
+              [  "usr\/share\/help\/el\/konqueror\/shortcut1.png" ],
+            
+              [  "usr\/share\/help\/el\/konqueror\/shortcut2.png" ],
+            
+              [  "usr\/share\/help\/el\/konqueror\/sidebar.docbook" ],
+            
+              [  "usr\/share\/help\/el\/konqueror\/thumbnails.png" ],
+            
+              [  "usr\/share\/help\/el\/konqueror\/view-extensions.docbook" ],
+            
+              [  "usr\/share\/help\/el\/konqueror\/viewproperties-dialog.png" ],
+            
+              [  "usr\/share\/help\/en\/kcontrol\/bookmarks\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/en\/kcontrol\/bookmarks\/index.docbook" ],
+            
+              [  "usr\/share\/help\/en\/kcontrol\/filemanager\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/en\/kcontrol\/filemanager\/index.docbook" ],
+            
+              [  "usr\/share\/help\/en\/kcontrol\/history\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/en\/kcontrol\/history\/index.docbook" ],
+            
+              [  "usr\/share\/help\/en\/kcontrol\/kcmcss\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/en\/kcontrol\/kcmcss\/index.docbook" ],
+            
+              [  "usr\/share\/help\/en\/kcontrol\/khtml-adblock\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/en\/kcontrol\/khtml-adblock\/index.docbook" ],
+            
+              [  "usr\/share\/help\/en\/kcontrol\/khtml-behavior\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/en\/kcontrol\/khtml-behavior\/index.docbook" ],
+            
+              [  "usr\/share\/help\/en\/kcontrol\/khtml-general\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/en\/kcontrol\/khtml-general\/index.docbook" ],
+            
+              [  "usr\/share\/help\/en\/kcontrol\/khtml-java-js\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/en\/kcontrol\/khtml-java-js\/index.docbook" ],
+            
+              [  "usr\/share\/help\/en\/kcontrol\/performance\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/en\/kcontrol\/performance\/index.docbook" ],
+            
+              [  "usr\/share\/help\/en\/konqueror\/cmndline.png" ],
+            
+              [  "usr\/share\/help\/en\/konqueror\/dirtree.png" ],
+            
+              [  "usr\/share\/help\/en\/konqueror\/dragdrop.png" ],
+            
+              [  "usr\/share\/help\/en\/konqueror\/folders.png" ],
+            
+              [  "usr\/share\/help\/en\/konqueror\/format-font-size-less.png" ],
+            
+              [  "usr\/share\/help\/en\/konqueror\/format-font-size-more.png" ],
+            
+              [  "usr\/share\/help\/en\/konqueror\/go-jump.png" ],
+            
+              [  "usr\/share\/help\/en\/konqueror\/grouping-view.png" ],
+            
+              [  "usr\/share\/help\/en\/konqueror\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/en\/konqueror\/index.docbook" ],
+            
+              [  "usr\/share\/help\/en\/konqueror\/konqorg.png" ],
+            
+              [  "usr\/share\/help\/en\/konqueror\/look.png" ],
+            
+              [  "usr\/share\/help\/en\/konqueror\/parts.png" ],
+            
+              [  "usr\/share\/help\/en\/konqueror\/reset.png" ],
+            
+              [  "usr\/share\/help\/en\/konqueror\/thumbnails.png" ],
+            
+              [  "usr\/share\/help\/en\/konqueror\/viewproperties-dialog.png" ],
+            
+              [  "usr\/share\/help\/es\/kcontrol\/bookmarks\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/es\/kcontrol\/bookmarks\/index.docbook" ],
+            
+              [  "usr\/share\/help\/es\/kcontrol\/filemanager\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/es\/kcontrol\/filemanager\/index.docbook" ],
+            
+              [  "usr\/share\/help\/es\/kcontrol\/history\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/es\/kcontrol\/history\/index.docbook" ],
+            
+              [  "usr\/share\/help\/es\/kcontrol\/kcmcss\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/es\/kcontrol\/kcmcss\/index.docbook" ],
+            
+              [  "usr\/share\/help\/es\/kcontrol\/khtml-adblock\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/es\/kcontrol\/khtml-adblock\/index.docbook" ],
+            
+              [  "usr\/share\/help\/es\/kcontrol\/khtml-behavior\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/es\/kcontrol\/khtml-behavior\/index.docbook" ],
+            
+              [  "usr\/share\/help\/es\/kcontrol\/khtml-general\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/es\/kcontrol\/khtml-general\/index.docbook" ],
+            
+              [  "usr\/share\/help\/es\/kcontrol\/khtml-java-js\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/es\/kcontrol\/khtml-java-js\/index.docbook" ],
+            
+              [  "usr\/share\/help\/es\/kcontrol\/performance\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/es\/kcontrol\/performance\/index.docbook" ],
+            
+              [  "usr\/share\/help\/es\/konqueror\/basics.docbook" ],
+            
+              [  "usr\/share\/help\/es\/konqueror\/bookmarks.docbook" ],
+            
+              [  "usr\/share\/help\/es\/konqueror\/browser.docbook" ],
+            
+              [  "usr\/share\/help\/es\/konqueror\/commands.docbook" ],
+            
+              [  "usr\/share\/help\/es\/konqueror\/config.docbook" ],
+            
+              [  "usr\/share\/help\/es\/konqueror\/credits.docbook" ],
+            
+              [  "usr\/share\/help\/es\/konqueror\/faq.docbook" ],
+            
+              [  "usr\/share\/help\/es\/konqueror\/filemanager.docbook" ],
+            
+              [  "usr\/share\/help\/es\/konqueror\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/es\/konqueror\/index.docbook" ],
+            
+              [  "usr\/share\/help\/es\/konqueror\/introduction.docbook" ],
+            
+              [  "usr\/share\/help\/es\/konqueror\/path-complete.docbook" ],
+            
+              [  "usr\/share\/help\/es\/konqueror\/plugins.docbook" ],
+            
+              [  "usr\/share\/help\/es\/konqueror\/save-settings.docbook" ],
+            
+              [  "usr\/share\/help\/es\/konqueror\/sidebar.docbook" ],
+            
+              [  "usr\/share\/help\/es\/konqueror\/view-extensions.docbook" ],
+            
+              [  "usr\/share\/help\/et\/kcontrol\/bookmarks\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/et\/kcontrol\/bookmarks\/index.docbook" ],
+            
+              [  "usr\/share\/help\/et\/kcontrol\/filemanager\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/et\/kcontrol\/filemanager\/index.docbook" ],
+            
+              [  "usr\/share\/help\/et\/kcontrol\/history\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/et\/kcontrol\/history\/index.docbook" ],
+            
+              [  "usr\/share\/help\/et\/kcontrol\/kcmcss\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/et\/kcontrol\/kcmcss\/index.docbook" ],
+            
+              [  "usr\/share\/help\/et\/kcontrol\/khtml-adblock\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/et\/kcontrol\/khtml-adblock\/index.docbook" ],
+            
+              [  "usr\/share\/help\/et\/kcontrol\/khtml-behavior\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/et\/kcontrol\/khtml-behavior\/index.docbook" ],
+            
+              [  "usr\/share\/help\/et\/kcontrol\/khtml-general\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/et\/kcontrol\/khtml-general\/index.docbook" ],
+            
+              [  "usr\/share\/help\/et\/kcontrol\/khtml-java-js\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/et\/kcontrol\/khtml-java-js\/index.docbook" ],
+            
+              [  "usr\/share\/help\/et\/kcontrol\/performance\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/et\/kcontrol\/performance\/index.docbook" ],
+            
+              [  "usr\/share\/help\/fr\/kcontrol\/bookmarks\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/fr\/kcontrol\/bookmarks\/index.docbook" ],
+            
+              [  "usr\/share\/help\/fr\/kcontrol\/filemanager\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/fr\/kcontrol\/filemanager\/index.docbook" ],
+            
+              [  "usr\/share\/help\/fr\/kcontrol\/history\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/fr\/kcontrol\/history\/index.docbook" ],
+            
+              [  "usr\/share\/help\/fr\/kcontrol\/kcmcss\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/fr\/kcontrol\/kcmcss\/index.docbook" ],
+            
+              [  "usr\/share\/help\/fr\/kcontrol\/khtml-adblock\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/fr\/kcontrol\/khtml-adblock\/index.docbook" ],
+            
+              [  "usr\/share\/help\/fr\/kcontrol\/khtml-behavior\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/fr\/kcontrol\/khtml-behavior\/index.docbook" ],
+            
+              [  "usr\/share\/help\/fr\/kcontrol\/khtml-general\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/fr\/kcontrol\/khtml-general\/index.docbook" ],
+            
+              [  "usr\/share\/help\/fr\/kcontrol\/khtml-java-js\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/fr\/kcontrol\/khtml-java-js\/index.docbook" ],
+            
+              [  "usr\/share\/help\/fr\/kcontrol\/performance\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/fr\/kcontrol\/performance\/index.docbook" ],
+            
+              [  "usr\/share\/help\/fr\/konqueror\/basics.docbook" ],
+            
+              [  "usr\/share\/help\/fr\/konqueror\/bookmarks.docbook" ],
+            
+              [  "usr\/share\/help\/fr\/konqueror\/browser.docbook" ],
+            
+              [  "usr\/share\/help\/fr\/konqueror\/cmndline.png" ],
+            
+              [  "usr\/share\/help\/fr\/konqueror\/commands.docbook" ],
+            
+              [  "usr\/share\/help\/fr\/konqueror\/config.docbook" ],
+            
+              [  "usr\/share\/help\/fr\/konqueror\/credits.docbook" ],
+            
+              [  "usr\/share\/help\/fr\/konqueror\/dirtree.png" ],
+            
+              [  "usr\/share\/help\/fr\/konqueror\/dragdrop.png" ],
+            
+              [  "usr\/share\/help\/fr\/konqueror\/faq.docbook" ],
+            
+              [  "usr\/share\/help\/fr\/konqueror\/filemanager.docbook" ],
+            
+              [  "usr\/share\/help\/fr\/konqueror\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/fr\/konqueror\/index.docbook" ],
+            
+              [  "usr\/share\/help\/fr\/konqueror\/introduction.docbook" ],
+            
+              [  "usr\/share\/help\/fr\/konqueror\/konqorg.png" ],
+            
+              [  "usr\/share\/help\/fr\/konqueror\/parts.png" ],
+            
+              [  "usr\/share\/help\/fr\/konqueror\/path-complete.docbook" ],
+            
+              [  "usr\/share\/help\/fr\/konqueror\/plugins.docbook" ],
+            
+              [  "usr\/share\/help\/fr\/konqueror\/save-settings.docbook" ],
+            
+              [  "usr\/share\/help\/fr\/konqueror\/shortcut1.png" ],
+            
+              [  "usr\/share\/help\/fr\/konqueror\/shortcut2.png" ],
+            
+              [  "usr\/share\/help\/fr\/konqueror\/sidebar.docbook" ],
+            
+              [  "usr\/share\/help\/fr\/konqueror\/view-extensions.docbook" ],
+            
+              [  "usr\/share\/help\/it\/kcontrol\/bookmarks\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/it\/kcontrol\/bookmarks\/index.docbook" ],
+            
+              [  "usr\/share\/help\/it\/kcontrol\/filemanager\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/it\/kcontrol\/filemanager\/index.docbook" ],
+            
+              [  "usr\/share\/help\/it\/kcontrol\/history\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/it\/kcontrol\/history\/index.docbook" ],
+            
+              [  "usr\/share\/help\/it\/kcontrol\/kcmcss\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/it\/kcontrol\/kcmcss\/index.docbook" ],
+            
+              [  "usr\/share\/help\/it\/kcontrol\/khtml-adblock\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/it\/kcontrol\/khtml-adblock\/index.docbook" ],
+            
+              [  "usr\/share\/help\/it\/kcontrol\/khtml-behavior\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/it\/kcontrol\/khtml-behavior\/index.docbook" ],
+            
+              [  "usr\/share\/help\/it\/kcontrol\/khtml-general\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/it\/kcontrol\/khtml-general\/index.docbook" ],
+            
+              [  "usr\/share\/help\/it\/kcontrol\/khtml-java-js\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/it\/kcontrol\/khtml-java-js\/index.docbook" ],
+            
+              [  "usr\/share\/help\/it\/kcontrol\/performance\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/it\/kcontrol\/performance\/index.docbook" ],
+            
+              [  "usr\/share\/help\/it\/konqueror\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/it\/konqueror\/index.docbook" ],
+            
+              [  "usr\/share\/help\/ko\/kcontrol\/performance\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/ko\/kcontrol\/performance\/index.docbook" ],
+            
+              [  "usr\/share\/help\/nb\/kcontrol\/bookmarks\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/nb\/kcontrol\/bookmarks\/index.docbook" ],
+            
+              [  "usr\/share\/help\/nb\/kcontrol\/history\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/nb\/kcontrol\/history\/index.docbook" ],
+            
+              [  "usr\/share\/help\/nb\/kcontrol\/kcmcss\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/nb\/kcontrol\/kcmcss\/index.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/kcontrol\/bookmarks\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/nl\/kcontrol\/bookmarks\/index.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/kcontrol\/filemanager\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/nl\/kcontrol\/filemanager\/index.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/kcontrol\/history\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/nl\/kcontrol\/history\/index.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/kcontrol\/kcmcss\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/nl\/kcontrol\/kcmcss\/index.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/kcontrol\/khtml-adblock\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/nl\/kcontrol\/khtml-adblock\/index.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/kcontrol\/khtml-behavior\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/nl\/kcontrol\/khtml-behavior\/index.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/kcontrol\/khtml-general\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/nl\/kcontrol\/khtml-general\/index.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/kcontrol\/khtml-java-js\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/nl\/kcontrol\/khtml-java-js\/index.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/kcontrol\/performance\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/nl\/kcontrol\/performance\/index.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/konqueror\/basics.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/konqueror\/bookmarks.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/konqueror\/browser.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/konqueror\/cmndline.png" ],
+            
+              [  "usr\/share\/help\/nl\/konqueror\/commands.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/konqueror\/config.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/konqueror\/credits.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/konqueror\/dirtree.png" ],
+            
+              [  "usr\/share\/help\/nl\/konqueror\/dragdrop.png" ],
+            
+              [  "usr\/share\/help\/nl\/konqueror\/faq.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/konqueror\/filemanager.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/konqueror\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/nl\/konqueror\/index.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/konqueror\/introduction.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/konqueror\/konqorg.png" ],
+            
+              [  "usr\/share\/help\/nl\/konqueror\/parts.png" ],
+            
+              [  "usr\/share\/help\/nl\/konqueror\/path-complete.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/konqueror\/plugins.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/konqueror\/save-settings.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/konqueror\/shortcut1.png" ],
+            
+              [  "usr\/share\/help\/nl\/konqueror\/shortcut2.png" ],
+            
+              [  "usr\/share\/help\/nl\/konqueror\/sidebar.docbook" ],
+            
+              [  "usr\/share\/help\/nl\/konqueror\/view-extensions.docbook" ],
+            
+              [  "usr\/share\/help\/pt\/kcontrol\/bookmarks\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/pt\/kcontrol\/bookmarks\/index.docbook" ],
+            
+              [  "usr\/share\/help\/pt\/kcontrol\/filemanager\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/pt\/kcontrol\/filemanager\/index.docbook" ],
+            
+              [  "usr\/share\/help\/pt\/kcontrol\/history\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/pt\/kcontrol\/history\/index.docbook" ],
+            
+              [  "usr\/share\/help\/pt\/kcontrol\/kcmcss\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/pt\/kcontrol\/kcmcss\/index.docbook" ],
+            
+              [  "usr\/share\/help\/pt\/kcontrol\/khtml-adblock\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/pt\/kcontrol\/khtml-adblock\/index.docbook" ],
+            
+              [  "usr\/share\/help\/pt\/kcontrol\/khtml-behavior\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/pt\/kcontrol\/khtml-behavior\/index.docbook" ],
+            
+              [  "usr\/share\/help\/pt\/kcontrol\/khtml-general\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/pt\/kcontrol\/khtml-general\/index.docbook" ],
+            
+              [  "usr\/share\/help\/pt\/kcontrol\/khtml-java-js\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/pt\/kcontrol\/khtml-java-js\/index.docbook" ],
+            
+              [  "usr\/share\/help\/pt\/kcontrol\/performance\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/pt\/kcontrol\/performance\/index.docbook" ],
+            
+              [  "usr\/share\/help\/pt\/konqueror\/basics.docbook" ],
+            
+              [  "usr\/share\/help\/pt\/konqueror\/bookmarks.docbook" ],
+            
+              [  "usr\/share\/help\/pt\/konqueror\/browser.docbook" ],
+            
+              [  "usr\/share\/help\/pt\/konqueror\/commands.docbook" ],
+            
+              [  "usr\/share\/help\/pt\/konqueror\/config.docbook" ],
+            
+              [  "usr\/share\/help\/pt\/konqueror\/credits.docbook" ],
+            
+              [  "usr\/share\/help\/pt\/konqueror\/faq.docbook" ],
+            
+              [  "usr\/share\/help\/pt\/konqueror\/filemanager.docbook" ],
+            
+              [  "usr\/share\/help\/pt\/konqueror\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/pt\/konqueror\/index.docbook" ],
+            
+              [  "usr\/share\/help\/pt\/konqueror\/introduction.docbook" ],
+            
+              [  "usr\/share\/help\/pt\/konqueror\/path-complete.docbook" ],
+            
+              [  "usr\/share\/help\/pt\/konqueror\/plugins.docbook" ],
+            
+              [  "usr\/share\/help\/pt\/konqueror\/save-settings.docbook" ],
+            
+              [  "usr\/share\/help\/pt\/konqueror\/sidebar.docbook" ],
+            
+              [  "usr\/share\/help\/pt\/konqueror\/view-extensions.docbook" ],
+            
+              [  "usr\/share\/help\/pt_BR\/kcontrol\/bookmarks\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/pt_BR\/kcontrol\/bookmarks\/index.docbook" ],
+            
+              [  "usr\/share\/help\/pt_BR\/kcontrol\/filemanager\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/pt_BR\/kcontrol\/filemanager\/index.docbook" ],
+            
+              [  "usr\/share\/help\/pt_BR\/kcontrol\/history\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/pt_BR\/kcontrol\/history\/index.docbook" ],
+            
+              [  "usr\/share\/help\/pt_BR\/kcontrol\/kcmcss\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/pt_BR\/kcontrol\/kcmcss\/index.docbook" ],
+            
+              [  "usr\/share\/help\/pt_BR\/kcontrol\/khtml-adblock\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/pt_BR\/kcontrol\/khtml-adblock\/index.docbook" ],
+            
+              [  "usr\/share\/help\/pt_BR\/kcontrol\/khtml-behavior\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/pt_BR\/kcontrol\/khtml-behavior\/index.docbook" ],
+            
+              [  "usr\/share\/help\/pt_BR\/kcontrol\/khtml-general\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/pt_BR\/kcontrol\/khtml-general\/index.docbook" ],
+            
+              [  "usr\/share\/help\/pt_BR\/kcontrol\/khtml-java-js\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/pt_BR\/kcontrol\/khtml-java-js\/index.docbook" ],
+            
+              [  "usr\/share\/help\/pt_BR\/kcontrol\/performance\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/pt_BR\/kcontrol\/performance\/index.docbook" ],
+            
+              [  "usr\/share\/help\/pt_BR\/konqueror\/cmndline.png" ],
+            
+              [  "usr\/share\/help\/pt_BR\/konqueror\/dirtree.png" ],
+            
+              [  "usr\/share\/help\/pt_BR\/konqueror\/dragdrop.png" ],
+            
+              [  "usr\/share\/help\/pt_BR\/konqueror\/folders.png" ],
+            
+              [  "usr\/share\/help\/pt_BR\/konqueror\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/pt_BR\/konqueror\/index.docbook" ],
+            
+              [  "usr\/share\/help\/pt_BR\/konqueror\/konqorg.png" ],
+            
+              [  "usr\/share\/help\/pt_BR\/konqueror\/look.png" ],
+            
+              [  "usr\/share\/help\/pt_BR\/konqueror\/parts.png" ],
+            
+              [  "usr\/share\/help\/pt_BR\/konqueror\/shortcut1.png" ],
+            
+              [  "usr\/share\/help\/pt_BR\/konqueror\/shortcut2.png" ],
+            
+              [  "usr\/share\/help\/pt_BR\/konqueror\/thumbnails.png" ],
+            
+              [  "usr\/share\/help\/pt_BR\/konqueror\/viewproperties-dialog.png" ],
+            
+              [  "usr\/share\/help\/ru\/kcontrol\/bookmarks\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/ru\/kcontrol\/bookmarks\/index.docbook" ],
+            
+              [  "usr\/share\/help\/ru\/kcontrol\/filemanager\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/ru\/kcontrol\/filemanager\/index.docbook" ],
+            
+              [  "usr\/share\/help\/ru\/kcontrol\/history\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/ru\/kcontrol\/history\/index.docbook" ],
+            
+              [  "usr\/share\/help\/ru\/kcontrol\/kcmcss\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/ru\/kcontrol\/kcmcss\/index.docbook" ],
+            
+              [  "usr\/share\/help\/ru\/kcontrol\/khtml-adblock\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/ru\/kcontrol\/khtml-adblock\/index.docbook" ],
+            
+              [  "usr\/share\/help\/ru\/kcontrol\/khtml-behavior\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/ru\/kcontrol\/khtml-behavior\/index.docbook" ],
+            
+              [  "usr\/share\/help\/ru\/kcontrol\/khtml-general\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/ru\/kcontrol\/khtml-general\/index.docbook" ],
+            
+              [  "usr\/share\/help\/ru\/kcontrol\/khtml-java-js\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/ru\/kcontrol\/khtml-java-js\/index.docbook" ],
+            
+              [  "usr\/share\/help\/ru\/kcontrol\/performance\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/ru\/kcontrol\/performance\/index.docbook" ],
+            
+              [  "usr\/share\/help\/sl\/kcontrol\/bookmarks\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/sl\/kcontrol\/bookmarks\/index.docbook" ],
+            
+              [  "usr\/share\/help\/sl\/kcontrol\/filemanager\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/sl\/kcontrol\/filemanager\/index.docbook" ],
+            
+              [  "usr\/share\/help\/sl\/kcontrol\/history\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/sl\/kcontrol\/history\/index.docbook" ],
+            
+              [  "usr\/share\/help\/sl\/kcontrol\/kcmcss\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/sl\/kcontrol\/kcmcss\/index.docbook" ],
+            
+              [  "usr\/share\/help\/sl\/kcontrol\/khtml-adblock\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/sl\/kcontrol\/khtml-adblock\/index.docbook" ],
+            
+              [  "usr\/share\/help\/sl\/kcontrol\/khtml-behavior\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/sl\/kcontrol\/khtml-behavior\/index.docbook" ],
+            
+              [  "usr\/share\/help\/sl\/kcontrol\/khtml-general\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/sl\/kcontrol\/khtml-general\/index.docbook" ],
+            
+              [  "usr\/share\/help\/sl\/kcontrol\/khtml-java-js\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/sl\/kcontrol\/khtml-java-js\/index.docbook" ],
+            
+              [  "usr\/share\/help\/sl\/kcontrol\/performance\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/sl\/kcontrol\/performance\/index.docbook" ],
+            
+              [  "usr\/share\/help\/sl\/konqueror\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/sl\/konqueror\/index.docbook" ],
+            
+              [  "usr\/share\/help\/sr\/kcontrol\/bookmarks\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/sr\/kcontrol\/bookmarks\/index.docbook" ],
+            
+              [  "usr\/share\/help\/sr\/kcontrol\/filemanager\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/sr\/kcontrol\/filemanager\/index.docbook" ],
+            
+              [  "usr\/share\/help\/sr\/kcontrol\/kcmcss\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/sr\/kcontrol\/kcmcss\/index.docbook" ],
+            
+              [  "usr\/share\/help\/sr\/kcontrol\/khtml-adblock\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/sr\/kcontrol\/khtml-adblock\/index.docbook" ],
+            
+              [  "usr\/share\/help\/sr\/kcontrol\/khtml-behavior\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/sr\/kcontrol\/khtml-behavior\/index.docbook" ],
+            
+              [  "usr\/share\/help\/sr\/kcontrol\/khtml-general\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/sr\/kcontrol\/khtml-general\/index.docbook" ],
+            
+              [  "usr\/share\/help\/sr\/kcontrol\/khtml-java-js\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/sr\/kcontrol\/khtml-java-js\/index.docbook" ],
+            
+              [  "usr\/share\/help\/sr\/kcontrol\/performance\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/sr\/kcontrol\/performance\/index.docbook" ],
+            
+              [  "usr\/share\/help\/sr\/konqueror\/basics.docbook" ],
+            
+              [  "usr\/share\/help\/sr\/konqueror\/bookmarks.docbook" ],
+            
+              [  "usr\/share\/help\/sr\/konqueror\/browser.docbook" ],
+            
+              [  "usr\/share\/help\/sr\/konqueror\/commands.docbook" ],
+            
+              [  "usr\/share\/help\/sr\/konqueror\/config.docbook" ],
+            
+              [  "usr\/share\/help\/sr\/konqueror\/credits.docbook" ],
+            
+              [  "usr\/share\/help\/sr\/konqueror\/faq.docbook" ],
+            
+              [  "usr\/share\/help\/sr\/konqueror\/filemanager.docbook" ],
+            
+              [  "usr\/share\/help\/sr\/konqueror\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/sr\/konqueror\/index.docbook" ],
+            
+              [  "usr\/share\/help\/sr\/konqueror\/introduction.docbook" ],
+            
+              [  "usr\/share\/help\/sr\/konqueror\/path-complete.docbook" ],
+            
+              [  "usr\/share\/help\/sr\/konqueror\/plugins.docbook" ],
+            
+              [  "usr\/share\/help\/sr\/konqueror\/save-settings.docbook" ],
+            
+              [  "usr\/share\/help\/sr\/konqueror\/sidebar.docbook" ],
+            
+              [  "usr\/share\/help\/sr\/konqueror\/view-extensions.docbook" ],
+            
+              [  "usr\/share\/help\/sv\/kcontrol\/bookmarks\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/sv\/kcontrol\/bookmarks\/index.docbook" ],
+            
+              [  "usr\/share\/help\/sv\/kcontrol\/filemanager\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/sv\/kcontrol\/filemanager\/index.docbook" ],
+            
+              [  "usr\/share\/help\/sv\/kcontrol\/history\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/sv\/kcontrol\/history\/index.docbook" ],
+            
+              [  "usr\/share\/help\/sv\/kcontrol\/kcmcss\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/sv\/kcontrol\/kcmcss\/index.docbook" ],
+            
+              [  "usr\/share\/help\/sv\/kcontrol\/khtml-adblock\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/sv\/kcontrol\/khtml-adblock\/index.docbook" ],
+            
+              [  "usr\/share\/help\/sv\/kcontrol\/khtml-behavior\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/sv\/kcontrol\/khtml-behavior\/index.docbook" ],
+            
+              [  "usr\/share\/help\/sv\/kcontrol\/khtml-general\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/sv\/kcontrol\/khtml-general\/index.docbook" ],
+            
+              [  "usr\/share\/help\/sv\/kcontrol\/khtml-java-js\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/sv\/kcontrol\/khtml-java-js\/index.docbook" ],
+            
+              [  "usr\/share\/help\/sv\/kcontrol\/performance\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/sv\/kcontrol\/performance\/index.docbook" ],
+            
+              [  "usr\/share\/help\/sv\/konqueror\/cmndline.png" ],
+            
+              [  "usr\/share\/help\/sv\/konqueror\/dirtree.png" ],
+            
+              [  "usr\/share\/help\/sv\/konqueror\/dragdrop.png" ],
+            
+              [  "usr\/share\/help\/sv\/konqueror\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/sv\/konqueror\/index.docbook" ],
+            
+              [  "usr\/share\/help\/sv\/konqueror\/konqorg.png" ],
+            
+              [  "usr\/share\/help\/sv\/konqueror\/parts.png" ],
+            
+              [  "usr\/share\/help\/sv\/konqueror\/shortcut1.png" ],
+            
+              [  "usr\/share\/help\/sv\/konqueror\/shortcut2.png" ],
+            
+              [  "usr\/share\/help\/tr\/kcontrol\/bookmarks\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/tr\/kcontrol\/bookmarks\/index.docbook" ],
+            
+              [  "usr\/share\/help\/tr\/kcontrol\/filemanager\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/tr\/kcontrol\/filemanager\/index.docbook" ],
+            
+              [  "usr\/share\/help\/tr\/kcontrol\/history\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/tr\/kcontrol\/history\/index.docbook" ],
+            
+              [  "usr\/share\/help\/tr\/kcontrol\/kcmcss\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/tr\/kcontrol\/kcmcss\/index.docbook" ],
+            
+              [  "usr\/share\/help\/tr\/kcontrol\/khtml-adblock\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/tr\/kcontrol\/khtml-adblock\/index.docbook" ],
+            
+              [  "usr\/share\/help\/tr\/kcontrol\/khtml-behavior\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/tr\/kcontrol\/khtml-behavior\/index.docbook" ],
+            
+              [  "usr\/share\/help\/tr\/kcontrol\/khtml-general\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/tr\/kcontrol\/khtml-general\/index.docbook" ],
+            
+              [  "usr\/share\/help\/tr\/kcontrol\/khtml-java-js\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/tr\/kcontrol\/khtml-java-js\/index.docbook" ],
+            
+              [  "usr\/share\/help\/tr\/kcontrol\/performance\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/tr\/kcontrol\/performance\/index.docbook" ],
+            
+              [  "usr\/share\/help\/tr\/konqueror\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/tr\/konqueror\/index.docbook" ],
+            
+              [  "usr\/share\/help\/uk\/kcontrol\/bookmarks\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/uk\/kcontrol\/bookmarks\/index.docbook" ],
+            
+              [  "usr\/share\/help\/uk\/kcontrol\/filemanager\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/uk\/kcontrol\/filemanager\/index.docbook" ],
+            
+              [  "usr\/share\/help\/uk\/kcontrol\/history\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/uk\/kcontrol\/history\/index.docbook" ],
+            
+              [  "usr\/share\/help\/uk\/kcontrol\/kcmcss\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/uk\/kcontrol\/kcmcss\/index.docbook" ],
+            
+              [  "usr\/share\/help\/uk\/kcontrol\/khtml-adblock\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/uk\/kcontrol\/khtml-adblock\/index.docbook" ],
+            
+              [  "usr\/share\/help\/uk\/kcontrol\/khtml-behavior\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/uk\/kcontrol\/khtml-behavior\/index.docbook" ],
+            
+              [  "usr\/share\/help\/uk\/kcontrol\/khtml-general\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/uk\/kcontrol\/khtml-general\/index.docbook" ],
+            
+              [  "usr\/share\/help\/uk\/kcontrol\/khtml-java-js\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/uk\/kcontrol\/khtml-java-js\/index.docbook" ],
+            
+              [  "usr\/share\/help\/uk\/kcontrol\/performance\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/uk\/kcontrol\/performance\/index.docbook" ],
+            
+              [  "usr\/share\/help\/uk\/konqueror\/cmndline.png" ],
+            
+              [  "usr\/share\/help\/uk\/konqueror\/dirtree.png" ],
+            
+              [  "usr\/share\/help\/uk\/konqueror\/dragdrop.png" ],
+            
+              [  "usr\/share\/help\/uk\/konqueror\/folders.png" ],
+            
+              [  "usr\/share\/help\/uk\/konqueror\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/uk\/konqueror\/index.docbook" ],
+            
+              [  "usr\/share\/help\/uk\/konqueror\/konqorg.png" ],
+            
+              [  "usr\/share\/help\/uk\/konqueror\/look.png" ],
+            
+              [  "usr\/share\/help\/uk\/konqueror\/parts.png" ],
+            
+              [  "usr\/share\/help\/uk\/konqueror\/thumbnails.png" ],
+            
+              [  "usr\/share\/help\/uk\/konqueror\/viewproperties-dialog.png" ],
+            
+              [  "usr\/share\/help\/zh_CN\/kcontrol\/history\/index.cache.bz2" ],
+            
+              [  "usr\/share\/help\/zh_CN\/kcontrol\/history\/index.docbook" ],
+            
+              [  "usr\/share\/icons\/hicolor\/128x128\/apps\/konqueror.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/128x128\/apps\/webengine.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/actions\/babelfish.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/actions\/imagegallery.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/actions\/webarchiver.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/konqueror.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/webengine.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/actions\/babelfish.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/actions\/imagegallery.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/actions\/webarchiver.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/fsview.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/konqueror.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/22x22\/apps\/webengine.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/32x32\/apps\/fsview.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/32x32\/apps\/konqueror.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/32x32\/apps\/webengine.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/konqueror.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/webengine.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/64x64\/apps\/konqueror.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/64x64\/apps\/webengine.png" ],
+            
+              [  "usr\/share\/kcmcss\/template.css" ],
+            
+              [  "usr\/share\/kconf_update\/webenginepart.upd" ],
+            
+              [  "usr\/share\/kcontrol\/pics\/onlyone.png" ],
+            
+              [  "usr\/share\/kcontrol\/pics\/overlapping.png" ],
+            
+              [  "usr\/share\/kf6\/kbookmark\/directory_bookmarkbar.desktop" ],
+            
+              [  "usr\/share\/kio_bookmarks\/kio_bookmarks.css" ],
+            
+              [  "usr\/share\/konqsidebartng\/entries\/bookmarks.desktop" ],
+            
+              [  "usr\/share\/konqsidebartng\/entries\/fonts.desktop" ],
+            
+              [  "usr\/share\/konqsidebartng\/entries\/history.desktop" ],
+            
+              [  "usr\/share\/konqsidebartng\/entries\/home.desktop" ],
+            
+              [  "usr\/share\/konqsidebartng\/entries\/places.desktop" ],
+            
+              [  "usr\/share\/konqsidebartng\/entries\/remote.desktop" ],
+            
+              [  "usr\/share\/konqsidebartng\/entries\/root.desktop" ],
+            
+              [  "usr\/share\/konqsidebartng\/entries\/services.desktop" ],
+            
+              [  "usr\/share\/konqueror\/about\/body-background.png" ],
+            
+              [  "usr\/share\/konqueror\/about\/box-bottom-left.png" ],
+            
+              [  "usr\/share\/konqueror\/about\/box-bottom-middle.png" ],
+            
+              [  "usr\/share\/konqueror\/about\/box-bottom-right.png" ],
+            
+              [  "usr\/share\/konqueror\/about\/box-center.png" ],
+            
+              [  "usr\/share\/konqueror\/about\/box-middle-left.png" ],
+            
+              [  "usr\/share\/konqueror\/about\/box-middle-right.png" ],
+            
+              [  "usr\/share\/konqueror\/about\/box-top-left.png" ],
+            
+              [  "usr\/share\/konqueror\/about\/box-top-middle.png" ],
+            
+              [  "usr\/share\/konqueror\/about\/box-top-right.png" ],
+            
+              [  "usr\/share\/konqueror\/about\/intro.html" ],
+            
+              [  "usr\/share\/konqueror\/about\/kde_infopage.css" ],
+            
+              [  "usr\/share\/konqueror\/about\/kde_infopage_rtl.css" ],
+            
+              [  "usr\/share\/konqueror\/about\/konq.css" ],
+            
+              [  "usr\/share\/konqueror\/about\/launch.html" ],
+            
+              [  "usr\/share\/konqueror\/about\/plugins.html" ],
+            
+              [  "usr\/share\/konqueror\/about\/plugins_rtl.html" ],
+            
+              [  "usr\/share\/konqueror\/about\/speeddial.css" ],
+            
+              [  "usr\/share\/konqueror\/about\/speeddial.html" ],
+            
+              [  "usr\/share\/konqueror\/about\/tips.html" ],
+            
+              [  "usr\/share\/konqueror\/about\/top-left-konqueror.png" ],
+            
+              [  "usr\/share\/konqueror\/about\/top-middle.png" ],
+            
+              [  "usr\/share\/konqueror\/icons\/hicolor\/16x16\/actions\/google.png" ],
+            
+              [  "usr\/share\/konqueror\/icons\/hicolor\/22x22\/actions\/google.png" ],
+            
+              [  "usr\/share\/konqueror\/icons\/hicolor\/32x32\/actions\/google.png" ],
+            
+              [  "usr\/share\/konqueror\/icons\/hicolor\/48x48\/actions\/google.png" ],
+            
+              [  "usr\/share\/konqueror\/icons\/hicolor\/64x64\/actions\/google.png" ],
+            
+              [  "usr\/share\/konqueror\/icons\/hicolor\/scalable\/actions\/google.svgz" ],
+            
+              [  "usr\/share\/konqueror\/partsrcfiles\/akregatorkonqfeedicon.rc" ],
+            
+              [  "usr\/share\/konqueror\/partsrcfiles\/autorefresh.rc" ],
+            
+              [  "usr\/share\/konqueror\/partsrcfiles\/babelfishplugin.rc" ],
+            
+              [  "usr\/share\/konqueror\/partsrcfiles\/dirfilterplugin.rc" ],
+            
+              [  "usr\/share\/konqueror\/partsrcfiles\/khtmlsettingsplugin.rc" ],
+            
+              [  "usr\/share\/konqueror\/partsrcfiles\/kimgallery.rc" ],
+            
+              [  "usr\/share\/konqueror\/partsrcfiles\/konq_shellcmdplugin.rc" ],
+            
+              [  "usr\/share\/konqueror\/partsrcfiles\/konqueror_kget_browser_integration.rc" ],
+            
+              [  "usr\/share\/konqueror\/partsrcfiles\/searchbarplugin.rc" ],
+            
+              [  "usr\/share\/konqueror\/partsrcfiles\/temporarysavedir.rc" ],
+            
+              [  "usr\/share\/konqueror\/partsrcfiles\/uachangerplugin.rc" ],
+            
+              [  "usr\/share\/konqueror\/partsrcfiles\/webarchiverplugin.rc" ],
+            
+              [  "usr\/share\/konqueror\/pics\/indicator_connect.png" ],
+            
+              [  "usr\/share\/konqueror\/pics\/indicator_empty.png" ],
+            
+              [  "usr\/share\/konqueror\/pics\/indicator_noconnect.png" ],
+            
+              [  "usr\/share\/konqueror\/pics\/indicator_viewactive.png" ],
+            
+              [  "usr\/share\/locale\/af\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/af\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/af\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/af\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/af\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/af\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/af\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/af\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/af\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/af\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/af\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/af\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/af\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/af\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/af\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ar\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ar\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/ar\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/ar\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ar\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/ar\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ar\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/ar\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/ar\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/ar\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/ar\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/ar\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ar\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ar\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/ar\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/ar\/LC_MESSAGES\/konqsidebar.mo" ],
+            
+              [  "usr\/share\/locale\/ar\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/ar\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ar\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/ar\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ar\/LC_MESSAGES\/speeddial.mo" ],
+            
+              [  "usr\/share\/locale\/ar\/LC_MESSAGES\/temporarysavedir.mo" ],
+            
+              [  "usr\/share\/locale\/ar\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ar\/LC_MESSAGES\/webarchiver.mo" ],
+            
+              [  "usr\/share\/locale\/ar\/LC_MESSAGES\/webenginepart.mo" ],
+            
+              [  "usr\/share\/locale\/bg\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/bg\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/bg\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/bg\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/bg\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/bg\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/bg\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/bg\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/bg\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/bg\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/bg\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/bg\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/bg\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/bg\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/bg\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/bg\/LC_MESSAGES\/konqsidebar.mo" ],
+            
+              [  "usr\/share\/locale\/bg\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/bg\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/bg\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/bg\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/bg\/LC_MESSAGES\/speeddial.mo" ],
+            
+              [  "usr\/share\/locale\/bg\/LC_MESSAGES\/temporarysavedir.mo" ],
+            
+              [  "usr\/share\/locale\/bg\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/bg\/LC_MESSAGES\/webarchiver.mo" ],
+            
+              [  "usr\/share\/locale\/bg\/LC_MESSAGES\/webenginepart.mo" ],
+            
+              [  "usr\/share\/locale\/bn\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/bn\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/bn\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/bn\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/bn\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/bn\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/bn\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/bn\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/br\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/br\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/br\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/br\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/br\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/br\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/br\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/br\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/br\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/br\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/br\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/br\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/br\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/br\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/br\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/br\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/br\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/br\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/bs\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/bs\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/bs\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/bs\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/bs\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/bs\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/bs\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/bs\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/bs\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/bs\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/bs\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/bs\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/bs\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/bs\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/bs\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/bs\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/bs\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/bs\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/bs\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/bs\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/bs\/LC_MESSAGES\/webenginepart.mo" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/konqsidebar.mo" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/speeddial.mo" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/temporarysavedir.mo" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/webarchiver.mo" ],
+            
+              [  "usr\/share\/locale\/ca\/LC_MESSAGES\/webenginepart.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/konqsidebar.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/speeddial.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/temporarysavedir.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/webarchiver.mo" ],
+            
+              [  "usr\/share\/locale\/cs\/LC_MESSAGES\/webenginepart.mo" ],
+            
+              [  "usr\/share\/locale\/cy\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/cy\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/cy\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/cy\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/cy\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/cy\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/cy\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/cy\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/cy\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/cy\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/cy\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/cy\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/cy\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/cy\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/cy\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/cy\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/cy\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/cy\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/da\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/da\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/da\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/da\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/da\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/da\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/da\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/da\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/da\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/da\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/da\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/da\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/da\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/da\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/da\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/da\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/da\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/da\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/da\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/da\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/da\/LC_MESSAGES\/webenginepart.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/konqsidebar.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/speeddial.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/temporarysavedir.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/webarchiver.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/webenginepart.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/webarchiver.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/webenginepart.mo" ],
+            
+              [  "usr\/share\/locale\/en_GB\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/en_GB\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/en_GB\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/en_GB\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/en_GB\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/en_GB\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/en_GB\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/en_GB\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/en_GB\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/en_GB\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/en_GB\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/en_GB\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/en_GB\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/en_GB\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/en_GB\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/en_GB\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/en_GB\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/en_GB\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/en_GB\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/en_GB\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/en_GB\/LC_MESSAGES\/webarchiver.mo" ],
+            
+              [  "usr\/share\/locale\/en_GB\/LC_MESSAGES\/webenginepart.mo" ],
+            
+              [  "usr\/share\/locale\/eo\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/eo\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/eo\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/eo\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/eo\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/eo\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/eo\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/eo\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/eo\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/eo\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/eo\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/eo\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/eo\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/eo\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/eo\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/eo\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/eo\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/eo\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/eo\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/eo\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/eo\/LC_MESSAGES\/webarchiver.mo" ],
+            
+              [  "usr\/share\/locale\/eo\/LC_MESSAGES\/webenginepart.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/konqsidebar.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/speeddial.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/temporarysavedir.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/webarchiver.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/webenginepart.mo" ],
+            
+              [  "usr\/share\/locale\/et\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/et\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/et\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/et\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/et\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/et\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/et\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/et\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/et\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/et\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/et\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/et\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/et\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/et\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/et\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/et\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/et\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/et\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/et\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/et\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/et\/LC_MESSAGES\/webenginepart.mo" ],
+            
+              [  "usr\/share\/locale\/eu\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/eu\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/eu\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/eu\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/eu\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/eu\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/eu\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/eu\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/eu\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/eu\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/eu\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/eu\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/eu\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/eu\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/eu\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/eu\/LC_MESSAGES\/konqsidebar.mo" ],
+            
+              [  "usr\/share\/locale\/eu\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/eu\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/eu\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/eu\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/eu\/LC_MESSAGES\/speeddial.mo" ],
+            
+              [  "usr\/share\/locale\/eu\/LC_MESSAGES\/temporarysavedir.mo" ],
+            
+              [  "usr\/share\/locale\/eu\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/eu\/LC_MESSAGES\/webarchiver.mo" ],
+            
+              [  "usr\/share\/locale\/eu\/LC_MESSAGES\/webenginepart.mo" ],
+            
+              [  "usr\/share\/locale\/fa\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/fa\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/fa\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/fa\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/fa\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/fa\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/fa\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/fa\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/fa\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/fa\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/fa\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/fa\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/fa\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/fa\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/fa\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/fa\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/fa\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/fa\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/fa\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/fa\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/fa\/LC_MESSAGES\/webenginepart.mo" ],
+            
+              [  "usr\/share\/locale\/fi\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/fi\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/fi\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/fi\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/fi\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/fi\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/fi\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/fi\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/fi\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/fi\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/fi\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/fi\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/fi\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/fi\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/fi\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/fi\/LC_MESSAGES\/konqsidebar.mo" ],
+            
+              [  "usr\/share\/locale\/fi\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/fi\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/fi\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/fi\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/fi\/LC_MESSAGES\/speeddial.mo" ],
+            
+              [  "usr\/share\/locale\/fi\/LC_MESSAGES\/temporarysavedir.mo" ],
+            
+              [  "usr\/share\/locale\/fi\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/fi\/LC_MESSAGES\/webarchiver.mo" ],
+            
+              [  "usr\/share\/locale\/fi\/LC_MESSAGES\/webenginepart.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/konqsidebar.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/speeddial.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/temporarysavedir.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/webarchiver.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/webenginepart.mo" ],
+            
+              [  "usr\/share\/locale\/ga\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ga\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/ga\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/ga\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ga\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/ga\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ga\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/ga\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/ga\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/ga\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/ga\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/ga\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ga\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ga\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/ga\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/ga\/LC_MESSAGES\/konqsidebar.mo" ],
+            
+              [  "usr\/share\/locale\/ga\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/ga\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ga\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/ga\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ga\/LC_MESSAGES\/speeddial.mo" ],
+            
+              [  "usr\/share\/locale\/ga\/LC_MESSAGES\/temporarysavedir.mo" ],
+            
+              [  "usr\/share\/locale\/ga\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ga\/LC_MESSAGES\/webarchiver.mo" ],
+            
+              [  "usr\/share\/locale\/ga\/LC_MESSAGES\/webenginepart.mo" ],
+            
+              [  "usr\/share\/locale\/gl\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/gl\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/gl\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/gl\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/gl\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/gl\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/gl\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/gl\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/gl\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/gl\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/gl\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/gl\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/gl\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/gl\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/gl\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/gl\/LC_MESSAGES\/konqsidebar.mo" ],
+            
+              [  "usr\/share\/locale\/gl\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/gl\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/gl\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/gl\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/gl\/LC_MESSAGES\/temporarysavedir.mo" ],
+            
+              [  "usr\/share\/locale\/gl\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/gl\/LC_MESSAGES\/webarchiver.mo" ],
+            
+              [  "usr\/share\/locale\/gl\/LC_MESSAGES\/webenginepart.mo" ],
+            
+              [  "usr\/share\/locale\/gu\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/gu\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/gu\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/gu\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/gu\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/gu\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/gu\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/gu\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/gu\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/gu\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/konqsidebar.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/speeddial.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/temporarysavedir.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/webarchiver.mo" ],
+            
+              [  "usr\/share\/locale\/he\/LC_MESSAGES\/webenginepart.mo" ],
+            
+              [  "usr\/share\/locale\/hi\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/hi\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/hi\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/hi\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/hi\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/hi\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/hi\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/hi\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/hi\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/hi\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/hi\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/hi\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/hi\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/hi\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/hi\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/hi\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/hi\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/hi\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/hi\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/hi\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/hi\/LC_MESSAGES\/webarchiver.mo" ],
+            
+              [  "usr\/share\/locale\/hi\/LC_MESSAGES\/webenginepart.mo" ],
+            
+              [  "usr\/share\/locale\/hr\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/hr\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/hr\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/hr\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/hr\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/hr\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/hr\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/hr\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/hr\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/hr\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/hr\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/hr\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/hr\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/hr\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/hr\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/hr\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/hr\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/hr\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/hr\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/hr\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/hu\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/hu\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/hu\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/hu\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/hu\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/hu\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/hu\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/hu\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/hu\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/hu\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/hu\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/hu\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/hu\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/hu\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/hu\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/hu\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/hu\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/hu\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/hu\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/hu\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/hu\/LC_MESSAGES\/webenginepart.mo" ],
+            
+              [  "usr\/share\/locale\/is\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/is\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/is\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/is\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/is\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/is\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/is\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/is\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/is\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/is\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/is\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/is\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/is\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/is\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/is\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/is\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/is\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/is\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/is\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/is\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/konqsidebar.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/speeddial.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/temporarysavedir.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/webarchiver.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/webenginepart.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/webarchiver.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/webenginepart.mo" ],
+            
+              [  "usr\/share\/locale\/km\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/km\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/km\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/km\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/km\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/km\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/km\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/km\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/km\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/km\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/km\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/km\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/km\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/km\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/km\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/km\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/km\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/km\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/km\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/km\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/km\/LC_MESSAGES\/webenginepart.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/konqsidebar.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/temporarysavedir.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/webarchiver.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/webenginepart.mo" ],
+            
+              [  "usr\/share\/locale\/lt\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/lt\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/lt\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/lt\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/lt\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/lt\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/lt\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/lt\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/lt\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/lt\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/lt\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/lt\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/lt\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/lt\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/lt\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/lt\/LC_MESSAGES\/konqsidebar.mo" ],
+            
+              [  "usr\/share\/locale\/lt\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/lt\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/lt\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/lt\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/lt\/LC_MESSAGES\/temporarysavedir.mo" ],
+            
+              [  "usr\/share\/locale\/lt\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/lt\/LC_MESSAGES\/webarchiver.mo" ],
+            
+              [  "usr\/share\/locale\/lt\/LC_MESSAGES\/webenginepart.mo" ],
+            
+              [  "usr\/share\/locale\/lv\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/lv\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/lv\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/lv\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/lv\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/lv\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/lv\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/lv\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/lv\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/lv\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/lv\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/lv\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/lv\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/lv\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/lv\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/lv\/LC_MESSAGES\/konqsidebar.mo" ],
+            
+              [  "usr\/share\/locale\/lv\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/lv\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/lv\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/lv\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/lv\/LC_MESSAGES\/temporarysavedir.mo" ],
+            
+              [  "usr\/share\/locale\/lv\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/lv\/LC_MESSAGES\/webarchiver.mo" ],
+            
+              [  "usr\/share\/locale\/lv\/LC_MESSAGES\/webenginepart.mo" ],
+            
+              [  "usr\/share\/locale\/mk\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/mk\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/mk\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/mk\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/mk\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/mk\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/mk\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/mk\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/mk\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/mk\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/mk\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/mk\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/mk\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/mk\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/mk\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/mk\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/mk\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/mk\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/mk\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/mk\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ms\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ms\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/ms\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/ms\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ms\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/ms\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ms\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/ms\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/ms\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/ms\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/ms\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/ms\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ms\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ms\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/ms\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/ms\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/ms\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ms\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/ms\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ms\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ms\/LC_MESSAGES\/webenginepart.mo" ],
+            
+              [  "usr\/share\/locale\/nb\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/nb\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/nb\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/nb\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/nb\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/nb\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/nb\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/nb\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/nb\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/nb\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/nb\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/nb\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/nb\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/nb\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/nb\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/nb\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/nb\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/nb\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/nb\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/nb\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/nb\/LC_MESSAGES\/webenginepart.mo" ],
+            
+              [  "usr\/share\/locale\/nl\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/nl\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/nl\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/nl\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/nl\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/nl\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/nl\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/nl\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/nl\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/nl\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/nl\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/nl\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/nl\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/nl\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/nl\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/nl\/LC_MESSAGES\/konqsidebar.mo" ],
+            
+              [  "usr\/share\/locale\/nl\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/nl\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/nl\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/nl\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/nl\/LC_MESSAGES\/speeddial.mo" ],
+            
+              [  "usr\/share\/locale\/nl\/LC_MESSAGES\/temporarysavedir.mo" ],
+            
+              [  "usr\/share\/locale\/nl\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/nl\/LC_MESSAGES\/webarchiver.mo" ],
+            
+              [  "usr\/share\/locale\/nl\/LC_MESSAGES\/webenginepart.mo" ],
+            
+              [  "usr\/share\/locale\/pa\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/pa\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/pa\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/pa\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/pa\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/pa\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/pa\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/pa\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/pa\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/pa\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/pa\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/pa\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/pa\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/pa\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/pa\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/pa\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/pa\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/pa\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/pa\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/pa\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/pa\/LC_MESSAGES\/webenginepart.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/konqsidebar.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/temporarysavedir.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/webarchiver.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/webenginepart.mo" ],
+            
+              [  "usr\/share\/locale\/pt\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/pt\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/pt\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/pt\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/pt\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/pt\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/pt\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/pt\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/pt\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/pt\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/pt\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/pt\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/pt\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/pt\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/pt\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/pt\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/pt\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/pt\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/pt\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/pt\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/pt\/LC_MESSAGES\/webarchiver.mo" ],
+            
+              [  "usr\/share\/locale\/pt\/LC_MESSAGES\/webenginepart.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/konqsidebar.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/speeddial.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/temporarysavedir.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/webarchiver.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/webenginepart.mo" ],
+            
+              [  "usr\/share\/locale\/ro\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ro\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/ro\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/ro\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ro\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/ro\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ro\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/ro\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/ro\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/ro\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/ro\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/ro\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ro\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ro\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/ro\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/ro\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/ro\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ro\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/ro\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ro\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ro\/LC_MESSAGES\/webenginepart.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/webarchiver.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/webenginepart.mo" ],
+            
+              [  "usr\/share\/locale\/se\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/se\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/se\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/se\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/se\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/se\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/se\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/se\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/se\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/se\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/se\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/se\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/se\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/se\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/se\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/se\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/se\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/se\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/se\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/sk\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/sk\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/sk\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/sk\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/sk\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/sk\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/sk\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/sk\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/sk\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/sk\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/sk\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/sk\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/sk\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/sk\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/sk\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/sk\/LC_MESSAGES\/konqsidebar.mo" ],
+            
+              [  "usr\/share\/locale\/sk\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/sk\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/sk\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/sk\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/sk\/LC_MESSAGES\/speeddial.mo" ],
+            
+              [  "usr\/share\/locale\/sk\/LC_MESSAGES\/temporarysavedir.mo" ],
+            
+              [  "usr\/share\/locale\/sk\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/sk\/LC_MESSAGES\/webarchiver.mo" ],
+            
+              [  "usr\/share\/locale\/sk\/LC_MESSAGES\/webenginepart.mo" ],
+            
+              [  "usr\/share\/locale\/sl\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/sl\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/sl\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/sl\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/sl\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/sl\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/sl\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/sl\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/sl\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/sl\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/sl\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/sl\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/sl\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/sl\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/sl\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/sl\/LC_MESSAGES\/konqsidebar.mo" ],
+            
+              [  "usr\/share\/locale\/sl\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/sl\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/sl\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/sl\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/sl\/LC_MESSAGES\/speeddial.mo" ],
+            
+              [  "usr\/share\/locale\/sl\/LC_MESSAGES\/temporarysavedir.mo" ],
+            
+              [  "usr\/share\/locale\/sl\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/sl\/LC_MESSAGES\/webarchiver.mo" ],
+            
+              [  "usr\/share\/locale\/sl\/LC_MESSAGES\/webenginepart.mo" ],
+            
+              [  "usr\/share\/locale\/sr\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/sr\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/sr\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/sr\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/sr\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/sr\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/sr\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/sr\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/sr\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/sr\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/sr\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/sr\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/sr\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/sr\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/sr\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/sr\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/sr\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/sr\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/sr\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/sr\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/sr\/LC_MESSAGES\/webenginepart.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/konqsidebar.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/temporarysavedir.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/webarchiver.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/webenginepart.mo" ],
+            
+              [  "usr\/share\/locale\/ta\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ta\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/ta\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/ta\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ta\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/ta\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ta\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/ta\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/ta\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/ta\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/ta\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/ta\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ta\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ta\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/ta\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/ta\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/ta\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ta\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/ta\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/ta\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/konqsidebar.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/speeddial.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/temporarysavedir.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/webarchiver.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/webenginepart.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/konqsidebar.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/speeddial.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/temporarysavedir.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/webarchiver.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/webenginepart.mo" ],
+            
+              [  "usr\/share\/locale\/uz\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/uz\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/uz\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/uz\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/uz\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/uz\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/uz\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/uz\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/uz\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/uz\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/uz\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/uz\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/uz\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/uz\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/uz\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/uz\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/uz\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/uz\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/vi\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/konqsidebar.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/speeddial.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/temporarysavedir.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/webarchiver.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/webenginepart.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/akregator_konqplugin.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/autorefresh.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/babelfish.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/dirfilterplugin.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/fsview.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/imgalleryplugin.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/kcmbookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/kcmkonq.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/kcmkonqhtml.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/kcmperformance.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/kfmclient.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/kgetplugin.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/khtmlsettingsplugin.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/khtmltts.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/kio6_bookmarks.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/konqsidebar.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/konqueror.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/kshellcmdplugin.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/libkonq.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/searchbarplugin.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/speeddial.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/temporarysavedir.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/uachangerplugin.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/webarchiver.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/webenginepart.mo" ],
+            
+              [  "usr\/share\/metainfo\/org.kde.konqueror.appdata.xml" ],
+            
+              [  "usr\/share\/qlogging-categories6\/akregatorplugin.categories" ],
+            
+              [  "usr\/share\/qlogging-categories6\/fsview.categories" ],
+            
+              [  "usr\/share\/qlogging-categories6\/konqueror.categories" ],
+            
+              [  "usr\/share\/webenginepart\/error.html" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>
