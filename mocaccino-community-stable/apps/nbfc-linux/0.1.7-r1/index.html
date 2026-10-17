@@ -1,0 +1,775 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing apps/nbfc-linux-0.1.7-r1 in mocaccino-community-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> apps/nbfc-linux-0.1.7-r1
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                Lightweight C port of NoteBook FanControl (no Mono required)
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-community-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-community-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of apps/nbfc-linux
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/mocaccino-community:nbfc-linux-apps-0.1.7-r1" target="_blank"> quay.io/mocaccino/mocaccino-community:nbfc-linux-apps-0.1.7-r1 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/mocaccino-community:nbfc-linux-apps-0.1.7-r1/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 0.1.7-r1  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> GPL-3 </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/sys-fs">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  sys-fs &gt;=0 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: sys-power/nbfc-linux
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://github.com/nbfc-linux/nbfc-linux" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://github.com/nbfc-linux/nbfc-linux </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/sys-power/nbfc-linux">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  nbfc-linux &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "etc\/init.d\/nbfc" ],
+            
+              [  "usr\/bin\/ec_probe" ],
+            
+              [  "usr\/bin\/nbfc" ],
+            
+              [  "usr\/bin\/nbfc_service" ],
+            
+              [  "usr\/lib\/systemd\/system\/nbfc_service.service" ],
+            
+              [  "usr\/share\/bash-completion\/completions\/ec_probe" ],
+            
+              [  "usr\/share\/bash-completion\/completions\/nbfc" ],
+            
+              [  "usr\/share\/bash-completion\/completions\/nbfc_service" ],
+            
+              [  "usr\/share\/fish\/completions\/ec_probe.fish" ],
+            
+              [  "usr\/share\/fish\/completions\/nbfc.fish" ],
+            
+              [  "usr\/share\/fish\/completions\/nbfc_service.fish" ],
+            
+              [  "usr\/share\/man\/man1\/ec_probe.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/nbfc.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/nbfc_service.1.bz2" ],
+            
+              [  "usr\/share\/man\/man5\/nbfc_service.json.5.bz2" ],
+            
+              [  "usr\/share\/nbfc\/configs\/ASUS VivoBook X505ZA_X505ZA.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/ASUS Vivobook X580VD.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Aspire 1410.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Aspire 1810T.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Aspire 1810TZ.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Aspire 1825PTZ.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Aspire 4750G.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Aspire 5738G.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Aspire 5745G.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Aspire 5749.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Aspire 5930.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Aspire 7551G.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Aspire 7735.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Aspire 7740G.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Aspire 7741G.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Aspire E1-522.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Aspire E1-772.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Aspire E5-471G.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Aspire E5-475G.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Aspire E5-575G.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Aspire E5-731.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Aspire LT-10Q.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Aspire One AO531h.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Aspire One AO721.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Aspire One AO751h.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Aspire One AOA110.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Aspire One AOA150.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Aspire S3.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Aspire S7-191.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Aspire S7-391.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Aspire V13.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Aspire V3-371.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Aspire V3-571G.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Aspire V5-472PG.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Aspire V5-551.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Aspire V5-572G.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Aspire VN7-572G V15 Nitro BE.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Aspire VN7-572G V15 Nitro.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Aspire VN7-591G V15 Nitro BE.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Aspire VN7-593G V15 Nitro BE.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Aspire VN7-791G V17 Nitro BE.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Aspire VN7-792G V17 Nitro BE.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Aspire VN7-793G V17 Nitro BE.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Extensa 5220.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Extensa 5630Z.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer LT-10Q.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer NC-A315-55G-73N7.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Nitro AN515-43.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Nitro AN515-51.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Nitro AN715-51.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Predator 17 G9-793-782K.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Predator G3-572.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Predator PH315-53.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer Swift SF314-54G.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Acer TravelMate 7730G.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Alienware m15 R3.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Asus F5SR.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Asus G53SX.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Asus K43SD.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Asus K43U.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Asus K46C.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Asus K501LX.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Asus K501UX.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Asus M52VA.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Asus N550JV.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Asus N550JX.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Asus N551JB.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Asus N56JR.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Asus N56VZ.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Asus ROG G501JW.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Asus ROG G751JL.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Asus ROG G751JT.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Asus ROG G751JY.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Asus ROG G752VS.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Asus ROG G752VT.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Asus ROG G752VY.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Asus ROG G75VX.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Asus ROG GL702VM.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Asus ROG GL702ZC.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Asus TP301UJ.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Asus Transformer 3 Pro.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Asus Vivobook S400CA.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Asus Vivobook TP301UA.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Asus X301A1.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Asus X540LA.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Asus X756UX.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Asus Zenbook Flip UX360UAK.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Asus Zenbook Pro UX550VE.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Asus Zenbook UX21E.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Asus Zenbook UX301LA.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Asus Zenbook UX302LA.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Asus Zenbook UX310UA.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Asus Zenbook UX310UAK.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Asus Zenbook UX31A.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Asus Zenbook UX32A.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Asus Zenbook UX32LN.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Asus Zenbook UX32VD.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Asus Zenbook UX330UA.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Asus Zenbook UX410UQ.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Asus Zenbook UX430UA.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Asus Zenbook UX430UQ.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Asus Zenbook UX51VZA.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Asus Zenbook UX530U.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Dell Inspiron 7348.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Dell Inspiron 7375.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Dell Vostro 3350.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Dell XPS M1530.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Fujitsu ESPRIMO Mobile V5505.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Gateway AOA110.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Gateway AOA150.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Gateway LT31.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Gigabyte AERO 14KV8.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Gigabyte p35w v3.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP 15-BW00x.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP 245 G7 Notebook PC.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP Compaq 15-s103tx.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP Compaq 615.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP Compaq 625.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP Compaq 6530b.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP Compaq 6735s Turion X2 RM-72.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP Compaq 8710p.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP Compaq Presario CQ40 Turion X2 RM-74.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP Compaq nw9440.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP ENVY dv6-7xxx.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP ENVY dv7-7xxx.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP ENVY m6 1206dx.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP ENVY m6 Sleekbook.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP ENVY m6-1254eo.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP ENVY x360 15-w104ne.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP ENVY x360 Convertible 13-ag0xxx.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP ENVY x360 Convertible 15-bq1xx.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP ENVY x360 Convertible 15-cn0xxx.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP EliteBook 2560p.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP EliteBook 2570p.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP EliteBook 2760p.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP EliteBook 745 G5.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP EliteBook 830 G6.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP EliteBook 840 G2.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP EliteBook 8470p.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP EliteBook 850 G3.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP EliteBook 850 G5.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP EliteBook 8560p.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP EliteBook 8560w.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP EliteBook 8760w.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP EliteBook Folio 1040 G1.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP EliteBook Folio 9470m.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP EliteBook Folio 9470m_i5-3427u_bios-F.66.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP Laptop 14-cm0xxx.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP Laptop 14-dk0xxx.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP Laptop 15s-gr0xxx.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP Laptop 17-by1xxx.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP Laptop 17-ca1xxx.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP Notebook 15-ba010ng.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP OMEN Laptop 15-en0xxx.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP OMEN Notebook PC 15.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP Omen 15-dc00xxxx.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP Pavilion 14-v066br.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP Pavilion 17-ab240nd.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP Pavilion Gaming Laptop 15-ec0xxx.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP Pavilion Gaming Laptop 15-ec1xxx.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP Pavilion HDX18.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP Pavilion dv6 6190.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP Pavilion dv6.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP Pavilion x360 Convertible 14-dh1xxx.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP Pavilion x360 Convertible 15-br0xx.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP ProBook 430 G1.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP ProBook 440 G3.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP ProBook 450 G1.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP ProBook 450 G2.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP ProBook 4520s.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP ProBook 4530s.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP ProBook 4535s.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP ProBook 4540s.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP ProBook 4710s.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP ProBook 4720s.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP ProBook 5330m.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP ProBook 640 G1.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP ProBook 6455b.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP ProBook 6460b.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP ProBook 6465b.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP ProBook 650 G1.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP ProBook 650 G2.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP ProBook 6550b.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP ProBook 6560b.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP Spectre x360 Convertible 13-ae0xx.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP Spectre x360 Convertible 15-ch0xx.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP Spectre x360 Convertible 15-df1015ng.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP Spectre x360 Convertible 15t-df1xx.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP ZBook 15 G3.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP ZBook 15.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP ZBook Fury 15 G7.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP ZBook Studio G3.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/HP ZBook Studio x360 G5.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Lenovo IdeaPad Y580.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Lenovo Ideacenter AIO 700-24AGR.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Lenovo Ideapad 500S-13ISK.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Lenovo Ideapad 500S-14ISK.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Lenovo Ideapad 510s.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Lenovo Ideapad 710S.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Lenovo Ideapad U160.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Lenovo Ideapad U330p.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Lenovo Ideapad U430p.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Lenovo ThinkPad 13.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Lenovo ThinkPad Edge E520.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Lenovo ThinkPad Helix.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Lenovo ThinkPad L380 Yoga.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Lenovo ThinkPad L390 i7-8565U.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Lenovo ThinkPad T430s.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Lenovo ThinkPad T440s.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Lenovo ThinkPad T540p.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Lenovo ThinkPad T580.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Lenovo ThinkPad X1 8th gen.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Lenovo ThinkPad x121e.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Lenovo ThinkPad x220i.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Lenovo ThinkPad x230.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Lenovo Thinkpad L530.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Lenovo Thinkpad L540.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Lenovo U31-70.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Lenovo U41-70.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Lenovo V330-IKB(81AX).json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Lenovo V580.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Lenovo Yoga 11s.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Lenovo Yoga 13 2191.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Lenovo Yoga 2 13.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Lenovo Yoga 3 14.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Lenovo Yoga 500-15IBD.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Lenovo Yoga 510.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Lenovo Yoga 710 KabyLake.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Lenovo Yoga 710.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Lenovo Yoga Slim7.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/MECHREVO Jiaolong Series GK5NR0O.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Medion Akoya P6612.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Medion Akoya P6630.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Packard Bell AOA110.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Packard Bell AOA150.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Packard Bell DOA150.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Packard Bell DOTMA.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Packard Bell DOTMU.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Packard Bell DOTVR46.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Packard Bell ENBFT.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Packard Bell Easynote TJ65.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Razer Blade 14 2017.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/RedmiBook 14 (TM1814).json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Sony Corporation VGN-CR392_W.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Sony Vaio SVE1711.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Sony Vaio SVE1713Y1E.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Sony Vaio SVF13N190X.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Sony Vaio SVF14N1C5E.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Sony Vaio SVT1312M1ES.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Sony Vaio VPCF12S1E.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Toshiba Satellite L740.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Toshiba Satellite L745.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Vestel Smartboard Series-14XXXX.json" ],
+            
+              [  "usr\/share\/nbfc\/configs\/Xiaomi Mi Book (TM1613, TM1703).json" ],
+            
+              [  "usr\/share\/zsh\/site-functions\/_ec_probe" ],
+            
+              [  "usr\/share\/zsh\/site-functions\/_nbfc" ],
+            
+              [  "usr\/share\/zsh\/site-functions\/_nbfc_service" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>
