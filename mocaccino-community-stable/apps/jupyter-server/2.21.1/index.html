@@ -1,0 +1,1727 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing apps/jupyter-server-2.21.1 in mocaccino-community-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> apps/jupyter-server-2.21.1
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                CFFI bindings to the Argon2 password hashing library
+Low-level CFFI bindings for the Argon2 password hashing library
+Jupyter Event System library
+Core services, APIs, and REST endpoints to Jupyter web applications
+A Jupyter Server Extension Providing Terminals
+Python client for the Prometheus monitoring system
+Standard python logging to output log data as json objects
+
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-community-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-community-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of apps/jupyter-server
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/mocaccino-community:jupyter-server-apps-2.21.1" target="_blank"> quay.io/mocaccino/mocaccino-community:jupyter-server-apps-2.21.1 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/mocaccino-community:jupyter-server-apps-2.21.1/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 2.21.1  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> MIT </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/sys-fs">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  sys-fs &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/jsonschema">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  jsonschema 4.26.0&#43;1 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/anyio">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  anyio 4.15.1 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/pyzmq">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  pyzmq 27.2.0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/send2trash">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  send2trash 2.1.0&#43;1 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/terminado">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  terminado 0.18.1 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/tornado">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  tornado 6.5.10 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/traitlets">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  traitlets 5.16.1 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/twisted">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  twisted 26.4.0-r1&#43;1 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/apps/jupyter-client">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  jupyter-client 8.10.0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/apps/jupyter-core">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  jupyter-core 5.9.1 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/apps/nbconvert">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  nbconvert 7.17.1 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/apps/nbformat">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  nbformat 5.11.1 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/apps/websocket-client">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  websocket-client 1.9.2 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: dev-python/jupyter-server
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://github.com/hynek/argon2-cffi/" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://github.com/hynek/argon2-cffi/ </a>
+    </span>
+  
+    <span class="tag">
+    <a href="https://github.com/hynek/argon2-cffi-bindings/" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://github.com/hynek/argon2-cffi-bindings/ </a>
+    </span>
+  
+    <span class="tag">
+    <a href="https://jupyter.org/" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://jupyter.org/ </a>
+    </span>
+  
+    <span class="tag">
+    <a href="https://github.com/prometheus/client_python/" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://github.com/prometheus/client_python/ </a>
+    </span>
+  
+    <span class="tag">
+    <a href="https://github.com/madzak/python-json-logger/" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://github.com/madzak/python-json-logger/ </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-python/argon2-cffi">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  argon2-cffi &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-python/argon2-cffi-bindings">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  argon2-cffi-bindings &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-python/jupyter-events">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  jupyter-events &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-python/jupyter-server">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  jupyter-server &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-python/jupyter-server-terminals">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  jupyter-server-terminals &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-python/prometheus-client">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  prometheus-client &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-python/python-json-logger">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  python-json-logger &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "etc\/jupyter\/jupyter_server_config.d\/jupyter_server_terminals.json" ],
+            
+              [  "usr\/bin\/jupyter-events" ],
+            
+              [  "usr\/bin\/jupyter-server" ],
+            
+              [  "usr\/lib\/python-exec\/python3.14\/jupyter-events" ],
+            
+              [  "usr\/lib\/python-exec\/python3.14\/jupyter-server" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/_argon2_cffi_bindings\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/_argon2_cffi_bindings\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/_argon2_cffi_bindings\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/_argon2_cffi_bindings\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/_argon2_cffi_bindings\/_ffi.abi3.so" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/argon2\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/argon2\/__main__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/argon2\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/argon2\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/argon2\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/argon2\/__pycache__\/__main__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/argon2\/__pycache__\/__main__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/argon2\/__pycache__\/__main__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/argon2\/__pycache__\/_legacy.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/argon2\/__pycache__\/_legacy.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/argon2\/__pycache__\/_legacy.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/argon2\/__pycache__\/_password_hasher.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/argon2\/__pycache__\/_password_hasher.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/argon2\/__pycache__\/_password_hasher.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/argon2\/__pycache__\/_utils.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/argon2\/__pycache__\/_utils.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/argon2\/__pycache__\/_utils.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/argon2\/__pycache__\/exceptions.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/argon2\/__pycache__\/exceptions.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/argon2\/__pycache__\/exceptions.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/argon2\/__pycache__\/low_level.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/argon2\/__pycache__\/low_level.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/argon2\/__pycache__\/low_level.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/argon2\/__pycache__\/profiles.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/argon2\/__pycache__\/profiles.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/argon2\/__pycache__\/profiles.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/argon2\/_legacy.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/argon2\/_password_hasher.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/argon2\/_utils.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/argon2\/exceptions.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/argon2\/low_level.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/argon2\/profiles.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/argon2\/py.typed" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/argon2_cffi-25.1.0.dist-info\/METADATA" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/argon2_cffi-25.1.0.dist-info\/WHEEL" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/argon2_cffi_bindings-26.1.0.dist-info\/METADATA" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/argon2_cffi_bindings-26.1.0.dist-info\/WHEEL" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events\/__pycache__\/_version.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events\/__pycache__\/_version.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events\/__pycache__\/_version.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events\/__pycache__\/cli.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events\/__pycache__\/cli.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events\/__pycache__\/cli.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events\/__pycache__\/logger.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events\/__pycache__\/logger.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events\/__pycache__\/logger.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events\/__pycache__\/pytest_plugin.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events\/__pycache__\/pytest_plugin.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events\/__pycache__\/pytest_plugin.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events\/__pycache__\/schema.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events\/__pycache__\/schema.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events\/__pycache__\/schema.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events\/__pycache__\/schema_registry.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events\/__pycache__\/schema_registry.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events\/__pycache__\/schema_registry.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events\/__pycache__\/traits.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events\/__pycache__\/traits.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events\/__pycache__\/traits.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events\/__pycache__\/utils.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events\/__pycache__\/utils.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events\/__pycache__\/utils.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events\/__pycache__\/validators.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events\/__pycache__\/validators.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events\/__pycache__\/validators.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events\/__pycache__\/yaml.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events\/__pycache__\/yaml.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events\/__pycache__\/yaml.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events\/_version.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events\/cli.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events\/logger.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events\/py.typed" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events\/pytest_plugin.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events\/schema.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events\/schema_registry.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events\/schemas\/event-core-schema.yml" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events\/schemas\/event-metaschema.yml" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events\/schemas\/property-metaschema.yml" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events\/traits.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events\/utils.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events\/validators.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events\/yaml.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events-0.12.1.dist-info\/METADATA" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events-0.12.1.dist-info\/WHEEL" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_events-0.12.1.dist-info\/entry_points.txt" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/__main__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/__pycache__\/__main__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/__pycache__\/__main__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/__pycache__\/__main__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/__pycache__\/_sysinfo.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/__pycache__\/_sysinfo.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/__pycache__\/_sysinfo.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/__pycache__\/_tz.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/__pycache__\/_tz.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/__pycache__\/_tz.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/__pycache__\/_version.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/__pycache__\/_version.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/__pycache__\/_version.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/__pycache__\/config_manager.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/__pycache__\/config_manager.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/__pycache__\/config_manager.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/__pycache__\/log.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/__pycache__\/log.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/__pycache__\/log.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/__pycache__\/pytest_plugin.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/__pycache__\/pytest_plugin.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/__pycache__\/pytest_plugin.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/__pycache__\/serverapp.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/__pycache__\/serverapp.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/__pycache__\/serverapp.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/__pycache__\/traittypes.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/__pycache__\/traittypes.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/__pycache__\/traittypes.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/__pycache__\/transutils.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/__pycache__\/transutils.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/__pycache__\/transutils.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/__pycache__\/utils.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/__pycache__\/utils.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/__pycache__\/utils.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/_sysinfo.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/_tz.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/_version.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/auth\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/auth\/__main__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/auth\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/auth\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/auth\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/auth\/__pycache__\/__main__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/auth\/__pycache__\/__main__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/auth\/__pycache__\/__main__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/auth\/__pycache__\/authorizer.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/auth\/__pycache__\/authorizer.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/auth\/__pycache__\/authorizer.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/auth\/__pycache__\/decorator.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/auth\/__pycache__\/decorator.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/auth\/__pycache__\/decorator.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/auth\/__pycache__\/identity.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/auth\/__pycache__\/identity.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/auth\/__pycache__\/identity.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/auth\/__pycache__\/login.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/auth\/__pycache__\/login.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/auth\/__pycache__\/login.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/auth\/__pycache__\/logout.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/auth\/__pycache__\/logout.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/auth\/__pycache__\/logout.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/auth\/__pycache__\/security.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/auth\/__pycache__\/security.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/auth\/__pycache__\/security.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/auth\/__pycache__\/utils.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/auth\/__pycache__\/utils.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/auth\/__pycache__\/utils.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/auth\/authorizer.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/auth\/decorator.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/auth\/identity.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/auth\/login.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/auth\/logout.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/auth\/security.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/auth\/utils.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/base\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/base\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/base\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/base\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/base\/__pycache__\/call_context.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/base\/__pycache__\/call_context.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/base\/__pycache__\/call_context.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/base\/__pycache__\/handlers.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/base\/__pycache__\/handlers.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/base\/__pycache__\/handlers.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/base\/__pycache__\/websocket.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/base\/__pycache__\/websocket.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/base\/__pycache__\/websocket.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/base\/__pycache__\/zmqhandlers.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/base\/__pycache__\/zmqhandlers.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/base\/__pycache__\/zmqhandlers.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/base\/call_context.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/base\/handlers.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/base\/websocket.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/base\/zmqhandlers.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/config_manager.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/event_schemas\/contents_service\/v1.yaml" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/event_schemas\/gateway_client\/v1.yaml" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/event_schemas\/kernel_actions\/v1.yaml" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/extension\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/extension\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/extension\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/extension\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/extension\/__pycache__\/application.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/extension\/__pycache__\/application.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/extension\/__pycache__\/application.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/extension\/__pycache__\/config.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/extension\/__pycache__\/config.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/extension\/__pycache__\/config.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/extension\/__pycache__\/handler.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/extension\/__pycache__\/handler.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/extension\/__pycache__\/handler.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/extension\/__pycache__\/manager.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/extension\/__pycache__\/manager.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/extension\/__pycache__\/manager.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/extension\/__pycache__\/serverextension.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/extension\/__pycache__\/serverextension.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/extension\/__pycache__\/serverextension.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/extension\/__pycache__\/utils.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/extension\/__pycache__\/utils.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/extension\/__pycache__\/utils.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/extension\/application.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/extension\/config.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/extension\/handler.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/extension\/manager.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/extension\/serverextension.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/extension\/utils.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/files\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/files\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/files\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/files\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/files\/__pycache__\/handlers.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/files\/__pycache__\/handlers.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/files\/__pycache__\/handlers.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/files\/handlers.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/gateway\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/gateway\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/gateway\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/gateway\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/gateway\/__pycache__\/connections.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/gateway\/__pycache__\/connections.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/gateway\/__pycache__\/connections.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/gateway\/__pycache__\/gateway_client.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/gateway\/__pycache__\/gateway_client.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/gateway\/__pycache__\/gateway_client.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/gateway\/__pycache__\/handlers.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/gateway\/__pycache__\/handlers.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/gateway\/__pycache__\/handlers.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/gateway\/__pycache__\/managers.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/gateway\/__pycache__\/managers.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/gateway\/__pycache__\/managers.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/gateway\/connections.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/gateway\/gateway_client.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/gateway\/handlers.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/gateway\/managers.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/i18n\/README.md" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/i18n\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/i18n\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/i18n\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/i18n\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/i18n\/babel_nbui.cfg" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/i18n\/babel_notebook.cfg" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/i18n\/nbjs.json" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/i18n\/nbui.pot" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/i18n\/notebook.pot" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/i18n\/zh_CN\/LC_MESSAGES\/nbui.po" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/i18n\/zh_CN\/LC_MESSAGES\/notebook.po" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/kernelspecs\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/kernelspecs\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/kernelspecs\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/kernelspecs\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/kernelspecs\/__pycache__\/handlers.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/kernelspecs\/__pycache__\/handlers.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/kernelspecs\/__pycache__\/handlers.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/kernelspecs\/handlers.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/log.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/nbconvert\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/nbconvert\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/nbconvert\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/nbconvert\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/nbconvert\/__pycache__\/handlers.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/nbconvert\/__pycache__\/handlers.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/nbconvert\/__pycache__\/handlers.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/nbconvert\/handlers.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/prometheus\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/prometheus\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/prometheus\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/prometheus\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/prometheus\/__pycache__\/log_functions.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/prometheus\/__pycache__\/log_functions.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/prometheus\/__pycache__\/log_functions.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/prometheus\/__pycache__\/metrics.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/prometheus\/__pycache__\/metrics.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/prometheus\/__pycache__\/metrics.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/prometheus\/log_functions.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/prometheus\/metrics.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/py.typed" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/pytest_plugin.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/serverapp.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/__pycache__\/shutdown.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/__pycache__\/shutdown.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/__pycache__\/shutdown.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/api\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/api\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/api\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/api\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/api\/__pycache__\/handlers.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/api\/__pycache__\/handlers.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/api\/__pycache__\/handlers.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/api\/api.yaml" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/api\/handlers.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/config\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/config\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/config\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/config\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/config\/__pycache__\/handlers.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/config\/__pycache__\/handlers.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/config\/__pycache__\/handlers.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/config\/__pycache__\/manager.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/config\/__pycache__\/manager.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/config\/__pycache__\/manager.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/config\/handlers.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/config\/manager.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/contents\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/contents\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/contents\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/contents\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/contents\/__pycache__\/checkpoints.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/contents\/__pycache__\/checkpoints.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/contents\/__pycache__\/checkpoints.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/contents\/__pycache__\/filecheckpoints.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/contents\/__pycache__\/filecheckpoints.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/contents\/__pycache__\/filecheckpoints.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/contents\/__pycache__\/fileio.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/contents\/__pycache__\/fileio.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/contents\/__pycache__\/fileio.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/contents\/__pycache__\/filemanager.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/contents\/__pycache__\/filemanager.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/contents\/__pycache__\/filemanager.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/contents\/__pycache__\/handlers.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/contents\/__pycache__\/handlers.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/contents\/__pycache__\/handlers.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/contents\/__pycache__\/largefilemanager.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/contents\/__pycache__\/largefilemanager.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/contents\/__pycache__\/largefilemanager.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/contents\/__pycache__\/manager.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/contents\/__pycache__\/manager.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/contents\/__pycache__\/manager.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/contents\/checkpoints.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/contents\/filecheckpoints.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/contents\/fileio.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/contents\/filemanager.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/contents\/handlers.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/contents\/largefilemanager.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/contents\/manager.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/events\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/events\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/events\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/events\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/events\/__pycache__\/handlers.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/events\/__pycache__\/handlers.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/events\/__pycache__\/handlers.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/events\/handlers.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/kernels\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/kernels\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/kernels\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/kernels\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/kernels\/__pycache__\/handlers.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/kernels\/__pycache__\/handlers.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/kernels\/__pycache__\/handlers.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/kernels\/__pycache__\/kernelmanager.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/kernels\/__pycache__\/kernelmanager.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/kernels\/__pycache__\/kernelmanager.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/kernels\/__pycache__\/websocket.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/kernels\/__pycache__\/websocket.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/kernels\/__pycache__\/websocket.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/kernels\/connection\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/kernels\/connection\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/kernels\/connection\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/kernels\/connection\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/kernels\/connection\/__pycache__\/abc.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/kernels\/connection\/__pycache__\/abc.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/kernels\/connection\/__pycache__\/abc.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/kernels\/connection\/__pycache__\/base.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/kernels\/connection\/__pycache__\/base.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/kernels\/connection\/__pycache__\/base.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/kernels\/connection\/__pycache__\/channels.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/kernels\/connection\/__pycache__\/channels.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/kernels\/connection\/__pycache__\/channels.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/kernels\/connection\/abc.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/kernels\/connection\/base.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/kernels\/connection\/channels.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/kernels\/handlers.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/kernels\/kernelmanager.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/kernels\/websocket.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/kernelspecs\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/kernelspecs\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/kernelspecs\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/kernelspecs\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/kernelspecs\/__pycache__\/handlers.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/kernelspecs\/__pycache__\/handlers.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/kernelspecs\/__pycache__\/handlers.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/kernelspecs\/handlers.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/nbconvert\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/nbconvert\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/nbconvert\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/nbconvert\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/nbconvert\/__pycache__\/handlers.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/nbconvert\/__pycache__\/handlers.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/nbconvert\/__pycache__\/handlers.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/nbconvert\/handlers.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/security\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/security\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/security\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/security\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/security\/__pycache__\/handlers.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/security\/__pycache__\/handlers.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/security\/__pycache__\/handlers.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/security\/handlers.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/sessions\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/sessions\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/sessions\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/sessions\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/sessions\/__pycache__\/handlers.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/sessions\/__pycache__\/handlers.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/sessions\/__pycache__\/handlers.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/sessions\/__pycache__\/sessionmanager.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/sessions\/__pycache__\/sessionmanager.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/sessions\/__pycache__\/sessionmanager.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/sessions\/handlers.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/sessions\/sessionmanager.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/services\/shutdown.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/static\/favicon.ico" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/static\/favicons\/favicon-busy-1.ico" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/static\/favicons\/favicon-busy-2.ico" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/static\/favicons\/favicon-busy-3.ico" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/static\/favicons\/favicon-file.ico" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/static\/favicons\/favicon-notebook.ico" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/static\/favicons\/favicon-terminal.ico" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/static\/favicons\/favicon.ico" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/static\/logo\/logo.png" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/static\/style\/bootstrap-theme.min.css" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/static\/style\/bootstrap-theme.min.css.map" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/static\/style\/bootstrap.min.css" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/static\/style\/bootstrap.min.css.map" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/static\/style\/index.css" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/templates\/404.html" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/templates\/browser-open.html" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/templates\/error.html" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/templates\/login.html" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/templates\/logout.html" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/templates\/main.html" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/templates\/page.html" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/templates\/view.html" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/terminal\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/terminal\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/terminal\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/terminal\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/terminal\/__pycache__\/api_handlers.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/terminal\/__pycache__\/api_handlers.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/terminal\/__pycache__\/api_handlers.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/terminal\/__pycache__\/handlers.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/terminal\/__pycache__\/handlers.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/terminal\/__pycache__\/handlers.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/terminal\/__pycache__\/terminalmanager.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/terminal\/__pycache__\/terminalmanager.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/terminal\/__pycache__\/terminalmanager.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/terminal\/api_handlers.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/terminal\/handlers.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/terminal\/terminalmanager.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/traittypes.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/transutils.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/utils.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/view\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/view\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/view\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/view\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/view\/__pycache__\/handlers.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/view\/__pycache__\/handlers.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/view\/__pycache__\/handlers.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server\/view\/handlers.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server-2.21.1.dist-info\/METADATA" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server-2.21.1.dist-info\/WHEEL" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server-2.21.1.dist-info\/entry_points.txt" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server_terminals\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server_terminals\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server_terminals\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server_terminals\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server_terminals\/__pycache__\/_version.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server_terminals\/__pycache__\/_version.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server_terminals\/__pycache__\/_version.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server_terminals\/__pycache__\/api_handlers.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server_terminals\/__pycache__\/api_handlers.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server_terminals\/__pycache__\/api_handlers.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server_terminals\/__pycache__\/app.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server_terminals\/__pycache__\/app.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server_terminals\/__pycache__\/app.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server_terminals\/__pycache__\/base.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server_terminals\/__pycache__\/base.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server_terminals\/__pycache__\/base.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server_terminals\/__pycache__\/handlers.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server_terminals\/__pycache__\/handlers.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server_terminals\/__pycache__\/handlers.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server_terminals\/__pycache__\/terminalmanager.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server_terminals\/__pycache__\/terminalmanager.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server_terminals\/__pycache__\/terminalmanager.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server_terminals\/_version.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server_terminals\/api_handlers.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server_terminals\/app.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server_terminals\/base.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server_terminals\/handlers.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server_terminals\/py.typed" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server_terminals\/rest-api.yml" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server_terminals\/terminalmanager.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server_terminals-0.5.4.dist-info\/METADATA" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/jupyter_server_terminals-0.5.4.dist-info\/WHEEL" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/asgi.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/asgi.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/asgi.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/context_managers.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/context_managers.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/context_managers.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/core.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/core.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/core.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/decorator.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/decorator.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/decorator.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/exposition.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/exposition.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/exposition.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/gc_collector.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/gc_collector.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/gc_collector.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/metrics.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/metrics.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/metrics.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/metrics_core.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/metrics_core.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/metrics_core.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/mmap_dict.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/mmap_dict.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/mmap_dict.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/multiprocess.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/multiprocess.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/multiprocess.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/parser.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/parser.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/parser.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/platform_collector.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/platform_collector.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/platform_collector.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/process_collector.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/process_collector.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/process_collector.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/registry.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/registry.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/registry.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/samples.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/samples.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/samples.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/utils.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/utils.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/utils.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/validation.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/validation.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/validation.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/values.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/values.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/__pycache__\/values.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/aiohttp\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/aiohttp\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/aiohttp\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/aiohttp\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/aiohttp\/__pycache__\/exposition.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/aiohttp\/__pycache__\/exposition.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/aiohttp\/__pycache__\/exposition.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/aiohttp\/exposition.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/asgi.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/bridge\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/bridge\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/bridge\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/bridge\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/bridge\/__pycache__\/graphite.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/bridge\/__pycache__\/graphite.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/bridge\/__pycache__\/graphite.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/bridge\/graphite.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/context_managers.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/core.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/decorator.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/django\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/django\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/django\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/django\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/django\/__pycache__\/exposition.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/django\/__pycache__\/exposition.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/django\/__pycache__\/exposition.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/django\/exposition.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/exposition.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/gc_collector.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/metrics.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/metrics_core.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/mmap_dict.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/multiprocess.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/openmetrics\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/openmetrics\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/openmetrics\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/openmetrics\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/openmetrics\/__pycache__\/exposition.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/openmetrics\/__pycache__\/exposition.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/openmetrics\/__pycache__\/exposition.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/openmetrics\/__pycache__\/parser.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/openmetrics\/__pycache__\/parser.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/openmetrics\/__pycache__\/parser.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/openmetrics\/exposition.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/openmetrics\/parser.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/parser.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/platform_collector.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/process_collector.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/py.typed" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/registry.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/samples.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/twisted\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/twisted\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/twisted\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/twisted\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/twisted\/__pycache__\/_exposition.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/twisted\/__pycache__\/_exposition.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/twisted\/__pycache__\/_exposition.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/twisted\/_exposition.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/utils.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/validation.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client\/values.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client-0.26.0.dist-info\/METADATA" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client-0.26.0.dist-info\/WHEEL" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/prometheus_client-0.26.0.dist-info\/top_level.txt" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/python_json_logger-4.2.0.dist-info\/METADATA" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/python_json_logger-4.2.0.dist-info\/WHEEL" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/python_json_logger-4.2.0.dist-info\/top_level.txt" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pythonjsonlogger\/__init__.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pythonjsonlogger\/__pycache__\/__init__.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pythonjsonlogger\/__pycache__\/__init__.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pythonjsonlogger\/__pycache__\/__init__.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pythonjsonlogger\/__pycache__\/core.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pythonjsonlogger\/__pycache__\/core.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pythonjsonlogger\/__pycache__\/core.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pythonjsonlogger\/__pycache__\/defaults.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pythonjsonlogger\/__pycache__\/defaults.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pythonjsonlogger\/__pycache__\/defaults.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pythonjsonlogger\/__pycache__\/exception.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pythonjsonlogger\/__pycache__\/exception.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pythonjsonlogger\/__pycache__\/exception.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pythonjsonlogger\/__pycache__\/json.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pythonjsonlogger\/__pycache__\/json.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pythonjsonlogger\/__pycache__\/json.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pythonjsonlogger\/__pycache__\/jsonlogger.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pythonjsonlogger\/__pycache__\/jsonlogger.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pythonjsonlogger\/__pycache__\/jsonlogger.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pythonjsonlogger\/__pycache__\/msgspec.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pythonjsonlogger\/__pycache__\/msgspec.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pythonjsonlogger\/__pycache__\/msgspec.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pythonjsonlogger\/__pycache__\/orjson.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pythonjsonlogger\/__pycache__\/orjson.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pythonjsonlogger\/__pycache__\/orjson.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pythonjsonlogger\/__pycache__\/utils.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pythonjsonlogger\/__pycache__\/utils.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pythonjsonlogger\/__pycache__\/utils.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pythonjsonlogger\/core.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pythonjsonlogger\/defaults.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pythonjsonlogger\/exception.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pythonjsonlogger\/json.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pythonjsonlogger\/jsonlogger.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pythonjsonlogger\/msgspec.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pythonjsonlogger\/orjson.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pythonjsonlogger\/py.typed" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/pythonjsonlogger\/utils.py" ],
+            
+              [  "usr\/share\/doc\/argon2-cffi-25.1.0\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/argon2-cffi-bindings-26.1.0\/CHANGELOG.md.bz2" ],
+            
+              [  "usr\/share\/doc\/argon2-cffi-bindings-26.1.0\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/jupyter-events-0.12.1\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/jupyter-server-2.21.1\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/jupyter-server-terminals-0.5.4\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/prometheus-client-0.26.0\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/python-json-logger-4.2.0\/README.md.bz2" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>
