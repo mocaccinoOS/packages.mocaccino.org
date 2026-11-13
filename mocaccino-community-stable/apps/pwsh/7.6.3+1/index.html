@@ -1,0 +1,1506 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing apps/pwsh-7.6.3&#43;1 in mocaccino-community-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> apps/pwsh-7.6.3&#43;1
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                Cross-platform automation and configuration tool
+Functionality missing from .NET Core via system calls
+
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-community-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-community-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of apps/pwsh
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/mocaccino-community:pwsh-apps-7.6.3-1" target="_blank"> quay.io/mocaccino/mocaccino-community:pwsh-apps-7.6.3-1 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/mocaccino-community:pwsh-apps-7.6.3-1/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 7.6.3&#43;1  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> MIT </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/sys-fs">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  sys-fs &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/apps/dotnet-sdk-10">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  dotnet-sdk-10 10.0.111 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: app-shells/pwsh
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://github.com/PowerShell/PowerShell/" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://github.com/PowerShell/PowerShell/ </a>
+    </span>
+  
+    <span class="tag">
+    <a href="https://github.com/PowerShell/PowerShell-Native/" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://github.com/PowerShell/PowerShell-Native/ </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/app-eselect/eselect-pwsh">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  eselect-pwsh &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/app-shells/pwsh">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  pwsh &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-libs/libpsl-native">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  libpsl-native &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "usr\/bin\/pwsh" ],
+            
+              [  "usr\/bin\/pwsh-7.6" ],
+            
+              [  "usr\/lib64\/libpsl-native.so" ],
+            
+              [  "usr\/share\/doc\/libpsl-native-7.4.0\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/CHANGELOG\/6.0.md.bz2" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/CHANGELOG\/6.1.md.bz2" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/CHANGELOG\/6.2.md.bz2" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/CHANGELOG\/7.0.md.bz2" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/CHANGELOG\/7.1.md.bz2" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/CHANGELOG\/7.2.md.bz2" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/CHANGELOG\/7.3.md.bz2" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/CHANGELOG\/7.4.md.bz2" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/CHANGELOG\/7.5.md.bz2" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/CHANGELOG\/7.6.md.bz2" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/CHANGELOG\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/CHANGELOG\/v7.6\/dependencychanges.json.bz2" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/CHANGELOG.md" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/CODE_OF_CONDUCT.md.bz2" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/DOCSMIGRATION.md.bz2" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/FAQ.md.bz2" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/building\/internals.md.bz2" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/building\/linux.md.bz2" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/building\/macos.md.bz2" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/building\/windows-core.md.bz2" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/cmdlet-example\/Images\/Std21.png" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/cmdlet-example\/Images\/Std22.png" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/cmdlet-example\/Images\/Std3.png" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/cmdlet-example\/Images\/Std4.png" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/cmdlet-example\/Images\/Std5.png" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/cmdlet-example\/Images\/Std61.png" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/cmdlet-example\/Images\/Std62.png" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/cmdlet-example\/Images\/Std63.png" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/cmdlet-example\/Images\/Step1.png" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/cmdlet-example\/Images\/Step2.png" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/cmdlet-example\/Images\/Step3.png" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/cmdlet-example\/Images\/Step4.png" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/cmdlet-example\/Images\/Step5.png" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/cmdlet-example\/Images\/Step6.png" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/cmdlet-example\/Images\/Step7.png" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/cmdlet-example\/Images\/Step8.png" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/cmdlet-example\/command-line-simple-example.md.bz2" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/cmdlet-example\/visual-studio-simple-example.md.bz2" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/community\/governance.md.bz2" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/community\/process_diagram.svg.bz2" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/community\/process_diagram.vsdx.bz2" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/community\/working-group-definitions.md.bz2" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/community\/working-group.md.bz2" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/debugging\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/dev-process\/breaking-change-contract.md.bz2" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/dev-process\/coding-guidelines.md.bz2" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/dev-process\/resx-files.md.bz2" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/git\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/git\/basics.md.bz2" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/host-powershell\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/host-powershell\/sample\/MyApp\/MyApp.csproj.bz2" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/host-powershell\/sample\/MyApp\/Program.cs.bz2" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/host-powershell\/sample\/NuGet.config.md.bz2" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/maintainers\/Images\/merge-commit-confirm.png" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/maintainers\/Images\/merge-commit.png" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/maintainers\/Images\/squash-confirm.png" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/maintainers\/Images\/squash-merge.png" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/maintainers\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/maintainers\/best-practice.md.bz2" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/maintainers\/issue-management.md.bz2" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/maintainers\/releasing.md.bz2" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/testing-guidelines\/Images\/AppVeyor-Github.png" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/testing-guidelines\/Images\/AzDevOps-Success.png" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/testing-guidelines\/Images\/CoverageReportFilter.PNG.bz2" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/testing-guidelines\/Images\/CoverageReportTop.PNG.bz2" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/testing-guidelines\/PowerShellCoreTestStatus.md.bz2" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/testing-guidelines\/TestRoadmap.md.bz2" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/testing-guidelines\/WritingPesterTests.md.bz2" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/testing-guidelines\/getting-code-coverage.md.bz2" ],
+            
+              [  "usr\/share\/doc\/pwsh-7.6.5\/docs\/testing-guidelines\/testing-guidelines.md.bz2" ],
+            
+              [  "usr\/share\/eselect\/modules\/pwsh.eselect" ],
+            
+              [  "usr\/share\/mocaccino\/packagelists\/apps-pwsh-7.6.3\u002b1.pkglist" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Humanizer.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Json.More.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/JsonPointer.Net.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/JsonSchema.Net.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/LICENSE.txt" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Markdig.Signed.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Microsoft.ApplicationInsights.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Microsoft.Bcl.AsyncInterfaces.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Microsoft.CodeAnalysis.CSharp.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Microsoft.CodeAnalysis.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Microsoft.Extensions.ObjectPool.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Microsoft.Management.Infrastructure.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Microsoft.PowerShell.Commands.Management.deps.json" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Microsoft.PowerShell.Commands.Management.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Microsoft.PowerShell.Commands.Management.pdb" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Microsoft.PowerShell.Commands.Management.xml" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Microsoft.PowerShell.Commands.Utility.deps.json" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Microsoft.PowerShell.Commands.Utility.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Microsoft.PowerShell.Commands.Utility.pdb" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Microsoft.PowerShell.Commands.Utility.xml" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Microsoft.PowerShell.ConsoleHost.deps.json" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Microsoft.PowerShell.ConsoleHost.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Microsoft.PowerShell.ConsoleHost.pdb" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Microsoft.PowerShell.ConsoleHost.xml" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Microsoft.PowerShell.MarkdownRender.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Microsoft.PowerShell.SDK.deps.json" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Microsoft.PowerShell.SDK.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Microsoft.PowerShell.SDK.pdb" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Microsoft.PowerShell.SDK.xml" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Microsoft.PowerShell.Security.deps.json" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Microsoft.PowerShell.Security.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Microsoft.PowerShell.Security.pdb" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Microsoft.PowerShell.Security.xml" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Microsoft.Win32.Registry.AccessControl.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Microsoft.Win32.SystemEvents.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.Archive\/1.2.6\/.nupkg.metadata" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.Archive\/1.2.6\/.signature.p7s" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.Archive\/1.2.6\/Microsoft.PowerShell.Archive.psd1" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.Archive\/1.2.6\/Microsoft.PowerShell.Archive.psm1" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.Archive\/1.2.6\/en-US\/ArchiveResources.psd1" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.Archive\/1.2.6\/microsoft.powershell.archive.1.2.6.nupkg" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.Archive\/1.2.6\/microsoft.powershell.archive.1.2.6.nupkg.sha512" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.Archive\/1.2.6\/microsoft.powershell.archive.nuspec" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.Host\/Microsoft.PowerShell.Host.psd1" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.Management\/Microsoft.PowerShell.Management.psd1" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/.nupkg.metadata" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/.signature.p7s" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/InstallPSResourceGetPolicyDefinitions.ps1" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/LICENSE" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/Microsoft.PowerShell.PSResourceGet.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/Microsoft.PowerShell.PSResourceGet.pdb" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/Microsoft.PowerShell.PSResourceGet.psd1" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/Microsoft.PowerShell.PSResourceGet.psm1" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/Notice.txt" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/PSGet.Format.ps1xml" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/PSResourceRepository.adml" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/PSResourceRepository.admx" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/dependencies\/Azure.Core.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/dependencies\/Azure.Identity.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/dependencies\/Microsoft.Bcl.AsyncInterfaces.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/dependencies\/Microsoft.Extensions.FileProviders.Abstractions.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/dependencies\/Microsoft.Extensions.FileSystemGlobbing.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/dependencies\/Microsoft.Extensions.Primitives.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/dependencies\/Microsoft.Identity.Client.Extensions.Msal.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/dependencies\/Microsoft.Identity.Client.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/dependencies\/Microsoft.IdentityModel.Abstractions.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/dependencies\/Newtonsoft.Json.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/dependencies\/NuGet.Commands.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/dependencies\/NuGet.Common.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/dependencies\/NuGet.Configuration.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/dependencies\/NuGet.Credentials.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/dependencies\/NuGet.DependencyResolver.Core.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/dependencies\/NuGet.Frameworks.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/dependencies\/NuGet.LibraryModel.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/dependencies\/NuGet.Packaging.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/dependencies\/NuGet.ProjectModel.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/dependencies\/NuGet.Protocol.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/dependencies\/NuGet.Versioning.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/dependencies\/System.Buffers.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/dependencies\/System.Diagnostics.DiagnosticSource.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/dependencies\/System.IO.FileSystem.AccessControl.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/dependencies\/System.Memory.Data.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/dependencies\/System.Memory.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/dependencies\/System.Numerics.Vectors.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/dependencies\/System.Runtime.CompilerServices.Unsafe.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/dependencies\/System.Security.AccessControl.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/dependencies\/System.Security.Cryptography.ProtectedData.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/dependencies\/System.Security.Principal.Windows.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/dependencies\/System.Text.Encodings.Web.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/dependencies\/System.Text.Json.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/dependencies\/System.Threading.Tasks.Extensions.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/dependencies\/System.ValueTuple.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/microsoft.powershell.psresourceget.1.2.0.nupkg" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/microsoft.powershell.psresourceget.1.2.0.nupkg.sha512" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.PSResourceGet\/1.2.0\/microsoft.powershell.psresourceget.nuspec" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.Security\/Microsoft.PowerShell.Security.psd1" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.ThreadJob\/2.2.0\/.nupkg.metadata" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.ThreadJob\/2.2.0\/.signature.p7s" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.ThreadJob\/2.2.0\/LICENSE" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.ThreadJob\/2.2.0\/Microsoft.PowerShell.ThreadJob.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.ThreadJob\/2.2.0\/Microsoft.PowerShell.ThreadJob.psd1" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.ThreadJob\/2.2.0\/ThirdPartyNotices.txt" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.ThreadJob\/2.2.0\/en-us\/Microsoft.PowerShell.ThreadJob.dll-Help.xml" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.ThreadJob\/2.2.0\/microsoft.powershell.threadjob.2.2.0.nupkg" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.ThreadJob\/2.2.0\/microsoft.powershell.threadjob.2.2.0.nupkg.sha512" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.ThreadJob\/2.2.0\/microsoft.powershell.threadjob.nuspec" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/Microsoft.PowerShell.Utility\/Microsoft.PowerShell.Utility.psd1" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PSReadLine\/2.4.5\/.nupkg.metadata" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PSReadLine\/2.4.5\/.signature.p7s" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PSReadLine\/2.4.5\/Changes.txt" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PSReadLine\/2.4.5\/License.txt" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PSReadLine\/2.4.5\/Microsoft.PowerShell.PSReadLine.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PSReadLine\/2.4.5\/Microsoft.PowerShell.Pager.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PSReadLine\/2.4.5\/PSReadLine.format.ps1xml" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PSReadLine\/2.4.5\/PSReadLine.psd1" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PSReadLine\/2.4.5\/PSReadLine.psm1" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PSReadLine\/2.4.5\/SamplePSReadLineProfile.ps1" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PSReadLine\/2.4.5\/net6plus\/Microsoft.PowerShell.PSReadLine.Polyfiller.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PSReadLine\/2.4.5\/netstd\/Microsoft.PowerShell.PSReadLine.Polyfiller.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PSReadLine\/2.4.5\/psreadline.2.4.5.nupkg" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PSReadLine\/2.4.5\/psreadline.2.4.5.nupkg.sha512" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PSReadLine\/2.4.5\/psreadline.nuspec" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PackageManagement\/1.4.8.1\/.nupkg.metadata" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PackageManagement\/1.4.8.1\/DSCResources\/MSFT_PackageManagement\/MSFT_PackageManagement.psm1" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PackageManagement\/1.4.8.1\/DSCResources\/MSFT_PackageManagement\/MSFT_PackageManagement.schema.mof" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PackageManagement\/1.4.8.1\/DSCResources\/MSFT_PackageManagement\/MSFT_PackageManagement.strings.psd1" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PackageManagement\/1.4.8.1\/DSCResources\/MSFT_PackageManagementSource\/MSFT_PackageManagementSource.psm1" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PackageManagement\/1.4.8.1\/DSCResources\/MSFT_PackageManagementSource\/MSFT_PackageManagementSource.schema.mof" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PackageManagement\/1.4.8.1\/DSCResources\/MSFT_PackageManagementSource\/MSFT_PackageManagementSource.strings.psd1" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PackageManagement\/1.4.8.1\/DSCResources\/PackageManagementDscUtilities.psm1" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PackageManagement\/1.4.8.1\/DSCResources\/PackageManagementDscUtilities.strings.psd1" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PackageManagement\/1.4.8.1\/PackageManagement.Resources.psd1" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PackageManagement\/1.4.8.1\/PackageManagement.format.ps1xml" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PackageManagement\/1.4.8.1\/PackageManagement.psd1" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PackageManagement\/1.4.8.1\/PackageManagement.psm1" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PackageManagement\/1.4.8.1\/PackageProviderFunctions.psm1" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PackageManagement\/1.4.8.1\/coreclr\/netstandard2.0\/Microsoft.PackageManagement.ArchiverProviders.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PackageManagement\/1.4.8.1\/coreclr\/netstandard2.0\/Microsoft.PackageManagement.CoreProviders.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PackageManagement\/1.4.8.1\/coreclr\/netstandard2.0\/Microsoft.PackageManagement.MetaProvider.PowerShell.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PackageManagement\/1.4.8.1\/coreclr\/netstandard2.0\/Microsoft.PackageManagement.NuGetProvider.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PackageManagement\/1.4.8.1\/coreclr\/netstandard2.0\/Microsoft.PackageManagement.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PackageManagement\/1.4.8.1\/coreclr\/netstandard2.0\/Microsoft.PowerShell.PackageManagement.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PackageManagement\/1.4.8.1\/fullclr\/Microsoft.PackageManagement.ArchiverProviders.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PackageManagement\/1.4.8.1\/fullclr\/Microsoft.PackageManagement.CoreProviders.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PackageManagement\/1.4.8.1\/fullclr\/Microsoft.PackageManagement.MetaProvider.PowerShell.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PackageManagement\/1.4.8.1\/fullclr\/Microsoft.PackageManagement.MsiProvider.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PackageManagement\/1.4.8.1\/fullclr\/Microsoft.PackageManagement.MsuProvider.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PackageManagement\/1.4.8.1\/fullclr\/Microsoft.PackageManagement.NuGetProvider.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PackageManagement\/1.4.8.1\/fullclr\/Microsoft.PackageManagement.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PackageManagement\/1.4.8.1\/fullclr\/Microsoft.PowerShell.PackageManagement.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PackageManagement\/1.4.8.1\/packagemanagement.1.4.8.1.nupkg" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PackageManagement\/1.4.8.1\/packagemanagement.1.4.8.1.nupkg.sha512" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PackageManagement\/1.4.8.1\/packagemanagement.nuspec" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PowerShellGet\/2.2.5\/.nupkg.metadata" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PowerShellGet\/2.2.5\/DscResources\/MSFT_PSModule\/MSFT_PSModule.psm1" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PowerShellGet\/2.2.5\/DscResources\/MSFT_PSModule\/MSFT_PSModule.schema.mfl" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PowerShellGet\/2.2.5\/DscResources\/MSFT_PSModule\/MSFT_PSModule.schema.mof" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PowerShellGet\/2.2.5\/DscResources\/MSFT_PSModule\/en-US\/MSFT_PSModule.strings.psd1" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PowerShellGet\/2.2.5\/DscResources\/MSFT_PSRepository\/MSFT_PSRepository.psm1" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PowerShellGet\/2.2.5\/DscResources\/MSFT_PSRepository\/MSFT_PSRepository.schema.mfl" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PowerShellGet\/2.2.5\/DscResources\/MSFT_PSRepository\/MSFT_PSRepository.schema.mof" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PowerShellGet\/2.2.5\/DscResources\/MSFT_PSRepository\/en-US\/MSFT_PSRepository.strings.psd1" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PowerShellGet\/2.2.5\/Modules\/PowerShellGet.LocalizationHelper\/PowerShellGet.LocalizationHelper.psm1" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PowerShellGet\/2.2.5\/Modules\/PowerShellGet.ResourceHelper\/PowerShellGet.ResourceHelper.psm1" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PowerShellGet\/2.2.5\/Modules\/PowerShellGet.ResourceHelper\/en-US\/PowerShellGet.ResourceHelper.strings.psd1" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PowerShellGet\/2.2.5\/PSGet.Format.ps1xml" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PowerShellGet\/2.2.5\/PSGet.Resource.psd1" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PowerShellGet\/2.2.5\/PSModule.psm1" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PowerShellGet\/2.2.5\/PowerShellGet.psd1" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PowerShellGet\/2.2.5\/en-US\/PSGet.Resource.psd1" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PowerShellGet\/2.2.5\/powershellget.2.2.5.nupkg" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PowerShellGet\/2.2.5\/powershellget.2.2.5.nupkg.sha512" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Modules\/PowerShellGet\/2.2.5\/powershellget.nuspec" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Newtonsoft.Json.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/PSGalleryModules.deps.json" ],
+            
+              [  "usr\/share\/pwsh-7.6\/PSGalleryModules.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/PSGalleryModules.pdb" ],
+            
+              [  "usr\/share\/pwsh-7.6\/SMA.Generator.deps.json" ],
+            
+              [  "usr\/share\/pwsh-7.6\/SMA.Generator.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/SMA.Generator.pdb" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/ITPro.xsd" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/Maml.rld" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/Maml.tbr" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/Maml.xsd" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/Maml.xsx" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/Maml_HTML.xsl" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/Maml_HTML_Style.xsl" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/ManagedDeveloper.xsd" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/ManagedDeveloperStructure.xsd" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/ProviderHelp.xsd" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/base.xsd" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/baseConditional.xsd" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/block.xsd" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/blockCommon.xsd" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/blockSoftware.xsd" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/command.xsd" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/conditionSet.xsd" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/developer.xsd" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/developerCommand.rld" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/developerCommand.xsd" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/developerDscResource.xsd" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/developerManaged.xsd" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/developerManagedClass.xsd" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/developerManagedConstructor.xsd" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/developerManagedDelegate.xsd" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/developerManagedEnumeration.xsd" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/developerManagedEvent.xsd" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/developerManagedField.xsd" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/developerManagedInterface.xsd" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/developerManagedMethod.xsd" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/developerManagedNamespace.xsd" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/developerManagedOperator.xsd" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/developerManagedOverload.xsd" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/developerManagedProperty.xsd" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/developerManagedStructure.xsd" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/developerReference.xsd" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/developerStructure.xsd" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/developerXaml.xsd" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/endUser.xsd" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/hierarchy.xsd" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/inline.xsd" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/inlineCommon.xsd" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/inlineSoftware.xsd" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/inlineUi.xsd" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/shellExecute.xsd" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/structure.xsd" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/structureGlossary.xsd" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/structureList.xsd" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/structureProcedure.xsd" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/structureTable.xsd" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/structureTaskExecution.xsd" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/task.xsd" ],
+            
+              [  "usr\/share\/pwsh-7.6\/Schemas\/PSMaml\/troubleshooting.xsd" ],
+            
+              [  "usr\/share\/pwsh-7.6\/System.CodeDom.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/System.ComponentModel.Composition.Registration.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/System.ComponentModel.Composition.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/System.Configuration.ConfigurationManager.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/System.Data.Odbc.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/System.Data.OleDb.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/System.Data.SqlClient.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/System.Diagnostics.EventLog.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/System.Diagnostics.PerformanceCounter.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/System.DirectoryServices.AccountManagement.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/System.DirectoryServices.Protocols.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/System.DirectoryServices.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/System.Drawing.Common.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/System.IO.Packaging.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/System.IO.Ports.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/System.Management.Automation.deps.json" ],
+            
+              [  "usr\/share\/pwsh-7.6\/System.Management.Automation.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/System.Management.Automation.pdb" ],
+            
+              [  "usr\/share\/pwsh-7.6\/System.Management.Automation.xml" ],
+            
+              [  "usr\/share\/pwsh-7.6\/System.Management.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/System.Net.Http.WinHttpHandler.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/System.Private.Windows.Core.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/System.Private.Windows.GdiPlus.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/System.Reflection.Context.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/System.Runtime.Caching.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/System.Security.Cryptography.Pkcs.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/System.Security.Cryptography.ProtectedData.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/System.Security.Cryptography.Xml.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/System.Security.Permissions.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/System.ServiceModel.Duplex.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/System.ServiceModel.Http.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/System.ServiceModel.NetFramingBase.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/System.ServiceModel.NetTcp.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/System.ServiceModel.Primitives.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/System.ServiceModel.Security.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/System.ServiceModel.Syndication.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/System.ServiceModel.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/System.ServiceProcess.ServiceController.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/System.Speech.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/System.Web.Services.Description.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/System.Windows.Extensions.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ThirdPartyNotices.txt" ],
+            
+              [  "usr\/share\/pwsh-7.6\/build.manifest" ],
+            
+              [  "usr\/share\/pwsh-7.6\/build.manifest.sig" ],
+            
+              [  "usr\/share\/pwsh-7.6\/cs\/Microsoft.CodeAnalysis.CSharp.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/cs\/Microsoft.CodeAnalysis.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/cs\/System.ServiceModel.Http.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/cs\/System.ServiceModel.NetFramingBase.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/cs\/System.ServiceModel.NetTcp.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/cs\/System.ServiceModel.Primitives.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/cs\/System.Web.Services.Description.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/de\/Microsoft.CodeAnalysis.CSharp.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/de\/Microsoft.CodeAnalysis.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/de\/System.ServiceModel.Http.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/de\/System.ServiceModel.NetFramingBase.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/de\/System.ServiceModel.NetTcp.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/de\/System.ServiceModel.Primitives.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/de\/System.Web.Services.Description.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/en-US\/default.help.txt" ],
+            
+              [  "usr\/share\/pwsh-7.6\/es\/Microsoft.CodeAnalysis.CSharp.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/es\/Microsoft.CodeAnalysis.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/es\/System.ServiceModel.Http.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/es\/System.ServiceModel.NetFramingBase.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/es\/System.ServiceModel.NetTcp.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/es\/System.ServiceModel.Primitives.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/es\/System.Web.Services.Description.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/fr\/Microsoft.CodeAnalysis.CSharp.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/fr\/Microsoft.CodeAnalysis.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/fr\/System.ServiceModel.Http.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/fr\/System.ServiceModel.NetFramingBase.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/fr\/System.ServiceModel.NetTcp.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/fr\/System.ServiceModel.Primitives.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/fr\/System.Web.Services.Description.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/it\/Microsoft.CodeAnalysis.CSharp.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/it\/Microsoft.CodeAnalysis.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/it\/System.ServiceModel.Http.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/it\/System.ServiceModel.NetFramingBase.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/it\/System.ServiceModel.NetTcp.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/it\/System.ServiceModel.Primitives.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/it\/System.Web.Services.Description.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ja\/Microsoft.CodeAnalysis.CSharp.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ja\/Microsoft.CodeAnalysis.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ja\/System.ServiceModel.Http.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ja\/System.ServiceModel.NetFramingBase.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ja\/System.ServiceModel.NetTcp.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ja\/System.ServiceModel.Primitives.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ja\/System.Web.Services.Description.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ko\/Microsoft.CodeAnalysis.CSharp.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ko\/Microsoft.CodeAnalysis.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ko\/System.ServiceModel.Http.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ko\/System.ServiceModel.NetFramingBase.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ko\/System.ServiceModel.NetTcp.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ko\/System.ServiceModel.Primitives.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ko\/System.Web.Services.Description.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/libSystem.IO.Ports.Native.so" ],
+            
+              [  "usr\/share\/pwsh-7.6\/libpsl-native.so" ],
+            
+              [  "usr\/share\/pwsh-7.6\/pl\/Microsoft.CodeAnalysis.CSharp.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/pl\/Microsoft.CodeAnalysis.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/pl\/System.ServiceModel.Http.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/pl\/System.ServiceModel.NetFramingBase.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/pl\/System.ServiceModel.NetTcp.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/pl\/System.ServiceModel.Primitives.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/pl\/System.Web.Services.Description.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/pt-BR\/Microsoft.CodeAnalysis.CSharp.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/pt-BR\/Microsoft.CodeAnalysis.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/pt-BR\/System.ServiceModel.Http.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/pt-BR\/System.ServiceModel.NetFramingBase.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/pt-BR\/System.ServiceModel.NetTcp.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/pt-BR\/System.ServiceModel.Primitives.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/pt-BR\/System.Web.Services.Description.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/pwsh" ],
+            
+              [  "usr\/share\/pwsh-7.6\/pwsh.deps.json" ],
+            
+              [  "usr\/share\/pwsh-7.6\/pwsh.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/pwsh.pdb" ],
+            
+              [  "usr\/share\/pwsh-7.6\/pwsh.profile.dsc.resource.json" ],
+            
+              [  "usr\/share\/pwsh-7.6\/pwsh.profile.resource.ps1" ],
+            
+              [  "usr\/share\/pwsh-7.6\/pwsh.runtimeconfig.json" ],
+            
+              [  "usr\/share\/pwsh-7.6\/pwsh.xml" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/Microsoft.CSharp.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/Microsoft.VisualBasic.Core.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/Microsoft.VisualBasic.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/Microsoft.Win32.Primitives.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/Microsoft.Win32.Registry.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.AppContext.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Buffers.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Collections.Concurrent.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Collections.Immutable.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Collections.NonGeneric.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Collections.Specialized.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Collections.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.ComponentModel.Annotations.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.ComponentModel.DataAnnotations.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.ComponentModel.EventBasedAsync.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.ComponentModel.Primitives.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.ComponentModel.TypeConverter.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.ComponentModel.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Configuration.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Console.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Core.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Data.Common.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Data.DataSetExtensions.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Data.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Diagnostics.Contracts.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Diagnostics.Debug.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Diagnostics.DiagnosticSource.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Diagnostics.FileVersionInfo.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Diagnostics.Process.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Diagnostics.StackTrace.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Diagnostics.TextWriterTraceListener.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Diagnostics.Tools.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Diagnostics.TraceSource.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Diagnostics.Tracing.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Drawing.Primitives.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Drawing.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Dynamic.Runtime.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Formats.Asn1.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Formats.Tar.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Globalization.Calendars.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Globalization.Extensions.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Globalization.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.IO.Compression.Brotli.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.IO.Compression.FileSystem.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.IO.Compression.ZipFile.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.IO.Compression.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.IO.FileSystem.AccessControl.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.IO.FileSystem.DriveInfo.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.IO.FileSystem.Primitives.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.IO.FileSystem.Watcher.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.IO.FileSystem.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.IO.IsolatedStorage.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.IO.MemoryMappedFiles.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.IO.Pipelines.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.IO.Pipes.AccessControl.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.IO.Pipes.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.IO.UnmanagedMemoryStream.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.IO.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Linq.AsyncEnumerable.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Linq.Expressions.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Linq.Parallel.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Linq.Queryable.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Linq.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Memory.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Net.Http.Json.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Net.Http.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Net.HttpListener.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Net.Mail.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Net.NameResolution.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Net.NetworkInformation.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Net.Ping.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Net.Primitives.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Net.Quic.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Net.Requests.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Net.Security.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Net.ServerSentEvents.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Net.ServicePoint.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Net.Sockets.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Net.WebClient.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Net.WebHeaderCollection.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Net.WebProxy.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Net.WebSockets.Client.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Net.WebSockets.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Net.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Numerics.Vectors.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Numerics.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.ObjectModel.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Private.CoreLib.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Private.DataContractSerialization.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Private.Uri.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Private.Xml.Linq.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Private.Xml.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Reflection.DispatchProxy.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Reflection.Emit.ILGeneration.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Reflection.Emit.Lightweight.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Reflection.Emit.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Reflection.Extensions.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Reflection.Metadata.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Reflection.Primitives.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Reflection.TypeExtensions.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Reflection.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Resources.Reader.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Resources.ResourceManager.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Resources.Writer.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Runtime.CompilerServices.Unsafe.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Runtime.CompilerServices.VisualC.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Runtime.Extensions.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Runtime.Handles.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Runtime.InteropServices.JavaScript.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Runtime.InteropServices.RuntimeInformation.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Runtime.InteropServices.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Runtime.Intrinsics.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Runtime.Loader.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Runtime.Numerics.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Runtime.Serialization.Formatters.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Runtime.Serialization.Json.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Runtime.Serialization.Primitives.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Runtime.Serialization.Xml.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Runtime.Serialization.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Runtime.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Security.AccessControl.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Security.Claims.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Security.Cryptography.Algorithms.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Security.Cryptography.Cng.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Security.Cryptography.Csp.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Security.Cryptography.Encoding.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Security.Cryptography.OpenSsl.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Security.Cryptography.Primitives.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Security.Cryptography.X509Certificates.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Security.Cryptography.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Security.Principal.Windows.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Security.Principal.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Security.SecureString.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Security.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.ServiceModel.Web.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.ServiceProcess.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Text.Encoding.CodePages.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Text.Encoding.Extensions.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Text.Encoding.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Text.Encodings.Web.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Text.Json.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Text.RegularExpressions.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Threading.AccessControl.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Threading.Channels.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Threading.Overlapped.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Threading.Tasks.Dataflow.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Threading.Tasks.Extensions.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Threading.Tasks.Parallel.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Threading.Tasks.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Threading.Thread.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Threading.ThreadPool.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Threading.Timer.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Threading.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Transactions.Local.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Transactions.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.ValueTuple.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Web.HttpUtility.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Web.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Windows.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Xml.Linq.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Xml.ReaderWriter.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Xml.Serialization.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Xml.XDocument.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Xml.XPath.XDocument.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Xml.XPath.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Xml.XmlDocument.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Xml.XmlSerializer.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.Xml.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/System.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/WindowsBase.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/mscorlib.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ref\/netstandard.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ru\/Microsoft.CodeAnalysis.CSharp.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ru\/Microsoft.CodeAnalysis.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ru\/System.ServiceModel.Http.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ru\/System.ServiceModel.NetFramingBase.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ru\/System.ServiceModel.NetTcp.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ru\/System.ServiceModel.Primitives.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/ru\/System.Web.Services.Description.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/tr\/Microsoft.CodeAnalysis.CSharp.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/tr\/Microsoft.CodeAnalysis.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/tr\/System.ServiceModel.Http.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/tr\/System.ServiceModel.NetFramingBase.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/tr\/System.ServiceModel.NetTcp.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/tr\/System.ServiceModel.Primitives.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/tr\/System.Web.Services.Description.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/zh-Hans\/Microsoft.CodeAnalysis.CSharp.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/zh-Hans\/Microsoft.CodeAnalysis.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/zh-Hans\/System.ServiceModel.Http.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/zh-Hans\/System.ServiceModel.NetFramingBase.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/zh-Hans\/System.ServiceModel.NetTcp.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/zh-Hans\/System.ServiceModel.Primitives.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/zh-Hans\/System.Web.Services.Description.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/zh-Hant\/Microsoft.CodeAnalysis.CSharp.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/zh-Hant\/Microsoft.CodeAnalysis.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/zh-Hant\/System.ServiceModel.Http.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/zh-Hant\/System.ServiceModel.NetFramingBase.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/zh-Hant\/System.ServiceModel.NetTcp.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/zh-Hant\/System.ServiceModel.Primitives.resources.dll" ],
+            
+              [  "usr\/share\/pwsh-7.6\/zh-Hant\/System.Web.Services.Description.resources.dll" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>
