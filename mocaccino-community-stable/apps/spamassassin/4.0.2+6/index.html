@@ -1,0 +1,2536 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing apps/spamassassin-4.0.2&#43;6 in mocaccino-community-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> apps/spamassassin-4.0.2&#43;6
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                An extensible mail filter which can identify and tag spam
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-community-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-community-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of apps/spamassassin
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/mocaccino-community:spamassassin-apps-4.0.2-6" target="_blank"> quay.io/mocaccino/mocaccino-community:spamassassin-apps-4.0.2-6 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/mocaccino-community:spamassassin-apps-4.0.2-6/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 4.0.2&#43;6  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> Apache-2.0 GPL-2 </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/latex">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  latex &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/perl-email-libs">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  perl-email-libs 26.11 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: mail-filter/spamassassin
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://spamassassin.apache.org/" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://spamassassin.apache.org/ </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/BSD-Resource">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  BSD-Resource &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Class-Tiny">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Class-Tiny &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Crypt-OpenSSL-Bignum">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Crypt-OpenSSL-Bignum &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Crypt-OpenSSL-Guess">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Crypt-OpenSSL-Guess &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Crypt-OpenSSL-RSA">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Crypt-OpenSSL-RSA &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Crypt-OpenSSL-Random">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Crypt-OpenSSL-Random &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/CryptX">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  CryptX &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/DBIx-Simple">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  DBIx-Simple &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Data-Dumper-Concise">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Data-Dumper-Concise &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Data-IEEE754">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Data-IEEE754 &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Data-Printer">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Data-Printer &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Data-Validate-IP">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Data-Validate-IP &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Digest-BubbleBabble">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Digest-BubbleBabble &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Encode-Detect">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Encode-Detect &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/GeoIP2">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  GeoIP2 &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/IO-Multiplex">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  IO-Multiplex &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Mail-AuthenticationResults">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Mail-AuthenticationResults &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Mail-DKIM">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Mail-DKIM &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Mail-DMARC">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Mail-DMARC &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Mail-SPF">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Mail-SPF &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/MaxMind-DB-Common">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  MaxMind-DB-Common &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/MaxMind-DB-Reader">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  MaxMind-DB-Reader &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/MooX-StrictConstructor">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  MooX-StrictConstructor &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Net-CIDR-Lite">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Net-CIDR-Lite &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Net-DNS">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Net-DNS &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Net-DNS-Resolver-Programmable">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Net-DNS-Resolver-Programmable &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Net-DNS-SEC">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Net-DNS-SEC &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Net-IDN-Encode">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Net-IDN-Encode &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Net-IMAP-Simple">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Net-IMAP-Simple &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Net-IP">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Net-IP &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Net-LibIDN2">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Net-LibIDN2 &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Net-Patricia">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Net-Patricia &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Net-SMTPS">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Net-SMTPS &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Net-Server">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Net-Server &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/NetAddr-IP">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  NetAddr-IP &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Scope-Guard">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Scope-Guard &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-perl/Test-File-ShareDir">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  Test-File-ShareDir &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/mail-filter/spamassassin">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  spamassassin &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "etc\/conf.d\/spamd" ],
+            
+              [  "etc\/init.d\/spamd" ],
+            
+              [  "etc\/mail\/spamassassin\/geoip.cf" ],
+            
+              [  "etc\/mail\/spamassassin\/init.pre" ],
+            
+              [  "etc\/mail\/spamassassin\/local.cf" ],
+            
+              [  "etc\/mail\/spamassassin\/secrets.cf.example" ],
+            
+              [  "etc\/mail\/spamassassin\/v310.pre" ],
+            
+              [  "etc\/mail\/spamassassin\/v312.pre" ],
+            
+              [  "etc\/mail\/spamassassin\/v320.pre" ],
+            
+              [  "etc\/mail\/spamassassin\/v330.pre" ],
+            
+              [  "etc\/mail\/spamassassin\/v340.pre" ],
+            
+              [  "etc\/mail\/spamassassin\/v341.pre" ],
+            
+              [  "etc\/mail\/spamassassin\/v342.pre" ],
+            
+              [  "etc\/mail\/spamassassin\/v343.pre" ],
+            
+              [  "etc\/mail\/spamassassin\/v400.pre" ],
+            
+              [  "etc\/mail\/spamassassin\/v401.pre" ],
+            
+              [  "etc\/mail\/spamassassin\/v402.pre" ],
+            
+              [  "etc\/spamassassin" ],
+            
+              [  "etc\/systemd\/system\/spamassassin.service.d\/00gentoo.conf" ],
+            
+              [  "usr\/bin\/dmarc_http_client" ],
+            
+              [  "usr\/bin\/dmarc_httpd" ],
+            
+              [  "usr\/bin\/dmarc_lookup" ],
+            
+              [  "usr\/bin\/dmarc_receive" ],
+            
+              [  "usr\/bin\/dmarc_send_reports" ],
+            
+              [  "usr\/bin\/dmarc_update_public_suffix_list" ],
+            
+              [  "usr\/bin\/dmarc_view_reports" ],
+            
+              [  "usr\/bin\/ipcount" ],
+            
+              [  "usr\/bin\/iptab" ],
+            
+              [  "usr\/bin\/mmdb-dump-metadata" ],
+            
+              [  "usr\/bin\/mmdb-dump-search-tree" ],
+            
+              [  "usr\/bin\/net-server" ],
+            
+              [  "usr\/bin\/sa-awl" ],
+            
+              [  "usr\/bin\/sa-check_spamd" ],
+            
+              [  "usr\/bin\/sa-compile" ],
+            
+              [  "usr\/bin\/sa-learn" ],
+            
+              [  "usr\/bin\/sa-update" ],
+            
+              [  "usr\/bin\/spamassassin" ],
+            
+              [  "usr\/bin\/spamc" ],
+            
+              [  "usr\/bin\/spamd" ],
+            
+              [  "usr\/bin\/spfd.pl" ],
+            
+              [  "usr\/bin\/spfquery.pl" ],
+            
+              [  "usr\/bin\/web-service-request" ],
+            
+              [  "usr\/lib\/systemd\/system\/spamassassin.service" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Class\/Tiny.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Crypt\/OpenSSL\/Guess.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/DBIx\/Simple\/Comparison.pod" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/DBIx\/Simple\/Examples.pod" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/DBIx\/Simple\/Result\/RowObject.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/DBIx\/Simple.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/DDP.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Data\/Dumper\/Concise\/Sugar.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Data\/Dumper\/Concise.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Data\/IEEE754.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Data\/Printer\/Common.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Data\/Printer\/Config.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Data\/Printer\/Filter\/ARRAY.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Data\/Printer\/Filter\/CODE.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Data\/Printer\/Filter\/ContentType.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Data\/Printer\/Filter\/DB.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Data\/Printer\/Filter\/DateTime.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Data\/Printer\/Filter\/Digest.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Data\/Printer\/Filter\/FORMAT.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Data\/Printer\/Filter\/GLOB.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Data\/Printer\/Filter\/GenericClass.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Data\/Printer\/Filter\/HASH.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Data\/Printer\/Filter\/OBJECT.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Data\/Printer\/Filter\/REF.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Data\/Printer\/Filter\/Regexp.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Data\/Printer\/Filter\/SCALAR.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Data\/Printer\/Filter\/VSTRING.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Data\/Printer\/Filter\/Web.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Data\/Printer\/Filter.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Data\/Printer\/Object.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Data\/Printer\/Profile\/Dumper.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Data\/Printer\/Profile\/JSON.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Data\/Printer\/Profile.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Data\/Printer\/Theme\/Classic.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Data\/Printer\/Theme\/Material.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Data\/Printer\/Theme\/Monokai.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Data\/Printer\/Theme\/Solarized.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Data\/Printer\/Theme.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Data\/Printer.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Data\/Validate\/IP.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Devel\/Dwarn.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Digest\/BubbleBabble.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/GeoIP2\/Database\/Reader.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/GeoIP2\/Error\/Generic.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/GeoIP2\/Error\/HTTP.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/GeoIP2\/Error\/IPAddressNotFound.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/GeoIP2\/Error\/Type.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/GeoIP2\/Error\/WebService.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/GeoIP2\/Model\/ASN.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/GeoIP2\/Model\/AnonymousIP.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/GeoIP2\/Model\/City.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/GeoIP2\/Model\/ConnectionType.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/GeoIP2\/Model\/Country.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/GeoIP2\/Model\/Domain.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/GeoIP2\/Model\/Enterprise.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/GeoIP2\/Model\/ISP.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/GeoIP2\/Model\/Insights.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/GeoIP2\/Record\/City.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/GeoIP2\/Record\/Continent.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/GeoIP2\/Record\/Country.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/GeoIP2\/Record\/Location.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/GeoIP2\/Record\/MaxMind.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/GeoIP2\/Record\/Postal.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/GeoIP2\/Record\/RepresentedCountry.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/GeoIP2\/Record\/Subdivision.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/GeoIP2\/Record\/Traits.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/GeoIP2\/Role\/Error\/HTTP.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/GeoIP2\/Role\/HasIPAddress.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/GeoIP2\/Role\/HasLocales.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/GeoIP2\/Role\/Model\/Flat.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/GeoIP2\/Role\/Model\/HasSubdivisions.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/GeoIP2\/Role\/Model\/Location.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/GeoIP2\/Role\/Model.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/GeoIP2\/Role\/Record\/Country.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/GeoIP2\/Role\/Record\/HasNames.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/GeoIP2\/Types.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/GeoIP2\/WebService\/Client.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/GeoIP2.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/IO\/Multiplex.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/AuthenticationResults\/FoldableHeader.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/AuthenticationResults\/Header\/AuthServID.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/AuthenticationResults\/Header\/Base.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/AuthenticationResults\/Header\/Comment.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/AuthenticationResults\/Header\/Entry.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/AuthenticationResults\/Header\/Group.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/AuthenticationResults\/Header\/SubEntry.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/AuthenticationResults\/Header\/Version.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/AuthenticationResults\/Header.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/AuthenticationResults\/Parser.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/AuthenticationResults\/Token\/Assignment.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/AuthenticationResults\/Token\/Comment.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/AuthenticationResults\/Token\/QuotedString.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/AuthenticationResults\/Token\/Separator.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/AuthenticationResults\/Token\/Space.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/AuthenticationResults\/Token\/String.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/AuthenticationResults\/Token.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/AuthenticationResults.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DKIM\/ARC\/MessageSignature.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DKIM\/ARC\/Seal.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DKIM\/ARC\/Signer.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DKIM\/ARC\/Verifier.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DKIM\/Algorithm\/Base.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DKIM\/Algorithm\/dk_rsa_sha1.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DKIM\/Algorithm\/ed25519_sha256.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DKIM\/Algorithm\/rsa_sha1.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DKIM\/Algorithm\/rsa_sha256.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DKIM\/AuthorDomainPolicy.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DKIM\/Canonicalization\/Base.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DKIM\/Canonicalization\/DkCommon.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DKIM\/Canonicalization\/DkimCommon.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DKIM\/Canonicalization\/dk_nofws.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DKIM\/Canonicalization\/dk_simple.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DKIM\/Canonicalization\/nowsp.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DKIM\/Canonicalization\/relaxed.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DKIM\/Canonicalization\/seal.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DKIM\/Canonicalization\/simple.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DKIM\/Common.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DKIM\/DNS.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DKIM\/DkPolicy.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DKIM\/DkSignature.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DKIM\/DkimPolicy.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DKIM\/Key.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DKIM\/KeyValueList.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DKIM\/MessageParser.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DKIM\/Policy.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DKIM\/PrivateKey.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DKIM\/PublicKey.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DKIM\/Signature.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DKIM\/Signer.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DKIM\/SignerPolicy.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DKIM\/TextWrap.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DKIM\/Verifier.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DKIM.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DMARC\/Base.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DMARC\/ConfigData.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DMARC\/HTTP.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DMARC\/Policy.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DMARC\/PurePerl.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DMARC\/Report\/Aggregate\/Metadata.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DMARC\/Report\/Aggregate\/Record\/Auth_Results\/DKIM.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DMARC\/Report\/Aggregate\/Record\/Auth_Results\/SPF.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DMARC\/Report\/Aggregate\/Record\/Auth_Results.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DMARC\/Report\/Aggregate\/Record\/Identifiers.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DMARC\/Report\/Aggregate\/Record\/Row\/Policy_Evaluated.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DMARC\/Report\/Aggregate\/Record\/Row.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DMARC\/Report\/Aggregate\/Record.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DMARC\/Report\/Aggregate.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DMARC\/Report\/Receive.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DMARC\/Report\/Send\/HTTP.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DMARC\/Report\/Send\/SMTP.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DMARC\/Report\/Send.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DMARC\/Report\/Sender.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DMARC\/Report\/Store\/SQL\/Grammars\/MySQL.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DMARC\/Report\/Store\/SQL\/Grammars\/PostgreSQL.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DMARC\/Report\/Store\/SQL\/Grammars\/SQLite.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DMARC\/Report\/Store\/SQL.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DMARC\/Report\/Store.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DMARC\/Report\/URI.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DMARC\/Report.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DMARC\/Result\/Reason.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DMARC\/Result.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DMARC\/Test\/Transport.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/DMARC.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SPF\/Base.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SPF\/Exception.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SPF\/MacroString.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SPF\/Mech\/A.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SPF\/Mech\/All.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SPF\/Mech\/Exists.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SPF\/Mech\/IP4.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SPF\/Mech\/IP6.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SPF\/Mech\/Include.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SPF\/Mech\/MX.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SPF\/Mech\/PTR.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SPF\/Mech.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SPF\/Mod\/Exp.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SPF\/Mod\/Redirect.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SPF\/Mod.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SPF\/Record.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SPF\/Request.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SPF\/Result.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SPF\/SenderIPAddrMech.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SPF\/Server.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SPF\/Term.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SPF\/Util.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SPF\/v1\/Record.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SPF\/v2\/Record.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SPF.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/AICache.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/ArchiveIterator.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/AsyncLoop.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/AutoWelcomelist.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Bayes\/CombineChi.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Bayes\/CombineNaiveBayes.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Bayes.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/BayesStore\/BDB.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/BayesStore\/DBM.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/BayesStore\/MySQL.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/BayesStore\/PgSQL.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/BayesStore\/Redis.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/BayesStore\/SDBM.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/BayesStore\/SQL.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/BayesStore.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Client.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Conf\/LDAP.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Conf\/Parser.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Conf\/SQL.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Conf.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Constants.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/DBBasedAddrList.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Dns.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/DnsResolver.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/GeoDB.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/HTML\/Color.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/HTML.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Header\/ParameterHeader.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Header.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Locales.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Locker\/Flock.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Locker\/UnixNFSSafe.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Locker\/Win32.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Locker.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Logger\/File.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Logger\/Stderr.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Logger\/Syslog.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Logger.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/MailingList.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Message\/Metadata\/Received.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Message\/Metadata.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Message\/Node.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Message.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/NetSet.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/PerMsgLearner.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/PerMsgStatus.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/PersistentAddrList.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/ASN.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/AWL.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/AccessDB.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/AntiVirus.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/AskDNS.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/AuthRes.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/AutoLearnThreshold.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/Bayes.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/BodyEval.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/BodyRuleBaseExtractor.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/Check.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/DCC.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/DKIM.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/DMARC.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/DNSEval.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/DecodeShortURLs.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/ExtractText.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/FreeMail.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/FromNameSpoof.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/HTMLEval.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/HTTPSMismatch.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/HashBL.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/HeaderEval.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/ImageInfo.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/MIMEEval.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/MIMEHeader.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/OLEVBMacro.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/OneLineBodyRuleType.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/PDFInfo.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/PhishTag.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/Phishing.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/Pyzor.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/Razor2.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/Redirectors.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/RelayCountry.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/RelayEval.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/ReplaceTags.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/ResourceLimits.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/Reuse.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/Rule2XSBody.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/SPF.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/Shortcircuit.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/SpamCop.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/Test.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/TextCat.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/TxRep.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/URIDNSBL.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/URIDetail.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/URIEval.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/URILocalBL.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/VBounce.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/WLBLEval.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin\/WelcomeListSubject.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Plugin.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/PluginHandler.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Pyzor\/Client.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Pyzor\/Digest\/Pieces.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Pyzor\/Digest\/StripHtml.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Pyzor\/Digest.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Pyzor.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/RegistryBoundaries.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Reporter.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/SQLBasedAddrList.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/SpamdForkScaling.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/SubProcBackChannel.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Timeout.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Util\/DependencyInfo.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Util\/Progress.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Util\/ScopedTimer.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Util\/TieOneStringHash.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Util\/TinyRedis.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin\/Util.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Mail\/SpamAssassin.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/MaxMind\/DB\/Common.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/MaxMind\/DB\/Metadata.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/MaxMind\/DB\/Reader\/Data\/Container.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/MaxMind\/DB\/Reader\/Data\/EndMarker.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/MaxMind\/DB\/Reader\/Decoder.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/MaxMind\/DB\/Reader\/PP.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/MaxMind\/DB\/Reader\/Role\/HasDecoder.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/MaxMind\/DB\/Reader\/Role\/HasMetadata.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/MaxMind\/DB\/Reader\/Role\/NodeReader.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/MaxMind\/DB\/Reader\/Role\/Reader.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/MaxMind\/DB\/Reader\/Role\/Sysreader.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/MaxMind\/DB\/Reader.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/MaxMind\/DB\/Role\/Debugs.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/MaxMind\/DB\/Types.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/MooX\/StrictConstructor\/Role\/BuildAll.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/MooX\/StrictConstructor\/Role\/Constructor\/Base.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/MooX\/StrictConstructor\/Role\/Constructor\/Late.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/MooX\/StrictConstructor\/Role\/Constructor.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/MooX\/StrictConstructor.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/CIDR\/Lite.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/Domain.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/DomainName.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/FAQ.pod" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/Header.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/Mailbox.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/Nameserver.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/Packet.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/Parameters.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/Question.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/A.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/AAAA.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/AFSDB.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/AMTRELAY.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/APL.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/CAA.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/CDNSKEY.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/CDS.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/CERT.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/CNAME.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/CSYNC.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/DELEG.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/DHCID.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/DNAME.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/DNSKEY.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/DS.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/DSYNC.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/EUI48.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/EUI64.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/GPOS.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/HINFO.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/HIP.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/HTTPS.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/IPSECKEY.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/ISDN.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/KEY.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/KX.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/L32.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/L64.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/LOC.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/LP.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/MB.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/MG.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/MINFO.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/MR.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/MX.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/NAPTR.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/NID.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/NS.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/NSEC.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/NSEC3.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/NSEC3PARAM.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/NULL.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/OPENPGPKEY.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/OPT.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/PTR.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/PX.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/RESINFO.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/RP.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/RRSIG.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/RT.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/SIG.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/SMIMEA.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/SOA.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/SPF.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/SRV.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/SSHFP.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/SVCB.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/TKEY.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/TLSA.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/TSIG.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/TXT.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/URI.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/X25.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR\/ZONEMD.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/RR.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/Resolver\/Base.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/Resolver\/MSWin32.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/Resolver\/Programmable.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/Resolver\/Recurse.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/Resolver\/UNIX.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/Resolver\/android.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/Resolver\/cygwin.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/Resolver\/os2.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/Resolver\/os390.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/Resolver.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/Text.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/Update.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS\/ZoneFile.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/DNS.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/IMAP\/Simple\/PipeSocket.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/IMAP\/Simple.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/IMAP\/Simple.pod" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/IMAP\/SimpleX.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/IMAP\/SimpleX.pod" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/IP.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/SMTPS.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/Server\/Daemonize.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/Server\/Fork.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/Server\/HTTP.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/Server\/INET.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/Server\/Log\/Log\/Log4perl.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/Server\/Log\/Sys\/Syslog.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/Server\/MultiType.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/Server\/Multiplex.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/Server\/PSGI.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/Server\/PreFork.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/Server\/PreForkSimple.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/Server\/Proto\/SSL.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/Server\/Proto\/SSLEAY.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/Server\/Proto\/TCP.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/Server\/Proto\/UDP.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/Server\/Proto\/UNIX.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/Server\/Proto\/UNIXDGRAM.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/Server\/Proto.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/Server\/SIG.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/Server\/Single.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/Server\/Thread.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/Server.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Net\/Server.pod" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Scope\/Guard.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Test\/File\/ShareDir\/Dist.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Test\/File\/ShareDir\/Module.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Test\/File\/ShareDir\/Object\/Dist.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Test\/File\/ShareDir\/Object\/Inc.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Test\/File\/ShareDir\/Object\/Module.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Test\/File\/ShareDir\/TempDirObject.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Test\/File\/ShareDir\/Utils.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Test\/File\/ShareDir.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Test\/MaxMind\/DB\/Common\/Data.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/Test\/MaxMind\/DB\/Common\/Util.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/dmarc_whitelist" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/css\/ellipsis-xbl.xml" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/css\/ui.jqgrid.css" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/css\/ui.multiselect.css" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/index.html" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/js\/i18n\/grid.locale-ar.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/js\/i18n\/grid.locale-bg.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/js\/i18n\/grid.locale-bg1251.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/js\/i18n\/grid.locale-cat.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/js\/i18n\/grid.locale-cn.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/js\/i18n\/grid.locale-cs.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/js\/i18n\/grid.locale-da.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/js\/i18n\/grid.locale-de.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/js\/i18n\/grid.locale-dk.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/js\/i18n\/grid.locale-el.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/js\/i18n\/grid.locale-en.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/js\/i18n\/grid.locale-es.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/js\/i18n\/grid.locale-fa.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/js\/i18n\/grid.locale-fi.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/js\/i18n\/grid.locale-fr.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/js\/i18n\/grid.locale-gl.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/js\/i18n\/grid.locale-he.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/js\/i18n\/grid.locale-hr.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/js\/i18n\/grid.locale-hr1250.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/js\/i18n\/grid.locale-hu.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/js\/i18n\/grid.locale-id.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/js\/i18n\/grid.locale-is.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/js\/i18n\/grid.locale-it.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/js\/i18n\/grid.locale-ja.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/js\/i18n\/grid.locale-kr.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/js\/i18n\/grid.locale-lt.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/js\/i18n\/grid.locale-mne.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/js\/i18n\/grid.locale-nl.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/js\/i18n\/grid.locale-no.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/js\/i18n\/grid.locale-pl.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/js\/i18n\/grid.locale-pt-br.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/js\/i18n\/grid.locale-pt.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/js\/i18n\/grid.locale-ro.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/js\/i18n\/grid.locale-ru.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/js\/i18n\/grid.locale-sk.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/js\/i18n\/grid.locale-sr-latin.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/js\/i18n\/grid.locale-sr.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/js\/i18n\/grid.locale-sv.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/js\/i18n\/grid.locale-th.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/js\/i18n\/grid.locale-tr.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/js\/i18n\/grid.locale-tw.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/js\/i18n\/grid.locale-ua.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/js\/i18n\/grid.locale-vi.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/js\/jquery.jqGrid.min.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/plugins\/grid.addons.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/plugins\/grid.postext.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/plugins\/grid.setcolumns.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/plugins\/jquery.contextmenu.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/plugins\/jquery.searchFilter.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/plugins\/jquery.tablednd.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/plugins\/searchFilter.css" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/plugins\/ui.multiselect.css" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/html\/plugins\/ui.multiselect.js.gz" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/mail-dmarc.cron" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/mail-dmarc.ini" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/mail_dmarc_schema.mysql" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/mail_dmarc_schema.pgsql" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/mail_dmarc_schema.sqlite" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/public_suffix_list" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/auto\/share\/dist\/Mail-DMARC\/rua-schema.xsd" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/spamassassin-run.pod" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/BSD\/Resource.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/ASN1.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/AuthEnc\/CCM.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/AuthEnc\/ChaCha20Poly1305.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/AuthEnc\/EAX.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/AuthEnc\/GCM.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/AuthEnc\/GCMSIV.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/AuthEnc\/OCB.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/AuthEnc\/SIV.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/AuthEnc\/XChaCha20Poly1305.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/AuthEnc.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Checksum\/Adler32.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Checksum\/CRC32.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Checksum.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Cipher\/AES.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Cipher\/ARIA.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Cipher\/Anubis.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Cipher\/Blowfish.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Cipher\/CAST5.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Cipher\/Camellia.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Cipher\/DES.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Cipher\/DES_EDE.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Cipher\/IDEA.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Cipher\/KASUMI.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Cipher\/Khazad.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Cipher\/MULTI2.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Cipher\/Noekeon.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Cipher\/RC2.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Cipher\/RC5.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Cipher\/RC6.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Cipher\/SAFERP.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Cipher\/SAFER_K128.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Cipher\/SAFER_K64.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Cipher\/SAFER_SK128.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Cipher\/SAFER_SK64.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Cipher\/SEED.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Cipher\/SM4.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Cipher\/Serpent.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Cipher\/Skipjack.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Cipher\/Twofish.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Cipher\/XTEA.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Cipher.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Digest\/BLAKE2b_160.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Digest\/BLAKE2b_256.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Digest\/BLAKE2b_384.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Digest\/BLAKE2b_512.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Digest\/BLAKE2s_128.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Digest\/BLAKE2s_160.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Digest\/BLAKE2s_224.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Digest\/BLAKE2s_256.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Digest\/CHAES.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Digest\/KangarooTwelve.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Digest\/Keccak224.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Digest\/Keccak256.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Digest\/Keccak384.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Digest\/Keccak512.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Digest\/MD2.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Digest\/MD4.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Digest\/MD5.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Digest\/RIPEMD128.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Digest\/RIPEMD160.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Digest\/RIPEMD256.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Digest\/RIPEMD320.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Digest\/SHA1.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Digest\/SHA224.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Digest\/SHA256.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Digest\/SHA384.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Digest\/SHA3_224.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Digest\/SHA3_256.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Digest\/SHA3_384.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Digest\/SHA3_512.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Digest\/SHA512.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Digest\/SHA512_224.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Digest\/SHA512_256.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Digest\/SHAKE.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Digest\/SM3.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Digest\/Tiger192.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Digest\/TurboSHAKE.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Digest\/Whirlpool.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Digest.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/KeyDerivation.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Mac\/BLAKE2b.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Mac\/BLAKE2s.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Mac\/F9.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Mac\/HMAC.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Mac\/KMAC.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Mac\/OMAC.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Mac\/PMAC.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Mac\/Pelican.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Mac\/Poly1305.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Mac\/XCBC.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Mac.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Misc.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Mode\/CBC.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Mode\/CFB.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Mode\/CTR.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Mode\/ECB.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Mode\/OFB.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Mode.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/OpenSSL\/Bignum\/CTX.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/OpenSSL\/Bignum.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/OpenSSL\/RSA.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/OpenSSL\/Random.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/PK\/DH.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/PK\/DSA.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/PK\/ECC.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/PK\/Ed25519.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/PK\/Ed448.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/PK\/RSA.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/PK\/X25519.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/PK\/X448.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/PK.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/PRNG\/ChaCha20.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/PRNG\/Fortuna.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/PRNG\/RC4.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/PRNG\/Sober128.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/PRNG\/Yarrow.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/PRNG.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Stream\/ChaCha.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Stream\/RC4.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Stream\/Rabbit.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Stream\/Salsa20.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Stream\/Sober128.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Stream\/Sosemanuk.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Stream\/XChaCha.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Crypt\/Stream\/XSalsa20.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/CryptX.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Encode\/Detect\/Detector.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Encode\/Detect.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Math\/BigInt\/LTM.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Net\/DNS\/SEC\/DSA.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Net\/DNS\/SEC\/Digest.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Net\/DNS\/SEC\/ECDSA.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Net\/DNS\/SEC\/EdDSA.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Net\/DNS\/SEC\/Keyset.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Net\/DNS\/SEC\/Private.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Net\/DNS\/SEC\/RSA.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Net\/DNS\/SEC\/libcrypto.pod" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Net\/DNS\/SEC.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Net\/IDN\/Encode.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Net\/IDN\/Overview.pod" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Net\/IDN\/Punycode\/PP.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Net\/IDN\/Punycode.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Net\/IDN\/Standards.pod" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Net\/IDN\/UTS46\/_Mapping.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Net\/IDN\/UTS46.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Net\/LibIDN2.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/Net\/Patricia.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/NetAddr\/IP\/InetBase.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/NetAddr\/IP\/Lite.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/NetAddr\/IP\/Util.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/NetAddr\/IP\/UtilPP.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/NetAddr\/IP\/Util_IS.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/NetAddr\/IP.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/BSD\/Resource\/.packlist" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/BSD\/Resource\/Resource.so" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/BSD\/Resource\/_find_prio.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/BSD\/Resource\/_find_rlimit.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/BSD\/Resource\/_g.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/BSD\/Resource\/autosplit.ix" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/BSD\/Resource\/get_prios.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/BSD\/Resource\/get_rlimits.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/BSD\/Resource\/getpriority.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/BSD\/Resource\/getrlimit.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/BSD\/Resource\/getrusage.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/BSD\/Resource\/hard.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/BSD\/Resource\/idrss.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/BSD\/Resource\/inblock.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/BSD\/Resource\/isrss.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/BSD\/Resource\/ixrss.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/BSD\/Resource\/majflt.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/BSD\/Resource\/maxrss.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/BSD\/Resource\/minflt.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/BSD\/Resource\/msgrcv.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/BSD\/Resource\/msgsnd.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/BSD\/Resource\/nivcsw.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/BSD\/Resource\/nsignals.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/BSD\/Resource\/nswap.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/BSD\/Resource\/nvcsw.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/BSD\/Resource\/oublock.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/BSD\/Resource\/setpriority.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/BSD\/Resource\/setrlimit.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/BSD\/Resource\/soft.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/BSD\/Resource\/stime.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/BSD\/Resource\/times.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/BSD\/Resource\/utime.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/Class\/Tiny\/.packlist" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/Crypt\/OpenSSL\/Bignum\/.packlist" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/Crypt\/OpenSSL\/Bignum\/Bignum.so" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/Crypt\/OpenSSL\/Guess\/.packlist" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/Crypt\/OpenSSL\/RSA\/.packlist" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/Crypt\/OpenSSL\/RSA\/RSA.so" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/Crypt\/OpenSSL\/Random\/.packlist" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/Crypt\/OpenSSL\/Random\/Random.so" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/CryptX\/.packlist" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/CryptX\/CryptX.so" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/DBIx\/Simple\/.packlist" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/Data\/Dumper\/Concise\/.packlist" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/Data\/IEEE754\/.packlist" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/Data\/Printer\/.packlist" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/Data\/Validate\/IP\/.packlist" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/Digest\/BubbleBabble\/.packlist" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/Encode\/Detect\/.packlist" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/Encode\/Detect\/Detector\/Detector.so" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/GeoIP2\/.packlist" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/IO\/Multiplex\/.packlist" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/Mail\/AuthenticationResults\/.packlist" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/Mail\/DKIM\/.packlist" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/Mail\/DMARC\/.packlist" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/Mail\/SPF\/.packlist" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/Mail\/SpamAssassin\/.packlist" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/MaxMind\/DB\/Common\/.packlist" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/MaxMind\/DB\/Reader\/.packlist" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/MooX\/StrictConstructor\/.packlist" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/Net\/CIDR\/Lite\/.packlist" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/Net\/DNS\/.packlist" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/Net\/DNS\/Resolver\/Programmable\/.packlist" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/Net\/DNS\/SEC\/.packlist" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/Net\/DNS\/SEC\/SEC.so" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/Net\/IDN\/Encode\/.packlist" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/Net\/IDN\/Punycode\/Punycode.so" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/Net\/IMAP\/Simple\/.packlist" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/Net\/IP\/.packlist" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/Net\/LibIDN2\/.packlist" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/Net\/LibIDN2\/LibIDN2.so" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/Net\/Patricia\/.packlist" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/Net\/Patricia\/Patricia.so" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/Net\/SMTPS\/.packlist" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/Net\/Server\/.packlist" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/.packlist" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/InetBase\/_inet_ntop.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/InetBase\/_inet_pton.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/InetBase\/_packzeros.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/InetBase\/autosplit.ix" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/InetBase\/inet_any2n.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/InetBase\/inet_n2ad.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/InetBase\/inet_n2dx.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/InetBase\/inet_ntoa.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/InetBase\/ipv6_aton.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/InetBase\/ipv6_ntoa.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/Util\/Util.so" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/Util\/autosplit.ix" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/UtilPP\/_128x10.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/UtilPP\/_128x2.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/UtilPP\/_bcd2bin.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/UtilPP\/_bcdcheck.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/UtilPP\/_bin2bcdn.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/UtilPP\/_deadlen.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/UtilPP\/_sa128.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/UtilPP\/add128.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/UtilPP\/addconst.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/UtilPP\/autosplit.ix" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/UtilPP\/bcd2bin.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/UtilPP\/bcdn2bin.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/UtilPP\/bcdn2txt.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/UtilPP\/bin2bcd.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/UtilPP\/bin2bcdn.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/UtilPP\/comp128.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/UtilPP\/hasbits.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/UtilPP\/ipanyto6.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/UtilPP\/ipv4to6.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/UtilPP\/ipv6to4.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/UtilPP\/mask4to6.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/UtilPP\/maskanyto6.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/UtilPP\/notcontiguous.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/UtilPP\/shiftleft.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/UtilPP\/simple_pack.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/UtilPP\/slowadd128.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/UtilPP\/sub128.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/_compV6.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/_compact_v6.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/_splitplan.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/_splitref.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/autosplit.ix" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/canon.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/coalesce.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/compactref.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/do_prefix.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/hostenum.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/mod_version.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/nprefix.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/prefix.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/re.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/re6.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/short.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/NetAddr\/IP\/wildcard.al" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/Scope\/Guard\/.packlist" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.44\/x86_64-linux\/auto\/Test\/File\/ShareDir\/.packlist" ],
+            
+              [  "usr\/share\/doc\/BSD-Resource-1.291.100-r3\/ChangeLog.bz2" ],
+            
+              [  "usr\/share\/doc\/BSD-Resource-1.291.100-r3\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/Class-Tiny-1.8.0\/Changes.bz2" ],
+            
+              [  "usr\/share\/doc\/Class-Tiny-1.8.0\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/Crypt-OpenSSL-Bignum-0.90.0-r1\/Changes.bz2" ],
+            
+              [  "usr\/share\/doc\/Crypt-OpenSSL-Bignum-0.90.0-r1\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/Crypt-OpenSSL-Guess-0.150.0\/Changes.bz2" ],
+            
+              [  "usr\/share\/doc\/Crypt-OpenSSL-Guess-0.150.0\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/Crypt-OpenSSL-RSA-0.370.0\/Changes.bz2" ],
+            
+              [  "usr\/share\/doc\/Crypt-OpenSSL-RSA-0.370.0\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/Crypt-OpenSSL-RSA-0.370.0\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/Crypt-OpenSSL-Random-0.170.0\/Changes.bz2" ],
+            
+              [  "usr\/share\/doc\/Crypt-OpenSSL-Random-0.170.0\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/CryptX-0.90.0\/Changes.bz2" ],
+            
+              [  "usr\/share\/doc\/CryptX-0.90.0\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/DBIx-Simple-1.370.0-r1\/Changes.bz2" ],
+            
+              [  "usr\/share\/doc\/DBIx-Simple-1.370.0-r1\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/Data-Dumper-Concise-2.23.0-r1\/Changes.bz2" ],
+            
+              [  "usr\/share\/doc\/Data-Dumper-Concise-2.23.0-r1\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/Data-IEEE754-0.20.0\/Changes" ],
+            
+              [  "usr\/share\/doc\/Data-IEEE754-0.20.0\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/Data-Printer-1.2.1\/Changes.bz2" ],
+            
+              [  "usr\/share\/doc\/Data-Printer-1.2.1\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/Data-Validate-IP-0.310.0\/Changes.bz2" ],
+            
+              [  "usr\/share\/doc\/Data-Validate-IP-0.310.0\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/Digest-BubbleBabble-0.20.0-r3\/Changes.bz2" ],
+            
+              [  "usr\/share\/doc\/Digest-BubbleBabble-0.20.0-r3\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/Encode-Detect-1.10.0-r3\/Changes.bz2" ],
+            
+              [  "usr\/share\/doc\/GeoIP2-2.6.2-r1\/Changes.bz2" ],
+            
+              [  "usr\/share\/doc\/GeoIP2-2.6.2-r1\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/IO-Multiplex-1.160.0-r2\/Changes.bz2" ],
+            
+              [  "usr\/share\/doc\/IO-Multiplex-1.160.0-r2\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/IO-Multiplex-1.160.0-r2\/TODO.bz2" ],
+            
+              [  "usr\/share\/doc\/Mail-AuthenticationResults-2.202.507.90\/Changes.bz2" ],
+            
+              [  "usr\/share\/doc\/Mail-AuthenticationResults-2.202.507.90\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/Mail-AuthenticationResults-2.202.507.90\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/Mail-DKIM-1.202.409.230\/Changes.bz2" ],
+            
+              [  "usr\/share\/doc\/Mail-DKIM-1.202.409.230\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/Mail-DKIM-1.202.409.230\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/Mail-DKIM-1.202.409.230\/TODO.bz2" ],
+            
+              [  "usr\/share\/doc\/Mail-DKIM-1.202.409.230\/async_dns.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/Mail-DKIM-1.202.409.230\/common_verification_problems.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/Mail-DKIM-1.202.409.230\/dk_headers.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/Mail-DKIM-1.202.409.230\/dkim_errata.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/Mail-DKIM-1.202.409.230\/policies.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/Mail-DKIM-1.202.409.230\/qp1.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/Mail-DMARC-1.202.508.50\/Changes.md.bz2" ],
+            
+              [  "usr\/share\/doc\/Mail-DMARC-1.202.508.50\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/Mail-SPF-3.202.505.50\/Changes.bz2" ],
+            
+              [  "usr\/share\/doc\/Mail-SPF-3.202.505.50\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/Mail-SPF-3.202.505.50\/TODO.bz2" ],
+            
+              [  "usr\/share\/doc\/MaxMind-DB-Common-0.40.1-r1\/Changes.bz2" ],
+            
+              [  "usr\/share\/doc\/MaxMind-DB-Common-0.40.1-r1\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/MaxMind-DB-Reader-1.0.14-r1\/Changes.bz2" ],
+            
+              [  "usr\/share\/doc\/MaxMind-DB-Reader-1.0.14-r1\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/MooX-StrictConstructor-0.13.0\/Changes.bz2" ],
+            
+              [  "usr\/share\/doc\/MooX-StrictConstructor-0.13.0\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/Net-CIDR-Lite-0.240.0\/Changes.bz2" ],
+            
+              [  "usr\/share\/doc\/Net-CIDR-Lite-0.240.0\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/Net-DNS-1.560.0\/Changes.bz2" ],
+            
+              [  "usr\/share\/doc\/Net-DNS-1.560.0\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/Net-DNS-Resolver-Programmable-0.9.0-r1\/CHANGES.bz2" ],
+            
+              [  "usr\/share\/doc\/Net-DNS-Resolver-Programmable-0.9.0-r1\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/Net-DNS-Resolver-Programmable-0.9.0-r1\/TODO.bz2" ],
+            
+              [  "usr\/share\/doc\/Net-DNS-SEC-1.260.0\/Changes.bz2" ],
+            
+              [  "usr\/share\/doc\/Net-DNS-SEC-1.260.0\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/Net-IDN-Encode-2.500.0-r3\/Changes.bz2" ],
+            
+              [  "usr\/share\/doc\/Net-IDN-Encode-2.500.0-r3\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/Net-IMAP-Simple-1.221.200\/Changes.bz2" ],
+            
+              [  "usr\/share\/doc\/Net-IMAP-Simple-1.221.200\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/Net-IMAP-Simple-1.221.200\/TODO.bz2" ],
+            
+              [  "usr\/share\/doc\/Net-IP-1.260.0-r2\/Changes.bz2" ],
+            
+              [  "usr\/share\/doc\/Net-IP-1.260.0-r2\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/Net-LibIDN2-1.20.0-r1\/Changes.bz2" ],
+            
+              [  "usr\/share\/doc\/Net-LibIDN2-1.20.0-r1\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/Net-Patricia-1.240.0\/Changes.bz2" ],
+            
+              [  "usr\/share\/doc\/Net-Patricia-1.240.0\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/Net-SMTPS-0.100.0\/Changes.bz2" ],
+            
+              [  "usr\/share\/doc\/Net-SMTPS-0.100.0\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/Net-Server-2.14.0-r1\/Changes.bz2" ],
+            
+              [  "usr\/share\/doc\/Net-Server-2.14.0-r1\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/NetAddr-IP-4.79.0-r1\/Changes.bz2" ],
+            
+              [  "usr\/share\/doc\/NetAddr-IP-4.79.0-r1\/TODO" ],
+            
+              [  "usr\/share\/doc\/Scope-Guard-0.210.0-r1\/Changes.bz2" ],
+            
+              [  "usr\/share\/doc\/Scope-Guard-0.210.0-r1\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/Test-File-ShareDir-1.1.2-r1\/Changes.bz2" ],
+            
+              [  "usr\/share\/doc\/Test-File-ShareDir-1.1.2-r1\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/spamassassin-4.0.2\/CREDITS.bz2" ],
+            
+              [  "usr\/share\/doc\/spamassassin-4.0.2\/NOTICE.bz2" ],
+            
+              [  "usr\/share\/doc\/spamassassin-4.0.2\/PROTOCOL.bz2" ],
+            
+              [  "usr\/share\/doc\/spamassassin-4.0.2\/README.apache.bz2" ],
+            
+              [  "usr\/share\/doc\/spamassassin-4.0.2\/README.awl.bz2" ],
+            
+              [  "usr\/share\/doc\/spamassassin-4.0.2\/README.bayes.bz2" ],
+            
+              [  "usr\/share\/doc\/spamassassin-4.0.2\/README.ldap.bz2" ],
+            
+              [  "usr\/share\/doc\/spamassassin-4.0.2\/README.spamd.bz2" ],
+            
+              [  "usr\/share\/doc\/spamassassin-4.0.2\/README.sql.bz2" ],
+            
+              [  "usr\/share\/doc\/spamassassin-4.0.2\/README.vpopmail.bz2" ],
+            
+              [  "usr\/share\/doc\/spamassassin-4.0.2\/TRADEMARK.bz2" ],
+            
+              [  "usr\/share\/doc\/spamassassin-4.0.2\/UPGRADE.bz2" ],
+            
+              [  "usr\/share\/doc\/spamassassin-4.0.2\/USAGE.bz2" ],
+            
+              [  "usr\/share\/doc\/spamassassin-4.0.2\/procmailrc.example.bz2" ],
+            
+              [  "usr\/share\/doc\/spamassassin-4.0.2\/sample-nonspam.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/spamassassin-4.0.2\/sample-spam.txt.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/dmarc_http_client.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/dmarc_httpd.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/dmarc_lookup.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/dmarc_receive.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/dmarc_send_reports.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/dmarc_update_public_suffix_list.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/dmarc_view_reports.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/net-server.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/sa-awl.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/sa-check_spamd.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/sa-compile.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/sa-learn.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/sa-update.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/spamassassin-run.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/spamassassin.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/spamc.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/spamd.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/spfd.pl.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/spfquery.pl.1.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::AICache.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::ArchiveIterator.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::AsyncLoop.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::AutoWelcomelist.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Bayes.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::BayesStore.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::BayesStore::BDB.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::BayesStore::MySQL.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::BayesStore::PgSQL.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::BayesStore::Redis.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::BayesStore::SQL.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Client.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Conf.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Conf::LDAP.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Conf::Parser.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Conf::SQL.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::DnsResolver.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::GeoDB.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::HTML::Color.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Header.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Header::ParameterHeader.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Logger.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Logger::File.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Logger::Stderr.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Logger::Syslog.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Message.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Message::Metadata.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Message::Node.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::PerMsgLearner.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::PerMsgStatus.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::PersistentAddrList.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Plugin.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Plugin::ASN.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Plugin::AWL.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Plugin::AccessDB.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Plugin::AntiVirus.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Plugin::AskDNS.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Plugin::AuthRes.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Plugin::AutoLearnThreshold.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Plugin::Bayes.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Plugin::BodyRuleBaseExtractor.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Plugin::Check.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Plugin::DCC.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Plugin::DKIM.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Plugin::DMARC.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Plugin::DNSEval.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Plugin::DecodeShortURLs.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Plugin::ExtractText.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Plugin::FreeMail.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Plugin::FromNameSpoof.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Plugin::HashBL.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Plugin::HeaderEval.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Plugin::MIMEEval.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Plugin::MIMEHeader.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Plugin::OLEVBMacro.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Plugin::OneLineBodyRuleType.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Plugin::PDFInfo.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Plugin::PhishTag.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Plugin::Phishing.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Plugin::Pyzor.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Plugin::Razor2.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Plugin::Redirectors.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Plugin::RelayCountry.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Plugin::ReplaceTags.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Plugin::ResourceLimits.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Plugin::Reuse.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Plugin::Rule2XSBody.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Plugin::SPF.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Plugin::Shortcircuit.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Plugin::SpamCop.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Plugin::Test.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Plugin::TextCat.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Plugin::TxRep.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Plugin::URIDNSBL.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Plugin::URIDetail.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Plugin::URILocalBL.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Plugin::VBounce.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Plugin::WLBLEval.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Plugin::WelcomeListSubject.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::PluginHandler.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Pyzor.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Pyzor::Client.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Pyzor::Digest.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Pyzor::Digest::Pieces.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Pyzor::Digest::StripHtml.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::RegistryBoundaries.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::SQLBasedAddrList.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::SubProcBackChannel.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Timeout.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Util.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Util::DependencyInfo.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/Mail::SpamAssassin::Util::Progress.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/spamassassin-run.3pm.bz2" ],
+            
+              [  "usr\/share\/mocaccino\/packagelists\/apps-spamassassin-4.0.2\u002b6.pkglist" ],
+            
+              [  "usr\/share\/spamassassin\/languages" ],
+            
+              [  "usr\/share\/spamassassin\/sa-update-pubkey.txt" ],
+            
+              [  "usr\/share\/spamassassin\/user_prefs.template" ],
+            
+              [  "var\/lib\/spamassassin\/.keep_mail-filter_spamassassin-0" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

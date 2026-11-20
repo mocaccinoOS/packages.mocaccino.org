@@ -1,0 +1,847 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing apps/gitlab-cli-1.119.0 in mocaccino-community-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> apps/gitlab-cli-1.119.0
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                The official gitlab command line interface
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-community-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-community-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of apps/gitlab-cli
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/mocaccino-community:gitlab-cli-apps-1.119.0" target="_blank"> quay.io/mocaccino/mocaccino-community:gitlab-cli-apps-1.119.0 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/mocaccino-community:gitlab-cli-apps-1.119.0/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 1.119.0  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> MIT </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/system-x">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  system-x &gt;=0 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: dev-util/gitlab-cli
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://gitlab.com/gitlab-org/cli" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://gitlab.com/gitlab-org/cli </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-util/gitlab-cli">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  gitlab-cli &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "usr\/bin\/glab" ],
+            
+              [  "usr\/share\/bash-completion\/completions\/glab" ],
+            
+              [  "usr\/share\/doc\/gitlab-cli-1.119.0\/README.md.bz2" ],
+            
+              [  "usr\/share\/fish\/vendor_completions.d\/glab.fish" ],
+            
+              [  "usr\/share\/man\/man1\/glab-alias-delete.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-alias-list.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-alias-set.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-alias.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-api.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-artifact-registry-get-token.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-artifact-registry-login.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-artifact-registry-status.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-artifact-registry.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-attestation-verify.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-attestation.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-auth-configure-docker.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-auth-docker-helper.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-auth-dpop-gen.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-auth-login.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-auth-logout.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-auth-status.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-auth.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-changelog-generate.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-changelog.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-check-update.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-ci-cancel-job.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-ci-cancel-pipeline.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-ci-cancel.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-ci-config-compile.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-ci-config.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-ci-delete.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-ci-get.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-ci-lint.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-ci-list.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-ci-retry.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-ci-run-trig.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-ci-run.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-ci-status.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-ci-trace.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-ci-trigger.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-ci-view.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-ci.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-cluster-agent-bootstrap.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-cluster-agent-check-manifest-usage.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-cluster-agent-get-token.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-cluster-agent-list.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-cluster-agent-token-cache-clear.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-cluster-agent-token-cache-list.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-cluster-agent-token-cache.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-cluster-agent-token-list.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-cluster-agent-token-revoke.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-cluster-agent-token.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-cluster-agent-update-kubeconfig.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-cluster-agent.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-cluster-graph.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-cluster.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-completion.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-config-edit.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-config-get.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-config-path.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-config-set.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-config.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-container-registry-repository-delete.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-container-registry-repository-list.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-container-registry-repository-view.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-container-registry-repository.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-container-registry-tag-delete.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-container-registry-tag-list.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-container-registry-tag-view.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-container-registry-tag.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-container-registry.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-dependency-firewall-bundle.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-dependency-firewall-ci-summary.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-dependency-firewall-gem.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-dependency-firewall-gradle.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-dependency-firewall-maven.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-dependency-firewall-npm.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-dependency-firewall-pip.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-dependency-firewall-pipenv.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-dependency-firewall-pnpm.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-dependency-firewall-poetry.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-dependency-firewall-twine.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-dependency-firewall-uv.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-dependency-firewall-yarn.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-dependency-firewall.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-deploy-key-add.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-deploy-key-delete.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-deploy-key-get.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-deploy-key-list.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-deploy-key.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-duo-cli.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-duo.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-govern-audit-sync.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-govern-audit.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-govern-doctor.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-govern-setup.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-govern.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-gpg-key-add.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-gpg-key-delete.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-gpg-key-get.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-gpg-key-list.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-gpg-key.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-incident-close.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-incident-list.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-incident-note.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-incident-reopen.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-incident-subscribe.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-incident-unsubscribe.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-incident-view.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-incident.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-issue-board-create.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-issue-board-view.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-issue-board.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-issue-close.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-issue-create.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-issue-delete.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-issue-list.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-issue-note.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-issue-reopen.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-issue-subscribe.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-issue-unsubscribe.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-issue-update.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-issue-view.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-issue.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-iteration-list.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-iteration.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-job-artifact.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-job.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-label-create.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-label-delete.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-label-edit.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-label-get.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-label-list.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-label.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-mcp-serve.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-mcp.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-milestone-create.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-milestone-delete.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-milestone-edit.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-milestone-get.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-milestone-list.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-milestone.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-mr-approve.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-mr-approvers.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-mr-checkout.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-mr-close.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-mr-create.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-mr-delete.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-mr-diff.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-mr-issues.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-mr-list.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-mr-merge.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-mr-note-create.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-mr-note-delete.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-mr-note-list.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-mr-note-publish.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-mr-note-reopen.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-mr-note-resolve.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-mr-note-update.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-mr-note.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-mr-rebase.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-mr-reopen.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-mr-revoke.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-mr-subscribe.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-mr-todo.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-mr-unsubscribe.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-mr-update.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-mr-view.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-mr.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-opentofu-init.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-opentofu-state-delete.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-opentofu-state-download.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-opentofu-state-list.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-opentofu-state-lock.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-opentofu-state-unlock.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-opentofu-state.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-opentofu.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-orbit.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-packages-delete.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-packages-download.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-packages-list.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-packages-upload.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-packages.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-release-create.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-release-delete.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-release-download.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-release-list.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-release-upload.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-release-view.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-release.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-repo-archive.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-repo-clone.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-repo-contributors.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-repo-create.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-repo-delete.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-repo-fork.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-repo-list.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-repo-members-add.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-repo-members-remove.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-repo-members.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-repo-mirror.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-repo-prune.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-repo-publish-catalog.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-repo-publish.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-repo-remote-add.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-repo-remote.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-repo-search.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-repo-transfer.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-repo-update.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-repo-view.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-repo.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-runner-assign.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-runner-controller-create.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-runner-controller-delete.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-runner-controller-get.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-runner-controller-list.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-runner-controller-scope-create.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-runner-controller-scope-delete.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-runner-controller-scope-list.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-runner-controller-scope.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-runner-controller-token-create.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-runner-controller-token-list.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-runner-controller-token-revoke.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-runner-controller-token-rotate.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-runner-controller-token.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-runner-controller-update.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-runner-controller.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-runner-delete.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-runner-jobs.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-runner-list.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-runner-managers.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-runner-unassign.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-runner-update.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-runner.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-schedule-create.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-schedule-delete.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-schedule-list.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-schedule-run.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-schedule-update.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-schedule.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-search-semantic.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-search.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-securefile-create.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-securefile-download.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-securefile-get.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-securefile-list.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-securefile-remove.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-securefile-update.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-securefile.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-security-config-disable.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-security-config-enable.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-security-config-status.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-security-config.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-security.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-skills-get.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-skills-install.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-skills-list.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-skills-update.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-skills.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-snippet-create.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-snippet.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-ssh-key-add.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-ssh-key-delete.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-ssh-key-get.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-ssh-key-list.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-ssh-key.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-stack-amend.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-stack-create.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-stack-first.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-stack-infer.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-stack-last.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-stack-list.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-stack-move.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-stack-next.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-stack-prev.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-stack-reorder.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-stack-save.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-stack-switch.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-stack-sync.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-stack.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-todo-done.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-todo-list.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-todo.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-token-create.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-token-list.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-token-revoke.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-token-rotate.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-token.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-user-events.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-user.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-variable-delete.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-variable-export.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-variable-get.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-variable-import.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-variable-list.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-variable-set.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-variable-update.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-variable.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-version.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-whatsnew.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-work-items-create.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-work-items-delete.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-work-items-list.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-work-items-update.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab-work-items.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/glab.1.bz2" ],
+            
+              [  "usr\/share\/mocaccino\/packagelists\/apps-gitlab-cli-1.119.0.pkglist" ],
+            
+              [  "usr\/share\/zsh\/site-functions\/_glab" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

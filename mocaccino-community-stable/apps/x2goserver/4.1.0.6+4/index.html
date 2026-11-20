@@ -1,0 +1,612 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing apps/x2goserver-4.1.0.6&#43;4 in mocaccino-community-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> apps/x2goserver-4.1.0.6&#43;4
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                The X2Go server
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-community-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-community-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of apps/x2goserver
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/mocaccino-community:x2goserver-apps-4.1.0.6-4" target="_blank"> quay.io/mocaccino/mocaccino-community:x2goserver-apps-4.1.0.6-4 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/mocaccino-community:x2goserver-apps-4.1.0.6-4/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 4.1.0.6&#43;4  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> GPL-2 </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/perl-libs">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  perl-libs &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/apps/nx">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  nx 3.5.99.27-r2&#43;1 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/apps/xwininfo">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  xwininfo 1.1.7 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/entity/x2gouser">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  x2gouser &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/entity/x2goprint">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  x2goprint &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/fonts/font-cursor-misc">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  font-cursor-misc 1.0.4&#43;3 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: net-misc/x2goserver
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="http://www.x2go.org" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> http://www.x2go.org </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/net-misc/x2goserver">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  x2goserver &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "etc\/init.d\/x2gocleansessions" ],
+            
+              [  "etc\/logcheck\/ignore.d.server\/x2goserver" ],
+            
+              [  "etc\/sudoers.d\/x2goserver" ],
+            
+              [  "etc\/x2go\/Xresources" ],
+            
+              [  "etc\/x2go\/Xsession" ],
+            
+              [  "etc\/x2go\/applications" ],
+            
+              [  "etc\/x2go\/desktopsharing\/settings" ],
+            
+              [  "etc\/x2go\/keystrokes.cfg" ],
+            
+              [  "etc\/x2go\/x2go_logout" ],
+            
+              [  "etc\/x2go\/x2go_logout.d\/010_userscripts.sh" ],
+            
+              [  "etc\/x2go\/x2goagent.options" ],
+            
+              [  "etc\/x2go\/x2gokdrive.options" ],
+            
+              [  "etc\/x2go\/x2goserver.conf" ],
+            
+              [  "etc\/x2go\/x2gosql\/sql" ],
+            
+              [  "etc\/x2go\/xinitrc.d" ],
+            
+              [  "usr\/bin\/x2goagent" ],
+            
+              [  "usr\/bin\/x2gobasepath" ],
+            
+              [  "usr\/bin\/x2gocleansessions" ],
+            
+              [  "usr\/bin\/x2gocmdexitmessage" ],
+            
+              [  "usr\/bin\/x2godbadmin" ],
+            
+              [  "usr\/bin\/x2gofeature" ],
+            
+              [  "usr\/bin\/x2gofeaturelist" ],
+            
+              [  "usr\/bin\/x2gofm" ],
+            
+              [  "usr\/bin\/x2gogetapps" ],
+            
+              [  "usr\/bin\/x2gogetservers" ],
+            
+              [  "usr\/bin\/x2golistdesktops" ],
+            
+              [  "usr\/bin\/x2golistmounts" ],
+            
+              [  "usr\/bin\/x2golistsessions" ],
+            
+              [  "usr\/bin\/x2golistsessions_root" ],
+            
+              [  "usr\/bin\/x2golistshadowsessions" ],
+            
+              [  "usr\/bin\/x2gomountdirs" ],
+            
+              [  "usr\/bin\/x2gooptionsstring" ],
+            
+              [  "usr\/bin\/x2gopath" ],
+            
+              [  "usr\/bin\/x2goprint" ],
+            
+              [  "usr\/bin\/x2goresume-desktopsharing" ],
+            
+              [  "usr\/bin\/x2goresume-session" ],
+            
+              [  "usr\/bin\/x2goruncommand" ],
+            
+              [  "usr\/bin\/x2goserver-run-extensions" ],
+            
+              [  "usr\/bin\/x2gosessionlimit" ],
+            
+              [  "usr\/bin\/x2gosetkeyboard" ],
+            
+              [  "usr\/bin\/x2goshowblocks" ],
+            
+              [  "usr\/bin\/x2gostartagent" ],
+            
+              [  "usr\/bin\/x2gosuspend-desktopsharing" ],
+            
+              [  "usr\/bin\/x2gosuspend-session" ],
+            
+              [  "usr\/bin\/x2goterminate-desktopsharing" ],
+            
+              [  "usr\/bin\/x2goterminate-session" ],
+            
+              [  "usr\/bin\/x2goumount-session" ],
+            
+              [  "usr\/bin\/x2goversion" ],
+            
+              [  "usr\/lib\/systemd\/system\/x2gocleansessions.service" ],
+            
+              [  "usr\/lib\/sysusers.d\/acct-group-x2goprint.conf" ],
+            
+              [  "usr\/lib\/sysusers.d\/acct-group-x2gouser.conf" ],
+            
+              [  "usr\/lib\/sysusers.d\/acct-user-x2goprint.conf" ],
+            
+              [  "usr\/lib\/sysusers.d\/acct-user-x2gouser.conf" ],
+            
+              [  "usr\/lib\/tmpfiles.d\/x2goserver.conf" ],
+            
+              [  "usr\/lib64\/nx\/bin\/x2goagent" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.42\/X2Go\/Config.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.42\/X2Go\/Log.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.42\/X2Go\/Server\/Agent\/NX\/Options.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.42\/X2Go\/Server\/Agent\/NX.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.42\/X2Go\/Server\/Agent.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.42\/X2Go\/Server\/DB\/PostgreSQL.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.42\/X2Go\/Server\/DB\/SQLite3.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.42\/X2Go\/Server\/DB.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.42\/X2Go\/Server.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.42\/X2Go\/SupeReNicer.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.42\/X2Go\/Utils.pm" ],
+            
+              [  "usr\/lib64\/perl5\/vendor_perl\/5.42\/x86_64-linux\/auto\/x2goserver\/.packlist" ],
+            
+              [  "usr\/lib64\/x2go\/extensions\/fail-resume.d\/.placeholder" ],
+            
+              [  "usr\/lib64\/x2go\/extensions\/fail-runcommand.d\/.placeholder" ],
+            
+              [  "usr\/lib64\/x2go\/extensions\/fail-start.d\/.placeholder" ],
+            
+              [  "usr\/lib64\/x2go\/extensions\/fail-suspend.d\/.placeholder" ],
+            
+              [  "usr\/lib64\/x2go\/extensions\/fail-terminate.d\/.placeholder" ],
+            
+              [  "usr\/lib64\/x2go\/extensions\/post-resume.d\/.placeholder" ],
+            
+              [  "usr\/lib64\/x2go\/extensions\/post-runcommand.d\/.placeholder" ],
+            
+              [  "usr\/lib64\/x2go\/extensions\/post-start.d\/.placeholder" ],
+            
+              [  "usr\/lib64\/x2go\/extensions\/post-suspend.d\/.placeholder" ],
+            
+              [  "usr\/lib64\/x2go\/extensions\/post-terminate.d\/.placeholder" ],
+            
+              [  "usr\/lib64\/x2go\/extensions\/pre-resume.d\/.placeholder" ],
+            
+              [  "usr\/lib64\/x2go\/extensions\/pre-runcommand.d\/.placeholder" ],
+            
+              [  "usr\/lib64\/x2go\/extensions\/pre-start.d\/.placeholder" ],
+            
+              [  "usr\/lib64\/x2go\/extensions\/pre-suspend.d\/.placeholder" ],
+            
+              [  "usr\/lib64\/x2go\/extensions\/pre-terminate.d\/.placeholder" ],
+            
+              [  "usr\/lib64\/x2go\/libx2go-server-db-sqlite3-wrapper" ],
+            
+              [  "usr\/lib64\/x2go\/libx2go-server-db-sqlite3-wrapper.pl" ],
+            
+              [  "usr\/lib64\/x2go\/x2gochangestatus" ],
+            
+              [  "usr\/lib64\/x2go\/x2gocheckport" ],
+            
+              [  "usr\/lib64\/x2go\/x2gocreatesession" ],
+            
+              [  "usr\/lib64\/x2go\/x2gocreateshadowsession" ],
+            
+              [  "usr\/lib64\/x2go\/x2gogetagent" ],
+            
+              [  "usr\/lib64\/x2go\/x2gogetagentstate" ],
+            
+              [  "usr\/lib64\/x2go\/x2gogetdisplays" ],
+            
+              [  "usr\/lib64\/x2go\/x2gogetfreeport" ],
+            
+              [  "usr\/lib64\/x2go\/x2gogetports" ],
+            
+              [  "usr\/lib64\/x2go\/x2gogetrandomport" ],
+            
+              [  "usr\/lib64\/x2go\/x2gogetstatus" ],
+            
+              [  "usr\/lib64\/x2go\/x2goinsertport" ],
+            
+              [  "usr\/lib64\/x2go\/x2goinsertsession" ],
+            
+              [  "usr\/lib64\/x2go\/x2goinsertshadowsession" ],
+            
+              [  "usr\/lib64\/x2go\/x2goisint" ],
+            
+              [  "usr\/lib64\/x2go\/x2goistrue" ],
+            
+              [  "usr\/lib64\/x2go\/x2golistsessions_sql" ],
+            
+              [  "usr\/lib64\/x2go\/x2gologlevel" ],
+            
+              [  "usr\/lib64\/x2go\/x2goqueryconfig" ],
+            
+              [  "usr\/lib64\/x2go\/x2goresume" ],
+            
+              [  "usr\/lib64\/x2go\/x2gormforward" ],
+            
+              [  "usr\/lib64\/x2go\/x2gormport" ],
+            
+              [  "usr\/lib64\/x2go\/x2gosuspend-agent" ],
+            
+              [  "usr\/lib64\/x2go\/x2gosyslog" ],
+            
+              [  "usr\/share\/applications\/x2gofm.desktop" ],
+            
+              [  "usr\/share\/man\/man1\/x2goagent.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/x2gooptionsstring.1.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/X2Go::Config.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/X2Go::Log.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/X2Go::Server.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/X2Go::Server::Agent.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/X2Go::Server::Agent::NX.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/X2Go::Server::Agent::NX::Options.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/X2Go::Server::DB.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/X2Go::Server::DB::PostgreSQL.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/X2Go::Server::DB::SQLite3.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/X2Go::SupeReNicer.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/X2Go::Utils.3pm.bz2" ],
+            
+              [  "usr\/share\/man\/man5\/x2goserver.conf.5.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/x2gobasepath.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/x2gocleansessions.8" ],
+            
+              [  "usr\/share\/man\/man8\/x2gocmdexitmessage.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/x2godbadmin.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/x2gofeature.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/x2gofeaturelist.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/x2gofm.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/x2gogetapps.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/x2gogetservers.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/x2golistdesktops.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/x2golistmounts.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/x2golistsessions.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/x2golistsessions_root.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/x2golistshadowsessions.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/x2gomountdirs.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/x2gopath.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/x2goprint.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/x2goresume-desktopsharing.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/x2goresume-session.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/x2goruncommand.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/x2goserver-run-extensions.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/x2gosessionlimit.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/x2gosetkeyboard.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/x2goshowblocks.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/x2gostartagent.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/x2gosuspend-desktopsharing.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/x2gosuspend-session.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/x2goterminate-desktopsharing.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/x2goterminate-session.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/x2goumount-session.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/x2goversion.8.bz2" ],
+            
+              [  "usr\/share\/mime\/application\/sshfscdrom-x2go.xml" ],
+            
+              [  "usr\/share\/mime\/application\/sshfsdisk-x2go.xml" ],
+            
+              [  "usr\/share\/mime\/application\/sshfsremovable-x2go.xml" ],
+            
+              [  "usr\/share\/mime\/packages\/sshfs-x2go.xml" ],
+            
+              [  "usr\/share\/pixmaps\/x2goagent.xpm" ],
+            
+              [  "usr\/share\/x2go\/versions\/VERSION.x2goserver" ],
+            
+              [  "usr\/share\/x2go\/versions\/VERSION.x2goserver-common" ],
+            
+              [  "usr\/share\/x2go\/versions\/VERSION.x2goserver-desktopsharing" ],
+            
+              [  "usr\/share\/x2go\/versions\/VERSION.x2goserver-extensions" ],
+            
+              [  "usr\/share\/x2go\/versions\/VERSION.x2goserver-fmbindings" ],
+            
+              [  "usr\/share\/x2go\/versions\/VERSION.x2goserver-printing" ],
+            
+              [  "usr\/share\/x2go\/versions\/VERSION.x2goserver-x2goagent" ],
+            
+              [  "usr\/share\/x2go\/versions\/VERSION.x2goserver-x2gokdrive" ],
+            
+              [  "usr\/share\/x2go\/versions\/VERSION.x2goserver-xsession" ],
+            
+              [  "usr\/share\/x2go\/x2gofeature.d\/x2goserver-desktopsharing.features" ],
+            
+              [  "usr\/share\/x2go\/x2gofeature.d\/x2goserver-extensions.features" ],
+            
+              [  "usr\/share\/x2go\/x2gofeature.d\/x2goserver-fmbindings.features" ],
+            
+              [  "usr\/share\/x2go\/x2gofeature.d\/x2goserver-printing.features" ],
+            
+              [  "usr\/share\/x2go\/x2gofeature.d\/x2goserver-x2goagent.features" ],
+            
+              [  "usr\/share\/x2go\/x2gofeature.d\/x2goserver-x2gokdrive.features" ],
+            
+              [  "usr\/share\/x2go\/x2gofeature.d\/x2goserver-xsession.features" ],
+            
+              [  "usr\/share\/x2go\/x2gofeature.d\/x2goserver.features" ],
+            
+              [  "var\/lib\/x2go\/.keep_acct-user_x2gouser-0" ],
+            
+              [  "var\/spool\/x2goprint\/.keep_acct-user_x2goprint-0" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

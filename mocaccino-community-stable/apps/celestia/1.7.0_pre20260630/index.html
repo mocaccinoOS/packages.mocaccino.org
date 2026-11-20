@@ -1,0 +1,2013 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing apps/celestia-1.7.0_pre20260630 in mocaccino-community-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> apps/celestia-1.7.0_pre20260630
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                OpenGL 3D space simulator
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-community-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-community-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of apps/celestia
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/mocaccino-community:celestia-apps-1.7.0_pre20260630" target="_blank"> quay.io/mocaccino/mocaccino-community:celestia-apps-1.7.0_pre20260630 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/mocaccino-community:celestia-apps-1.7.0_pre20260630/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 1.7.0_pre20260630  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> GPL-2&#43; </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/qt">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  qt &gt;=0 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: sci-astronomy/celestia
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://celestia.space" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://celestia.space </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/sci-astronomy/celestia">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  celestia &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "usr\/bin\/celestia-qt6" ],
+            
+              [  "usr\/lib64\/libcelestia.so.1.7" ],
+            
+              [  "usr\/lib64\/libcelestia.so.1.7.0" ],
+            
+              [  "usr\/share\/applications\/space.celestiaproject.celestia_qt6.desktop" ],
+            
+              [  "usr\/share\/celestia\/COPYING" ],
+            
+              [  "usr\/share\/celestia\/celestia.cfg" ],
+            
+              [  "usr\/share\/celestia\/controls.txt" ],
+            
+              [  "usr\/share\/celestia\/data\/asterisms.dat" ],
+            
+              [  "usr\/share\/celestia\/data\/asteroids.ssc" ],
+            
+              [  "usr\/share\/celestia\/data\/asteroids_locs.ssc" ],
+            
+              [  "usr\/share\/celestia\/data\/boundaries.dat" ],
+            
+              [  "usr\/share\/celestia\/data\/boundaries.dat.license" ],
+            
+              [  "usr\/share\/celestia\/data\/comets.ssc" ],
+            
+              [  "usr\/share\/celestia\/data\/dwarfplanets.ssc" ],
+            
+              [  "usr\/share\/celestia\/data\/dwarfplanets_locs.ssc" ],
+            
+              [  "usr\/share\/celestia\/data\/earth_locs.ssc" ],
+            
+              [  "usr\/share\/celestia\/data\/extrasolar.ssc" ],
+            
+              [  "usr\/share\/celestia\/data\/extrasolar.stc" ],
+            
+              [  "usr\/share\/celestia\/data\/galaxies.dsc" ],
+            
+              [  "usr\/share\/celestia\/data\/globulars.dsc" ],
+            
+              [  "usr\/share\/celestia\/data\/interstellar.ssc" ],
+            
+              [  "usr\/share\/celestia\/data\/jupitermoons_locs.ssc" ],
+            
+              [  "usr\/share\/celestia\/data\/mars_locs.ssc" ],
+            
+              [  "usr\/share\/celestia\/data\/marsmoons_locs.ssc" ],
+            
+              [  "usr\/share\/celestia\/data\/merc_locs.ssc" ],
+            
+              [  "usr\/share\/celestia\/data\/minormoons.ssc" ],
+            
+              [  "usr\/share\/celestia\/data\/moon_locs.ssc" ],
+            
+              [  "usr\/share\/celestia\/data\/neptunemoons_locs.ssc" ],
+            
+              [  "usr\/share\/celestia\/data\/openclusters.dsc" ],
+            
+              [  "usr\/share\/celestia\/data\/outersys.ssc" ],
+            
+              [  "usr\/share\/celestia\/data\/pulsars.stc" ],
+            
+              [  "usr\/share\/celestia\/data\/ring_locs.ssc" ],
+            
+              [  "usr\/share\/celestia\/data\/saturnmoons_locs.ssc" ],
+            
+              [  "usr\/share\/celestia\/data\/solarsys.ssc" ],
+            
+              [  "usr\/share\/celestia\/data\/starnames.dat" ],
+            
+              [  "usr\/share\/celestia\/data\/starnames.dat.license" ],
+            
+              [  "usr\/share\/celestia\/data\/stars-charm2.stc" ],
+            
+              [  "usr\/share\/celestia\/data\/stars-named.stc" ],
+            
+              [  "usr\/share\/celestia\/data\/stars-near.stc" ],
+            
+              [  "usr\/share\/celestia\/data\/stars-revised.stc" ],
+            
+              [  "usr\/share\/celestia\/data\/stars-spectbins.stc" ],
+            
+              [  "usr\/share\/celestia\/data\/stars-visualbins.stc" ],
+            
+              [  "usr\/share\/celestia\/data\/stars.dat" ],
+            
+              [  "usr\/share\/celestia\/data\/stars.dat.license" ],
+            
+              [  "usr\/share\/celestia\/data\/starxindex-hd.dat" ],
+            
+              [  "usr\/share\/celestia\/data\/starxindex-hd.dat.license" ],
+            
+              [  "usr\/share\/celestia\/data\/starxindex-sao.dat" ],
+            
+              [  "usr\/share\/celestia\/data\/starxindex-sao.dat.license" ],
+            
+              [  "usr\/share\/celestia\/data\/uranusmoons_locs.ssc" ],
+            
+              [  "usr\/share\/celestia\/data\/venus_locs.ssc" ],
+            
+              [  "usr\/share\/celestia\/data\/whitedwarfs.stc" ],
+            
+              [  "usr\/share\/celestia\/data\/world-capitals.ssc" ],
+            
+              [  "usr\/share\/celestia\/demo.cel" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/99942_apophis\/99942_apophis.ssc" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/99942_apophis\/data\/99942_apophis.xyzv" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/99942_apophis\/models\/apophis.cmod" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/99942_apophis\/models\/apophis.cmod.license" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/apollo\/apollo.ssc" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/apollo\/models\/apollo.3ds" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/cassini\/cassini.ssc" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/cassini\/data\/cassini-cruise.xyzv" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/cassini\/data\/cassini-saturn_01y.xyzv" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/cassini\/data\/cassini-saturn_02y.xyzv" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/cassini\/data\/cassini-saturn_03y.xyzv" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/cassini\/data\/cassini-saturn_04y.xyzv" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/cassini\/data\/cassini-saturn_05y.xyzv" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/cassini\/data\/cassini-saturn_06y.xyzv" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/cassini\/data\/cassini-saturn_07y.xyzv" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/cassini\/data\/cassini-saturn_08y.xyzv" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/cassini\/data\/cassini-saturn_09y.xyzv" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/cassini\/data\/cassini-saturn_10y.xyzv" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/cassini\/data\/cassini-saturn_11y.xyzv" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/cassini\/data\/cassini-saturn_12y.xyzv" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/cassini\/data\/cassini-saturn_13y.xyzv" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/cassini\/data\/cassini-saturn_14y.xyzv" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/cassini\/data\/huygens.xyzv" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/cassini\/models\/cassini.3ds" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/cassini\/models\/huygens.3ds" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/galileo\/data\/galileo-cruise.xyzv" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/galileo\/data\/galileo-orbit.xyzv" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/galileo\/data\/galileo-probe.xyzv" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/galileo\/galileo.ssc" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/galileo\/models\/galileo-probe.3ds" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/galileo\/models\/galileo.cmod" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/galileo\/textures\/medres\/Galileo_Probe.jpg" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/galileo\/textures\/medres\/foil_gold_ramp.png" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/galileo\/textures\/medres\/foil_n.png" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/galileo\/textures\/medres\/galileo_tex_01.jpg" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/galileo\/textures\/medres\/galileo_tex_02.jpg" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/hubble\/hubble.ssc" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/hubble\/models\/hubble.cmod" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/iss\/iss.ssc" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/iss\/models\/iss.cmod" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/iss\/textures\/medres\/iss_01.png" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/iss\/textures\/medres\/iss_02.png" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/iss\/textures\/medres\/iss_03.png" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/iss\/textures\/medres\/iss_04.png" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/iss\/textures\/medres\/iss_05.png" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/iss\/textures\/medres\/iss_06.png" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/iss\/textures\/medres\/iss_07.png" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/iss\/textures\/medres\/iss_08.png" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/iss\/textures\/medres\/iss_09.png" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/iss\/textures\/medres\/iss_10.png" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/iss\/textures\/medres\/iss_11.png" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/iss\/textures\/medres\/iss_12.png" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/iss\/textures\/medres\/iss_13.png" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/mir\/mir.ssc" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/mir\/models\/mir.cmod" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/mir\/models\/mir.cmod.license" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/mir\/textures\/medres\/ODS_collar.png" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/mir\/textures\/medres\/ODS_collar.png.license" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/mir\/textures\/medres\/chrome.png" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/mir\/textures\/medres\/chrome.png.license" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/mir\/textures\/medres\/dock.png" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/mir\/textures\/medres\/dock.png.license" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/mir\/textures\/medres\/docking_ring.png" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/mir\/textures\/medres\/docking_ring.png.license" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/mir\/textures\/medres\/dockkr.png" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/mir\/textures\/medres\/dockkr.png.license" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/mir\/textures\/medres\/metallwhite.png" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/mir\/textures\/medres\/metallwhite.png.license" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/mir\/textures\/medres\/mir.png" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/mir\/textures\/medres\/mir.png.license" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/mir\/textures\/medres\/multi.png" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/mir\/textures\/medres\/multi.png.license" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/mir\/textures\/medres\/paneliss3.png" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/mir\/textures\/medres\/paneliss3.png.license" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/shroxclassic\/models\/gemini.3ds" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/shroxclassic\/models\/mercury7.3ds" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/shroxclassic\/shroxclassic.ssc" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/shroxmars\/models\/marsglobalsurvr.3ds" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/shroxmars\/models\/marsodyssey.3ds" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/shroxmars\/shroxmars.ssc" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/skylab\/models\/skylab.3ds" ],
+            
+              [  "usr\/share\/celestia\/extras-standard\/skylab\/skylab.ssc" ],
+            
+              [  "usr\/share\/celestia\/fonts\/DejaVuSans-Bold.ttf" ],
+            
+              [  "usr\/share\/celestia\/fonts\/DejaVuSans.ttf" ],
+            
+              [  "usr\/share\/celestia\/guide.cel" ],
+            
+              [  "usr\/share\/celestia\/help\/CelestiaGuide\/cellogo.gif" ],
+            
+              [  "usr\/share\/celestia\/help\/CelestiaGuide\/celstyles.css" ],
+            
+              [  "usr\/share\/celestia\/help\/CelestiaGuide\/empty.gif" ],
+            
+              [  "usr\/share\/celestia\/help\/CelestiaGuide\/guide.gif" ],
+            
+              [  "usr\/share\/celestia\/help\/CelestiaGuide\/jquery.js" ],
+            
+              [  "usr\/share\/celestia\/help\/CelestiaGuide.html" ],
+            
+              [  "usr\/share\/celestia\/images\/INFO.txt" ],
+            
+              [  "usr\/share\/celestia\/images\/image.jpg" ],
+            
+              [  "usr\/share\/celestia\/images\/logo.png" ],
+            
+              [  "usr\/share\/celestia\/locale\/controls_be.txt" ],
+            
+              [  "usr\/share\/celestia\/locale\/controls_bg.txt" ],
+            
+              [  "usr\/share\/celestia\/locale\/controls_de.txt" ],
+            
+              [  "usr\/share\/celestia\/locale\/controls_es.txt" ],
+            
+              [  "usr\/share\/celestia\/locale\/controls_fr.txt" ],
+            
+              [  "usr\/share\/celestia\/locale\/controls_gl.txt" ],
+            
+              [  "usr\/share\/celestia\/locale\/controls_it.txt" ],
+            
+              [  "usr\/share\/celestia\/locale\/controls_ja.txt" ],
+            
+              [  "usr\/share\/celestia\/locale\/controls_ko.txt" ],
+            
+              [  "usr\/share\/celestia\/locale\/controls_nb.txt" ],
+            
+              [  "usr\/share\/celestia\/locale\/controls_nl.txt" ],
+            
+              [  "usr\/share\/celestia\/locale\/controls_no.txt" ],
+            
+              [  "usr\/share\/celestia\/locale\/controls_pl.txt" ],
+            
+              [  "usr\/share\/celestia\/locale\/controls_pt.txt" ],
+            
+              [  "usr\/share\/celestia\/locale\/controls_pt_BR.txt" ],
+            
+              [  "usr\/share\/celestia\/locale\/controls_ru.txt" ],
+            
+              [  "usr\/share\/celestia\/locale\/controls_sk.txt" ],
+            
+              [  "usr\/share\/celestia\/locale\/controls_sv.txt" ],
+            
+              [  "usr\/share\/celestia\/locale\/controls_uk.txt" ],
+            
+              [  "usr\/share\/celestia\/locale\/controls_zh_CN.txt" ],
+            
+              [  "usr\/share\/celestia\/locale\/controls_zh_TW.txt" ],
+            
+              [  "usr\/share\/celestia\/locale\/demo_be.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/demo_bg.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/demo_de.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/demo_es.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/demo_fr.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/demo_gl.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/demo_it.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/demo_ja.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/demo_ko.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/demo_lt.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/demo_lv.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/demo_nb.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/demo_nl.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/demo_no.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/demo_pl.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/demo_pt.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/demo_pt_BR.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/demo_ru.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/demo_sk.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/demo_sv.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/demo_tr.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/demo_uk.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/demo_zh_CN.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/demo_zh_TW.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/guide_be.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/guide_bg.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/guide_de.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/guide_es.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/guide_fr.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/guide_gl.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/guide_it.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/guide_ja.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/guide_ko.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/guide_lt.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/guide_nb.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/guide_nl.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/guide_pl.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/guide_pt.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/guide_pt_BR.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/guide_ru.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/guide_sk.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/guide_sv.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/guide_uk.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/guide_zh_CN.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/guide_zh_TW.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/start_be.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/start_bg.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/start_de.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/start_es.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/start_fr.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/start_gl.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/start_hu.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/start_it.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/start_ja.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/start_ko.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/start_lt.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/start_lv.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/start_nb.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/start_nl.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/start_pl.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/start_pt.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/start_pt_BR.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/start_ru.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/start_sk.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/start_sv.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/start_uk.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/start_zh_CN.cel" ],
+            
+              [  "usr\/share\/celestia\/locale\/start_zh_TW.cel" ],
+            
+              [  "usr\/share\/celestia\/models\/153591alpha.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/153591alpha.cmod.license" ],
+            
+              [  "usr\/share\/celestia\/models\/153591beta.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/153591beta.cmod.license" ],
+            
+              [  "usr\/share\/celestia\/models\/153591gamma.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/153591gamma.cmod.license" ],
+            
+              [  "usr\/share\/celestia\/models\/E0.png" ],
+            
+              [  "usr\/share\/celestia\/models\/MilkyWay.png" ],
+            
+              [  "usr\/share\/celestia\/models\/S0.png" ],
+            
+              [  "usr\/share\/celestia\/models\/SBa.png" ],
+            
+              [  "usr\/share\/celestia\/models\/SBb.png" ],
+            
+              [  "usr\/share\/celestia\/models\/SBc.png" ],
+            
+              [  "usr\/share\/celestia\/models\/Sa.png" ],
+            
+              [  "usr\/share\/celestia\/models\/Sb.png" ],
+            
+              [  "usr\/share\/celestia\/models\/Sc.png" ],
+            
+              [  "usr\/share\/celestia\/models\/amalthea.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/arrokoth.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/arrokoth.cmod.license" ],
+            
+              [  "usr\/share\/celestia\/models\/asteroid.cms" ],
+            
+              [  "usr\/share\/celestia\/models\/atlas.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/bacchus.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/bacchus.cmod.license" ],
+            
+              [  "usr\/share\/celestia\/models\/bennu.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/bennu.cmod.license" ],
+            
+              [  "usr\/share\/celestia\/models\/borrelly.cms" ],
+            
+              [  "usr\/share\/celestia\/models\/calypso.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/castalia.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/castalia.cmod.license" ],
+            
+              [  "usr\/share\/celestia\/models\/daphnis.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/deimos.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/deimos.cmod.license" ],
+            
+              [  "usr\/share\/celestia\/models\/didymos.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/didymos.cmod.license" ],
+            
+              [  "usr\/share\/celestia\/models\/dimorphos.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/dimorphos.cmod.license" ],
+            
+              [  "usr\/share\/celestia\/models\/elektra.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/elektra.cmod.license" ],
+            
+              [  "usr\/share\/celestia\/models\/epimetheus.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/eros.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/eros.cmod.license" ],
+            
+              [  "usr\/share\/celestia\/models\/eugenia.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/eugenia.cmod.license" ],
+            
+              [  "usr\/share\/celestia\/models\/gaspra.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/geographos.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/geographos.cmod.license" ],
+            
+              [  "usr\/share\/celestia\/models\/golevka.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/golevka.cmod.license" ],
+            
+              [  "usr\/share\/celestia\/models\/halley.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/helene.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/hydra.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/hydra.cmod.license" ],
+            
+              [  "usr\/share\/celestia\/models\/hygiea.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/hygiea.cmod.license" ],
+            
+              [  "usr\/share\/celestia\/models\/hyperion.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/hyperion.cmod.license" ],
+            
+              [  "usr\/share\/celestia\/models\/ida.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/ida.cmod.license" ],
+            
+              [  "usr\/share\/celestia\/models\/interamnia.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/interamnia.cmod.license" ],
+            
+              [  "usr\/share\/celestia\/models\/iris.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/iris.cmod.license" ],
+            
+              [  "usr\/share\/celestia\/models\/itokawa.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/itokawa.cmod.license" ],
+            
+              [  "usr\/share\/celestia\/models\/janus.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/juno.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/juno.cmod.license" ],
+            
+              [  "usr\/share\/celestia\/models\/kleopatra.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/kleopatra.cmod.license" ],
+            
+              [  "usr\/share\/celestia\/models\/ky26.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/ky26.cmod.license" ],
+            
+              [  "usr\/share\/celestia\/models\/larissa.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/lutetia.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/lutetia.cmod.license" ],
+            
+              [  "usr\/share\/celestia\/models\/mathilde.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/mathilde.cmod.license" ],
+            
+              [  "usr\/share\/celestia\/models\/metis.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/metis.cmod.license" ],
+            
+              [  "usr\/share\/celestia\/models\/mimas.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/moshup.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/moshup.cmod.license" ],
+            
+              [  "usr\/share\/celestia\/models\/nix.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/nix.cmod.license" ],
+            
+              [  "usr\/share\/celestia\/models\/pallas.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/pallas.cmod.license" ],
+            
+              [  "usr\/share\/celestia\/models\/pan.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/pandora.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/phobos.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/phobos.cmod.license" ],
+            
+              [  "usr\/share\/celestia\/models\/phoebe.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/prometheus.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/proteus.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/psyche.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/puck.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/roughsphere.cms" ],
+            
+              [  "usr\/share\/celestia\/models\/ryugu.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/ryugu.cmod.license" ],
+            
+              [  "usr\/share\/celestia\/models\/sphere.cms" ],
+            
+              [  "usr\/share\/celestia\/models\/squannit.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/squannit.cmod.license" ],
+            
+              [  "usr\/share\/celestia\/models\/steins.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/steins.cmod.license" ],
+            
+              [  "usr\/share\/celestia\/models\/sylvia.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/sylvia.cmod.license" ],
+            
+              [  "usr\/share\/celestia\/models\/telesto.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/thebe.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/thebe.cmod.license" ],
+            
+              [  "usr\/share\/celestia\/models\/toutatis.cmod" ],
+            
+              [  "usr\/share\/celestia\/models\/toutatis.cmod.license" ],
+            
+              [  "usr\/share\/celestia\/models\/vesta.cmod" ],
+            
+              [  "usr\/share\/celestia\/scripts\/annum.celx" ],
+            
+              [  "usr\/share\/celestia\/scripts\/eclipticgrid.celx" ],
+            
+              [  "usr\/share\/celestia\/scripts\/galacticgrid.celx" ],
+            
+              [  "usr\/share\/celestia\/scripts\/horizontalgrid.celx" ],
+            
+              [  "usr\/share\/celestia\/scripts\/mark-lg.celx" ],
+            
+              [  "usr\/share\/celestia\/scripts\/marktype.celx" ],
+            
+              [  "usr\/share\/celestia\/scripts\/overlay_demo.cel" ],
+            
+              [  "usr\/share\/celestia\/scripts\/overlay_demo.celx" ],
+            
+              [  "usr\/share\/celestia\/scripts\/tour-system.celx" ],
+            
+              [  "usr\/share\/celestia\/scripts\/z-dist.celx" ],
+            
+              [  "usr\/share\/celestia\/shaders\/comet_frag.glsl" ],
+            
+              [  "usr\/share\/celestia\/shaders\/comet_vert.glsl" ],
+            
+              [  "usr\/share\/celestia\/shaders\/crosshair_frag.glsl" ],
+            
+              [  "usr\/share\/celestia\/shaders\/crosshair_vert.glsl" ],
+            
+              [  "usr\/share\/celestia\/shaders\/depth_frag.glsl" ],
+            
+              [  "usr\/share\/celestia\/shaders\/depth_vert.glsl" ],
+            
+              [  "usr\/share\/celestia\/shaders\/galaxy150_frag.glsl" ],
+            
+              [  "usr\/share\/celestia\/shaders\/galaxy150_geom.glsl" ],
+            
+              [  "usr\/share\/celestia\/shaders\/galaxy150_vert.glsl" ],
+            
+              [  "usr\/share\/celestia\/shaders\/galaxy_frag.glsl" ],
+            
+              [  "usr\/share\/celestia\/shaders\/galaxy_vert.glsl" ],
+            
+              [  "usr\/share\/celestia\/shaders\/globular_frag.glsl" ],
+            
+              [  "usr\/share\/celestia\/shaders\/globular_vert.glsl" ],
+            
+              [  "usr\/share\/celestia\/shaders\/largestar_frag.glsl" ],
+            
+              [  "usr\/share\/celestia\/shaders\/largestar_vert.glsl" ],
+            
+              [  "usr\/share\/celestia\/shaders\/passthrough_frag.glsl" ],
+            
+              [  "usr\/share\/celestia\/shaders\/passthrough_vert.glsl" ],
+            
+              [  "usr\/share\/celestia\/shaders\/psfstarglow_frag.glsl" ],
+            
+              [  "usr\/share\/celestia\/shaders\/psfstarglow_vert.glsl" ],
+            
+              [  "usr\/share\/celestia\/shaders\/psfstarglowlarge_frag.glsl" ],
+            
+              [  "usr\/share\/celestia\/shaders\/psfstarglowlarge_vert.glsl" ],
+            
+              [  "usr\/share\/celestia\/shaders\/psfstarpoint_frag.glsl" ],
+            
+              [  "usr\/share\/celestia\/shaders\/psfstarpoint_vert.glsl" ],
+            
+              [  "usr\/share\/celestia\/shaders\/selpointer_frag.glsl" ],
+            
+              [  "usr\/share\/celestia\/shaders\/selpointer_vert.glsl" ],
+            
+              [  "usr\/share\/celestia\/shaders\/srgb_frag.glsl" ],
+            
+              [  "usr\/share\/celestia\/shaders\/srgb_vert.glsl" ],
+            
+              [  "usr\/share\/celestia\/shaders\/star_frag.glsl" ],
+            
+              [  "usr\/share\/celestia\/shaders\/star_vert.glsl" ],
+            
+              [  "usr\/share\/celestia\/shaders\/text_frag.glsl" ],
+            
+              [  "usr\/share\/celestia\/shaders\/text_vert.glsl" ],
+            
+              [  "usr\/share\/celestia\/shaders\/tidal_frag.glsl" ],
+            
+              [  "usr\/share\/celestia\/shaders\/tidal_vert.glsl" ],
+            
+              [  "usr\/share\/celestia\/shaders\/warpmesh_frag.glsl" ],
+            
+              [  "usr\/share\/celestia\/shaders\/warpmesh_vert.glsl" ],
+            
+              [  "usr\/share\/celestia\/splash\/splash.png" ],
+            
+              [  "usr\/share\/celestia\/start.cel" ],
+            
+              [  "usr\/share\/celestia\/textures\/flare.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/ariel.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/ariel.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/arrokoth.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/arrokoth.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/astar.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/astar.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/asteroid.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/asteroid.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/bennu.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/bennu.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/browndwarf.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/bstar.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/bstar.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/callisto-lok-mask.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/callisto-lok-mask.png.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/callisto.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/ceres-normal.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/ceres.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/charon-normal.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/charon.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/charon.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/deimos.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/deimos.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/dione-normal.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/dione-normal.png.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/dione.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/earth-clouds.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/earth-night.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/earth-normal.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/earth.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/enceladus.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/eros.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/eros.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/europa-lok-mask.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/europa-lok-mask.png.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/europa.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/fstar.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/fstar.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/ganymede-lok-mask.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/ganymede-lok-mask.png.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/ganymede.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/ganymede.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/gstar.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/gstar.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/iapetus.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/icy.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/icy.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/io.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/io.png.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/itokawa.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/itokawa.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/jupiter-2018.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/jupiter.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/jupiter.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/kstar.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/kstar.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/mars-normal.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/mars.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/mercury-normal.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/mercury.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/mimas.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/miranda.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/miranda.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/moon-normal.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/moon.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/mstar.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/mstar.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/neptune.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/neptune.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/ostar.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/ostar.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/phobos.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/phobos.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/phoebe.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/pluto-normal.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/pluto.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/pluto.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/rhea.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/rocky.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/rocky.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/ryugu.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/ryugu.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/saturn-rings.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/saturn.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/saturn.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/tethys-normal.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/tethys-normal.png.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/tethys.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/titan-clouds.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/titan-clouds.png.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/titan.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/titan.png.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/triton.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/triton.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/uranus-rings.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/uranus.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/uranus.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/venus-normal.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/venus.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/venuslike.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/venuslike.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/venuslikenight.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/venuslikenight.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/vesta.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/whitedwarf.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/hires\/whitedwarf.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/amalthea.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/amalthea.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/ariel.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/ariel.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/arrokoth.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/arrokoth.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/astar.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/astar.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/asteroid.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/asteroid.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/bennu.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/bennu.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/browndwarf.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/bstar.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/bstar.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/callisto-lok-mask.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/callisto-lok-mask.png.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/callisto.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/ceres-normal.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/ceres.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/chariklo-rings.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/chariklo-rings.png.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/charon-normal.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/charon.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/charon.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/chiron-rings.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/chiron-rings.png.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/deimos.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/deimos.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/dione-normal.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/dione-normal.png.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/dione.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/earth-clouds.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/earth-night.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/earth-normal.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/earth.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/enceladus.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/epimetheus.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/eros.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/eros.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/europa-lok-mask.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/europa-lok-mask.png.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/europa.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/exo-class1.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/exo-class1.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/exo-class2.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/exo-class2.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/exo-class3.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/exo-class3.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/exo-class4.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/exo-class4.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/exo-class4night.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/exo-class4night.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/exo-class5.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/exo-class5.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/exo-class5night.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/exo-class5night.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/fstar.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/fstar.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/ganymede-lok-mask.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/ganymede-lok-mask.png.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/ganymede.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/ganymede.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/gaspra.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/gaspra.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/gstar.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/gstar.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/haumea-rings.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/haumea-rings.png.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/hydra.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/hydra.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/hyperion.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/hyperion.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/iapetus.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/icy.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/icy.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/icymoon.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/ida.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/ida.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/io.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/io.png.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/itokawa.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/itokawa.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/janus.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/jupiter-2018.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/jupiter-rings.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/jupiter.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/jupiter.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/kstar.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/kstar.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/larissa.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/lstar.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/lstar.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/lutetia.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/lutetia.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/mars-clouds.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/mars-normal.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/mars.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/mathilde.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/mathilde.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/mercury-normal.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/mercury.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/metis.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/metis.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/mimas.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/miranda.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/miranda.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/moon-normal.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/moon.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/mstar.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/mstar.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/neptune-rings.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/neptune.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/neptune.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/neptunelike.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/neptunelike.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/nix.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/nix.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/oberon.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/oberon.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/ostar.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/ostar.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/phobos.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/phobos.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/phoebe.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/pluto-normal.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/pluto.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/pluto.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/prometheus.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/proteus.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/puck.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/puck.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/quaoar-rings.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/quaoar-rings.png.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/rhea.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/rocky.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/rocky.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/ryugu.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/ryugu.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/saturn-rings.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/saturn.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/saturn.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/steins.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/steins.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/tethys-normal.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/tethys-normal.png.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/tethys.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/thebe.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/thebe.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/titan-clouds.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/titan-clouds.png.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/titan.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/titan.png.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/titania.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/titania.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/triton.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/triton.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/umbriel.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/umbriel.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/uranus-rings.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/uranus.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/uranus.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/venus-clouds.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/venus-normal.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/venus.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/venuslike.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/venuslike.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/venuslikenight.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/venuslikenight.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/vesta.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/whitedwarf.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/lores\/whitedwarf.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/ariel.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/ariel.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/arrokoth.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/arrokoth.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/astar.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/astar.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/asteroid.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/asteroid.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/bennu.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/bennu.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/browndwarf.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/bstar.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/bstar.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/callisto-lok-mask.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/callisto-lok-mask.png.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/callisto.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/ceres-normal.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/ceres.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/charon-normal.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/charon.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/charon.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/deimos.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/deimos.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/dione-normal.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/dione-normal.png.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/dione.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/earth-clouds.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/earth-night.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/earth-normal.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/earth.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/enceladus.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/eros.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/eros.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/europa-lok-mask.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/europa-lok-mask.png.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/europa.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/exo-class1.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/exo-class1.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/exo-class2.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/exo-class2.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/exo-class3.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/exo-class3.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/exo-class4.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/exo-class4.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/exo-class4night.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/exo-class4night.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/exo-class5.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/exo-class5.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/exo-class5night.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/exo-class5night.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/fstar.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/fstar.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/ganymede-lok-mask.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/ganymede-lok-mask.png.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/ganymede.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/ganymede.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/gaspra.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/gaspra.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/gstar.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/gstar.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/hyperion.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/hyperion.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/iapetus.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/icy.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/icy.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/ida.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/ida.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/io.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/io.png.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/itokawa.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/itokawa.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/jupiter-2018.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/jupiter.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/jupiter.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/kstar.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/kstar.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/lstar.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/lstar.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/lutetia.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/lutetia.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/mars-clouds.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/mars-normal.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/mars.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/mathilde.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/mathilde.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/mercury-normal.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/mercury.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/mimas.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/miranda.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/miranda.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/moon-normal.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/moon.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/mstar.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/mstar.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/neptune-rings.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/neptune.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/neptune.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/neptunelike.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/neptunelike.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/nix.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/nix.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/oberon.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/oberon.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/ostar.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/ostar.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/phobos.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/phobos.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/phoebe.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/pluto-normal.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/pluto.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/pluto.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/puck.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/puck.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/quaoar-rings.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/quaoar-rings.png.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/rhea.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/rocky.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/rocky.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/ryugu.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/ryugu.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/saturn-rings.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/saturn.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/saturn.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/tethys-normal.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/tethys-normal.png.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/tethys.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/titan-clouds.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/titan-clouds.png.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/titan.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/titan.png.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/titania.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/titania.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/triton.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/triton.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/umbriel.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/umbriel.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/uranus-rings.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/uranus.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/uranus.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/venus-clouds.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/venus-normal.png" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/venus.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/venuslike.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/venuslike.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/venuslikenight.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/venuslikenight.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/vesta.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/whitedwarf.jpg" ],
+            
+              [  "usr\/share\/celestia\/textures\/medres\/whitedwarf.jpg.license" ],
+            
+              [  "usr\/share\/celestia\/warp\/warp.map" ],
+            
+              [  "usr\/share\/doc\/celestia-1.7.0_pre20260630\/AUTHORS.bz2" ],
+            
+              [  "usr\/share\/doc\/celestia-1.7.0_pre20260630\/CMakeCache.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/celestia-1.7.0_pre20260630\/CMakeLists.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/celestia-1.7.0_pre20260630\/ChangeLog.bz2" ],
+            
+              [  "usr\/share\/doc\/celestia-1.7.0_pre20260630\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/celestia-1.7.0_pre20260630\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/celestia-1.7.0_pre20260630\/TRANSLATORS.bz2" ],
+            
+              [  "usr\/share\/doc\/celestia-1.7.0_pre20260630\/controls.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/celestia-1.7.0_pre20260630\/devguide.txt.bz2" ],
+            
+              [  "usr\/share\/doc\/celestia-1.7.0_pre20260630\/install_manifest.txt.bz2" ],
+            
+              [  "usr\/share\/locale\/ar\/LC_MESSAGES\/celestia-data.mo" ],
+            
+              [  "usr\/share\/locale\/ar\/LC_MESSAGES\/celestia.mo" ],
+            
+              [  "usr\/share\/locale\/be\/LC_MESSAGES\/celestia-data.mo" ],
+            
+              [  "usr\/share\/locale\/be\/LC_MESSAGES\/celestia.mo" ],
+            
+              [  "usr\/share\/locale\/bg\/LC_MESSAGES\/celestia-data.mo" ],
+            
+              [  "usr\/share\/locale\/bg\/LC_MESSAGES\/celestia.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/celestia-data.mo" ],
+            
+              [  "usr\/share\/locale\/de\/LC_MESSAGES\/celestia.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/celestia-data.mo" ],
+            
+              [  "usr\/share\/locale\/el\/LC_MESSAGES\/celestia.mo" ],
+            
+              [  "usr\/share\/locale\/en\/LC_MESSAGES\/celestia-data.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/celestia-data.mo" ],
+            
+              [  "usr\/share\/locale\/es\/LC_MESSAGES\/celestia.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/celestia-data.mo" ],
+            
+              [  "usr\/share\/locale\/fr\/LC_MESSAGES\/celestia.mo" ],
+            
+              [  "usr\/share\/locale\/gl\/LC_MESSAGES\/celestia-data.mo" ],
+            
+              [  "usr\/share\/locale\/gl\/LC_MESSAGES\/celestia.mo" ],
+            
+              [  "usr\/share\/locale\/hu\/LC_MESSAGES\/celestia-data.mo" ],
+            
+              [  "usr\/share\/locale\/hu\/LC_MESSAGES\/celestia.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/celestia-data.mo" ],
+            
+              [  "usr\/share\/locale\/it\/LC_MESSAGES\/celestia.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/celestia-data.mo" ],
+            
+              [  "usr\/share\/locale\/ja\/LC_MESSAGES\/celestia.mo" ],
+            
+              [  "usr\/share\/locale\/ka\/LC_MESSAGES\/celestia-data.mo" ],
+            
+              [  "usr\/share\/locale\/ka\/LC_MESSAGES\/celestia.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/celestia-data.mo" ],
+            
+              [  "usr\/share\/locale\/ko\/LC_MESSAGES\/celestia.mo" ],
+            
+              [  "usr\/share\/locale\/lt\/LC_MESSAGES\/celestia-data.mo" ],
+            
+              [  "usr\/share\/locale\/lt\/LC_MESSAGES\/celestia.mo" ],
+            
+              [  "usr\/share\/locale\/lv\/LC_MESSAGES\/celestia-data.mo" ],
+            
+              [  "usr\/share\/locale\/lv\/LC_MESSAGES\/celestia.mo" ],
+            
+              [  "usr\/share\/locale\/nb\/LC_MESSAGES\/celestia-data.mo" ],
+            
+              [  "usr\/share\/locale\/nb\/LC_MESSAGES\/celestia.mo" ],
+            
+              [  "usr\/share\/locale\/nl\/LC_MESSAGES\/celestia-data.mo" ],
+            
+              [  "usr\/share\/locale\/nl\/LC_MESSAGES\/celestia.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/celestia-data.mo" ],
+            
+              [  "usr\/share\/locale\/pl\/LC_MESSAGES\/celestia.mo" ],
+            
+              [  "usr\/share\/locale\/pt\/LC_MESSAGES\/celestia-data.mo" ],
+            
+              [  "usr\/share\/locale\/pt\/LC_MESSAGES\/celestia.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/celestia-data.mo" ],
+            
+              [  "usr\/share\/locale\/pt_BR\/LC_MESSAGES\/celestia.mo" ],
+            
+              [  "usr\/share\/locale\/ro\/LC_MESSAGES\/celestia-data.mo" ],
+            
+              [  "usr\/share\/locale\/ro\/LC_MESSAGES\/celestia.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/celestia-data.mo" ],
+            
+              [  "usr\/share\/locale\/ru\/LC_MESSAGES\/celestia.mo" ],
+            
+              [  "usr\/share\/locale\/sk\/LC_MESSAGES\/celestia-data.mo" ],
+            
+              [  "usr\/share\/locale\/sk\/LC_MESSAGES\/celestia.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/celestia-data.mo" ],
+            
+              [  "usr\/share\/locale\/sv\/LC_MESSAGES\/celestia.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/celestia-data.mo" ],
+            
+              [  "usr\/share\/locale\/tr\/LC_MESSAGES\/celestia.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/celestia-data.mo" ],
+            
+              [  "usr\/share\/locale\/uk\/LC_MESSAGES\/celestia.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/celestia-data.mo" ],
+            
+              [  "usr\/share\/locale\/zh_CN\/LC_MESSAGES\/celestia.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/celestia-data.mo" ],
+            
+              [  "usr\/share\/locale\/zh_TW\/LC_MESSAGES\/celestia.mo" ],
+            
+              [  "usr\/share\/man\/man1\/celestia-qt6.1.bz2" ],
+            
+              [  "usr\/share\/metainfo\/space.celestiaproject.celestia_qt6.metainfo.xml" ],
+            
+              [  "usr\/share\/pixmaps\/celestia.png" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>
