@@ -1,0 +1,2111 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing apps/musescore-4.7.4-r1 in mocaccino-community-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> apps/musescore-4.7.4-r1
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                WYSIWYG Music Score Typesetter
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-community-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-community-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of apps/musescore
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/mocaccino-community:musescore-apps-4.7.4-r1" target="_blank"> quay.io/mocaccino/mocaccino-community:musescore-apps-4.7.4-r1 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/mocaccino-community:musescore-apps-4.7.4-r1/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 4.7.4-r1  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> GPL-2 </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/kde-common">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  kde-common &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/tinyxml2">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  tinyxml2 11.0.0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/libs/libopusenc">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  libopusenc 0.2.1-r1 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> appstream.id: org.musescore.MuseScore
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: media-sound/musescore
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://musescore.org/" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://musescore.org/ </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/media-sound/musescore">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  musescore &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "usr\/bin\/mscore" ],
+            
+              [  "usr\/bin\/musescore" ],
+            
+              [  "usr\/share\/applications\/org.musescore.MuseScore.desktop" ],
+            
+              [  "usr\/share\/doc\/musescore-4.7.4-r1\/README.md.bz2" ],
+            
+              [  "usr\/share\/icons\/hicolor\/128x128\/apps\/mscore.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/16x16\/apps\/mscore.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/24x24\/apps\/mscore.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/32x32\/apps\/mscore.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/48x48\/apps\/mscore.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/512x512\/apps\/mscore.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/512x512\/mimetypes\/application-x-musescore\u002bxml.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/512x512\/mimetypes\/application-x-musescore.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/64x64\/apps\/mscore.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/96x96\/apps\/mscore.png" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/mimetypes\/application-x-musescore\u002bxml.svg" ],
+            
+              [  "usr\/share\/icons\/hicolor\/scalable\/mimetypes\/application-x-musescore.svg" ],
+            
+              [  "usr\/share\/man\/man1\/mscore.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/musescore.1.bz2" ],
+            
+              [  "usr\/share\/metainfo\/org.musescore.MuseScore.appdata.xml" ],
+            
+              [  "usr\/share\/mime\/application\/vnd.recordare.musicxml\u002bxml.xml" ],
+            
+              [  "usr\/share\/mime\/application\/vnd.recordare.musicxml.xml" ],
+            
+              [  "usr\/share\/mime\/application\/x-biab.xml" ],
+            
+              [  "usr\/share\/mime\/application\/x-bww.xml" ],
+            
+              [  "usr\/share\/mime\/application\/x-capella.xml" ],
+            
+              [  "usr\/share\/mime\/application\/x-mei\u002bxml.xml" ],
+            
+              [  "usr\/share\/mime\/application\/x-musedata.xml" ],
+            
+              [  "usr\/share\/mime\/application\/x-musescore\u002bxml.xml" ],
+            
+              [  "usr\/share\/mime\/application\/x-musescore.drumset\u002bxml.xml" ],
+            
+              [  "usr\/share\/mime\/application\/x-musescore.palette.xml" ],
+            
+              [  "usr\/share\/mime\/application\/x-musescore.style\u002bxml.xml" ],
+            
+              [  "usr\/share\/mime\/application\/x-musescore.xml" ],
+            
+              [  "usr\/share\/mime\/application\/x-overture.xml" ],
+            
+              [  "usr\/share\/mime\/application\/x-sf2.xml" ],
+            
+              [  "usr\/share\/mime\/application\/x-sf3.xml" ],
+            
+              [  "usr\/share\/mime\/application\/x-sfz.xml" ],
+            
+              [  "usr\/share\/mime\/application\/x-tef.xml" ],
+            
+              [  "usr\/share\/mime\/audio\/x-gtp.xml" ],
+            
+              [  "usr\/share\/mime\/audio\/x-ptb.xml" ],
+            
+              [  "usr\/share\/mime\/packages\/musescore.xml" ],
+            
+              [  "usr\/share\/mime\/x-scheme-handler\/musescore.xml" ],
+            
+              [  "usr\/share\/mscore-4.7\/autobotscripts\/TC1.1_CreateSimpleScore.js" ],
+            
+              [  "usr\/share\/mscore-4.7\/autobotscripts\/TC1.2_CreateSimpleScoreWithRandomInstruments.js" ],
+            
+              [  "usr\/share\/mscore-4.7\/autobotscripts\/TC10_PlayToggle.js" ],
+            
+              [  "usr\/share\/mscore-4.7\/autobotscripts\/TC2_CreateSimpleScoreByTemplate.js" ],
+            
+              [  "usr\/share\/mscore-4.7\/autobotscripts\/TC3_UsingNoteInputToolbar.js" ],
+            
+              [  "usr\/share\/mscore-4.7\/autobotscripts\/TC4_UsingPalettes.js" ],
+            
+              [  "usr\/share\/mscore-4.7\/autobotscripts\/TC5_UsingInstruments.js" ],
+            
+              [  "usr\/share\/mscore-4.7\/autobotscripts\/TC6_UsingInspector_Note.js" ],
+            
+              [  "usr\/share\/mscore-4.7\/autobotscripts\/TC7_UsingExport.js" ],
+            
+              [  "usr\/share\/mscore-4.7\/autobotscripts\/TC8_EngravingText.js" ],
+            
+              [  "usr\/share\/mscore-4.7\/autobotscripts\/TC9_BigScore(perfomance).js" ],
+            
+              [  "usr\/share\/mscore-4.7\/autobotscripts\/data\/Big_Score.mscz" ],
+            
+              [  "usr\/share\/mscore-4.7\/autobotscripts\/steps\/Home.js" ],
+            
+              [  "usr\/share\/mscore-4.7\/autobotscripts\/steps\/Inspector.js" ],
+            
+              [  "usr\/share\/mscore-4.7\/autobotscripts\/steps\/Instruments.js" ],
+            
+              [  "usr\/share\/mscore-4.7\/autobotscripts\/steps\/Navigation.js" ],
+            
+              [  "usr\/share\/mscore-4.7\/autobotscripts\/steps\/NewScore.js" ],
+            
+              [  "usr\/share\/mscore-4.7\/autobotscripts\/steps\/NoteInput.js" ],
+            
+              [  "usr\/share\/mscore-4.7\/autobotscripts\/steps\/Palette.js" ],
+            
+              [  "usr\/share\/mscore-4.7\/autobotscripts\/steps\/Score.js" ],
+            
+              [  "usr\/share\/mscore-4.7\/extensions\/apitests\/Form.qml" ],
+            
+              [  "usr\/share\/mscore-4.7\/extensions\/apitests\/macros.js" ],
+            
+              [  "usr\/share\/mscore-4.7\/extensions\/apitests\/manifest.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/extensions\/batch_example\/configure.qml" ],
+            
+              [  "usr\/share\/mscore-4.7\/extensions\/batch_example\/manifest.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/extensions\/batch_example\/processing.js" ],
+            
+              [  "usr\/share\/mscore-4.7\/extensions\/colornotes\/color_notes.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/extensions\/colornotes\/main.js" ],
+            
+              [  "usr\/share\/mscore-4.7\/extensions\/colornotes\/manifest.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/extensions\/courtesy_accidentals\/accidentals.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/extensions\/courtesy_accidentals\/add.js" ],
+            
+              [  "usr\/share\/mscore-4.7\/extensions\/courtesy_accidentals\/configure.qml" ],
+            
+              [  "usr\/share\/mscore-4.7\/extensions\/courtesy_accidentals\/manifest.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/extensions\/courtesy_accidentals\/remove.js" ],
+            
+              [  "usr\/share\/mscore-4.7\/extensions\/example1\/Main.qml" ],
+            
+              [  "usr\/share\/mscore-4.7\/extensions\/example1\/manifest.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/extensions\/example2\/main.js" ],
+            
+              [  "usr\/share\/mscore-4.7\/extensions\/example2\/manifest.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/extensions\/example3\/add.js" ],
+            
+              [  "usr\/share\/mscore-4.7\/extensions\/example3\/configure.qml" ],
+            
+              [  "usr\/share\/mscore-4.7\/extensions\/example3\/manifest.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/extensions\/example3\/remove.js" ],
+            
+              [  "usr\/share\/mscore-4.7\/extensions\/quickstart\/main.js" ],
+            
+              [  "usr\/share\/mscore-4.7\/extensions\/quickstart\/manifest.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/extensions\/quickstart_v\/Main.qml" ],
+            
+              [  "usr\/share\/mscore-4.7\/extensions\/quickstart_v\/manifest.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_af.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_ar.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_ar_DZ.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_ar_EG.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_ar_SD.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_ast.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_be.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_bg.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_br.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_ca.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_ca@valencia.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_cs.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_cy.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_da.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_de.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_el.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_en.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_en_GB.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_en_US.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_eo.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_es.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_et.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_eu.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_fa.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_fi.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_fil.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_fo.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_fr.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_ga.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_gd.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_gl.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_he.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_hi_IN.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_hr.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_hu.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_hy.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_id.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_ig.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_it.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_ja.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_ka.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_kab.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_ko.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_lt.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_lv.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_ml.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_mn_MN.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_mt.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_nb.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_nl.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_nn.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_pl.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_pt.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_pt_BR.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_ro.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_ru.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_scn.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_sk.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_sl.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_sr.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_sr_RS.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_sv.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_sv_SE.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_th.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_tr.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_uk.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_uz@Latn.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_vi.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_zh_CN.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_zh_HK.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/instruments_zh_TW.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/languages.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_af.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_ar.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_ar_DZ.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_ar_EG.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_ar_SD.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_ast.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_be.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_bg.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_br.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_ca.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_ca@valencia.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_cs.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_cy.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_da.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_de.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_el.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_en.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_en_GB.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_en_US.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_eo.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_es.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_et.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_eu.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_fa.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_fi.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_fil.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_fo.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_fr.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_ga.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_gd.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_gl.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_he.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_hi_IN.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_hr.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_hu.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_hy.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_id.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_ig.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_it.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_ja.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_ka.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_kab.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_ko.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_lt.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_lv.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_ml.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_mn_MN.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_mt.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_nb.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_nl.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_nn.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_pl.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_pt.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_pt_BR.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_ro.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_ru.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_scn.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_sk.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_sl.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_sr.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_sr_RS.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_sv.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_sv_SE.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_th.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_tr.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_uk.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_uz@Latn.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_vi.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_zh_CN.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_zh_HK.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/locale\/musescore_zh_TW.qm" ],
+            
+              [  "usr\/share\/mscore-4.7\/plugins\/dev_test_api\/dev_test_api.qml" ],
+            
+              [  "usr\/share\/mscore-4.7\/plugins\/dev_test_websocket\/dev_test_websocket.qml_disabled" ],
+            
+              [  "usr\/share\/mscore-4.7\/plugins\/intervals\/mirror-intervals-3.qml" ],
+            
+              [  "usr\/share\/mscore-4.7\/plugins\/intervals\/mirror_intervals.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/plugins\/lilyrics\/lilyrics.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/plugins\/lilyrics\/lilyrics.qml" ],
+            
+              [  "usr\/share\/mscore-4.7\/plugins\/new_retrograde\/NewRetrograde.qml" ],
+            
+              [  "usr\/share\/mscore-4.7\/plugins\/new_retrograde\/retrograde.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/plugins\/note_names\/note_names.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/plugins\/note_names\/notenames.qml" ],
+            
+              [  "usr\/share\/mscore-4.7\/plugins\/tuning\/modal_tuning.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/plugins\/tuning\/tuning.qml" ],
+            
+              [  "usr\/share\/mscore-4.7\/sound\/MS Basic.sf3" ],
+            
+              [  "usr\/share\/mscore-4.7\/sound\/MS Basic_License.md" ],
+            
+              [  "usr\/share\/mscore-4.7\/styles\/Modified Stave Notation\/16mm_MSN.mss" ],
+            
+              [  "usr\/share\/mscore-4.7\/styles\/Modified Stave Notation\/18mm_MSN.mss" ],
+            
+              [  "usr\/share\/mscore-4.7\/styles\/Modified Stave Notation\/20mm_MSN.mss" ],
+            
+              [  "usr\/share\/mscore-4.7\/styles\/Modified Stave Notation\/22mm_MSN.mss" ],
+            
+              [  "usr\/share\/mscore-4.7\/styles\/Modified Stave Notation\/25mm_MSN.mss" ],
+            
+              [  "usr\/share\/mscore-4.7\/styles\/MuseJazz.mss" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/Es-Es-G0.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/IPA-unicode-range.uti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/IPA.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/Lv-Lv-g1.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/Pl-Pl-g1.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/afr-za-g1.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/afr-za-g2.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ar-ar-comp8.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ar-ar-g1-core.uti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ar-ar-g1.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ar-ar-g2.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ar-ar-math.uti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ar.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/as-in-g1.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/as.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ascii-to-unicode.dis" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ascii-us-patterns.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/aw-in-g1.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/awa.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ba.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/be-in-g1.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/bel-comp.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/bel.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/bengali.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/bg.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/bg.dis" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/bg.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/bg.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/bh.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/bh.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/bn.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/bo.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/bo.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/boxes.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/br-in-g1.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/bra.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/braille-patterns.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ca-chardefs.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ca-g1.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ca.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/chr-us-g1.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ckb-chardefs.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ckb-g1.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ckb-translation.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ckb.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/compress.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/controlchars.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/cop-eg-comp8.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/corrections.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/countries.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/cs-chardefs.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/cs-comp8.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/cs-g1.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/cs-translation.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/cs.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/cy-cy-g1.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/cy-cy-g2.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/cy.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/da-dk-6miscChars.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/da-dk-6miscChars_1993.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/da-dk-8miscChars.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/da-dk-8miscChars_1993.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/da-dk-g08.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/da-dk-g08_1993.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/da-dk-g16-lit_1993.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/da-dk-g16.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/da-dk-g16_1993.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/da-dk-g18.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/da-dk-g18_1993.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/da-dk-g2.dic" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/da-dk-g26-lit_1993.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/da-dk-g26.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/da-dk-g26_1993.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/da-dk-g26l-lit_1993.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/da-dk-g26l_1993.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/da-dk-g28.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/da-dk-g28_1993.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/da-dk-g28l_1993.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/da-dk-g2_1993.dic" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/da-dk-octobraille.dis" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/da-dk-octobraille_1993.dis" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/de-accents-detailed.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/de-accents.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/de-chardefs6.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/de-chardefs8.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/de-chess.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/de-comp6.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/de-de-comp8.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/de-de.dis" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/de-eurobrl6.dis" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/de-eurobrl6u.dis" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/de-g0-core.uti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/de-g0-detailed.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/de-g0.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/de-g1-core-patterns.dic" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/de-g1-core.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/de-g1-detailed.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/de-g1.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/de-g2-core-patterns.dic" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/de-g2-core.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/de-g2-detailed.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/de-g2.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/devanagari.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/digits6Dots.uti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/digits6DotsPlusDot6.uti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/digits8Dots.uti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/dra.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/dra.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/el.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/en-GB-g2.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/en-chardefs.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/en-chess.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/en-gb-comp8.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/en-gb-g1.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/en-in-g1.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/en-nabcc.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/en-ueb-chardefs.uti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/en-ueb-g1.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/en-ueb-g2.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/en-ueb-math.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/en-us-brf.dis" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/en-us-comp6.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/en-us-comp8-ext.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/en-us-comp8.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/en-us-compbrl.uti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/en-us-emphasis.uti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/en-us-g1.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/en-us-g2.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/en-us-interline.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/en-us-mathtext.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/en-us-symbols.mus" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/en_CA.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/en_CA.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/en_GB.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/en_US-comp8-ext.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/en_US.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/eo-g1-x-system.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/eo-g1.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/eo.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/es-chardefs.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/es-g1.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/es-g2.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/es-new.dis" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/es-old.dis" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/es.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/et-g0.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/et.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/et.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ethio-g1.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/eurodefs.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/fa-ir-comp8.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/fa-ir-g1.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/fi-fi-8dot.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/fi.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/fr-bfu-comp6.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/fr-bfu-comp68.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/fr-bfu-comp8.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/fr-bfu-g2.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/fr.mus" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ga-g1.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ga-g2.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/gd.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/gd.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/gez.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/gon.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/gon.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/gr-pl-comp8.uti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/grc-international-common.uti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/grc-international-composed.uti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/grc-international-decomposed.uti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/grc-international-en.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/gu-in-g1.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/gu.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/gujarati.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/gurumuki.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/haw-us-g1.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/he-IL-comp8.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/he-IL.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/hi-in-g1.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/hi.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/hr-chardefs.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/hr-comp8.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/hr-comp8.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/hr-digits.uti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/hr-g1.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/hr-g1.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/hr-translation.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/hu-backtranslate-correction.dis" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/hu-backtranslate-word-corrections.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/hu-chardefs.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/hu-exceptionwords.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/hu-hu-comp8.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/hu-hu-g1.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/hu-hu-g1_braille_input.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/hu-hu-g2.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/hu-hu-g2_exceptions.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/hu.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/hy.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/hy.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/hyph_cs_CZ.dic" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/hyph_da_DK.dic" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/hyph_de_DE.dic" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/hyph_en_US.dic" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/hyph_eo.dic" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/hyph_es_ES.dic" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/hyph_fr_FR.dic" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/hyph_hu_HU.dic" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/hyph_it_IT.dic" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/hyph_nb_NO.dic" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/hyph_nl_NL.dic" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/hyph_nn_NO.dic" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/hyph_pl_PL.dic" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/hyph_pt_PT.dic" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/hyph_ru.dic" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/hyph_sv_SE.dic" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/is-chardefs6.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/is-chardefs8.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/is.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/is.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/it-it-comp6.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/it-it-comp8.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/it.mus" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/it.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/iu-ca-g1.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ja-kantenji.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ka-in-g1.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ka.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/kannada.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/kh-in-g1.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/kha.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/kk.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/km-g1.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/kmr.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/kn.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ko-2006-g1.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ko-2006-g2.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ko-2006.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ko-chars.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ko-g1-rules.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ko-g1.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ko-g2-rules.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ko-g2.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ko.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/kok.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/kok.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/kru.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/kru.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ks-in-g1.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/latinLetterDef6Dots.uti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/latinLetterDef8Dots.uti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/latinLowercase.uti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/latinUppercaseComp6.uti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/lg-ug-g1.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/litdigits6Dots.uti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/litdigits6DotsPlusDot6.uti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/loweredDigits6Dots.uti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/loweredDigits8Dots.uti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/lt-6dot.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/lt-6dot.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/lt.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/lt.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/lv.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/malayalam.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/mao-nz-g1.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/marburg_single_cell_defs.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/marburg_unicode_defs.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ml-in-g1.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ml.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/mn-MN-common.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/mn-MN-g1.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/mn-MN-g2.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/mn-in-g1.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/mni.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/mr-in-g1.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/mr.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ms-my-g2.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/mt.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/mt.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/mun.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/mun.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/mwr.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/mwr.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/my-g1.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/my-g2.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ne.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ne.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/nemethdefs.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/nl-BE.dis" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/nl-NL-g0.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/nl-chardefs.uti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/nl-comp8.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/nl.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/no-no-8dot-fallback-6dot-g0.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/no-no-8dot.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/no-no-braillo-047-01.dis" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/no-no-chardefs6.uti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/no-no-comp8.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/no-no-g0.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/no-no-g1.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/no-no-g2.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/no-no-g3.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/no-no-generic.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/no-no-generic.dis" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/no-no-latinLetterDef6Dots_diacritics.uti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/no-no.dis" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/np-in-g1.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/nso-za-g1.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/nso-za-g2.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ny-mw.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/or-in-g1.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/or.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/oriya.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/pa.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/pi.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/pi.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/pl-pl-comp8.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/pl.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/printables.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/pt-pt-comp8.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/pt-pt-g1.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/pt-pt-g2.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/pt.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/pu-in-g1.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ro.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ro.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ru-brf.dis" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ru-compbrl.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ru-letters.dis" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ru-litbrl-detailed.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ru-litbrl.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ru-ru-g1.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ru-unicode.dis" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ru.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/rw-rw-g1.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/sa-in-g1.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/sa.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/sah.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/sd.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/se-se.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/se-se.dis" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/si-in-g1.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/sin.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/sin.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/sk-g1.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/sk-sk-g1.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/sk-sk.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/sl-si-comp8.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/sl-si-g1.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/sl.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/smufl-symbols.mus" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/sot-za-g1.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/sot-za-g2.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/spaces.uti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/sr-chardefs.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/sr-g1.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/sr.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/sv-1989.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/sv-1996.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/sv-g0.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/sv-g1.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/sv-g2.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/sw-ke-g1-2.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/sw-ke-g1-3.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/sw-ke-g1-4.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/sw-ke-g1-5.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/sw-ke-g1.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/sw-ke-g2.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ta-ta-g1.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ta.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ta.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/tamil.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/te-in-g1.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/te.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/telugu.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/text_nabcc.dis" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/tr-g1.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/tr-g2.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/tr-g2.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/tr.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/tr.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/tsn-za-g1.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/tsn-za-g2.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/tt.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/uk-comp.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/uk.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ukchardefs.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ukmaths_single_cell_defs.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ukmaths_unicode_defs.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/uni-text.dis" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/unicode-braille.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/unicode-to-ascii.dis" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/unicode-without-blank.dis" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/unicode.dis" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ur-pk-g1.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ur-pk-g2.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/us-table.dis" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/uz-g1.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ve-za-g1.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/ve-za-g2.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/vi-charsdef.uti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/vi-lettersdef.uti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/vi-puncsdef.uti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/vi-saigon-g1.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/vi-vn-g0.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/vi-vn-g1.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/vi-vn-g2.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/vi.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/wiskunde-chardefs.cti" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/wordcx.dis" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/xh-za-g1.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/xh-za-g2.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/zh-chn.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/zh-hk.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/zh-tw.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/zh_CHN.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/zh_HK.tbl" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/zhcn-cbs.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/zhcn-g1.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/zhcn-g2.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/zu-za-g1.utb" ],
+            
+              [  "usr\/share\/mscore-4.7\/tables\/zu-za-g2.ctb" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/01-General\/01-Treble_Clef\/01-Treble_Clef.mscx" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/01-General\/01-Treble_Clef\/META-INF\/container.xml" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/01-General\/01-Treble_Clef\/Thumbnails\/thumbnail.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/01-General\/01-Treble_Clef\/audiosettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/01-General\/01-Treble_Clef\/score_style.mss" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/01-General\/01-Treble_Clef\/viewsettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/01-General\/02-Bass_Clef\/02-Bass_Clef.mscx" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/01-General\/02-Bass_Clef\/META-INF\/container.xml" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/01-General\/02-Bass_Clef\/Thumbnails\/thumbnail.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/01-General\/02-Bass_Clef\/audiosettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/01-General\/02-Bass_Clef\/score_style.mss" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/01-General\/02-Bass_Clef\/viewsettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/01-General\/03-Grand_Staff\/03-Grand_Staff.mscx" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/01-General\/03-Grand_Staff\/META-INF\/container.xml" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/01-General\/03-Grand_Staff\/Thumbnails\/thumbnail.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/01-General\/03-Grand_Staff\/audiosettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/01-General\/03-Grand_Staff\/score_style.mss" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/01-General\/03-Grand_Staff\/viewsettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/01-SATB\/01-SATB.mscx" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/01-SATB\/META-INF\/container.xml" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/01-SATB\/Thumbnails\/thumbnail.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/01-SATB\/audiosettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/01-SATB\/score_style.mss" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/01-SATB\/viewsettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/02-SATB_\u002b_Organ\/02-SATB_\u002b_Organ.mscx" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/02-SATB_\u002b_Organ\/META-INF\/container.xml" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/02-SATB_\u002b_Organ\/Thumbnails\/thumbnail.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/02-SATB_\u002b_Organ\/audiosettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/02-SATB_\u002b_Organ\/score_style.mss" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/02-SATB_\u002b_Organ\/viewsettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/03-SATB_\u002b_Piano\/03-SATB_\u002b_Piano.mscx" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/03-SATB_\u002b_Piano\/META-INF\/container.xml" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/03-SATB_\u002b_Piano\/Thumbnails\/thumbnail.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/03-SATB_\u002b_Piano\/audiosettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/03-SATB_\u002b_Piano\/score_style.mss" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/03-SATB_\u002b_Piano\/viewsettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/04-SATB_Closed_Score\/04-SATB_Closed_Score.mscx" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/04-SATB_Closed_Score\/META-INF\/container.xml" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/04-SATB_Closed_Score\/Thumbnails\/thumbnail.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/04-SATB_Closed_Score\/audiosettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/04-SATB_Closed_Score\/score_style.mss" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/04-SATB_Closed_Score\/viewsettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/05-SATB_Closed_Score_\u002b_Organ\/05-SATB_Closed_Score_\u002b_Organ.mscx" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/05-SATB_Closed_Score_\u002b_Organ\/META-INF\/container.xml" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/05-SATB_Closed_Score_\u002b_Organ\/Thumbnails\/thumbnail.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/05-SATB_Closed_Score_\u002b_Organ\/audiosettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/05-SATB_Closed_Score_\u002b_Organ\/score_style.mss" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/05-SATB_Closed_Score_\u002b_Organ\/viewsettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/06-SATB_Closed_Score_\u002b_Piano\/06-SATB_Closed_Score_\u002b_Piano.mscx" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/06-SATB_Closed_Score_\u002b_Piano\/META-INF\/container.xml" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/06-SATB_Closed_Score_\u002b_Piano\/Thumbnails\/thumbnail.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/06-SATB_Closed_Score_\u002b_Piano\/audiosettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/06-SATB_Closed_Score_\u002b_Piano\/score_style.mss" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/06-SATB_Closed_Score_\u002b_Piano\/viewsettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/07-Voice_\u002b_Piano\/07-Voice_\u002b_Piano.mscx" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/07-Voice_\u002b_Piano\/META-INF\/container.xml" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/07-Voice_\u002b_Piano\/Thumbnails\/thumbnail.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/07-Voice_\u002b_Piano\/audiosettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/07-Voice_\u002b_Piano\/score_style.mss" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/07-Voice_\u002b_Piano\/viewsettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/08-Barbershop_Quartet_(Men)\/08-Barbershop_Quartet_(Men).mscx" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/08-Barbershop_Quartet_(Men)\/META-INF\/container.xml" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/08-Barbershop_Quartet_(Men)\/Thumbnails\/thumbnail.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/08-Barbershop_Quartet_(Men)\/audiosettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/08-Barbershop_Quartet_(Men)\/score_style.mss" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/08-Barbershop_Quartet_(Men)\/viewsettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/09-Barbershop_Quartet_(Women)\/09-Barbershop_Quartet_(Women).mscx" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/09-Barbershop_Quartet_(Women)\/META-INF\/container.xml" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/09-Barbershop_Quartet_(Women)\/Thumbnails\/thumbnail.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/09-Barbershop_Quartet_(Women)\/audiosettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/09-Barbershop_Quartet_(Women)\/score_style.mss" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/09-Barbershop_Quartet_(Women)\/viewsettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/10-Liturgical_Unmetrical\/10-Liturgical_Unmetrical.mscx" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/10-Liturgical_Unmetrical\/META-INF\/container.xml" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/10-Liturgical_Unmetrical\/Thumbnails\/thumbnail.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/10-Liturgical_Unmetrical\/audiosettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/10-Liturgical_Unmetrical\/score_style.mss" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/10-Liturgical_Unmetrical\/viewsettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/11-Liturgical_Unmetrical_\u002b_Organ\/11-Liturgical_Unmetrical_\u002b_Organ.mscx" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/11-Liturgical_Unmetrical_\u002b_Organ\/META-INF\/container.xml" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/11-Liturgical_Unmetrical_\u002b_Organ\/Thumbnails\/thumbnail.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/11-Liturgical_Unmetrical_\u002b_Organ\/audiosettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/11-Liturgical_Unmetrical_\u002b_Organ\/score_style.mss" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/02-Choral\/11-Liturgical_Unmetrical_\u002b_Organ\/viewsettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/03-Chamber_Music\/01-String_Quartet\/01-String_Quartet.mscx" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/03-Chamber_Music\/01-String_Quartet\/META-INF\/container.xml" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/03-Chamber_Music\/01-String_Quartet\/Thumbnails\/thumbnail.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/03-Chamber_Music\/01-String_Quartet\/audiosettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/03-Chamber_Music\/01-String_Quartet\/score_style.mss" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/03-Chamber_Music\/01-String_Quartet\/viewsettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/03-Chamber_Music\/02-Wind_Quartet\/02-Wind_Quartet.mscx" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/03-Chamber_Music\/02-Wind_Quartet\/META-INF\/container.xml" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/03-Chamber_Music\/02-Wind_Quartet\/Thumbnails\/thumbnail.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/03-Chamber_Music\/02-Wind_Quartet\/audiosettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/03-Chamber_Music\/02-Wind_Quartet\/score_style.mss" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/03-Chamber_Music\/02-Wind_Quartet\/viewsettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/03-Chamber_Music\/03-Wind_Quintet\/03-Wind_Quintet.mscx" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/03-Chamber_Music\/03-Wind_Quintet\/META-INF\/container.xml" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/03-Chamber_Music\/03-Wind_Quintet\/Thumbnails\/thumbnail.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/03-Chamber_Music\/03-Wind_Quintet\/audiosettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/03-Chamber_Music\/03-Wind_Quintet\/score_style.mss" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/03-Chamber_Music\/03-Wind_Quintet\/viewsettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/03-Chamber_Music\/04-Saxophone_Quartet\/04-Saxophone_Quartet.mscx" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/03-Chamber_Music\/04-Saxophone_Quartet\/META-INF\/container.xml" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/03-Chamber_Music\/04-Saxophone_Quartet\/Thumbnails\/thumbnail.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/03-Chamber_Music\/04-Saxophone_Quartet\/audiosettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/03-Chamber_Music\/04-Saxophone_Quartet\/score_style.mss" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/03-Chamber_Music\/04-Saxophone_Quartet\/viewsettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/03-Chamber_Music\/05-Brass_Quartet\/05-Brass_Quartet.mscx" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/03-Chamber_Music\/05-Brass_Quartet\/META-INF\/container.xml" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/03-Chamber_Music\/05-Brass_Quartet\/Thumbnails\/thumbnail.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/03-Chamber_Music\/05-Brass_Quartet\/audiosettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/03-Chamber_Music\/05-Brass_Quartet\/score_style.mss" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/03-Chamber_Music\/05-Brass_Quartet\/viewsettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/03-Chamber_Music\/06-Brass_Quintet\/06-Brass_Quintet.mscx" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/03-Chamber_Music\/06-Brass_Quintet\/META-INF\/container.xml" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/03-Chamber_Music\/06-Brass_Quintet\/Thumbnails\/thumbnail.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/03-Chamber_Music\/06-Brass_Quintet\/audiosettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/03-Chamber_Music\/06-Brass_Quintet\/score_style.mss" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/03-Chamber_Music\/06-Brass_Quintet\/viewsettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/04-Solo\/01-Guitar\/01-Guitar.mscx" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/04-Solo\/01-Guitar\/META-INF\/container.xml" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/04-Solo\/01-Guitar\/Thumbnails\/thumbnail.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/04-Solo\/01-Guitar\/audiosettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/04-Solo\/01-Guitar\/score_style.mss" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/04-Solo\/01-Guitar\/viewsettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/04-Solo\/02-Guitar_\u002b_Tablature\/02-Guitar_\u002b_Tablature.mscx" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/04-Solo\/02-Guitar_\u002b_Tablature\/META-INF\/container.xml" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/04-Solo\/02-Guitar_\u002b_Tablature\/Thumbnails\/thumbnail.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/04-Solo\/02-Guitar_\u002b_Tablature\/audiosettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/04-Solo\/02-Guitar_\u002b_Tablature\/score_style.mss" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/04-Solo\/02-Guitar_\u002b_Tablature\/viewsettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/04-Solo\/03-Guitar_Tablature\/03-Guitar_Tablature.mscx" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/04-Solo\/03-Guitar_Tablature\/META-INF\/container.xml" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/04-Solo\/03-Guitar_Tablature\/Thumbnails\/thumbnail.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/04-Solo\/03-Guitar_Tablature\/audiosettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/04-Solo\/03-Guitar_Tablature\/score_style.mss" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/04-Solo\/03-Guitar_Tablature\/viewsettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/04-Solo\/04-Piano\/04-Piano.mscx" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/04-Solo\/04-Piano\/META-INF\/container.xml" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/04-Solo\/04-Piano\/Thumbnails\/thumbnail.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/04-Solo\/04-Piano\/audiosettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/04-Solo\/04-Piano\/score_style.mss" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/04-Solo\/04-Piano\/viewsettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/05-Jazz\/01-Jazz_Lead_Sheet\/01-Jazz_Lead_Sheet.mscx" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/05-Jazz\/01-Jazz_Lead_Sheet\/META-INF\/container.xml" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/05-Jazz\/01-Jazz_Lead_Sheet\/Thumbnails\/thumbnail.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/05-Jazz\/01-Jazz_Lead_Sheet\/audiosettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/05-Jazz\/01-Jazz_Lead_Sheet\/score_style.mss" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/05-Jazz\/01-Jazz_Lead_Sheet\/viewsettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/05-Jazz\/02-Big_Band\/02-Big_Band.mscx" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/05-Jazz\/02-Big_Band\/META-INF\/container.xml" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/05-Jazz\/02-Big_Band\/Thumbnails\/thumbnail.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/05-Jazz\/02-Big_Band\/audiosettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/05-Jazz\/02-Big_Band\/score_style.mss" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/05-Jazz\/02-Big_Band\/viewsettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/05-Jazz\/03-Jazz_Combo\/03-Jazz_Combo.mscx" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/05-Jazz\/03-Jazz_Combo\/META-INF\/container.xml" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/05-Jazz\/03-Jazz_Combo\/Thumbnails\/thumbnail.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/05-Jazz\/03-Jazz_Combo\/audiosettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/05-Jazz\/03-Jazz_Combo\/score_style.mss" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/05-Jazz\/03-Jazz_Combo\/viewsettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/06-Popular\/01-Rock_Band\/01-Rock_Band.mscx" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/06-Popular\/01-Rock_Band\/META-INF\/container.xml" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/06-Popular\/01-Rock_Band\/Thumbnails\/thumbnail.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/06-Popular\/01-Rock_Band\/audiosettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/06-Popular\/01-Rock_Band\/score_style.mss" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/06-Popular\/01-Rock_Band\/viewsettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/06-Popular\/02-Bluegrass_Band\/02-Bluegrass_Band.mscx" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/06-Popular\/02-Bluegrass_Band\/META-INF\/container.xml" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/06-Popular\/02-Bluegrass_Band\/Thumbnails\/thumbnail.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/06-Popular\/02-Bluegrass_Band\/audiosettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/06-Popular\/02-Bluegrass_Band\/score_style.mss" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/06-Popular\/02-Bluegrass_Band\/viewsettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/01-Concert_Band\/01-Concert_Band.mscx" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/01-Concert_Band\/META-INF\/container.xml" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/01-Concert_Band\/Thumbnails\/thumbnail.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/01-Concert_Band\/audiosettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/01-Concert_Band\/score_style.mss" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/01-Concert_Band\/viewsettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/02-Small_Concert_Band\/02-Small_Concert_Band.mscx" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/02-Small_Concert_Band\/META-INF\/container.xml" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/02-Small_Concert_Band\/Thumbnails\/thumbnail.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/02-Small_Concert_Band\/audiosettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/02-Small_Concert_Band\/score_style.mss" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/02-Small_Concert_Band\/viewsettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/03-Brass_Band\/03-Brass_Band.mscx" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/03-Brass_Band\/META-INF\/container.xml" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/03-Brass_Band\/Thumbnails\/thumbnail.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/03-Brass_Band\/audiosettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/03-Brass_Band\/score_style.mss" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/03-Brass_Band\/viewsettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/04-Marching_Band\/04-Marching_Band.mscx" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/04-Marching_Band\/META-INF\/container.xml" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/04-Marching_Band\/Thumbnails\/thumbnail.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/04-Marching_Band\/audiosettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/04-Marching_Band\/score_style.mss" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/04-Marching_Band\/viewsettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/05-Small_Marching_Band\/05-Small_Marching_Band.mscx" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/05-Small_Marching_Band\/META-INF\/container.xml" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/05-Small_Marching_Band\/Thumbnails\/thumbnail.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/05-Small_Marching_Band\/audiosettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/05-Small_Marching_Band\/score_style.mss" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/05-Small_Marching_Band\/viewsettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/06-Battery_Percussion\/06-Battery_Percussion.mscx" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/06-Battery_Percussion\/META-INF\/container.xml" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/06-Battery_Percussion\/Thumbnails\/thumbnail.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/06-Battery_Percussion\/audiosettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/06-Battery_Percussion\/score_style.mss" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/06-Battery_Percussion\/viewsettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/07-Large_Pit_Percussion\/07-Large_Pit_Percussion.mscx" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/07-Large_Pit_Percussion\/META-INF\/container.xml" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/07-Large_Pit_Percussion\/Thumbnails\/thumbnail.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/07-Large_Pit_Percussion\/audiosettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/07-Large_Pit_Percussion\/score_style.mss" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/07-Large_Pit_Percussion\/viewsettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/08-Small_Pit_Percussion\/08-Small_Pit_Percussion.mscx" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/08-Small_Pit_Percussion\/META-INF\/container.xml" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/08-Small_Pit_Percussion\/Thumbnails\/thumbnail.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/08-Small_Pit_Percussion\/audiosettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/08-Small_Pit_Percussion\/score_style.mss" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/08-Small_Pit_Percussion\/viewsettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/09-European_Concert_Band\/09-European_Concert_Band.mscx" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/09-European_Concert_Band\/META-INF\/container.xml" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/09-European_Concert_Band\/Thumbnails\/thumbnail.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/09-European_Concert_Band\/audiosettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/09-European_Concert_Band\/score_style.mss" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/07-Band_and_Percussion\/09-European_Concert_Band\/viewsettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/08-Orchestral\/01-Classical_Orchestra\/01-Classical_Orchestra.mscx" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/08-Orchestral\/01-Classical_Orchestra\/META-INF\/container.xml" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/08-Orchestral\/01-Classical_Orchestra\/Thumbnails\/thumbnail.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/08-Orchestral\/01-Classical_Orchestra\/audiosettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/08-Orchestral\/01-Classical_Orchestra\/score_style.mss" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/08-Orchestral\/01-Classical_Orchestra\/viewsettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/08-Orchestral\/02-Symphony_Orchestra\/02-Symphony_Orchestra.mscx" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/08-Orchestral\/02-Symphony_Orchestra\/META-INF\/container.xml" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/08-Orchestral\/02-Symphony_Orchestra\/Thumbnails\/thumbnail.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/08-Orchestral\/02-Symphony_Orchestra\/audiosettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/08-Orchestral\/02-Symphony_Orchestra\/score_style.mss" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/08-Orchestral\/02-Symphony_Orchestra\/viewsettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/08-Orchestral\/03-String_Orchestra\/03-String_Orchestra.mscx" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/08-Orchestral\/03-String_Orchestra\/META-INF\/container.xml" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/08-Orchestral\/03-String_Orchestra\/Thumbnails\/thumbnail.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/08-Orchestral\/03-String_Orchestra\/audiosettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/08-Orchestral\/03-String_Orchestra\/score_style.mss" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/08-Orchestral\/03-String_Orchestra\/viewsettings.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/Marching_Bass_Drums.drm" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/Marching_Cymbals.drm" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/Marching_Snare_Drums.drm" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/Marching_Tenors.drm" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/My_First_Score.mscx" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/categories.json" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/drumset_fr.drm" ],
+            
+              [  "usr\/share\/mscore-4.7\/templates\/orchestral.drm" ],
+            
+              [  "usr\/share\/mscore-4.7\/wallpapers\/background1.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/wallpapers\/paper1.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/wallpapers\/paper2.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/wallpapers\/paper3.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/wallpapers\/paper4.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/wallpapers\/paper5.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/wallpapers\/paper6.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/wallpapers\/paper7.png" ],
+            
+              [  "usr\/share\/mscore-4.7\/workspaces\/Default.mws" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

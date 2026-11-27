@@ -1,0 +1,952 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing apps/kernelshark-2.4.0-r1&#43;2 in mocaccino-community-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> apps/kernelshark-2.4.0-r1&#43;2
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                Graphical reader for trace-cmd output
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-community-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-community-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of apps/kernelshark
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/mocaccino-community:kernelshark-apps-2.4.0-r1-2" target="_blank"> quay.io/mocaccino/mocaccino-community:kernelshark-apps-2.4.0-r1-2 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/mocaccino-community:kernelshark-apps-2.4.0-r1-2/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 2.4.0-r1&#43;2  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> GPL-2 LGPL-2.1 </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/qt">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  qt &gt;=0 </a>
+  </a>
+  </span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/fonts/freefont">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  freefont 20120503 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> appstream.id: org.kernelshark.KernelShark
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: dev-util/kernelshark
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://kernelshark.org/" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://kernelshark.org/ </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-libs/libtracecmd">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  libtracecmd &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-libs/libtraceevent">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  libtraceevent &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-libs/libtracefs">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  libtracefs &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-util/kernelshark">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  kernelshark &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/dev-util/trace-cmd">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  trace-cmd &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/sys-process/audit">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  audit &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "etc\/audit\/audisp-filter.conf" ],
+            
+              [  "etc\/audit\/audisp-remote.conf" ],
+            
+              [  "etc\/audit\/audit-stop.rules" ],
+            
+              [  "etc\/audit\/audit.rules" ],
+            
+              [  "etc\/audit\/audit.rules.stop.post" ],
+            
+              [  "etc\/audit\/audit.rules.stop.pre" ],
+            
+              [  "etc\/audit\/auditd.conf" ],
+            
+              [  "etc\/audit\/plugins.d\/af_unix.conf" ],
+            
+              [  "etc\/audit\/plugins.d\/au-remote.conf" ],
+            
+              [  "etc\/audit\/plugins.d\/filter.conf" ],
+            
+              [  "etc\/audit\/plugins.d\/syslog.conf" ],
+            
+              [  "etc\/audit\/rules.d\/.keep_sys-process_audit-0" ],
+            
+              [  "etc\/bash_completion.d\/audit.bash_completion" ],
+            
+              [  "etc\/conf.d\/auditd" ],
+            
+              [  "etc\/init.d\/auditd" ],
+            
+              [  "etc\/libaudit.conf" ],
+            
+              [  "usr\/bin\/audisp-af_unix" ],
+            
+              [  "usr\/bin\/audisp-filter" ],
+            
+              [  "usr\/bin\/audisp-remote" ],
+            
+              [  "usr\/bin\/audisp-syslog" ],
+            
+              [  "usr\/bin\/auditctl" ],
+            
+              [  "usr\/bin\/auditd" ],
+            
+              [  "usr\/bin\/augenrules" ],
+            
+              [  "usr\/bin\/aulast" ],
+            
+              [  "usr\/bin\/aulastlog" ],
+            
+              [  "usr\/bin\/aureport" ],
+            
+              [  "usr\/bin\/ausearch" ],
+            
+              [  "usr\/bin\/ausyscall" ],
+            
+              [  "usr\/bin\/kernelshark" ],
+            
+              [  "usr\/bin\/kshark-record" ],
+            
+              [  "usr\/bin\/kshark-su-record" ],
+            
+              [  "usr\/bin\/sqlhist" ],
+            
+              [  "usr\/bin\/trace-cmd" ],
+            
+              [  "usr\/lib\/libaudit.so" ],
+            
+              [  "usr\/lib\/libaudit.so.1" ],
+            
+              [  "usr\/lib\/libaudit.so.1.0.0" ],
+            
+              [  "usr\/lib\/libauparse.so" ],
+            
+              [  "usr\/lib\/libauparse.so.0" ],
+            
+              [  "usr\/lib\/libauparse.so.0.0.0" ],
+            
+              [  "usr\/lib\/libauplugin.so" ],
+            
+              [  "usr\/lib\/libauplugin.so.1" ],
+            
+              [  "usr\/lib\/libauplugin.so.1.0.0" ],
+            
+              [  "usr\/lib\/pkgconfig\/audit.pc" ],
+            
+              [  "usr\/lib\/pkgconfig\/auparse.pc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/__pycache__\/audit.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/__pycache__\/audit.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/__pycache__\/audit.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/_audit.so" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/audit.py" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/auparse.so" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/trace-cmd\/__pycache__\/ctracecmd.cpython-314.opt-1.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/trace-cmd\/__pycache__\/ctracecmd.cpython-314.opt-2.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/trace-cmd\/__pycache__\/ctracecmd.cpython-314.pyc" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/trace-cmd\/_ctracecmd.cpython-314-x86_64-linux-gnu.so" ],
+            
+              [  "usr\/lib\/python3.14\/site-packages\/trace-cmd\/ctracecmd.py" ],
+            
+              [  "usr\/lib\/systemd\/system\/audit-rules.service" ],
+            
+              [  "usr\/lib\/systemd\/system\/auditd.service" ],
+            
+              [  "usr\/lib\/tmpfiles.d\/audit.conf" ],
+            
+              [  "usr\/lib64\/kernelshark\/plugins\/plugin-event_field_plot.so" ],
+            
+              [  "usr\/lib64\/kernelshark\/plugins\/plugin-kvm_combo.so" ],
+            
+              [  "usr\/lib64\/kernelshark\/plugins\/plugin-latency_plot.so" ],
+            
+              [  "usr\/lib64\/kernelshark\/plugins\/plugin-missed_events.so" ],
+            
+              [  "usr\/lib64\/kernelshark\/plugins\/plugin-sched_events.so" ],
+            
+              [  "usr\/lib64\/libaudit.so" ],
+            
+              [  "usr\/lib64\/libaudit.so.1" ],
+            
+              [  "usr\/lib64\/libaudit.so.1.0.0" ],
+            
+              [  "usr\/lib64\/libauparse.so" ],
+            
+              [  "usr\/lib64\/libauparse.so.0" ],
+            
+              [  "usr\/lib64\/libauparse.so.0.0.0" ],
+            
+              [  "usr\/lib64\/libauplugin.so" ],
+            
+              [  "usr\/lib64\/libauplugin.so.1" ],
+            
+              [  "usr\/lib64\/libauplugin.so.1.0.0" ],
+            
+              [  "usr\/lib64\/libkshark-gui.so.2.4.0" ],
+            
+              [  "usr\/lib64\/libkshark-plot.so.2.4.0" ],
+            
+              [  "usr\/lib64\/libkshark.so" ],
+            
+              [  "usr\/lib64\/libkshark.so.2" ],
+            
+              [  "usr\/lib64\/libkshark.so.2.4.0" ],
+            
+              [  "usr\/lib64\/libtracecmd.so" ],
+            
+              [  "usr\/lib64\/libtracecmd.so.1" ],
+            
+              [  "usr\/lib64\/libtracecmd.so.1.5.5" ],
+            
+              [  "usr\/lib64\/libtraceevent.so" ],
+            
+              [  "usr\/lib64\/libtraceevent.so.1" ],
+            
+              [  "usr\/lib64\/libtraceevent.so.1.9.0" ],
+            
+              [  "usr\/lib64\/libtracefs.so" ],
+            
+              [  "usr\/lib64\/libtracefs.so.1" ],
+            
+              [  "usr\/lib64\/libtracefs.so.1.8.3" ],
+            
+              [  "usr\/lib64\/pkgconfig\/audit.pc" ],
+            
+              [  "usr\/lib64\/pkgconfig\/auparse.pc" ],
+            
+              [  "usr\/lib64\/pkgconfig\/libkshark.pc" ],
+            
+              [  "usr\/lib64\/pkgconfig\/libtracecmd.pc" ],
+            
+              [  "usr\/lib64\/pkgconfig\/libtraceevent.pc" ],
+            
+              [  "usr\/lib64\/pkgconfig\/libtracefs.pc" ],
+            
+              [  "usr\/lib64\/traceevent\/plugins\/libtraceevent-dynamic-list" ],
+            
+              [  "usr\/lib64\/traceevent\/plugins\/plugin_cfg80211.so" ],
+            
+              [  "usr\/lib64\/traceevent\/plugins\/plugin_function.so" ],
+            
+              [  "usr\/lib64\/traceevent\/plugins\/plugin_futex.so" ],
+            
+              [  "usr\/lib64\/traceevent\/plugins\/plugin_hrtimer.so" ],
+            
+              [  "usr\/lib64\/traceevent\/plugins\/plugin_jbd2.so" ],
+            
+              [  "usr\/lib64\/traceevent\/plugins\/plugin_kmem.so" ],
+            
+              [  "usr\/lib64\/traceevent\/plugins\/plugin_kvm.so" ],
+            
+              [  "usr\/lib64\/traceevent\/plugins\/plugin_mac80211.so" ],
+            
+              [  "usr\/lib64\/traceevent\/plugins\/plugin_net.so" ],
+            
+              [  "usr\/lib64\/traceevent\/plugins\/plugin_sched_switch.so" ],
+            
+              [  "usr\/lib64\/traceevent\/plugins\/plugin_scsi.so" ],
+            
+              [  "usr\/lib64\/traceevent\/plugins\/plugin_tlb.so" ],
+            
+              [  "usr\/lib64\/traceevent\/plugins\/plugin_xen.so" ],
+            
+              [  "usr\/libexec\/initscripts\/legacy-actions\/auditd\/condrestart" ],
+            
+              [  "usr\/libexec\/initscripts\/legacy-actions\/auditd\/reload" ],
+            
+              [  "usr\/libexec\/initscripts\/legacy-actions\/auditd\/restart" ],
+            
+              [  "usr\/libexec\/initscripts\/legacy-actions\/auditd\/resume" ],
+            
+              [  "usr\/libexec\/initscripts\/legacy-actions\/auditd\/rotate" ],
+            
+              [  "usr\/libexec\/initscripts\/legacy-actions\/auditd\/state" ],
+            
+              [  "usr\/libexec\/initscripts\/legacy-actions\/auditd\/stop" ],
+            
+              [  "usr\/share\/aclocal\/audit.m4" ],
+            
+              [  "usr\/share\/applications\/kernelshark.desktop" ],
+            
+              [  "usr\/share\/bash-completion\/completions\/trace-cmd" ],
+            
+              [  "usr\/share\/bash-completion\/completions\/tracefs_sql.bash" ],
+            
+              [  "usr\/share\/doc\/audit-4.1.4-r4\/AUTHORS" ],
+            
+              [  "usr\/share\/doc\/audit-4.1.4-r4\/ChangeLog.bz2" ],
+            
+              [  "usr\/share\/doc\/audit-4.1.4-r4\/README.md.bz2" ],
+            
+              [  "usr\/share\/doc\/audit-4.1.4-r4\/THANKS.bz2" ],
+            
+              [  "usr\/share\/doc\/audit-4.1.4-r4\/contrib\/avc_snap.bz2" ],
+            
+              [  "usr\/share\/doc\/audit-4.1.4-r4\/contrib\/plugin\/Makefile.bz2" ],
+            
+              [  "usr\/share\/doc\/audit-4.1.4-r4\/contrib\/plugin\/audisp-example.c.bz2" ],
+            
+              [  "usr\/share\/doc\/audit-4.1.4-r4\/contrib\/plugin\/audisp-example.conf.bz2" ],
+            
+              [  "usr\/share\/doc\/audit-4.1.4-r4\/rules\/10-base-config.rules.bz2" ],
+            
+              [  "usr\/share\/doc\/audit-4.1.4-r4\/rules\/10-no-audit.rules.bz2" ],
+            
+              [  "usr\/share\/doc\/audit-4.1.4-r4\/rules\/11-loginuid.rules" ],
+            
+              [  "usr\/share\/doc\/audit-4.1.4-r4\/rules\/12-cont-fail.rules.bz2" ],
+            
+              [  "usr\/share\/doc\/audit-4.1.4-r4\/rules\/12-ignore-error.rules.bz2" ],
+            
+              [  "usr\/share\/doc\/audit-4.1.4-r4\/rules\/20-dont-audit.rules.bz2" ],
+            
+              [  "usr\/share\/doc\/audit-4.1.4-r4\/rules\/21-no32bit.rules.bz2" ],
+            
+              [  "usr\/share\/doc\/audit-4.1.4-r4\/rules\/22-ignore-chrony.rules.bz2" ],
+            
+              [  "usr\/share\/doc\/audit-4.1.4-r4\/rules\/23-ignore-filesystems.rules.bz2" ],
+            
+              [  "usr\/share\/doc\/audit-4.1.4-r4\/rules\/30-ospp-v42-1-create-failed.rules.bz2" ],
+            
+              [  "usr\/share\/doc\/audit-4.1.4-r4\/rules\/30-ospp-v42-1-create-success.rules.bz2" ],
+            
+              [  "usr\/share\/doc\/audit-4.1.4-r4\/rules\/30-ospp-v42-2-modify-failed.rules.bz2" ],
+            
+              [  "usr\/share\/doc\/audit-4.1.4-r4\/rules\/30-ospp-v42-2-modify-success.rules.bz2" ],
+            
+              [  "usr\/share\/doc\/audit-4.1.4-r4\/rules\/30-ospp-v42-3-access-failed.rules.bz2" ],
+            
+              [  "usr\/share\/doc\/audit-4.1.4-r4\/rules\/30-ospp-v42-3-access-success.rules.bz2" ],
+            
+              [  "usr\/share\/doc\/audit-4.1.4-r4\/rules\/30-ospp-v42-4-delete-failed.rules.bz2" ],
+            
+              [  "usr\/share\/doc\/audit-4.1.4-r4\/rules\/30-ospp-v42-4-delete-success.rules.bz2" ],
+            
+              [  "usr\/share\/doc\/audit-4.1.4-r4\/rules\/30-ospp-v42-5-perm-change-failed.rules.bz2" ],
+            
+              [  "usr\/share\/doc\/audit-4.1.4-r4\/rules\/30-ospp-v42-5-perm-change-success.rules.bz2" ],
+            
+              [  "usr\/share\/doc\/audit-4.1.4-r4\/rules\/30-ospp-v42-6-owner-change-failed.rules.bz2" ],
+            
+              [  "usr\/share\/doc\/audit-4.1.4-r4\/rules\/30-ospp-v42-6-owner-change-success.rules.bz2" ],
+            
+              [  "usr\/share\/doc\/audit-4.1.4-r4\/rules\/30-ospp-v42.rules.bz2" ],
+            
+              [  "usr\/share\/doc\/audit-4.1.4-r4\/rules\/30-pci-dss-v31.rules.bz2" ],
+            
+              [  "usr\/share\/doc\/audit-4.1.4-r4\/rules\/30-stig.rules.bz2" ],
+            
+              [  "usr\/share\/doc\/audit-4.1.4-r4\/rules\/31-privileged.rules.bz2" ],
+            
+              [  "usr\/share\/doc\/audit-4.1.4-r4\/rules\/32-power-abuse.rules.bz2" ],
+            
+              [  "usr\/share\/doc\/audit-4.1.4-r4\/rules\/40-local.rules.bz2" ],
+            
+              [  "usr\/share\/doc\/audit-4.1.4-r4\/rules\/41-containers.rules.bz2" ],
+            
+              [  "usr\/share\/doc\/audit-4.1.4-r4\/rules\/42-injection.rules.bz2" ],
+            
+              [  "usr\/share\/doc\/audit-4.1.4-r4\/rules\/43-module-load.rules.bz2" ],
+            
+              [  "usr\/share\/doc\/audit-4.1.4-r4\/rules\/44-installers.rules.bz2" ],
+            
+              [  "usr\/share\/doc\/audit-4.1.4-r4\/rules\/70-einval.rules.bz2" ],
+            
+              [  "usr\/share\/doc\/audit-4.1.4-r4\/rules\/71-networking.rules.bz2" ],
+            
+              [  "usr\/share\/doc\/audit-4.1.4-r4\/rules\/99-finalize.rules" ],
+            
+              [  "usr\/share\/doc\/audit-4.1.4-r4\/rules\/README-rules.bz2" ],
+            
+              [  "usr\/share\/doc\/kernelshark-2.4.0-r1\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/libtraceevent-1.9.0\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/libtracefs-1.8.3\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/trace-cmd-3.4\/README.bz2" ],
+            
+              [  "usr\/share\/doc\/trace-cmd-3.4\/html\/trace-cmd-agent.1.html" ],
+            
+              [  "usr\/share\/doc\/trace-cmd-3.4\/html\/trace-cmd-check-events.1.html" ],
+            
+              [  "usr\/share\/doc\/trace-cmd-3.4\/html\/trace-cmd-clear.1.html" ],
+            
+              [  "usr\/share\/doc\/trace-cmd-3.4\/html\/trace-cmd-convert.1.html" ],
+            
+              [  "usr\/share\/doc\/trace-cmd-3.4\/html\/trace-cmd-dump.1.html" ],
+            
+              [  "usr\/share\/doc\/trace-cmd-3.4\/html\/trace-cmd-extract.1.html" ],
+            
+              [  "usr\/share\/doc\/trace-cmd-3.4\/html\/trace-cmd-hist.1.html" ],
+            
+              [  "usr\/share\/doc\/trace-cmd-3.4\/html\/trace-cmd-list.1.html" ],
+            
+              [  "usr\/share\/doc\/trace-cmd-3.4\/html\/trace-cmd-listen.1.html" ],
+            
+              [  "usr\/share\/doc\/trace-cmd-3.4\/html\/trace-cmd-mem.1.html" ],
+            
+              [  "usr\/share\/doc\/trace-cmd-3.4\/html\/trace-cmd-options.1.html" ],
+            
+              [  "usr\/share\/doc\/trace-cmd-3.4\/html\/trace-cmd-profile.1.html" ],
+            
+              [  "usr\/share\/doc\/trace-cmd-3.4\/html\/trace-cmd-record.1.html" ],
+            
+              [  "usr\/share\/doc\/trace-cmd-3.4\/html\/trace-cmd-report.1.html" ],
+            
+              [  "usr\/share\/doc\/trace-cmd-3.4\/html\/trace-cmd-reset.1.html" ],
+            
+              [  "usr\/share\/doc\/trace-cmd-3.4\/html\/trace-cmd-restore.1.html" ],
+            
+              [  "usr\/share\/doc\/trace-cmd-3.4\/html\/trace-cmd-set.1.html" ],
+            
+              [  "usr\/share\/doc\/trace-cmd-3.4\/html\/trace-cmd-show.1.html" ],
+            
+              [  "usr\/share\/doc\/trace-cmd-3.4\/html\/trace-cmd-snapshot.1.html" ],
+            
+              [  "usr\/share\/doc\/trace-cmd-3.4\/html\/trace-cmd-split.1.html" ],
+            
+              [  "usr\/share\/doc\/trace-cmd-3.4\/html\/trace-cmd-stack.1.html" ],
+            
+              [  "usr\/share\/doc\/trace-cmd-3.4\/html\/trace-cmd-start.1.html" ],
+            
+              [  "usr\/share\/doc\/trace-cmd-3.4\/html\/trace-cmd-stat.1.html" ],
+            
+              [  "usr\/share\/doc\/trace-cmd-3.4\/html\/trace-cmd-stop.1.html" ],
+            
+              [  "usr\/share\/doc\/trace-cmd-3.4\/html\/trace-cmd-stream.1.html" ],
+            
+              [  "usr\/share\/doc\/trace-cmd-3.4\/html\/trace-cmd.1.html" ],
+            
+              [  "usr\/share\/doc\/trace-cmd-3.4\/html\/trace-cmd.dat.v6.5.html" ],
+            
+              [  "usr\/share\/doc\/trace-cmd-3.4\/html\/trace-cmd.dat.v7.5.html" ],
+            
+              [  "usr\/share\/icons\/kernelshark\/KS_icon_fin.svg" ],
+            
+              [  "usr\/share\/icons\/kernelshark\/KS_icon_shark.svg" ],
+            
+              [  "usr\/share\/man\/man1\/trace-cmd-agent.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/trace-cmd-check-events.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/trace-cmd-clear.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/trace-cmd-convert.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/trace-cmd-dump.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/trace-cmd-extract.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/trace-cmd-hist.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/trace-cmd-list.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/trace-cmd-listen.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/trace-cmd-mem.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/trace-cmd-options.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/trace-cmd-profile.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/trace-cmd-record.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/trace-cmd-report.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/trace-cmd-reset.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/trace-cmd-restore.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/trace-cmd-set.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/trace-cmd-show.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/trace-cmd-snapshot.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/trace-cmd-split.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/trace-cmd-stack.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/trace-cmd-start.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/trace-cmd-stat.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/trace-cmd-stop.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/trace-cmd-stream.1.bz2" ],
+            
+              [  "usr\/share\/man\/man1\/trace-cmd.1.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/audit_add_rule_data.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/audit_add_watch.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/audit_can_read.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/audit_close.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/audit_delete_rule_data.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/audit_detect_machine.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/audit_encode_nv_string.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/audit_encode_value.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/audit_flag_to_name.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/audit_fstype_to_name.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/audit_get_features.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/audit_get_reply.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/audit_get_session.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/audit_getloginuid.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/audit_is_enabled.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/audit_log_acct_message.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/audit_log_semanage_message.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/audit_log_user_avc_message.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/audit_log_user_comm_message.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/audit_log_user_command.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/audit_log_user_message.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/audit_name_to_action.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/audit_name_to_errno.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/audit_name_to_flag.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/audit_name_to_fstype.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/audit_name_to_syscall.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/audit_open.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/audit_request_features.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/audit_request_rules_list_data.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/audit_request_signal_info.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/audit_request_status.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/audit_reset_backlog_wait_time_actual.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/audit_reset_lost.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/audit_set_backlog_limit.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/audit_set_backlog_wait_time.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/audit_set_enabled.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/audit_set_failure.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/audit_set_feature.3" ],
+            
+              [  "usr\/share\/man\/man3\/audit_set_loginuid_immutable.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/audit_set_pid.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/audit_set_rate_limit.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/audit_setloginuid.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/audit_syscall_to_name.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/audit_update_watch_perms.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/audit_value_needs_encoding.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/auparse_add_callback.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/auparse_destroy.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/auparse_feed.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/auparse_feed_age_events.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/auparse_feed_has_data.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/auparse_find_field.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/auparse_find_field_next.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/auparse_first_field.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/auparse_first_record.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/auparse_flush_feed.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/auparse_get_field_int.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/auparse_get_field_name.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/auparse_get_field_num.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/auparse_get_field_str.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/auparse_get_field_type.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/auparse_get_filename.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/auparse_get_line_number.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/auparse_get_milli.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/auparse_get_node.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/auparse_get_num_fields.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/auparse_get_num_records.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/auparse_get_record_num.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/auparse_get_record_text.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/auparse_get_serial.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/auparse_get_time.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/auparse_get_timestamp.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/auparse_get_type.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/auparse_get_type_name.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/auparse_goto_field_num.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/auparse_goto_record_num.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/auparse_init.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/auparse_interpret_field.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/auparse_metrics.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/auparse_new_buffer.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/auparse_next_event.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/auparse_next_field.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/auparse_next_record.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/auparse_node_compare.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/auparse_normalize.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/auparse_normalize_functions.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/auparse_reset.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/auparse_set_eoe_timeout.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/auparse_set_escape_mode.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/auparse_timestamp_compare.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/auplugin.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/auplugin_fgets.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ausearch_add_expression.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ausearch_add_interpreted_item.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ausearch_add_item.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ausearch_add_regex.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ausearch_add_timestamp_item.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ausearch_add_timestamp_item_ex.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ausearch_clear.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ausearch_cur_event.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ausearch_next_event.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/ausearch_set_stop.3.bz2" ],
+            
+              [  "usr\/share\/man\/man3\/get_auditfail_action.3.bz2" ],
+            
+              [  "usr\/share\/man\/man5\/audisp-remote.conf.5.bz2" ],
+            
+              [  "usr\/share\/man\/man5\/auditd-plugins.5.bz2" ],
+            
+              [  "usr\/share\/man\/man5\/auditd.conf.5.bz2" ],
+            
+              [  "usr\/share\/man\/man5\/auditd.cron.5.bz2" ],
+            
+              [  "usr\/share\/man\/man5\/ausearch-expression.5.bz2" ],
+            
+              [  "usr\/share\/man\/man5\/libaudit.conf.5.bz2" ],
+            
+              [  "usr\/share\/man\/man5\/trace-cmd.dat.v6.5.bz2" ],
+            
+              [  "usr\/share\/man\/man5\/trace-cmd.dat.v7.5.bz2" ],
+            
+              [  "usr\/share\/man\/man5\/zos-remote.conf.5.bz2" ],
+            
+              [  "usr\/share\/man\/man7\/audit.rules.7.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/audisp-af_unix.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/audisp-filter.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/audisp-remote.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/audisp-syslog.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/audispd-zos-remote.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/auditctl.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/auditd.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/augenrules.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/aulast.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/aulastlog.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/aureport.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/ausearch.8.bz2" ],
+            
+              [  "usr\/share\/man\/man8\/ausyscall.8.bz2" ],
+            
+              [  "usr\/share\/polkit-1\/actions\/org.freedesktop.kshark-record.policy" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

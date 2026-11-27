@@ -1,0 +1,1493 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing apps/OpenLinkHub-0.7.2-1bf3eec in mocaccino-community-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> apps/OpenLinkHub-0.7.2-1bf3eec
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                Open source interface for iCUE LINK Hub and other Corsair AIOs, Hubs for Linux. Manage RGB lighting, fan speeds, system metrics, as well as keyboards, mice, headsets via a web dashboard.
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-community-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-community-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of apps/OpenLinkHub
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/mocaccino-community:OpenLinkHub-apps-0.7.2-1bf3eec" target="_blank"> quay.io/mocaccino/mocaccino-community:OpenLinkHub-apps-0.7.2-1bf3eec </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/mocaccino-community:OpenLinkHub-apps-0.7.2-1bf3eec/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 0.7.2-1bf3eec  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> GPL-3.0 </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/system-x">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  system-x &gt;=0 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://github.com/jurkovic-nikola/OpenLinkHub" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://github.com/jurkovic-nikola/OpenLinkHub </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/app-misc/OpenLinkHub">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  OpenLinkHub &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "etc\/systemd\/system\/OpenLinkHub.service" ],
+            
+              [  "etc\/udev\/rules.d\/99-openlinkhub.rules" ],
+            
+              [  "opt\/OpenLinkHub\/.devcontainer\/devcontainer.json" ],
+            
+              [  "opt\/OpenLinkHub\/.git\/FETCH_HEAD" ],
+            
+              [  "opt\/OpenLinkHub\/.git\/HEAD" ],
+            
+              [  "opt\/OpenLinkHub\/.git\/config" ],
+            
+              [  "opt\/OpenLinkHub\/.git\/description" ],
+            
+              [  "opt\/OpenLinkHub\/.git\/hooks\/applypatch-msg.sample" ],
+            
+              [  "opt\/OpenLinkHub\/.git\/hooks\/commit-msg.sample" ],
+            
+              [  "opt\/OpenLinkHub\/.git\/hooks\/fsmonitor-watchman.sample" ],
+            
+              [  "opt\/OpenLinkHub\/.git\/hooks\/post-update.sample" ],
+            
+              [  "opt\/OpenLinkHub\/.git\/hooks\/pre-applypatch.sample" ],
+            
+              [  "opt\/OpenLinkHub\/.git\/hooks\/pre-commit.sample" ],
+            
+              [  "opt\/OpenLinkHub\/.git\/hooks\/pre-merge-commit.sample" ],
+            
+              [  "opt\/OpenLinkHub\/.git\/hooks\/pre-push.sample" ],
+            
+              [  "opt\/OpenLinkHub\/.git\/hooks\/pre-rebase.sample" ],
+            
+              [  "opt\/OpenLinkHub\/.git\/hooks\/pre-receive.sample" ],
+            
+              [  "opt\/OpenLinkHub\/.git\/hooks\/prepare-commit-msg.sample" ],
+            
+              [  "opt\/OpenLinkHub\/.git\/hooks\/push-to-checkout.sample" ],
+            
+              [  "opt\/OpenLinkHub\/.git\/hooks\/sendemail-validate.sample" ],
+            
+              [  "opt\/OpenLinkHub\/.git\/hooks\/update.sample" ],
+            
+              [  "opt\/OpenLinkHub\/.git\/index" ],
+            
+              [  "opt\/OpenLinkHub\/.git\/info\/exclude" ],
+            
+              [  "opt\/OpenLinkHub\/.git\/logs\/HEAD" ],
+            
+              [  "opt\/OpenLinkHub\/.git\/logs\/refs\/heads\/main" ],
+            
+              [  "opt\/OpenLinkHub\/.git\/logs\/refs\/remotes\/origin\/HEAD" ],
+            
+              [  "opt\/OpenLinkHub\/.git\/objects\/pack\/pack-d6eb4bc484adfe0a0638c69aa12cb70ef4f262da.idx" ],
+            
+              [  "opt\/OpenLinkHub\/.git\/objects\/pack\/pack-d6eb4bc484adfe0a0638c69aa12cb70ef4f262da.pack" ],
+            
+              [  "opt\/OpenLinkHub\/.git\/objects\/pack\/pack-d6eb4bc484adfe0a0638c69aa12cb70ef4f262da.rev" ],
+            
+              [  "opt\/OpenLinkHub\/.git\/packed-refs" ],
+            
+              [  "opt\/OpenLinkHub\/.git\/refs\/heads\/main" ],
+            
+              [  "opt\/OpenLinkHub\/.git\/refs\/remotes\/origin\/HEAD" ],
+            
+              [  "opt\/OpenLinkHub\/.github\/FUNDING.yml" ],
+            
+              [  "opt\/OpenLinkHub\/.github\/ISSUE_TEMPLATE\/bug_report.md" ],
+            
+              [  "opt\/OpenLinkHub\/.github\/ISSUE_TEMPLATE\/feature_request.md" ],
+            
+              [  "opt\/OpenLinkHub\/.github\/workflows\/docker-publish.yml" ],
+            
+              [  "opt\/OpenLinkHub\/.github\/workflows\/go.yml" ],
+            
+              [  "opt\/OpenLinkHub\/.gitignore" ],
+            
+              [  "opt\/OpenLinkHub\/99-openlinkhub.rules" ],
+            
+              [  "opt\/OpenLinkHub\/CHANGELOG.md" ],
+            
+              [  "opt\/OpenLinkHub\/Dockerfile" ],
+            
+              [  "opt\/OpenLinkHub\/LICENSE" ],
+            
+              [  "opt\/OpenLinkHub\/OpenLinkHub" ],
+            
+              [  "opt\/OpenLinkHub\/OpenLinkHub.service" ],
+            
+              [  "opt\/OpenLinkHub\/README-pt_BR.md" ],
+            
+              [  "opt\/OpenLinkHub\/README.md" ],
+            
+              [  "opt\/OpenLinkHub\/api\/README.md" ],
+            
+              [  "opt\/OpenLinkHub\/database\/external\/ccxt.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/external\/linkadapter.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/external\/lnpro.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/external\/lsh.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/key-assignments\/.gitkeep" ],
+            
+              [  "opt\/OpenLinkHub\/database\/keyboard\/k100-de.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/keyboard\/k100.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/keyboard\/k100air-de.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/keyboard\/k100air-fr.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/keyboard\/k100air.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/keyboard\/k55.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/keyboard\/k55core.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/keyboard\/k55coretkl.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/keyboard\/k55pro.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/keyboard\/k55proXT.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/keyboard\/k57rgb.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/keyboard\/k60rgbpro.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/keyboard\/k65plus-uk.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/keyboard\/k65plus.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/keyboard\/k65pm.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/keyboard\/k65rm.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/keyboard\/k68rgb.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/keyboard\/k70core.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/keyboard\/k70coretkl.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/keyboard\/k70coretklW.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/keyboard\/k70lux.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/keyboard\/k70luxrgb.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/keyboard\/k70max-uk.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/keyboard\/k70max.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/keyboard\/k70mk2-de.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/keyboard\/k70mk2.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/keyboard\/k70pm.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/keyboard\/k70pro-be.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/keyboard\/k70pro.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/keyboard\/k70protkl.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/keyboard\/k70rgbRF.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/keyboard\/k70rgbtklcs.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/keyboard\/k95platinum-de.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/keyboard\/k95platinum-es.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/keyboard\/k95platinum-sv.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/keyboard\/k95platinum-uk.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/keyboard\/k95platinum.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/keyboard\/k95platinumXT.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/keyboard\/makr75.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/keyboard\/strafergbmk2.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/language\/en_US.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/language\/fr_FR.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/language\/pt_BR.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/language\/ru_RU.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/lcd\/background.jpg" ],
+            
+              [  "opt\/OpenLinkHub\/database\/lcd\/images\/concentric.gif" ],
+            
+              [  "opt\/OpenLinkHub\/database\/lcd\/images\/openlinkhub.gif" ],
+            
+              [  "opt\/OpenLinkHub\/database\/led\/.gitkeep" ],
+            
+              [  "opt\/OpenLinkHub\/database\/macros\/.gitkeep" ],
+            
+              [  "opt\/OpenLinkHub\/database\/nexus\/background-media.jpg" ],
+            
+              [  "opt\/OpenLinkHub\/database\/nexus\/background.jpg" ],
+            
+              [  "opt\/OpenLinkHub\/database\/nexus\/icon-backward.png" ],
+            
+              [  "opt\/OpenLinkHub\/database\/nexus\/icon-forward.png" ],
+            
+              [  "opt\/OpenLinkHub\/database\/nexus\/icon-pause.png" ],
+            
+              [  "opt\/OpenLinkHub\/database\/nexus\/icon-stop.png" ],
+            
+              [  "opt\/OpenLinkHub\/database\/nexus\/icon-volume-down.png" ],
+            
+              [  "opt\/OpenLinkHub\/database\/nexus\/icon-volume-up.png" ],
+            
+              [  "opt\/OpenLinkHub\/database\/nexus\/nexus.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/profiles\/.gitkeep" ],
+            
+              [  "opt\/OpenLinkHub\/database\/rgb\/.gitkeep" ],
+            
+              [  "opt\/OpenLinkHub\/database\/rgb.json" ],
+            
+              [  "opt\/OpenLinkHub\/database\/temperatures\/.gitkeep" ],
+            
+              [  "opt\/OpenLinkHub\/docs\/memory-configuration.md" ],
+            
+              [  "opt\/OpenLinkHub\/docs\/memory-configuration_pt-BR.md" ],
+            
+              [  "opt\/OpenLinkHub\/docs\/supported-devices.md" ],
+            
+              [  "opt\/OpenLinkHub\/go.mod" ],
+            
+              [  "opt\/OpenLinkHub\/go.sum" ],
+            
+              [  "opt\/OpenLinkHub\/install-immutable.sh" ],
+            
+              [  "opt\/OpenLinkHub\/install.sh" ],
+            
+              [  "opt\/OpenLinkHub\/main.go" ],
+            
+              [  "opt\/OpenLinkHub\/openrgb\/README-pt_BR.md" ],
+            
+              [  "opt\/OpenLinkHub\/openrgb\/README.md" ],
+            
+              [  "opt\/OpenLinkHub\/src\/backup\/backup.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/cluster\/cluster.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/common\/common.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/config\/config.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/controller\/controller.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/dashboard\/dashboard.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/cc\/cc.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/ccxt\/ccxt.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/cduo\/cduo.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/cpro\/cpro.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/darkcorergbproW\/darkcorergbproW.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/darkcorergbproWU\/darkcorergbproWU.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/darkcorergbproseW\/darkcorergbproseW.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/darkcorergbproseWU\/darkcorergbproseWU.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/darkcorergbseW\/darkcorergbseW.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/darkcorergbseWU\/darkcorergbseWU.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/darkcorergbsesongle\/darkcorergbsesongle.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/darkstarW\/darkstarW.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/darkstarWU\/darkstarWU.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/devices.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/elite\/elite.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/glaivergbpro\/glaivergbpro.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/harpoonW\/harpoonW.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/harpoonWU\/harpoonWU.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/harpoonrgbpro\/harpoonrgbpro.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/headsetdongle\/headsetdongle.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/hs80maxW\/hs80maxW.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/hs80maxdongle\/hs80maxdongle.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/hs80rgb\/hs80rgb.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/hs80rgbW\/hs80rgbW.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/hydro\/hydro.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/ironclaw\/ironclaw.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/ironclawW\/ironclawW.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/ironclawWU\/ironclawWU.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/k100\/k100.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/k100airW\/k100airW.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/k100airWU\/k100airWU.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/k55\/k55.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/k55core\/k55core.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/k55coretkl\/k55coretkl.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/k55pro\/k55pro.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/k55proXT\/k55proXT.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/k57rgbW\/k57rgbW.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/k57rgbWU\/k57rgbWU.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/k60rgbpro\/k60rgbpro.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/k65plusW\/k65plusW.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/k65plusWU\/k65plusWU.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/k65plusWdongle\/k65plusWdongle.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/k65pm\/k65pm.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/k65rm\/k65rm.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/k68rgb\/k68rgb.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/k70core\/k70core.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/k70coretkl\/k70coretkl.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/k70coretklW\/k70coretklW.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/k70coretklWU\/k70coretklWU.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/k70lux\/k70lux.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/k70luxrgb\/k70luxrgb.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/k70max\/k70max.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/k70mk2\/k70mk2.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/k70pmW\/k70pmW.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/k70pmWU\/k70pmWU.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/k70pro\/k70pro.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/k70protkl\/k70protkl.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/k70rgbRF\/k70rgbRF.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/k70rgbtklcs\/k70rgbtklcs.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/k95platinum\/k95platinum.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/k95platinumXT\/k95platinumXT.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/katarpro\/katarpro.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/katarproW\/katarproW.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/katarproxt\/katarproxt.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/lcd\/animation.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/lcd\/arc.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/lcd\/doublearc.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/lcd\/lcd.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/lncore\/lncore.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/lnpro\/lnpro.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/lsh\/lsh.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/lt100\/lt100.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/m55\/m55.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/m55W\/m55W.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/m55rgbpro\/m55rgbpro.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/m65rgbelite\/m65rgbelite.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/m65rgbultra\/m65rgbultra.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/m65rgbultraW\/m65rgbultraW.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/m65rgbultraWU\/m65rgbultraWU.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/m75\/m75.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/m75AirW\/m75AirW.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/m75AirWU\/m75AirWU.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/m75W\/m75W.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/m75WU\/m75WU.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/makr75W\/makr75W.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/makr75WU\/makr75WU.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/memory\/eepromDecoder.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/memory\/memory.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/mm700\/mm700.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/mm800\/mm800.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/nautilusLcd\/nautilusLcd.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/nexus\/nexus.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/nightsabreW\/nightsabreW.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/nightsabreWU\/nightsabreWU.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/nightswordrgb\/nightswordrgb.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/platinum\/platinum.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/psudongle\/psudongle.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/psuhid\/psuhid.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/sabreprocs\/sabreprocs.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/sabrergbpro\/sabrergbpro.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/sabrergbproW\/sabrergbproW.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/sabrergbproWU\/sabrergbproWU.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/scimitar\/scimitar.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/scimitarSEW\/scimitarSEW.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/scimitarSEWU\/scimitarSEWU.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/scimitarW\/scimitarW.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/scimitarWU\/scimitarWU.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/scimitarprorgb\/scimitarprorgb.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/scimitarrgb\/scimitarrgb.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/scimitarrgbelite\/scimitarrgbelite.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/scufdongle\/scufdongle.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/scufdongleV2\/scufdongleV2.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/scufenvisionproV2W\/scufenvisionproV2W.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/scufenvisionproV2WU\/scufenvisionproV2WU.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/scufenvisionproW\/scufenvisionproW.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/scufenvisionproWU\/scufenvisionproWU.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/slipstream\/slipstream.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/st100\/st100.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/strafergbmk2\/strafergbmk2.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/virtuosoSEW\/virtuosoSEW.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/virtuosoSEWU\/virtuosoSEWU.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/virtuosoW\/virtuosoW.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/virtuosoWU\/virtuosoWU.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/virtuosomaxW\/virtuosomaxW.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/virtuosomaxdongle\/virtuosomaxdongle.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/virtuosorgbXTW\/virtuosorgbXTW.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/virtuosorgbXTWU\/virtuosorgbXTWU.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/voidV2W\/voidV2W.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/voidV2dongle\/voidV2dongle.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/devices\/xc7\/xc7.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/inputmanager\/inputmanager.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/inputmanager\/keyboard.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/inputmanager\/mouse.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/keyboards\/keyboards.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/language\/language.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/led\/led.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/logger\/logger.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/macro\/macro.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/metrics\/metrics.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/monitor\/monitor.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/openrgb\/openrgb.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/rgb\/circle.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/rgb\/colorpulse.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/rgb\/colorshift.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/rgb\/colorwarp.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/rgb\/flickering.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/rgb\/gradient.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/rgb\/marquee.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/rgb\/nebula.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/rgb\/rainbow.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/rgb\/rgb.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/rgb\/rotarystack.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/rgb\/rotator.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/rgb\/sequential.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/rgb\/spinner.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/rgb\/static.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/rgb\/storm.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/rgb\/temperature.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/rgb\/visor.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/rgb\/watercolor.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/rgb\/wave.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/scheduler\/scheduler.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/serial\/serial.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/server\/requests\/requests.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/server\/server.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/smbus\/smbus.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/stats\/stats.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/systeminfo\/systeminfo.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/systray\/systray.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/temperatures\/temperatures.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/templates\/templates.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/usb\/usb.go" ],
+            
+              [  "opt\/OpenLinkHub\/src\/version\/version.go" ],
+            
+              [  "opt\/OpenLinkHub\/static\/css\/all.css" ],
+            
+              [  "opt\/OpenLinkHub\/static\/css\/bootstrap-icons.min.css" ],
+            
+              [  "opt\/OpenLinkHub\/static\/css\/custom.css" ],
+            
+              [  "opt\/OpenLinkHub\/static\/css\/select2.css" ],
+            
+              [  "opt\/OpenLinkHub\/static\/css\/style.blue.min.css" ],
+            
+              [  "opt\/OpenLinkHub\/static\/css\/style.blue.min.css.map" ],
+            
+              [  "opt\/OpenLinkHub\/static\/css\/toastr.min.css" ],
+            
+              [  "opt\/OpenLinkHub\/static\/fonts\/bootstrap-icons.woff2" ],
+            
+              [  "opt\/OpenLinkHub\/static\/fonts\/fa-brands-400 (1).eot" ],
+            
+              [  "opt\/OpenLinkHub\/static\/fonts\/fa-brands-400.eot" ],
+            
+              [  "opt\/OpenLinkHub\/static\/fonts\/fa-brands-400.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/fonts\/fa-brands-400.ttf" ],
+            
+              [  "opt\/OpenLinkHub\/static\/fonts\/fa-brands-400.woff" ],
+            
+              [  "opt\/OpenLinkHub\/static\/fonts\/fa-brands-400.woff2" ],
+            
+              [  "opt\/OpenLinkHub\/static\/fonts\/fa-regular-400.eot" ],
+            
+              [  "opt\/OpenLinkHub\/static\/fonts\/fa-regular-400.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/fonts\/fa-regular-400.ttf" ],
+            
+              [  "opt\/OpenLinkHub\/static\/fonts\/fa-regular-400.woff" ],
+            
+              [  "opt\/OpenLinkHub\/static\/fonts\/fa-regular-400.woff2" ],
+            
+              [  "opt\/OpenLinkHub\/static\/fonts\/fa-solid-900.eot" ],
+            
+              [  "opt\/OpenLinkHub\/static\/fonts\/fa-solid-900.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/fonts\/fa-solid-900.ttf" ],
+            
+              [  "opt\/OpenLinkHub\/static\/fonts\/fa-solid-900.woff" ],
+            
+              [  "opt\/OpenLinkHub\/static\/fonts\/fa-solid-900.woff2" ],
+            
+              [  "opt\/OpenLinkHub\/static\/fonts\/teko.ttf" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/192.png" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/512.png" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/favicon.ico" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/icon-404.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/icon-api.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/icon-backward.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/icon-brightness.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/icon-brightness2.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/icon-cluster.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/icon-controller.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/icon-cpu.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/icon-dashboard.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/icon-device.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/icon-dongle.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/icon-fan.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/icon-fast.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/icon-forward.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/icon-github.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/icon-gpu.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/icon-headphone-stand.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/icon-headphone.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/icon-hub.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/icon-keyboard.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/icon-lcd.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/icon-lock.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/icon-macro.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/icon-mouse.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/icon-mousepad.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/icon-mute.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/icon-pause.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/icon-power.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/icon-psu.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/icon-pump.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/icon-ram.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/icon-rgb.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/icon-schedule.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/icon-settings.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/icon-slow.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/icon-speed.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/icon-stop.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/icon-storage.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/icon-temperature.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/icon-thumbstick.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/icon-tower.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/icon-towers.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/icon-triangle.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/icon-trigger.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/icon-user.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/icon-vibrate.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/icon-windows.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/rgb\/circle.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/rgb\/circleshift.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/rgb\/colorpulse.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/rgb\/colorshift.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/rgb\/colorwarp.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/rgb\/colorwave.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/rgb\/cpu-temperature.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/rgb\/flickering.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/rgb\/gpu-temperature.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/rgb\/gradient.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/rgb\/keyboard.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/rgb\/led.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/rgb\/liquid-temperature.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/rgb\/marquee.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/rgb\/nebula.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/rgb\/off.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/rgb\/rain.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/rgb\/rainbow.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/rgb\/rainbowwave.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/rgb\/rotarystack.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/rgb\/rotator.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/rgb\/sequential.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/rgb\/spinner.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/rgb\/spiralrainbow.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/rgb\/static.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/rgb\/storm.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/rgb\/tlk.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/rgb\/tlr.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/rgb\/visor.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/rgb\/watercolor.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/icons\/rgb\/wave.svg" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/openrgb-client.png" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/openrgb-device.png" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/openrgb.png" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/ui-1.png" ],
+            
+              [  "opt\/OpenLinkHub\/static\/img\/ui.png" ],
+            
+              [  "opt\/OpenLinkHub\/static\/js\/cluster.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/js\/controller.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/js\/dataTables.min.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/js\/headset.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/js\/index.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/js\/jquery-3.7.1.min.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/js\/jquery-ui.min.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/js\/lcd.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/js\/macros.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/js\/mouse.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/js\/overview.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/js\/psu.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/js\/rgb.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/js\/scheduler.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/js\/select2.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/js\/settings.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/js\/temperature.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/js\/toastr.js.map" ],
+            
+              [  "opt\/OpenLinkHub\/static\/js\/toastr.min.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/manifest.json" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/bootstrap\/css\/bootstrap-grid.css" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/bootstrap\/css\/bootstrap-grid.min.css" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/bootstrap\/css\/bootstrap-grid.rtl.css" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/bootstrap\/css\/bootstrap-grid.rtl.min.css" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/bootstrap\/css\/bootstrap-reboot.css" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/bootstrap\/css\/bootstrap-reboot.min.css" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/bootstrap\/css\/bootstrap-reboot.rtl.css" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/bootstrap\/css\/bootstrap-reboot.rtl.min.css" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/bootstrap\/css\/bootstrap-utilities.css" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/bootstrap\/css\/bootstrap-utilities.min.css" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/bootstrap\/css\/bootstrap-utilities.rtl.css" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/bootstrap\/css\/bootstrap-utilities.rtl.min.css" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/bootstrap\/css\/bootstrap.css" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/bootstrap\/css\/bootstrap.min.css" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/bootstrap\/css\/bootstrap.rtl.css" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/bootstrap\/css\/bootstrap.rtl.min.css" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/bootstrap\/js\/bootstrap.bundle.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/bootstrap\/js\/bootstrap.bundle.min.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/bootstrap\/js\/bootstrap.esm.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/bootstrap\/js\/bootstrap.esm.min.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/bootstrap\/js\/bootstrap.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/bootstrap\/js\/bootstrap.min.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/choices.js\/public\/assets\/scripts\/choices.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/choices.js\/public\/assets\/scripts\/choices.min.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/choices.js\/public\/assets\/styles\/base.css" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/choices.js\/public\/assets\/styles\/base.min.css" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/choices.js\/public\/assets\/styles\/choices.css" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/choices.js\/public\/assets\/styles\/choices.min.css" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/simple-datatables\/date-4abbfef1.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/simple-datatables\/date-81e32b55.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/simple-datatables\/date-8bab8ecc.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/simple-datatables\/date-936b408b.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/simple-datatables\/date-9ac5b145.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/simple-datatables\/date-cd1c23ce.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/simple-datatables\/date-d2901e25.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/simple-datatables\/date-e486aae5.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/simple-datatables\/date-ecbe4291.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/simple-datatables\/date-ee454f51.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/simple-datatables\/index.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/simple-datatables\/module\/date-045c586b.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/simple-datatables\/module\/date-0b1814b8.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/simple-datatables\/module\/date-0e24449e.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/simple-datatables\/module\/date-541a8c46.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/simple-datatables\/module\/date-92de0d11.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/simple-datatables\/module\/date-b1bc923c.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/simple-datatables\/module\/date-cd80f82d.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/simple-datatables\/module\/date-cf640fe1.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/simple-datatables\/module\/date-d23cc70e.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/simple-datatables\/module\/date-f12a1a57.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/simple-datatables\/module\/index.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/simple-datatables\/nomodule\/date-2228b23d.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/simple-datatables\/nomodule\/date-4607656e.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/simple-datatables\/nomodule\/date-6a3678ae.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/simple-datatables\/nomodule\/date-6f0e94a9.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/simple-datatables\/nomodule\/date-87c75c99.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/simple-datatables\/nomodule\/date-88ac9f7c.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/simple-datatables\/nomodule\/date-88c20685.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/simple-datatables\/nomodule\/date-a4bf5c3a.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/simple-datatables\/nomodule\/date-c0142339.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/simple-datatables\/nomodule\/date-d3bb7cc0.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/simple-datatables\/nomodule\/index.js" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/simple-datatables\/style.css" ],
+            
+              [  "opt\/OpenLinkHub\/static\/vendor\/simple-datatables\/umd\/simple-datatables.js" ],
+            
+              [  "opt\/OpenLinkHub\/upgrade.sh" ],
+            
+              [  "opt\/OpenLinkHub\/web\/404.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/cc.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/ccxt.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/cduo.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/cluster.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/cpro.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/darkcorergbproW.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/darkcorergbproWU.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/darkcorergbproseW.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/darkcorergbproseWU.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/darkcorergbseW.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/darkcorergbseWU.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/darkstarW.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/darkstarWU.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/elite.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/footer.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/glaivergbpro.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/harpoonW.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/harpoonWU.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/harpoonrgbpro.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/header.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/hs80maxW.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/hs80rgb.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/hs80rgbW.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/hydro.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/index.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/ironclaw.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/ironclawW.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/ironclawWU.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/k100.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/k100airW.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/k100airWU.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/k55.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/k55core.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/k55coretkl.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/k55pro.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/k55proXT.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/k57rgbW.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/k57rgbWU.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/k60rgbpro.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/k65plusW.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/k65plusWU.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/k65pm.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/k65rm.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/k68rgb.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/k70core.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/k70coretkl.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/k70coretklW.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/k70coretklWU.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/k70lux.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/k70luxrgb.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/k70max.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/k70mk2.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/k70pmW.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/k70pmWU.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/k70pro.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/k70protkl.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/k70rgbRF.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/k70rgbtklcs.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/k95platinum.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/k95platinumXT.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/katarpro.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/katarproW.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/katarproxt.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/lcd-animation.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/lcd-arc.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/lcd-doublearc.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/lcd-upload.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/lcd.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/lncore.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/lnpro.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/lsh.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/lt100.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/m55.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/m55W.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/m55rgbpro.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/m65rgbelite.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/m65rgbultra.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/m65rgbultraW.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/m65rgbultraWU.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/m75.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/m75AirW.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/m75AirWU.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/m75W.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/m75WU.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/macros.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/makr75W.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/makr75WU.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/memory.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/mm700.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/mm800.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/nautilusLcd.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/navigation.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/nexus.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/nightsabreW.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/nightsabreWU.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/nightswordrgb.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/platinum.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/psudongle.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/psuhid.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/rgb.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/sabreprocs.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/sabrergbpro.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/sabrergbproW.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/sabrergbproWU.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/scheduler.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/scimitar.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/scimitarSEW.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/scimitarSEWU.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/scimitarW.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/scimitarWU.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/scimitarprorgb.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/scimitarrgb.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/scimitarrgbelite.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/scufenvisionproV2W.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/scufenvisionproV2WU.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/scufenvisionproW.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/scufenvisionproWU.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/settings.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/slipstream.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/st100.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/strafergbmk2.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/temperature.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/temperatureGraph.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/virtuosoSEW.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/virtuosoSEWU.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/virtuosoW.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/virtuosoWU.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/virtuosomaxW.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/virtuosorgbXTW.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/virtuosorgbXTWU.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/voidV2W.html" ],
+            
+              [  "opt\/OpenLinkHub\/web\/xc7.html" ],
+            
+              [  "usr\/share\/applications\/OpenLinkHub.desktop" ],
+            
+              [  "usr\/share\/pixmaps\/OpenLinkHub.png" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>

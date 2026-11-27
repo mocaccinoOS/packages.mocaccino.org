@@ -1,0 +1,4687 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+
+ <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<style>
+table.dataTable.nowrap th,table.dataTable.nowrap td{white-space:nowrap}div.dataTables_wrapper div.dataTables_length select{width:75px;display:inline-block}div.dataTables_wrapper div.dataTables_filter{text-align:right}div.dataTables_wrapper div.dataTables_filter label{font-weight:400;white-space:nowrap;text-align:left}div.dataTables_wrapper div.dataTables_filter input{margin-left:.5em;display:inline-block;width:auto}div.dataTables_wrapper div.dataTables_paginate{white-space:nowrap;float:right}@media screen and (max-width: 768px){div.dataTables_paginate{white-space:nowrap;float:none!important;display:flex;justify-content:space-around}}table.dataTable thead>tr>th.sorting_asc,table.dataTable thead>tr>th.sorting_desc,table.dataTable thead>tr>th.sorting,table.dataTable thead>tr>td.sorting_asc,table.dataTable thead>tr>td.sorting_desc,table.dataTable thead>tr>td.sorting{padding-right:30px}table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTable thead .sorting_desc,table.dataTable thead .sorting_asc_disabled,table.dataTable thead .sorting_desc_disabled{cursor:pointer;position:relative}table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{position:absolute;bottom:4px;right:4px;display:block;font-family:"Font Awesome\ 5 Free";opacity:.5}table.dataTable thead .sorting:after{opacity:.2;content:"\f0dc"}table.dataTable thead .sorting_asc:after{content:"\f0de"}table.dataTable thead .sorting_desc:after{content:"\f0dd"}table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc_disabled:after{color:#eee}@media screen and (max-width: 768px){div.dataTables_wrapper div.dataTables_length,div.dataTables_wrapper div.dataTables_filter,div.dataTables_wrapper div.dataTables_info,div.dataTables_wrapper div.dataTables_paginate{text-align:center}}
+</style>
+<script type="text/javascript">
+!function(e){"function"==typeof define&&define.amd?define(["jquery","datatables.net"],function(a){return e(a,window,document)}):"object"==typeof exports?module.exports=function(a,t){return a||(a=window),t&&t.fn.dataTable||(t=require("datatables.net")(a,t).$),e(t,a,a.document)}:e(jQuery,window,document)}(function(e,a,t){var n=e.fn.dataTable;return e.extend(!0,n.defaults,{dom:"<'columns'<'column is-6'l><'column is-6'f>><'columns'<'column is-12 table-container'tr>><'columns'<'column is-5'i><'column is-7'p>>",renderer:"bulma"}),e.extend(n.ext.classes,{sWrapper:"dataTables_wrapper dt-bulma",sFilterInput:"input is-small",sLengthSelect:"input is-small",sProcessing:"dataTables_processing panel",sPageButton:"pagination-link",sPagePrevious:"pagination-previous",sPageNext:"pagination-next",sPageButtonActive:"is-current"}),n.ext.renderer.pageButton.bulma=function(a,i,s,r,l,o){var u,d,c,p=new n.Api(a),f=a.oClasses,g=a.oLanguage.oPaginate,b=a.oLanguage.oAria.paginate||{},m=0,x=function(t,n){var i,r,c,v,w=function(a){a.preventDefault(),!e(a.currentTarget).is("[disabled]")&&!e(a.currentTarget).is("#table_ellipsis")&&p.page()!=a.data.action&&p.page(a.data.action).draw("page")};for(i=0,r=n.length;i<r;i++)if(v=n[i],e.isArray(v))x(t,v);else{d=u="";var T=!1;switch(v){case"ellipsis":u="&#x2026;",T=!0;break;case"first":u=g.sFirst,T=v+!(0<l);break;case"previous":u=g.sPrevious,T=!(0<l);break;case"next":u=g.sNext,T=!(l<o-1);break;case"last":u=g.sLast,T=v+!(l<o-1);break;default:u=v+1,d=l===v?" is-current":"",T=!1}u&&(c=e("<li>",{id:0===s&&"string"==typeof v?a.sTableId+"_"+v:null}).append(e("<a>",{class:f.sPageButton+" "+d,href:"#","aria-controls":a.sTableId,"aria-label":b[v],"data-dt-idx":m,tabindex:a.iTabIndex,disabled:T}).html(u)).appendTo(t),a.oApi._fnBindAction(c,{action:v},w),m++)}};try{c=e(i).find(t.activeElement).data("dt-idx")}catch(e){}x(e(i).empty().html('<ul class="pagination-list"/>').children("ul"),r),c&&e(i).find("[data-dt-idx="+c+"]").focus()},n});
+</script>
+
+<style>
+body {
+ font-family: 'Alata', sans-serif;
+}
+</style>
+<title>Showing apps/hashcat-7.1.2-r1&#43;2 in mocaccino-community-stable </title>
+</head>
+
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+     <div class="container ">
+        <div class="columns is-multiline is-mobile ">
+
+        <div class="column is-half">
+          <h1 class="title">
+        <a href="https://packages.mocaccino.org"><span class="icon has-text-primary is-medium 	"> <i class="fas fa-home"></i></span> </a> apps/hashcat-7.1.2-r1&#43;2
+          </h1>
+        </div>
+
+        <div class="column is-half">
+   
+        </div>
+
+        <div class="column is-half">
+              <h2 class="subtitle">
+                      <span class="icon is-medium 	"> <i class="fas fa-info-circle"></i></span>
+                World&#39;s fastest and most advanced password recovery utility
+             </h2>
+        </div>
+        <div class="column is-half has-text-right">
+        <a href="https://packages.mocaccino.org/mocaccino-community-stable">
+        <span class="icon has-text-dark is-medium 	"> <i class="fas fa-truck"></i></span>
+                     mocaccino-community-stable
+                     </a>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+<div class="box">
+
+<nav class="panel">
+  <p class="panel-heading">
+  <span class="icon has-text-primary is-medium"> <i class="fas fa-box-open"></i></span> Overview of apps/hashcat
+  </p>
+
+
+<div class="p-3 m-3 container">
+
+          
+<span class="icon has-text-primary is-medium"> <i class="fas fa-box"></i></span> OCI Image: <strong> <a href="https://quay.io/mocaccino/mocaccino-community:hashcat-apps-7.1.2-r1-2" target="_blank"> quay.io/mocaccino/mocaccino-community:hashcat-apps-7.1.2-r1-2 </a> </strong>  
+	<a class="button is-link is-light is-small" href="https://containerbay.io/quay.io/mocaccino/mocaccino-community:hashcat-apps-7.1.2-r1-2/" target=_blank>
+	<span class="icon is-small">
+      		<i class="fas fa-external-link-square-alt"></i>
+    	</span>
+	 &nbsp; Browse</a>
+ <br>
+
+<span class="icon has-text-primary is-medium"> <i class="fas fa-briefcase"></i></span> Version:  <strong> 7.1.2-r1&#43;2  </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-gavel"></i></span> License: <strong> MIT </strong> <br>
+<span class="icon has-text-primary is-medium"> <i class="fas fa-clock"></i></span> Build date: <strong>  </strong> <br>
+
+
+<h1> Requires </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/find/layers/X">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  X &gt;=0 </a>
+  </a>
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+
+<h1> Labels </h1>
+<div class="container">
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.jobs: 1
+  </span>
+  
+  <span class="tag">
+  <span class="icon has-text-dark is-medium"> <i class="fas fa-tag"></i></span> emerge.packages: app-crypt/hashcat
+  </span>
+  
+</div>
+
+
+
+
+
+
+
+<h1> Links </h1>
+
+<div class="container">
+  
+    <span class="tag">
+    <a href="https://github.com/hashcat/hashcat" target="_blank"> <span class="icon has-text-dark is-medium"> <i class="fas fa-link"></i></span> https://github.com/hashcat/hashcat </a>
+    </span>
+  
+</div>
+
+
+
+
+<h1> Provides </h1>
+<div class="container">
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/app-arch/lzma">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  lzma &gt;=0 </a>
+  </a></span>
+  
+  <span class="tag">
+  <a href="https://packages.mocaccino.org/mocaccino-community-stable/app-crypt/hashcat">  <span class="icon has-text-dark is-medium"> <i class="fas fa-box-open"></i></span>  hashcat &gt;=0 </a>
+  </a></span>
+  
+</div>
+
+
+
+
+
+
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<br>
+<nav class="panel">
+  <p class="panel-heading">
+    Files
+  </p>
+  <div class="p-3 m-1">
+<table  
+  id="table">
+  <thead>
+    <tr>
+      <th >Name</th>
+    </tr>
+  </thead>
+
+</table>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+var data = [
+     
+              [  "usr\/bin\/aescrypt2hashcat.pl" ],
+            
+              [  "usr\/bin\/apfs2hashcat.py" ],
+            
+              [  "usr\/bin\/bisq2hashcat.py" ],
+            
+              [  "usr\/bin\/bitlocker2hashcat.py" ],
+            
+              [  "usr\/bin\/bitwarden2hashcat.py" ],
+            
+              [  "usr\/bin\/cachedata2hashcat.py" ],
+            
+              [  "usr\/bin\/cryptoloop2hashcat.py" ],
+            
+              [  "usr\/bin\/exodus2hashcat.py" ],
+            
+              [  "usr\/bin\/gitea2hashcat.py" ],
+            
+              [  "usr\/bin\/hashcat" ],
+            
+              [  "usr\/bin\/keybag2hashcat.py" ],
+            
+              [  "usr\/bin\/kremlin2hashcat.py" ],
+            
+              [  "usr\/bin\/lastpass2hashcat.py" ],
+            
+              [  "usr\/bin\/luks2hashcat.py" ],
+            
+              [  "usr\/bin\/lzmacon" ],
+            
+              [  "usr\/bin\/metamask2hashcat.py" ],
+            
+              [  "usr\/bin\/mozilla2hashcat.py" ],
+            
+              [  "usr\/bin\/radmin3_to_hashcat.pl" ],
+            
+              [  "usr\/bin\/securenotes2hashcat.pl" ],
+            
+              [  "usr\/bin\/shiro1-to-hashcat.py" ],
+            
+              [  "usr\/bin\/sqlcipher2hashcat.pl" ],
+            
+              [  "usr\/bin\/truecrypt2hashcat.py" ],
+            
+              [  "usr\/bin\/veeamvbk2hashcat.py" ],
+            
+              [  "usr\/bin\/veracrypt2hashcat.py" ],
+            
+              [  "usr\/bin\/virtualbox2hashcat.py" ],
+            
+              [  "usr\/bin\/vmwarevmx2hashcat.py" ],
+            
+              [  "usr\/lib64\/libhashcat.so.7.1.2" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/amp_a0.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/amp_a1.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/amp_a3.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_amp.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_bignum_operations.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_bignum_operations.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_checksum_crc.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_checksum_crc.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_cipher_aes-gcm.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_cipher_aes-gcm.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_cipher_aes.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_cipher_aes.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_cipher_blowfish.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_cipher_blowfish.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_cipher_camellia.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_cipher_camellia.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_cipher_cast.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_cipher_cast.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_cipher_des.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_cipher_des.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_cipher_kuznyechik.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_cipher_kuznyechik.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_cipher_rc4.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_cipher_rc4.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_cipher_serpent.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_cipher_serpent.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_cipher_twofish.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_cipher_twofish.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_common.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_common.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_comp_multi.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_comp_multi.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_comp_multi_bs.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_comp_multi_bs.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_comp_multi_iba.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_comp_multi_iba.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_comp_single.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_comp_single.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_comp_single_bs.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_comp_single_bs.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_diskcryptor_xts.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_diskcryptor_xts.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_ecc_secp256k1.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_ecc_secp256k1.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_hash_argon2.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_hash_argon2.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_hash_base58.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_hash_base58.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_hash_blake2b.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_hash_blake2b.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_hash_blake2s.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_hash_blake2s.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_hash_gost94.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_hash_gost94.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_hash_md4.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_hash_md4.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_hash_md5.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_hash_md5.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_hash_md6.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_hash_md6.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_hash_ripemd160.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_hash_ripemd160.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_hash_ripemd320.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_hash_ripemd320.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_hash_scrypt.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_hash_scrypt.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_hash_sha1.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_hash_sha1.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_hash_sha224.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_hash_sha224.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_hash_sha256.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_hash_sha256.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_hash_sha384.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_hash_sha384.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_hash_sha512.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_hash_sha512.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_hash_sm3.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_hash_sm3.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_hash_streebog256.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_hash_streebog256.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_hash_streebog512.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_hash_streebog512.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_hash_whirlpool.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_hash_whirlpool.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_luks_aes.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_luks_aes.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_luks_af.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_luks_af.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_luks_essiv.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_luks_essiv.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_luks_serpent.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_luks_serpent.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_luks_twofish.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_luks_twofish.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_luks_xts.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_luks_xts.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_markov.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_platform.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_platform.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_radmin3_constants.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_rp.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_rp.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_rp_common.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_rp_common.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_rp_optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_rp_optimized.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_scalar.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_scalar.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_shared.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_simd.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_simd.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_truecrypt_crc32.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_truecrypt_crc32.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_truecrypt_keyfile.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_truecrypt_keyfile.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_truecrypt_xts.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_truecrypt_xts.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_types.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_vendor.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_veracrypt_keyfile.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_veracrypt_keyfile.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_veracrypt_xts.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_veracrypt_xts.h" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/inc_zip_inflate.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00000_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00000_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00000_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00000_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00000_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00000_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00010_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00010_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00010_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00010_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00010_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00010_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00020_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00020_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00020_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00020_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00020_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00020_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00030_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00030_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00030_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00030_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00030_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00030_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00040_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00040_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00040_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00040_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00040_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00040_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00050_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00050_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00050_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00050_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00050_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00050_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00060_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00060_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00060_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00060_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00060_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00060_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00070_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00070_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00070_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00070_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00070_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00070_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00100_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00100_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00100_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00100_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00100_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00100_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00110_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00110_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00110_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00110_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00110_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00110_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00120_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00120_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00120_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00120_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00120_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00120_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00130_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00130_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00130_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00130_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00130_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00130_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00140_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00140_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00140_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00140_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00140_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00140_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00150_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00150_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00150_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00150_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00150_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00150_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00160_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00160_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00160_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00160_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00160_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00160_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00170_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00170_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00170_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00170_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00170_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00170_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00200_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00200_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00200_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00300_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00300_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00300_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00300_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00300_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00300_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00400-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00400-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00500-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00500-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00600_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00600_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00600_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00600_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00600_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00600_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00610_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00610_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00610_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00610_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00610_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00610_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00620_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00620_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00620_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00620_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00620_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00620_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00900_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00900_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00900_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00900_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00900_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m00900_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01000_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01000_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01000_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01000_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01000_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01000_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01100_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01100_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01100_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01100_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01100_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01100_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01300_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01300_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01300_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01300_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01300_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01300_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01310_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01310_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01310_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01320_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01320_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01320_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01400_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01400_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01400_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01400_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01400_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01400_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01410_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01410_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01410_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01410_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01410_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01410_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01420_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01420_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01420_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01420_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01420_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01420_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01430_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01430_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01430_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01430_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01430_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01430_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01440_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01440_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01440_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01440_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01440_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01440_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01450_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01450_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01450_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01450_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01450_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01450_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01460_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01460_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01460_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01460_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01460_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01460_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01470_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01470_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01470_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01470_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01470_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01470_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01500_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01500_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01500_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01600-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01600-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01700_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01700_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01700_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01700_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01700_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01700_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01710_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01710_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01710_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01710_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01710_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01710_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01720_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01720_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01720_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01720_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01720_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01720_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01730_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01730_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01730_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01730_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01730_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01730_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01740_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01740_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01740_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01740_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01740_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01740_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01750_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01750_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01750_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01750_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01750_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01750_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01760_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01760_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01760_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01760_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01760_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01760_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01770_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01770_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01770_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01770_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01770_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01770_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01800-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m01800-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m02000_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m02000_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m02000_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m02000_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m02000_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m02000_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m02100-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m02400_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m02400_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m02400_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m02410_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m02410_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m02410_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m02500-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m02501-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m02610_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m02610_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m02610_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m02610_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m02610_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m02610_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m02630_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m02630_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m02630_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m02630_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m02630_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m02630_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m02710_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m02710_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m02710_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m02810_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m02810_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m02810_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m02810_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m02810_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m02810_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m03000_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m03000_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m03000_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m03100_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m03100_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m03100_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m03200-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m03500_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m03500_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m03500_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m03500_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m03500_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m03500_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m03610_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m03610_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m03610_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m03610_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m03610_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m03610_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m03710_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m03710_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m03710_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m03710_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m03710_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m03710_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m03730_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m03730_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m03730_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m03800_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m03800_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m03800_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m03800_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m03800_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m03800_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m03910_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m03910_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m03910_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m03910_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m03910_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m03910_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04010_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04010_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04010_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04010_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04010_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04010_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04110_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04110_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04110_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04110_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04110_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04110_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04310_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04310_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04310_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04310_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04310_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04310_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04400_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04400_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04400_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04400_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04400_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04400_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04410_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04410_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04410_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04410_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04410_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04410_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04420_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04420_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04420_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04420_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04420_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04420_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04430_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04430_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04430_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04430_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04430_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04430_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04500_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04500_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04500_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04500_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04500_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04500_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04510_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04510_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04510_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04510_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04510_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04510_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04520_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04520_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04520_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04520_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04520_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04520_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04700_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04700_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04700_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04700_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04700_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04700_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04710_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04710_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04710_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04710_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04710_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04710_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04800_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04800_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04800_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04800_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04800_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04800_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04900_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04900_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04900_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04900_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04900_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m04900_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m05000_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m05000_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m05000_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m05000_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m05000_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m05000_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m05100_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m05100_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m05100_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m05100_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m05100_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m05100_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m05200-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m05300_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m05300_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m05300_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m05300_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m05300_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m05300_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m05400_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m05400_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m05400_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m05400_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m05400_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m05400_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m05500_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m05500_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m05500_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m05500_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m05500_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m05500_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m05600_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m05600_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m05600_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m05600_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m05600_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m05600_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m05720_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m05720_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m05720_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m05800-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m05800-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m06000_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m06000_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m06000_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m06000_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m06000_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m06000_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m06050_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m06050_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m06050_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m06060_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m06060_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m06060_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m06100_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m06100_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m06100_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m06100_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m06100_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m06100_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m06211-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m06212-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m06213-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m06221-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m06222-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m06223-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m06231-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m06232-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m06233-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m06300-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m06300-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m06400-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m06500-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m06600-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m06700-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m06800-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m06900_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m06900_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m06900_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m07000_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m07000_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m07000_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m07000_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m07000_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m07000_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m07100-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m07300_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m07300_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m07300_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m07300_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m07300_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m07300_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m07350_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m07350_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m07350_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m07350_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m07350_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m07350_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m07400-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m07400-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m07500_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m07500_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m07500_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m07500_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m07500_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m07500_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m07700_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m07700_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m07700_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m07701_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m07701_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m07701_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m07800_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m07800_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m07800_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m07801_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m07801_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m07801_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m07900-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m08000_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m08000_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m08000_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m08100_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m08100_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m08100_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m08100_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m08100_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m08100_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m08200-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m08300_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m08300_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m08300_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m08300_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m08300_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m08300_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m08400_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m08400_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m08400_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m08400_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m08400_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m08400_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m08500_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m08500_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m08500_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m08600_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m08600_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m08600_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m08700_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m08700_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m08700_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m08800-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m08900-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m09000-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m09100-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m09400-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m09500-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m09600-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m09700_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m09700_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m09700_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m09710_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m09710_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m09710_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m09720_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m09720_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m09720_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m09800_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m09800_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m09800_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m09810_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m09810_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m09810_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m09820_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m09820_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m09820_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m09900_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m09900_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m09900_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m09900_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m09900_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m09900_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10100_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10100_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10100_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10300-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10400_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10400_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10400_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10410_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10410_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10410_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10420_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10420_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10420_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10500-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10510-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10700-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10700-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10800_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10800_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10800_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10800_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10800_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10800_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10810_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10810_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10810_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10810_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10810_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10810_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10820_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10820_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10820_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10820_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10820_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10820_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10830_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10830_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10830_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10830_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10830_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10830_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10840_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10840_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10840_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10840_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10840_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10840_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10870_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10870_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10870_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10870_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10870_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10870_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m10900-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11000_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11000_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11000_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11000_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11000_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11000_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11100_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11100_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11100_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11100_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11100_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11100_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11200_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11200_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11200_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11200_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11200_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11200_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11300-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11400_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11400_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11400_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11500_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11500_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11500_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11500_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11500_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11500_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11600-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11600-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11700_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11700_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11700_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11700_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11700_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11700_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11750_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11750_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11750_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11760_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11760_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11760_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11800_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11800_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11800_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11800_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11800_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11800_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11850_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11850_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11850_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11860_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11860_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11860_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m11900-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m12000-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m12150-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m12200-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m12300-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m12400-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m12500-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m12500-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m12600_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m12600_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m12600_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m12600_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m12600_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m12600_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m12700-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m12800-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m12900-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m13000-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m13100_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m13100_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m13100_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m13100_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m13100_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m13100_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m13200-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m13300_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m13300_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m13300_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m13300_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m13300_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m13300_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m13400-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m13500_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m13500_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m13500_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m13500_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m13500_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m13500_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m13600-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m13711-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m13712-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m13713-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m13721-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m13722-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m13723-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m13731-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m13732-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m13733-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m13751-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m13752-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m13753-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m13771-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m13772-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m13773-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m13800_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m13800_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m13800_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m13800_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m13800_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m13800_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m13900_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m13900_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m13900_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m13900_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m13900_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m13900_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14000_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14000_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14000_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14100_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14100_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14100_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14200-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14400_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14400_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14400_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14400_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14400_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14400_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14511_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14511_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14511_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14512_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14512_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14512_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14513_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14513_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14513_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14521_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14521_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14521_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14522_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14522_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14522_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14523_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14523_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14523_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14531_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14531_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14531_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14532_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14532_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14532_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14533_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14533_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14533_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14541_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14541_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14541_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14542_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14542_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14542_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14543_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14543_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14543_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14551_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14551_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14551_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14552_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14552_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14552_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14553_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14553_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14553_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14611-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14612-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14613-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14621-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14622-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14623-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14631-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14632-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14633-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14641-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14642-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14643-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14700-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14800-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14900_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14900_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m14900_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m15000_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m15000_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m15000_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m15000_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m15000_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m15000_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m15100-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m15300-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m15310-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m15400_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m15400_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m15400_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m15500_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m15500_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m15500_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m15500_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m15500_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m15500_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m15600-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m15700-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m15900-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m15910-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m16000_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m16000_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m16000_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m16100_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m16100_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m16100_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m16100_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m16100_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m16100_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m16200-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m16300-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m16400_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m16400_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m16400_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m16400_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m16400_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m16400_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m16511_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m16511_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m16511_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m16512_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m16512_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m16512_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m16513_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m16513_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m16513_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m16600_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m16600_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m16600_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m16600_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m16600_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m16600_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m16800-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m16801-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m16900-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m17010-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m17020-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m17030-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m17040-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m17200_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m17200_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m17200_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m17210_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m17210_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m17210_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m17220_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m17220_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m17220_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m17225_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m17225_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m17225_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m17230_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m17230_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m17230_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m17300_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m17300_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m17300_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m17400_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m17400_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m17400_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m17500_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m17500_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m17500_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m17600_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m17600_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m17600_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m17700_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m17700_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m17700_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m17800_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m17800_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m17800_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m17900_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m17900_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m17900_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m18000_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m18000_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m18000_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m18100_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m18100_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m18100_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m18200_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m18200_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m18200_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m18200_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m18200_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m18200_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m18300-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m18400-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m18500_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m18500_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m18500_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m18600-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m18700_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m18700_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m18700_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m18700_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m18700_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m18700_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m18800-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m18900-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m19000-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m19100-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m19200-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m19300_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m19300_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m19300_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m19500_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m19500_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m19500_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m19600-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m19700-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m19800-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m19900-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m20011-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m20012-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m20013-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m20500_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m20500_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m20500_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m20510_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m20510_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m20510_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m20600-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m20710_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m20710_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m20710_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m20710_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m20710_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m20710_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m20712_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m20712_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m20712_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m20712_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m20712_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m20712_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m20720_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m20720_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m20720_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m20730_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m20730_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m20730_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m20800_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m20800_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m20800_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m20800_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m20800_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m20800_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m20900_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m20900_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m20900_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m20900_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m20900_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m20900_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m21000_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m21000_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m21000_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m21000_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m21000_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m21000_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m21100_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m21100_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m21100_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m21100_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m21100_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m21100_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m21200_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m21200_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m21200_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m21200_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m21200_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m21200_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m21300_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m21300_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m21300_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m21310_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m21310_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m21310_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m21400_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m21400_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m21400_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m21400_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m21400_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m21400_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m21420_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m21420_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m21420_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m21500-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m21600-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m21700-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m21800-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m21900_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m21900_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m21900_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m22000-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m22001-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m22100-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m22200_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m22200_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m22200_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m22200_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m22200_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m22200_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m22300_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m22300_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m22300_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m22300_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m22300_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m22300_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m22400-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m22500_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m22500_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m22500_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m22500_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m22500_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m22500_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m22600-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m22700-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m22800_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m22800_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m22800_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m22911_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m22911_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m22911_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m22921_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m22921_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m22921_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m22931_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m22931_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m22931_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m22941_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m22941_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m22941_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m22951_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m22951_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m22951_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m23001_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m23001_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m23001_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m23001_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m23001_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m23001_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m23002_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m23002_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m23002_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m23002_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m23002_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m23002_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m23003_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m23003_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m23003_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m23003_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m23003_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m23003_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m23100-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m23200-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m23300-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m23400-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m23500-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m23600-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m23700-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m23700-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m23800-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m23800-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m23900-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m24000-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m24100-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m24200-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m24300_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m24300_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m24300_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m24300_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m24300_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m24300_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m24410-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m24420-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m24500-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m24610-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m24620-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m24630-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m24700_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m24700_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m24700_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m24700_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m24700_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m24700_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m24800_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m24800_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m24800_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m24800_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m24800_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m24800_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m24900_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m24900_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m24900_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m24901_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m24901_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m24901_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m25000-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m25100-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m25200-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m25300-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m25400-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m25500-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m25600-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m25700_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m25700_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m25700_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m25800-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m25900-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m26000_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m26000_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m26000_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m26100-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m26200_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m26200_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m26200_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m26300_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m26300_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m26300_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m26401_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m26401_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m26401_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m26402_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m26402_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m26402_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m26403_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m26403_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m26403_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m26500-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m26600-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m26610-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m26700-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m26800-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m26900-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m27000-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m27100-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m27200_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m27200_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m27200_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m27200_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m27200_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m27200_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m27300-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m27400-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m27500-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m27600-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m27700-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m27800_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m27800_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m27800_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m27900_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m27900_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m27900_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m27900_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m27900_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m27900_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m28000_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m28000_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m28000_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m28000_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m28000_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m28000_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m28100-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m28200-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m28300_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m28300_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m28300_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m28400-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m28501_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m28501_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m28501_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m28502_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m28502_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m28502_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m28505_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m28505_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m28505_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m28506_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m28506_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m28506_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m28600-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m28700_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m28700_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m28700_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m28700_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m28700_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m28700_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m28800-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m28900-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m29000_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m29000_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m29000_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m29100_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m29100_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m29100_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m29200_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m29200_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m29200_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m29600-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m29700-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m29910-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m29920-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m29930-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m29940-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m30420_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m30420_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m30420_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m30420_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m30420_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m30420_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m30500_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m30500_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m30500_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m30500_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m30500_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m30500_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m30600-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m30601-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m30700_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m30700_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m30700_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m30700_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m30700_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m30700_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m30901_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m30901_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m30901_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m30902_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m30902_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m30902_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m30905_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m30905_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m30905_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m30906_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m30906_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m30906_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m31000_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m31000_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m31000_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m31000_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m31000_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m31000_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m31100_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m31100_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m31100_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m31100_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m31100_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m31100_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m31200-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m31300_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m31300_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m31300_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m31300_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m31300_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m31300_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m31400_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m31400_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m31400_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m31400_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m31400_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m31400_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m31500-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m31600-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m31700_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m31700_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m31700_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m31800-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m31900-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m32000-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m32010-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m32020-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m32030-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m32040-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m32100-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m32200-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m32300_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m32300_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m32300_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m32300_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m32300_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m32300_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m32410_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m32410_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m32410_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m32420_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m32420_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m32420_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m32500-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m32600_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m32600_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m32600_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m32700-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m32800_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m32800_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m32800_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m32800_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m32800_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m32800_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m32900-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m33000_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m33000_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m33000_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m33100_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m33100_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m33100_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m33300_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m33300_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m33300_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m33400-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m33500_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m33500_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m33500_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m33501_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m33501_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m33501_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m33502_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m33502_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m33502_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m33600_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m33600_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m33600_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m33600_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m33600_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m33600_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m33650_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m33650_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m33650_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m33660_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m33660_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m33660_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m33700-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m33800-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34000-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34100-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34200_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34200_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34200_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34200_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34200_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34200_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34201_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34201_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34201_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34201_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34201_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34201_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34211_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34211_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34211_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34211_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34211_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34211_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34300-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34400_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34400_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34400_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34500_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34500_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34500_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34600_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34600_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34600_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34700_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34700_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34700_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34800_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34800_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34800_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34800_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34800_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34800_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34810_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34810_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34810_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34810_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34810_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34810_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34820_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34820_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34820_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34820_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34820_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m34820_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m35000-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m35100-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m35200_a0-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m35200_a0-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m35200_a1-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m35200_a1-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m35200_a3-optimized.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m35200_a3-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m70000-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m70100-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m72000-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/m73000-pure.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/markov_be.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/markov_le.cl" ],
+            
+              [  "usr\/share\/hashcat\/OpenCL\/shared.cl" ],
+            
+              [  "usr\/share\/hashcat\/bridges\/.gitkeep" ],
+            
+              [  "usr\/share\/hashcat\/bridges\/bridge_argon2id_reference.so" ],
+            
+              [  "usr\/share\/hashcat\/bridges\/bridge_python_generic_hash_mp.so" ],
+            
+              [  "usr\/share\/hashcat\/bridges\/bridge_python_generic_hash_sp.so" ],
+            
+              [  "usr\/share\/hashcat\/bridges\/bridge_rust_generic_hash.so" ],
+            
+              [  "usr\/share\/hashcat\/bridges\/bridge_scrypt_jane.so" ],
+            
+              [  "usr\/share\/hashcat\/bridges\/bridge_scrypt_yescrypt.so" ],
+            
+              [  "usr\/share\/hashcat\/hashcat.hcstat2" ],
+            
+              [  "usr\/share\/hashcat\/modules\/.gitkeep" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_00000.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_00010.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_00011.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_00012.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_00020.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_00021.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_00022.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_00023.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_00024.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_00030.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_00040.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_00050.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_00060.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_00070.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_00100.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_00101.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_00110.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_00111.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_00112.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_00120.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_00121.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_00122.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_00124.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_00125.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_00130.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_00131.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_00132.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_00133.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_00140.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_00141.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_00150.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_00160.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_00170.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_00200.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_00300.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_00400.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_00500.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_00501.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_00600.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_00610.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_00620.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_00900.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_01000.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_01100.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_01300.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_01310.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_01320.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_01400.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_01410.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_01411.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_01420.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_01421.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_01430.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_01440.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_01441.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_01450.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_01460.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_01470.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_01500.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_01600.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_01700.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_01710.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_01711.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_01720.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_01722.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_01730.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_01731.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_01740.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_01750.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_01760.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_01770.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_01800.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_02000.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_02100.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_02400.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_02410.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_02500.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_02501.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_02600.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_02611.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_02612.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_02630.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_02711.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_02811.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_03000.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_03100.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_03200.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_03500.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_03610.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_03710.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_03711.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_03730.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_03800.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_03910.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_04010.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_04110.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_04300.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_04400.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_04410.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_04420.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_04430.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_04500.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_04510.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_04520.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_04521.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_04522.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_04700.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_04710.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_04711.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_04800.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_04900.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_05000.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_05100.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_05200.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_05300.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_05400.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_05500.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_05600.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_05700.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_05720.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_05800.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_06000.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_06050.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_06060.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_06100.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_06211.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_06212.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_06213.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_06221.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_06222.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_06223.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_06231.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_06232.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_06233.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_06241.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_06242.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_06243.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_06300.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_06400.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_06500.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_06600.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_06700.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_06800.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_06900.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_07000.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_07100.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_07200.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_07300.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_07350.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_07400.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_07401.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_07500.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_07700.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_07701.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_07800.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_07801.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_07900.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_08000.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_08100.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_08200.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_08300.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_08400.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_08500.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_08501.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_08600.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_08700.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_08800.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_08900.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_09000.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_09100.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_09200.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_09300.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_09400.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_09500.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_09600.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_09700.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_09710.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_09720.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_09800.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_09810.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_09820.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_09900.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_10000.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_10100.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_10200.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_10300.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_10400.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_10410.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_10420.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_10500.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_10510.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_10600.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_10700.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_10800.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_10810.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_10820.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_10830.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_10840.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_10870.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_10900.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_10901.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_11000.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_11100.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_11200.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_11300.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_11400.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_11500.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_11600.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_11700.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_11750.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_11760.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_11800.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_11850.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_11860.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_11900.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_12000.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_12001.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_12100.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_12150.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_12200.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_12300.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_12400.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_12500.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_12600.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_12700.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_12800.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_12900.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_13000.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_13100.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_13200.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_13300.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_13400.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_13500.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_13600.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_13711.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_13712.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_13713.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_13721.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_13722.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_13723.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_13731.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_13732.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_13733.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_13741.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_13742.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_13743.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_13751.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_13752.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_13753.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_13761.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_13762.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_13763.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_13771.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_13772.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_13773.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_13781.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_13782.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_13783.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_13800.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_13900.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_14000.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_14100.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_14200.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_14400.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_14500.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_14600.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_14700.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_14800.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_14900.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_15000.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_15100.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_15200.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_15300.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_15310.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_15400.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_15500.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_15600.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_15700.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_15900.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_15910.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_16000.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_16100.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_16200.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_16300.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_16400.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_16500.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_16501.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_16600.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_16700.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_16800.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_16801.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_16900.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_17010.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_17020.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_17030.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_17040.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_17200.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_17210.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_17220.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_17225.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_17230.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_17300.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_17400.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_17500.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_17600.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_17700.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_17800.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_17900.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_18000.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_18100.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_18200.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_18300.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_18400.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_18500.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_18600.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_18700.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_18800.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_18900.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_19000.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_19100.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_19200.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_19210.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_19300.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_19500.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_19600.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_19700.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_19800.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_19900.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_20011.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_20012.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_20013.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_20200.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_20300.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_20400.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_20500.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_20510.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_20600.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_20710.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_20711.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_20712.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_20720.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_20730.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_20800.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_20900.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_21000.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_21100.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_21200.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_21300.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_21310.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_21400.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_21420.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_21500.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_21501.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_21600.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_21700.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_21800.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_21900.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_22000.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_22001.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_22100.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_22200.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_22300.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_22301.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_22400.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_22500.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_22600.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_22700.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_22800.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_22911.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_22921.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_22931.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_22941.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_22951.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_23001.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_23002.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_23003.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_23100.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_23200.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_23300.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_23400.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_23500.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_23600.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_23700.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_23800.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_23900.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_24000.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_24100.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_24200.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_24300.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_24410.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_24420.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_24500.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_24600.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_24700.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_24800.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_24900.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_24901.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_25000.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_25100.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_25200.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_25300.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_25400.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_25500.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_25600.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_25700.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_25800.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_25900.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_26000.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_26100.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_26200.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_26300.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_26401.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_26402.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_26403.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_26500.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_26600.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_26610.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_26700.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_26800.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_26900.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_27000.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_27100.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_27200.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_27300.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_27400.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_27500.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_27600.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_27700.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_27800.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_27900.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_28000.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_28100.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_28200.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_28300.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_28400.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_28501.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_28502.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_28503.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_28504.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_28505.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_28506.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_28600.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_28700.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_28800.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_28900.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29000.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29100.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29200.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29311.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29312.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29313.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29321.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29322.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29323.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29331.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29332.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29333.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29341.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29342.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29343.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29411.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29412.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29413.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29421.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29422.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29423.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29431.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29432.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29433.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29441.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29442.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29443.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29451.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29452.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29453.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29461.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29462.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29463.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29471.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29472.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29473.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29481.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29482.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29483.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29511.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29512.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29513.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29521.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29522.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29523.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29531.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29532.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29533.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29541.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29542.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29543.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29600.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29700.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29800.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29910.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29920.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29930.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_29940.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_30000.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_30120.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_30420.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_30500.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_30600.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_30601.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_30700.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_30901.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_30902.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_30903.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_30904.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_30905.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_30906.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_31000.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_31100.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_31200.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_31300.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_31400.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_31500.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_31600.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_31700.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_31800.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_31900.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_32000.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_32010.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_32020.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_32030.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_32031.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_32040.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_32041.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_32050.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_32060.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_32070.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_32100.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_32200.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_32300.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_32410.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_32420.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_32500.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_32600.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_32700.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_32800.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_32900.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_33000.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_33100.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_33300.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_33400.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_33500.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_33501.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_33502.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_33600.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_33650.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_33660.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_33700.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_33800.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_33900.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_34000.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_34100.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_34200.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_34201.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_34211.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_34300.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_34400.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_34500.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_34600.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_34700.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_34800.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_34810.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_34820.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_35000.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_35100.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_35200.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_70000.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_70100.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_70200.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_72000.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_73000.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_74000.so" ],
+            
+              [  "usr\/share\/hashcat\/modules\/module_99999.so" ],
+            
+              [  "usr\/share\/hashcat\/tunings\/Alias.hctune" ],
+            
+              [  "usr\/share\/hashcat\/tunings\/Device_GeForce_GTX_TITAN.hctune" ],
+            
+              [  "usr\/share\/hashcat\/tunings\/Module_08900.hctune" ],
+            
+              [  "usr\/share\/hashcat\/tunings\/Module_09300.hctune" ],
+            
+              [  "usr\/share\/hashcat\/tunings\/Module_15700.hctune" ],
+            
+              [  "usr\/share\/hashcat\/tunings\/Module_22700.hctune" ],
+            
+              [  "usr\/share\/hashcat\/tunings\/Module_24000.hctune" ],
+            
+              [  "usr\/share\/hashcat\/tunings\/Module_27700.hctune" ],
+            
+              [  "usr\/share\/hashcat\/tunings\/Module_28200.hctune" ],
+            
+              [  "usr\/share\/hashcat\/tunings\/Module_29800.hctune" ],
+            
+              [  "usr\/share\/hashcat\/tunings\/Modules_bcrypt.hctune" ],
+            
+              [  "usr\/share\/hashcat\/tunings\/Modules_default.hctune" ],
+            
+              [  "usr\/share\/hashcat\/tunings\/README.md" ],
+            
+            [""    ]
+];
+
+    $("#table").DataTable({
+      "deferRender": true,
+      "processing": true,
+      "data": data,
+      "columns": [
+            { title: "Name" },
+        ]
+    });
+</script>
+</nav>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>
